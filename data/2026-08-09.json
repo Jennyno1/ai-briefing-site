@@ -1,123 +1,123 @@
 {
-  "date": "2026-08-09",
-  "format": "summary",
-  "points": [
-    "OpenAI向免费用户开放GPT-5.6 Luna，同时收购演示文稿公司NextSlide——模型能力下沉+生产力工具布局双线推进",
-    "DeepMind四巨头同日离职：Jeff Dean、Sanjay、Oriol、Quoc集体出走，Demis任Chair，Google AI进入重组深水区",
-    "腾讯WorkBuddy内部\"一路绿灯\"成AI应用最高优先级，全球最大AI算力单体乌兰察布星河基地投产"
-  ],
-  "tracks": [
-    {
-      "key": "ai_tech",
-      "emoji": "❶",
-      "name": "AI产业技术",
-      "news": [
-        "DeepMind地震级人事变动：Jeff Dean、Sanjay Ghemawat、Oriol Vinyals、Quoc Le同日离职，Demis Hassabis转任Chair，Koray Kavukcuoglu升任SVP。Google AI核心研发团队面临重组。",
-        "全球最大AI算力超级单体——远景乌兰察布星河基地投产：百万卡并行、百万P算力，标志着中国AI基础设施进入\"百万卡\"时代。",
-        "量子位报道Jeff Dean创业BP曝光，杨植麟（月之暗面）也出现在投资人名单上，硅谷VC抢破头送钱。",
-        "Cloudflare数据：AI机器人流量已超越人类，预计五年后人机流量比达1:1000。"
-      ],
-      "insights": [
-        "DeepMind四巨头离职不是孤立事件——此前OpenAI Astra被暂停、Anthropic自研芯片，行业顶级人才正在从大厂流向创业公司或自立门户，AI人才再分配可能催生新一批独角兽。",
-        "乌兰察布百万卡算力意味着训练成本有望大幅下降——当算力不再是瓶颈，模型能力迭代速度可能进一步加快。"
-      ],
-      "actions": [
-        "跟踪Jeff Dean创业方向和杨植麟参与情况——如果Jeff Dean做AI基础设施或新架构，可能影响未来2-3年的技术路线选择。",
-        "算力过剩信号（百万卡基地+Cloudflare流量数据）意味着推理成本长期看跌——依赖API的中小团队可以预期更低的使用成本。"
-      ]
-    },
-    {
-      "key": "enterprise_ai",
-      "emoji": "❷",
-      "name": "企业AI应用",
-      "news": [
-        "腾讯内部消息：WorkBuddy已成AI应用战略优先级最高产品之一，内部\"一路绿灯\"加速推进。对标微软Copilot的企业AI助手赛道进入白热化。",
-        "openJiuwen发布业界首个企业级智能体分布式蜂群架构，已联合邮储银行成功落地金融生产环境，代表多Agent协同的企业级实践。",
-        "Naïve融资2850万美元，用AI自动化公司设立和运营的繁琐流程，企业AI从\"辅助提效\"走向\"替代重复性运营工作\"。"
-      ],
-      "insights": [
-        "WorkBuddy\"一路绿灯\"说明腾讯在C端微信AI（小微）和B端办公AI（WorkBuddy）双线作战。企业AI助手不再只是\"做做看\"，而是战略级投入。",
-        "蜂群架构（多个Agent协同工作）正在从学术概念走向金融生产环境落地，企业部署Agent的下一个阶段是多Agent编排而非单Agent任务。"
-      ],
-      "actions": [
-        "WorkBuddy与企业微信深度绑定，如果小禾的客户/团队用企业微信，这是值得跟踪的办公AI方案。",
-        "openJiuwen蜂群架构开源可调研——如果其Agent编排能力可复用，用于自动化企业IT运维和报表生成等场景。"
-      ]
-    },
-    {
-      "key": "content_creation",
-      "emoji": "❸",
-      "name": "内容创作",
-      "news": [
-        "OpenAI向ChatGPT免费用户开放GPT-5.6 Luna访问权限，同时改进GPT-5.6 Sol在ChatGPT中的表现。免费模型能力大幅提升意味着AI内容创作门槛进一步降低。",
-        "OpenAI收购演示文稿创业公司NextSlide，进军办公生产力工具领域，未来可能推出AI生成PPT功能。",
-        "微信AI助手\"小微\"灰度测试朋友圈\"帮写\"及\"点评\"功能，社交媒体平台原生AI写作入口正在成形。"
-      ],
-      "insights": [
-        "GPT-5.6 Luna免费化后，AI内容创作从\"付费工具\"变为\"基础设施\"，创作者可以用免费模型完成选题分析、文案起草、多语言改写。",
-        "微信朋友圈AI写作是内容创作的新分发场景——不是小红书/抖音那种公域流量，而是私域+半熟人社交的内容触达。"
-      ],
-      "actions": [
-        "测试GPT-5.6 Luna免费版的实际内容创作能力（文案质量、中文表现、创意能力），与当前付费模型做对比，评估能否替代部分付费API调用。",
-        "关注微信朋友圈\"帮写\"灰度范围——如果能获得内测资格，测试AI帮写的风格适配度，思考\"朋友圈种草\"作为小红书之外的辅助渠道。"
-      ]
-    }
-  ],
-  "github": [
-    {
-      "repo": "tinyhumansai/openhuman",
-      "url": "https://github.com/tinyhumansai/openhuman",
-      "stars": "36K",
-      "track": "AI产业技术",
-      "note": "个人AI超智能系统，本地优先构建生活记忆库，支持离线运行和隐私保护",
-      "why": "代表了AI从云端走向本地、从工具走向\"第二大脑\"的趋势，对内容创作者的长期知识管理有参考价值"
-    },
-    {
-      "repo": "googleworkspace/cli",
-      "url": "https://github.com/googleworkspace/cli",
-      "stars": "30K",
-      "track": "企业AI应用",
-      "note": "Google Workspace命令行工具，一个命令操作Drive/Gmail/Calendar/Sheets/Docs等全部办公套件",
-      "why": "可直接用于企业办公自动化脚本——批量处理邮件、自动生成报表、定时备份文档，零成本提效"
-    },
-    {
-      "repo": "JCodesMore/ai-website-cloner-template",
-      "url": "https://github.com/JCodesMore/ai-website-cloner-template",
-      "stars": "31K",
-      "track": "内容创作",
-      "note": "用AI编码Agent一键克隆任意网站，一条命令复制整站",
-      "why": "可用于竞品落地页调研、快速搭建灵感参考站、批量生成内容站点模板"
-    }
-  ],
-  "reading": [
-    {
-      "title": "DeepMind四巨头同日离职：Jeff Dean/Oriol/Quoc集体出走",
-      "url": "https://www.latent.space/p/ainews-jeff-sanjay-oriol-and-quoc",
-      "source": "",
-      "reason": "Jeff Dean、Sanjay Ghemawat、Oriol Vinyals、Quoc Le同日离开DeepMind。Google AI最核心的研发大脑正在重新洗牌。"
-    },
-    {
-      "title": "OpenAI向免费用户开放GPT-5.6 Luna",
-      "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
-      "source": "",
-      "reason": "GPT-5.6 Luna免费开放意味着前沿模型能力不再是付费用户的专属。AI工具的使用门槛正在系统性地降低。"
-    },
-    {
-      "title": "腾讯WorkBuddy内部\"一路绿灯\"，成AI最高优先级产品",
-      "url": "https://www.ithome.com/0/987/446.htm",
-      "source": "",
-      "reason": "腾讯将WorkBuddy列为AI应用战略最高优先级，内部资源全面倾斜。企业AI助手赛道竞争正从\"试水\"进入\"决战\"阶段。"
-    }
-  ],
-  "consensus": {
-    "text": "",
-    "quotes": []
+ "date": "2026-08-09",
+ "format": "summary",
+ "points": [
+  "OpenAI向免费用户开放GPT-5.6 Luna，同时收购演示文稿公司NextSlide——模型能力下沉+生产力工具布局双线推进",
+  "DeepMind四巨头同日离职：Jeff Dean、Sanjay、Oriol、Quoc集体出走，Demis任Chair，Google AI进入重组深水区",
+  "腾讯WorkBuddy内部\"一路绿灯\"成AI应用最高优先级，全球最大AI算力单体乌兰察布星河基地投产"
+ ],
+ "tracks": [
+  {
+   "key": "ai_tech",
+   "emoji": "❶",
+   "name": "AI产业技术",
+   "news": [
+    "DeepMind地震级人事变动：Jeff Dean、Sanjay Ghemawat、Oriol Vinyals、Quoc Le同日离职，Demis Hassabis转任Chair，Koray Kavukcuoglu升任SVP。Google AI核心研发团队面临重组。",
+    "全球最大AI算力超级单体——远景乌兰察布星河基地投产：百万卡并行、百万P算力，标志着中国AI基础设施进入\"百万卡\"时代。",
+    "量子位报道Jeff Dean创业BP曝光，杨植麟（月之暗面）也出现在投资人名单上，硅谷VC抢破头送钱。",
+    "Cloudflare数据：AI机器人流量已超越人类，预计五年后人机流量比达1:1000。"
+   ],
+   "insights": [
+    "DeepMind四巨头离职不是孤立事件——此前OpenAI Astra被暂停、Anthropic自研芯片，行业顶级人才正在从大厂流向创业公司或自立门户，AI人才再分配可能催生新一批独角兽。",
+    "乌兰察布百万卡算力意味着训练成本有望大幅下降——当算力不再是瓶颈，模型能力迭代速度可能进一步加快。"
+   ],
+   "actions": [
+    "跟踪Jeff Dean创业方向和杨植麟参与情况——如果Jeff Dean做AI基础设施或新架构，可能影响未来2-3年的技术路线选择。",
+    "算力过剩信号（百万卡基地+Cloudflare流量数据）意味着推理成本长期看跌——依赖API的中小团队可以预期更低的使用成本。"
+   ]
   },
-  "division": {
-    "text": "",
-    "quotes": []
+  {
+   "key": "enterprise_ai",
+   "emoji": "❷",
+   "name": "企业AI应用",
+   "news": [
+    "腾讯内部消息：WorkBuddy已成AI应用战略优先级最高产品之一，内部\"一路绿灯\"加速推进。对标微软Copilot的企业AI助手赛道进入白热化。",
+    "openJiuwen发布业界首个企业级智能体分布式蜂群架构，已联合邮储银行成功落地金融生产环境，代表多Agent协同的企业级实践。",
+    "Naïve融资2850万美元，用AI自动化公司设立和运营的繁琐流程，企业AI从\"辅助提效\"走向\"替代重复性运营工作\"。"
+   ],
+   "insights": [
+    "WorkBuddy\"一路绿灯\"说明腾讯在C端微信AI（小微）和B端办公AI（WorkBuddy）双线作战。企业AI助手不再只是\"做做看\"，而是战略级投入。",
+    "蜂群架构（多个Agent协同工作）正在从学术概念走向金融生产环境落地，企业部署Agent的下一个阶段是多Agent编排而非单Agent任务。"
+   ],
+   "actions": [
+    "WorkBuddy 与企业微信深度绑定——若所在企业/团队使用企业微信，这是值得跟踪的办公 AI 方案。",
+    "openJiuwen蜂群架构开源可调研——如果其Agent编排能力可复用，用于自动化企业IT运维和报表生成等场景。"
+   ]
   },
-  "ai_generated": true,
-  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-20T18:31"
+  {
+   "key": "content_creation",
+   "emoji": "❸",
+   "name": "内容创作",
+   "news": [
+    "OpenAI向ChatGPT免费用户开放GPT-5.6 Luna访问权限，同时改进GPT-5.6 Sol在ChatGPT中的表现。免费模型能力大幅提升意味着AI内容创作门槛进一步降低。",
+    "OpenAI收购演示文稿创业公司NextSlide，进军办公生产力工具领域，未来可能推出AI生成PPT功能。",
+    "微信AI助手\"小微\"灰度测试朋友圈\"帮写\"及\"点评\"功能，社交媒体平台原生AI写作入口正在成形。"
+   ],
+   "insights": [
+    "GPT-5.6 Luna免费化后，AI内容创作从\"付费工具\"变为\"基础设施\"，创作者可以用免费模型完成选题分析、文案起草、多语言改写。",
+    "微信朋友圈AI写作是内容创作的新分发场景——不是小红书/抖音那种公域流量，而是私域+半熟人社交的内容触达。"
+   ],
+   "actions": [
+    "测试GPT-5.6 Luna免费版的实际内容创作能力（文案质量、中文表现、创意能力），与当前付费模型做对比，评估能否替代部分付费API调用。",
+    "关注微信朋友圈「帮写」的灰度范围——若开放内测，可测试其风格适配度，评估半熟人社交场景作为内容分发补充渠道的价值。"
+   ]
+  }
+ ],
+ "github": [
+  {
+   "repo": "tinyhumansai/openhuman",
+   "url": "https://github.com/tinyhumansai/openhuman",
+   "stars": "36K",
+   "track": "AI产业技术",
+   "note": "个人AI超智能系统，本地优先构建生活记忆库，支持离线运行和隐私保护",
+   "why": "代表了AI从云端走向本地、从工具走向\"第二大脑\"的趋势，对内容创作者的长期知识管理有参考价值"
+  },
+  {
+   "repo": "googleworkspace/cli",
+   "url": "https://github.com/googleworkspace/cli",
+   "stars": "30K",
+   "track": "企业AI应用",
+   "note": "Google Workspace命令行工具，一个命令操作Drive/Gmail/Calendar/Sheets/Docs等全部办公套件",
+   "why": "可直接用于企业办公自动化脚本——批量处理邮件、自动生成报表、定时备份文档，零成本提效"
+  },
+  {
+   "repo": "JCodesMore/ai-website-cloner-template",
+   "url": "https://github.com/JCodesMore/ai-website-cloner-template",
+   "stars": "31K",
+   "track": "内容创作",
+   "note": "用AI编码Agent一键克隆任意网站，一条命令复制整站",
+   "why": "可用于竞品落地页调研、快速搭建灵感参考站、批量生成内容站点模板"
+  }
+ ],
+ "reading": [
+  {
+   "title": "DeepMind四巨头同日离职：Jeff Dean/Oriol/Quoc集体出走",
+   "url": "https://www.latent.space/p/ainews-jeff-sanjay-oriol-and-quoc",
+   "source": "",
+   "reason": "Jeff Dean、Sanjay Ghemawat、Oriol Vinyals、Quoc Le同日离开DeepMind。Google AI最核心的研发大脑正在重新洗牌。"
+  },
+  {
+   "title": "OpenAI向免费用户开放GPT-5.6 Luna",
+   "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
+   "source": "",
+   "reason": "GPT-5.6 Luna免费开放意味着前沿模型能力不再是付费用户的专属。AI工具的使用门槛正在系统性地降低。"
+  },
+  {
+   "title": "腾讯WorkBuddy内部\"一路绿灯\"，成AI最高优先级产品",
+   "url": "https://www.ithome.com/0/987/446.htm",
+   "source": "",
+   "reason": "腾讯将WorkBuddy列为AI应用战略最高优先级，内部资源全面倾斜。企业AI助手赛道竞争正从\"试水\"进入\"决战\"阶段。"
+  }
+ ],
+ "consensus": {
+  "text": "",
+  "quotes": []
+ },
+ "division": {
+  "text": "",
+  "quotes": []
+ },
+ "ai_generated": true,
+ "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+ "generated_at": "2026-09-20T18:31"
 }
