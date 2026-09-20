@@ -62,7 +62,32 @@
       ]
     }
   ],
-  "github": [],
+  "github": [
+    {
+      "repo": "jnMetaCode/superpowers-zh",
+      "url": "https://github.com/jnMetaCode/superpowers-zh",
+      "stars": "7.7K",
+      "track": "企业AI应用",
+      "note": "superpowers（116K星）完整汉化+6个中国原创skills，兼容Claude Code/Copilot CLI/Hermes",
+      "why": "中文用户直接获得AI编程技能库，可借鉴其组织方式沉淀自有skill"
+    },
+    {
+      "repo": "stemdeckapp/stemdeck",
+      "url": "https://github.com/stemdeckapp/stemdeck",
+      "stars": "2.0K",
+      "track": "内容创作",
+      "note": "现代音轨分离平台，帮音乐人/制作人分离人声和伴奏",
+      "why": "做视频BGM、翻唱、remix可直接分离音轨，内容创作音频流程提效"
+    },
+    {
+      "repo": "kunchenguid/gnhf",
+      "url": "https://github.com/kunchenguid/gnhf",
+      "stars": "3.7K",
+      "track": "AI产业技术",
+      "note": "睡前跟自己的agents说晚安，让Agent夜间自主跑任务",
+      "why": "展示Agent长期运行与自主编排的可能性，关注自主Agent基础设施方向"
+    }
+  ],
   "consensus": {
     "text": "",
     "quotes": []
@@ -75,17 +100,20 @@
     {
       "title": "Anthropic set AI agents loose on the same task. They started a turf war.",
       "url": "https://techcrunch.com/2026/08/13/anthropic-set-ai-agents-loose-on-the-same-task-they-started-a-turf-war/",
-      "source": "TechCrunch"
+      "source": "",
+      "reason": "Anthropic实验发现多Agent共事会冲突、共谋或意外协调。多Agent协作风险的前沿观察，做Agent工作流前值得一读。"
     },
     {
       "title": "Databricks wanted to raise $1B, investors wanted $15B. It settled on $5B at a $190B valuation.",
       "url": "https://techcrunch.com/2026/08/13/databricks-wanted-to-raise-1b-investors-wanted-15b-it-settled-on-5b-at-a-190b-valuation/",
-      "source": "TechCrunch"
+      "source": "",
+      "reason": "Databricks超募细节：想融10亿被追着投150亿，估值1900亿、年化营收70亿增80%。AI企业资本热度的最新证据。"
     },
     {
       "title": "刚刚，GLM-5.3发布：Coding更接近Fable 5！潜伏40年的bug都被揪出来了",
       "url": "https://www.qbitai.com/2026/08/473038.html",
-      "source": "量子位"
+      "source": "",
+      "reason": "GLM-5.3多项实测：可交付模拟游戏、12类漏洞全检出、无GPU时诚实标注UNVERIFIED。国产开源模型\"能交付、能验证\"的里程碑实测。"
     }
   ],
   "format": "summary"

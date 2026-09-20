@@ -1,7 +1,11 @@
 {
   "date": "2026-08-18",
   "version": "",
-  "points": [],
+  "points": [
+    "虎嗅两篇文章同时戳中AI内容创作痛点——\"牛来\"活人感出圈 vs AI套话泛滥，\"手工痕迹\"正从短板变成流量溢价",
+    "千问办公首发上线GLM-5.3与DeepSeek V4 Pro，苹果联合阿里训练\"中国特供\"AI模型，国内企业AI走向多模型+本地化路线",
+    "黄仁勋携华尔街将AI算力打造为独立资产类别，承诺25%残值支持；英伟达15亿美元入股软银数据中心锁定OpenAI项目"
+  ],
   "tracks": [
     {
       "key": "ai_tech",
@@ -30,7 +34,10 @@
         "联想集团透露AI PC国内市场销量已占笔记本总销量50%以上，全球同比增长86%，正通过端侧算力升级将Token生产更多留在本地以兼顾隐私与成本。",
         "AI自动化初创Relay宣布关停，团队并入谷歌Chrome团队，AI工作流赛道正加速向科技巨头集中，垂直自动化工具生存空间收窄。"
       ],
-      "insights": [],
+      "insights": [
+        "知乎热帖\"开会就是互丢AI文档\"引发大厂员工共鸣，说明大量企业AI应用仍停留在\"AI生成+AI再解读\"的浅层循环，尚未真正重塑协作流程、带动产出质量的实质提升。",
+        "千问办公接入多款模型、苹果联合阿里训练\"中国特供\"模型等信号，印证国内企业AI正走向\"多模型接入+端侧部署\"路线，模型可替代性增强而数据安全成为核心壁垒。"
+      ],
       "actions": [
         "针对\"AI文档泛滥\"痛点，推行AI工作流准入SOP：AI生成内容在进入审批节点前强制人工复核并标注生成来源，阻断无效信息在会议与汇报间空转。",
         "结合端侧算力趋势，试点将敏感业务数据交给本地/端侧大模型处理实现数据不出内网，同时配置多模型路由按任务难度择优调用，兼顾成本与质量。"
@@ -55,7 +62,32 @@
       ]
     }
   ],
-  "github": [],
+  "github": [
+    {
+      "repo": "multica-ai/andrej-karpathy-skills",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "stars": "203K",
+      "track": "内容创作",
+      "note": "Andrej Karpathy关于LLM编程陷阱的观察，提炼成Claude Code行为规范CLAUDE.md文件",
+      "why": "把LLM编程踩坑经验固化为可复用的行为规范，团队用同一套CLAUDE.md即可统一AI编程质量标准"
+    },
+    {
+      "repo": "langflow-ai/langflow",
+      "url": "https://github.com/langflow-ai/langflow",
+      "stars": "153K",
+      "track": "企业AI应用",
+      "note": "强大的AI智能体工作流构建与部署平台，拖拽+代码方式搭建RAG和多智能体协作",
+      "why": "企业可跳过自建Agent框架，用拖拽方式快速搭建内部AI工作流，复用社区模板降低试错成本"
+    },
+    {
+      "repo": "huggingface/transformers",
+      "url": "https://github.com/huggingface/transformers",
+      "stars": "164K",
+      "track": "AI产业技术",
+      "note": "构建和部署最先进机器学习模型的框架，覆盖文本、视觉、音频多模态",
+      "why": "企业AI落地时模型选型、微调、推理部署的核心基础设施，支持从原型到生产的全链路"
+    }
+  ],
   "consensus": {
     "text": "",
     "quotes": []
@@ -68,17 +100,20 @@
     {
       "title": "AI automation startup Relay shuts down, staff joins Google's Chrome team",
       "url": "https://techcrunch.com/2026/08/17/ai-automation-startup-relay-shuts-down-staff-joins-googles-chrome-team/",
-      "source": "TechCrunch"
+      "source": "",
+      "reason": "AI自动化初创Relay刚融完A轮即关停，团队被Chrome收编。AI工作流赛道正加速向巨头集中，垂直工具生存空间收窄。"
     },
     {
       "title": "Groq raises $350M to fuel its pivot from AI chips to neocloud",
       "url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/",
-      "source": "TechCrunch"
+      "source": "",
+      "reason": "Groq从自研AI芯片转型Neocloud云服务，获3.5亿美元融资。算力竞争从芯片层延伸到云服务层，纯芯片创业窗口收窄。"
     },
     {
       "title": "SpaceX officially closes its Cursor acquisition",
       "url": "https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/",
-      "source": "TechCrunch"
+      "source": "",
+      "reason": "SpaceX正式完成对Cursor母公司Anysphere的600亿美元收购交割。AI编程工具赛道的战略价值被重新定价。"
     }
   ],
   "format": "summary"

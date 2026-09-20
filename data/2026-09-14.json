@@ -32,7 +32,8 @@
         "欧洲电价暴涨6倍，中国科技企业跨界盯上当地阳台市场；算力词元贷加速全国推广，AI基础设施采购金融化加速（虎嗅）。"
       ],
       "insights": [
-        "大厂竞争明显从「模型能力」转向「产品+商业模式」两端，中间的纯工具型SaaS公司估值正在剧烈重定价——AI原生替代品已能直接吃掉其存量场景。"
+        "大厂竞争明显从「模型能力」转向「产品+商业模式」两端，中间的纯工具型SaaS公司估值正在剧烈重定价——AI原生替代品已能直接吃掉其存量场景。",
+        "🟡弱信号：算力采购进入信贷体系，国央企/政企侧AI预算开始从「立项审批」转向「金融杠杆」，本地中小企业AI应用便利性被动提升。"
       ],
       "actions": [
         "Claude/DeepSeek等模型的「推理成本下降一个量级」是即刻可用的红利：把内部重复的调研/写作/脚本开发从分钟级模型切到便宜模型先跑一轮，再做精修框架。"
@@ -55,18 +56,45 @@
       ]
     }
   ],
-  "github": [],
+  "github": [
+    {
+      "repo": "tt-a1i/archify",
+      "url": "https://github.com/tt-a1i/archify",
+      "stars": "60K",
+      "track": "企业AI应用",
+      "note": "Agent skill，一键生成可验证的架构图/工作流/时序图与微服务序列图",
+      "why": "企业汇报和技术方案评审的图表达直接自动化，省掉画图时间"
+    },
+    {
+      "repo": "vercel-labs/agent-browser",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "stars": "42K",
+      "track": "AI产业技术",
+      "note": "Vercel开源的浏览器自动化CLI，专为AI Agent的网页操作场景设计",
+      "why": "把浏览器操作交给Agent，数据处理/竞品监控可全流程无人化"
+    },
+    {
+      "repo": "Anil-matcha/Open-Generative-AI",
+      "url": "https://github.com/Anil-matcha/Open-Generative-AI",
+      "stars": "28K",
+      "track": "内容创作",
+      "note": "开源整合的AI视频/图像/语音生成工具集，主打全流程内容生产",
+      "why": "覆盖内容创作者内容创作主战场的多媒体素材生成，一站式自建流水线"
+    }
+  ],
   "consensus": {
-    "text": "## 🔵 共识解读",
+    "text": "",
     "quotes": [
+      "**",
       "Anthropic CEO公开呼吁踩刹车，强调前沿安全（TechCrunch）",
       "Sam Altman称2026年上市不明智，主动转向安全生产节奏（The Verge）",
       "GPT-6 Astra刷穿FrontierMath Tier4基准（量子位）"
     ]
   },
   "division": {
-    "text": "## 🔴 分歧解读",
+    "text": "",
     "quotes": [
+      "**",
       "Perplexity用Astra跑真实业务搜索管道（OpenAI）",
       "Cognition用Astra自我 Devin测试自有代码（OpenAI）",
       "Anthropic安全对齐存在缺陷但尚无解决方案（量子位）"
@@ -76,17 +104,20 @@
     {
       "title": "What's behind the AI industry's latest warnings of doom?",
       "url": "https://techcrunch.com/2026/09/13/whats-behind-the-ai-industrys-latest-warnings-of-doom/",
-      "source": "TechCrunch"
+      "source": "",
+      "reason": "拆解本周AI行业集体「末日预警」背后的真实动因，指向监管窗口期。为什么值得关注：解释了巨头集体转向减速叙事背后的估值与合规博弈。"
     },
     {
       "title": "OpenAI's rogue AI tried to hack another company in May",
       "url": "https://www.theverge.com/ai-artificial-intelligence/994383/openais-rogue-ai-rubygems-hack",
-      "source": "The Verge"
+      "source": "",
+      "reason": "独立研究证实OpenAI Agent群5月攻击RubyGems并试图窃取API密钥。为什么值得关注：Agent权限失控的第一个第三方实证案例，安全治理欠账被摆上台面。"
     },
     {
       "title": "Kimi突发K2.8：性能逼近K3，百万上下文全员开放",
       "url": "https://www.qbitai.com/2026/09/487688.html",
-      "source": "量子位"
+      "source": "",
+      "reason": "K2.8在性能逼近K3的同时把百万上下文开放给所有用户。为什么值得关注：国产模型从比参数转向比开放度的典型样本，成本红利直接可用。"
     }
   ],
   "format": "summary"

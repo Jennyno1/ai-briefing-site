@@ -48,7 +48,9 @@
       "emoji": "❸",
       "name": "内容创作",
       "news": [
-        "Google 宣布允许用户移除或关闭 Gemini 生成内容的可见水印，与 Anthropic 在 Claude 上强制加水印形成鲜明对比，AI 内容「标不标身份」开始由用户自己说了算。"
+        "Google 宣布允许用户移除或关闭 Gemini 生成内容的可见水印，与 Anthropic 在 Claude 上强制加水印形成鲜明对比，AI 内容「标不标身份」开始由用户自己说了算。",
+        "OpenAI 官方宣布开始在 ChatGPT 中测试广告，对话式 AI 工具的商业模式探索正式拉开帷幕，内容创作者未来的流量分发格局可能生变。",
+        "「B站教AI」内容爆火后，北航90后副教授何静亲自公开回应，把 AI 讲明白正在成为新的内容风口，教学型账号迎来一波流量红利。"
       ],
       "insights": [
         "水印政策的分岔折射出 AI 内容「溯源」与「自由使用」的深层博弈：Google 把选择权交给用户，Anthropic 把检测权攥在自己手里，对创作者而言，不同工具的 AI 内容「带不带标」将成为新的选型变量，发布策略也要随之调整。",
@@ -60,7 +62,32 @@
       ]
     }
   ],
-  "github": [],
+  "github": [
+    {
+      "repo": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "stars": "272K",
+      "track": "内容创作",
+      "note": "Agentic skills 框架与方法论：把创作流程拆成可复用技能组件",
+      "why": "像搭积木一样组装「选题-写作-审核」内容流水线，方法论类 skill 可直接借鉴"
+    },
+    {
+      "repo": "anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "stars": "170K",
+      "track": "企业AI应用",
+      "note": "Anthropic 官方 Agent Skills 公开库",
+      "why": "企业 Agent 工作流可直接套用官方打磨过的技能模板，降低自建成本"
+    },
+    {
+      "repo": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "stars": "240K",
+      "track": "AI产业技术",
+      "note": "Agent harness 性能优化系统，覆盖技能、记忆、安全与研究开发",
+      "why": "本地多 Agent 系统性能调优的工程参考，产业技术向基础设施信号"
+    }
+  ],
   "consensus": {
     "text": "",
     "quotes": []
@@ -73,17 +100,20 @@
     {
       "title": "Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+",
       "url": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/",
-      "source": "TechCrunch"
+      "source": "",
+      "reason": "Stripe 以超70亿美元收购 AI 网关 OpenRouter，后者5月才以13亿美元估值融资。支付巨头重金卡位 AI 分发通道，模型层商品化信号增强。"
     },
     {
       "title": "牛来！A社营收暴涨1400%，最新季度入账115亿美元",
       "url": "https://www.qbitai.com/2026/08/473947.html",
-      "source": "量子位"
+      "source": "",
+      "reason": "Anthropic Q2 营收115亿美元、同比14倍，调整后营业利润首次转正，IPO 估值押注超2万亿。含与 OpenAI 对比与算力成本结构分析，判断 AI 板块景气度的关键一读。"
     },
     {
       "title": "Anthropic自曝「私藏核武器」，Model 2比Mythos 5更强",
       "url": "https://www.36kr.com/p/3940126125161602",
-      "source": "36氪"
+      "source": "",
+      "reason": "Anthropic 承认内部 Model 2 强于公开旗舰，误对齐风险上调。AI 安全叙事与发布节奏脱钩的持续观察。"
     }
   ],
   "format": "summary"

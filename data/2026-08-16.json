@@ -3,7 +3,8 @@
   "version": "",
   "points": [
     "SpaceX正式完成600亿美元收购Cursor交割，Anthropic拟60亿美元买效率公司备战IPO——AI资本战进入白热化",
-    "千问办公首发上线GLM-5.3与DeepSeek V4 Pro，企业办公Agent可自由切换三款国产旗舰"
+    "千问办公首发上线GLM-5.3与DeepSeek V4 Pro，企业办公Agent可自由切换三款国产旗舰",
+    "Claude官方水印检测工具即将推出，「活人感」溢价与去AI味成内容创作分水岭"
   ],
   "tracks": [
     {
@@ -61,7 +62,32 @@
       ]
     }
   ],
-  "github": [],
+  "github": [
+    {
+      "repo": "eternityspring/shuohao-skills",
+      "url": "https://github.com/eternityspring/shuohao-skills",
+      "stars": "1.5K",
+      "track": "内容创作",
+      "note": "AI短剧制作skill集合：拆角色、排大纲、出场景与道具设定、写剧本、切分镜",
+      "why": "与RoboNeo短剧专业版搭配，短剧生产全流程可直接套用"
+    },
+    {
+      "repo": "handy-computer/transcribe.cpp",
+      "url": "https://github.com/handy-computer/transcribe.cpp",
+      "stars": "1.8K",
+      "track": "企业AI应用",
+      "note": "本地语音转写推理引擎，支持16+模型家族",
+      "why": "会议纪要/播客转写可本地跑，数据不出内网，办公提效"
+    },
+    {
+      "repo": "hi-godot/godot-ai",
+      "url": "https://github.com/hi-godot/godot-ai",
+      "stars": "1.7K",
+      "track": "AI产业技术",
+      "note": "Godot引擎的MCP服务器与AI工具集",
+      "why": "AI×游戏引擎工具链成熟信号，MCP生态向创意产业渗透"
+    }
+  ],
   "consensus": {
     "text": "",
     "quotes": []
@@ -74,17 +100,20 @@
     {
       "title": "SpaceX officially closes its Cursor acquisition",
       "url": "https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/",
-      "source": "TechCrunch"
+      "source": "",
+      "reason": "4月宣布600亿美元期权、6月SpaceX上市后推进、8月15日正式交割，Cursor官宣加入SpaceX。史上最大初创收购案尘埃落定，AI编程工具格局进入新阶段。"
     },
     {
       "title": "拟60亿美元收购Decart，Anthropic在IPO开始之前要开启一场「效率战争」",
       "url": "https://www.huxiu.com/article/4883308.html",
-      "source": "虎嗅"
+      "source": "",
+      "reason": "Anthropic洽购以色列AI效率公司Decart、已秘密提交S-1最快10月上市。千亿算力账之下「效率」成为决定利润表的生死变量。"
     },
     {
       "title": "Anthropic自曝「私藏核武器」，Model 2比Mythos 5更强",
       "url": "https://www.36kr.com/p/3940126125161602",
-      "source": "36氪"
+      "source": "",
+      "reason": "Anthropic第二份Risk Report承认内部模型Model 2强于公开旗舰，误对齐风险上调。AI安全叙事与发布节奏脱钩的前沿观察。"
     }
   ],
   "format": "summary"

@@ -63,7 +63,32 @@
       ]
     }
   ],
-  "github": [],
+  "github": [
+    {
+      "repo": "paperclipai/paperclip",
+      "url": "https://github.com/paperclipai/paperclip",
+      "stars": "80937",
+      "track": "企业AI应用",
+      "note": "开源的「Agent工作台」，用来统一管理公司里的所有AI Agent",
+      "why": "团队里Agent多到管不过来时，正好对应今天「谁来盯Agent」的主题"
+    },
+    {
+      "repo": "stablyai/orca",
+      "url": "https://github.com/stablyai/orca",
+      "stars": "71067",
+      "track": "AI产业技术",
+      "note": "面向并行Agent舰队的ADE（Agent开发环境），可同时驱动多个编码Agent",
+      "why": "并行Agent托管已开源落地，适合自己动手感受AgentOps的产品形态"
+    },
+    {
+      "repo": "MemPalace/mempalace",
+      "url": "https://github.com/MemPalace/mempalace",
+      "stars": "59130",
+      "track": "AI产业技术",
+      "note": "开源AI记忆系统，基准测试领先且免费",
+      "why": "给个人Agent补长期记忆的第一候补方案，可对照自建记忆层"
+    }
+  ],
   "consensus": {
     "text": "Agent的「监工」成了新的共识产品形态。OpenAI披露模型瞒报、TechCrunch报道用AI监督AI、AWS推MCP纵深授权、Claude Code重启多Agent托管，产业各方不约而同把资源投向Agent的可观测与可控，共识是规模化部署必须先解决治理。",
     "quotes": [
@@ -85,17 +110,20 @@
     {
       "title": "AI safety debate shows inside the suddenly explosive world of AI safety",
       "url": "https://www.theverge.com/ai-artificial-intelligence",
-      "source": "The Verge AI"
+      "source": "",
+      "reason": "AI安全赛道正在爆发式扩张。为什么值得关注：把本周所有安全互撕事件放进一张产业地图，适合建立全景认知。"
     },
     {
       "title": "The Rise of the Forward Deployed Engineer — and How To Do the Job Right",
       "url": "https://www.latent.space/p/forward-deployed-engineer",
-      "source": "and How To Do the Job Right](https://www.latent.space/p/forward-deployed-engineer) — Latent Space"
+      "source": "",
+      "reason": "Palantir出身的创业者谈FDE岗位方法论。为什么值得关注：企业AI落地最(\\`\\`值钱\\)的岗位画像，与面试准备直接对口。"
     },
     {
       "title": "Selecting a vector store for Amazon Bedrock Knowledge Bases",
       "url": "https://aws.amazon.com/blogs/machine-learning/selecting-a-vector-store-for-amazon-bedrock-knowledge-bases/",
-      "source": "AWS AI Blog"
+      "source": "",
+      "reason": "RAG向量库选型实测对比。为什么值得关注：企业级RAG的第一个选型决策，含性能与成本权衡数据。"
     }
   ],
   "format": "summary"

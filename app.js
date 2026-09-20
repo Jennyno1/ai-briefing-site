@@ -23,7 +23,7 @@
     consensus: '最大共识',
     division: '主要分歧',
     reading: '推荐阅读',
-    github: 'GitHub 洞察'
+    github: 'GitHub 项目推荐'
   };
 
   var PLACEHOLDERS = ['--', '---', '—', '–', '-', '无', 'N/A', 'n/a', 'null'];
@@ -84,7 +84,8 @@
       var title = r.url
         ? '<a href="' + esc(r.url) + '" target="_blank" rel="noopener">' + esc(r.title) + '</a>'
         : esc(r.title);
-      return '<li>' + title + (r.source ? ' <span class="src">— ' + esc(r.source) + '</span>' : '') + '</li>';
+      var reason = (!isPlaceholder(r.reason)) ? '<p class="reason">' + esc(r.reason) + '</p>' : '';
+      return '<li>' + title + (r.source ? ' <span class="src">— ' + esc(r.source) + '</span>' : '') + reason + '</li>';
     }).join('');
     return '<section class="reading"><h3>推荐阅读</h3><ol>' + lis + '</ol></section>';
   }
@@ -96,10 +97,12 @@
       var u = g.url || ('https://github.com/' + g.repo);
       var name = g.repo || g.url;
       var star = (g.stars != null && g.stars !== '') ? ' <span class="src">⭐' + esc(g.stars) + '</span>' : '';
-      var note = (g.note && !isPlaceholder(g.note)) ? ' <span class="src">— ' + esc(g.note) + '</span>' : '';
-      return '<li><a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(name) + '</a>' + star + note + '</li>';
+      var track = (!isPlaceholder(g.track)) ? ' <span class="badge badge-quiet">' + esc(g.track) + '</span>' : '';
+      var note = (!isPlaceholder(g.note)) ? '<p class="reason">' + esc(g.note) + '</p>' : '';
+      var why = (!isPlaceholder(g.why)) ? '<p class="reason reason-why">落地：' + esc(g.why) + '</p>' : '';
+      return '<li><a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(name) + '</a>' + star + track + note + why + '</li>';
     }).join('');
-    return '<section class="reading"><h3>GitHub 项目洞察</h3><ol>' + lis + '</ol></section>';
+    return '<section class="reading"><h3>GitHub 项目推荐</h3><ol>' + lis + '</ol></section>';
   }
 
   function missingNotice(data) {
@@ -111,6 +114,7 @@
     if (!(data.consensus && !isPlaceholder(data.consensus.text))) missing.push(MODULE_LABELS.consensus);
     if (!(data.division && !isPlaceholder(data.division.text))) missing.push(MODULE_LABELS.division);
     if (!cleanList(data.reading).length) missing.push(MODULE_LABELS.reading);
+    if (!cleanList(data.github).length) missing.push(MODULE_LABELS.github);
     if (!missing.length) return '';
     return '<div class="notice">本日数据缺少板块：' + esc(missing.join('、')) +
       '（早期简报格式与当前不一致，已按现有内容渲染）</div>';

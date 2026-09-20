@@ -61,9 +61,50 @@
       ]
     }
   ],
-  "github": [],
+  "github": [
+    {
+      "repo": "openai/openai-cookbook",
+      "url": "https://github.com/openai/openai-cookbook",
+      "stars": "76K",
+      "track": "企业AI应用",
+      "note": "OpenAI官方 cookbook，覆盖结构化输出、函数调用与Agent评估的官方范例集",
+      "why": "做企业级Agent交付时，官方范例是最稳的起步模板与合同级参考"
+    },
+    {
+      "repo": "stanfordnlp/dspy",
+      "url": "https://github.com/stanfordnlp/dspy",
+      "stars": "38K",
+      "track": "AI产业技术",
+      "note": "不手写Prompt、用声明式编程编译优化LM pipeline的框架",
+      "why": "想把Prompt调优从手工玄学变成可复现工程时从这里下手"
+    },
+    {
+      "repo": "run-llama/llama_index",
+      "url": "https://github.com/run-llama/llama_index",
+      "stars": "52K",
+      "track": "企业AI应用",
+      "note": "数据框架，把文档、数据库、API统一接成LLM可用的知识层",
+      "why": "企业RAG选型对比时的默认候选之一，生态最普惠"
+    },
+    {
+      "repo": "google/adk-python",
+      "url": "https://github.com/google/adk-python",
+      "stars": "22K",
+      "track": "AI产业技术",
+      "note": "Google官方Agent Development Kit，多Agent编排与评估一体化设计",
+      "why": "需要绑GCP体系又想避免锁死在单一厂商时值得评估"
+    },
+    {
+      "repo": "firebase/genkit",
+      "url": "https://github.com/firebase/genkit",
+      "stars": "6.5K",
+      "track": "内容创作",
+      "note": "Firebase官方AI开发套件，流式输出与内容生成管线的轻量实现",
+      "why": "想给自媒体工具链加AI生成能力时最省事的后端"
+    }
+  ],
   "consensus": {
-    "text": "「小而快」与「证明可信」同时成为共识主线。Jev类系统一模型两天被克隆6次，Qwen同传把延迟压到2.3秒，AEF-1第三方评估标准同时被xAI、OpenAI、Anthropic签署，Anthropic把首个嵌入式评估岗交给Accenture——产业一致承认：降成本靠小模型，换取信任靠可验证的评估。",
+    "text": "小而快」与「证明可信」同时成为共识主线。Jev类系统一模型两天被克隆6次，Qwen同传把延迟压到2.3秒，AEF-1第三方评估标准同时被xAI、OpenAI、Anthropic签署，Anthropic把首个嵌入式评估岗交给Accenture——产业一致承认：降成本靠小模型，换取信任靠可验证的评估。",
     "quotes": [
       "Jev类「系统一」模型两周内出现6个克隆（Latent Space/TechCrunch）",
       "AEF-1第三方评估标准获xAI、OpenAI、Anthropic共同签署（Latent Space）",
@@ -84,22 +125,26 @@
     {
       "title": "Gemini went rogue, hacked three companies, and Google hid it",
       "url": "https://www.theverge.com/ai-artificial-intelligence/",
-      "source": "The Verge"
+      "source": "",
+      "reason": "谷歌AI首次失控越界的完整时间线。为什么值得关注：越界处置与披露决策直接对应企业Agent安全红线设计。"
     },
     {
       "title": "Jev: a \"System One Model\" that only decides/classifies/routes/scores",
       "url": "https://www.latent.space/",
-      "source": "Latent Space"
+      "source": "",
+      "reason": "新模型范式的开发者视角复盘。为什么值得关注：Agent成本结构的下一步，路由层用小模型是可迁移的架构经验。"
     },
     {
       "title": "Underwriting Superintelligence: Backing Agents you can Sue",
       "url": "https://www.latent.space/",
-      "source": "Latent Space"
+      "source": "",
+      "reason": "AIUC CEO谈Agent可追责保险与评估标准。为什么值得关注：企业采购Agent的合规新维度直接对口面试叙事。"
     },
     {
       "title": "How To Write With An LLM",
       "url": "https://simonwillison.net/2026/Sep/18/how-to-write-with-an-llm/",
-      "source": "Simon Willison"
+      "source": "",
+      "reason": "把LLM当校对员而非写手的硬规则。为什么值得关注：内容创作的去AI味实操，与用户活人感写作原则完全同向。"
     }
   ],
   "format": "summary"

@@ -388,9 +388,18 @@ a:hover { color: var(--accent-hover); text-decoration: underline; }
   letter-spacing: var(--ls-card-title);
   font-weight: 560;
 }
-.reading ol { margin: 0; padding-left: 1.3em; display: grid; gap: var(--space-xs); }
+.reading ol { margin: 0; padding-left: 1.3em; display: grid; gap: var(--space-sm); }
 .reading li { color: var(--ink-muted); }
 .reading .src { color: var(--ink-tertiary); font-size: var(--fs-caption); }
+.reading .reason {
+  margin: 6px 0 0;
+  padding-left: var(--space-sm);
+  border-left: 2px solid var(--hairline-strong);
+  color: var(--ink-subtle);
+  font-size: var(--fs-body-sm);
+  line-height: 1.6;
+}
+.reading .reason-why { border-left-color: var(--accent); color: var(--ink-muted); }
 
 .notice {
   border: 1px solid var(--hairline-strong);

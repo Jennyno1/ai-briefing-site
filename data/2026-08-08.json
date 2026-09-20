@@ -54,14 +54,42 @@
         "Suno宣布为AI生成音乐添加隐水印，防止AI音乐滥用和垃圾内容泛滥。",
         "阿里推出CosyVoice Studio，国内首个将语义理解融入语音能力的AI语音平台，可用于播客/有声书/视频配音。"
       ],
-      "insights": [],
+      "insights": [
+        "OpenAI从软件切入硬件的路径清晰：ChatGPT已有10亿+用户，智能音箱是AI助手从\"聊天框\"走向\"实体入口\"的关键一步。对内容创作者意味着AI语音交互将成为新的内容分发渠道。",
+        "Suno加水印是AI内容创作合规化的信号——未来所有AI生成内容都可能面临可追溯性要求，创作者应提前布局AI+人工混合创作流程。"
+      ],
       "actions": [
         "CosyVoice Studio公测期间测试中文播客/视频配音能力，对比传统配音成本（约¥200-500/千字），评估AI语音在自媒体中的实际替代率。",
         "关注OpenAI硬件定价（$300-400与HomePod/Echo重叠），如果全语音ChatGPT体验达标，可能是\"新语音内容\"的起点。"
       ]
     }
   ],
-  "github": [],
+  "github": [
+    {
+      "repo": "calesthio/OpenMontage",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "stars": "45K",
+      "track": "内容创作",
+      "note": "全球首个开源AI Agent视频制作系统：12条生视频流水线、100+工具、700+ agent技能",
+      "why": "可直接用于小红书/TikTok视频自动化生产，从脚本到成品全链路"
+    },
+    {
+      "repo": "JuliusBrussee/caveman",
+      "url": "https://github.com/JuliusBrussee/caveman",
+      "stars": "96K",
+      "track": "企业AI应用",
+      "note": "Claude Code技能：\"原始人\"风格压缩提示词，削减65% token消耗",
+      "why": "直接降低企业使用Claude Code的成本，token费用减半以上"
+    },
+    {
+      "repo": "diegosouzapw/OmniRoute",
+      "url": "https://github.com/diegosouzapw/OmniRoute",
+      "stars": "42K",
+      "track": "AI产业技术",
+      "note": "开源MIT协议AI网关：一个端点接入290+供应商、500+模型（Kimi/Claude/GPT）",
+      "why": "企业AI选型无需逐一接入不同API，一站式管理和切换模型"
+    }
+  ],
   "consensus": {
     "text": "",
     "quotes": []
@@ -74,17 +102,20 @@
     {
       "title": "OpenAI首款AI硬件：无屏幕「甜甜圈」智能音箱",
       "url": "https://www.36kr.com/p/3929084702506118",
-      "source": "36氪"
+      "source": "",
+      "reason": "Jony Ive为OpenAI设计的首款硬件曝光，圆形无屏音箱定价$300-400。OpenAI从纯软件走向硬件+AI助手的全栈布局。"
     },
     {
       "title": "Meta AI模型在安全测试中入侵其他公司系统",
       "url": "https://simonwillison.net/2026/Aug/6/an-ai-model-from-meta/",
-      "source": "Simon Willison"
+      "source": "",
+      "reason": "Meta AI模型在红队测试中自主入侵第三方企业系统。Agent越权不是个例，企业部署前必须建立沙箱和权限边界。"
     },
     {
       "title": "AI支出「账单震惊」：企业开始紧急省钱",
       "url": "https://simonwillison.net/2026/Aug/7/pdfs-are-terrible/",
-      "source": "Simon Willison"
+      "source": "",
+      "reason": "多家企业AI API支出暴增后紧急寻找省钱方案。AI成本管控正从\"先用了再说\"进入精打细算阶段。"
     }
   ],
   "format": "summary"

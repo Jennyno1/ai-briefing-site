@@ -54,7 +54,8 @@
         "平台侧上新：Pinterest测试AI重排家居布置的Restyle；Gemini Live音频持续扩展；元宝类产品继续打通文档与录音场景（The Verge L3）。"
       ],
       "insights": [
-        "AI剧占比九成不只是产量信号，更是审核压力信号：官方点名「鼓励创新与守住底线并重」，AI内容生产量大但精品率低，真人质感反而被政策与平台共同抬价。"
+        "AI剧占比九成不只是产量信号，更是审核压力信号：官方点名「鼓励创新与守住底线并重」，AI内容生产量大但精品率低，真人质感反而被政策与平台共同抬价。",
+        "🟡弱信号：文化产业发展「十五五」规划点名支持具身智能、脑机接口等未来技术在文化产业应用，内容创作的技术叙事正在从「降本增效」升级为「新形态」（36氪 L2）。"
       ],
       "actions": [
         "小红书选题储备「AI短剧九成占比背后：谁在看、谁在赚、谁被劝退」，用监管发布会数据切入，正好呼应真人质感内容的价值主张。",
@@ -62,7 +63,32 @@
       ]
     }
   ],
-  "github": [],
+  "github": [
+    {
+      "repo": "ultraworkers/claw-code",
+      "url": "https://github.com/ultraworkers/claw-code",
+      "stars": "195260",
+      "track": "AI产业技术",
+      "note": "用Agent全程无人工干预开发维护的Rust博物馆展品项目，展示无人值守编码的上限",
+      "why": "可对照自己的Agent自动化流程，看完全无人值守长什么样"
+    },
+    {
+      "repo": "VoltAgent/awesome-design-md",
+      "url": "https://github.com/VoltAgent/awesome-design-md",
+      "stars": "116553",
+      "track": "内容创作",
+      "note": "收录主流品牌设计系统的DESIGN.md文件，丢给编码Agent即可生成风格匹配的UI",
+      "why": "做小红书封面与信息卡时，可以直接借用成套设计规范喂给Agent"
+    },
+    {
+      "repo": "nashsu/llm_wiki",
+      "url": "https://github.com/nashsu/llm_wiki",
+      "stars": "19725",
+      "track": "企业AI应用",
+      "note": "桌面端工具，把文档自动建成持续维护、互相链接的知识库Wiki，而非一次性RAG问答",
+      "why": "适合把日报、素材与选题池沉淀成个人长期知识库"
+    }
+  ],
   "consensus": {
     "text": "编码Agent工具层全面开放化。谷歌旗舰疑似提前曝光、Claude Code开放3万Agent管理技术、MiniMax以MIT协议开源CLI、Kimi K3以编码场景上架Bedrock，头部厂商一致把竞争押在让开发者把工作流搬进自家工具生态。",
     "quotes": [
@@ -84,17 +110,20 @@
     {
       "title": "How Fyxer built an AI executive assistant people trust",
       "url": "https://openai.com/index/fyxer",
-      "source": "OpenAI"
+      "source": "",
+      "reason": "邮件办公AI助理赢得用户信任的完整复盘。为什么值得关注：Agent产品从演示到信任的证据链方法，可直接迁移到任何AI工具落地。"
     },
     {
       "title": "The Rise of the Forward Deployed Engineer — and How To Do the Job Right",
       "url": "https://www.latent.space/p/forward-deployed-engineer",
-      "source": "and How To Do the Job Right](https://www.latent.space/p/forward-deployed-engineer) — Latent Space"
+      "source": "",
+      "reason": "Palantir出身的创业者谈FDE岗位方法论。为什么值得关注：企业AI落地最值钱的岗位画像，与面试准备直接对口。"
     },
     {
       "title": "Chain-of-Thought Entropy as a Reliability Signal: A Preregistered Reproduction",
       "url": "https://arxiv.org",
-      "source": "arXiv cs.CL"
+      "source": "",
+      "reason": "用思维链熵作为模型可靠性信号的预注册复现。为什么值得关注：「模型知道自己不可靠」的工程化路径，Agent监控的学术底层。"
     }
   ],
   "format": "summary"

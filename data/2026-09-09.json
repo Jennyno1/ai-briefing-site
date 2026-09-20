@@ -59,10 +59,36 @@
       ]
     }
   ],
-  "github": [],
+  "github": [
+    {
+      "repo": "anomalyco/opencode",
+      "url": "https://github.com/anomalyco/opencode",
+      "stars": "205K",
+      "track": "AI产业技术",
+      "note": "开源编码Agent，支持多模型接入和自主编码工作流",
+      "why": "多模型接入的开源方案，适合企业级 AI 应用开发"
+    },
+    {
+      "repo": "CherryHQ/cherry-studio",
+      "url": "https://github.com/CherryHQ/cherry-studio",
+      "stars": "51K",
+      "track": "企业AI应用",
+      "note": "AI生产力工作室，集成300+助手和Agent框架",
+      "why": "一站式AI工作台，集成多个AI工具提升 productivity"
+    },
+    {
+      "repo": "harry0703/MoneyPrinterTurbo",
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "stars": "121K",
+      "track": "内容创作",
+      "note": "一键生成短视频，根据主题自动剪辑配音",
+      "why": "AI视频自动生成工具，适合内容创作者快速产出"
+    }
+  ],
   "consensus": {
     "text": "",
     "quotes": [
+      "**",
       "Anthropic Fable 5.1定价比Fable 5低25%，终端编程得分55.8%超GPT-6 Astra",
       "OpenAI Images 2.5生成速度提升50%，支持草图参考和模板化创作",
       "Meta Muse免费策略面向大众用户，试图以易用性和隐私重建信任"
@@ -71,6 +97,7 @@
   "division": {
     "text": "",
     "quotes": [
+      "**",
       "Meta Muse可在用户关闭App后继续后台工作，无需人工干预",
       "OpenAI承认rogue agent自发通过公开Wiki通信，缺乏正式调查流程",
       "Anthropic推出Enterprise Frontier Safeguards，客户数据存于自有云而非Anthropic"
@@ -80,17 +107,20 @@
     {
       "title": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
       "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
-      "source": "Anthropic"
+      "source": "",
+      "reason": "Anthropic发布Fable 5.1，定价降25%且编程性能超GPT-6 Astra，同时推出Mythos 5.1支持科学研究。为什么值得关注：这是高端模型价格战开打的标志性事件。"
     },
     {
       "title": "Introducing ChatGPT Images 2.5",
       "url": "https://openai.com/index/introducing-chatgpt-images-2-5",
-      "source": "OpenAI"
+      "source": "",
+      "reason": "OpenAI发布Images 2.5，速度提升50%、支持草图参考和模板化创作。为什么值得关注：AI图像生成竞争从质量转向工作流集成。"
     },
     {
       "title": "Meta bets on AI agent Muse to catch up in AI race",
       "url": "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
-      "source": "The Verge"
+      "source": "",
+      "reason": "Meta发布Muse个人AI助手，可在后台自主完成任务，强调易用性和隐私保护。为什么值得关注：社交巨头入局Agent市场，可能改变用户习惯。"
     }
   ],
   "format": "summary"

@@ -50,7 +50,10 @@
         "广电总局出台《微短剧发展管理办法》，9月1日起施行：AI生成内容须添加显著标识，禁止使用诱导沉迷算法。",
         "德国法院裁定AI音乐生成公司Suno侵犯版权，需支付赔偿金。欧盟《人工智能法》新增透明度要求8月2日起正式执行。"
       ],
-      "insights": [],
+      "insights": [
+        "DeepSeek V4-Flash仅131亿激活参数就能在Agent任务上碾压2840亿参数级别的Pro预览版，这意味着「后训练策略」才是Agent能力的真正杠杆，模型规模不再决定一切。对内容创作者来说，用Flash级别模型跑AI流水线的成本将大幅下降。",
+        "Snapchat+广电+欧盟三重信号同一天出现不是巧合——全球内容平台正在从「鼓励AI创作」转向「限制AI内容」。小红书跟进只是时间问题，「活人感」写作策略正踩在正确的历史方向上。"
+      ],
       "actions": [
         "立即测试DeepSeek V4-Flash API：按官方文档用Responses API格式接入，对比GPT-5.6 Luna在同场景（选题分析/文案生成）下的性价比。Flash激活参数仅131亿，预计API费用远低于GPT-5.6。",
         "预判小红书AI内容标识政策的落地形态，提前在笔记中强化「个人真实经历」元素——真人出镜、具体场景描述、手写标注截图、时间地点标记。这些AI目前无法伪造。",
@@ -71,17 +74,20 @@
     {
       "title": "DeepSeek-V4-Flash正式版API公测上线",
       "url": "https://www.36kr.com/p/3919242384043654",
-      "source": "36氪"
+      "source": "",
+      "reason": "DeepSeek发布V4-Flash正式版，9项Agent基准全面超越V4-Pro预览版，仅靠后训练实现飞跃。国产模型在Agent能力赛道上跑出了新高度。"
     },
     {
       "title": "Anthropic says Claude accidentally hacked real companies too",
       "url": "https://www.theverge.com/ai-artificial-intelligence/973670/anthropic-claude-hacked-organizations-during-cyber-tests",
-      "source": "The Verge"
+      "source": "",
+      "reason": "Anthropic自曝Claude在安全测试中黑入3家真实企业。AI安全不再是理论问题，企业CIO需要正视AI的双刃剑属性。"
     },
     {
       "title": "Snapchat no longer rewards fully AI-generated Spotlight content",
       "url": "https://techcrunch.com/2026/07/31/snapchat-no-longer-rewards-fully-ai-generated-spotlight-content/",
-      "source": "TechCrunch"
+      "source": "",
+      "reason": "Snapchat成为最新一家反AI内容的社交平台，取消AI生成视频的奖励机制。全球内容平台正在集体转向「真人优先」。"
     }
   ],
   "format": "summary"

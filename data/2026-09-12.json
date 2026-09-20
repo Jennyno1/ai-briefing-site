@@ -56,18 +56,45 @@
       ]
     }
   ],
-  "github": [],
+  "github": [
+    {
+      "repo": "ruvnet/ruflo",
+      "url": "https://github.com/ruvnet/ruflo",
+      "stars": "72142",
+      "track": "企业AI应用",
+      "note": "开源Agent编排/Ai编排调度与多Agentagger swarm协同 произошло值额",
+      "why": "多agent swarm编排能直接跑在本地，企业自动化争取前先学会编排"
+    },
+    {
+      "repo": "headroomlabs-ai/headroom",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "stars": "71600",
+      "track": "AI产业技术",
+      "note": "Agent输出与工具from指令流压縮层，进入LLM前压缩可省20% token",
+      "why": "长对话/长文档 RAG 成本直降，做企业Agent首推的省钱层"
+    },
+    {
+      "repo": "YILS-LIN/short-video-factory",
+      "url": "https://github.com/YILS-LIN/short-video-factory",
+      "stars": "5342",
+      "track": "内容创作",
+      "note": "一键生成产品营销短视频，AI批量自动剪辑的桌面端工具",
+      "why": "跨平台桌面端+AI自动剪辑，适合产品带货短视频批量产出"
+    }
+  ],
   "consensus": {
-    "text": "## 🔵 共识解读",
+    "text": "",
     "quotes": [
+      "**",
       "Moonshot定下20亿美元年营收目标（TechCrunch）",
       "OpenAI因Astra需求过旺暂停Pro订阅（TechCrunch）",
       "Pocket FM靠AI驱动营收翻倍至5亿美元年化（TechCrunch）"
     ]
   },
   "division": {
-    "text": "## 🔴 分歧解读",
+    "text": "",
     "quotes": [
+      "**",
       "网信办正式实施AI生成内容标识办法（36氪快讯）",
       "芒果AI长剧90万一集实现商业化盈利（虎嗅）",
       "银行Agent上岗已覆盖4200万小微经营者（量子位）"
@@ -77,17 +104,20 @@
     {
       "title": "Y Combinator’s Garry Tan wants US open-weight AI labs to ‘distill’ frontier models, too",
       "url": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-us-open-weight-ai-labs-to-distill-frontier-models-too/",
-      "source": "TechCrunch"
+      "source": "",
+      "reason": "Garry Tan呼吁美国开放权重实验室也做蒸馏，呼应Anthropic披露阿里/月之暗面/DeepSeek蒸馏报告。为什么值得关注：蒸馏与合规的边界正在被政策重新划线。"
     },
     {
       "title": "Anthropic details distillation campaigns from Alibaba, Moonshot AI, and DeepSeek",
       "url": "https://techcrunch.com/2026/09/11/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek/",
-      "source": "TechCrunch"
+      "source": "",
+      "reason": "Anthropic点名三大中国厂进行蒸馏，把模型能力来源上升到合规议题。为什么值得关注：国产模型出海可能面临新的合规审查门槛。"
     },
     {
       "title": "Bending Spoons to buy collaboration tools maker Miro for $1.36B, 90% less than its 2022 valuation",
       "url": "https://techcrunch.com/2026/09/11/bending-spoons-to-buy-collaboration-tools-maker-miro-for-1-36b-90-less-than-its-2022-valuation/",
-      "source": "TechCrunch"
+      "source": "",
+      "reason": "工具独角兽Miro以2022年估值一折的价格被收购。为什么值得关注：AI冲击下传统SaaS工具估值体系正在重定价。"
     }
   ],
   "format": "summary"

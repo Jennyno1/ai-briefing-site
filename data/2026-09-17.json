@@ -63,7 +63,32 @@
       ]
     }
   ],
-  "github": [],
+  "github": [
+    {
+      "repo": "SciPhi-AI/R2R",
+      "url": "https://github.com/SciPhi-AI/R2R",
+      "stars": "7997",
+      "track": "企业AI应用",
+      "note": "生产级Agentic RAG系统，RESTful API开箱即用",
+      "why": "想给私有知识库加检索问答，这是最接近「拿来就用」的开源方案"
+    },
+    {
+      "repo": "unum-cloud/UForm",
+      "url": "https://github.com/unum-cloud/UForm",
+      "stars": "1250",
+      "track": "AI产业技术",
+      "note": "口袋级多模态模型，理解与生成跨多语言/图像，超小体量",
+      "why": "边缘端多模态的性价比之选，端侧AI应用可直接集成"
+    },
+    {
+      "repo": "ALwrity/ALwrity",
+      "url": "https://github.com/ALwrity/ALwrity",
+      "stars": "1160",
+      "track": "内容创作",
+      "note": "AI优先的数字营销平台，内容策划/生成/发布一体化",
+      "why": "把选题-写作-分发做成开源流水线，可对照自建内容工作流"
+    }
+  ],
   "consensus": {
     "text": "Agent正在从「能力展示」进入「日常产品」。OpenAI的Data agent、Anthropic的Cowork合并、Google让任意Agent控制智能家居，三家不约而同把Agent嵌进普通用户每天都在用的产品里；配套的token成本优化（缓存省90%）、失败归因研究也在同步跟进，产业共识是「铺开来用」的阶段到了。",
     "quotes": [
@@ -85,17 +110,20 @@
     {
       "title": "Optimizing cost and latency with Amazon Bedrock prompt caching",
       "url": "https://aws.amazon.com/blogs/machine-learning/optimizing-cost-and-latency-with-amazon-bedrock-prompt-caching/",
-      "source": "AWS AI Blog"
+      "source": "",
+      "reason": "重复输入场景下输入token成本最高降90%。为什么值得关注：Agent成本优化最直接的实操文档，含配置方法与适用判断。"
     },
     {
       "title": "Underwriting Superintelligence: Backing Agents you can Sue",
       "url": "https://www.latent.space/p/aiuc",
-      "source": "Latent Space"
+      "source": "",
+      "reason": "AIUC谈Agent保险与责任承保。为什么值得关注：企业采用Agent的「责任与可追责」视角，正好对应评估标准之争， Interview角度新颖。"
     },
     {
       "title": "Claude comes for Gemini with its own take on Docs and Slides",
       "url": "https://www.theverge.com/ai-artificial-intelligence/claude-docs-slides",
-      "source": "The Verge"
+      "source": "",
+      "reason": "Anthropic把生产力套件补齐。为什么值得关注：AI助手从聊天窗口走向办公全家桶的标志性一步，直接影响协同办公工具格局。"
     }
   ],
   "format": "summary"

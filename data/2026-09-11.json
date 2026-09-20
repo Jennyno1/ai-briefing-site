@@ -59,7 +59,32 @@
       ]
     }
   ],
-  "github": [],
+  "github": [
+    {
+      "repo": "n8n-io/n8n",
+      "url": "https://github.com/n8n-io/n8n",
+      "stars": "204K",
+      "track": "企业AI应用",
+      "note": "开源工作流自动化平台，可视化构建AI Agent管线，支持300+集成",
+      "why": "可视化编排复杂AI流程，适合搭建企业内部自动化工作流"
+    },
+    {
+      "repo": "modelcontextprotocol/servers",
+      "url": "https://github.com/modelcontextprotocol/servers",
+      "stars": "90K",
+      "track": "AI产业技术",
+      "note": "MCP协议官方参考实现，连接大模型与外部工具和数据源的标准协议栈",
+      "why": "多Agent协作的基础设施，适合构建跨工具AI应用"
+    },
+    {
+      "repo": "heygen-com/hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "stars": "49K",
+      "track": "内容创作",
+      "note": "用HTML写内容、Agent渲染视频，专为AI Agent设计的视频生产工具",
+      "why": "降低视频内容制作门槛，HTML+Agent模式适合批量生成短视频"
+    }
+  ],
   "consensus": {
     "text": "",
     "quotes": [
@@ -80,17 +105,20 @@
     {
       "title": "GPT-6 Astra: A new generation of intelligence",
       "url": "https://openai.com/index/gpt-6-astra",
-      "source": "OpenAI"
+      "source": "",
+      "reason": "OpenAI发布GPT-6 Astra，定位为新一代智能模型，展示了游戏原型、文档审阅等多场景能力。为什么值得关注：这是OpenAI迄今最大的模型发布，能力边界大幅扩展。"
     },
     {
       "title": "Mistral raises €3B as sovereign AI becomes big business",
       "url": "https://techcrunch.com/2026/09/08/mistral-raises-e3b-as-sovereign-ai-becomes-big-business/",
-      "source": "TechCrunch"
+      "source": "",
+      "reason": "Mistral融资€3B，欧洲主权AI赛道加速。为什么值得关注：欧洲AI独角兽正试图在美中AI垄断中找到第三极位置。"
     },
     {
       "title": "AI power users claim Anthropic duped them with subscriptions",
       "url": "https://www.theverge.com/ai-artificial-intelligence/990313/anthropic-class-action-lawsuit-pricing-subscription-plans",
-      "source": "The Verge"
+      "source": "",
+      "reason": "AI高级用户集体诉讼Anthropic诱导订阅，指控定价不透明。为什么值得关注：AI产品定价透明度正成为新的信任和合规战场。"
     }
   ],
   "format": "summary"

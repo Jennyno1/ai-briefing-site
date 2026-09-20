@@ -63,7 +63,32 @@
       ]
     }
   ],
-  "github": [],
+  "github": [
+    {
+      "repo": "YILS-LIN/short-video-factory",
+      "url": "https://github.com/YILS-LIN/short-video-factory",
+      "stars": "5.4K",
+      "track": "内容创作",
+      "note": "一键生成产品营销短视频，AI批量自动剪辑，跨平台桌面端工具",
+      "why": "直接对应短视频账号短视频试水需求，开源可自部署、不依赖平台方"
+    },
+    {
+      "repo": "headroomlabs-ai/headroom",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "stars": "72.4K",
+      "track": "AI产业技术",
+      "note": "在工具输出进入上下文前压缩日志/RAG块，替coding agent省20%以上token",
+      "why": "Agent成本优化的新基建品类，机构与个人工作流都能直接受益"
+    },
+    {
+      "repo": "ErlichLiu/DeepClaude",
+      "url": "https://github.com/ErlichLiu/DeepClaude",
+      "stars": "2.9K",
+      "track": "企业AI应用",
+      "note": "DeepSeek R1推理+Claude编码双模型协同的开源方案",
+      "why": "双模型兜底/分工的思路可直接借鉴到个人Agent的价格分层配置"
+    }
+  ],
   "consensus": {
     "text": "官方API基建的节奏整体在按\"工程化、可运维\"方向推进。本日OpenAI、AWS、Meta三家的一手动态高度一致：能力只是入场券，谁先把权限、审计、成本做成产品能力，谁才能留下企业客户，Agent的竞争焦点正在从\"会不会做事\"移到\"可不可以被管理\"。",
     "quotes": [
@@ -84,17 +109,20 @@
     {
       "title": "DeepSeek v4.1-Flash: 763B-P8B-D16B 新型因果Encoder–Decoder",
       "url": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b",
-      "source": "Latent Space"
+      "source": "",
+      "reason": "DeepSeek新架构的新闻汇总与技术解读。为什么值得关注：可能改变MoE领域的性价比曲线，国内模型自研生态的关键节点。"
     },
     {
       "title": "The generative AI customization spectrum",
       "url": "https://aws.amazon.com/blogs/machine-learning/the-generative-ai-customization-spectrum-from-prompt-engineering-to-custom-models-on-aws/",
-      "source": "AWS AI Blog"
+      "source": "",
+      "reason": "从提示工程到定制模型的企业级选型路径完整梳理。为什么值得关注：企业AI落地选型可画成一张可以直接引用的图。"
     },
     {
       "title": "AI and data centers are incredibly unpopular in every poll",
       "url": "https://www.theverge.com/ai-artificial-intelligence/995917/data-center-nyt-midterm-poll-september",
-      "source": "The Verge"
+      "source": "",
+      "reason": "民调显示AI与数据中心在所有维度都不受欢迎，中期选举临近。为什么值得关注：解释了为什么监管博弈会加速，产业外部约束正在收紧。"
     }
   ],
   "format": "summary"

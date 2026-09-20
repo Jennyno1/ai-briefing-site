@@ -53,9 +53,13 @@
         "知名说唱歌手Fenix Flexin的Billboard Hot 100上榜歌曲\"Rubberz\"被多方鉴定为AI生成，但歌手本人否认。五大AI检测工具均给出20-30%AI概率，封面图和歌词则被判定97%以上为AI。"
       ],
       "insights": [
-        "反AI内容潮已从社交平台（Snapchat取消奖励）→政策监管（广电标识新规）→音乐产业（唱片巨头联合封杀）三重升级。这不是单个平台的风向，是整个内容产业的结构性转向。\"活人感\"写作策略正踩在正确的历史方向上。"
+        "反AI内容潮已从社交平台（Snapchat取消奖励）→政策监管（广电标识新规）→音乐产业（唱片巨头联合封杀）三重升级。这不是单个平台的风向，是整个内容产业的结构性转向。\"活人感\"写作策略正踩在正确的历史方向上。",
+        "Hank Green事件证明：即使头部创作者也无法完美隐藏AI痕迹。AI辅助创作的\"边界感\"正在成为内容创作者的职业素养——不是用不用的问题，而是怎么用才不翻车的问题。"
       ],
-      "actions": []
+      "actions": [
+        "将\"反AI内容潮\"整理为专题系列小红书笔记：第一篇已发（Snapchat+广电），第二篇可写\"唱片巨头联合封杀AI音乐，内容创作者该慌吗？\"。用时间线串联社交平台→政策→音乐产业的三级跳，比单条新闻更有传播力。",
+        "Hank Green翻车案例适合拆解为\"AI创作的3个翻车信号\"——意外用语/风格断裂/观众直觉。用真实案例说明为什么AI辅助必须搭配人工润色，比泛泛说\"要有活人感\"有力得多。"
+      ]
     }
   ],
   "github": [],
@@ -71,17 +75,20 @@
     {
       "title": "OpenAI公布下一代模型Astra：解决10个悬而未决超10年数学难题",
       "url": "https://www.ithome.com/0/984/557.htm",
-      "source": "IT之家"
+      "source": "",
+      "reason": "OpenAI下一代核心模型Astra内部版本一次性攻克10个超十年未解数学难题，全部论证由AI独立生成。仅$2000的token成本实现了人类数学家数十年未取得的突破。"
     },
     {
       "title": "The major labels propose rules to keep AI slop off the charts",
       "url": "https://www.theverge.com/ai-artificial-intelligence/973741/ai-music-major-record-labels-charts",
-      "source": "The Verge"
+      "source": "",
+      "reason": "三大唱片巨头联合IFPI提议AI音乐禁入排行榜，\"substantially human made\"成新的行业准入标准。从RIAA的标识到全面封杀，音乐产业对AI内容的态度正快速收紧。"
     },
     {
       "title": "Hank Green says his AI usage is 'not healthy'",
       "url": "https://techcrunch.com/2026/08/01/youtuber-hank-green-says-his-ai-usage-is-not-healthy/",
-      "source": "TechCrunch"
+      "source": "",
+      "reason": "320万订阅的YouTube头部创作者公开承认AI依赖\"不健康\"，宣布暂停更新。被粉丝发现AI痕迹后翻车的真实案例，揭示了AI辅助创作不可忽视的信任危机。"
     }
   ],
   "format": "summary"

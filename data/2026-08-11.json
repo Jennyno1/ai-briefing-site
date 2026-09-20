@@ -48,15 +48,47 @@
       "key": "content_creation",
       "emoji": "❸",
       "name": "内容创作",
-      "news": [],
-      "insights": [],
+      "news": [
+        "OpenAI发布全新GPT Image，碾压DALL-E Image 2，塑料感终于消失。原生集成ChatGPT，无需切换工具即可生成高质量图片，对AI内容创作者而言生图门槛进一步降低。",
+        "OpenAI收购演示文稿初创公司NextSlide，AI内容创作工具链从文字/图片/代码向PPT场景延伸，补齐办公创作全品类覆盖。",
+        "Meoo秒悟团队版全量上线，接入Qwen-3.8-Max，即日起可直接订阅。国内AI协作工具在模型能力和团队协作两个维度同时升级。"
+      ],
+      "insights": [
+        "GPT Image的\"塑料感消失\"不仅是画质提升，更意味着AI生图从\"能用\"进入\"可商用\"阶段。小红书封面/笔记配图的质量天花板被系统性抬高，纯手工作图的内容创作者面临代际差距。",
+        "OpenAI收购NextSlide + 量子位报道\"PDF当死，ARA该立\"，指向同一个趋势：文档/演示类内容的AI原生生产正在系统化。未来一周的内容创作工作流可能需要重新设计。"
+      ],
       "actions": [
         "立即用ChatGPT测试GPT Image生图能力，对比当前Seedream出图效果，评估是否可作为小红书封面主力工具。重点关注：文字渲染准确度（对中文标题封面至关重要）、风格一致性、生成速度。",
         "关注NextSlide被收购后的产品整合节奏。如果OpenAI在ChatGPT Work中嵌入PPT生成能力，提前储备\"AI生成演示文稿\"的工作流模板——这可以直接复用到企业IT培训场景。"
       ]
     }
   ],
-  "github": [],
+  "github": [
+    {
+      "repo": "Nutlope/hallmark",
+      "url": "https://github.com/Nutlope/hallmark",
+      "stars": "23.5K",
+      "track": "内容创作",
+      "note": "反AI塑料感设计Skill，让Claude Code/Cursor/Codex生成的内容摆脱\"一看就是AI做的\"审美",
+      "why": "结合今天GPT Image发布，hallmark提供的设计规范可以直接约束AI生图的风格输出"
+    },
+    {
+      "repo": "iOfficeAI/OfficeCLI",
+      "url": "https://github.com/iOfficeAI/OfficeCLI",
+      "stars": "27.4K",
+      "track": "企业AI应用",
+      "note": "专为AI Agent设计的Office套件，让Agent直接读写Word/Excel/PPT",
+      "why": "结合Kitesurf浏览器，Agent办公的基础设施正在闭环——浏览器+Office+API三件套已就位"
+    },
+    {
+      "repo": "emilkowalski/skills",
+      "url": "https://github.com/emilkowalski/skills",
+      "stars": "28K",
+      "track": "AI产业技术",
+      "note": "设计师和工程师的Skill集合，可复用、可组合的Agent能力模块",
+      "why": "Skill生态的模块化趋势正在加速，这与Hermes的Skill体系设计理念一致"
+    }
+  ],
   "consensus": {
     "text": "",
     "quotes": []
@@ -69,7 +101,20 @@
     {
       "title": "OpenAI全新GPT Image突袭，碾压Image 2，塑料感终于消失",
       "url": "https://www.36kr.com/p/3933115490368647",
-      "source": "36氪"
+      "source": "",
+      "reason": "GPT Image原生集成ChatGPT，生图质量大幅提升，解决了长期困扰AI生图的\"塑料感\"问题。这是AI内容创作工具的标志性升级。"
+    },
+    {
+      "title": "AI圈上演神级互撕，Codex、Claude Code两位负责人公开对喷",
+      "url": "https://www.36kr.com/p/3933059944775041",
+      "source": "",
+      "reason": "Agent赛道两大头部产品负责人公开冲突，折射出AI编程工具市场的竞争烈度。背后是用户心智和开发者生态的争夺战。"
+    },
+    {
+      "title": "Cloudflare launches Kitesurf, a browser built for AI agents",
+      "url": "https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-f",
+      "source": "",
+      "reason": "第一个专为AI Agent设计的浏览器。如果说传统浏览器是人机交互的界面，Kitesurf就是Agent与Web交互的界面——这是一个新的基础设施品类。"
     }
   ],
   "format": "summary"

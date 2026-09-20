@@ -39,8 +39,7 @@
         "腾讯AI开始\"算回报\"，标志大厂从烧钱抢模型转向验证AI商业闭环，企业采购会更看重ROI。"
       ],
       "actions": [
-        "把已有skill沉淀成可复用的\"生产系统\"范式（技能+记忆+定时任务+飞书协同），对齐企业Agent新叙事。",
-        "关注腾讯财报中AI应用的具体增长数据，作为国内企业AI市场成熟度的参照。"
+        "把已有skill沉淀成可复用的\"生产系统\"范式（技能+记忆+定时任务+飞书协同），对齐企业Agent新叙事。"
       ]
     },
     {
@@ -62,7 +61,32 @@
       ]
     }
   ],
-  "github": [],
+  "github": [
+    {
+      "repo": "hugohe3/ppt-master",
+      "url": "https://github.com/hugohe3/ppt-master",
+      "stars": "45.5K",
+      "track": "内容创作",
+      "note": "把文档或主题一键生成原生PowerPoint，带原生形状和排版",
+      "why": "做干货分享、课件、小红书配图可直接生成高质量PPT"
+    },
+    {
+      "repo": "google/skills",
+      "url": "https://github.com/google/skills",
+      "stars": "17.9K",
+      "track": "企业AI应用",
+      "note": "Google官方Agent Skills库，覆盖Google产品与技术的技能包",
+      "why": "企业Agent工作流的技能生态范本，可借鉴其组织方式沉淀自有skill"
+    },
+    {
+      "repo": "cloudflare/computer",
+      "url": "https://github.com/cloudflare/computer",
+      "stars": "7.8K",
+      "track": "AI产业技术",
+      "note": "Cloudflare官方\"给你的Agent一台电脑\"，Agent computer-use基础设施",
+      "why": "延续Agent浏览器赛道，企业级computer-use底座正在成型"
+    }
+  ],
   "consensus": {
     "text": "",
     "quotes": []
@@ -75,17 +99,20 @@
     {
       "title": "Skill不够了，Agent需要拼\"生产系统\"",
       "url": "https://www.huxiu.com/article/4882713.html",
-      "source": "虎嗅"
+      "source": "",
+      "reason": "企业Agent从单点技能走向完整生产系统的拐点分析。与Hermes的skill体系同源，读完能对齐企业AI新叙事。"
     },
     {
       "title": "腾讯AI开始算回报：从增强旧业务，到寻找下一门新生意",
       "url": "https://www.huxiu.com/article/4882704.html",
-      "source": "虎嗅"
+      "source": "",
+      "reason": "腾讯二季度财报后AI战略转向\"算回报\"。国内企业AI从烧钱到验证商业闭环的标志。"
     },
     {
       "title": "AI coding startup Cognition reportedly in talks to raise at $40B",
       "url": "https://techcrunch.com/2026/08/12/ai-coding-startup-cognition-reportedly-already-in-talks-to-raise-a/",
-      "source": "TechCrunch"
+      "source": "",
+      "reason": "Devin母公司Cognition洽谈400亿美元估值融资。AI Coding应用层估值天花板信号。"
     }
   ],
   "format": "summary"

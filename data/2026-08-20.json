@@ -48,41 +48,76 @@
       "emoji": "❸",
       "name": "内容创作",
       "news": [
-        "TickerTrends数据显示Claude Code的ARR从6月的140亿飙升后在8月停滞于151.2亿，增速暴跌至5.2%，而同期OpenAI Codex增速达20.8%，开发者因水印争议和额度限制大量转投Codex。"
+        "TickerTrends数据显示Claude Code的ARR从6月的140亿飙升后在8月停滞于151.2亿，增速暴跌至5.2%，而同期OpenAI Codex增速达20.8%，开发者因水印争议和额度限制大量转投Codex。",
+        "OpenAI与Replit合作推出Free Mode，用GPT-5.6 Luna驱动免费软件创建，用户无需消耗token即可将想法转化为可运行软件，降低内容创作门槛。",
+        "DeepSeek Harness发布v0.1.0-rc.8版本，14项更新补齐多模态能力（原生图片输入+图文混合指令），并接入Claude Code和Codex作为子代理。"
       ],
       "insights": [
         "AI编码工具的竞争已从\"谁的模型更强\"转向\"谁的产品体验更好\"——Claude Code的水印争议和额度限制暴露了产品运营短板，而Codex凭借更宽松的限制和无缝IDE集成正疯狂吞噬市场份额。",
         "DeepSeek Harness的\"工具层视觉\"设计（OCR+像素扫描给纯文本模型拼出视觉能力）展示了Harness层创新可以绕过模型本身的多模态限制，降低创作者使用AI处理图片内容的成本。"
       ],
       "actions": [
-        "如果当前使用Claude Code，评估水印功能对自身内容工作流的影响——若涉及客户交付代码或机密文档，考虑切换到Codex或DeepSeek Harness作为替代方案。"
+        "如果当前使用Claude Code，评估水印功能对自身内容工作流的影响——若涉及客户交付代码或机密文档，考虑切换到Codex或DeepSeek Harness作为替代方案。",
+        "测试Replit Free Mode，用自然语言描述内容创作需求（如数据分析脚本、格式转换工具），验证GPT-5.6 Luna在免费额度内的实际可用性。"
       ]
     }
   ],
-  "github": [],
+  "github": [
+    {
+      "repo": "Forget-C/Jellyfish",
+      "url": "https://github.com/Forget-C/Jellyfish",
+      "stars": "6.1K",
+      "track": "内容创作",
+      "note": "端到端AI短剧制作工作空间，从剧本输入到结构化分镜、角色一致性和视频生成一站式完成",
+      "why": "内容创作者可用它将小说或剧本快速转化为动画短剧，覆盖编剧-分镜-生成全链路"
+    },
+    {
+      "repo": "macro-inc/macro",
+      "url": "https://github.com/macro-inc/macro",
+      "stars": "3.8K",
+      "track": "企业AI应用",
+      "note": "团队统一工作空间，集成邮件、聊天、文档、任务、Agent、通话和CRM，共享AI记忆",
+      "why": "企业可评估其@链接和共享AI记忆功能，解决Agent每次对话重复交代上下文的摩擦成本"
+    },
+    {
+      "repo": "chaitanyagiri/munder-difflin",
+      "url": "https://github.com/chaitanyagiri/munder-difflin",
+      "stars": "2.9K",
+      "track": "AI产业技术",
+      "note": "本地多Agent编排框架，支持在本地环境运行和协调多个AI Agent协同工作",
+      "why": "开发者可用它搭建本地多Agent实验环境，测试Agent协作流程而无需依赖云端API"
+    }
+  ],
   "consensus": {
-    "text": "### 🔵 共识解读",
-    "quotes": []
+    "text": "",
+    "quotes": [
+      "**"
+    ]
   },
   "division": {
-    "text": "### 🔴 分歧解读",
-    "quotes": []
+    "text": "",
+    "quotes": [
+      "**"
+    ]
   },
   "reading": [
     {
       "title": "Claude Code神话破灭？大量用户正在取消订阅",
       "url": "https://www.36kr.com/p/3947212935593095",
-      "source": "36氪/新智元"
+      "source": "",
+      "reason": "Claude Code ARR增速从狂飙暴跌至5.2%，水印争议+额度限制引发退订潮，Codex趁机疯狂扩张。AI编码工具的用户忠诚度比想象中脆弱得多。"
     },
     {
       "title": "闭源RSI的严父：18个Agent自主科研，Kimi K3靠Harness逼近Opus 5",
       "url": "https://www.qbitai.com/2026/08/476199.html",
-      "source": "量子位"
+      "source": "",
+      "reason": "Prime Intellect让18个前沿模型自主做AI研究，发现idea本身不稀缺，试错吞吐量才是关键——开源模型Kimi K3搭配Harness可逼近最强闭源模型Opus 5。"
     },
     {
       "title": "Replit expands access to software creation with GPT-5.6 Luna",
       "url": "https://openai.com/index/replit",
-      "source": "OpenAI"
+      "source": "",
+      "reason": "Replit推出Free Mode用GPT-5.6 Luna驱动免费软件创建，模型经济学的进步正在消除\"从想法到可运行软件\"之间的成本障碍。"
     }
   ],
   "format": "summary"
