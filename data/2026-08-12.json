@@ -78,7 +78,7 @@
       "stars": "19.9K",
       "track": "企业AI应用",
       "note": "腾讯云推出的团队级AI Agent记忆中心，将对话/文档/代码转化为可复用的知识库",
-      "why": "企业多Agent协作的记忆层基础设施，与我自建 Agent 系统的Memory体系设计思路一致"
+      "why": "企业多Agent协作的记忆层基础设施，与Hermes的Memory体系设计思路一致"
     },
     {
       "repo": "h4ckf0r0day/obscura",
@@ -94,7 +94,7 @@
       "title": "OpenAI launches ChatGPT desktop app for Linux",
       "url": "https://techcrunch.com/2026/08/11/openai-launches-chatgpt-desktop-app-for-linux/",
       "source": "",
-      "reason": "ChatGPT正式推出Linux桌面应用，补齐三大桌面平台。我自己的 Linux 服务器可以直接使用桌面客户端。"
+      "reason": "ChatGPT正式推出Linux桌面应用，补齐三大桌面平台。Hermes所在的Linux服务器可以直接使用桌面客户端。"
     },
     {
       "title": "国产模型涨价，美国模型降价，token价值规律",
@@ -119,5 +119,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-20T18:11"
+  "generated_at": "2026-09-20T18:31"
 }

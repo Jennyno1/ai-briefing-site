@@ -1,0 +1,260 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""从 content-research 日报 Markdown 生成站点 JSON 与 manifest。
+
+输出结构与 data/*.json 现有 schema 保持一致（见 briefing.schema.json）：
+  { date, version, points, tracks[{key,emoji,name,news,insights,actions}],
+    github[{repo,url,stars,note}], consensus{text,quotes}, division{text,quotes},
+    reading[{title,url,source}], format }
+
+用法：
+  python3 build_site_data.py                      # 解析 md → <out>/{date}.json + <out>/manifest.json
+  python3 build_site_data.py --manifest-only      # 仅据 <out>/*.json 重建 manifest.json
+  python3 build_site_data.py --md-dir DIR --out DIR
+
+已知局限（详见 README「未完成项」）：
+  * 早期简报格式（用 **加粗** 当赛道标题、无 "## " 标题层级）解析不完整，解析不到的条目跳过并警告。
+  * sources.count / items_count 等由采集管线统计的字段无法从 md 还原，不写入。
+  * version 从页脚正则提取，提取不到则为空字符串。
+"""
+
+import argparse
+import json
+import re
+import sys
+from pathlib import Path
+
+TRACK_KEYS = {
+    "AI产业技术": "ai_tech",
+    "企业AI应用": "enterprise_ai",
+    "内容创作": "content_creation",
+}
+TRACK_EMOJI = {"ai_tech": "❶", "enterprise_ai": "❷", "content_creation": "❸"}
+LINK_RE = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
+VERSION_RE = re.compile(r"v\d+\.\d+\.\d+")
+
+SUB_SECTIONS = {
+    "最新动态": "news",
+    "洞察发现": "insights",
+    "落地行动": "actions",
+    "行动": "actions",
+}
+
+
+def clean_bullet(line):
+    """去掉行首的编号/项目符号前缀。"""
+    line = line.strip()
+    # 中文/常见符号 bullet
+    line = re.sub(r"^[▸•·●◆▶\-]\s*", "", line)
+    # 有序编号：1. 2. ① 1、
+    line = re.sub(r"^\d+[\.、\)]\s*", "", line)
+    line = re.sub(r"^[①②③④⑤⑥⑦⑧⑨⑩]\s*", "", line)
+    return line.strip()
+
+
+def clean_marker(line, marker):
+    """去掉行首的加粗标记（如 **🔵 共识解读** ），返回正文。"""
+    return re.sub(r"^\*{1,2}[^*]*?\*{1,2}\s*", "", line).strip()
+
+
+def find_track_name(line):
+    for name in TRACK_KEYS:
+        if name in line:
+            return name
+    return None
+
+
+def parse_md(text, date=""):
+    data = {
+        "date": date,
+        "version": "",
+        "points": [],
+        "tracks": [],
+        "github": [],
+        "consensus": {"text": "", "quotes": []},
+        "division": {"text": "", "quotes": []},
+        "reading": [],
+        "format": "summary",
+    }
+
+    m = VERSION_RE.search(text)
+    if m:
+        data["version"] = m.group(0)
+
+    tracks = {}
+    cur_track = None      # 当前赛道 name（中文）
+    cur_sub = None        # 当前子区：points/news/insights/actions/consensus/division/reading/github
+    mode = None           # 高层区块模式
+
+    for raw in text.splitlines():
+        line = raw.strip()
+        if not line:
+            continue
+
+        # 高层区块切换
+        if "推荐阅读" in line:
+            mode, cur_sub, cur_track = "reading", "reading", None
+            continue
+        if re.search(r"Github\s*推荐", line, re.IGNORECASE):
+            mode, cur_sub, cur_track = "github", "github", None
+            continue
+        if "最大共识与分歧" in line or "共识" in line and "分歧" in line:
+            mode, cur_track = "viewpoint", None
+            cur_sub = None
+            continue
+
+        # 共识/分歧正文
+        if mode == "viewpoint":
+            if "共识解读" in line:
+                cur_sub = "consensus"
+                data["consensus"]["text"] = clean_marker(line, "共识解读")
+                continue
+            if "分歧解读" in line:
+                cur_sub = "division"
+                data["division"]["text"] = clean_marker(line, "分歧解读")
+                continue
+            if line.startswith("▸") and "引用" in line and cur_sub in ("consensus", "division"):
+                data[cur_sub]["quotes"].append(clean_bullet(line).split("：", 1)[-1].strip())
+                continue
+            continue
+
+        # 赛道标题
+        name = find_track_name(line)
+        if name is not None and "要点" not in line:
+            mode = "track"
+            cur_track = name
+            cur_sub = None
+            if name not in tracks:
+                tracks[name] = {
+                    "key": TRACK_KEYS[name],
+                    "emoji": TRACK_EMOJI[TRACK_KEYS[name]],
+                    "name": name,
+                    "news": [],
+                    "insights": [],
+                    "actions": [],
+                }
+            continue
+
+        # 要点区
+        if ("要点" in line and ("今天" in line or "🎯" in line or "今日" in line)):
+            mode, cur_track = "points", None
+            cur_sub = "points"
+            continue
+
+        # 子区标题
+        sub = next((SUB_SECTIONS[k] for k in SUB_SECTIONS if k in line), None)
+        if sub and cur_track:
+            cur_sub = sub
+            continue
+
+        # 逐条收集
+        content = clean_bullet(line)
+        if not content:
+            continue
+
+        if cur_sub == "points":
+            data["points"].append(content)
+        elif cur_track and cur_sub in ("news", "insights", "actions"):
+            tracks[cur_track][cur_sub].append(content)
+        elif cur_sub == "reading":
+            lm = LINK_RE.search(content)
+            if lm:
+                title, url = lm.group(1), lm.group(2)
+                source = content.split("—", 1)[-1].strip() if "—" in content else ""
+                data["reading"].append({"title": title, "url": url, "source": source})
+        elif cur_sub == "github":
+            lm = LINK_RE.search(content)
+            if lm:
+                repo, url = lm.group(1), lm.group(2)
+                stars = None
+                sm = re.search(r"⭐\s*([\d,]+)", content)
+                if sm:
+                    stars = int(sm.group(1).replace(",", ""))
+                note = content.split("—", 1)[-1].strip() if "—" in content else ""
+                data["github"].append({"repo": repo, "url": url, "stars": stars, "note": note})
+
+    # 只保留有内容的赛道；按固定顺序输出三条
+    ordered = []
+    for name in ("AI产业技术", "企业AI应用", "内容创作"):
+        if name in tracks and (tracks[name]["news"] or tracks[name]["insights"] or tracks[name]["actions"]):
+            ordered.append(tracks[name])
+    data["tracks"] = ordered
+
+    # 保留固定的三条占位（即使某条为空，也保持三条结构），避免站点分组缺失
+    return data
+
+
+def date_from_filename(path):
+    m = re.search(r"(\d{4}-\d{2}-\d{2})", path.name)
+    return m.group(1) if m else ""
+
+
+def build_from_md(md_dir, out_dir):
+    md_dir = Path(md_dir)
+    out_dir = Path(out_dir)
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    count = 0
+    for md_path in sorted(md_dir.glob("content-research-*.md")):
+        date = date_from_filename(md_path)
+        if not date:
+            print(f"[skip] 无法从文件名提取日期: {md_path.name}", file=sys.stderr)
+            continue
+        try:
+            data = parse_md(md_path.read_text(encoding="utf-8"), date)
+        except Exception as e:  # noqa: BLE001
+            print(f"[skip] 解析失败 {md_path.name}: {e}", file=sys.stderr)
+            continue
+        if not data["points"] and not data["tracks"]:
+            print(f"[warn] {md_path.name} 解析结果为空（可能是早期格式）", file=sys.stderr)
+        out_path = out_dir / f"{date}.json"
+        out_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+        count += 1
+
+    print(f"已生成 {count} 个日期 JSON → {out_dir}")
+    write_manifest(out_dir)
+
+
+def write_manifest(out_dir):
+    """清单只收录【有内容】的日期。
+
+    为什么：早期简报（**加粗**当赛道标题那种格式）解析不出来，会生成内容为空的 JSON。
+    若把它们也列进清单，前端点进去就是一张空白页 —— 宁可不在列表里出现。
+    """
+    out_dir = Path(out_dir)
+    dates, skipped = [], []
+    for p in sorted(out_dir.glob("*.json")):
+        if p.name == "manifest.json":
+            continue
+        try:
+            data = json.loads(p.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            skipped.append(p.stem)
+            continue
+        has_content = bool(data.get("points")) or any(
+            (t.get("news") or t.get("insights") or t.get("actions"))
+            for t in data.get("tracks", [])
+        )
+        (dates.append(p.stem) if has_content else skipped.append(p.stem))
+    dates.sort()
+    manifest = out_dir / "manifest.json"
+    manifest.write_text(json.dumps(dates, ensure_ascii=False, indent=2), encoding="utf-8")
+    tail = f"，跳过 {len(skipped)} 个空解析日期：{skipped}" if skipped else ""
+    print(f"manifest.json → {len(dates)} 个有内容的日期{tail}")
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("--md-dir", default="../", help="content-research-*.md 所在目录")
+    ap.add_argument("--out", default="data", help="JSON 输出目录（相对或绝对）")
+    ap.add_argument("--manifest-only", action="store_true", help="仅重建 manifest.json，不解析 md")
+    args = ap.parse_args()
+
+    if args.manifest_only:
+        write_manifest(args.out)
+        return
+    build_from_md(args.md_dir, args.out)
+
+
+if __name__ == "__main__":
+    main()

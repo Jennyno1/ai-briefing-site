@@ -40,7 +40,7 @@
       ],
       "actions": [
         "Astra的进展可以写一篇\"AI花$2000破解了10道人类几十年做不出的数学题，PM怎么看？\"——不讨论数学本身，聚焦AI能力边界正在被重新定义，对企业IT决策者意味着什么。",
-        "Stateless MCP降低了Agent部署门槛，对自建 Agent 系统这类自部署方案是利好。关注Simon Willison的mcp-explorer工具，看是否能简化我自建 Agent 系统的工具集成流程。"
+        "Stateless MCP降低了Agent部署门槛，对Hermes这类自部署方案是利好。关注Simon Willison的mcp-explorer工具，看是否能简化Hermes的工具集成流程。"
       ]
     },
     {
@@ -93,5 +93,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-20T18:11"
+  "generated_at": "2026-09-20T18:31"
 }

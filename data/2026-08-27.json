@@ -92,18 +92,16 @@
     }
   ],
   "consensus": {
-    "text": "",
+    "text": "AI产品形态正从\"对话界面\"转向\"能力平台\"",
     "quotes": [
-      "**",
       "Lovable推出MCP-powered Capabilities（Latent Space）",
       "Anthropic Claude Platform Skills API正式发布GA（TechCrunch AI）",
       "OpenAI发布ChatGPT Work Apple Messages插件（OpenAI官方）"
     ]
   },
   "division": {
-    "text": "",
+    "text": "开源vs闭源的商业模式之争升级——开源模型在企业场景已证明性价比 但前沿能力仍依赖闭源投入",
     "quotes": [
-      "**",
       "AT&T披露40%员工AI使用已路由至开源模型（Latent Space AINews）",
       "NVIDIA以$120亿反向收购Poolside AI（Latent Space）",
       "Hugging Face拒绝NVIDIA $5亿投资 现以$130亿估值洽谈收购（TechCrunch M&A）"
@@ -111,5 +109,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-20T18:11"
+  "generated_at": "2026-09-20T18:31"
 }

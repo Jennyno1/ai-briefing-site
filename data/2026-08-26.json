@@ -94,18 +94,16 @@
     }
   ],
   "consensus": {
-    "text": "",
+    "text": "AI办公从个人效率工具升级为组织级基础设施——嵌入工作流比堆叠新功能更具战略价值",
     "quotes": [
-      "**",
       "OpenAI发布ChatGPT Work和Codex的Admin插件（OpenAI官方）",
       "豆包工作打通飞书后Agent可直接读取团队文档和组织关系（36氪实测）",
       "Gamma收购AI设计公司Lica建立研究实验室（TechCrunch AI）"
     ]
   },
   "division": {
-    "text": "",
+    "text": "AI芯片自研vs采购路线之争从成本升级为战略控制权——自研意味着全栈掌控但也意味着巨大前期投入",
     "quotes": [
-      "**",
       "OpenAI Jalapeño芯片每瓦吞吐量是GB300的1.7倍（OpenAI官方）",
       "小米发布AI芯片全家桶覆盖手机/IoT/汽车（36氪热榜）",
       "英伟达首测Vera Rubin DeepSeek吞吐暴涨30倍（36氪热榜）"
@@ -113,5 +111,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-20T18:11"
+  "generated_at": "2026-09-20T18:31"
 }

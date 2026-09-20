@@ -105,18 +105,16 @@
     }
   ],
   "consensus": {
-    "text": "",
+    "text": "AI能力的阶跃式提升正在同时触发商业扩张与监管收紧的双轨加速，行业进入\"越强越紧\"的结构性周期。",
     "quotes": [
-      "**",
       "Anthropic发布Claude Opus 5和Sonnet 5，Agent和编码能力实现阶跃式提升（Anthropic官方）",
       "Sony Music和Warner起诉Anthropic，指控AI训练大规模侵犯音乐版权（TechCrunch AI）",
       "OpenAI、Anthropic、Google等100+公司联名呼吁防范流氓AI（TechCrunch AI）"
     ]
   },
   "division": {
-    "text": "",
+    "text": "AI开源权重公司成为资本最热收购标的，但\"免费分发+商业收购\"的模式存在根本性矛盾。",
     "quotes": [
-      "**",
       "NVIDIA据报以130亿美元收购Hugging Face，开源模型生态纳入芯片巨头版图（Latent Space）",
       "TechCrunch分析指出开源权重AI公司正成为硅谷最热门收购标的（TechCrunch AI）",
       "OpenAI发布Hugging Face事件回顾文章，阐述其对开源AI生态的立场（OpenAI官方）"
@@ -124,5 +122,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-20T18:11"
+  "generated_at": "2026-09-20T18:31"
 }

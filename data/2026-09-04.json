@@ -106,19 +106,22 @@
     }
   ],
   "consensus": {
-    "text": "",
+    "text": "AI产业正从模型能力竞赛转向基础设施控制权争夺，全栈生态整合成为头部公司的核心战略。 当模型性能趋同时，掌控模型托管、开发工具和数据源的能力成为真正的竞争壁垒——这标志着AI产业从\"谁的模型更强\"进入\"谁的生态更完整\"的阶段。",
     "quotes": [
-      "**",
       "NVIDIA以129亿美元收购Hugging Face，覆盖300万模型和1800万开发者（TechCrunch AI）",
       "OpenAI发布GPT-6 Astra并推出10亿美元Daybreak前沿防御计划（OpenAI官方）",
       "AWS发布Bedrock AgentCore迁移指南，构建Agent全生命周期管理基础设施（AWS AI Blog）"
     ]
   },
   "division": {
-    "text": "",
-    "quotes": []
+    "text": "AI模型的数据获取方式正面临根本性伦理分歧，隐私让渡与数据主权之间的张力尚无行业共识。 一方认为用户数据共享是模型进步的必要代价，另一方认为这实质上是将用户劳动成果货币化而未给予合理补偿——两种立场对应完全不同的监管框架和商业模式。",
+    "quotes": [
+      "Meta以95%折扣换取Muse Spark用户贡献提示词和输出数据（TechCrunch AI）",
+      "美国政府在版权案中支持AI训练数据使用的合理使用原则（TechCrunch AI）",
+      "OpenAI宣布终止与Cursor的合同，引发AI工具生态链的连锁反应（OpenAI官方）"
+    ]
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-20T18:11"
+  "generated_at": "2026-09-20T18:31"
 }

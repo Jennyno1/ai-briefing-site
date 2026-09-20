@@ -35,7 +35,7 @@
         "OpenAI发布企业AI落地指南，并上线ChatGPT Business高级席位。"
       ],
       "insights": [
-        "\"Skill→生产系统\"是企业Agent的核心拐点，与我自建 Agent 系统的skill体系同源——单点技能已过时，需要可编排可复用的生产级工作流。",
+        "\"Skill→生产系统\"是企业Agent的核心拐点，与Hermes的skill体系同源——单点技能已过时，需要可编排可复用的生产级工作流。",
         "腾讯AI开始\"算回报\"，标志大厂从烧钱抢模型转向验证AI商业闭环，企业采购会更看重ROI。"
       ],
       "actions": [
@@ -92,7 +92,7 @@
       "title": "Skill不够了，Agent需要拼\"生产系统\"",
       "url": "https://www.huxiu.com/article/4882713.html",
       "source": "",
-      "reason": "企业Agent从单点技能走向完整生产系统的拐点分析。与我自建 Agent 系统的skill体系同源，读完能对齐企业AI新叙事。"
+      "reason": "企业Agent从单点技能走向完整生产系统的拐点分析。与Hermes的skill体系同源，读完能对齐企业AI新叙事。"
     },
     {
       "title": "腾讯AI开始算回报：从增强旧业务，到寻找下一门新生意",
@@ -117,5 +117,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-20T18:11"
+  "generated_at": "2026-09-20T18:31"
 }

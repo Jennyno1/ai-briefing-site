@@ -134,8 +134,6 @@
     html += '<div class="date">' + esc(data.date || '') + '</div>';
     var metaBits = [];
     if (data.version) metaBits.push('<span class="badge">' + esc(data.version) + '</span>');
-    metaBits.push('<span class="badge badge-quiet">' + tracks.length + ' 条赛道</span>');
-    metaBits.push('<span class="badge badge-quiet">' + points.length + ' 条要点</span>');
     html += '<div class="meta">' + metaBits.join('') + '</div>';
     if (points.length) {
       html += '<ul class="points">' + points.map(function (p) { return '<li>' + esc(p) + '</li>'; }).join('') + '</ul>';

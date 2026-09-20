@@ -106,18 +106,16 @@
     }
   ],
   "consensus": {
-    "text": "",
+    "text": "AI推理透明度正面临结构性退化压力，性能提升与安全监控之间的张力已成为行业核心矛盾。 当模型厂商竞相提升推理能力时，更高效的内部处理机制天然会压缩思维链的可读性——这种\"越强越不透明\"的趋势正在倒逼安全社区从被动监控转向主动架构设计。",
     "quotes": [
-      "**",
       "OpenAI Astra采用不透明递归技术，安全专家警告可能引发架构竞赛（TechCrunch AI）",
       "Anthropic和Google DeepMind开始讨论该技术，行业同步推进趋势形成（The Verge AI）",
       "Redwood Research首席科学家称该技术可能成为AI安全/安全领域最糟糕的发展（TechCrunch AI）"
     ]
   },
   "division": {
-    "text": "",
+    "text": "AI安全市场的商业价值正在被重新定价，但安全产品的边界定义仍存在根本性分歧。 一方认为AI安全应聚焦模型层和推理层的防护，另一方认为代理间交互和工作流编排才是真正的风险敞口——两种视角对应完全不同的产品架构和市场定位。",
     "quotes": [
-      "**",
       "HiddenLayer获1亿美元融资，主打AI模型和代理运行时安全防护（TechCrunch AI）",
       "VentureBeat分析企业AI真正风险在于代理间的复杂交互而非自主性（VentureBeat）",
       "Gartner预测企业AI安全支出今年达28亿美元，同比增长83%（TechCrunch AI）"
@@ -125,5 +123,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-20T18:11"
+  "generated_at": "2026-09-20T18:31"
 }

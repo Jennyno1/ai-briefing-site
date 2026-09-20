@@ -105,18 +105,16 @@
     }
   ],
   "consensus": {
-    "text": "",
+    "text": "自进化AI研究的突破意味着模型可以持续自我优化，推理基础设施的规模化需求正加速增长。",
     "quotes": [
-      "**",
       "Anthropic研究员展示自进化AI在10个基准上自动提升性能（TechCrunch AI）",
       "Lambda获10亿美元债务融资采购NVIDIA芯片租赁给微软（TechCrunch AI）",
       "液冷赛道订单排到年底，浸没式液冷算力方舱投入运行（36氪快讯）"
     ]
   },
   "division": {
-    "text": "",
+    "text": "开源权重AI公司成为收购热点，但免费分发模型的商业模式存在根本矛盾。",
     "quotes": [
-      "**",
       "NVIDIA以130亿美元收购Hugging Face，开源模型生态纳入版图（TechCrunch M&A）",
       "Lambda获10亿美元融资采购NVIDIA芯片出租（TechCrunch AI）",
       "OpenAI自研推理芯片Jalapeño首批基准测试领先行业（OpenAI官方）"
@@ -124,5 +122,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-20T18:11"
+  "generated_at": "2026-09-20T18:31"
 }

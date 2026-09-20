@@ -106,18 +106,16 @@
     }
   ],
   "consensus": {
-    "text": "",
+    "text": "AI产业的竞争焦点正从\"模型能力上限\"转向\"部署效率与成本控制\"，谁能用更低成本让更多企业真正用上AI，谁就掌握下一阶段主动权。 无论是DeepSeek用Flash模型逼近Pro能力、Cognition用工程化变现AI编程、还是各大厂纷纷成立前置部署团队，都指向同一方向——模型本身的差异化正在缩小，落地能力成为新壁垒。",
     "quotes": [
-      "**",
       "DeepSeek V4.1 Flash以Flash定价瞄准Pro能力，向用户征询\"能否全面替换V4 Pro\"（36氪）",
       "Cognition年化收入从4.92亿增至9亿美元，同时年现金消耗可能达8亿美元（TechCrunch）",
       "Google Cloud与埃森哲成立千人FDE团队，追赶企业AI部署差距（TechCrunch）"
     ]
   },
   "division": {
-    "text": "",
+    "text": "AI产业的\"开放\"与\"控制\"正在形成新的结构性张力——收购开源平台的同时承诺保持开放，这一承诺的可信度取决于收购方的长期战略利益。 硬件巨头收购社区平台后承诺不强制绑定自家算力，但控制平台入口的做法与开源核心价值存在潜在冲突。",
     "quotes": [
-      "**",
       "NVIDIA以129亿美元收购Hugging Face，承诺保持开源开放（TechCrunch）",
       "Anthropic放弃60亿美元收购Decart交易（36氪快讯）",
       "Google FairWind项目为企业和政府提供主动网络防御（Google AI Blog）"
@@ -125,5 +123,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-20T18:11"
+  "generated_at": "2026-09-20T18:31"
 }

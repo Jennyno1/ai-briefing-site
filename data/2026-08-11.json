@@ -41,7 +41,7 @@
       ],
       "actions": [
         "企业AI部署中，将\"Agent浏览器\"纳入技术选型视野。如果企业内部有大量Web界面的遗留系统无法通过API集成，Kitesurf类工具可能是比逐个开发API更快的路径。",
-        "参考Rippling的ROI追踪思路，在自己的自建 Agent 系统 Agent使用统计中增加\"成本/任务\"维度，不只看token消耗量，更要算每个任务的实际花费——这是给领导汇报AI投入产出比的基础数据。"
+        "参考Rippling的ROI追踪思路，在自己的Hermes Agent使用统计中增加\"成本/任务\"维度，不只看token消耗量，更要算每个任务的实际花费——这是给领导汇报AI投入产出比的基础数据。"
       ]
     },
     {
@@ -86,7 +86,7 @@
       "stars": "28K",
       "track": "AI产业技术",
       "note": "设计师和工程师的Skill集合，可复用、可组合的Agent能力模块",
-      "why": "Skill生态的模块化趋势正在加速，这与我自建 Agent 系统的Skill体系设计理念一致"
+      "why": "Skill生态的模块化趋势正在加速，这与Hermes的Skill体系设计理念一致"
     }
   ],
   "reading": [
@@ -119,5 +119,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-20T18:11"
+  "generated_at": "2026-09-20T18:31"
 }

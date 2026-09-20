@@ -103,18 +103,16 @@
     }
   ],
   "consensus": {
-    "text": "",
+    "text": "AI行业的竞争焦点正从\"谁的模型更强\"转向\"谁能掌控从芯片到应用的全链条\"，垂直整合已成为头部玩家的共同选择。",
     "quotes": [
-      "**",
       "NVIDIA以130亿美元收购Hugging Face，将开源模型生态纳入版图（TechCrunch M&A）",
       "OpenAI自研推理芯片Jalapeño首批基准测试领先行业（OpenAI官方）",
       "a16z募集11亿美元硬件基金投向芯片和机器人基础设施（36氪快讯）"
     ]
   },
   "division": {
-    "text": "",
+    "text": "AI版权合规的边界在哪里——训练数据的\"合理使用\"与\"知识产权盗窃\"之间，法律定义仍是一片模糊地带。",
     "quotes": [
-      "**",
       "索尼音乐与华纳联合起诉Anthropic，指控其大规模非法使用版权音乐训练Claude（TechCrunch AI）",
       "Anthropic获得联邦法官裁定，特朗普政府将其列为供应链风险的做法违法（TechCrunch AI）",
       "OpenAI、Anthropic、Google等100多家公司联合呼吁加强AI网络安全防御（TechCrunch AI）"
@@ -122,5 +120,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-20T18:11"
+  "generated_at": "2026-09-20T18:31"
 }

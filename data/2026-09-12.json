@@ -103,18 +103,16 @@
     }
   ],
   "consensus": {
-    "text": "",
+    "text": "各AI公司的公开动作指向同一个底：现金流验证正在取代能力叙事，成为模型厂商必须回答的第一问。",
     "quotes": [
-      "**",
       "Moonshot定下20亿美元年营收目标（TechCrunch）",
       "OpenAI因Astra需求过旺暂停Pro订阅（TechCrunch）",
       "Pocket FM靠AI驱动营收翻倍至5亿美元年化（TechCrunch）"
     ]
   },
   "division": {
-    "text": "",
+    "text": "生成内容的发布门槛正被两套标准撕扯：一边用工商业化证明AI内容的价值，一边监管要求它先亮明身份才可信。",
     "quotes": [
-      "**",
       "网信办正式实施AI生成内容标识办法（36氪快讯）",
       "芒果AI长剧90万一集实现商业化盈利（虎嗅）",
       "银行Agent上岗已覆盖4200万小微经营者（量子位）"
@@ -122,5 +120,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-20T18:11"
+  "generated_at": "2026-09-20T18:31"
 }

@@ -40,7 +40,7 @@
       ],
       "actions": [
         "在库库AI企业版建办公试点：周报流程固化成模板，让Office Agent并行产出PPT草稿和Excel汇总，人工只做终审，跑两周统计工时再决定推广。",
-        "给自建 Agent 系统做成本体检：定时任务模型分层（简单摘要走快模型、复杂推理走强模型）+工具结果落盘缓存，目标压降基础任务成本30%。"
+        "给Hermes做成本体检：定时任务模型分层（简单摘要走快模型、复杂推理走强模型）+工具结果落盘缓存，目标压降基础任务成本30%。"
       ]
     },
     {
@@ -68,7 +68,7 @@
       "url": "https://github.com/jnMetaCode/superpowers-zh",
       "stars": "7.7K",
       "track": "企业AI应用",
-      "note": "superpowers（116K星）完整汉化+6个中国原创skills，兼容Claude Code / Copilot CLI 等",
+      "note": "superpowers（116K星）完整汉化+6个中国原创skills，兼容Claude Code/Copilot CLI/Hermes",
       "why": "中文用户直接获得AI编程技能库，可借鉴其组织方式沉淀自有skill"
     },
     {
@@ -118,5 +118,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-20T18:11"
+  "generated_at": "2026-09-20T18:31"
 }
