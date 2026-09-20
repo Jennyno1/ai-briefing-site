@@ -1,6 +1,6 @@
 {
   "date": "2026-08-26",
-  "version": "",
+  "format": "summary",
   "points": [
     "AI芯片军备白热化：OpenAI Jalapeño超英伟达GB300 小米发AI芯片全家桶",
     "AI办公Agent组织化：豆包工作打通飞书 OpenAI推Admin管理插件",
@@ -73,24 +73,6 @@
       "why": ""
     }
   ],
-  "consensus": {
-    "text": "",
-    "quotes": [
-      "**",
-      "OpenAI发布ChatGPT Work和Codex的Admin插件（OpenAI官方）",
-      "豆包工作打通飞书后Agent可直接读取团队文档和组织关系（36氪实测）",
-      "Gamma收购AI设计公司Lica建立研究实验室（TechCrunch AI）"
-    ]
-  },
-  "division": {
-    "text": "",
-    "quotes": [
-      "**",
-      "OpenAI Jalapeño芯片每瓦吞吐量是GB300的1.7倍（OpenAI官方）",
-      "小米发布AI芯片全家桶覆盖手机/IoT/汽车（36氪热榜）",
-      "英伟达首测Vera Rubin DeepSeek吞吐暴涨30倍（36氪热榜）"
-    ]
-  },
   "reading": [
     {
       "title": "实测豆包工作",
@@ -111,5 +93,25 @@
       "reason": "OpenAI自研推理芯片首秀 DeepSeek R1每瓦吞吐量是GB300的1.7倍"
     }
   ],
-  "format": "summary"
+  "consensus": {
+    "text": "",
+    "quotes": [
+      "**",
+      "OpenAI发布ChatGPT Work和Codex的Admin插件（OpenAI官方）",
+      "豆包工作打通飞书后Agent可直接读取团队文档和组织关系（36氪实测）",
+      "Gamma收购AI设计公司Lica建立研究实验室（TechCrunch AI）"
+    ]
+  },
+  "division": {
+    "text": "",
+    "quotes": [
+      "**",
+      "OpenAI Jalapeño芯片每瓦吞吐量是GB300的1.7倍（OpenAI官方）",
+      "小米发布AI芯片全家桶覆盖手机/IoT/汽车（36氪热榜）",
+      "英伟达首测Vera Rubin DeepSeek吞吐暴涨30倍（36氪热榜）"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-20T18:11"
 }

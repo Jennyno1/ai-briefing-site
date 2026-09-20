@@ -1,6 +1,6 @@
 {
   "date": "2026-08-06",
-  "version": "",
+  "format": "summary",
   "points": [
     "Jeff Dean等Google顶级AI研究者集体离职创业，Google AI人才地震震动硅谷",
     "Meta发布Muse Code企业级AI编程Agent，Google洽购Mechanize超15亿美元，巨头AI coding工具军备竞赛升级",
@@ -90,14 +90,6 @@
       "why": "代表了Agent从\"单次问答\"到\"项目管理\"的范式升级，值得关注其架构设计"
     }
   ],
-  "consensus": {
-    "text": "",
-    "quotes": []
-  },
-  "division": {
-    "text": "",
-    "quotes": []
-  },
   "reading": [
     {
       "title": "Jeff Dean and other top AI researchers are leaving Google to launch their own startup",
@@ -118,5 +110,15 @@
       "reason": "深度分析Kimi K3与DeepSeek V4在多模态能力上的差异根源——原生多模态架构vs后拼接方案。对理解国内大模型的技术路线选择和内容创作工具选型有直接参考价值。"
     }
   ],
-  "format": "summary"
+  "consensus": {
+    "text": "",
+    "quotes": []
+  },
+  "division": {
+    "text": "",
+    "quotes": []
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-20T18:11"
 }

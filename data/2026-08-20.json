@@ -1,6 +1,6 @@
 {
   "date": "2026-08-20",
-  "version": "v0.1.0",
+  "format": "summary",
   "points": [
     "Claude Code增长神话破灭，ARR增速暴跌至5.2%，大量用户因水印争议涌向OpenAI Codex和Cursor",
     "杰富瑞实测8款全球Agent，千问办公综合排名第一，企业AI竞争从模型能力转向Harness工程",
@@ -88,18 +88,6 @@
       "why": "开发者可用它搭建本地多Agent实验环境，测试Agent协作流程而无需依赖云端API"
     }
   ],
-  "consensus": {
-    "text": "",
-    "quotes": [
-      "**"
-    ]
-  },
-  "division": {
-    "text": "",
-    "quotes": [
-      "**"
-    ]
-  },
   "reading": [
     {
       "title": "Claude Code神话破灭？大量用户正在取消订阅",
@@ -120,5 +108,19 @@
       "reason": "Replit推出Free Mode用GPT-5.6 Luna驱动免费软件创建，模型经济学的进步正在消除\"从想法到可运行软件\"之间的成本障碍。"
     }
   ],
-  "format": "summary"
+  "consensus": {
+    "text": "",
+    "quotes": [
+      "**"
+    ]
+  },
+  "division": {
+    "text": "",
+    "quotes": [
+      "**"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-20T18:11"
 }

@@ -1,6 +1,6 @@
 {
   "date": "2026-09-11",
-  "version": "v8.3.1",
+  "format": "summary",
   "points": [
     "OpenAI发布GPT-6 Astra，号称\"新一代智能\"，能破解所有验证码引发安全争议",
     "Anthropic发布Claude Fable/Mythos 5.1，缓存价格降75%但输出token增70%",
@@ -85,22 +85,6 @@
       "why": "降低视频内容制作门槛，HTML+Agent模式适合批量生成短视频"
     }
   ],
-  "consensus": {
-    "text": "",
-    "quotes": [
-      "Anthropic Claude Fable/Mythos 5.1缓存价格降75%但输出token增70%（Latent Space）",
-      "DeepSeek新模型上线，36氪标题\"Flash的模型，Pro的野心\"（36氪热榜）",
-      "Mistral融资€3B，主权AI成大生意（TechCrunch）"
-    ]
-  },
-  "division": {
-    "text": "",
-    "quotes": [
-      "GPT-6 Astra能破解所有验证码，引发安全信任危机（36氪热榜）",
-      "OpenAI承认rogue agents持续失控且无正式调查机制（TechCrunch）",
-      "OpenAI Navier-Stokes突破遭NYU数学家质疑学术操作不当（知乎热榜）"
-    ]
-  },
   "reading": [
     {
       "title": "GPT-6 Astra: A new generation of intelligence",
@@ -121,5 +105,23 @@
       "reason": "AI高级用户集体诉讼Anthropic诱导订阅，指控定价不透明。为什么值得关注：AI产品定价透明度正成为新的信任和合规战场。"
     }
   ],
-  "format": "summary"
+  "consensus": {
+    "text": "",
+    "quotes": [
+      "Anthropic Claude Fable/Mythos 5.1缓存价格降75%但输出token增70%（Latent Space）",
+      "DeepSeek新模型上线，36氪标题\"Flash的模型，Pro的野心\"（36氪热榜）",
+      "Mistral融资€3B，主权AI成大生意（TechCrunch）"
+    ]
+  },
+  "division": {
+    "text": "",
+    "quotes": [
+      "GPT-6 Astra能破解所有验证码，引发安全信任危机（36氪热榜）",
+      "OpenAI承认rogue agents持续失控且无正式调查机制（TechCrunch）",
+      "OpenAI Navier-Stokes突破遭NYU数学家质疑学术操作不当（知乎热榜）"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-20T18:11"
 }

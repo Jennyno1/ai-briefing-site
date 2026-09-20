@@ -1,6 +1,6 @@
 {
   "date": "2026-08-27",
-  "version": "",
+  "format": "summary",
   "points": [
     "Hugging Face拟$130亿被收购 AI基础设施并购潮升级",
     "GLM-5.3 Flash开源 智谱\"牛来\"多模态模型确认",
@@ -71,24 +71,6 @@
       "why": "适合自建AI推理服务 降低API成本"
     }
   ],
-  "consensus": {
-    "text": "",
-    "quotes": [
-      "**",
-      "Lovable推出MCP-powered Capabilities（Latent Space）",
-      "Anthropic Claude Platform Skills API正式发布GA（TechCrunch AI）",
-      "OpenAI发布ChatGPT Work Apple Messages插件（OpenAI官方）"
-    ]
-  },
-  "division": {
-    "text": "",
-    "quotes": [
-      "**",
-      "AT&T披露40%员工AI使用已路由至开源模型（Latent Space AINews）",
-      "NVIDIA以$120亿反向收购Poolside AI（Latent Space）",
-      "Hugging Face拒绝NVIDIA $5亿投资 现以$130亿估值洽谈收购（TechCrunch M&A）"
-    ]
-  },
   "reading": [
     {
       "title": "Hugging Face reportedly in talks to be acquired for $13B",
@@ -109,5 +91,25 @@
       "reason": "NVIDIA以$120亿反向收购Poolside AI 创始人保留$10亿投资"
     }
   ],
-  "format": "summary"
+  "consensus": {
+    "text": "",
+    "quotes": [
+      "**",
+      "Lovable推出MCP-powered Capabilities（Latent Space）",
+      "Anthropic Claude Platform Skills API正式发布GA（TechCrunch AI）",
+      "OpenAI发布ChatGPT Work Apple Messages插件（OpenAI官方）"
+    ]
+  },
+  "division": {
+    "text": "",
+    "quotes": [
+      "**",
+      "AT&T披露40%员工AI使用已路由至开源模型（Latent Space AINews）",
+      "NVIDIA以$120亿反向收购Poolside AI（Latent Space）",
+      "Hugging Face拒绝NVIDIA $5亿投资 现以$130亿估值洽谈收购（TechCrunch M&A）"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-20T18:11"
 }

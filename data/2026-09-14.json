@@ -1,6 +1,6 @@
 {
   "date": "2026-09-14",
-  "version": "v8.3.1",
+  "format": "summary",
   "points": [
     "三大AI巨头罕见集体喊踩刹车，OpenAI奥特曼宣布今年不上市",
     "GPT-6 Astra刷穿FrontierMath Tier4，定价杠杆让问答成本降一个量级",
@@ -82,24 +82,6 @@
       "why": "覆盖内容创作者内容创作主战场的多媒体素材生成，一站式自建流水线"
     }
   ],
-  "consensus": {
-    "text": "",
-    "quotes": [
-      "**",
-      "Anthropic CEO公开呼吁踩刹车，强调前沿安全（TechCrunch）",
-      "Sam Altman称2026年上市不明智，主动转向安全生产节奏（The Verge）",
-      "GPT-6 Astra刷穿FrontierMath Tier4基准（量子位）"
-    ]
-  },
-  "division": {
-    "text": "",
-    "quotes": [
-      "**",
-      "Perplexity用Astra跑真实业务搜索管道（OpenAI）",
-      "Cognition用Astra自我 Devin测试自有代码（OpenAI）",
-      "Anthropic安全对齐存在缺陷但尚无解决方案（量子位）"
-    ]
-  },
   "reading": [
     {
       "title": "What's behind the AI industry's latest warnings of doom?",
@@ -120,5 +102,25 @@
       "reason": "K2.8在性能逼近K3的同时把百万上下文开放给所有用户。为什么值得关注：国产模型从比参数转向比开放度的典型样本，成本红利直接可用。"
     }
   ],
-  "format": "summary"
+  "consensus": {
+    "text": "",
+    "quotes": [
+      "**",
+      "Anthropic CEO公开呼吁踩刹车，强调前沿安全（TechCrunch）",
+      "Sam Altman称2026年上市不明智，主动转向安全生产节奏（The Verge）",
+      "GPT-6 Astra刷穿FrontierMath Tier4基准（量子位）"
+    ]
+  },
+  "division": {
+    "text": "",
+    "quotes": [
+      "**",
+      "Perplexity用Astra跑真实业务搜索管道（OpenAI）",
+      "Cognition用Astra自我 Devin测试自有代码（OpenAI）",
+      "Anthropic安全对齐存在缺陷但尚无解决方案（量子位）"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-20T18:11"
 }

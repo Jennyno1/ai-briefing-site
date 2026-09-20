@@ -1,6 +1,6 @@
 {
   "date": "2026-09-10",
-  "version": "v8.3.1",
+  "format": "summary",
   "points": [
     "DeepSeek V4.1 Flash限时内测上线，Flash定价瞄准Pro能力，AI模型竞争进入\"低价高能\"新阶段",
     "Cognition（Devin）以480亿美元估值融资20亿美元，AI编程赛道年化收入逼近9亿美元",
@@ -85,24 +85,6 @@
       "why": "降低短剧制作门槛，适合内容创作者低成本批量产出视觉内容"
     }
   ],
-  "consensus": {
-    "text": "",
-    "quotes": [
-      "**",
-      "DeepSeek V4.1 Flash以Flash定价瞄准Pro能力，向用户征询\"能否全面替换V4 Pro\"（36氪）",
-      "Cognition年化收入从4.92亿增至9亿美元，同时年现金消耗可能达8亿美元（TechCrunch）",
-      "Google Cloud与埃森哲成立千人FDE团队，追赶企业AI部署差距（TechCrunch）"
-    ]
-  },
-  "division": {
-    "text": "",
-    "quotes": [
-      "**",
-      "NVIDIA以129亿美元收购Hugging Face，承诺保持开源开放（TechCrunch）",
-      "Anthropic放弃60亿美元收购Decart交易（36氪快讯）",
-      "Google FairWind项目为企业和政府提供主动网络防御（Google AI Blog）"
-    ]
-  },
   "reading": [
     {
       "title": "Cognition hits $48B valuation, signaling investors believe AI coding is far from a winner-take-all market",
@@ -123,5 +105,25 @@
       "reason": "Google Cloud与埃森哲成立千人前置部署工程师团队，试图追赶企业AI部署差距。为什么值得关注：超算厂商正在从\"卖模型\"转向\"卖部署服务\"，这是万亿级市场的关键转型。"
     }
   ],
-  "format": "summary"
+  "consensus": {
+    "text": "",
+    "quotes": [
+      "**",
+      "DeepSeek V4.1 Flash以Flash定价瞄准Pro能力，向用户征询\"能否全面替换V4 Pro\"（36氪）",
+      "Cognition年化收入从4.92亿增至9亿美元，同时年现金消耗可能达8亿美元（TechCrunch）",
+      "Google Cloud与埃森哲成立千人FDE团队，追赶企业AI部署差距（TechCrunch）"
+    ]
+  },
+  "division": {
+    "text": "",
+    "quotes": [
+      "**",
+      "NVIDIA以129亿美元收购Hugging Face，承诺保持开源开放（TechCrunch）",
+      "Anthropic放弃60亿美元收购Decart交易（36氪快讯）",
+      "Google FairWind项目为企业和政府提供主动网络防御（Google AI Blog）"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-20T18:11"
 }

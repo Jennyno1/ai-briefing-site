@@ -1,6 +1,6 @@
 {
   "date": "2026-08-18",
-  "version": "",
+  "format": "summary",
   "points": [
     "虎嗅两篇文章同时戳中AI内容创作痛点——\"牛来\"活人感出圈 vs AI套话泛滥，\"手工痕迹\"正从短板变成流量溢价",
     "千问办公首发上线GLM-5.3与DeepSeek V4 Pro，苹果联合阿里训练\"中国特供\"AI模型，国内企业AI走向多模型+本地化路线",
@@ -88,14 +88,6 @@
       "why": "企业AI落地时模型选型、微调、推理部署的核心基础设施，支持从原型到生产的全链路"
     }
   ],
-  "consensus": {
-    "text": "",
-    "quotes": []
-  },
-  "division": {
-    "text": "",
-    "quotes": []
-  },
   "reading": [
     {
       "title": "AI automation startup Relay shuts down, staff joins Google's Chrome team",
@@ -116,5 +108,15 @@
       "reason": "SpaceX正式完成对Cursor母公司Anysphere的600亿美元收购交割。AI编程工具赛道的战略价值被重新定价。"
     }
   ],
-  "format": "summary"
+  "consensus": {
+    "text": "",
+    "quotes": []
+  },
+  "division": {
+    "text": "",
+    "quotes": []
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-20T18:11"
 }

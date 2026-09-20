@@ -1,6 +1,6 @@
 {
   "date": "2026-08-25",
-  "version": "",
+  "format": "summary",
   "points": [
     "AI视频生成进入\"可落地\"阶段：阿里Wan3.0支持30秒+文档输入，从demo级升级到生产线级",
     "AI办公赛道大整合：字节TRAE+扣子并入豆包推\"豆包工作\"，企业AI从分散工具走向统一品牌",
@@ -89,18 +89,6 @@
       "why": "企业构建内部知识库时，ragflow可替代昂贵的商业RAG方案，支持PDF/Word/Excel等多格式文档的自动解析和智能检索"
     }
   ],
-  "consensus": {
-    "text": "",
-    "quotes": [
-      "**"
-    ]
-  },
-  "division": {
-    "text": "",
-    "quotes": [
-      "**"
-    ]
-  },
   "reading": [
     {
       "title": "Hugging Face reportedly in talks to be acquired for $13B",
@@ -121,5 +109,19 @@
       "reason": "Poolside以$12B估值被NVIDIA\"反向收购\"：创始人留下拿$1B，109名员工获$6B。这是AI行业首次出现\"创始人留下、员工被买走\"的反向收购模式，揭示了顶级AI人才的天价估值逻辑。"
     }
   ],
-  "format": "summary"
+  "consensus": {
+    "text": "",
+    "quotes": [
+      "**"
+    ]
+  },
+  "division": {
+    "text": "",
+    "quotes": [
+      "**"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-20T18:11"
 }

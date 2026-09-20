@@ -1,6 +1,6 @@
 {
   "date": "2026-08-30",
-  "version": "",
+  "format": "summary",
   "points": [
     "OpenAI宣布11月12日彻底断供Cursor，SpaceX收购后连锁反应冲击整个AI编码工具生态",
     "索尼音乐与华纳起诉Anthropic侵权，指控其\"史上最大规模版权盗窃\"，单曲最高索赔15万美元",
@@ -82,24 +82,6 @@
       "why": "企业部署大模型时用TensorRT-LLM可显著降低推理成本，对自建GPU集群的团队有直接经济价值。"
     }
   ],
-  "consensus": {
-    "text": "",
-    "quotes": [
-      "**",
-      "NVIDIA以130亿美元收购Hugging Face，将开源模型生态纳入版图（TechCrunch M&A）",
-      "OpenAI自研推理芯片Jalapeño首批基准测试领先行业（OpenAI官方）",
-      "a16z募集11亿美元硬件基金投向芯片和机器人基础设施（36氪快讯）"
-    ]
-  },
-  "division": {
-    "text": "",
-    "quotes": [
-      "**",
-      "索尼音乐与华纳联合起诉Anthropic，指控其大规模非法使用版权音乐训练Claude（TechCrunch AI）",
-      "Anthropic获得联邦法官裁定，特朗普政府将其列为供应链风险的做法违法（TechCrunch AI）",
-      "OpenAI、Anthropic、Google等100多家公司联合呼吁加强AI网络安全防御（TechCrunch AI）"
-    ]
-  },
   "reading": [
     {
       "title": "Our decision on Cursor following its acquisition by SpaceX",
@@ -120,5 +102,25 @@
       "reason": "迪卡侬用Chronos-2在AWS上预测每周数万产品的跨洲需求，预测精度提升11-15个百分点，展示了时间序列基础模型在零售供应链中的规模化落地。"
     }
   ],
-  "format": "summary"
+  "consensus": {
+    "text": "",
+    "quotes": [
+      "**",
+      "NVIDIA以130亿美元收购Hugging Face，将开源模型生态纳入版图（TechCrunch M&A）",
+      "OpenAI自研推理芯片Jalapeño首批基准测试领先行业（OpenAI官方）",
+      "a16z募集11亿美元硬件基金投向芯片和机器人基础设施（36氪快讯）"
+    ]
+  },
+  "division": {
+    "text": "",
+    "quotes": [
+      "**",
+      "索尼音乐与华纳联合起诉Anthropic，指控其大规模非法使用版权音乐训练Claude（TechCrunch AI）",
+      "Anthropic获得联邦法官裁定，特朗普政府将其列为供应链风险的做法违法（TechCrunch AI）",
+      "OpenAI、Anthropic、Google等100多家公司联合呼吁加强AI网络安全防御（TechCrunch AI）"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-20T18:11"
 }

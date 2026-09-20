@@ -1,6 +1,6 @@
 {
   "date": "2026-08-16",
-  "version": "",
+  "format": "summary",
   "points": [
     "SpaceX正式完成600亿美元收购Cursor交割，Anthropic拟60亿美元买效率公司备战IPO——AI资本战进入白热化",
     "千问办公首发上线GLM-5.3与DeepSeek V4 Pro，企业办公Agent可自由切换三款国产旗舰",
@@ -88,14 +88,6 @@
       "why": "AI×游戏引擎工具链成熟信号，MCP生态向创意产业渗透"
     }
   ],
-  "consensus": {
-    "text": "",
-    "quotes": []
-  },
-  "division": {
-    "text": "",
-    "quotes": []
-  },
   "reading": [
     {
       "title": "SpaceX officially closes its Cursor acquisition",
@@ -116,5 +108,15 @@
       "reason": "Anthropic第二份Risk Report承认内部模型Model 2强于公开旗舰，误对齐风险上调。AI安全叙事与发布节奏脱钩的前沿观察。"
     }
   ],
-  "format": "summary"
+  "consensus": {
+    "text": "",
+    "quotes": []
+  },
+  "division": {
+    "text": "",
+    "quotes": []
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-20T18:11"
 }

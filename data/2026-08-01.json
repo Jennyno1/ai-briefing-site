@@ -1,6 +1,6 @@
 {
   "date": "2026-08-01",
-  "version": "",
+  "format": "summary",
   "points": [
     "DeepSeek V4-Flash正式版上线，Agent能力大幅跃升——仅靠后训练把Flash拉到接近三个月前Pro的水平",
     "平台反AI内容潮加速：Snapchat取消AI内容奖励、广电总局要求AI内容加标识、欧盟AI透明度法明天生效",
@@ -23,7 +23,7 @@
       ],
       "actions": [
         "AI行业联名信是本周最适合追的热点话题。可以写「六大AI巨头同时喊刹车，普通人应该恐慌还是放心？」的小红书笔记——不贩卖焦虑，从产业观察者角度解读信号含义。",
-        "Siri AI付费化趋势值得关注：苹果验证了「AI功能不是免费」的商业模式。如果微信/飞书/钉钉未来也推AI付费功能，Hermes这类自部署方案的价值会进一步凸显。"
+        "Siri AI付费化趋势值得关注：苹果验证了「AI功能不是免费」的商业模式。如果微信/飞书/钉钉未来也推AI付费功能，自建 Agent 系统这类自部署方案的价值会进一步凸显。"
       ]
     },
     {
@@ -62,14 +62,6 @@
     }
   ],
   "github": [],
-  "consensus": {
-    "text": "",
-    "quotes": []
-  },
-  "division": {
-    "text": "",
-    "quotes": []
-  },
   "reading": [
     {
       "title": "DeepSeek-V4-Flash正式版API公测上线",
@@ -90,5 +82,15 @@
       "reason": "Snapchat成为最新一家反AI内容的社交平台，取消AI生成视频的奖励机制。全球内容平台正在集体转向「真人优先」。"
     }
   ],
-  "format": "summary"
+  "consensus": {
+    "text": "",
+    "quotes": []
+  },
+  "division": {
+    "text": "",
+    "quotes": []
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-20T18:11"
 }

@@ -1,6 +1,6 @@
 {
   "date": "2026-08-10",
-  "version": "",
+  "format": "summary",
   "points": [
     "Token经济大刹车：亚马逊一个简单任务烧了180万美元Claude费用，Meta/微软/Uber纷纷给AI用量上锁——企业AI从\"能跑就行\"进入\"精打细算\"阶段",
     "苹果国行AI正式落地：Mac使用手册新增千问集成章节，Siri和写作工具直接调用Qwen，国行Apple智能进入实操阶段",
@@ -89,14 +89,6 @@
       "why": "在多模型混战的当下，这个工具帮你精准匹配\"我的机器能跑什么\"，降本增效第一站"
     }
   ],
-  "consensus": {
-    "text": "",
-    "quotes": []
-  },
-  "division": {
-    "text": "",
-    "quotes": []
-  },
   "reading": [
     {
       "title": "苹果国行AI突然发布，首次官宣牵手阿里，Mac用上千问了",
@@ -117,5 +109,15 @@
       "reason": "亚马逊一个简单任务烧掉180万美元Claude费用，Meta/Uber/微软纷纷给Token用量设上限。企业AI正从\"尽可能多用\"转向\"精打细算\"，Token预算管控成为刚需。"
     }
   ],
-  "format": "summary"
+  "consensus": {
+    "text": "",
+    "quotes": []
+  },
+  "division": {
+    "text": "",
+    "quotes": []
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-20T18:11"
 }

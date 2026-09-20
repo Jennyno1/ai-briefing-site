@@ -1,6 +1,6 @@
 {
   "date": "2026-08-24",
-  "version": "",
+  "format": "summary",
   "points": [
     "AI Agent从\"聊天框\"走向\"执行层\"：OpenAI全面开源Codex Harness，让开发者直接把Agent嵌入自有产品",
     "企业AI落地加速分化：WPS Comate百城AI智能体计划启动，OpenAI ChatGPT Ads扩展欧洲商业化",
@@ -90,18 +90,6 @@
       "why": "Mojo开源后企业可以用Python语法写高性能AI推理代码，对需要自部署模型或优化推理成本的技术团队有直接价值"
     }
   ],
-  "consensus": {
-    "text": "",
-    "quotes": [
-      "**"
-    ]
-  },
-  "division": {
-    "text": "",
-    "quotes": [
-      "**"
-    ]
-  },
   "reading": [
     {
       "title": "震撼，OpenAI全面开源Codex Harness",
@@ -122,5 +110,19 @@
       "reason": "一个匿名模型突然出现在多项基准测试中且表现优异，TechCrunch调查其身份未果。这标志着AI竞争进入\"隐身战\"阶段，未来可能有更多未知力量突然入场。"
     }
   ],
-  "format": "summary"
+  "consensus": {
+    "text": "",
+    "quotes": [
+      "**"
+    ]
+  },
+  "division": {
+    "text": "",
+    "quotes": [
+      "**"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-20T18:11"
 }

@@ -1,6 +1,6 @@
 {
   "date": "2026-09-16",
-  "version": "v8.4.1",
+  "format": "summary",
   "points": [
     "OpenAI成立对话式AI巨头联盟——OpenAI/Anthropic/Google已连续数周就AI安全对谈（TechCrunch confirmed)",
     "OpenAI考虑IPO前新一轮融资，估值目标1.2万亿美元；Sam Altman称2026年上市\"不明智\"（36氪/The Verge）",
@@ -89,22 +89,6 @@
       "why": "双模型兜底/分工的思路可直接借鉴到个人Agent的价格分层配置"
     }
   ],
-  "consensus": {
-    "text": "官方API基建的节奏整体在按\"工程化、可运维\"方向推进。本日OpenAI、AWS、Meta三家的一手动态高度一致：能力只是入场券，谁先把权限、审计、成本做成产品能力，谁才能留下企业客户，Agent的竞争焦点正在从\"会不会做事\"移到\"可不可以被管理\"。",
-    "quotes": [
-      "OpenAI发布Agents API与GPT-Live-1（OpenAI）",
-      "AWS AgentCore连发OAuth授权与生产监控文档（AWS AI Blog）",
-      "Meta让Agent接管WhatsApp Business售后流程（TechCrunch）"
-    ]
-  },
-  "division": {
-    "text": "关于AI风险治理的路径，寡头间给出针锋相对的方案。Anthropic/OpenAI阵营倾向准入与护栏建设；英伟达CEO代表算力阵营公开拒绝任何\"由同行决定安全\"的协调安排，政界也认为行业反应过度。双方都自称代表安全，分歧点其实是\"谁有资格制定规则\"。",
-    "quotes": [
-      "OpenAI/Anthropic/Google就安全协调连续数周对谈（TechCrunch）",
-      "英伟达CEO表态不需要外部AI监管（TechCrunch）",
-      "美国政界认为AI行业反应过度（The Verge）"
-    ]
-  },
   "reading": [
     {
       "title": "DeepSeek v4.1-Flash: 763B-P8B-D16B 新型因果Encoder–Decoder",
@@ -125,5 +109,23 @@
       "reason": "民调显示AI与数据中心在所有维度都不受欢迎，中期选举临近。为什么值得关注：解释了为什么监管博弈会加速，产业外部约束正在收紧。"
     }
   ],
-  "format": "summary"
+  "consensus": {
+    "text": "官方 API 基建的节奏整体在按「工程化、可运维」方向推进。当天三家云与模型厂商的一手动态高度一致：能力只是入场券，谁先把权限、审计、成本做成产品能力，谁才能留下企业客户——Agent 的竞争焦点正在从「会不会做事」移到「可不可以被管理」。",
+    "quotes": [
+      "OpenAI发布Agents API与GPT-Live-1（OpenAI）",
+      "AWS AgentCore连发OAuth授权与生产监控文档（AWS AI Blog）",
+      "Meta让Agent接管WhatsApp Business售后流程（TechCrunch）"
+    ]
+  },
+  "division": {
+    "text": "围绕 AI 风险治理的路径，巨头之间给出针锋相对的方案。模型阵营倾向先建准入与护栏；算力阵营的掌门人公开拒绝任何「由同行决定安全」的协调安排，政界也认为行业反应过度。双方都自称代表安全，分歧点其实是「谁有资格制定规则」。",
+    "quotes": [
+      "OpenAI/Anthropic/Google就安全协调连续数周对谈（TechCrunch）",
+      "英伟达CEO表态不需要外部AI监管（TechCrunch）",
+      "美国政界认为AI行业反应过度（The Verge）"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-20T18:13"
 }

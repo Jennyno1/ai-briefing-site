@@ -1,6 +1,6 @@
 {
   "date": "2026-08-11",
-  "version": "",
+  "format": "summary",
   "points": [
     "OpenAI连发两弹：GPT Image生图碾压DALL-E 2、GPT-6被曝10万亿参数8月发布，AI能力边界在生图和推理两个方向同时突破",
     "DeepMind四巨头同日离职，高层大换血；Codex与Claude Code负责人公开互撕——Agent赛道竞争烈度达到新高度",
@@ -41,7 +41,7 @@
       ],
       "actions": [
         "企业AI部署中，将\"Agent浏览器\"纳入技术选型视野。如果企业内部有大量Web界面的遗留系统无法通过API集成，Kitesurf类工具可能是比逐个开发API更快的路径。",
-        "参考Rippling的ROI追踪思路，在自己的Hermes Agent使用统计中增加\"成本/任务\"维度，不只看token消耗量，更要算每个任务的实际花费——这是给领导汇报AI投入产出比的基础数据。"
+        "参考Rippling的ROI追踪思路，在自己的自建 Agent 系统 Agent使用统计中增加\"成本/任务\"维度，不只看token消耗量，更要算每个任务的实际花费——这是给领导汇报AI投入产出比的基础数据。"
       ]
     },
     {
@@ -86,17 +86,9 @@
       "stars": "28K",
       "track": "AI产业技术",
       "note": "设计师和工程师的Skill集合，可复用、可组合的Agent能力模块",
-      "why": "Skill生态的模块化趋势正在加速，这与Hermes的Skill体系设计理念一致"
+      "why": "Skill生态的模块化趋势正在加速，这与我自建 Agent 系统的Skill体系设计理念一致"
     }
   ],
-  "consensus": {
-    "text": "",
-    "quotes": []
-  },
-  "division": {
-    "text": "",
-    "quotes": []
-  },
   "reading": [
     {
       "title": "OpenAI全新GPT Image突袭，碾压Image 2，塑料感终于消失",
@@ -117,5 +109,15 @@
       "reason": "第一个专为AI Agent设计的浏览器。如果说传统浏览器是人机交互的界面，Kitesurf就是Agent与Web交互的界面——这是一个新的基础设施品类。"
     }
   ],
-  "format": "summary"
+  "consensus": {
+    "text": "",
+    "quotes": []
+  },
+  "division": {
+    "text": "",
+    "quotes": []
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-20T18:11"
 }

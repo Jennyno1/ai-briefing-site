@@ -1,6 +1,6 @@
 {
   "date": "2026-09-17",
-  "version": "v8.4.1",
+  "format": "summary",
   "points": [
     "GPT-6 Sol曝光：奥特曼深夜发「🚢」暗示发布，API中已被发现内测（36氪）",
     "Anthropic把Claude聊天与Cowork合并为一个界面，并推出自有Docs和Slides对标Google（TechCrunch/The Verge）",
@@ -58,7 +58,7 @@
         "🟡弱信号：中文侧「AI翻车」话题上升（豆包选吉日被起诉、微信辟谣AI读聊天记录），公众对AI的信任边界快速具体化，做AI内容科普具有正当timing。"
       ],
       "actions": [
-        "公众号选题储备「AI工具信任三件套」：用Fyxer案例讲清微调、记忆、反馈闭环，配自己Hermes简报流水线的真实截图，做小白友好拆解。",
+        "公众号选题储备「AI工具信任三件套」：用Fyxer案例讲清微调、记忆、反馈闭环，配自己自建 Agent 系统简报流水线的真实截图，做小白友好拆解。",
         "--"
       ]
     }
@@ -89,23 +89,6 @@
       "why": "把选题-写作-分发做成开源流水线，可对照自建内容工作流"
     }
   ],
-  "consensus": {
-    "text": "Agent正在从「能力展示」进入「日常产品」。OpenAI的Data agent、Anthropic的Cowork合并、Google让任意Agent控制智能家居，三家不约而同把Agent嵌进普通用户每天都在用的产品里；配套的token成本优化（缓存省90%）、失败归因研究也在同步跟进，产业共识是「铺开来用」的阶段到了。",
-    "quotes": [
-      "Google开放Home MCP让AI Agent控制智能家居（TechCrunch）",
-      "Claude聊天与Cowork合并为一个界面（TechCrunch）",
-      "ChatGPT Work上线Data agent连接企业数据（OpenAI）",
-      "arXiv多篇长程Agent失败归因论文（arXiv）"
-    ]
-  },
-  "division": {
-    "text": "AI安全的「谁来当裁判」正面开裂。OpenAI与Anthropic主张在实验室内部嵌入安全评估员，第三方标准组织快速推出AEF-1试图建立独立审计；研究界与联合国方面则认为内部审计有利益冲突，呼吁外部监管与共同监督。双方都讲独立，分歧在于独立能不能由被审者自己供应。",
-    "quotes": [
-      "Anthropic与OpenAI拟嵌入内部安全评估员（TechCrunch）",
-      "AEF-1第三方评估标准出现，xAI/OpenAI/Anthropic参与（Latent Space）",
-      "联合国秘书长呼吁各国共同推进AI监管（IT之家）"
-    ]
-  },
   "reading": [
     {
       "title": "Optimizing cost and latency with Amazon Bedrock prompt caching",
@@ -126,5 +109,24 @@
       "reason": "Anthropic把生产力套件补齐。为什么值得关注：AI助手从聊天窗口走向办公全家桶的标志性一步，直接影响协同办公工具格局。"
     }
   ],
-  "format": "summary"
+  "consensus": {
+    "text": "Agent 正在从「能力展示」进入「日常产品」。当天三家头部厂商各自把 Agent 嵌进普通人每天都在用的界面里——数据分析工具、办公协作套件、智能家居入口，动作方向一致；配套的 token 成本优化（缓存命中带来的成本下降）与失败归因研究也在同步跟进，产业共识是「铺开来用」的阶段到了。",
+    "quotes": [
+      "Google开放Home MCP让AI Agent控制智能家居（TechCrunch）",
+      "Claude聊天与Cowork合并为一个界面（TechCrunch）",
+      "ChatGPT Work上线Data agent连接企业数据（OpenAI）",
+      "arXiv多篇长程Agent失败归因论文（arXiv）"
+    ]
+  },
+  "division": {
+    "text": "AI 安全的「谁来当裁判」正面开裂。头部模型厂商主张在实验室内部嵌入安全评估员，第三方标准组织则快速推出独立评估协议试图建立外部审计；研究界与国际组织则认为内部审计有利益冲突，呼吁外部监管与共同监督。双方都讲独立，分歧在于独立能不能由被审者自己供应。",
+    "quotes": [
+      "Anthropic与OpenAI拟嵌入内部安全评估员（TechCrunch）",
+      "AEF-1第三方评估标准出现，xAI/OpenAI/Anthropic参与（Latent Space）",
+      "联合国秘书长呼吁各国共同推进AI监管（IT之家）"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-20T18:13"
 }

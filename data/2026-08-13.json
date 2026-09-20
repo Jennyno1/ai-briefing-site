@@ -1,6 +1,6 @@
 {
   "date": "2026-08-13",
-  "version": "",
+  "format": "summary",
   "points": [
     "AI资本运作井喷：Cognition洽谈400亿美元估值、Lovable确认133亿估值再融4亿、Manus宣布独立运营",
     "DeepSeek V4 Pro正式版上线，多项测试对标Fable 5，国产大模型进入贴身肉搏",
@@ -35,7 +35,7 @@
         "OpenAI发布企业AI落地指南，并上线ChatGPT Business高级席位。"
       ],
       "insights": [
-        "\"Skill→生产系统\"是企业Agent的核心拐点，与Hermes的skill体系同源——单点技能已过时，需要可编排可复用的生产级工作流。",
+        "\"Skill→生产系统\"是企业Agent的核心拐点，与我自建 Agent 系统的skill体系同源——单点技能已过时，需要可编排可复用的生产级工作流。",
         "腾讯AI开始\"算回报\"，标志大厂从烧钱抢模型转向验证AI商业闭环，企业采购会更看重ROI。"
       ],
       "actions": [
@@ -87,20 +87,12 @@
       "why": "延续Agent浏览器赛道，企业级computer-use底座正在成型"
     }
   ],
-  "consensus": {
-    "text": "",
-    "quotes": []
-  },
-  "division": {
-    "text": "",
-    "quotes": []
-  },
   "reading": [
     {
       "title": "Skill不够了，Agent需要拼\"生产系统\"",
       "url": "https://www.huxiu.com/article/4882713.html",
       "source": "",
-      "reason": "企业Agent从单点技能走向完整生产系统的拐点分析。与Hermes的skill体系同源，读完能对齐企业AI新叙事。"
+      "reason": "企业Agent从单点技能走向完整生产系统的拐点分析。与我自建 Agent 系统的skill体系同源，读完能对齐企业AI新叙事。"
     },
     {
       "title": "腾讯AI开始算回报：从增强旧业务，到寻找下一门新生意",
@@ -115,5 +107,15 @@
       "reason": "Devin母公司Cognition洽谈400亿美元估值融资。AI Coding应用层估值天花板信号。"
     }
   ],
-  "format": "summary"
+  "consensus": {
+    "text": "",
+    "quotes": []
+  },
+  "division": {
+    "text": "",
+    "quotes": []
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-20T18:11"
 }

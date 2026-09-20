@@ -1,6 +1,6 @@
 {
   "date": "2026-08-15",
-  "version": "",
+  "format": "summary",
   "points": [
     "国产开源双响炮：智谱GLM-5.3登顶开源+Coding逼近Fable 5，阿里Qwen3.8-27B开源家用显卡可跑",
     "企业AI进入省钱模式：Writer降本50%、IBM×OpenAI共建咨询军团、百度库库AI办公MAU破2500万",
@@ -40,7 +40,7 @@
       ],
       "actions": [
         "在库库AI企业版建办公试点：周报流程固化成模板，让Office Agent并行产出PPT草稿和Excel汇总，人工只做终审，跑两周统计工时再决定推广。",
-        "给Hermes做成本体检：定时任务模型分层（简单摘要走快模型、复杂推理走强模型）+工具结果落盘缓存，目标压降基础任务成本30%。"
+        "给自建 Agent 系统做成本体检：定时任务模型分层（简单摘要走快模型、复杂推理走强模型）+工具结果落盘缓存，目标压降基础任务成本30%。"
       ]
     },
     {
@@ -68,7 +68,7 @@
       "url": "https://github.com/jnMetaCode/superpowers-zh",
       "stars": "7.7K",
       "track": "企业AI应用",
-      "note": "superpowers（116K星）完整汉化+6个中国原创skills，兼容Claude Code/Copilot CLI/Hermes",
+      "note": "superpowers（116K星）完整汉化+6个中国原创skills，兼容Claude Code / Copilot CLI 等",
       "why": "中文用户直接获得AI编程技能库，可借鉴其组织方式沉淀自有skill"
     },
     {
@@ -88,14 +88,6 @@
       "why": "展示Agent长期运行与自主编排的可能性，关注自主Agent基础设施方向"
     }
   ],
-  "consensus": {
-    "text": "",
-    "quotes": []
-  },
-  "division": {
-    "text": "",
-    "quotes": []
-  },
   "reading": [
     {
       "title": "Anthropic set AI agents loose on the same task. They started a turf war.",
@@ -116,5 +108,15 @@
       "reason": "GLM-5.3多项实测：可交付模拟游戏、12类漏洞全检出、无GPU时诚实标注UNVERIFIED。国产开源模型\"能交付、能验证\"的里程碑实测。"
     }
   ],
-  "format": "summary"
+  "consensus": {
+    "text": "",
+    "quotes": []
+  },
+  "division": {
+    "text": "",
+    "quotes": []
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-20T18:11"
 }

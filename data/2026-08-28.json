@@ -1,6 +1,6 @@
 {
   "date": "2026-08-28",
-  "version": "",
+  "format": "summary",
   "points": [
     "企业 GenAI 支出与 Agent 落地同步加速——风投数据显示年度支出达 370 亿美元、同比增长逾三倍，头部模型商与云厂商同步把「治理、编排、成本可控」做成平台级能力，而非单点功能。",
     "前沿模型密集更新：新的旗舰与高性价比模型同日发布，编码代理从内部工具走成独立产品线，自主执行度继续上探。",
@@ -86,18 +86,6 @@
       "why": "自建推理服务降低对云 API 的依赖，是落地「Agent 成本护栏」的底层杠杆。"
     }
   ],
-  "consensus": {
-    "text": "",
-    "quotes": [
-      "**"
-    ]
-  },
-  "division": {
-    "text": "",
-    "quotes": [
-      "**"
-    ]
-  },
   "reading": [
     {
       "title": "How Claude's text watermark works",
@@ -118,5 +106,19 @@
       "reason": "企业 GenAI 年度支出与采用全景，覆盖医疗、消费等行业渗透数据。价值判断：用一级市场视角校准你的内容选题与接单方向，比追热点更稳。"
     }
   ],
-  "format": "summary"
+  "consensus": {
+    "text": "",
+    "quotes": [
+      "**"
+    ]
+  },
+  "division": {
+    "text": "",
+    "quotes": [
+      "**"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-20T18:11"
 }

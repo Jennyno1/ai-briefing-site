@@ -1,6 +1,6 @@
 {
   "date": "2026-08-31",
-  "version": "",
+  "format": "summary",
   "points": [
     "Anthropic研究员展示自进化AI系统，10个失调基准上全部自动提升性能，AI自我改进迈出关键一步",
     "Lambda获10亿美元债务融资采购NVIDIA芯片租赁给微软，AI推理基础设施军备竞赛白热化"
@@ -84,24 +84,6 @@
       "why": "大规模部署时可将推理吞吐量提升3-5倍，显著降低GPU推理成本。"
     }
   ],
-  "consensus": {
-    "text": "",
-    "quotes": [
-      "**",
-      "Anthropic研究员展示自进化AI在10个基准上自动提升性能（TechCrunch AI）",
-      "Lambda获10亿美元债务融资采购NVIDIA芯片租赁给微软（TechCrunch AI）",
-      "液冷赛道订单排到年底，浸没式液冷算力方舱投入运行（36氪快讯）"
-    ]
-  },
-  "division": {
-    "text": "",
-    "quotes": [
-      "**",
-      "NVIDIA以130亿美元收购Hugging Face，开源模型生态纳入版图（TechCrunch M&A）",
-      "Lambda获10亿美元融资采购NVIDIA芯片出租（TechCrunch AI）",
-      "OpenAI自研推理芯片Jalapeño首批基准测试领先行业（OpenAI官方）"
-    ]
-  },
   "reading": [
     {
       "title": "The full stack behind abundant intelligence",
@@ -122,5 +104,25 @@
       "reason": "OpenAI自研推理芯片Jalapeño首批基准测试出炉，速度和能效领先行业。为什么值得关注：AI推理芯片从NVIDIA一家独大走向自研分化，OpenAI此举将重塑推理算力供应链格局。"
     }
   ],
-  "format": "summary"
+  "consensus": {
+    "text": "",
+    "quotes": [
+      "**",
+      "Anthropic研究员展示自进化AI在10个基准上自动提升性能（TechCrunch AI）",
+      "Lambda获10亿美元债务融资采购NVIDIA芯片租赁给微软（TechCrunch AI）",
+      "液冷赛道订单排到年底，浸没式液冷算力方舱投入运行（36氪快讯）"
+    ]
+  },
+  "division": {
+    "text": "",
+    "quotes": [
+      "**",
+      "NVIDIA以130亿美元收购Hugging Face，开源模型生态纳入版图（TechCrunch M&A）",
+      "Lambda获10亿美元融资采购NVIDIA芯片出租（TechCrunch AI）",
+      "OpenAI自研推理芯片Jalapeño首批基准测试领先行业（OpenAI官方）"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-20T18:11"
 }

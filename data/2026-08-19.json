@@ -1,6 +1,6 @@
 {
   "date": "2026-08-19",
-  "version": "",
+  "format": "summary",
   "points": [
     "阿里发布AI音乐模型HappyShrimp，OpenAI开放8400万美元Codex额度——AI内容创作工具从文本图像扩展到全品类",
     "阿里千问办公开源MyContext上下文基础设施，RingCentral全员AI编程验证企业效率跃升路径",
@@ -88,14 +88,6 @@
       "why": "AI内容创作者可低成本制作多语种配音和播客旁白"
     }
   ],
-  "consensus": {
-    "text": "",
-    "quotes": []
-  },
-  "division": {
-    "text": "",
-    "quotes": []
-  },
   "reading": [
     {
       "title": "Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+",
@@ -116,5 +108,15 @@
       "reason": "Amazon被曝摧毁稀有书籍用于AI训练，AI训练数据来源的伦理争议持续升温。"
     }
   ],
-  "format": "summary"
+  "consensus": {
+    "text": "",
+    "quotes": []
+  },
+  "division": {
+    "text": "",
+    "quotes": []
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-20T18:11"
 }

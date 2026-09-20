@@ -1,6 +1,6 @@
 {
   "date": "2026-08-17",
-  "version": "",
+  "format": "summary",
   "points": [
     "Stripe 70亿+美元收购 OpenRouter、Anthropic 营收暴涨14倍押注2万亿IPO——AI资本战火升级",
     "OpenAI 推 GPT-5.6 Sol Ultra 提速14倍，Google 开放 Gemini 水印移除，AI 工具路线之争白热化",
@@ -88,14 +88,6 @@
       "why": "本地多 Agent 系统性能调优的工程参考，产业技术向基础设施信号"
     }
   ],
-  "consensus": {
-    "text": "",
-    "quotes": []
-  },
-  "division": {
-    "text": "",
-    "quotes": []
-  },
   "reading": [
     {
       "title": "Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+",
@@ -116,5 +108,15 @@
       "reason": "Anthropic 承认内部 Model 2 强于公开旗舰，误对齐风险上调。AI 安全叙事与发布节奏脱钩的持续观察。"
     }
   ],
-  "format": "summary"
+  "consensus": {
+    "text": "",
+    "quotes": []
+  },
+  "division": {
+    "text": "",
+    "quotes": []
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-20T18:11"
 }

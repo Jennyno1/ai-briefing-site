@@ -1,6 +1,6 @@
 {
   "date": "2026-09-03",
-  "version": "",
+  "format": "summary",
   "points": [
     "OpenAI Astra新推理技术被安全专家警告可能导致AI推理不可监控",
     "HiddenLayer完成1亿美元B轮融资，企业AI安全市场规模预计今年达28亿美元",
@@ -85,24 +85,6 @@
       "why": "开源多模态创作工具集，可直接用于搭建AI辅助内容生产流水线"
     }
   ],
-  "consensus": {
-    "text": "",
-    "quotes": [
-      "**",
-      "OpenAI Astra采用不透明递归技术，安全专家警告可能引发架构竞赛（TechCrunch AI）",
-      "Anthropic和Google DeepMind开始讨论该技术，行业同步推进趋势形成（The Verge AI）",
-      "Redwood Research首席科学家称该技术可能成为AI安全/安全领域最糟糕的发展（TechCrunch AI）"
-    ]
-  },
-  "division": {
-    "text": "",
-    "quotes": [
-      "**",
-      "HiddenLayer获1亿美元融资，主打AI模型和代理运行时安全防护（TechCrunch AI）",
-      "VentureBeat分析企业AI真正风险在于代理间的复杂交互而非自主性（VentureBeat）",
-      "Gartner预测企业AI安全支出今年达28亿美元，同比增长83%（TechCrunch AI）"
-    ]
-  },
   "reading": [
     {
       "title": "OpenAI's new reasoning technique alarms AI safety experts",
@@ -123,5 +105,25 @@
       "reason": "纽约市宣布禁止高中生以下学生使用AI工具，成为美国主要城市中最严格的AI教育限制政策。为什么值得关注：AI教育政策的收紧预示着监管框架正在从\"鼓励探索\"转向\"分级管控\"，对AI产品面向C端用户的合规策略有直接影响。"
     }
   ],
-  "format": "summary"
+  "consensus": {
+    "text": "",
+    "quotes": [
+      "**",
+      "OpenAI Astra采用不透明递归技术，安全专家警告可能引发架构竞赛（TechCrunch AI）",
+      "Anthropic和Google DeepMind开始讨论该技术，行业同步推进趋势形成（The Verge AI）",
+      "Redwood Research首席科学家称该技术可能成为AI安全/安全领域最糟糕的发展（TechCrunch AI）"
+    ]
+  },
+  "division": {
+    "text": "",
+    "quotes": [
+      "**",
+      "HiddenLayer获1亿美元融资，主打AI模型和代理运行时安全防护（TechCrunch AI）",
+      "VentureBeat分析企业AI真正风险在于代理间的复杂交互而非自主性（VentureBeat）",
+      "Gartner预测企业AI安全支出今年达28亿美元，同比增长83%（TechCrunch AI）"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-20T18:11"
 }

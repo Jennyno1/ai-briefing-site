@@ -1,6 +1,6 @@
 {
   "date": "2026-09-12",
-  "version": "v8.3.1",
+  "format": "summary",
   "points": [
     "Meta消费级AI Agent Muse升至美国应用榜第二，生成式AI工具首次走进千万普通用户",
     "网信办正式实施《人工智能生成合成内容标识办法》，AI内容发布必须合规标注",
@@ -82,24 +82,6 @@
       "why": "跨平台桌面端+AI自动剪辑，适合产品带货短视频批量产出"
     }
   ],
-  "consensus": {
-    "text": "",
-    "quotes": [
-      "**",
-      "Moonshot定下20亿美元年营收目标（TechCrunch）",
-      "OpenAI因Astra需求过旺暂停Pro订阅（TechCrunch）",
-      "Pocket FM靠AI驱动营收翻倍至5亿美元年化（TechCrunch）"
-    ]
-  },
-  "division": {
-    "text": "",
-    "quotes": [
-      "**",
-      "网信办正式实施AI生成内容标识办法（36氪快讯）",
-      "芒果AI长剧90万一集实现商业化盈利（虎嗅）",
-      "银行Agent上岗已覆盖4200万小微经营者（量子位）"
-    ]
-  },
   "reading": [
     {
       "title": "Y Combinator’s Garry Tan wants US open-weight AI labs to ‘distill’ frontier models, too",
@@ -120,5 +102,25 @@
       "reason": "工具独角兽Miro以2022年估值一折的价格被收购。为什么值得关注：AI冲击下传统SaaS工具估值体系正在重定价。"
     }
   ],
-  "format": "summary"
+  "consensus": {
+    "text": "",
+    "quotes": [
+      "**",
+      "Moonshot定下20亿美元年营收目标（TechCrunch）",
+      "OpenAI因Astra需求过旺暂停Pro订阅（TechCrunch）",
+      "Pocket FM靠AI驱动营收翻倍至5亿美元年化（TechCrunch）"
+    ]
+  },
+  "division": {
+    "text": "",
+    "quotes": [
+      "**",
+      "网信办正式实施AI生成内容标识办法（36氪快讯）",
+      "芒果AI长剧90万一集实现商业化盈利（虎嗅）",
+      "银行Agent上岗已覆盖4200万小微经营者（量子位）"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-20T18:11"
 }

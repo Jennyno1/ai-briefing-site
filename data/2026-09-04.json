@@ -1,6 +1,6 @@
 {
   "date": "2026-09-04",
-  "version": "",
+  "format": "summary",
   "points": [
     "OpenAI正式发布GPT-6 Astra，首个达到Critical网络安全能力阈值的模型，同步推出10亿美元前沿防御计划",
     "NVIDIA确认以129亿美元收购Hugging Face，1800万开发者和300万模型生态纳入算力版图",
@@ -85,19 +85,6 @@
       "why": "AI内容创作从单点工具向完整管线演进的核心组件，可直接用于搭建自动化内容生产流水线"
     }
   ],
-  "consensus": {
-    "text": "",
-    "quotes": [
-      "**",
-      "NVIDIA以129亿美元收购Hugging Face，覆盖300万模型和1800万开发者（TechCrunch AI）",
-      "OpenAI发布GPT-6 Astra并推出10亿美元Daybreak前沿防御计划（OpenAI官方）",
-      "AWS发布Bedrock AgentCore迁移指南，构建Agent全生命周期管理基础设施（AWS AI Blog）"
-    ]
-  },
-  "division": {
-    "text": "",
-    "quotes": []
-  },
   "reading": [
     {
       "title": "GPT-6 Astra: an automated AI Engineer you can hire for <$6 an hour",
@@ -118,5 +105,20 @@
       "reason": "ChatGPT、Grok、Claude三大AI平台同步故障，超过12000份用户报告。为什么值得关注：AI基础设施的集中性风险正在从理论走向现实，企业AI部署需要考虑多平台冗余和离线降级方案。"
     }
   ],
-  "format": "summary"
+  "consensus": {
+    "text": "",
+    "quotes": [
+      "**",
+      "NVIDIA以129亿美元收购Hugging Face，覆盖300万模型和1800万开发者（TechCrunch AI）",
+      "OpenAI发布GPT-6 Astra并推出10亿美元Daybreak前沿防御计划（OpenAI官方）",
+      "AWS发布Bedrock AgentCore迁移指南，构建Agent全生命周期管理基础设施（AWS AI Blog）"
+    ]
+  },
+  "division": {
+    "text": "",
+    "quotes": []
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-20T18:11"
 }

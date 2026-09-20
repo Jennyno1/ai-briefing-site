@@ -45,6 +45,12 @@
       .replace(/'/g, '&#39;');
   }
 
+  // 只允许 http(s) 链接进入 href（挡 javascript:/data: 等伪协议）
+  function safeUrl(u) {
+    var s = String(u == null ? '' : u).trim();
+    return /^https?:\/\//i.test(s) ? s : '#';
+  }
+
   // 从文案末尾抽取「（来源）」尾注，拆成正文 + 来源
   function splitSource(text) {
     var m = /（([^（）]{1,60})）\s*$/.exec(text);
@@ -82,12 +88,12 @@
     if (!list.length) return '';
     var lis = list.map(function (r) {
       var title = r.url
-        ? '<a href="' + esc(r.url) + '" target="_blank" rel="noopener">' + esc(r.title) + '</a>'
+        ? '<a href="' + esc(safeUrl(r.url)) + '" target="_blank" rel="noopener">' + esc(r.title) + '</a>'
         : esc(r.title);
       var reason = (!isPlaceholder(r.reason)) ? '<p class="reason">' + esc(r.reason) + '</p>' : '';
       return '<li>' + title + (r.source ? ' <span class="src">— ' + esc(r.source) + '</span>' : '') + reason + '</li>';
     }).join('');
-    return '<section class="reading"><h3>推荐阅读</h3><ol>' + lis + '</ol></section>';
+    return '<section class="reading"><h2>推荐阅读</h2><ol>' + lis + '</ol></section>';
   }
 
   function githubHtml(github) {
@@ -100,9 +106,9 @@
       var track = (!isPlaceholder(g.track)) ? ' <span class="badge badge-quiet">' + esc(g.track) + '</span>' : '';
       var note = (!isPlaceholder(g.note)) ? '<p class="reason">' + esc(g.note) + '</p>' : '';
       var why = (!isPlaceholder(g.why)) ? '<p class="reason reason-why">落地：' + esc(g.why) + '</p>' : '';
-      return '<li><a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(name) + '</a>' + star + track + note + why + '</li>';
+      return '<li><a href="' + esc(safeUrl(u)) + '" target="_blank" rel="noopener">' + esc(name) + '</a>' + star + track + note + why + '</li>';
     }).join('');
-    return '<section class="reading"><h3>GitHub 项目推荐</h3><ol>' + lis + '</ol></section>';
+    return '<section class="reading"><h2>GitHub 项目推荐</h2><ol>' + lis + '</ol></section>';
   }
 
   function missingNotice(data) {
@@ -146,7 +152,7 @@
                  trackGroupHtml('洞察发现', 'insights', t.insights) +
                  trackGroupHtml('落地行动', 'actions', t.actions);
       if (!body) return;   // 该赛道本日无内容 → 整段不渲染
-      html += '<section class="track"><h3>' + emoji + esc(name) + '</h3>' + body + '</section>';
+      html += '<section class="track"><h2>' + emoji + esc(name) + '</h2>' + body + '</section>';
     });
 
     var vp = vpCard('consensus', '共识解读', data.consensus) + vpCard('division', '分歧解读', data.division);
@@ -163,7 +169,7 @@
     datesEl.innerHTML = dates.map(function (d) {
       var partial = gaps && gaps[d] ? ' partial' : '';
       var mark = partial ? '<span class="d-dot" title="该日数据板块不全">◦</span>' : '';
-      return '<li data-date="' + esc(d) + '" class="' + (d === activeDate ? 'active' : '') + partial + '">' +
+      return '<li data-date="' + esc(d) + '" tabindex="0" class="' + (d === activeDate ? 'active' : '') + partial + '">' +
         '<span>' + esc(d) + '</span>' + mark + '</li>';
     }).join('');
   }
@@ -245,11 +251,18 @@
     });
 
     document.addEventListener('keydown', function (e) {
+      // 日期项可键盘操作（li 带 tabindex="0"）：Enter / 空格 = 打开该日
+      var el = e.target;
+      if ((e.key === 'Enter' || e.key === ' ') && el && el.getAttribute && el.getAttribute('data-date')) {
+        e.preventDefault();
+        loadDate(el.getAttribute('data-date'));
+        return;
+      }
       if (e.key !== 'ArrowUp' && e.key !== 'ArrowDown') return;
       var cur = datesEl.querySelector('li.active');
       if (!cur) return;
       var i = dates.indexOf(cur.getAttribute('data-date'));
-      var next = e.key === 'ArrowUp' ? i + 1 : i - 1;   // 列表新→旧
+      var next = e.key === 'ArrowUp' ? i - 1 : i + 1;   // 列表自上而下=新→旧：↑ 更新，↓ 更早
       if (next >= 0 && next < dates.length) {
         e.preventDefault();
         loadDate(dates[next]);

@@ -1,6 +1,6 @@
 {
   "date": "2026-09-01",
-  "version": "",
+  "format": "summary",
   "points": [
     "Anthropic发布Claude Opus 5和Sonnet 5，号称推理和Agent能力实现阶跃式提升",
     "Sony Music和Warner起诉Anthropic，指控AI训练大规模侵犯音乐版权",
@@ -84,24 +84,6 @@
       "why": "可作为企业AI提效的零成本模型网关，测试不同模型在业务场景中的表现差异"
     }
   ],
-  "consensus": {
-    "text": "",
-    "quotes": [
-      "**",
-      "Anthropic发布Claude Opus 5和Sonnet 5，Agent和编码能力实现阶跃式提升（Anthropic官方）",
-      "Sony Music和Warner起诉Anthropic，指控AI训练大规模侵犯音乐版权（TechCrunch AI）",
-      "OpenAI、Anthropic、Google等100+公司联名呼吁防范流氓AI（TechCrunch AI）"
-    ]
-  },
-  "division": {
-    "text": "",
-    "quotes": [
-      "**",
-      "NVIDIA据报以130亿美元收购Hugging Face，开源模型生态纳入芯片巨头版图（Latent Space）",
-      "TechCrunch分析指出开源权重AI公司正成为硅谷最热门收购标的（TechCrunch AI）",
-      "OpenAI发布Hugging Face事件回顾文章，阐述其对开源AI生态的立场（OpenAI官方）"
-    ]
-  },
   "reading": [
     {
       "title": "The Making of Claude Code",
@@ -122,5 +104,25 @@
       "reason": "企业AI部署的真实风险不在单个Agent的能力，而在多Agent协同交互中产生的复杂性。为什么值得关注：企业AI从单Agent走向多Agent治理是必然趋势，提前理解复杂性来源有助于架构设计。"
     }
   ],
-  "format": "summary"
+  "consensus": {
+    "text": "",
+    "quotes": [
+      "**",
+      "Anthropic发布Claude Opus 5和Sonnet 5，Agent和编码能力实现阶跃式提升（Anthropic官方）",
+      "Sony Music和Warner起诉Anthropic，指控AI训练大规模侵犯音乐版权（TechCrunch AI）",
+      "OpenAI、Anthropic、Google等100+公司联名呼吁防范流氓AI（TechCrunch AI）"
+    ]
+  },
+  "division": {
+    "text": "",
+    "quotes": [
+      "**",
+      "NVIDIA据报以130亿美元收购Hugging Face，开源模型生态纳入芯片巨头版图（Latent Space）",
+      "TechCrunch分析指出开源权重AI公司正成为硅谷最热门收购标的（TechCrunch AI）",
+      "OpenAI发布Hugging Face事件回顾文章，阐述其对开源AI生态的立场（OpenAI官方）"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-20T18:11"
 }

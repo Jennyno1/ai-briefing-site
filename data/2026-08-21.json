@@ -1,6 +1,6 @@
 {
   "date": "2026-08-21",
-  "version": "",
+  "format": "summary",
   "points": [
     "AI 视频剪辑 agent 开源，长素材→短视频自动化进入意图驱动阶段",
     "企业 AI 进入\"成本治理\"阶段，模型路由层被大厂溢价收购",
@@ -91,18 +91,6 @@
       "why": ""
     }
   ],
-  "consensus": {
-    "text": "",
-    "quotes": [
-      "**"
-    ]
-  },
-  "division": {
-    "text": "",
-    "quotes": [
-      "**"
-    ]
-  },
   "reading": [
     {
       "title": "Ramp launches Router.com",
@@ -123,5 +111,19 @@
       "reason": "Z.ai CEO 提出\"后训练 Scaling Law\"——精调工程和 Harness 层才是差异化关键，开源团队可借此弯道超车。"
     }
   ],
-  "format": "summary"
+  "consensus": {
+    "text": "",
+    "quotes": [
+      "**"
+    ]
+  },
+  "division": {
+    "text": "",
+    "quotes": [
+      "**"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-20T18:11"
 }

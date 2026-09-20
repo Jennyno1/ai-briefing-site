@@ -1,6 +1,6 @@
 {
   "date": "2026-08-07",
-  "version": "",
+  "format": "summary",
   "points": [
     "ChatGPT打通Adobe全家桶，AI内容创作从\"构思\"到\"专业出图\"实现对话内闭环",
     "飞书并入豆包、千问整合办公，大厂B端AI从多产品赛马转为统一作战",
@@ -64,14 +64,6 @@
     }
   ],
   "github": [],
-  "consensus": {
-    "text": "",
-    "quotes": []
-  },
-  "division": {
-    "text": "",
-    "quotes": []
-  },
   "reading": [
     {
       "title": "飞书并入豆包、千问办公整合，大厂AI大战从\"赛马\"到\"合兵\"？",
@@ -92,5 +84,15 @@
       "reason": "Adobe与OpenAI扩大合作，ChatGPT新增调用Premiere/Acrobat/Lightroom等全套创意软件的能力。对内容创作者来说，\"AI构思→专业出图\"首次在单一对话中闭环完成。"
     }
   ],
-  "format": "summary"
+  "consensus": {
+    "text": "",
+    "quotes": []
+  },
+  "division": {
+    "text": "",
+    "quotes": []
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-20T18:11"
 }
