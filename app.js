@@ -1,12 +1,39 @@
 /* AI 简报 · 静态站渲染逻辑
- * 数据契约见 README.md；日期清单来自 data/manifest.json，单日数据来自 data/YYYY-MM-DD.json。
- * 纯 Vanilla JS，无第三方依赖，fetch 全部使用相对路径以适配 GitHub Pages 子路径部署。
+ * 数据契约：data/manifest.json（日期数组）+ data/YYYY-MM-DD.json（单日）
+ * 纯 Vanilla JS，无依赖；所有请求走相对路径以适配 GitHub Pages 子路径部署。
+ *
+ * 渲染约定（2026-09-20 重构）：
+ *   1. 占位符过滤：值为 "--" / "—" / "-" / "N/A" 的条目一律不渲染（历史数据里的占位符不再显示成一行内容）
+ *   2. 缺模块降级：某模块为空时**不报错、不显示空壳**，改在顶部提示「本日缺少哪些板块」
+ *   3. 状态可达：日期写进 URL hash，可直接分享/刷新某一天
  */
 (function () {
   'use strict';
 
-  const datesEl = document.getElementById('dates');
-  const briefingEl = document.getElementById('briefing');
+  var datesEl = document.getElementById('dates');
+  var briefingEl = document.getElementById('briefing');
+  var statDays = document.getElementById('stat-days');
+  var railCount = document.getElementById('rail-count');
+  var footerMeta = document.getElementById('footer-meta');
+  var themeBtn = document.getElementById('theme-toggle');
+
+  var MODULE_LABELS = {
+    points: '今日要点',
+    tracks: '赛道动态',
+    consensus: '最大共识',
+    division: '主要分歧',
+    reading: '推荐阅读',
+    github: 'GitHub 洞察'
+  };
+
+  var PLACEHOLDERS = ['--', '---', '—', '–', '-', '无', 'N/A', 'n/a', 'null'];
+
+  function isPlaceholder(v) {
+    if (v == null) return true;
+    var s = String(v).trim();
+    if (!s) return true;
+    return PLACEHOLDERS.indexOf(s) !== -1;
+  }
 
   function esc(s) {
     if (s == null) return '';
@@ -20,144 +47,211 @@
 
   // 从文案末尾抽取「（来源）」尾注，拆成正文 + 来源
   function splitSource(text) {
-    const m = /（([^（）]*)）\s*$/.exec(text);
+    var m = /（([^（）]{1,60})）\s*$/.exec(text);
     if (m) return { body: text.slice(0, m.index).trim(), source: m[1].trim() };
     return { body: text, source: '' };
   }
 
-  function trackGroupHtml(label, items) {
-    if (!items || !items.length) return '';
-    const itemsHtml = items.map(function (it) {
-      const parts = splitSource(it);
-      const meta = parts.source
-        ? '<div class="item-meta">来源：' + esc(parts.source) + '</div>'
-        : '';
+  function cleanList(list) {
+    return (Array.isArray(list) ? list : []).filter(function (x) { return !isPlaceholder(x); });
+  }
+
+  function trackGroupHtml(label, kind, items) {
+    var list = cleanList(items);
+    if (!list.length) return '';
+    var itemsHtml = list.map(function (it) {
+      var parts = splitSource(String(it));
+      var meta = parts.source ? '<div class="item-meta">来源：' + esc(parts.source) + '</div>' : '';
       return '<div class="item"><div class="item-body">' + esc(parts.body) + '</div>' + meta + '</div>';
     }).join('');
-    return '<div class="group"><div class="group-title">' + esc(label) + '</div>' + itemsHtml + '</div>';
+    return '<div class="group" data-kind="' + kind + '"><div class="group-title">' + esc(label) + '</div>' + itemsHtml + '</div>';
   }
 
   function vpCard(kind, title, vp) {
-    if (!vp || !vp.text) return '';
-    const quotes = (vp.quotes && vp.quotes.length)
-      ? '<ul>' + vp.quotes.map(function (q) { return '<li>' + esc(q) + '</li>'; }).join('') + '</ul>'
+    if (!vp || isPlaceholder(vp.text)) return '';
+    var quotes = cleanList(vp.quotes);
+    var quotesHtml = quotes.length
+      ? '<ul>' + quotes.map(function (q) { return '<li>' + esc(q) + '</li>'; }).join('') + '</ul>'
       : '';
     return '<div class="vp-card vp-' + kind + '"><h4>' + esc(title) + '</h4>' +
-      '<div class="vp-text">' + esc(vp.text) + '</div>' + quotes + '</div>';
+      '<div class="vp-text">' + esc(vp.text) + '</div>' + quotesHtml + '</div>';
+  }
+
+  function readingHtml(reading) {
+    var list = (Array.isArray(reading) ? reading : []).filter(function (r) { return r && !isPlaceholder(r.title); });
+    if (!list.length) return '';
+    var lis = list.map(function (r) {
+      var title = r.url
+        ? '<a href="' + esc(r.url) + '" target="_blank" rel="noopener">' + esc(r.title) + '</a>'
+        : esc(r.title);
+      return '<li>' + title + (r.source ? ' <span class="src">— ' + esc(r.source) + '</span>' : '') + '</li>';
+    }).join('');
+    return '<section class="reading"><h3>推荐阅读</h3><ol>' + lis + '</ol></section>';
+  }
+
+  function githubHtml(github) {
+    var list = (Array.isArray(github) ? github : []).filter(function (g) { return g && (g.repo || g.url); });
+    if (!list.length) return '';
+    var lis = list.map(function (g) {
+      var u = g.url || ('https://github.com/' + g.repo);
+      var name = g.repo || g.url;
+      var star = (g.stars != null && g.stars !== '') ? ' <span class="src">⭐' + esc(g.stars) + '</span>' : '';
+      var note = (g.note && !isPlaceholder(g.note)) ? ' <span class="src">— ' + esc(g.note) + '</span>' : '';
+      return '<li><a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(name) + '</a>' + star + note + '</li>';
+    }).join('');
+    return '<section class="reading"><h3>GitHub 项目洞察</h3><ol>' + lis + '</ol></section>';
+  }
+
+  function missingNotice(data) {
+    var missing = [];
+    if (!cleanList(data.points).length) missing.push(MODULE_LABELS.points);
+    if (!(Array.isArray(data.tracks) ? data.tracks : []).some(function (t) {
+      return cleanList(t && t.news).length || cleanList(t && t.insights).length || cleanList(t && t.actions).length;
+    })) missing.push(MODULE_LABELS.tracks);
+    if (!(data.consensus && !isPlaceholder(data.consensus.text))) missing.push(MODULE_LABELS.consensus);
+    if (!(data.division && !isPlaceholder(data.division.text))) missing.push(MODULE_LABELS.division);
+    if (!cleanList(data.reading).length) missing.push(MODULE_LABELS.reading);
+    if (!missing.length) return '';
+    return '<div class="notice">本日数据缺少板块：' + esc(missing.join('、')) +
+      '（早期简报格式与当前不一致，已按现有内容渲染）</div>';
   }
 
   function renderBriefing(data) {
-    const date = data.date || '';
-    const version = data.version || '';
-    const points = data.points || [];
-    const tracks = data.tracks || [];
-    const consensus = data.consensus;
-    const division = data.division;
-    const reading = data.reading || [];
-    const github = data.github || [];
+    var points = cleanList(data.points);
+    var tracks = Array.isArray(data.tracks) ? data.tracks : [];
 
-    let html = '';
-
-    // 头部：日期 + 版本 + 今日要点
-    html += '<div class="brief-head"><div class="date">' + esc(date) + '</div>';
-    if (version) html += '<div class="meta">' + esc(version) + '</div>';
+    var html = '<div class="brief-head">';
+    html += '<div class="date">' + esc(data.date || '') + '</div>';
+    var metaBits = [];
+    if (data.version) metaBits.push('<span class="badge">' + esc(data.version) + '</span>');
+    metaBits.push('<span class="badge badge-quiet">' + tracks.length + ' 条赛道</span>');
+    metaBits.push('<span class="badge badge-quiet">' + points.length + ' 条要点</span>');
+    html += '<div class="meta">' + metaBits.join('') + '</div>';
     if (points.length) {
-      html += '<ul class="points">' +
-        points.map(function (p) { return '<li>' + esc(p) + '</li>'; }).join('') +
-        '</ul>';
+      html += '<ul class="points">' + points.map(function (p) { return '<li>' + esc(p) + '</li>'; }).join('') + '</ul>';
     }
     html += '</div>';
 
-    // 三条赛道：赛道名以 JSON 实际字段 name 为准，按 news/insights/actions 分组
+    html += missingNotice(data);
+
     tracks.forEach(function (t) {
-      const name = t.name || t.key || '';
-      const emoji = t.emoji ? esc(t.emoji) + ' ' : '';
-      html += '<section class="track"><h3>' + emoji + esc(name) + '</h3>';
-      html += trackGroupHtml('最新动态', t.news);
-      html += trackGroupHtml('洞察发现', t.insights);
-      html += trackGroupHtml('落地行动', t.actions);
-      html += '</section>';
+      if (!t) return;
+      var name = t.name || t.key || '';
+      var emoji = t.emoji ? esc(t.emoji) + ' ' : '';
+      var body = trackGroupHtml('最新动态', 'news', t.news) +
+                 trackGroupHtml('洞察发现', 'insights', t.insights) +
+                 trackGroupHtml('落地行动', 'actions', t.actions);
+      if (!body) return;   // 该赛道本日无内容 → 整段不渲染
+      html += '<section class="track"><h3>' + emoji + esc(name) + '</h3>' + body + '</section>';
     });
 
-    // 最大共识与分歧
-    const vp = vpCard('consensus', '🔵 共识解读', consensus) +
-               vpCard('division', '🔴 分歧解读', division);
+    var vp = vpCard('consensus', '共识解读', data.consensus) + vpCard('division', '分歧解读', data.division);
     if (vp) html += '<div class="viewpoint">' + vp + '</div>';
 
-    // 推荐阅读（标题 / 原文链接 / 来源）
-    if (reading.length) {
-      html += '<section class="reading"><h3>📖 推荐阅读</h3><ol>';
-      reading.forEach(function (r) {
-        const title = r.url
-          ? '<a href="' + esc(r.url) + '" target="_blank" rel="noopener">' + esc(r.title) + '</a>'
-          : esc(r.title);
-        html += '<li>' + title + (r.source ? ' <span class="src">— ' + esc(r.source) + '</span>' : '') + '</li>';
-      });
-      html += '</ol></section>';
-    }
-
-    // GitHub 推荐
-    if (github.length) {
-      html += '<section class="reading"><h3>⭐ GitHub 推荐</h3><ol>';
-      github.forEach(function (g) {
-        const u = g.url || ('https://github.com/' + g.repo);
-        const star = (g.stars != null) ? ' ⭐' + g.stars : '';
-        html += '<li><a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(g.repo) + '</a>' + star +
-          (g.note ? ' <span class="src">— ' + esc(g.note) + '</span>' : '') + '</li>';
-      });
-      html += '</ol></section>';
-    }
+    html += readingHtml(data.reading);
+    html += githubHtml(data.github);
 
     briefingEl.innerHTML = html;
+    document.title = (data.date ? data.date + ' · ' : '') + 'AI 简报';
   }
 
-  function renderDates(dates, activeDate) {
+  function renderDates(dates, activeDate, gaps) {
     datesEl.innerHTML = dates.map(function (d) {
-      return '<li data-date="' + esc(d) + '" class="' + (d === activeDate ? 'active' : '') + '">' + esc(d) + '</li>';
+      var partial = gaps && gaps[d] ? ' partial' : '';
+      var mark = partial ? '<span class="d-dot" title="该日数据板块不全">◦</span>' : '';
+      return '<li data-date="' + esc(d) + '" class="' + (d === activeDate ? 'active' : '') + partial + '">' +
+        '<span>' + esc(d) + '</span>' + mark + '</li>';
     }).join('');
   }
 
+  function setActive(date) {
+    Array.prototype.forEach.call(datesEl.children, function (c) {
+      c.classList.toggle('active', c.getAttribute('data-date') === date);
+    });
+  }
+
   async function loadDate(date) {
-    briefingEl.innerHTML = '<p class="loading">正在加载 ' + esc(date) + ' 简报…</p>';
+    briefingEl.innerHTML = '<p class="state">正在加载 ' + esc(date) + ' 简报…</p>';
     try {
-      const res = await fetch('data/' + date + '.json');
+      var res = await fetch('data/' + date + '.json', { cache: 'no-cache' });
       if (!res.ok) throw new Error('HTTP ' + res.status);
-      renderBriefing(await res.json());
+      var data = await res.json();
+      data.date = data.date || date;
+      renderBriefing(data);
+      setActive(date);
+      if (location.hash.slice(1) !== date) history.replaceState(null, '', '#' + date);
     } catch (err) {
-      briefingEl.innerHTML = '<p class="loading">加载失败：' + esc(err.message) + '</p>';
+      briefingEl.innerHTML = '<p class="state">加载失败：' + esc(err.message) + '</p>';
     }
   }
 
+  /* ---- 主题：默认跟随系统，手动切换后记住 -------------------------------- */
+  function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    try { localStorage.setItem('ai-briefing-theme', theme); } catch (e) {}
+  }
+  (function initTheme() {
+    var saved = null;
+    try { saved = localStorage.getItem('ai-briefing-theme'); } catch (e) {}
+    if (saved) { applyTheme(saved); return; }
+    var prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+    applyTheme(prefersLight ? 'light' : 'dark');
+  })();
+  if (themeBtn) {
+    themeBtn.addEventListener('click', function () {
+      var now = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      applyTheme(now);
+    });
+  }
+
   async function init() {
-    let dates = [];
+    var dates = [];
     try {
-      const res = await fetch('data/manifest.json');
+      var res = await fetch('data/manifest.json', { cache: 'no-cache' });
       if (!res.ok) throw new Error('HTTP ' + res.status);
-      dates = (await res.json()).slice().sort().reverse(); // ISO 日期字符串，倒序
+      dates = (await res.json()).slice().sort().reverse();
     } catch (err) {
-      datesEl.innerHTML = '<li class="loading">日期加载失败</li>';
-      briefingEl.innerHTML = '<p class="loading">无法加载日期清单（data/manifest.json）：' + esc(err.message) + '</p>';
+      datesEl.innerHTML = '<li class="state">日期加载失败</li>';
+      briefingEl.innerHTML = '<p class="state">无法加载日期清单（data/manifest.json）：' + esc(err.message) + '</p>';
       return;
     }
-
     if (!dates.length) {
-      briefingEl.innerHTML = '<p class="loading">日期清单为空</p>';
+      briefingEl.innerHTML = '<p class="state">日期清单为空</p>';
       return;
     }
 
-    renderDates(dates, dates[0]);
+    if (statDays) statDays.textContent = dates.length + ' 天';
+    if (railCount) railCount.textContent = dates.length + ' 期';
+    if (footerMeta) footerMeta.textContent = ' 数据区间：' + dates[dates.length - 1] + ' → ' + dates[0] + '。';
 
-    // 事件委托：点选日期
+    var hash = decodeURIComponent(location.hash.slice(1));
+    var active = dates.indexOf(hash) !== -1 ? hash : dates[0];
+    renderDates(dates, active);
+    await loadDate(active);
+
     datesEl.addEventListener('click', function (e) {
-      const li = e.target.closest('li[data-date]');
+      var li = e.target.closest('li[data-date]');
       if (!li) return;
-      const d = li.getAttribute('data-date');
-      Array.prototype.forEach.call(datesEl.children, function (c) { c.classList.remove('active'); });
-      li.classList.add('active');
-      loadDate(d);
+      loadDate(li.getAttribute('data-date'));
     });
 
-    await loadDate(dates[0]); // 默认最新一天
+    window.addEventListener('hashchange', function () {
+      var d = decodeURIComponent(location.hash.slice(1));
+      if (dates.indexOf(d) !== -1) loadDate(d);
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key !== 'ArrowUp' && e.key !== 'ArrowDown') return;
+      var cur = datesEl.querySelector('li.active');
+      if (!cur) return;
+      var i = dates.indexOf(cur.getAttribute('data-date'));
+      var next = e.key === 'ArrowUp' ? i + 1 : i - 1;   // 列表新→旧
+      if (next >= 0 && next < dates.length) {
+        e.preventDefault();
+        loadDate(dates[next]);
+        datesEl.querySelector('li.active').scrollIntoView({ block: 'nearest' });
+      }
+    });
   }
 
   init();

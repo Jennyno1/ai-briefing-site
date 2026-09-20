@@ -1,30 +1,51 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-theme="dark">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI 简报 · 每日内容研究</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 简报 · 每日 AI 动态按赛道分组</title>
+<meta name="description" content="按赛道分组的每日 AI 动态：AI 产业技术 / 企业 AI 应用 / 内容创作，另含最大共识与分歧、推荐阅读、GitHub 项目洞察。">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site-header">
-  <h1>🤖 AI 简报</h1>
-  <p class="subtitle">每日内容研究 · 三赛道 · 纯静态站</p>
+<a class="skip-link" href="#briefing">跳到正文</a>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="./">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text">AI 简报</span>
+    </a>
+    <div class="topbar-actions">
+      <span class="badge badge-quiet" id="stat-days">—</span>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="切换主题" title="切换明暗主题">
+        <span class="icon-btn-glyph" aria-hidden="true">◐</span>
+      </button>
+    </div>
+  </div>
 </header>
 
-<main class="layout">
-  <aside class="date-list">
-    <h2>📅 日期</h2>
-    <ul id="dates"><li class="loading">加载中…</li></ul>
+<div class="shell">
+  <aside class="rail" aria-label="日期导航">
+    <div class="rail-head">
+      <span class="eyebrow">历史日期</span>
+      <span class="rail-count" id="rail-count"></span>
+    </div>
+    <nav>
+      <ul id="dates" class="date-list"></ul>
+    </nav>
   </aside>
 
-  <section id="briefing" class="briefing">
-    <p class="loading">正在加载简报数据…</p>
-  </section>
-</main>
+  <main id="briefing" class="content" tabindex="-1">
+    <p class="state state-loading">正在加载简报…</p>
+  </main>
+</div>
 
-<footer class="site-footer">
-  <p>数据来自本地 JSON（<code>data/</code>），无后端、无密钥。仅展示标题、结论、原文链接与来源，不存正文。</p>
+<footer class="footer">
+  <p>
+    数据来源：本地采集 + 生成流水线，脱敏后发布。仅代表信息聚合，不构成投资建议。
+    <span id="footer-meta"></span>
+  </p>
 </footer>
 
 <script src="app.js"></script>
