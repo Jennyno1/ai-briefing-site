@@ -1,0 +1,80 @@
+{
+  "date": "2026-07-24",
+  "version": "",
+  "points": [],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "AMD承诺向Anthropic投资50亿美元，AI芯片初创Etched估值103亿美元",
+        "OpenAI推出ChatGPT Health向全美用户开放，AI从\"生产力工具\"扩展到\"生活方式工具\"",
+        "三大AI公司（OpenAI/Anthropic/Google）包揽IMO数学竞赛满分"
+      ],
+      "insights": [
+        "AMD+Anthropic组合挑战Nvidia+OpenAI生态格局，硬件竞争变数比模型层面更大",
+        "ChatGPT Health切入医疗垂直领域，AI正从通用走向专用"
+      ],
+      "actions": [
+        "AI基础设施选型关注AMD生态，2027年性价比可能给Nvidia带来压力",
+        "ChatGPT Health发布后可做「AI医生vs真人医生」对比内容",
+        "绑定一个生态（阿里/腾讯/字节），不要自己做通用AI"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "Kimi K3还有4天开源，虎嗅报道称美国人\"真急眼了\"，K3性能已达国际第一梯队",
+        "硅谷Coding Agent Demo Night展示agent不仅能写代码还能读代码理解项目上下文",
+        "Google Gemini接近10亿用户里程碑，AI竞争从\"技术军备\"转向\"用户规模+开源生态\"双线竞争"
+      ],
+      "insights": [
+        "K3开源后企业可私有化部署高性能模型，不再依赖海外API",
+        "Coding Agent能读代码意味着非技术管理者需重新理解开发流程"
+      ],
+      "actions": [
+        "K3开源后测试私有化部署，先做文档智能处理场景试点",
+        "规划团队引入coding agent后的开发流程改造",
+        "留意Google Gemini的办公场景渗透"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "Runway推出AI模型路由器，自动根据任务类型路由到最优模型，解决\"该用哪个模型\"的选择困难",
+        "Product Hunt今日上新15个AI工具（OpenCode Superapp、AI Eyes等），AI创作工具从\"一个工具干所有事\"变成\"多个专业工具组合工作流\"",
+        "Claude语音模式正式上线Opus和Sonnet，语音输入比打字快3-4倍"
+      ],
+      "insights": [
+        "AI创作的核心瓶颈从\"工具不够用\"变成\"工具太多不知道该用哪个\"，模型路由器+工具爆发两个信号叠加说明创作工作流即将被重构"
+      ],
+      "actions": [
+        "用Runway模型路由器做批量化视频生成，输入素材图后可自动适配最佳模型生成不同风格视频再统一分发",
+        "尝试口述工作流，用Claude语音口述想法后AI转文字润色再生成配图发布",
+        "将Product Hunt作为日常扫源渠道，每天查看新AI工具上线"
+      ]
+    }
+  ],
+  "github": [],
+  "consensus": {
+    "text": "",
+    "quotes": []
+  },
+  "division": {
+    "text": "",
+    "quotes": []
+  },
+  "reading": [
+    {
+      "title": "Runway launches AI model router as generative media gets crowded",
+      "url": "https://techcrunch.com/2026/07/23/runway-ai-model-router",
+      "source": "TechCrunch"
+    }
+  ],
+  "format": "summary"
+}

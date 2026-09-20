@@ -1,0 +1,63 @@
+{
+  "date": "2026-07-07",
+  "version": "",
+  "points": [],
+  "tracks": [],
+  "github": [],
+  "consensus": {
+    "text": "",
+    "quotes": []
+  },
+  "division": {
+    "text": "",
+    "quotes": []
+  },
+  "reading": [
+    {
+      "title": "How agents are transforming work",
+      "url": "https://openai.com/index/how-agents-are-transforming-work",
+      "source": "OpenAI"
+    },
+    {
+      "title": "ScarfBench: Benchmarking AI Agents for Enterprise Java Framework Migration",
+      "url": "https://huggingface.co/blog/scarfbench",
+      "source": "HuggingFace"
+    },
+    {
+      "title": "llm-coding-agent 0.1a0",
+      "url": "https://simonwillison.net/2026/Jul/6/llm-coding-agent/",
+      "source": "Simon Willison"
+    },
+    {
+      "title": "Why agents are a new kind of software",
+      "url": "https://www.latent.space/p/vercel-agents-new-software",
+      "source": "Latent Space (Vercel Andrew Qu)"
+    },
+    {
+      "title": "Why Specialization Is Inevitable",
+      "url": "https://huggingface.co/blog/specialization",
+      "source": "HuggingFace"
+    },
+    {
+      "title": "google-gemini/gemini-cli",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "source": ""
+    },
+    {
+      "title": "Graphify-Labs/graphify",
+      "url": "https://github.com/Graphify-Labs/graphify",
+      "source": ""
+    },
+    {
+      "title": "esengine/DeepSeek-Reasonix",
+      "url": "https://github.com/esengine/DeepSeek-Reasonix",
+      "source": ""
+    },
+    {
+      "title": "can1357/oh-my-pi",
+      "url": "https://github.com/can1357/oh-my-pi",
+      "source": ""
+    }
+  ],
+  "format": "summary"
+}

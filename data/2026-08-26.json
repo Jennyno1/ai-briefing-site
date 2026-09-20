@@ -1,0 +1,45 @@
+{
+  "date": "2026-08-26",
+  "version": "",
+  "points": [
+    "AI芯片军备白热化：OpenAI Jalapeño超英伟达GB300 小米发AI芯片全家桶",
+    "AI办公Agent组织化：豆包工作打通飞书 OpenAI推Admin管理插件",
+    "AI创作资本涌入：Stability AI获$76M参投 Gamma收购AI设计公司Lica"
+  ],
+  "tracks": [],
+  "github": [],
+  "consensus": {
+    "text": "## 🔵 共识解读",
+    "quotes": [
+      "OpenAI发布ChatGPT Work和Codex的Admin插件（OpenAI官方）",
+      "豆包工作打通飞书后Agent可直接读取团队文档和组织关系（36氪实测）",
+      "Gamma收购AI设计公司Lica建立研究实验室（TechCrunch AI）"
+    ]
+  },
+  "division": {
+    "text": "## 🔴 分歧解读",
+    "quotes": [
+      "OpenAI Jalapeño芯片每瓦吞吐量是GB300的1.7倍（OpenAI官方）",
+      "小米发布AI芯片全家桶覆盖手机/IoT/汽车（36氪热榜）",
+      "英伟达首测Vera Rubin DeepSeek吞吐暴涨30倍（36氪热榜）"
+    ]
+  },
+  "reading": [
+    {
+      "title": "实测豆包工作",
+      "url": "https://www.36kr.com/p/3954390879222917",
+      "source": "36氪"
+    },
+    {
+      "title": "Stability AI raises $76M",
+      "url": "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding/",
+      "source": "TechCrunch"
+    },
+    {
+      "title": "Jalapeño's first results",
+      "url": "https://openai.com/index/jalapeno-first-results",
+      "source": "OpenAI"
+    }
+  ],
+  "format": "summary"
+}

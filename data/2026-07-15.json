@@ -1,0 +1,33 @@
+{
+  "date": "2026-07-15",
+  "version": "",
+  "points": [],
+  "tracks": [],
+  "github": [],
+  "consensus": {
+    "text": "",
+    "quotes": []
+  },
+  "division": {
+    "text": "",
+    "quotes": []
+  },
+  "reading": [
+    {
+      "title": "Mistral Vibe vs Claude Code vs Cursor vs Codex: Four Agents Scored on One Task",
+      "url": "https://www.marktechpost.com/2026/07/14/mistral-vibe-for-code-vs-claude-code-vs-cursor-vs-codex-four",
+      "source": "MarkTechPost"
+    },
+    {
+      "title": "Intent Clusters Guide AI Product Discovery",
+      "url": "https://www.practicalecommerce.com/intent-clusters-guide-ai-product-discovery",
+      "source": "Practical Ecommerce"
+    },
+    {
+      "title": "Using Local Coding Agents",
+      "url": "https://magazine.sebastianraschka.com/p/using-local-coding-agents",
+      "source": "Ahead of AI (Raschka)"
+    }
+  ],
+  "format": "summary"
+}

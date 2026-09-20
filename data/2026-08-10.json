@@ -1,0 +1,84 @@
+{
+  "date": "2026-08-10",
+  "version": "",
+  "points": [
+    "Token经济大刹车：亚马逊一个简单任务烧了180万美元Claude费用，Meta/微软/Uber纷纷给AI用量上锁——企业AI从\"能跑就行\"进入\"精打细算\"阶段",
+    "苹果国行AI正式落地：Mac使用手册新增千问集成章节，Siri和写作工具直接调用Qwen，国行Apple智能进入实操阶段",
+    "Anthropic将Claude Code auto模式设为默认，OpenAI ChatGPT Work深度拆解曝光——Agent产品从\"尝鲜\"走向\"十亿用户默认体验\""
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "AMD收购AI芯片公司Taalas，进一步加码AI芯片赛道。此前Taalas专注基于LLM的芯片设计自动化，AMD此举意在强化对英伟达CUDA生态的替代能力。",
+        "OpenAI暂缓代号Astra的新模型发布，原因是其在关键网络攻击能力评估中表现\"过于强大\"。这是OpenAI首次以\"能力过强\"为由叫停模型发布。",
+        "阿里Qwen 3.8 Max（2.4T参数）和27B版本发布，Latent Space报道其Coding和Cowork能力突出。Artificial Analysis榜单此前已将Qwen 3.8 Agentic能力评为全球第一。",
+        "摩尔线程上半年营收增长147%，S5000智算集群实现规模化销售，同时筹划H股上市——国产GPU从\"能用\"走向\"规模商用\"。"
+      ],
+      "insights": [
+        "AMD买Taalas + Qwen 3.8 Max开源 + 摩尔线程IPO，三条线共同指向一个趋势：AI基础设施的\"去中心化\"正在加速——芯片不是英伟达一家、模型不是OpenAI一家、算力不是AWS一家。",
+        "OpenAI以安全为由暂缓Astra发布，与此前Anthropic的\"负责任的扩展政策\"形成呼应。头部AI公司在模型发布节奏上正在从\"越快越好\"转向\"越安全越好\"——这对下游应用开发者的模型选择策略有直接影响。"
+      ],
+      "actions": []
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "亚马逊用Claude Sonnet填充网站作者信息，一个简单任务烧了180万美元（超出预算860%），5个月后才被发现且最终未部署成功。CEO Jassy仍宣布2200亿美元年度资本开支押注AI自动化。",
+        "大厂集体\"上锁\"：Meta向6000名员工设Token上限并搭建AI Gateway监控平台，Uber将每人每月AI支出卡在1500美元，微软叫停Tokenmaxxing竞赛。Sam Altman承认AI成本已从\"无人关心\"变成\"大问题\"。",
+        "OpenAI ChatGPT Work深度拆解（Latent Space）：已超1000万用户，集成了记忆、主动性、定时任务、浏览器操控、插件、技能系统，年底将与ChatGPT合并，成为十亿用户级的Agent产品。"
+      ],
+      "insights": [
+        "亚马逊180万美元事故暴露的核心问题是：Agent失败后会\"日夜不休地反复重试\"而没有止损机制。企业部署Agent的下一个必须品不是更强的模型，而是Token预算管控和异常熔断机制。",
+        "ChatGPT Work的设计哲学——\"连接你已经在工作的地方（Slack/邮件/日历/CRM）\"——与WorkBuddy的企业微信绑定逻辑一致。企业AI助手的核心竞争力正在从\"模型能力\"转向\"系统集成深度\"。"
+      ],
+      "actions": [
+        "企业AI部署必须建立Token预算制度，起步就设上限+监控仪表盘，避免亚马逊式的5个月后才发现超支。可参考Uber的1500美元/人/月标准作为参考锚点。",
+        "跟踪ChatGPT Work的多平台集成设计（Memory/Proactivity/Scheduling/Browser/Plugins/Skills六大系统），这些能力模块可以作为评估国内企业AI助手（WorkBuddy、钉钉AI）完整度的对照清单。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "苹果国行AI正式落地，Mac使用手册新增千问集成章节。千问通过Apple智能扩展接入Mac，覆盖Siri问答和写作工具两个场景，用户可在备忘录、邮件等应用中直接使用AI文本创作和改写，无需在应用间切换。"
+      ],
+      "insights": [],
+      "actions": [
+        "如果手头有Mac（macOS 26.6+），立即在系统设置中开启千问扩展，测试写作工具中的AI改写的实际质量——对比独立使用千问网页版的体验差异，判断系统级集成的实用价值。"
+      ]
+    }
+  ],
+  "github": [],
+  "consensus": {
+    "text": "",
+    "quotes": []
+  },
+  "division": {
+    "text": "",
+    "quotes": []
+  },
+  "reading": [
+    {
+      "title": "苹果国行AI突然发布，首次官宣牵手阿里，Mac用上千问了",
+      "url": "https://www.36kr.com/p/3930992127458695",
+      "source": "36氪/智东西"
+    },
+    {
+      "title": "Unpacking ChatGPT Work: the Agent for a Billion Users",
+      "url": "https://www.latent.space/p/unpacking-chatgpt-work",
+      "source": "Latent Space"
+    },
+    {
+      "title": "180万刀，连亚马逊都烧不起Claude了",
+      "url": "https://www.qbitai.com/2026/08/469010.html",
+      "source": "量子位"
+    }
+  ],
+  "format": "summary"
+}

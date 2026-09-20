@@ -1,0 +1,77 @@
+:root {
+  --bg: #0f1117;
+  --panel: #171a23;
+  --panel-2: #1e222e;
+  --border: #2a2f3d;
+  --text: #e6e8ef;
+  --muted: #8a90a3;
+  --accent: #5b8cff;
+  --consensus: #2f9e6e;
+  --division: #d9605f;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+  background: var(--bg); color: var(--text); line-height: 1.6;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.site-header { padding: 28px 24px 12px; max-width: 1080px; margin: 0 auto; }
+.site-header h1 { font-size: 26px; }
+.site-header .subtitle { color: var(--muted); font-size: 14px; margin-top: 4px; }
+
+.layout { display: flex; gap: 24px; max-width: 1080px; margin: 0 auto; padding: 12px 24px 32px; }
+.date-list { width: 180px; flex-shrink: 0; }
+.date-list h2 { font-size: 14px; color: var(--muted); margin-bottom: 10px; }
+.date-list ul { list-style: none; }
+.date-list li { padding: 8px 10px; border-radius: 8px; cursor: pointer; font-size: 14px; color: var(--muted); }
+.date-list li:hover { background: var(--panel); color: var(--text); }
+.date-list li.active { background: var(--accent); color: #fff; }
+
+.briefing { flex: 1; min-width: 0; }
+.loading { color: var(--muted); padding: 40px; text-align: center; }
+
+.brief-head { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; margin-bottom: 18px; }
+.brief-head .date { font-size: 20px; font-weight: 700; }
+.brief-head .meta { color: var(--muted); font-size: 12px; margin-top: 2px; }
+.brief-head .points { margin-top: 10px; }
+.brief-head .points li { font-size: 13px; color: var(--text); margin: 4px 0 4px 18px; }
+
+.track { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; margin-bottom: 18px; }
+.track h3 { font-size: 17px; margin-bottom: 12px; }
+.track .group { margin-bottom: 14px; }
+.track .group-title { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 8px; }
+.item { background: var(--panel-2); border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; margin-bottom: 8px; }
+.item .item-title { font-weight: 600; font-size: 14px; margin-bottom: 2px; }
+.item .item-body { font-size: 13px; color: #c9cddb; }
+.item .item-meta { font-size: 12px; color: var(--muted); margin-top: 6px; }
+.item .item-meta a { font-size: 12px; }
+.tag { display: inline-block; background: #262b3a; color: #9fb0d8; border-radius: 4px; padding: 0 6px; font-size: 11px; margin-right: 6px; }
+
+.viewpoint { margin-top: 18px; }
+.viewpoint .vp-card { border-radius: 10px; padding: 14px 16px; margin-bottom: 12px; border: 1px solid var(--border); }
+.viewpoint .vp-consensus { background: rgba(47,158,110,.08); border-color: rgba(47,158,110,.35); }
+.viewpoint .vp-division { background: rgba(217,96,95,.08); border-color: rgba(217,96,95,.35); }
+.viewpoint .vp-card h4 { font-size: 14px; margin-bottom: 6px; }
+.viewpoint .vp-consensus h4 { color: var(--consensus); }
+.viewpoint .vp-division h4 { color: var(--division); }
+.viewpoint .vp-card .vp-text { font-size: 13px; }
+.viewpoint .vp-card ul { margin-top: 8px; list-style: none; }
+.viewpoint .vp-card ul li { font-size: 12px; color: var(--muted); margin: 3px 0 3px 12px; position: relative; }
+.viewpoint .vp-card ul li::before { content: "▸"; position: absolute; left: -12px; color: var(--muted); }
+
+.reading { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; }
+.reading h3 { font-size: 17px; margin-bottom: 12px; }
+.reading ol { list-style: decimal; margin-left: 20px; }
+.reading li { font-size: 13px; margin-bottom: 6px; }
+.reading .src { color: var(--muted); font-size: 12px; }
+
+.site-footer { max-width: 1080px; margin: 0 auto; padding: 8px 24px 32px; color: var(--muted); font-size: 12px; }
+.site-footer code { background: var(--panel-2); padding: 0 4px; border-radius: 4px; }
+
+@media (max-width: 720px) {
+  .layout { flex-direction: column; }
+  .date-list { width: 100%; }
+  .date-list ul { display: flex; flex-wrap: wrap; gap: 6px; }
+}

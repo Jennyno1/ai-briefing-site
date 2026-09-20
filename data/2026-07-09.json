@@ -1,0 +1,58 @@
+{
+  "date": "2026-07-09",
+  "version": "",
+  "points": [],
+  "tracks": [],
+  "github": [],
+  "consensus": {
+    "text": "",
+    "quotes": []
+  },
+  "division": {
+    "text": "",
+    "quotes": []
+  },
+  "reading": [
+    {
+      "title": "How Salesforce is positioning itself in agentic AI landscape",
+      "url": "https://www.digitalcommerce360.com/2026/07/08/salesforce-agentic-ai-landscape/",
+      "source": "DC360"
+    },
+    {
+      "title": "Liquid AI Open-Sources Antidoom: Final Token Preference Optimization",
+      "url": "https://www.marktechpost.com/2026/07/07/liquid-ai-antidoom-doom-loops-ftpo/",
+      "source": "MarkTechPost"
+    },
+    {
+      "title": "L'Oreal, Mondelez, and Nestle use AI to speed product development",
+      "url": "https://www.artificialintelligence-news.com/news/ai-product-development-loreal-mondelez-nestle/",
+      "source": "AI News"
+    },
+    {
+      "title": "大多数人没看懂，支付宝微信这三个月Agent布局",
+      "url": "https://www.leiphone.com/category/aijuejinzhi/PkorfY0MIiENCG54.html",
+      "source": "雷锋网"
+    },
+    {
+      "title": "x1xhlol/system-prompts-and-models-of-ai-tools",
+      "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
+      "source": ""
+    },
+    {
+      "title": "google-gemini/gemini-cli",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "source": ""
+    },
+    {
+      "title": "DietrichGebert/ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "source": ""
+    },
+    {
+      "title": "microsoft/ai-agents-for-beginners",
+      "url": "https://github.com/microsoft/ai-agents-for-beginners",
+      "source": ""
+    }
+  ],
+  "format": "summary"
+}

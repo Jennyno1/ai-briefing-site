@@ -1,0 +1,91 @@
+{
+  "date": "2026-07-27",
+  "version": "",
+  "points": [
+    "OpenAI+Anthropic联手游说美国限制中国开源模型，黄仁勋/马斯克/扎克伯格/皮查伊集体站队开源阵营",
+    "Claude Opus 5正式发布：Fable 5级性能、一半价格，AI模型性价比竞赛加速",
+    "欧盟AI透明度准则8月2日生效，全球AI内容强制标注时代开启"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "OpenAI+Anthropic联手游说美国限制中国开源模型，黄仁勋/马斯克/扎克伯格/皮查伊集体反对，硅谷公开分裂",
+        "欧盟AI透明度准则8月2日生效：聊天机器人须自报AI身份，深度伪造须带机读标签，最高罚1500万欧元",
+        "林俊旸离职140天后Qwen3.8重回开源，阿里大模型战略回稳"
+      ],
+      "insights": [
+        "游说事件标志AI竞争从技术升级到地缘政策博弈——OpenAI/Anthropic因Kimi K3等中国开源模型威胁才转向政策路线",
+        "欧盟准则为全球AI内容监管提供首个强制执行模板，对豆包、小红书AI功能等C端产品有示范效应"
+      ],
+      "actions": []
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "ChatGPT for small business program上线，OpenAI首个中小企业AI计划",
+        "NTT DATA用Codex将事故分析从数小时压缩至30分钟，企业AI ROI标杆案例",
+        "OpenAI Presence推出，定位企业级团队协作AI工具",
+        "Monday.com和Patreon先后裁员约20%，均将AI效率提升列为原因"
+      ],
+      "insights": [
+        "中小企业AI计划配合Opus 5半价，企业AI正从\"大厂特权\"变成\"标配工具\"",
+        "AI裁员从科技巨头蔓延至SaaS和内容平台，企业需建立\"AI+人\"的混合策略而非简单替代"
+      ],
+      "actions": [
+        "关注ChatGPT for small business定价和功能，评估能否替代当前多个SaaS工具，计算总持有成本",
+        "将NTT案例做成\"企业AI ROI\"选题——30分钟vs数小时的硬数据最能说服决策者"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "Black Forest Labs发布FLUX 3多模态Flow模型，全面超越Seedance 2.0和Gemini Omni",
+        "Claude Opus 5正式发布，Fable 5性能一半价格，AI写作性价比再次跃升",
+        "Midjourney收购星座应用Co-Star，图像生成公司首次进入消费内容领域",
+        "Patreon裁员20%归因AI效率提升，创作者平台的AI替代压力显现"
+      ],
+      "insights": [
+        "FLUX 3+Opus 5同日登场意味着AI创作工具价格战全面开启——三强竞争加速AI视频成本下降",
+        "Midjourney收购Co-Star是从工具到平台的转型信号——未来AI生图可能嵌入消费场景而非独立工具"
+      ],
+      "actions": [
+        "测试FLUX 3生图+图生视频能力，与Seedance 2.0对比出评测笔记",
+        "用Opus 5生成5篇不同风格小红书文案，对比Fable 5质量和每篇成本，评估迁移工作流"
+      ]
+    }
+  ],
+  "github": [],
+  "consensus": {
+    "text": "",
+    "quotes": []
+  },
+  "division": {
+    "text": "",
+    "quotes": []
+  },
+  "reading": [
+    {
+      "title": "OpenAI、Anthropic游说美国限制中国开源模型",
+      "url": "https://www.ithome.com/0/981/797.htm",
+      "source": "IT之家"
+    },
+    {
+      "title": "欧盟AI透明度准则8月2日生效",
+      "url": "https://www.ithome.com/0/981/755.htm",
+      "source": "IT之家"
+    },
+    {
+      "title": "Claude Opus 5来了，Fable性能一半价格",
+      "url": "https://www.36kr.com/p/3910352916256129",
+      "source": "36氪"
+    }
+  ],
+  "format": "summary"
+}

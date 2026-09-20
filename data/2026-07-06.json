@@ -1,0 +1,43 @@
+{
+  "date": "2026-07-06",
+  "version": "",
+  "points": [],
+  "tracks": [],
+  "github": [],
+  "consensus": {
+    "text": "",
+    "quotes": []
+  },
+  "division": {
+    "text": "",
+    "quotes": []
+  },
+  "reading": [
+    {
+      "title": "Skill engineering and the case against one-shot AI design",
+      "url": "https://www.latent.space/p/skill-engineering-design",
+      "source": "Latent Space"
+    },
+    {
+      "title": "Better Models: Worse Tools",
+      "url": "https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/",
+      "source": "Armin Ronacher (via Simon W)"
+    },
+    {
+      "title": "Components of A Coding Agent",
+      "url": "https://magazine.sebastianraschka.com/",
+      "source": "Sebastian Raschka"
+    },
+    {
+      "title": "Vercel's Andrew Qu on why agents are a new kind of software",
+      "url": "https://www.latent.space/p/vercel-agents-new-software",
+      "source": "Latent Space"
+    },
+    {
+      "title": "Using DSPy to evaluate and improve Datasette Agent's SQL system prompts",
+      "url": "https://simonwillison.net/2026/Jul/2/dspy-datasette-agent-prompts/",
+      "source": "Simon Willison"
+    }
+  ],
+  "format": "summary"
+}

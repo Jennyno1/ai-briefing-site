@@ -1,0 +1,76 @@
+{
+  "date": "2026-08-11",
+  "version": "",
+  "points": [
+    "OpenAI连发两弹：GPT Image生图碾压DALL-E 2、GPT-6被曝10万亿参数8月发布，AI能力边界在生图和推理两个方向同时突破",
+    "DeepMind四巨头同日离职，高层大换血；Codex与Claude Code负责人公开互撕——Agent赛道竞争烈度达到新高度",
+    "Cloudflare推出专为AI Agent设计的浏览器Kitesurf，Rippling在烧了数百万AI费后自建ROI工具——企业AI从\"能不能用\"进入\"怎么算账\""
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "OpenAI被曝GPT-6即将发布（36氪报道），传10万亿参数、8月强行推出。同时OpenAI官方博客确认GPT-5.6 Sol迎来升级并向免费用户开放GPT-5.6 Luna——模型迭代节奏明显加速。",
+        "DeepMind高层大换血：Jeff Dean、Sanjay Ghemawat、Oriol Vinyals、Quoc Le四位核心人物同日离职，Demis Hassabis转任Chair、Koray Kavukcuoglu升任SVP。Latent Space直问\"GDM到底发生了什么？\"",
+        "AI圈上演神级互撕：Codex和Claude Code两位负责人在社交媒体公开对喷。同时36氪报道\"马斯克要让Cursor消失\"——Agent赛道竞争烈度前所未有。",
+        "宇树科技今日申购，中一签或赚20万元。具身智能赛道进入二级市场定价阶段，200亿热钱涌入灵巧手等细分方向。"
+      ],
+      "insights": [
+        "GPT-6的\"10万亿参数+强行发布\"叙事与OpenAI官方主动透露Astra因安全原因暂缓形成对比——一边是商业竞争压力下的加速，一边是安全考量的刹车，两条线在OpenAI内部正在激烈博弈。",
+        "DeepMind四人同日离职不是偶然。结合此前OpenAI Astra暂缓、Anthropic安全政策强化，头部AI实验室正在经历从\"研究驱动\"到\"产品+安全双驱动\"的组织转型阵痛。"
+      ],
+      "actions": [
+        "GPT-6如果8月发布，提前规划模型迁移方案：评估现有GPT-5.6 Sol工作流中哪些环节值得升级到GPT-6（推理密集型任务优先），哪些环节维持现有模型（成本敏感型任务）。",
+        "宇树科技上市意味着具身智能从\"概念炒作\"进入\"有市值锚定\"的阶段。关注其上市后首周股价走势，这是判断市场对具身智能赛道真实信心的关键指标——如果破发，整个赛道的融资节奏都会受影响。"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "Cloudflare推出Kitesurf浏览器，专为AI Agent设计。这不是给人用的浏览器，而是给Agent用的——Agent可以像人一样浏览网页、填表、点击，但完全程序化控制。",
+        "Rippling在几个月内烧掉数百万美元AI费用后，自建了员工AI ROI计算工具，追踪每个员工的AI用量和产出比。此前Uber设1500美元/人/月上限，企业AI成本管控从\"建议\"变成\"刚需\"。",
+        "ChatGPT Business推出Premium seats付费席位，企业版从\"团队订阅\"走向\"分层定价\"，AI办公工具的企业付费模型进一步成熟。"
+      ],
+      "insights": [
+        "Kitesurf的出现标志着Agent基础设施从\"帮Agent调用API\"升级到\"帮Agent像人一样操作网页\"。对于企业场景中大量只有Web界面没有API的遗留系统，Agent浏览器是打通最后一公里的关键。",
+        "Rippling自建ROI工具是亚马逊180万美元事故的镜像案例——同样是烧钱后被倒逼做成本管控，但Rippling选择把工具产品化而不是内部消化。企业AI成本管控正在成为一个独立的产品品类。"
+      ],
+      "actions": [
+        "企业AI部署中，将\"Agent浏览器\"纳入技术选型视野。如果企业内部有大量Web界面的遗留系统无法通过API集成，Kitesurf类工具可能是比逐个开发API更快的路径。",
+        "参考Rippling的ROI追踪思路，在自己的Hermes Agent使用统计中增加\"成本/任务\"维度，不只看token消耗量，更要算每个任务的实际花费——这是给领导汇报AI投入产出比的基础数据。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [],
+      "insights": [],
+      "actions": [
+        "立即用ChatGPT测试GPT Image生图能力，对比当前Seedream出图效果，评估是否可作为小红书封面主力工具。重点关注：文字渲染准确度（对中文标题封面至关重要）、风格一致性、生成速度。",
+        "关注NextSlide被收购后的产品整合节奏。如果OpenAI在ChatGPT Work中嵌入PPT生成能力，提前储备\"AI生成演示文稿\"的工作流模板——这可以直接复用到企业IT培训场景。"
+      ]
+    }
+  ],
+  "github": [],
+  "consensus": {
+    "text": "",
+    "quotes": []
+  },
+  "division": {
+    "text": "",
+    "quotes": []
+  },
+  "reading": [
+    {
+      "title": "OpenAI全新GPT Image突袭，碾压Image 2，塑料感终于消失",
+      "url": "https://www.36kr.com/p/3933115490368647",
+      "source": "36氪"
+    }
+  ],
+  "format": "summary"
+}

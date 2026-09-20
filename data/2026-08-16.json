@@ -1,0 +1,91 @@
+{
+  "date": "2026-08-16",
+  "version": "",
+  "points": [
+    "SpaceX正式完成600亿美元收购Cursor交割，Anthropic拟60亿美元买效率公司备战IPO——AI资本战进入白热化",
+    "千问办公首发上线GLM-5.3与DeepSeek V4 Pro，企业办公Agent可自由切换三款国产旗舰"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "SpaceX正式完成对Cursor母公司Anysphere的600亿美元股票收购交割（Cursor官宣「加入SpaceX」，将获全球最大GPU机队访问权），成史上最大初创收购案。",
+        "据彭博与路透：Anthropic正洽谈约60亿美元收购以色列AI效率公司Decart（106人、5月估值40亿美元），已秘密提交S-1、最快10月纳斯达克IPO，二级市场报价一度超1.1万亿美元。",
+        "黄仁勋安抚AI算力市场：英伟达或为单个算力投资项目提供最高25%残值支持机制，与六位华尔街资管巨头推动「AI算力独立资产类别」，AI热潮从技术竞赛延伸至资本竞赛。"
+      ],
+      "insights": [
+        "英伟达一边推25%残值机制推动算力「证券化」，一边持有SpaceX约210亿美元股份——芯片巨头从「卖铲人」变成算力资产化做市者，循环融资与债务杠杆是最大灰犀牛。",
+        "Anthropic Risk Report自曝内部Model 2强于公开旗舰Mythos 5（AECI 162.79 vs 161.29，Claude已写其生产代码库绝大多数代码），「误对齐」风险由极低调至低；OpenAI以安全为由推迟Astra——最强模型开始「私藏」，公开基准与真实能力脱钩。"
+      ],
+      "actions": [
+        "建立AI算力资本开支跟踪清单：盯英伟达25%残值机制是否落地、CoreWeave等算力租赁商融资与债务杠杆；SK警告2027年存储芯片缺口最大、柏能警告显卡短缺推高PC价格，存储涨价链可作半导体ETF景气指标但别追高。",
+        "人形机器人风险提示：宇树科技未上市暗盘已炒至520元/股（发行价150.8元的约3.4倍），情绪透支——ETF投资者勿在暗盘热度高点追高，等上市后看量产订单、交付量与毛利率再决策。"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "阿里「千问办公」8月15日首发上线GLM-5.3与DeepSeek V4 Pro，加上此前接入的Qwen3.8-Max，成为同时支持三款国产旗舰模型的企业办公Agent。",
+        "量子位实测：Qwen3.8-27B在单张消费级显卡上可跑「Opus级」Agent、多项榜单反超Claude，企业本地化部署Agent成本门槛进一步下探。",
+        "DeepSeek Harness插件生态一夜燃爆GitHub：长期记忆、电子宠物等插件批量涌现，Agent工作流走向可插拔组件化。"
+      ],
+      "insights": [
+        "知乎热榜高赞：大厂员工吐槽「开会就是互丢AI文档」，工具普及未带来产出质量提升——企业AI内化瓶颈从「有没有工具」转向「有没有验收SOP」。",
+        "Agent工程化复刻前端组件化路线：Latent Space提出「React for Agents」，Hooks模式进入Meta-Harness，组合复用取代黑箱单干成为新竞争力。"
+      ],
+      "actions": [
+        "今天在千问办公实测GLM-5.3与DeepSeek V4 Pro：用同一份会议纪要分别跑三款旗舰模型对比质量/速度/成本，固定「主力+备选」双模型组合再接入日常流程。",
+        "给团队AI文档补验收环节：定「AI初稿→人工核对数据口径→标注AI辅助」三步SOP；跨会话场景给Agent装开源DeepSeek Harness长期记忆插件复用团队上下文。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "Anthropic公开Claude文字水印技术细节，配套官方检测工具即将推出，AI生成文本首次具备可靠的追溯与自查手段。",
+        "美图RoboNeo上线短剧专业版，围绕短剧洞察、3D场景搭建、团队协作与创作资产管理升级，官方资产库支持快速生成角色三视图。",
+        "国产音乐模型宣称根治AI音乐通病、正面挑战Suno，AI音乐创作新增国产选项。"
+      ],
+      "insights": [
+        "虎嗅《牛来》出圈印证：AI越会生成，「活人感」越稀缺越值钱——真实经历、个人情绪与独特视角成为内容溢价核心资产。",
+        "「不是……而是……」等AI腔句式泛滥引发创作者警惕，叠加水印检测工具落地，靠修辞堆砌的「伪深度」内容风险升高，去AI味成为质量分水岭。"
+      ],
+      "actions": [
+        "短剧方向直接上手美图RoboNeo短剧专业版：从官方资产库选服装/发型/配饰/场景素材搭建角色、一键生成三视图做人物设定与分镜初稿，用短剧洞察功能验证选题后再投入制作。",
+        "写稿后强制「去AI味」改稿：全局搜索删除「不是……而是……」「首先/其次/最后」等模板句式，替换成真实细节（时间/地点/原话/数字），发布前用水印检测工具抽查。"
+      ]
+    }
+  ],
+  "github": [],
+  "consensus": {
+    "text": "",
+    "quotes": []
+  },
+  "division": {
+    "text": "",
+    "quotes": []
+  },
+  "reading": [
+    {
+      "title": "SpaceX officially closes its Cursor acquisition",
+      "url": "https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/",
+      "source": "TechCrunch"
+    },
+    {
+      "title": "拟60亿美元收购Decart，Anthropic在IPO开始之前要开启一场「效率战争」",
+      "url": "https://www.huxiu.com/article/4883308.html",
+      "source": "虎嗅"
+    },
+    {
+      "title": "Anthropic自曝「私藏核武器」，Model 2比Mythos 5更强",
+      "url": "https://www.36kr.com/p/3940126125161602",
+      "source": "36氪"
+    }
+  ],
+  "format": "summary"
+}

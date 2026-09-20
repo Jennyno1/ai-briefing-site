@@ -1,0 +1,43 @@
+{
+  "date": "2026-07-23",
+  "version": "",
+  "points": [
+    "Google AI驱动净利暴增298%、AMD砸数百亿绑定Anthropic，AI产业从烧钱进入变现验证期",
+    "三星首款AI眼镜+努比亚AI智能体手机亮相，可穿戴AI硬件成为小红书新流量品类",
+    "OpenAI推Presence布局企业软件，腾讯/阿里/字节大战AI办公，企业AI从\"要不要用\"进入\"怎么选\""
+  ],
+  "tracks": [
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [],
+      "insights": [],
+      "actions": [
+        "三星AI眼镜发布即做\"戴上AI眼镜一天\"沉浸式测评，封面手绘眼镜+大字\"What AI眼镜能干啥\"，挂京东/天猫Galaxy Glasses链接",
+        "努比亚NaviX发布时做\"AI手机vs普通手机\"功能对比表，列出Agent能替你完成的10件事",
+        "用Claude录屏功能录下小红书选题调研完整流程，蒸馏成Skill每周复用",
+        "❷ 企业职场AI应用赋能",
+        "📌 OpenAI推出Presence布局企业协同软件。Claude录屏+语音+Skill蒸馏，一键录操作过程生成Agent。腾讯整合Workbuddy与QClaw，阿里/腾讯/字节三家大战AI办公。AI独角兽创始人称90%企业场景已不需要最强模型。思科发布Antares小语言模型专攻安全漏洞。",
+        "🔍 企业AI正从\"顶尖模型竞赛\"转向\"场景化应用落地\"。Claude录屏蒸馏意味着每个人都能把自己的工作流程变成Agent——不需要编程。90%场景不需要最强模型的判断意味着：别追最新最大模型，把现有工具用好就能省80%时间。",
+        "用Claude蒸馏：录一次小红书选题调研全流程，蒸馏成Skill自动复用，每周省3-5小时",
+        "测试OpenAI Presence是否适合企业微信群自动化回复，按知识库+FAQ配置",
+        "关注腾讯Workbuddy整合动态——如果开放API，优先接入内容工作流",
+        "❸ AI产业与技术动态",
+        "📌 Google Q2净利$1121亿（+298%），AI搜索+云驱动。AMD与Anthropic签数百亿美元芯片采购协议并投资$50亿，打破Nvidia垄断。OpenAI拟投$200亿建数据中心，2030年算力支出上调至$7500亿。Gemini 4一夜三连发。黄仁勋称美国不应封禁中国开源AI。36氪判断\"Agent赛马结束，超级工作台上位\"。",
+        "🔍 Google +298%是AI产业分水岭——AI不是泡沫，是印钞机。AMD绑定Anthropic是Nvidia垄断以来最大芯片格局变化，加速算力降价。Gemini 4三连发+OpenAI $7500亿算力目标说明模型军备竞赛远未结束。黄仁勋\"别封禁\"表态代表产业共识——禁令只推高替代成本。"
+      ]
+    }
+  ],
+  "github": [],
+  "consensus": {
+    "text": "",
+    "quotes": []
+  },
+  "division": {
+    "text": "",
+    "quotes": []
+  },
+  "reading": [],
+  "format": "summary"
+}

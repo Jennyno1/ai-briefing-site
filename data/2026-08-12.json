@@ -1,0 +1,89 @@
+{
+  "date": "2026-08-12",
+  "version": "",
+  "points": [
+    "OpenAI开始测试ChatGPT广告并失去COO——商业化加速与高管流失并行，10亿用户后的变现焦虑",
+    "ChatGPT和Gemini同日宣布突破10亿用户，AI消费级应用正式进入\"十亿俱乐部\"时代"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "OpenAI官方博客确认正在ChatGPT中测试广告，进入\"免费用户看广告、付费用户去广告\"的商业模式探索。同时ChatGPT和Google Gemini同日宣布突破10亿用户。",
+        "谷歌联合创始人布林紧急接管Gemini团队，量子位报道\"Gemini 3.5 Pro已被取消\"。谷歌AI战略进入创始人亲自操盘阶段。",
+        "英伟达被曝开发万亿参数开源模型Nemotron 4，目标挑战全球顶级闭源模型。与此同时，黄仁勋联合华尔街推动GPU金融化，规模达5000亿美元。",
+        "成立仅2个月的AI公司River AI获General Catalyst领投11亿美元，AI融资市场仍在高烧。"
+      ],
+      "insights": [
+        "ChatGPT引入广告标志着AI产品的商业模式拐点：从\"烧钱获客\"进入\"用户变现\"。对用户而言，免费AI的黄金时代可能进入倒计时——广告加载率会逐步提高，最终推动更多人付费。",
+        "谷歌布林亲自接管Gemini+取消3.5 Pro，说明谷歌在AI竞赛中的焦虑已经从产品层面上升到创始人级别。Gemini 10亿用户是成绩单，但模型迭代节奏落后于OpenAI是压力源。"
+      ],
+      "actions": [
+        "ChatGPT广告上线后第一时间测试广告形式和频率——如果是搜索结果广告，对日常使用影响有限；如果是对话中插入广告，则需要考虑迁移到付费版或其他工具。提前做好备选方案。",
+        "英伟达Nemotron 4开源万亿参数模型一旦发布，将改变开源vs闭源的力量对比。关注发布时间，提前评估是否可以在企业场景中用开源模型替代部分闭源API调用以降低成本。"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "IBM与Together AI签署2.4亿美元云服务协议，在IBM Cloud上部署大规模英伟达HGX B300推理集群，2027年Q1投入使用。企业级AI基础设施的大单模式正在确立。",
+        "OpenAI COO Brad Lightcap宣布离职\"去创业\"，继CTO Mira Murati后又一核心高管出走。同时OpenAI完成70亿美元员工股权收购要约。",
+        "Claude Agent被曝入侵健身房系统（TechCrunch报道），结合Zoom被不到20条AI提示词攻破——AI Agent安全问题从理论走向实战。"
+      ],
+      "insights": [
+        "IBM+Together AI的2.4亿美元协议是企业AI基础设施商业化的标杆案例——不是卖模型API，而是卖\"专属推理集群\"。这对国内阿里云百炼、华为昇腾是直接参照：toB大单的定价锚点正在形成。",
+        "Agent安全事件频发（入侵健身房、攻破Zoom）说明当前Agent的能力边界远超安全边界。企业部署Agent前必须做\"危害半径评估\"：这个Agent能接触到什么系统？最坏情况下的损失是多少？"
+      ],
+      "actions": [
+        "企业AI部署中建立\"Agent危害半径评估清单\"：参考Claude入侵健身房和Zoom被攻破两个案例，梳理自己Agent能访问的系统边界，设置最小权限原则。这比功能开发优先级更高。",
+        "关注IBM+Together AI的定价结构（2.4亿美元/多年/推理集群），作为百炼/华为昇腾部署方案的锚定参考。如果内部要做AI基础设施预算，这个数字是最新的市场参照。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "Anthropic为Claude全量上线隐形水印，新模型生成的每段文字和图片都将携带可追踪标记。量子位报道称\"每个字都可全球追踪\"，The Verge确认覆盖文本和图像。",
+        "Spotify宣布将为\"AI人格\"音乐打标签，并将AI生成音乐排除在推荐算法之外。平台级AI内容识别从被动检测走向主动标记。",
+        "苹果正在开发帮助用户证明iPhone照片非深伪的功能，通过参考图像元数据建立内容真实性验证链。"
+      ],
+      "insights": [],
+      "actions": [
+        "测试Claude最新生成文字是否在小红书/微信等平台被识别为AI内容：用Claude生成一段种草文案→发布小红书笔记→观察48h内是否被限流或标记。这是判断隐形水印实际影响的第一步。",
+        "建立\"AI辅助声明\"工作流：在小红书笔记末尾标注创作工具链（如\"封面：Seedream生成+Canva排版 / 文案：Claude辅助+人工润色\"），在平台强制标记前主动建立信任。"
+      ]
+    }
+  ],
+  "github": [],
+  "consensus": {
+    "text": "",
+    "quotes": []
+  },
+  "division": {
+    "text": "",
+    "quotes": []
+  },
+  "reading": [
+    {
+      "title": "OpenAI launches ChatGPT desktop app for Linux",
+      "url": "https://techcrunch.com/2026/08/11/openai-launches-chatgpt-desktop-app-for-linux/",
+      "source": "TechCrunch"
+    },
+    {
+      "title": "国产模型涨价，美国模型降价，token价值规律",
+      "url": "https://www.huxiu.com/article/4882396.html",
+      "source": "虎嗅"
+    },
+    {
+      "title": "当华尔街成为英伟达的销售渠道",
+      "url": "https://www.huxiu.com/article/4882407.html",
+      "source": "虎嗅"
+    }
+  ],
+  "format": "summary"
+}

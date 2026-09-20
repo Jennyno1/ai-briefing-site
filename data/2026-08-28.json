@@ -1,0 +1,85 @@
+{
+  "date": "2026-08-28",
+  "version": "",
+  "points": [
+    "推理算力进入「自研芯片+超大规模订单」双轨竞赛，模型推理成本与供给格局正在重写（OpenAI Jalapeño 自研推理芯片、Amazon 三倍追加 NVIDIA 订单、Anthropic 450 亿美元算力协议）。",
+    "自主代理从实验走向生产，企业落地焦点转向「可治理、可编排、可回滚」的护栏与编排层（AWS AgentCore Evaluations、VentureBeat 治理下沉数据层、Claude Code Opus 5 Auto Mode）。"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "OpenAI 公布自研推理芯片 Jalapeño 首批结果，号称行业领先的速度与能效，现代大模型推理吞吐更高、延迟更低，自研芯片路线走实。",
+        "TechCrunch 报道 Amazon 因需求激增将 NVIDIA 芯片订单翻三倍，Anthropic 签下 450 亿美元 Nscale 算力协议，算力军备竞赛持续升温。",
+        "🟡弱信号：Hugging Face 推出 399 美元开源轮滑鸭机器人 Microduck，物理 AI 从实验室走向消费级玩具，具身智能软硬件门槛快速下探。"
+      ],
+      "insights": [
+        "推理成本曲线正被「自研芯片+超大订单」双重压低，但算力总供给仍被头部厂商锁定，中小团队享受降价红利的同时也更深绑定少数云与芯片方。"
+      ],
+      "actions": [
+        "把高成本推理任务做本地/边缘推理单价压测，对比云 API 成本；对 Stable Diffusion、小模型类固定工作负载优先转本地部署，省下云账单并保数据合规。"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "OpenAI 官方披露 loveholidays 用 Codex 让非工程岗员工也能开发内部工具，把业务想法直接转成产品，是已上线的规模化 Production 案例。",
+        "AWS 推出 Bedrock AgentCore Evaluations，可对任意 Agent 框架做自动化评测并打通跨账号知识库，企业部署 Agent 的测试与治理成本下降。",
+        "VentureBeat 指出企业 AI 的真正风险不在自主代理本身，而在多个代理之间的协调复杂度，治理必须下沉到数据层。"
+      ],
+      "insights": [
+        "企业落地 Agent 的瓶颈正从「模型能力」转向「编排与治理」——当多个 Agent 并行运转，出错点往往出现在它们之间的接口与权限，而非单模型推理。",
+        "🟡弱信号：Anthropic 首胜 Pentagon 供应链风险标签诉讼，政企 AI 采购的合规门槛正在成为新的竞争壁垒。"
+      ],
+      "actions": [
+        "参考 loveholidays 模式，用 Codex 给运营/客服岗各搭一个内部小工具（如自动周报、工单分类），先选一个高频重复任务试点，两周内看节省工时。",
+        "评估 Bedrock AgentCore Evaluations 接入现有 Agent 流程，把「上线前自动跑一遍评测+回滚阈值」写进发布规范，规避多 Agent 串接的连锁故障。",
+        "🟡弱信号：某港股 AGI 股 Agent 业务 Token 收入 Q2 暴涨 500%，Agent 按量计费商业闭环正在跑通——可把「Agent 即服务」作为内容选题与接单方向。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "AWS 发布基于 Amazon Quick 与 fal 的 agentic 创意工作流，把生图、视频生成与品牌素材生产编排成可复用流水线，面向营销与自媒体批量出片。",
+        "Google Search 新增三种旅行规划与预订能力，AI 直接串联航班、酒店与行程，攻略类内容的生产与分发可被自动化。",
+        "OpenAI 推出 ChatGPT Work / Codex 的 Admin 插件，支持工作区用量分析、成员权限与限额管理，团队创作账号的协作与合规门槛降低。"
+      ],
+      "insights": [],
+      "actions": [
+        "用 AWS Quick+fal 工作流搭一套「选题→生图→短视频」模板，把你常做的带货/测评图视频改成批量生成，先跑一条产品线验证成本与时间节省。",
+        "把团队 ChatGPT 账号接入 Admin 插件做权限分级，区分创作账号与审核账号，避免一人误操作污染品牌素材库。"
+      ]
+    }
+  ],
+  "github": [],
+  "consensus": {
+    "text": "## 🔵 共识解读",
+    "quotes": [
+      "AWS 推出 AgentCore Evaluations 对任意 Agent 框架做自动化评测（AWS AI Blog）",
+      "VentureBeat 指出企业 AI 风险在多个代理间的协调复杂度，治理须下沉数据层（VentureBeat）",
+      "Claude Code Opus 5 进入 Auto Mode，编码代理自主执行度提升（Simon Willison）"
+    ]
+  },
+  "division": {
+    "text": "## 🔴 分歧解读",
+    "quotes": [
+      "Claude Code Opus 5 Auto Mode 引发「代理该多自主」的讨论（Simon Willison）",
+      "VentureBeat 主张治理活在数据层、代理独立行动时需可审计（VentureBeat）",
+      "loveholidays 用 Codex 让全员变开发者，自主开发边界扩张（OpenAI）"
+    ]
+  },
+  "reading": [
+    {
+      "title": "Better answers, broader thinking",
+      "url": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training",
+      "source": "OpenAI"
+    }
+  ],
+  "format": "summary"
+}

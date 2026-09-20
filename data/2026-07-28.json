@@ -1,0 +1,86 @@
+{
+  "date": "2026-07-28",
+  "version": "",
+  "points": [],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "商务部正面回应美国拟对中国AI企业实施制裁和调查，称其为「典型的人工智能霸权主义行径」——AI地缘博弈从游说升级到贸易制裁级别",
+        "英伟达投资OpenAI联合创始人苏茨克维的AI实验室SSI，同时英伟达CUDA护城河被Claude攻破——Claude在AMD新GPU上独立跑通推理",
+        "Google DeepMind CEO哈萨比斯在斯坦福预言：留给旧世界的时间不到2000天，AI将彻底重塑社会运行方式",
+        "英伟达、微软、IBM等37家企业成立开放安全AI联盟，推动开源AI安全工具和标准"
+      ],
+      "insights": [
+        "英伟达同时投资SSI又被Claude攻破CUDA护城河——这可能是英伟达主动的战略对冲：垄断被打破前先押注下一代AI实验室",
+        "美国从游说限制开源模型到直接威胁制裁中国企业，AI竞争从技术层面上升到国家博弈——对使用美国AI服务的国内企业是明确的风险信号"
+      ],
+      "actions": [
+        "盘点当前使用的美国AI服务（OpenAI API、Claude API等），为每项服务准备国产替代方案——Kimi K3/Qwen3.8/DeepSeek等对应功能映射表，一旦制裁落地可快速切换",
+        "哈萨比斯「2000天」的预测可以作为小红书/公众号选题——「AI还有5年改变一切，现在做什么准备」，结合PM视角给出具体建议",
+        "AMD+CUDA替代的趋势值得写入企业AI基础设施评估——如果NVIDIA不再垄断，GPU选型和模型部署策略都需要重新评估"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "微软CEO纳德拉放话：只信任单一AI供应商的企业可能无法生存，力推多模型策略",
+        "微软发布首个网络安全AI模型，同步推出Agent化安全系统，英伟达/微软/IBM等37家企业成立开放安全AI联盟——OpenAI、Google、Anthropic均不在列",
+        "Kimi K3正式开源，2.8万亿参数可供企业私有化部署，韩国三星等巨头已开始实施Token配额制应对海外AI模型成本",
+        "Claude共享对话和Artifacts被Google索引泄露，企业级AI数据安全问题敲响警钟"
+      ],
+      "insights": [
+        "微软37家联盟排除OpenAI/Anthropic/Google是个信号——企业AI安全正在形成「开源协作派」与「闭源控制派」两个阵营，选择哪个阵营直接影响企业AI技术栈",
+        "Kimi K3+三星Token配额制+纳德拉多模型策略，三件事指向同一个趋势：企业不再押注单一模型，私有化部署+多模型路由正在成为标配"
+      ],
+      "actions": [
+        "在企业内部测试Kimi K3私有化部署的可行性——2.8T模型在单机部署和推理成本上是否可接受，与当前使用的商业API做成本对比",
+        "Claude数据泄露事件是向领导汇报AI安全风险的最佳案例——准备一页PPT说明企业使用AI工具时必须关闭分享功能、启用企业版数据隔离",
+        "将37家安全联盟的成员名单和技术栈整理成一篇对比文章——「企业AI安全的开源派vs闭源派」，适合公众号深度长文"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "Google AI搜索正在快速成为默认搜索方式，AI生成回答正替代传统链接列表，内容触达逻辑被改写"
+      ],
+      "insights": [
+        "Google AI搜索的崛起意味着传统SEO内容策略需要转向「AI可引用内容」——结构化、有数据支撑、段落清晰的图文比堆砌关键词的软文更有机会被AI摘取"
+      ],
+      "actions": []
+    }
+  ],
+  "github": [],
+  "consensus": {
+    "text": "",
+    "quotes": []
+  },
+  "division": {
+    "text": "",
+    "quotes": []
+  },
+  "reading": [
+    {
+      "title": "Satya Nadella says companies that trust one AI for everything may not survive",
+      "url": "https://techcrunch.com/2026/07/27/satya-nadella-says-companies-that-trust-one-ai/",
+      "source": "TechCrunch"
+    },
+    {
+      "title": "Why China is giving away its best AI models",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/971444/how-chinese-open-weight-ai-models-work",
+      "source": "The Verge"
+    },
+    {
+      "title": "OpenAI's Hugging Face breach reignites alignment debate",
+      "url": "https://techcrunch.com/2026/07/27/openais-hugging-face-breach-has-reignited-the-alignment-debate/",
+      "source": "TechCrunch"
+    }
+  ],
+  "format": "summary"
+}

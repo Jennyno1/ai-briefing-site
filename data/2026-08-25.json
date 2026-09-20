@@ -1,0 +1,79 @@
+{
+  "date": "2026-08-25",
+  "version": "",
+  "points": [
+    "AI视频生成进入\"可落地\"阶段：阿里Wan3.0支持30秒+文档输入，从demo级升级到生产线级",
+    "AI办公赛道大整合：字节TRAE+扣子并入豆包推\"豆包工作\"，企业AI从分散工具走向统一品牌",
+    "AI基础设施资本化加速：Hugging Face据报$13B出售谈判+Poolside $12B卖身NVIDIA+阿里800亿港元配售投AI"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "Hugging Face据报正以$13B估值洽谈出售，2023年融资时估值仅$4.5B，AI基础设施公司进入并购窗口期（TechCrunch）。",
+        "Poolside以$12B估值\"反向收购\"卖给NVIDIA：创始人留下拿$1B，109名员工获$6B，实质是NVIDIA用钱买团队+技术授权（Latent Space）。",
+        "阿里宣布800亿港元新股配售，净额100%投入AI全栈能力，同时蔡崇信+吴泳铭增持约1.2亿港元（虎嗅）。",
+        "人形机器人赛道继续升温：何小鹏亲自担任机器人业务CEO+零跑确认布局+蔚来智驾负责人创立具身智能公司获战略投资（36氪快讯）。"
+      ],
+      "insights": [
+        "Hugging Face $13B + Poolside $12B + Stripe $7B收购OpenRouter的组合说明AI基础设施的估值正在被重新锚定——当这些\"管道型\"公司（模型托管/网关/代码生成）都被高价收购时，AI产业链的价值重心正在从\"模型层\"向\"基础设施层\"上移。",
+        "阿里用800亿港元配售投AI而非发债，反映了AI投资的超长回报周期（CEO预期2.5年回本）使得股权融资比债务融资更合理——这对所有需要大额AI投入的企业有财务策略参考价值。"
+      ],
+      "actions": [
+        "跟踪Hugging Face出售进展：如果被大厂收购，可能影响开源模型生态的中立性，需评估是否需要备选模型托管平台（如阿里百炼、火山引擎）。",
+        "关注阿里800亿配售对AI云服务定价的影响：如果阿里云AI服务价格因资本注入而降价，企业可考虑批量采购或锁定长期合同。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "阿里视频大模型Wan3.0正式上线，单次可生成30秒视频，首次支持doc/xls/ppt/pdf等文档格式输入，限时7折优惠1080P仅0.84元/秒（量子位）。",
+        "LinkedIn\"AI slop\"举报按钮上线一个月已超100万人点击，此前检测发现41%长文为AI生成（The Verge）。",
+        "Major YouTube创作者因接受AI公司赞助遭粉丝反噬，AI推广在内容社区的信任危机加剧（The Verge）。",
+        "字节跳动完成AI生产力整合：TRAE（AI编程）+扣子（AI Agent平台）并入豆包体系，本周将推出独立AI办公产品\"豆包工作\"，与飞书深度整合（36氪）。",
+        "Anthropic被曝Claude Code暗中\"降智\"：开发者发现推理effort从\"high\"被偷偷映射为\"10\"（原low档数值），工程师承认是A/B测试但未告知用户（36氪）。",
+        "企业AI落地信任危机加剧：Stampli用ChatGPT Work减少68%上线时间是正面案例，但Anthropic的\"暗中降智\"事件让企业对AI供应商透明度产生质疑。"
+      ],
+      "insights": [
+        "字节把TRAE+扣子+飞书整合为\"豆包工作\"的逻辑是\"AI功能必须嵌入已有工作流，而不是独立存在\"——这与OpenAI昨天开源Codex Harness的方向一致，AI正在从独立产品变成企业基础设施的嵌入层。",
+        "Anthropic的A/B测试事件暴露了一个行业性问题：当AI供应商可以随时调整模型行为而不通知用户时，企业的生产环境稳定性如何保障？这可能加速企业向可自部署的开源模型迁移。"
+      ],
+      "actions": [
+        "测试Wan3.0的文档输入功能：把小红书笔记草稿直接转PPT上传，AI自动生成30秒讲解视频，对比现有\"截图+配音\"工作流的效率提升。",
+        "关注\"豆包工作\"本周发布：如果其\"远程控制电脑+虚拟桌面+侧边工作台\"的功能集成度足够高，可以作为企业AI办公的候选方案评估，特别关注与飞书的整合深度。",
+        "评估Claude Code降智事件对自身工作流的影响：如果依赖Claude做代码生成，建议固定API版本号而非使用\"latest\"，避免被A/B测试影响输出质量。"
+      ]
+    }
+  ],
+  "github": [],
+  "consensus": {
+    "text": "### 🔵 共识解读",
+    "quotes": []
+  },
+  "division": {
+    "text": "### 🔴 分歧解读",
+    "quotes": []
+  },
+  "reading": [
+    {
+      "title": "Hugging Face reportedly in talks to be acquired for $13B",
+      "url": "https://techcrunch.com/2026/08/24/hugging-face-reportedly-in-talks-to-be-acquired-for-13b/",
+      "source": "TechCrunch"
+    },
+    {
+      "title": "独家 | 字节AI生产力整合：TRAE、扣子并入豆包，将推统一办公品牌\"豆包工作\"",
+      "url": "https://www.36kr.com/p/3953230805876099",
+      "source": "36氪"
+    },
+    {
+      "title": "Poolside gets $12B reverse-execuhire to NVIDIA",
+      "url": "https://www.latent.space/p/ainews-poolside-gets-12b-reverse",
+      "source": "Latent Space"
+    }
+  ],
+  "format": "summary"
+}

@@ -1,0 +1,63 @@
+{
+  "date": "2026-07-11",
+  "version": "",
+  "points": [],
+  "tracks": [],
+  "github": [],
+  "consensus": {
+    "text": "",
+    "quotes": []
+  },
+  "division": {
+    "text": "",
+    "quotes": []
+  },
+  "reading": [
+    {
+      "title": "Levi Strauss ecommerce sales jump 19% as DTC strategy boosts Q2 growth",
+      "url": "https://www.digitalcommerce360.com/2026/07/10/levi-strauss-dtc-ecommerce-sales-q2-fy26/",
+      "source": "Digital Commerce 360"
+    },
+    {
+      "title": "乱用AI，打工人被坑惨了",
+      "url": "https://www.huxiu.com/article/4873761.html",
+      "source": "虎嗅"
+    },
+    {
+      "title": "OpenAI 权力洗牌：安全元老 Joshua Achiam 离职，白宫政策操盘手加入",
+      "url": "https://www.leiphone.com/category/industrynews/6YYc1vkNrQVjRHfg.html",
+      "source": "雷锋网"
+    },
+    {
+      "title": "Using Local Coding Agents",
+      "url": "https://magazine.sebastianraschka.com/p/using-local-coding-agents",
+      "source": "Sebastian Raschka"
+    },
+    {
+      "title": "4 Homegrown Brands Winning India",
+      "url": "https://www.practicalecommerce.com/4-homegrown-brands-winning-india/",
+      "source": "Practical Ecommerce"
+    },
+    {
+      "title": "google-gemini/gemini-cli",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "source": ""
+    },
+    {
+      "title": "DietrichGebert/ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "source": ""
+    },
+    {
+      "title": "addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "source": ""
+    },
+    {
+      "title": "earendil-works/pi",
+      "url": "https://github.com/earendil-works/pi",
+      "source": ""
+    }
+  ],
+  "format": "summary"
+}

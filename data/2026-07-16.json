@@ -1,0 +1,33 @@
+{
+  "date": "2026-07-16",
+  "version": "",
+  "points": [],
+  "tracks": [],
+  "github": [],
+  "consensus": {
+    "text": "",
+    "quotes": []
+  },
+  "division": {
+    "text": "",
+    "quotes": []
+  },
+  "reading": [
+    {
+      "title": "How I tricked Claude into leaking your deepest, darkest secrets",
+      "url": "https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration/",
+      "source": "Simon Willison"
+    },
+    {
+      "title": "New GA4 Channel Tracks AI Traffic",
+      "url": "https://www.practicalecommerce.com/new-ga4-channel-tracks-ai-traffic",
+      "source": "Practical Ecommerce"
+    },
+    {
+      "title": "GPT-Red: Unlocking Self-Improvement for Robustness",
+      "url": "https://openai.com/index/unlocking-self-improvement-gpt-red",
+      "source": "OpenAI"
+    }
+  ],
+  "format": "summary"
+}

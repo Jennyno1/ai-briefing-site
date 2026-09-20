@@ -1,0 +1,90 @@
+{
+  "date": "2026-08-30",
+  "version": "",
+  "points": [
+    "OpenAI宣布11月12日彻底断供Cursor，SpaceX收购后连锁反应冲击整个AI编码工具生态",
+    "索尼音乐与华纳起诉Anthropic侵权，指控其\"史上最大规模版权盗窃\"，单曲最高索赔15万美元",
+    "NVIDIA以130亿美元收购Hugging Face，开源AI基础设施格局重塑"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "OpenAI宣布计划于11月12日终止向SpaceX旗下Cursor提供模型服务，马斯克回应称此举将加速自研替代方案。",
+        "NVIDIA以约130亿美元收购Hugging Face，将开源模型生态纳入AI基础设施版图，叠加a16z旗下机器时代基金募集11亿美元投向芯片和机器人硬件。",
+        "奥特曼在访谈中宣布OpenAI将在2026年底前实现AGI，同日黄仁勋也表态\"许多任务上已实现AGI\"。"
+      ],
+      "insights": [
+        "AI行业正从\"模型军备竞赛\"转向\"垂直整合竞赛\"——OpenAI自研芯片Jalapeño、Anthropic被曝曾洽谈收购芯片公司MatX、NVIDIA收购Hugging Face掌控开源入口，三方都在试图掌控从芯片到模型到应用的全链条。",
+        "🟡弱信号：模型公司每赚100美元，云厂商拿走近40美元推理算力费用（巴克莱研究），如果模型公司继续依赖云端推理，利润天花板将被锁死在硬件成本之下。"
+      ],
+      "actions": [
+        "关注Cursor断供对现有编码工作流的影响，评估OpenAI模型直连与Anthropic Claude Code作为备选方案的切换成本。"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "Anthropic发布Claude Opus 5，专为长时间运行的Agent场景优化编码和专业工作表现，同期Claude Sonnet 5上线提供规模化前沿性能。",
+        "Claude Code宣布Pro/Max/Team用户标准周限额自9月14日起永久上调25%，降低编码Agent的使用门槛。",
+        "金山云Agent业务半年进账近5亿，Q2的Token收入暴涨500%，港股AGI概念股走强。"
+      ],
+      "insights": [],
+      "actions": [
+        "🟡弱信号：亚马逊Bedrock AgentCore已支持跨框架评估（LangGraph/LlamaIndex/OpenAI SDK/Claude SDK），Agent质量保障正从厂商锁定走向行业标准化。",
+        "评估Claude Code限额上调25%后是否适合团队全员化部署，对比当前编码Agent使用量与新限额的匹配度。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "索尼音乐出版与华纳查佩尔联合起诉Anthropic，指控其大规模非法使用版权音乐训练Claude，被称为\"史上最大规模、最恶劣的持续性知识产权盗窃行为之一\"。",
+        "Adobe为Photoshop添加更多AI功能，持续强化创意工具链中的AI辅助能力。",
+        "Google AI笔记应用新增与书籍互动功能，用户可通过AI直接对书籍内容提问和讨论。"
+      ],
+      "insights": [],
+      "actions": []
+    }
+  ],
+  "github": [],
+  "consensus": {
+    "text": "## 🔵 共识解读",
+    "quotes": [
+      "NVIDIA以130亿美元收购Hugging Face，将开源模型生态纳入版图（TechCrunch M&A）",
+      "OpenAI自研推理芯片Jalapeño首批基准测试领先行业（OpenAI官方）",
+      "a16z募集11亿美元硬件基金投向芯片和机器人基础设施（36氪快讯）"
+    ]
+  },
+  "division": {
+    "text": "## 🔴 分歧解读",
+    "quotes": [
+      "索尼音乐与华纳联合起诉Anthropic，指控其大规模非法使用版权音乐训练Claude（TechCrunch AI）",
+      "Anthropic获得联邦法官裁定，特朗普政府将其列为供应链风险的做法违法（TechCrunch AI）",
+      "OpenAI、Anthropic、Google等100多家公司联合呼吁加强AI网络安全防御（TechCrunch AI）"
+    ]
+  },
+  "reading": [
+    {
+      "title": "Our decision on Cursor following its acquisition by SpaceX",
+      "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
+      "source": "OpenAI"
+    },
+    {
+      "title": "Nvidia's AI advantage is moving beyond the GPU",
+      "url": "https://techcrunch.com/category/artificial-intelligence/",
+      "source": "TechCrunch AI"
+    },
+    {
+      "title": "How Decathlon runs demand forecasting at scale with Chronos-2",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-decathlon-runs-demand-forecasting-at-scale-with-chronos-2/",
+      "source": "AWS AI Blog"
+    }
+  ],
+  "format": "summary"
+}

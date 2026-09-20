@@ -1,0 +1,85 @@
+{
+  "date": "2026-07-30",
+  "version": "",
+  "points": [],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "Meta扎克伯格在Q2财报电话会上宣布将大举推进个人AI Agent，称其为\"社交网络下一波浪潮\"。",
+        "OpenAI总裁Greg Brockman确认正在\"打造一系列AI设备\"，暗示OpenAI进入硬件领域。",
+        "虎嗅发布深度分析「大模型越来越强，还是越来越尖？」探讨模型能力从通用走向垂直的趋势。",
+        "OpenAI发布「Scientific computing in the age of agentic AI」，展示AI Agent在科学计算中的前沿应用。"
+      ],
+      "insights": [
+        "Meta个人AI Agent+OpenAI硬件=AI正从\"聊天框\"走向\"物理世界\"，2026下半年将是软件到硬件的关键转折期。",
+        "\"大模型越来越尖\"与AngelSpec开源、GPT-5.6效率提升形成呼应——行业共识从\"堆参数\"转向\"精调+效率\"。"
+      ],
+      "actions": [
+        "Meta个人AI Agent路线图适合写解读文章——\"社交+AI Agent\"对PM背景有天然优势，可作为小红书深度选题。",
+        "关注OpenAI硬件产品发布时间——$200以内的AI设备可能成为创作者\"随身AI助手\"。"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "Artium AI成为OpenAI高级合作伙伴，专注企业定制化智能体AI方案的开发与部署。",
+        "Encore AI获3000万美元融资，其AI Agent从客服电话录音中学习并优化企业销售服务流程。",
+        "Simon Willison发布MCP服务器接入Claude与ChatGPT的实操指南，MCP正成为AI连接企业数据的标准协议。",
+        "Simon Willison分析「AI Worming through Word」，探讨AI Agent在Office生态中的渗透路径与风险。"
+      ],
+      "insights": [
+        "Agent落地下一步是渗透现有办公软件生态而非另起炉灶——企业IT需在飞书/钉钉/Office中嵌入AI，而非推倒重来。",
+        "MCP实操指南的出现标志着企业AI部署从\"能不能接\"进入\"怎么接得好\"阶段，协议标准化是Agent规模化的前提。"
+      ],
+      "actions": [
+        "按MCP指南搭建一个连接飞书文档的MCP服务器，验证AI读企业内部知识的可行性。",
+        "关注Artium AI的企业智能体方案——如果提供百炼级别的国内部署能力，可作为备选方案。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "OpenAI发布「How GPT-5.6 fuses frontier intelligence with frontier efficiency」技术博客，系统阐述GPT-5.6在保持前沿智能同时大幅提升效率的设计哲学。",
+        "AI内容检测公司Pangram获900万美元融资，AI生成内容识别需求随网络AI内容泛滥而激增。",
+        "上海发布户外广告合规指引，明确要求AI生成内容须标识——这是国内首个城市级AI内容合规要求。",
+        "腾讯混元开源AngelSpec推理规范，为AI推理部署提供标准化接口。"
+      ],
+      "insights": [],
+      "actions": []
+    }
+  ],
+  "github": [],
+  "consensus": {
+    "text": "",
+    "quotes": []
+  },
+  "division": {
+    "text": "",
+    "quotes": []
+  },
+  "reading": [
+    {
+      "title": "How GPT-5.6 fuses frontier intelligence with frontier efficiency",
+      "url": "https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency",
+      "source": "OpenAI"
+    },
+    {
+      "title": "Mark Zuckerberg is planning a big push into personal AI agents",
+      "url": "https://www.theverge.com/tech/972294/meta-q2-2026-earnings-mark-zuckerberg-personal",
+      "source": "The Verge"
+    },
+    {
+      "title": "AI Worming through Word",
+      "url": "https://simonwillison.net/2026/Jul/29/ai-worming-through-word/",
+      "source": "Simon Willison"
+    }
+  ],
+  "format": "summary"
+}
