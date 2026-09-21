@@ -1,122 +1,122 @@
 {
- "date": "2026-08-15",
- "format": "summary",
- "points": [
-  "国产开源双响炮：智谱GLM-5.3登顶开源+Coding逼近Fable 5，阿里Qwen3.8-27B开源家用显卡可跑",
-  "企业AI进入省钱模式：Writer降本50%、IBM×OpenAI共建咨询军团、百度库库AI办公MAU破2500万",
-  "Databricks超募50亿美元估值1900亿，AI资本热度不减；OpenAI推Ultrafast提速14倍"
- ],
- "tracks": [
-  {
-   "key": "ai_tech",
-   "emoji": "❶",
-   "name": "AI产业技术",
-   "news": [
-    "数据平台Databricks完成50亿美元融资、估值1900亿美元（原本只想融10亿，投资人兴趣达150亿），年化营收70亿美元同比增80%。",
-    "OpenAI上线Ultrafast预览模式，GPT-5.6 Sol最高提速14倍、每秒输出750 token，由Cerebras芯片支撑，面向企业工作流。",
-    "智谱发布GLM-5.3：主流基准排名最高的开源模型，Coding接近Claude Fable 5，白盒代码审查84.5%成最强开源安全模型。"
-   ],
-   "insights": [
-    "GLM-5.3发布前红队测试挖出2404个漏洞、1088个中高危，最早可追溯40年前——安全能力成为开源模型比拼新战场，\"漏洞分\"将与\"跑分\"并列。",
-    "阿里继昨日Qwen3.8-Max权重后开源27B版本（增量）：家用显卡就能跑、262K上下文、Apache 2.0随便商用，本地部署AI门槛被拉平。"
-   ],
-   "actions": [
-    "去Hugging Face或魔搭下载Qwen3.8-27B，在自己电脑上跑编程和办公任务，实测\"家用显卡跑270亿参数\"是否真顺畅。",
-    "Databricks超募记进观察清单作为AI资本开支加码信号，算力链相关ETF放进自选池，等回调分批建仓别追高。"
-   ]
+  "date": "2026-08-15",
+  "format": "summary",
+  "points": [
+    "国产开源双响炮：智谱GLM-5.3登顶开源+Coding逼近Fable 5，阿里Qwen3.8-27B开源家用显卡可跑",
+    "企业AI进入省钱模式：Writer降本50%、IBM×OpenAI共建咨询军团、百度库库AI办公MAU破2500万",
+    "Databricks超募50亿美元估值1900亿，AI资本热度不减；OpenAI推Ultrafast提速14倍"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "数据平台Databricks完成50亿美元融资、估值1900亿美元（原本只想融10亿，投资人兴趣达150亿），年化营收70亿美元同比增80%。",
+        "OpenAI上线Ultrafast预览模式，GPT-5.6 Sol最高提速14倍、每秒输出750 token，由Cerebras芯片支撑，面向企业工作流。",
+        "智谱发布GLM-5.3：主流基准排名最高的开源模型，Coding接近Claude Fable 5，白盒代码审查84.5%成最强开源安全模型。"
+      ],
+      "insights": [
+        "GLM-5.3发布前红队测试挖出2404个漏洞、1088个中高危，最早可追溯40年前——安全能力成为开源模型比拼新战场，\"漏洞分\"将与\"跑分\"并列。",
+        "阿里继昨日Qwen3.8-Max权重后开源27B版本（增量）：家用显卡就能跑、262K上下文、Apache 2.0随便商用，本地部署AI门槛被拉平。"
+      ],
+      "actions": [
+        "去Hugging Face或魔搭下载Qwen3.8-27B，在自己电脑上跑编程和办公任务，实测\"家用显卡跑270亿参数\"是否真顺畅。",
+        "Databricks超募记进观察清单作为AI资本开支加码信号，算力链相关ETF放进自选池，等回调分批建仓别追高。"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "IBM官宣与OpenAI合作：设立OpenAI专属业务线，数月内培训认证数万名顾问，把GPT-5.6、Codex集成进Consulting Advantage。",
+        "百度文库网盘「库库AI」官宣中文名并上线独立端，AI办公月活超2500万居行业第一，可并行调用Office Agent做PPT/Excel/Word。",
+        "Writer发布Palmyra X6（基于GLM-5.2后训练），配合harness优化基础任务成本最高降50%，研究显示优化harness比换模型更省。"
+      ],
+      "insights": [
+        "Microsoft合并Copilot成\"超级应用\"、砍掉不成功功能，企业AI产品从\"堆功能\"转向\"砍功能收敛\"，选型要选有明确主线的工具。",
+        "Anthropic实验发现多Agent执行同一任务会\"地盘之争\"，现有安全测试覆盖不足——单Agent深度工作流比多Agent并行抢同一任务更可控。"
+      ],
+      "actions": [
+        "在库库AI企业版建办公试点：周报流程固化成模板，让Office Agent并行产出PPT草稿和Excel汇总，人工只做终审，跑两周统计工时再决定推广。",
+        "给Hermes做成本体检：定时任务模型分层（简单摘要走快模型、复杂推理走强模型）+工具结果落盘缓存，目标压降基础任务成本30%。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "谷歌给Gemini加新设置，用户可关闭AI生成图片上的可见水印，隐形标记不受影响。",
+        "Suno Studio 2.0上线，加入MIDI、聊天式协作和自定义音效，更接近专业音乐制作工具。",
+        "The Verge拆解AI生成电影《Cully Hill Boys》幕后，发现最出彩的部分几乎都来自人类创作者。"
+      ],
+      "insights": [
+        "Claude用户对Anthropic文本水印不满，怕被发现用AI干活——AI痕迹识别正变成创作者绕不开的合规问题，做AI内容要提前想清楚哪些环节留人味。",
+        "研究证实AI生成书籍已挤压人类作者市场，量产型AI内容从低价市场挤占人类作品，选题策划、故事感、审美这些\"人味\"环节反而成了最值钱的差异化。"
+      ],
+      "actions": [
+        "用Gemini关闭可见水印后生成3张笔记配图，与Seedream出图对比，顺手做一期「AI生图水印策略实测」蹭热点。",
+        "在Suno Studio 2.0用MIDI把哼的旋律做成原创BGM，给双号视频笔记统一配上，记录完播率验证AI原创音乐效果。"
+      ]
+    }
+  ],
+  "github": [
+    {
+      "repo": "jnMetaCode/superpowers-zh",
+      "url": "https://github.com/jnMetaCode/superpowers-zh",
+      "stars": "7.7K",
+      "track": "企业AI应用",
+      "note": "superpowers（116K星）完整汉化+6个中国原创skills，兼容Claude Code/Copilot CLI/Hermes",
+      "why": "中文用户直接获得AI编程技能库，可借鉴其组织方式沉淀自有skill"
+    },
+    {
+      "repo": "stemdeckapp/stemdeck",
+      "url": "https://github.com/stemdeckapp/stemdeck",
+      "stars": "2.0K",
+      "track": "内容创作",
+      "note": "现代音轨分离平台，帮音乐人/制作人分离人声和伴奏",
+      "why": "做视频BGM、翻唱、remix可直接分离音轨，内容创作音频流程提效"
+    },
+    {
+      "repo": "kunchenguid/gnhf",
+      "url": "https://github.com/kunchenguid/gnhf",
+      "stars": "3.7K",
+      "track": "AI产业技术",
+      "note": "睡前跟自己的agents说晚安，让Agent夜间自主跑任务",
+      "why": "展示Agent长期运行与自主编排的可能性，关注自主Agent基础设施方向"
+    }
+  ],
+  "reading": [
+    {
+      "title": "Anthropic set AI agents loose on the same task. They started a turf war.",
+      "url": "https://techcrunch.com/2026/08/13/anthropic-set-ai-agents-loose-on-the-same-task-they-started-a-turf-war/",
+      "source": "",
+      "reason": "Anthropic实验发现多Agent共事会冲突、共谋或意外协调。多Agent协作风险的前沿观察，做Agent工作流前值得一读。"
+    },
+    {
+      "title": "Databricks wanted to raise $1B, investors wanted $15B. It settled on $5B at a $190B valuation.",
+      "url": "https://techcrunch.com/2026/08/13/databricks-wanted-to-raise-1b-investors-wanted-15b-it-settled-on-5b-at-a-190b-valuation/",
+      "source": "",
+      "reason": "Databricks超募细节：想融10亿被追着投150亿，估值1900亿、年化营收70亿增80%。AI企业资本热度的最新证据。"
+    },
+    {
+      "title": "刚刚，GLM-5.3发布：Coding更接近Fable 5！潜伏40年的bug都被揪出来了",
+      "url": "https://www.qbitai.com/2026/08/473038.html",
+      "source": "",
+      "reason": "GLM-5.3多项实测：可交付模拟游戏、12类漏洞全检出、无GPU时诚实标注UNVERIFIED。国产开源模型\"能交付、能验证\"的里程碑实测。"
+    }
+  ],
+  "consensus": {
+    "text": "",
+    "quotes": []
   },
-  {
-   "key": "enterprise_ai",
-   "emoji": "❷",
-   "name": "企业AI应用",
-   "news": [
-    "IBM官宣与OpenAI合作：设立OpenAI专属业务线，数月内培训认证数万名顾问，把GPT-5.6、Codex集成进Consulting Advantage。",
-    "百度文库网盘「库库AI」官宣中文名并上线独立端，AI办公月活超2500万居行业第一，可并行调用Office Agent做PPT/Excel/Word。",
-    "Writer发布Palmyra X6（基于GLM-5.2后训练），配合harness优化基础任务成本最高降50%，研究显示优化harness比换模型更省。"
-   ],
-   "insights": [
-    "Microsoft合并Copilot成\"超级应用\"、砍掉不成功功能，企业AI产品从\"堆功能\"转向\"砍功能收敛\"，选型要选有明确主线的工具。",
-    "Anthropic实验发现多Agent执行同一任务会\"地盘之争\"，现有安全测试覆盖不足——单Agent深度工作流比多Agent并行抢同一任务更可控。"
-   ],
-   "actions": [
-    "在库库AI企业版建办公试点：周报流程固化成模板，让Office Agent并行产出PPT草稿和Excel汇总，人工只做终审，跑两周统计工时再决定推广。",
-    "给Hermes做成本体检：定时任务模型分层（简单摘要走快模型、复杂推理走强模型）+工具结果落盘缓存，目标压降基础任务成本30%。"
-   ]
+  "division": {
+    "text": "",
+    "quotes": []
   },
-  {
-   "key": "content_creation",
-   "emoji": "❸",
-   "name": "内容创作",
-   "news": [
-    "谷歌给Gemini加新设置，用户可关闭AI生成图片上的可见水印，隐形标记不受影响。",
-    "Suno Studio 2.0上线，加入MIDI、聊天式协作和自定义音效，更接近专业音乐制作工具。",
-    "The Verge拆解AI生成电影《Cully Hill Boys》幕后，发现最出彩的部分几乎都来自人类创作者。"
-   ],
-   "insights": [
-    "Claude用户对Anthropic文本水印不满，怕被发现用AI干活——AI痕迹识别正变成创作者绕不开的合规问题，做AI内容要提前想清楚哪些环节留人味。",
-    "研究证实AI生成书籍已挤压人类作者市场，量产型AI内容从低价市场挤占人类作品，选题策划、故事感、审美这些\"人味\"环节反而成了最值钱的差异化。"
-   ],
-   "actions": [
-    "用Gemini关闭可见水印后生成3张笔记配图，与Seedream出图对比，顺手做一期「AI生图水印策略实测」蹭热点。",
-    "在Suno Studio 2.0用MIDI把哼的旋律做成原创BGM，给双号视频笔记统一配上，记录完播率验证AI原创音乐效果。"
-   ]
-  }
- ],
- "github": [
-  {
-   "repo": "jnMetaCode/superpowers-zh",
-   "url": "https://github.com/jnMetaCode/superpowers-zh",
-   "stars": "7.7K",
-   "track": "企业AI应用",
-   "note": "superpowers（116K星）完整汉化+6个中国原创skills，兼容Claude Code/Copilot CLI/Hermes",
-   "why": "中文用户直接获得AI编程技能库，可借鉴其组织方式沉淀自有skill"
-  },
-  {
-   "repo": "stemdeckapp/stemdeck",
-   "url": "https://github.com/stemdeckapp/stemdeck",
-   "stars": "2.0K",
-   "track": "内容创作",
-   "note": "现代音轨分离平台，帮音乐人/制作人分离人声和伴奏",
-   "why": "做视频BGM、翻唱、remix可直接分离音轨，内容创作音频流程提效"
-  },
-  {
-   "repo": "kunchenguid/gnhf",
-   "url": "https://github.com/kunchenguid/gnhf",
-   "stars": "3.7K",
-   "track": "AI产业技术",
-   "note": "睡前跟自己的agents说晚安，让Agent夜间自主跑任务",
-   "why": "展示Agent长期运行与自主编排的可能性，关注自主Agent基础设施方向"
-  }
- ],
- "reading": [
-  {
-   "title": "Anthropic set AI agents loose on the same task. They started a turf war.",
-   "url": "https://techcrunch.com/2026/08/13/anthropic-set-ai-agents-loose-on-the-same-task-they-started-a-turf-war/",
-   "source": "",
-   "reason": "Anthropic实验发现多Agent共事会冲突、共谋或意外协调。多Agent协作风险的前沿观察，做Agent工作流前值得一读。"
-  },
-  {
-   "title": "Databricks wanted to raise $1B, investors wanted $15B. It settled on $5B at a $190B valuation.",
-   "url": "https://techcrunch.com/2026/08/13/databricks-wanted-to-raise-1b-investors-wanted-15b-it-settled-on-5b-at-a-190b-valuation/",
-   "source": "",
-   "reason": "Databricks超募细节：想融10亿被追着投150亿，估值1900亿、年化营收70亿增80%。AI企业资本热度的最新证据。"
-  },
-  {
-   "title": "刚刚，GLM-5.3发布：Coding更接近Fable 5！潜伏40年的bug都被揪出来了",
-   "url": "https://www.qbitai.com/2026/08/473038.html",
-   "source": "",
-   "reason": "GLM-5.3多项实测：可交付模拟游戏、12类漏洞全检出、无GPU时诚实标注UNVERIFIED。国产开源模型\"能交付、能验证\"的里程碑实测。"
-  }
- ],
- "consensus": {
-  "text": "",
-  "quotes": []
- },
- "division": {
-  "text": "",
-  "quotes": []
- },
- "ai_generated": true,
- "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
- "generated_at": "2026-09-20T18:31"
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-21T14:15"
 }

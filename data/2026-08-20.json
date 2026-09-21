@@ -1,122 +1,122 @@
 {
- "date": "2026-08-20",
- "format": "summary",
- "points": [
-  "Claude Code增长神话破灭，ARR增速暴跌至5.2%，大量用户因水印争议涌向OpenAI Codex和Cursor",
-  "杰富瑞实测8款全球Agent，千问办公综合排名第一，企业AI竞争从模型能力转向Harness工程",
-  "SpaceX以600亿美元完成Cursor收购，宇树科技IPO首日大涨629%，AI产业资本与机器人赛道双爆发"
- ],
- "tracks": [
-  {
-   "key": "ai_tech",
-   "emoji": "❶",
-   "name": "AI产业技术",
-   "news": [
-    "SpaceX正式完成对Cursor（Anysphere）的收购，交易估值600亿美元，成为AI工具赛道史上最大收购案，Cursor凭\"退订Claude截图送200美元订阅\"发起补贴战。",
-    "宇树科技上市首日大涨629%，世界机器人大会（WRC 2026）集中展示具身智能最新进展，银河通用双足机器人\"星仔\"亮相。",
-    "Latent Space报道内存价格12个月内上涨500%，AI基础设施成本压力持续攀升，Binance开放AI代理交易功能但用户需自行承担责任。"
-   ],
-   "insights": [
-    "SpaceX收购Cursor+宇树IPO大涨629%印证AI产业资本正同时涌向两个方向：软件层的AI工具平台（Cursor）和硬件层的具身智能（宇树），AI从\"辅助工具\"向\"基础设施\"和\"物理实体\"的双向延伸正在加速。",
-    "Prime Intellect的18模型自主科研实验证明，开源模型Kimi K3搭配Harness可逼近Opus 5——AI研发能力正从\"谁的模型最强\"转向\"谁的试错机器最高效\"，Harness层的工程创新成为新的竞争维度。"
-   ],
-   "actions": [
-    "关注A股具身智能/机器人相关ETF配置机会，宇树IPO和WRC大会集中释放的产业信号可能带动板块行情。",
-    "跟踪DeepSeek Harness和OpenAI Codex的免费/低价额度策略，作为企业AI部署的低成本试水通道。"
-   ]
+  "date": "2026-08-20",
+  "format": "summary",
+  "points": [
+    "Claude Code增长神话破灭，ARR增速暴跌至5.2%，大量用户因水印争议涌向OpenAI Codex和Cursor",
+    "杰富瑞实测8款全球Agent，千问办公综合排名第一，企业AI竞争从模型能力转向Harness工程",
+    "SpaceX以600亿美元完成Cursor收购，宇树科技IPO首日大涨629%，AI产业资本与机器人赛道双爆发"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "SpaceX正式完成对Cursor（Anysphere）的收购，交易估值600亿美元，成为AI工具赛道史上最大收购案，Cursor凭\"退订Claude截图送200美元订阅\"发起补贴战。",
+        "宇树科技上市首日大涨629%，世界机器人大会（WRC 2026）集中展示具身智能最新进展，银河通用双足机器人\"星仔\"亮相。",
+        "Latent Space报道内存价格12个月内上涨500%，AI基础设施成本压力持续攀升，Binance开放AI代理交易功能但用户需自行承担责任。"
+      ],
+      "insights": [
+        "SpaceX收购Cursor+宇树IPO大涨629%印证AI产业资本正同时涌向两个方向：软件层的AI工具平台（Cursor）和硬件层的具身智能（宇树），AI从\"辅助工具\"向\"基础设施\"和\"物理实体\"的双向延伸正在加速。",
+        "Prime Intellect的18模型自主科研实验证明，开源模型Kimi K3搭配Harness可逼近Opus 5——AI研发能力正从\"谁的模型最强\"转向\"谁的试错机器最高效\"，Harness层的工程创新成为新的竞争维度。"
+      ],
+      "actions": [
+        "关注A股具身智能/机器人相关ETF配置机会，宇树IPO和WRC大会集中释放的产业信号可能带动板块行情。",
+        "跟踪DeepSeek Harness和OpenAI Codex的免费/低价额度策略，作为企业AI部署的低成本试水通道。"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "杰富瑞分析师对8款全球主流AI Agent进行真实办公任务实测，阿里千问办公综合得分排名第一，是唯一在所有维度均获90分以上的Agent产品，超越Claude Cowork和Codex。",
+        "阿里发布Qwen-UI-Agent，让模型真正\"会用\"每一块屏幕，结合千问办公已打通钉钉IM，企业员工可直接完成群聊总结、文档创建、邮件收发等操作。",
+        "OpenAI宣布前沿模型零数据留存政策，直接对标Anthropic此前的隐私保护承诺，企业级AI服务的数据安全竞争升级。"
+      ],
+      "insights": [
+        "千问办公排名第一的关键不是底层模型最强，而是Harness工程能力——杰富瑞将Agent拆分为模型+Harness两部分评估，千问的\"隐含Harness分\"最高，证明工程和产品能力正在成为企业AI竞争的核心壁垒。",
+        "企业AI落地正从\"工具试用\"进入\"基础设施\"阶段——千问办公打通钉钉、Qwen-UI-Agent操控屏幕、DeepSeek Harness接入子代理体系，Agent正在从独立工具演变为连接企业数据和业务系统的中枢。"
+      ],
+      "actions": [
+        "评估千问办公的钉钉集成能力，如果团队使用钉钉办公，可测试群聊总结、文档创建等实际场景，验证对企业协作效率的实际提升。",
+        "关注\"Cost per Task\"指标——千问办公底层Qwen 3.8 Max的API价格低于部分海外头部模型，企业部署Agent时应将完成单任务成本纳入选型评估。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "TickerTrends数据显示Claude Code的ARR从6月的140亿飙升后在8月停滞于151.2亿，增速暴跌至5.2%，而同期OpenAI Codex增速达20.8%，开发者因水印争议和额度限制大量转投Codex。",
+        "OpenAI与Replit合作推出Free Mode，用GPT-5.6 Luna驱动免费软件创建，用户无需消耗token即可将想法转化为可运行软件，降低内容创作门槛。",
+        "DeepSeek Harness发布v0.1.0-rc.8版本，14项更新补齐多模态能力（原生图片输入+图文混合指令），并接入Claude Code和Codex作为子代理。"
+      ],
+      "insights": [
+        "AI编码工具的竞争已从\"谁的模型更强\"转向\"谁的产品体验更好\"——Claude Code的水印争议和额度限制暴露了产品运营短板，而Codex凭借更宽松的限制和无缝IDE集成正疯狂吞噬市场份额。",
+        "DeepSeek Harness的\"工具层视觉\"设计（OCR+像素扫描给纯文本模型拼出视觉能力）展示了Harness层创新可以绕过模型本身的多模态限制，降低创作者使用AI处理图片内容的成本。"
+      ],
+      "actions": [
+        "如果当前使用Claude Code，评估水印功能对自身内容工作流的影响——若涉及客户交付代码或机密文档，考虑切换到Codex或DeepSeek Harness作为替代方案。",
+        "测试Replit Free Mode，用自然语言描述内容创作需求（如数据分析脚本、格式转换工具），验证GPT-5.6 Luna在免费额度内的实际可用性。"
+      ]
+    }
+  ],
+  "github": [
+    {
+      "repo": "Forget-C/Jellyfish",
+      "url": "https://github.com/Forget-C/Jellyfish",
+      "stars": "6.1K",
+      "track": "内容创作",
+      "note": "端到端AI短剧制作工作空间，从剧本输入到结构化分镜、角色一致性和视频生成一站式完成",
+      "why": "内容创作者可用它将小说或剧本快速转化为动画短剧，覆盖编剧-分镜-生成全链路"
+    },
+    {
+      "repo": "macro-inc/macro",
+      "url": "https://github.com/macro-inc/macro",
+      "stars": "3.8K",
+      "track": "企业AI应用",
+      "note": "团队统一工作空间，集成邮件、聊天、文档、任务、Agent、通话和CRM，共享AI记忆",
+      "why": "企业可评估其@链接和共享AI记忆功能，解决Agent每次对话重复交代上下文的摩擦成本"
+    },
+    {
+      "repo": "chaitanyagiri/munder-difflin",
+      "url": "https://github.com/chaitanyagiri/munder-difflin",
+      "stars": "2.9K",
+      "track": "AI产业技术",
+      "note": "本地多Agent编排框架，支持在本地环境运行和协调多个AI Agent协同工作",
+      "why": "开发者可用它搭建本地多Agent实验环境，测试Agent协作流程而无需依赖云端API"
+    }
+  ],
+  "reading": [
+    {
+      "title": "Claude Code神话破灭？大量用户正在取消订阅",
+      "url": "https://www.36kr.com/p/3947212935593095",
+      "source": "",
+      "reason": "Claude Code ARR增速从狂飙暴跌至5.2%，水印争议+额度限制引发退订潮，Codex趁机疯狂扩张。AI编码工具的用户忠诚度比想象中脆弱得多。"
+    },
+    {
+      "title": "闭源RSI的严父：18个Agent自主科研，Kimi K3靠Harness逼近Opus 5",
+      "url": "https://www.qbitai.com/2026/08/476199.html",
+      "source": "",
+      "reason": "Prime Intellect让18个前沿模型自主做AI研究，发现idea本身不稀缺，试错吞吐量才是关键——开源模型Kimi K3搭配Harness可逼近最强闭源模型Opus 5。"
+    },
+    {
+      "title": "Replit expands access to software creation with GPT-5.6 Luna",
+      "url": "https://openai.com/index/replit",
+      "source": "",
+      "reason": "Replit推出Free Mode用GPT-5.6 Luna驱动免费软件创建，模型经济学的进步正在消除\"从想法到可运行软件\"之间的成本障碍。"
+    }
+  ],
+  "consensus": {
+    "text": "AI工具赛道的竞争重心正从\"模型能力\"转向\"Harness工程\"——谁能把模型智能更稳定、更高效地转化为实际任务结果，谁就赢。",
+    "quotes": []
   },
-  {
-   "key": "enterprise_ai",
-   "emoji": "❷",
-   "name": "企业AI应用",
-   "news": [
-    "杰富瑞分析师对8款全球主流AI Agent进行真实办公任务实测，阿里千问办公综合得分排名第一，是唯一在所有维度均获90分以上的Agent产品，超越Claude Cowork和Codex。",
-    "阿里发布Qwen-UI-Agent，让模型真正\"会用\"每一块屏幕，结合千问办公已打通钉钉IM，企业员工可直接完成群聊总结、文档创建、邮件收发等操作。",
-    "OpenAI宣布前沿模型零数据留存政策，直接对标Anthropic此前的隐私保护承诺，企业级AI服务的数据安全竞争升级。"
-   ],
-   "insights": [
-    "千问办公排名第一的关键不是底层模型最强，而是Harness工程能力——杰富瑞将Agent拆分为模型+Harness两部分评估，千问的\"隐含Harness分\"最高，证明工程和产品能力正在成为企业AI竞争的核心壁垒。",
-    "企业AI落地正从\"工具试用\"进入\"基础设施\"阶段——千问办公打通钉钉、Qwen-UI-Agent操控屏幕、DeepSeek Harness接入子代理体系，Agent正在从独立工具演变为连接企业数据和业务系统的中枢。"
-   ],
-   "actions": [
-    "评估千问办公的钉钉集成能力，如果团队使用钉钉办公，可测试群聊总结、文档创建等实际场景，验证对企业协作效率的实际提升。",
-    "关注\"Cost per Task\"指标——千问办公底层Qwen 3.8 Max的API价格低于部分海外头部模型，企业部署Agent时应将完成单任务成本纳入选型评估。"
-   ]
+  "division": {
+    "text": "AI行业对\"水印/数据安全\"的定位存在结构性矛盾：监管要求透明可追溯，用户要求隐私不污染——两者的张力正在撕裂用户忠诚度。",
+    "quotes": []
   },
-  {
-   "key": "content_creation",
-   "emoji": "❸",
-   "name": "内容创作",
-   "news": [
-    "TickerTrends数据显示Claude Code的ARR从6月的140亿飙升后在8月停滞于151.2亿，增速暴跌至5.2%，而同期OpenAI Codex增速达20.8%，开发者因水印争议和额度限制大量转投Codex。",
-    "OpenAI与Replit合作推出Free Mode，用GPT-5.6 Luna驱动免费软件创建，用户无需消耗token即可将想法转化为可运行软件，降低内容创作门槛。",
-    "DeepSeek Harness发布v0.1.0-rc.8版本，14项更新补齐多模态能力（原生图片输入+图文混合指令），并接入Claude Code和Codex作为子代理。"
-   ],
-   "insights": [
-    "AI编码工具的竞争已从\"谁的模型更强\"转向\"谁的产品体验更好\"——Claude Code的水印争议和额度限制暴露了产品运营短板，而Codex凭借更宽松的限制和无缝IDE集成正疯狂吞噬市场份额。",
-    "DeepSeek Harness的\"工具层视觉\"设计（OCR+像素扫描给纯文本模型拼出视觉能力）展示了Harness层创新可以绕过模型本身的多模态限制，降低创作者使用AI处理图片内容的成本。"
-   ],
-   "actions": [
-    "如果当前使用Claude Code，评估水印功能对自身内容工作流的影响——若涉及客户交付代码或机密文档，考虑切换到Codex或DeepSeek Harness作为替代方案。",
-    "测试Replit Free Mode，用自然语言描述内容创作需求（如数据分析脚本、格式转换工具），验证GPT-5.6 Luna在免费额度内的实际可用性。"
-   ]
-  }
- ],
- "github": [
-  {
-   "repo": "Forget-C/Jellyfish",
-   "url": "https://github.com/Forget-C/Jellyfish",
-   "stars": "6.1K",
-   "track": "内容创作",
-   "note": "端到端AI短剧制作工作空间，从剧本输入到结构化分镜、角色一致性和视频生成一站式完成",
-   "why": "内容创作者可用它将小说或剧本快速转化为动画短剧，覆盖编剧-分镜-生成全链路"
-  },
-  {
-   "repo": "macro-inc/macro",
-   "url": "https://github.com/macro-inc/macro",
-   "stars": "3.8K",
-   "track": "企业AI应用",
-   "note": "团队统一工作空间，集成邮件、聊天、文档、任务、Agent、通话和CRM，共享AI记忆",
-   "why": "企业可评估其@链接和共享AI记忆功能，解决Agent每次对话重复交代上下文的摩擦成本"
-  },
-  {
-   "repo": "chaitanyagiri/munder-difflin",
-   "url": "https://github.com/chaitanyagiri/munder-difflin",
-   "stars": "2.9K",
-   "track": "AI产业技术",
-   "note": "本地多Agent编排框架，支持在本地环境运行和协调多个AI Agent协同工作",
-   "why": "开发者可用它搭建本地多Agent实验环境，测试Agent协作流程而无需依赖云端API"
-  }
- ],
- "reading": [
-  {
-   "title": "Claude Code神话破灭？大量用户正在取消订阅",
-   "url": "https://www.36kr.com/p/3947212935593095",
-   "source": "",
-   "reason": "Claude Code ARR增速从狂飙暴跌至5.2%，水印争议+额度限制引发退订潮，Codex趁机疯狂扩张。AI编码工具的用户忠诚度比想象中脆弱得多。"
-  },
-  {
-   "title": "闭源RSI的严父：18个Agent自主科研，Kimi K3靠Harness逼近Opus 5",
-   "url": "https://www.qbitai.com/2026/08/476199.html",
-   "source": "",
-   "reason": "Prime Intellect让18个前沿模型自主做AI研究，发现idea本身不稀缺，试错吞吐量才是关键——开源模型Kimi K3搭配Harness可逼近最强闭源模型Opus 5。"
-  },
-  {
-   "title": "Replit expands access to software creation with GPT-5.6 Luna",
-   "url": "https://openai.com/index/replit",
-   "source": "",
-   "reason": "Replit推出Free Mode用GPT-5.6 Luna驱动免费软件创建，模型经济学的进步正在消除\"从想法到可运行软件\"之间的成本障碍。"
-  }
- ],
- "consensus": {
-  "text": "AI工具赛道的竞争重心正从\"模型能力\"转向\"Harness工程\"——谁能把模型智能更稳定、更高效地转化为实际任务结果，谁就赢。",
-  "quotes": []
- },
- "division": {
-  "text": "AI行业对\"水印/数据安全\"的定位存在结构性矛盾：监管要求透明可追溯，用户要求隐私不污染——两者的张力正在撕裂用户忠诚度。",
-  "quotes": []
- },
- "ai_generated": true,
- "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
- "generated_at": "2026-09-20T18:31"
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-21T14:15"
 }

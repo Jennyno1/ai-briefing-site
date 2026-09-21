@@ -41,7 +41,7 @@
   --l-paper-text: #16202b;
   --l-paper-text-2: #4c5a6a;
   --l-paper-blue: #1d5bd8;
-  --l-paper-gold: #9c6b1f;
+  --l-paper-gold: #855816;       /* 原 #9c6b1f 对纸色 4.32:1，不过 AA（2026-09-21 实测修正） */
   --l-paper-teal: #0f8c76;
 
   /* 字体：标题衬线 / 正文无衬线（只有一个刻意的对比，不做多字体混排） */
@@ -95,7 +95,7 @@
   --hairline-soft: #e8ebf0;
   --ink: var(--l-paper-text);
   --ink-2: var(--l-paper-text-2);
-  --ink-3: #66748a;
+  --ink-3: #5d6b80;              /* 原 #66748a 对纸色仅 4.42:1，不过 AA（2026-09-21 实测修正） */
   --accent: var(--l-paper-blue);
   --accent-ink: var(--l-paper-blue);
   --gold: var(--l-paper-gold);
@@ -254,8 +254,9 @@ a:hover { text-decoration-color: currentColor; }
   padding: 32px 0 0;
   max-height: calc(100vh - 110px);
   overflow-y: auto;
-  scrollbar-width: thin;
+  scrollbar-width: none;      /* 隐藏常驻滚动条：保持「线减法」，内容溢出仍可滚 */
 }
+.rail::-webkit-scrollbar { display: none; }
 
 .rail-head {
   display: flex;
@@ -292,7 +293,8 @@ a:hover { text-decoration-color: currentColor; }
   align-items: center;
   gap: 10px;
   width: 100%;
-  padding: 6px 0 6px 16px;
+  min-height: 44px;                    /* 触控目标 ≥44px（移动端可点性） */
+  padding: 10px 0 10px 16px;
   background: none;
   border: 0;
   font-family: var(--font-sans);
@@ -324,6 +326,29 @@ li.active > .d-btn::before { opacity: 1; }
 .d-date { flex: 1 1 auto; }
 li.partial .d-date { color: var(--ink-3); }
 .d-dot { font-size: 10px; color: var(--ink-3); opacity: 0.8; }
+
+/* 月份分组标：52 期不再是找不到锚点的长条 */
+.d-month {
+  padding: 14px 0 4px;
+  font-size: var(--fs-micro);
+  letter-spacing: 0.04em;
+  color: var(--ink-3);
+}
+.d-month:first-child { padding-top: 2px; }
+
+/* 重试按钮：加载失败时给出下一步动作，而不是只报 HTTP 码 */
+.retry-btn {
+  margin-left: 10px;
+  padding: 4px 12px;
+  border: 1px solid var(--hairline-strong);
+  border-radius: var(--rounded-sm);
+  background: none;
+  color: var(--ink-2);
+  font-family: var(--font-sans);
+  font-size: var(--fs-micro);
+  cursor: pointer;
+}
+.retry-btn:hover { color: var(--ink); border-color: var(--ink-3); }
 
 /* ---- 正文 ------------------------------------------------------------------ */
 .content { padding-top: 40px; min-width: 0; }
@@ -365,6 +390,8 @@ li.partial .d-date { color: var(--ink-3); }
   line-height: var(--lh-tight);
   letter-spacing: 0.01em;
   font-weight: 600;
+  margin: 0;          /* h1 语义化后归零默认外边距 */
+  display: block;
 }
 
 .date-week {
@@ -470,7 +497,7 @@ li.partial .d-date { color: var(--ink-3); }
   font-size: var(--fs-micro);
   color: var(--ink-2);
   font-weight: 600;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.04em;
   margin-bottom: 6px;
 }
 
@@ -658,7 +685,8 @@ li.partial .d-date { color: var(--ink-3); }
 
   .d-btn {
     width: auto;
-    padding: 6px 10px;
+    min-height: 44px;
+    padding: 10px 12px;
     white-space: nowrap;
   }
   /* 横向排列时不放圆点，靠颜色 + 字重区分当前期 */

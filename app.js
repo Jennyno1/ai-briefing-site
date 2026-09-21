@@ -91,7 +91,7 @@
     var quotesHtml = quotes.length
       ? '<ul>' + quotes.map(function (q) { return '<li>' + esc(q) + '</li>'; }).join('') + '</ul>'
       : '';
-    return '<div class="vp-card vp-' + kind + '"><h4>' + esc(title) + '</h4>' +
+    return '<div class="vp-card vp-' + kind + '"><h3>' + esc(title) + '</h3>' +
       '<div class="vp-text">' + esc(vp.text) + '</div>' + quotesHtml + '</div>';
   }
 
@@ -114,7 +114,7 @@
     var lis = list.map(function (g) {
       var u = g.url || ('https://github.com/' + g.repo);
       var name = g.repo || g.url;
-      var star = (g.stars != null && g.stars !== '') ? ' <span class="src">⭐' + esc(g.stars) + '</span>' : '';
+      var star = (g.stars != null && g.stars !== '') ? ' <span class="src">GitHub ' + esc(g.stars) + '</span>' : '';
       var track = (!isPlaceholder(g.track)) ? ' <span class="badge badge-quiet">' + esc(g.track) + '</span>' : '';
       var note = (!isPlaceholder(g.note)) ? '<p class="reason">' + esc(g.note) + '</p>' : '';
       var why = (!isPlaceholder(g.why)) ? '<p class="reason reason-why">落地：' + esc(g.why) + '</p>' : '';
@@ -149,7 +149,7 @@
 
     var html = '<div class="brief-head">';
     var dd = cnDate(data.date);
-    html += '<div class="date"><span class="date-cn">' + esc(dd.cn) + '</span>' +
+    html += '<div class="date"><h1 class="date-cn">' + esc(dd.cn) + '</h1>' +
       (dd.week ? '<span class="date-week">' + esc(dd.week) + '</span>' : '') + '</div>';
     var metaBits = [];
     if (data.version) metaBits.push('<span class="badge">' + esc(data.version) + '</span>');
@@ -162,14 +162,17 @@
 
     html += missingNotice(data);
 
+    var LANE_ORDER = ['ai_tech', 'enterprise_ai', 'content_creation'];   // 颜色语义固定，不随当日赛道是否为空前移
     liveTracks.forEach(function (t, i) {
       var name = t.name || t.key || '';
       var body = trackGroupHtml('最新动态', 'news', t.news) +
                  trackGroupHtml('洞察发现', 'insights', t.insights) +
                  trackGroupHtml('落地行动', 'actions', t.actions);
       if (!body) return;   // 该赛道本日无内容 → 整段不渲染
-      // lane-i 色块直接标在赛道名旁：颜色只用在实际用到它的地方（不再单开一行图例）
-      html += '<section class="track lane-' + i + '"><h2><i class="chip" aria-hidden="true"></i>' +
+      // lane 色块直接标在赛道名旁：按 key 固定映射，某赛道整段为空时颜色语义不会静默前移
+      var laneIdx = LANE_ORDER.indexOf(t.key);
+      if (laneIdx < 0) laneIdx = LANE_ORDER.length + i;
+      html += '<section class="track lane-' + laneIdx + '"><h2><i class="chip" aria-hidden="true"></i>' +
         esc(name) + '</h2>' + body + '</section>';
     });
 
@@ -189,15 +192,25 @@
 
   function renderDates(dates, activeDate, gaps) {
     // 用 <button> 承载可点项：键盘可操作、有可访问名（ux 规范：别拿 div 当按钮）
-    datesEl.innerHTML = dates.map(function (d) {
+    // 月份分组：跨月时插一行月标，52 期不再是一根无锚点的长条
+    var out = [];
+    var seenMonth = '';
+    dates.forEach(function (d) {
+      var m = String(d).slice(0, 7);
+      if (m !== seenMonth) {
+        seenMonth = m;
+        out.push('<li class="d-month" aria-hidden="true">' + esc(m.slice(0, 4)) + ' 年 ' +
+          esc(String(Number(m.slice(5, 7)))) + ' 月</li>');
+      }
       var partial = gaps && gaps[d] ? ' partial' : '';
-      var mark = partial ? '<span class="d-dot" title="该日数据板块不全">◦</span>' : '';
+      var mark = partial ? '<span class="d-dot" title="该日板块不全：' + esc((gaps[d] || []).join('、')) + '">◦</span>' : '';
       var cur = d === activeDate;
-      return '<li data-date="' + esc(d) + '" class="' + (cur ? 'active' : '') + partial + '">' +
+      out.push('<li data-date="' + esc(d) + '" class="' + (cur ? 'active' : '') + partial + '">' +
         '<button type="button" class="d-btn" data-date="' + esc(d) + '"' +
         (cur ? ' aria-current="true"' : '') + '>' +
-        '<span class="d-date">' + esc(d) + '</span>' + mark + '</button></li>';
-    }).join('');
+        '<span class="d-date">' + esc(d) + '</span>' + mark + '</button></li>');
+    });
+    datesEl.innerHTML = out.join('');
   }
 
   function setActive(date) {
@@ -221,9 +234,12 @@
       data.date = data.date || date;
       renderBriefing(data);
       setActive(date);
-      if (location.hash.slice(1) !== date) history.replaceState(null, '', '#' + date);
+      if (location.hash.slice(1) !== date) history.pushState(null, '', '#' + date);   // 进历史栈：浏览器返回＝回上一期，不再直接离站
     } catch (err) {
-      briefingEl.innerHTML = '<p class="state">加载失败：' + esc(err.message) + '</p>';
+      briefingEl.innerHTML = '<p class="state">这一期没能加载出来（' + esc(err.message) + '）。可以点重试，或先看旁边其他期。' +
+        '<button type="button" class="retry-btn" id="retry-date">重试</button></p>';
+      var rb = document.getElementById('retry-date');
+      if (rb) rb.addEventListener('click', function () { loadDate(date); });
     }
   }
 
@@ -261,8 +277,11 @@
       if (!res.ok) throw new Error('HTTP ' + res.status);
       dates = (await res.json()).slice().sort().reverse();
     } catch (err) {
-      datesEl.innerHTML = '<li class="state">日期加载失败</li>';
-      briefingEl.innerHTML = '<p class="state">无法加载日期清单（data/manifest.json）：' + esc(err.message) + '</p>';
+      datesEl.innerHTML = '<li class="state">—</li>';
+      briefingEl.innerHTML = '<p class="state">简报目录没能加载出来（' + esc(err.message) + '）。网络不稳时点一下重试通常就好。' +
+        '<button type="button" class="retry-btn" id="retry-load">重试</button></p>';
+      var rb = document.getElementById('retry-load');
+      if (rb) rb.addEventListener('click', function () { init(); });
       return;
     }
     if (!dates.length) {
@@ -275,7 +294,12 @@
 
     var hash = decodeURIComponent(location.hash.slice(1));
     var active = dates.indexOf(hash) !== -1 ? hash : dates[0];
-    renderDates(dates, active);
+    var gaps = {};
+    try {
+      var gres = await fetch('data/gaps.json', { cache: 'no-cache' });
+      if (gres.ok) gaps = await gres.json();
+    } catch (e) { /* 缺板块清单缺失不影响主流程 */ }
+    renderDates(dates, active, gaps);
     await loadDate(active);
 
     datesEl.addEventListener('click', function (e) {
@@ -289,9 +313,12 @@
       if (dates.indexOf(d) !== -1) loadDate(d);
     });
 
-    // 键盘：按钮自带 Enter/Space，这里只补上下键在日期列表里的移动
+    // 键盘：按钮自带 Enter/Space，这里补上下键在日期列表里的移动。
+    // 只在焦点位于日期架（.rail）内时接管——否则用户按 ↓ 滚正文会被劫持跳期（P0 修复）
     document.addEventListener('keydown', function (e) {
       if (e.key !== 'ArrowUp' && e.key !== 'ArrowDown') return;
+      var t = e.target;
+      if (!t || typeof t.closest !== 'function' || !t.closest('.rail')) return;
       var cur = datesEl.querySelector('li.active');
       if (!cur) return;
       var i = dates.indexOf(cur.getAttribute('data-date'));

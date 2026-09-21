@@ -1,131 +1,131 @@
 {
- "date": "2026-09-16",
- "format": "summary",
- "points": [
-  "OpenAI成立对话式AI巨头联盟——OpenAI/Anthropic/Google已连续数周就AI安全对谈（TechCrunch confirmed)",
-  "OpenAI考虑IPO前新一轮融资，估值目标1.2万亿美元；Sam Altman称2026年上市\"不明智\"（36氪/The Verge）",
-  "OpenAI发布Agents API与GPT-Live-1实时语音API，Agent产品化进入API基建层（OpenAI）",
-  "--"
- ],
- "tracks": [
-  {
-   "key": "ai_tech",
-   "emoji": "❶",
-   "name": "AI产业技术",
-   "news": [
-    "OpenAI发布Agents API与GPT-Live-1在API中开放端到端实时语音能力，同时上线ChatGPT for Financial Services面向垂直行业（OpenAI L1）。",
-    "GPT-6 Astra成生态焦点：Perplexity用其端到端跑真实业务系统，Cognition让Devin用它自测代码，OpenAI收购Glass Imaging 3亿美元补端侧影像（OpenAI/TechCrunch M&A）。",
-    "DeepSeek v4.1-Flash曝光763B总参/8B激活的因果Encoder-Decoder新架构；智谱系模型 Ginger-1 Pro进入公开评测前十（Latent Space/社区）。"
-   ],
-   "insights": [
-    "L1官方博客单日13条创近期新高，OpenAI正把「模型发布」改成「API基建+行业方案打包发布」，产业叙事从能力竞争转向生态绑定。",
-    "🟡弱信号：清华LimiX-2结构化数据基础模型登顶国际评测，国内「结构化数据专用模型」开始与国际厂商同台，AI for 表格/B2B数据这条支线正在被独立定价。"
-   ],
-   "actions": [
-    "本周做一次GPT-Live-1 API实测，对照当前语音方案的成本与延迟，如果可落地就给公众号写一篇「实时语音交互」实操选题。",
+  "date": "2026-09-16",
+  "format": "summary",
+  "points": [
+    "OpenAI成立对话式AI巨头联盟——OpenAI/Anthropic/Google已连续数周就AI安全对谈（TechCrunch confirmed)",
+    "OpenAI考虑IPO前新一轮融资，估值目标1.2万亿美元；Sam Altman称2026年上市\"不明智\"（36氪/The Verge）",
+    "OpenAI发布Agents API与GPT-Live-1实时语音API，Agent产品化进入API基建层（OpenAI）",
     "--"
-   ]
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "OpenAI发布Agents API与GPT-Live-1在API中开放端到端实时语音能力，同时上线ChatGPT for Financial Services面向垂直行业（OpenAI L1）。",
+        "GPT-6 Astra成生态焦点：Perplexity用其端到端跑真实业务系统，Cognition让Devin用它自测代码，OpenAI收购Glass Imaging 3亿美元补端侧影像（OpenAI/TechCrunch M&A）。",
+        "DeepSeek v4.1-Flash曝光763B总参/8B激活的因果Encoder-Decoder新架构；智谱系模型 Ginger-1 Pro进入公开评测前十（Latent Space/社区）。"
+      ],
+      "insights": [
+        "L1官方博客单日13条创近期新高，OpenAI正把「模型发布」改成「API基建+行业方案打包发布」，产业叙事从能力竞争转向生态绑定。",
+        "🟡弱信号：清华LimiX-2结构化数据基础模型登顶国际评测，国内「结构化数据专用模型」开始与国际厂商同台，AI for 表格/B2B数据这条支线正在被独立定价。"
+      ],
+      "actions": [
+        "本周做一次GPT-Live-1 API实测，对照当前语音方案的成本与延迟，如果可落地就给公众号写一篇「实时语音交互」实操选题。",
+        "--"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "AWS密集发布AgentCore生产级能力：OAuth终端授权管理、DevOps Agent生产监控、告警与审计接入，企业Agent从试点转运维阶段（AWS AI Blog L1，本日15条）。",
+        "Meta开放AI Agent接管WhatsApp Business的客服杂活，同步推出One订阅捆绑AI功能，平台级AI商业化提速（TechCrunch/Verge）。",
+        "飞书aily与豆包工作融合后将大幅降价；Salesforce与Nvidia合作的新推理模型被认为威胁通用大厂（36氪/TechCrunch）。"
+      ],
+      "insights": [
+        "企业AI采购关键词正在变化：从\"哪家模型强\"变成\"哪家能把Agent的权限、审计、监控打包交付\"——AgentCore一天连发多篇运维文档是明确信号。",
+        "🟡弱信号：SageMaker推理侧连续推出prefix-aware路由、模型缓存、cold start优化，端到端推理成本递减曲线变陡，私有化部署的 token 成本半年内可能再降一档。"
+      ],
+      "actions": [
+        "参考 AWS「Beyond the price per token」一文的方法论，给自己Agent工作流（早间简报/小红书流水线）算一次真实token+调用成本，找出可换小模型或缓存的环节。",
+        "--"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "B站上线AI无限竞技场，全球百大AI模型同场匿名对战，GPT-6暂居榜首，成为中文侧新的模型口碑样本池（量子位）。",
+        "Vidu S2发布实时互动、实时改视频、空间视频三大能力，视频生成从\"出片\"向\"可交互\"演进（量子位）。",
+        "Cloudflare新设置允许放行搜索引擎爬虫同时拒绝AI训练爬虫，创作者内容资产的「AI训练授权」开始成为可配置项（IT之家）。"
+      ],
+      "insights": [
+        "AI工具选题正在两条路分化：模型跑分类（竞技场）天然有流量，工作流实操类（批量剪辑/多平台分发）有长尾搜索——两条路的爆款逻辑完全不同。",
+        "🟡弱信号：Product Hunt同日出现Thread（AI日记记忆）、CreatorHat（创作者数据面板）等多个「个人数据资产」类应用，C端「把AI记录 当资产」这个心智可能要起来了。"
+      ],
+      "actions": [
+        "用B站AI竞技场作为本周选题素材，做一版「百大模型盲测里谁是真网红」的公众号内容，同时把 short-video-factory 这类批量剪辑工具列入工具评测池。",
+        "--"
+      ]
+    }
+  ],
+  "github": [
+    {
+      "repo": "YILS-LIN/short-video-factory",
+      "url": "https://github.com/YILS-LIN/short-video-factory",
+      "stars": "5.4K",
+      "track": "内容创作",
+      "note": "一键生成产品营销短视频，AI批量自动剪辑，跨平台桌面端工具",
+      "why": "直接对应小禾号短视频试水需求，开源可自部署、不依赖平台方"
+    },
+    {
+      "repo": "headroomlabs-ai/headroom",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "stars": "72.4K",
+      "track": "AI产业技术",
+      "note": "在工具输出进入上下文前压缩日志/RAG块，替coding agent省20%以上token",
+      "why": "Agent成本优化的新基建品类，机构与个人工作流都能直接受益"
+    },
+    {
+      "repo": "ErlichLiu/DeepClaude",
+      "url": "https://github.com/ErlichLiu/DeepClaude",
+      "stars": "2.9K",
+      "track": "企业AI应用",
+      "note": "DeepSeek R1推理+Claude编码双模型协同的开源方案",
+      "why": "双模型兜底/分工的思路可直接借鉴到个人Agent的价格分层配置"
+    }
+  ],
+  "reading": [
+    {
+      "title": "DeepSeek v4.1-Flash: 763B-P8B-D16B 新型因果Encoder–Decoder",
+      "url": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b",
+      "source": "",
+      "reason": "DeepSeek新架构的新闻汇总与技术解读。为什么值得关注：可能改变MoE领域的性价比曲线，国内模型自研生态的关键节点。"
+    },
+    {
+      "title": "The generative AI customization spectrum",
+      "url": "https://aws.amazon.com/blogs/machine-learning/the-generative-ai-customization-spectrum-from-prompt-engineering-to-custom-models-on-aws/",
+      "source": "",
+      "reason": "从提示工程到定制模型的企业级选型路径完整梳理。为什么值得关注：企业AI落地选型可画成一张可以直接引用的图。"
+    },
+    {
+      "title": "AI and data centers are incredibly unpopular in every poll",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/995917/data-center-nyt-midterm-poll-september",
+      "source": "",
+      "reason": "民调显示AI与数据中心在所有维度都不受欢迎，中期选举临近。为什么值得关注：解释了为什么监管博弈会加速，产业外部约束正在收紧。"
+    }
+  ],
+  "consensus": {
+    "text": "官方 API 基建的节奏整体在按「工程化、可运维」方向推进。当天三家云与模型厂商的一手动态高度一致：能力只是入场券，谁先把权限、审计、成本做成产品能力，谁才能留下企业客户——Agent 的竞争焦点正在从「会不会做事」移到「可不可以被管理」。",
+    "quotes": [
+      "OpenAI发布Agents API与GPT-Live-1（OpenAI）",
+      "AWS AgentCore连发OAuth授权与生产监控文档（AWS AI Blog）",
+      "Meta让Agent接管WhatsApp Business售后流程（TechCrunch）"
+    ]
   },
-  {
-   "key": "enterprise_ai",
-   "emoji": "❷",
-   "name": "企业AI应用",
-   "news": [
-    "AWS密集发布AgentCore生产级能力：OAuth终端授权管理、DevOps Agent生产监控、告警与审计接入，企业Agent从试点转运维阶段（AWS AI Blog L1，本日15条）。",
-    "Meta开放AI Agent接管WhatsApp Business的客服杂活，同步推出One订阅捆绑AI功能，平台级AI商业化提速（TechCrunch/Verge）。",
-    "飞书aily与豆包工作融合后将大幅降价；Salesforce与Nvidia合作的新推理模型被认为威胁通用大厂（36氪/TechCrunch）。"
-   ],
-   "insights": [
-    "企业AI采购关键词正在变化：从\"哪家模型强\"变成\"哪家能把Agent的权限、审计、监控打包交付\"——AgentCore一天连发多篇运维文档是明确信号。",
-    "🟡弱信号：SageMaker推理侧连续推出prefix-aware路由、模型缓存、cold start优化，端到端推理成本递减曲线变陡，私有化部署的 token 成本半年内可能再降一档。"
-   ],
-   "actions": [
-    "参考 AWS「Beyond the price per token」一文的方法论，给自己Agent工作流（早间简报/小红书流水线）算一次真实token+调用成本，找出可换小模型或缓存的环节。",
-    "--"
-   ]
+  "division": {
+    "text": "围绕 AI 风险治理的路径，巨头之间给出针锋相对的方案。模型阵营倾向先建准入与护栏；算力阵营的掌门人公开拒绝任何「由同行决定安全」的协调安排，政界也认为行业反应过度。双方都自称代表安全，分歧点其实是「谁有资格制定规则」。",
+    "quotes": [
+      "OpenAI/Anthropic/Google就安全协调连续数周对谈（TechCrunch）",
+      "英伟达CEO表态不需要外部AI监管（TechCrunch）",
+      "美国政界认为AI行业反应过度（The Verge）"
+    ]
   },
-  {
-   "key": "content_creation",
-   "emoji": "❸",
-   "name": "内容创作",
-   "news": [
-    "B站上线AI无限竞技场，全球百大AI模型同场匿名对战，GPT-6暂居榜首，成为中文侧新的模型口碑样本池（量子位）。",
-    "Vidu S2发布实时互动、实时改视频、空间视频三大能力，视频生成从\"出片\"向\"可交互\"演进（量子位）。",
-    "Cloudflare新设置允许放行搜索引擎爬虫同时拒绝AI训练爬虫，创作者内容资产的「AI训练授权」开始成为可配置项（IT之家）。"
-   ],
-   "insights": [
-    "AI工具选题正在两条路分化：模型跑分类（竞技场）天然有流量，工作流实操类（批量剪辑/多平台分发）有长尾搜索——两条路的爆款逻辑完全不同。",
-    "🟡弱信号：Product Hunt同日出现Thread（AI日记记忆）、CreatorHat（创作者数据面板）等多个「个人数据资产」类应用，C端「把AI记录 当资产」这个心智可能要起来了。"
-   ],
-   "actions": [
-    "用B站AI竞技场作为本周选题素材，做一版「百大模型盲测里谁是真网红」的公众号内容，同时把 short-video-factory 这类批量剪辑工具列入工具评测池。",
-    "--"
-   ]
-  }
- ],
- "github": [
-  {
-   "repo": "YILS-LIN/short-video-factory",
-   "url": "https://github.com/YILS-LIN/short-video-factory",
-   "stars": "5.4K",
-   "track": "内容创作",
-   "note": "一键生成产品营销短视频，AI批量自动剪辑，跨平台桌面端工具",
-   "why": "直接对应短视频账号短视频试水需求，开源可自部署、不依赖平台方"
-  },
-  {
-   "repo": "headroomlabs-ai/headroom",
-   "url": "https://github.com/headroomlabs-ai/headroom",
-   "stars": "72.4K",
-   "track": "AI产业技术",
-   "note": "在工具输出进入上下文前压缩日志/RAG块，替coding agent省20%以上token",
-   "why": "Agent成本优化的新基建品类，机构与个人工作流都能直接受益"
-  },
-  {
-   "repo": "ErlichLiu/DeepClaude",
-   "url": "https://github.com/ErlichLiu/DeepClaude",
-   "stars": "2.9K",
-   "track": "企业AI应用",
-   "note": "DeepSeek R1推理+Claude编码双模型协同的开源方案",
-   "why": "双模型兜底/分工的思路可直接借鉴到个人Agent的价格分层配置"
-  }
- ],
- "reading": [
-  {
-   "title": "DeepSeek v4.1-Flash: 763B-P8B-D16B 新型因果Encoder–Decoder",
-   "url": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b",
-   "source": "",
-   "reason": "DeepSeek新架构的新闻汇总与技术解读。为什么值得关注：可能改变MoE领域的性价比曲线，国内模型自研生态的关键节点。"
-  },
-  {
-   "title": "The generative AI customization spectrum",
-   "url": "https://aws.amazon.com/blogs/machine-learning/the-generative-ai-customization-spectrum-from-prompt-engineering-to-custom-models-on-aws/",
-   "source": "",
-   "reason": "从提示工程到定制模型的企业级选型路径完整梳理。为什么值得关注：企业AI落地选型可画成一张可以直接引用的图。"
-  },
-  {
-   "title": "AI and data centers are incredibly unpopular in every poll",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/995917/data-center-nyt-midterm-poll-september",
-   "source": "",
-   "reason": "民调显示AI与数据中心在所有维度都不受欢迎，中期选举临近。为什么值得关注：解释了为什么监管博弈会加速，产业外部约束正在收紧。"
-  }
- ],
- "consensus": {
-  "text": "官方 API 基建的节奏整体在按「工程化、可运维」方向推进。当天三家云与模型厂商的一手动态高度一致：能力只是入场券，谁先把权限、审计、成本做成产品能力，谁才能留下企业客户——Agent 的竞争焦点正在从「会不会做事」移到「可不可以被管理」。",
-  "quotes": [
-   "OpenAI发布Agents API与GPT-Live-1（OpenAI）",
-   "AWS AgentCore连发OAuth授权与生产监控文档（AWS AI Blog）",
-   "Meta让Agent接管WhatsApp Business售后流程（TechCrunch）"
-  ]
- },
- "division": {
-  "text": "围绕 AI 风险治理的路径，巨头之间给出针锋相对的方案。模型阵营倾向先建准入与护栏；算力阵营的掌门人公开拒绝任何「由同行决定安全」的协调安排，政界也认为行业反应过度。双方都自称代表安全，分歧点其实是「谁有资格制定规则」。",
-  "quotes": [
-   "OpenAI/Anthropic/Google就安全协调连续数周对谈（TechCrunch）",
-   "英伟达CEO表态不需要外部AI监管（TechCrunch）",
-   "美国政界认为AI行业反应过度（The Verge）"
-  ]
- },
- "ai_generated": true,
- "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
- "generated_at": "2026-09-20T18:31"
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-21T14:15"
 }

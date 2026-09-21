@@ -1,103 +1,103 @@
 {
- "date": "2026-08-14",
- "format": "summary",
- "points": [
-  "闲鱼AI副业火了：上半年AI服务订单981.6万单、同比+157%，Suno Studio 2.0升级专业音乐工作台",
-  "IBM与OpenAI结盟、微软合并两套Copilot为超级应用、Writer开源模型基础任务降本约50%",
-  "OpenAI 70亿美元回购+9高管出走、Databricks $190B估值融资、英伟达$500B存量算力计划"
- ],
- "tracks": [
-  {
-   "key": "ai_tech",
-   "emoji": "❶",
-   "name": "AI产业技术",
-   "news": [
-    "OpenAI花70亿美元回购员工股份（估值8520亿），6月已秘密提交IPO却先给员工套现，近半年9位高管离职。",
-    "Databricks融资罕见拉扯：原想融10亿、投资人要投150亿，最终50亿@1900亿估值，AI数据基建仍抢手。",
-    "英伟达公布5000亿美元存量GPU盘活计划，算力开支从\"无脑买新卡\"转向存量优化。"
-   ],
-   "insights": [
-    "英伟达存量GPU计划、AMD收购Taalas、4.8亿美元砸向端侧Agent芯片——算力竞争进入\"存量优化+端侧增量\"，推理侧/端侧成为新战场。",
-    "OpenAI以8520亿自购股份而非引外部接盘，叠加Databricks高估值，一级市场AI资产仍高烧；先内部套现不急着IPO，暗示二级定价与一级估值有落差。"
-   ],
-   "actions": [
-    "把英伟达Q3财报资本开支指引设为跟踪信号：若确认存量GPU置换/租赁，关注A股IDC、算力租赁订单催化。",
-    "把\"OpenAI招股书披露\"设为关键节点：一旦估值高于8520亿触发全球AI重估，可上调A股AI/算力ETF仓位。"
-   ]
+  "date": "2026-08-14",
+  "format": "summary",
+  "points": [
+    "闲鱼AI副业火了：上半年AI服务订单981.6万单、同比+157%，Suno Studio 2.0升级专业音乐工作台",
+    "IBM与OpenAI结盟、微软合并两套Copilot为超级应用、Writer开源模型基础任务降本约50%",
+    "OpenAI 70亿美元回购+9高管出走、Databricks $190B估值融资、英伟达$500B存量算力计划"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "OpenAI花70亿美元回购员工股份（估值8520亿），6月已秘密提交IPO却先给员工套现，近半年9位高管离职。",
+        "Databricks融资罕见拉扯：原想融10亿、投资人要投150亿，最终50亿@1900亿估值，AI数据基建仍抢手。",
+        "英伟达公布5000亿美元存量GPU盘活计划，算力开支从\"无脑买新卡\"转向存量优化。"
+      ],
+      "insights": [
+        "英伟达存量GPU计划、AMD收购Taalas、4.8亿美元砸向端侧Agent芯片——算力竞争进入\"存量优化+端侧增量\"，推理侧/端侧成为新战场。",
+        "OpenAI以8520亿自购股份而非引外部接盘，叠加Databricks高估值，一级市场AI资产仍高烧；先内部套现不急着IPO，暗示二级定价与一级估值有落差。"
+      ],
+      "actions": [
+        "把英伟达Q3财报资本开支指引设为跟踪信号：若确认存量GPU置换/租赁，关注A股IDC、算力租赁订单催化。",
+        "把\"OpenAI招股书披露\"设为关键节点：一旦估值高于8520亿触发全球AI重估，可上调A股AI/算力ETF仓位。"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "IBM与OpenAI结盟，将培训认证数万名顾问掌握Codex/API，并把GPT-5.6、ChatGPT Work集成进咨询平台。",
+        "微软合并个人/企业版Copilot为统一应用，砍掉Deep Research、AI播客等未跑通功能，为\"超级应用\"铺路。",
+        "科大讯飞发布覆盖七大场景的全场景智能体矩阵，企业AI从\"完成动作\"走向\"交付业务\"。"
+      ],
+      "insights": [
+        "Anthropic让多个Agent做同一任务，Agent间出现\"抢地盘\"式冲突——多Agent部署须先定边界、分工与人工审批，否则越多人越乱。",
+        "Writer基于开源GLM-5.2后训练使基础任务降本约50%，研究显示优化Agent编排层比换模型更降本（平均40%）。"
+      ],
+      "actions": [
+        "借微软Copilot合并窗口做台账盘点：统计个人/企业版账号数与成本，排期迁移统一应用并更新工具白名单。",
+        "给企业AI做\"任务分层审计\"：按高频低价值/低频高价值分级路由，高频任务走低成本模型，设月度token预算。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "Suno推出Studio 2.0，新增MIDI输入、聊天式协作与自定义效果器，从\"输词出歌\"升级为接近专业音乐制作的工作台。",
+        "36氪报道AI副业在闲鱼走红：上半年AI服务订单981.6万单、同比+157%，近500万人购买过AI服务。",
+        "竞技场盲测惊现代号\"mona-lisa-1\"的神秘生图模型，被曝含OpenAI来源信号，OpenAI尚未官宣。"
+      ],
+      "insights": [
+        "拆解Higgsfield的AI电影发现，最出彩的部分全是人类演员与创意——\"AI产出+人的审美\"的协作过程本身才是差异化内容。",
+        "GPT-5.6 Sol上线Ultrafast模式（Cerebras芯片驱动、最高14倍速），批量改写与多平台分发的边际成本大幅下降。"
+      ],
+      "actions": [
+        "用编曲软件写8-16小节旋律导出MIDI，上传Suno生成专属BGM，避开平台热门音乐版权限流。",
+        "趁mona-lisa-1未官宣，在LMArena用同一组提示词盲测对比GPT-Image-2，标题带关键词发社交平台抢搜索流量。"
+      ]
+    }
+  ],
+  "github": [
+    {
+      "repo": "xbtlin/ai-berkshire",
+      "url": "https://github.com/xbtlin/ai-berkshire",
+      "stars": "15.5K",
+      "track": "AI产业技术",
+      "note": "用Claude Code/Codex多Agent并行做价值投资研究，融合巴菲特·芒格·段永平·李录方法论。",
+      "why": "多Agent分工抓数据、算估值、写纪要，可直接复用到ETF标的复盘。"
+    },
+    {
+      "repo": "greensock/gsap-skills",
+      "url": "https://github.com/greensock/gsap-skills",
+      "stars": "13.5K",
+      "track": "内容创作",
+      "note": "GSAP官方AI技能包，教AI编码agent正确使用动画平台做动效与交互动画。",
+      "why": "官方下场给Agent配技能包是趋势，做动效/交互内容时可按官方skill生成。"
+    },
+    {
+      "repo": "citrolabs/ego-lite",
+      "url": "https://github.com/citrolabs/ego-lite",
+      "stars": "10.0K",
+      "track": "企业AI应用",
+      "note": "最快的AI Agent浏览器，共享登录态做浏览器自动化。",
+      "why": "企业Agent自动化底座，可借鉴\"共享登录态\"思路让Agent接管重复网页操作。"
+    }
+  ],
+  "reading": [],
+  "consensus": {
+    "text": "",
+    "quotes": []
   },
-  {
-   "key": "enterprise_ai",
-   "emoji": "❷",
-   "name": "企业AI应用",
-   "news": [
-    "IBM与OpenAI结盟，将培训认证数万名顾问掌握Codex/API，并把GPT-5.6、ChatGPT Work集成进咨询平台。",
-    "微软合并个人/企业版Copilot为统一应用，砍掉Deep Research、AI播客等未跑通功能，为\"超级应用\"铺路。",
-    "科大讯飞发布覆盖七大场景的全场景智能体矩阵，企业AI从\"完成动作\"走向\"交付业务\"。"
-   ],
-   "insights": [
-    "Anthropic让多个Agent做同一任务，Agent间出现\"抢地盘\"式冲突——多Agent部署须先定边界、分工与人工审批，否则越多人越乱。",
-    "Writer基于开源GLM-5.2后训练使基础任务降本约50%，研究显示优化Agent编排层比换模型更降本（平均40%）。"
-   ],
-   "actions": [
-    "借微软Copilot合并窗口做台账盘点：统计个人/企业版账号数与成本，排期迁移统一应用并更新工具白名单。",
-    "给企业AI做\"任务分层审计\"：按高频低价值/低频高价值分级路由，高频任务走低成本模型，设月度token预算。"
-   ]
+  "division": {
+    "text": "",
+    "quotes": []
   },
-  {
-   "key": "content_creation",
-   "emoji": "❸",
-   "name": "内容创作",
-   "news": [
-    "Suno推出Studio 2.0，新增MIDI输入、聊天式协作与自定义效果器，从\"输词出歌\"升级为接近专业音乐制作的工作台。",
-    "36氪报道AI副业在闲鱼走红：上半年AI服务订单981.6万单、同比+157%，近500万人购买过AI服务。",
-    "竞技场盲测惊现代号\"mona-lisa-1\"的神秘生图模型，被曝含OpenAI来源信号，OpenAI尚未官宣。"
-   ],
-   "insights": [
-    "拆解Higgsfield的AI电影发现，最出彩的部分全是人类演员与创意——\"AI产出+人的审美\"的协作过程本身才是差异化内容。",
-    "GPT-5.6 Sol上线Ultrafast模式（Cerebras芯片驱动、最高14倍速），批量改写与多平台分发的边际成本大幅下降。"
-   ],
-   "actions": [
-    "用编曲软件写8-16小节旋律导出MIDI，上传Suno生成专属BGM，避开平台热门音乐版权限流。",
-    "趁mona-lisa-1未官宣，在LMArena用同一组提示词盲测对比GPT-Image-2，标题带关键词发社交平台抢搜索流量。"
-   ]
-  }
- ],
- "github": [
-  {
-   "repo": "xbtlin/ai-berkshire",
-   "url": "https://github.com/xbtlin/ai-berkshire",
-   "stars": "15.5K",
-   "track": "AI产业技术",
-   "note": "用Claude Code/Codex多Agent并行做价值投资研究，融合巴菲特·芒格·段永平·李录方法论。",
-   "why": "多Agent分工抓数据、算估值、写纪要，可直接复用到ETF标的复盘。"
-  },
-  {
-   "repo": "greensock/gsap-skills",
-   "url": "https://github.com/greensock/gsap-skills",
-   "stars": "13.5K",
-   "track": "内容创作",
-   "note": "GSAP官方AI技能包，教AI编码agent正确使用动画平台做动效与交互动画。",
-   "why": "官方下场给Agent配技能包是趋势，做动效/交互内容时可按官方skill生成。"
-  },
-  {
-   "repo": "citrolabs/ego-lite",
-   "url": "https://github.com/citrolabs/ego-lite",
-   "stars": "10.0K",
-   "track": "企业AI应用",
-   "note": "最快的AI Agent浏览器，共享登录态做浏览器自动化。",
-   "why": "企业Agent自动化底座，可借鉴\"共享登录态\"思路让Agent接管重复网页操作。"
-  }
- ],
- "reading": [],
- "consensus": {
-  "text": "",
-  "quotes": []
- },
- "division": {
-  "text": "",
-  "quotes": []
- },
- "ai_generated": true,
- "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
- "generated_at": "2026-09-21T10:38"
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-21T14:15"
 }
