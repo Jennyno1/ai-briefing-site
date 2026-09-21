@@ -151,11 +151,6 @@
     var dd = cnDate(data.date);
     html += '<div class="date"><span class="date-cn">' + esc(dd.cn) + '</span>' +
       (dd.week ? '<span class="date-week">' + esc(dd.week) + '</span>' : '') + '</div>';
-    if (liveTracks.length) {
-      html += '<ul class="lanes">' + liveTracks.map(function (t) {
-        return '<li class="lane"><i aria-hidden="true"></i>' + esc(t.name || t.key || '') + '</li>';
-      }).join('') + '</ul>';
-    }
     var metaBits = [];
     if (data.version) metaBits.push('<span class="badge">' + esc(data.version) + '</span>');
     html += '<div class="meta">' + metaBits.join('') + '</div>';
@@ -169,13 +164,13 @@
 
     liveTracks.forEach(function (t, i) {
       var name = t.name || t.key || '';
-      var emoji = t.emoji ? esc(t.emoji) + ' ' : '';
       var body = trackGroupHtml('最新动态', 'news', t.news) +
                  trackGroupHtml('洞察发现', 'insights', t.insights) +
                  trackGroupHtml('落地行动', 'actions', t.actions);
       if (!body) return;   // 该赛道本日无内容 → 整段不渲染
-      // lane-i 与页眉三色图例一一对应（顺序即颜色）
-      html += '<section class="track lane-' + i + '"><h2>' + emoji + esc(name) + '</h2>' + body + '</section>';
+      // lane-i 色块直接标在赛道名旁：颜色只用在实际用到它的地方（不再单开一行图例）
+      html += '<section class="track lane-' + i + '"><h2><i class="chip" aria-hidden="true"></i>' +
+        esc(name) + '</h2>' + body + '</section>';
     });
 
     var vp = vpCard('consensus', '共识解读', data.consensus) + vpCard('division', '分歧解读', data.division);

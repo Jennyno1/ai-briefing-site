@@ -50,7 +50,7 @@
                "Microsoft YaHei", "Noto Sans SC", "Helvetica Neue", Arial, sans-serif;
 
   /* 字号阶梯 */
-  --fs-masthead: 42px;
+  --fs-masthead: 36px;
   --fs-track: 25px;
   --fs-lead: 19px;
   --fs-body: 16.5px;
@@ -192,14 +192,14 @@ a:hover { text-decoration-color: currentColor; }
 .topbar-actions {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 10px;
 }
 
 /* 主理人署名：头像 + 昵称（替代原先重复的「N 天」标签） */
 .creator {
   display: inline-flex;
   align-items: center;
-  gap: 9px;
+  gap: 8px;
 }
 
 .creator-avatar {
@@ -297,7 +297,7 @@ a:hover { text-decoration-color: currentColor; }
   border: 0;
   font-family: var(--font-sans);
   font-size: var(--fs-small);
-  color: var(--ink-3);
+  color: var(--ink-2);
   text-align: left;
   cursor: pointer;
   transition: color 0.12s var(--ease);
@@ -326,7 +326,7 @@ li.partial .d-date { color: var(--ink-3); }
 .d-dot { font-size: 10px; color: var(--ink-3); opacity: 0.8; }
 
 /* ---- 正文 ------------------------------------------------------------------ */
-.content { padding-top: 32px; min-width: 0; }
+.content { padding-top: 40px; min-width: 0; }
 
 .content.enter > * { animation: rise 0.34s var(--ease) both; }
 .content.enter > *:nth-child(2) { animation-delay: 0.04s; }
@@ -373,35 +373,18 @@ li.partial .d-date { color: var(--ink-3); }
   letter-spacing: 0.1em;
 }
 
-/* 三色图例 = 三条赛道的颜色索引（色块 + 赛道名，与正文段落色脊一一对应） */
-.lanes {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px 22px;
-  margin: 20px 0 0;
-  padding: 0;
-}
-
-.lane {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: var(--fs-micro);
-  color: var(--ink-2);
-  letter-spacing: 0.04em;
-}
-
-.lane i {
-  display: block;
+/* 三色图例已并入赛道标题（颜色只出现在实际用到它的地方） */
+.chip {
+  display: inline-block;
   width: 9px;
   height: 9px;
+  margin-right: 10px;
   border-radius: 2px;
   background: var(--accent);
+  vertical-align: 0.18em;
 }
-.lanes li:nth-child(2) i { background: var(--gold); }
-.lanes li:nth-child(3) i { background: var(--teal); }
+.track.lane-1 .chip { background: var(--gold); }
+.track.lane-2 .chip { background: var(--teal); }
 
 .meta { margin-top: 14px; }
 
@@ -418,9 +401,10 @@ li.partial .d-date { color: var(--ink-3); }
 
 /* 今日要点：导语体，比正文大一档 */
 .lead-label {
-  margin-top: 24px;
+  margin-top: 26px;
   font-family: var(--font-serif);
   font-size: var(--fs-small);
+  font-weight: 600;
   color: var(--ink-2);
   letter-spacing: 0.1em;
 }
@@ -435,7 +419,7 @@ li.partial .d-date { color: var(--ink-3); }
 }
 .points li {
   position: relative;
-  padding-left: 20px;
+  padding-left: 22px;
   font-size: var(--fs-lead);
   line-height: 1.65;
   color: var(--ink);
@@ -443,9 +427,9 @@ li.partial .d-date { color: var(--ink-3); }
 .points li::before {
   content: "";
   position: absolute;
-  left: 2px;
-  top: 0.72em;
-  width: 7px;
+  left: 1px;
+  top: 0.75em;
+  width: 10px;
   height: 2px;
   background: var(--accent);
 }
@@ -462,7 +446,7 @@ li.partial .d-date { color: var(--ink-3); }
 
 /* 赛道段落：左侧色脊编码赛道身份（lane-0/1/2 与页眉图例同色）——页面上仅存的竖线，且带语义 */
 .track {
-  margin-top: 46px;
+  margin-top: 40px;
   padding-left: 20px;
   border-left: 3px solid var(--accent);
 }
@@ -470,7 +454,7 @@ li.partial .d-date { color: var(--ink-3); }
 .track.lane-2 { border-left-color: var(--teal); }
 
 .track h2 {
-  margin: 0 0 20px;
+  margin: 0 0 18px;
   font-family: var(--font-serif);
   font-size: var(--fs-track);
   line-height: var(--lh-tight);
@@ -478,14 +462,16 @@ li.partial .d-date { color: var(--ink-3); }
   font-weight: 600;
 }
 
-.group { margin-top: 26px; }
+/* 间距刻度：段内 8 < 段间 22 < 板块 40（避免全页均质松） */
+.group { margin-top: 22px; }
 .group:first-of-type { margin-top: 0; }
 
 .group-title {
   font-size: var(--fs-micro);
-  color: var(--ink-3);
-  letter-spacing: 0.14em;
-  margin-bottom: 8px;
+  color: var(--ink-2);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  margin-bottom: 6px;
 }
 
 .item { margin-bottom: 14px; }
@@ -516,7 +502,7 @@ li.partial .d-date { color: var(--ink-3); }
 
 /* 共识 / 分歧 */
 .viewpoint {
-  margin-top: 46px;
+  margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
@@ -557,7 +543,7 @@ li.partial .d-date { color: var(--ink-3); }
 .vp-card li { margin-bottom: 4px; }
 
 /* 推荐阅读 / GitHub 项目推荐 */
-.reading { margin-top: 46px; }
+.reading { margin-top: 40px; }
 
 .reading h2 {
   margin: 0 0 18px;
