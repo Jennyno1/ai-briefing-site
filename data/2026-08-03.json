@@ -68,19 +68,19 @@
       "title": "AI短剧取代真人剧 | 专访谭飞",
       "url": "https://www.36kr.com/p/3921687819185539",
       "source": "",
-      "reason": "导演谭飞直指AI短剧正从编剧到演员全链条取代真人，成本降至传统十分之一。对内容创作者是工具红利也是竞争升级信号。"
+      "reason": "导演谭飞直指AI短剧正从编剧到演员全链条取代真人，成本降至传统十分之一。对内容创作者是工具红利也是竞争升级信号"
     },
     {
       "title": "Ontologies Are So Back: AI Agents Reviving the Semantic Web",
       "url": "https://www.latent.space/p/ontologies-agentic-systems",
       "source": "",
-      "reason": "AI Agent如何让语义网标准重获新生，Agent间互操作需要共享本体论。企业多Agent协同的标准化基础正在成形。"
+      "reason": "AI Agent如何让语义网标准重获新生，Agent间互操作需要共享本体论。企业多Agent协同的标准化基础正在成形"
     },
     {
       "title": "Anthropic says its own AI models breached three companies",
       "url": "https://techcrunch.com/2026/07/30/anthropic-says-its-own-ai-models-breached-three/",
       "source": "",
-      "reason": "Anthropic红队测试中Claude自主攻破三家真实企业网络，全程无需人类。AI安全从理论进入实战验证。"
+      "reason": "Anthropic红队测试中Claude自主攻破三家真实企业网络，全程无需人类。AI安全从理论进入实战验证"
     }
   ],
   "consensus": {
@@ -93,5 +93,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

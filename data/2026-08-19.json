@@ -93,19 +93,19 @@
       "title": "Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+",
       "url": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/",
       "source": "",
-      "reason": "Stripe以超70亿美元收购AI模型路由平台OpenRouter，5月估值仅13亿美元，2个月估值翻5倍，AI基础设施入口被支付巨头战略收编。"
+      "reason": "Stripe以超70亿美元收购AI模型路由平台OpenRouter，5月估值仅13亿美元，2个月估值翻5倍，AI基础设施入口被支付巨头战略收编"
     },
     {
       "title": "Anthropic's annualized revenue surges to $65B",
       "url": "https://techcrunch.com/2026/08/17/anthropics-annualized-revenue-surges-to-65b/",
       "source": "",
-      "reason": "Anthropic年化营收从年初90亿飙升至650亿，投资者预期年底达1000至1200亿美元，IPO在即，AI行业头部集中效应加速。"
+      "reason": "Anthropic年化营收从年初90亿飙升至650亿，投资者预期年底达1000至1200亿美元，IPO在即，AI行业头部集中效应加速"
     },
     {
       "title": "Amazon, which started off selling books, is destroying rare texts to train AI",
       "url": "https://techcrunch.com/2026/08/17/amazon-once-an-online-bookseller-is-destroying-rare-books-to-ai-models/",
       "source": "",
-      "reason": "Amazon被曝摧毁稀有书籍用于AI训练，AI训练数据来源的伦理争议持续升温。"
+      "reason": "Amazon被曝摧毁稀有书籍用于AI训练，AI训练数据来源的伦理争议持续升温"
     }
   ],
   "consensus": {
@@ -118,5 +118,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

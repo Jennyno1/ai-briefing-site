@@ -87,19 +87,19 @@
       "title": "Our decision on Cursor following its acquisition by SpaceX",
       "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
       "source": "",
-      "reason": "OpenAI正式宣布断供Cursor，设定11月12日终止日期，是AI编码工具生态的标志性事件，将重塑开发者对商业编码工具的依赖格局。"
+      "reason": "OpenAI正式宣布断供Cursor，设定11月12日终止日期，是AI编码工具生态的标志性事件，将重塑开发者对商业编码工具的依赖格局"
     },
     {
       "title": "Nvidia's AI advantage is moving beyond the GPU",
       "url": "https://techcrunch.com/category/artificial-intelligence/",
       "source": "",
-      "reason": "NVIDIA的新一代数据中心系统通过更智能的流量控制而非单纯堆叠处理器来提升效率，标志着AI基础设施竞争进入系统级优化阶段。"
+      "reason": "NVIDIA的新一代数据中心系统通过更智能的流量控制而非单纯堆叠处理器来提升效率，标志着AI基础设施竞争进入系统级优化阶段"
     },
     {
       "title": "How Decathlon runs demand forecasting at scale with Chronos-2",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-decathlon-runs-demand-forecasting-at-scale-with-chronos-2/",
       "source": "",
-      "reason": "迪卡侬用Chronos-2在AWS上预测每周数万产品的跨洲需求，预测精度提升11-15个百分点，展示了时间序列基础模型在零售供应链中的规模化落地。"
+      "reason": "迪卡侬用Chronos-2在AWS上预测每周数万产品的跨洲需求，预测精度提升11-15个百分点，展示了时间序列基础模型在零售供应链中的规模化落地"
     }
   ],
   "consensus": {
@@ -120,5 +120,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

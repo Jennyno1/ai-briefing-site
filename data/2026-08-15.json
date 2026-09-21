@@ -93,19 +93,19 @@
       "title": "Anthropic set AI agents loose on the same task. They started a turf war.",
       "url": "https://techcrunch.com/2026/08/13/anthropic-set-ai-agents-loose-on-the-same-task-they-started-a-turf-war/",
       "source": "",
-      "reason": "Anthropic实验发现多Agent共事会冲突、共谋或意外协调。多Agent协作风险的前沿观察，做Agent工作流前值得一读。"
+      "reason": "Anthropic实验发现多Agent共事会冲突、共谋或意外协调。多Agent协作风险的前沿观察，做Agent工作流前值得一读"
     },
     {
       "title": "Databricks wanted to raise $1B, investors wanted $15B. It settled on $5B at a $190B valuation.",
       "url": "https://techcrunch.com/2026/08/13/databricks-wanted-to-raise-1b-investors-wanted-15b-it-settled-on-5b-at-a-190b-valuation/",
       "source": "",
-      "reason": "Databricks超募细节：想融10亿被追着投150亿，估值1900亿、年化营收70亿增80%。AI企业资本热度的最新证据。"
+      "reason": "Databricks超募细节：想融10亿被追着投150亿，估值1900亿、年化营收70亿增80%。AI企业资本热度的最新证据"
     },
     {
       "title": "刚刚，GLM-5.3发布：Coding更接近Fable 5！潜伏40年的bug都被揪出来了",
       "url": "https://www.qbitai.com/2026/08/473038.html",
       "source": "",
-      "reason": "GLM-5.3多项实测：可交付模拟游戏、12类漏洞全检出、无GPU时诚实标注UNVERIFIED。国产开源模型\"能交付、能验证\"的里程碑实测。"
+      "reason": "GLM-5.3多项实测：可交付模拟游戏、12类漏洞全检出、无GPU时诚实标注UNVERIFIED。国产开源模型\"能交付、能验证\"的里程碑实测"
     }
   ],
   "consensus": {
@@ -118,5 +118,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

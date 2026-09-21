@@ -89,19 +89,22 @@
       "title": "The full stack behind abundant intelligence",
       "url": "https://openai.com/index/the-full-stack-behind-abundant-intelligence",
       "source": "",
-      "reason": "OpenAI CFO Sarah Friar详解\"丰富智能\"背后的完整技术栈——芯片、算力、模型、产品的全链路布局。为什么值得关注：这是OpenAI首次系统性地向外界解释其商业模型的底层逻辑，对理解AI基础设施投资方向有直接参考价值。"
+      "reason": "OpenAI CFO Sarah Friar详解\"丰富智能\"背后的完整技术栈——芯片、算力、模型、产品的全链路布局",
+      "why": "这是OpenAI首次系统性地向外界解释其商业模型的底层逻辑，对理解AI基础设施投资方向有直接参考价值。"
     },
     {
       "title": "How Decathlon runs demand forecasting at scale with Chronos-2",
       "url": "https://aws.amazon.com/blogs/machine-learning/how-decathlon-runs-demand-forecasting-at-scale-with-chronos-2/",
       "source": "",
-      "reason": "迪卡侬用Amazon Chronos-2时序预测模型做大规模需求预测，覆盖全球门店的库存优化。为什么值得关注：传统零售巨头用AI做需求预测是企业AI落地的标杆案例，Chronos-2的开源时序模型路线值得追踪。"
+      "reason": "迪卡侬用Amazon Chronos-2时序预测模型做大规模需求预测，覆盖全球门店的库存优化",
+      "why": "传统零售巨头用AI做需求预测是企业AI落地的标杆案例，Chronos-2的开源时序模型路线值得追踪。"
     },
     {
       "title": "Jalapeño's first results show industry-leading speed and efficiency",
       "url": "https://openai.com/index/jalapeno-first-results",
       "source": "",
-      "reason": "OpenAI自研推理芯片Jalapeño首批基准测试出炉，速度和能效领先行业。为什么值得关注：AI推理芯片从NVIDIA一家独大走向自研分化，OpenAI此举将重塑推理算力供应链格局。"
+      "reason": "OpenAI自研推理芯片Jalapeño首批基准测试出炉，速度和能效领先行业",
+      "why": "AI推理芯片从NVIDIA一家独大走向自研分化，OpenAI此举将重塑推理算力供应链格局。"
     }
   ],
   "consensus": {
@@ -122,5 +125,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

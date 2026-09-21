@@ -89,19 +89,22 @@
       "title": "The Making of Claude Code",
       "url": "https://www.anthropic.com/features/making-of-claude-code",
       "source": "",
-      "reason": "Anthropic首次公开Claude Code的设计理念和实现路径，从产品决策到技术架构的完整复盘。为什么值得关注：Claude Code已成为最受欢迎的AI编程工具之一，其产品方法论对AI内容创作工具设计有直接参考价值。"
+      "reason": "Anthropic首次公开Claude Code的设计理念和实现路径，从产品决策到技术架构的完整复盘",
+      "why": "Claude Code已成为最受欢迎的AI编程工具之一，其产品方法论对AI内容创作工具设计有直接参考价值。"
     },
     {
       "title": "Nvidia's AI advantage is moving beyond the GPU",
       "url": "https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu/",
       "source": "",
-      "reason": "分析NVIDIA如何从芯片公司转型为AI全栈基础设施公司，软件、网络、系统级工程构成新的竞争壁垒。为什么值得关注：理解AI基础设施竞争的下一个维度，对判断AI产业投资方向有直接参考。"
+      "reason": "分析NVIDIA如何从芯片公司转型为AI全栈基础设施公司，软件、网络、系统级工程构成新的竞争壁垒",
+      "why": "理解AI基础设施竞争的下一个维度，对判断AI产业投资方向有直接参考。"
     },
     {
       "title": "Enterprise AI's real risk isn't autonomous agents. It's the complexity between them.",
       "url": "https://venturebeat.com/ai/enterprise-ais-real-risk-isnt-autonomous-agents-its-the-complexity-between-them",
       "source": "",
-      "reason": "企业AI部署的真实风险不在单个Agent的能力，而在多Agent协同交互中产生的复杂性。为什么值得关注：企业AI从单Agent走向多Agent治理是必然趋势，提前理解复杂性来源有助于架构设计。"
+      "reason": "企业AI部署的真实风险不在单个Agent的能力，而在多Agent协同交互中产生的复杂性",
+      "why": "企业AI从单Agent走向多Agent治理是必然趋势，提前理解复杂性来源有助于架构设计。"
     }
   ],
   "consensus": {
@@ -122,5 +125,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

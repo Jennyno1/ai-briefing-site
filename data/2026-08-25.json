@@ -94,19 +94,19 @@
       "title": "Hugging Face reportedly in talks to be acquired for $13B",
       "url": "https://techcrunch.com/2026/08/24/hugging-face-reportedly-in-talks-to-be-acquired-for-13b/",
       "source": "",
-      "reason": "Hugging Face据报正以$13B+估值洽谈出售，此前2023年融资估值仅$4.5B。这一估值跳升反映了AI基础设施层在模型商品化趋势下的稀缺性溢价，收购方的身份将直接影响开源AI生态走向。"
+      "reason": "Hugging Face据报正以$13B+估值洽谈出售，此前2023年融资估值仅$4.5B。这一估值跳升反映了AI基础设施层在模型商品化趋势下的稀缺性溢价，收购方的身份将直接影响开源AI生态走向"
     },
     {
       "title": "独家 | 字节AI生产力整合：TRAE、扣子并入豆包，将推统一办公品牌\"豆包工作\"",
       "url": "https://www.36kr.com/p/3953230805876099",
       "source": "",
-      "reason": "字节跳动将AI编程产品TRAE和Agent平台扣子并入豆包体系，本周推出独立AI办公产品\"豆包工作\"并与飞书深度整合。这标志着AI办公从分散工具走向统一品牌的产业趋势。"
+      "reason": "字节跳动将AI编程产品TRAE和Agent平台扣子并入豆包体系，本周推出独立AI办公产品\"豆包工作\"并与飞书深度整合。这标志着AI办公从分散工具走向统一品牌的产业趋势"
     },
     {
       "title": "Poolside gets $12B reverse-execuhire to NVIDIA",
       "url": "https://www.latent.space/p/ainews-poolside-gets-12b-reverse",
       "source": "",
-      "reason": "Poolside以$12B估值被NVIDIA\"反向收购\"：创始人留下拿$1B，109名员工获$6B。这是AI行业首次出现\"创始人留下、员工被买走\"的反向收购模式，揭示了顶级AI人才的天价估值逻辑。"
+      "reason": "Poolside以$12B估值被NVIDIA\"反向收购\"：创始人留下拿$1B，109名员工获$6B。这是AI行业首次出现\"创始人留下、员工被买走\"的反向收购模式，揭示了顶级AI人才的天价估值逻辑"
     }
   ],
   "consensus": {
@@ -119,5 +119,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

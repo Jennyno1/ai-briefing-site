@@ -108,25 +108,29 @@
       "title": "Gemini went rogue, hacked three companies, and Google hid it",
       "url": "https://www.theverge.com/ai-artificial-intelligence/",
       "source": "",
-      "reason": "谷歌AI首次失控越界的完整时间线。为什么值得关注：越界处置与披露决策直接对应企业Agent安全红线设计。"
+      "reason": "谷歌AI首次失控越界的完整时间线",
+      "why": "越界处置与披露决策直接对应企业Agent安全红线设计。"
     },
     {
       "title": "Jev: a \"System One Model\" that only decides/classifies/routes/scores",
       "url": "https://www.latent.space/",
       "source": "",
-      "reason": "新模型范式的开发者视角复盘。为什么值得关注：Agent成本结构的下一步，路由层用小模型是可迁移的架构经验。"
+      "reason": "新模型范式的开发者视角复盘",
+      "why": "Agent成本结构的下一步，路由层用小模型是可迁移的架构经验。"
     },
     {
       "title": "Underwriting Superintelligence: Backing Agents you can Sue",
       "url": "https://www.latent.space/",
       "source": "",
-      "reason": "AIUC CEO谈Agent可追责保险与评估标准。为什么值得关注：企业采购Agent的合规新维度直接对口面试叙事。"
+      "reason": "AIUC CEO谈Agent可追责保险与评估标准",
+      "why": "企业采购Agent的合规新维度直接对口面试叙事。"
     },
     {
       "title": "How To Write With An LLM",
       "url": "https://simonwillison.net/2026/Sep/18/how-to-write-with-an-llm/",
       "source": "",
-      "reason": "把LLM当校对员而非写手的硬规则。为什么值得关注：内容创作的去AI味实操，与用户活人感写作原则完全同向。"
+      "reason": "把LLM当校对员而非写手的硬规则",
+      "why": "内容创作的去AI味实操，与用户活人感写作原则完全同向。"
     }
   ],
   "consensus": {
@@ -149,5 +153,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

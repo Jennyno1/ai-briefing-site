@@ -87,19 +87,22 @@
       "title": "Y Combinator’s Garry Tan wants US open-weight AI labs to ‘distill’ frontier models, too",
       "url": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-us-open-weight-ai-labs-to-distill-frontier-models-too/",
       "source": "",
-      "reason": "Garry Tan呼吁美国开放权重实验室也做蒸馏，呼应Anthropic披露阿里/月之暗面/DeepSeek蒸馏报告。为什么值得关注：蒸馏与合规的边界正在被政策重新划线。"
+      "reason": "Garry Tan呼吁美国开放权重实验室也做蒸馏，呼应Anthropic披露阿里/月之暗面/DeepSeek蒸馏报告",
+      "why": "蒸馏与合规的边界正在被政策重新划线。"
     },
     {
       "title": "Anthropic details distillation campaigns from Alibaba, Moonshot AI, and DeepSeek",
       "url": "https://techcrunch.com/2026/09/11/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek/",
       "source": "",
-      "reason": "Anthropic点名三大中国厂进行蒸馏，把模型能力来源上升到合规议题。为什么值得关注：国产模型出海可能面临新的合规审查门槛。"
+      "reason": "Anthropic点名三大中国厂进行蒸馏，把模型能力来源上升到合规议题",
+      "why": "国产模型出海可能面临新的合规审查门槛。"
     },
     {
       "title": "Bending Spoons to buy collaboration tools maker Miro for $1.36B, 90% less than its 2022 valuation",
       "url": "https://techcrunch.com/2026/09/11/bending-spoons-to-buy-collaboration-tools-maker-miro-for-1-36b-90-less-than-its-2022-valuation/",
       "source": "",
-      "reason": "工具独角兽Miro以2022年估值一折的价格被收购。为什么值得关注：AI冲击下传统SaaS工具估值体系正在重定价。"
+      "reason": "工具独角兽Miro以2022年估值一折的价格被收购",
+      "why": "AI冲击下传统SaaS工具估值体系正在重定价。"
     }
   ],
   "consensus": {
@@ -120,5 +123,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

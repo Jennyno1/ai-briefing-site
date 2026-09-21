@@ -94,19 +94,22 @@
       "title": "DeepSeek v4.1-Flash: 763B-P8B-D16B 新型因果Encoder–Decoder",
       "url": "https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b",
       "source": "",
-      "reason": "DeepSeek新架构的新闻汇总与技术解读。为什么值得关注：可能改变MoE领域的性价比曲线，国内模型自研生态的关键节点。"
+      "reason": "DeepSeek新架构的新闻汇总与技术解读",
+      "why": "可能改变MoE领域的性价比曲线，国内模型自研生态的关键节点。"
     },
     {
       "title": "The generative AI customization spectrum",
       "url": "https://aws.amazon.com/blogs/machine-learning/the-generative-ai-customization-spectrum-from-prompt-engineering-to-custom-models-on-aws/",
       "source": "",
-      "reason": "从提示工程到定制模型的企业级选型路径完整梳理。为什么值得关注：企业AI落地选型可画成一张可以直接引用的图。"
+      "reason": "从提示工程到定制模型的企业级选型路径完整梳理",
+      "why": "企业AI落地选型可画成一张可以直接引用的图。"
     },
     {
       "title": "AI and data centers are incredibly unpopular in every poll",
       "url": "https://www.theverge.com/ai-artificial-intelligence/995917/data-center-nyt-midterm-poll-september",
       "source": "",
-      "reason": "民调显示AI与数据中心在所有维度都不受欢迎，中期选举临近。为什么值得关注：解释了为什么监管博弈会加速，产业外部约束正在收紧。"
+      "reason": "民调显示AI与数据中心在所有维度都不受欢迎，中期选举临近",
+      "why": "解释了为什么监管博弈会加速，产业外部约束正在收紧。"
     }
   ],
   "consensus": {
@@ -127,5 +130,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

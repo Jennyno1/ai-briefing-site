@@ -93,19 +93,19 @@
       "title": "Unpacking ChatGPT Work: the Agent for a Billion Users",
       "url": "https://www.latent.space/p/unpacking-chatgpt-work",
       "source": "",
-      "reason": "OpenAI正在将ChatGPT打造成面向十亿用户的Agent工作平台，从聊天助手进化为工作操作系统。ChatGPT Work会改变普通用户使用AI的方式，也会影响企业级Agent产品的竞争格局。"
+      "reason": "OpenAI正在将ChatGPT打造成面向十亿用户的Agent工作平台，从聊天助手进化为工作操作系统。ChatGPT Work会改变普通用户使用AI的方式，也会影响企业级Agent产品的竞争格局"
     },
     {
       "title": "Anthropic signs $10B deal with AI cloud startup Volta",
       "url": "https://techcrunch.com/2026/08/04/anthropic-signs-10-billion-deal-with-ai-cloud-startup-volta",
       "source": "",
-      "reason": "Anthropic百亿美元锁定专属AI云基础设施，是企业AI基建领域迄今最大单笔交易。这笔交易的规模和结构预示着AI产业正在从\"模型API经济\"转向\"专用基础设施经济\"。"
+      "reason": "Anthropic百亿美元锁定专属AI云基础设施，是企业AI基建领域迄今最大单笔交易。这笔交易的规模和结构预示着AI产业正在从\"模型API经济\"转向\"专用基础设施经济\""
     },
     {
       "title": "阿里字节腾讯，为AI办公拼了",
       "url": "https://www.36kr.com/p/3923895877794183",
       "source": "",
-      "reason": "中国三大互联网巨头同时发力AI办公，钉钉/飞书/企业微信各自接入大模型能力。企业AI办公市场将从零散工具竞争升级为生态级对抗，对IT决策者的选型策略产生直接影响。"
+      "reason": "中国三大互联网巨头同时发力AI办公，钉钉/飞书/企业微信各自接入大模型能力。企业AI办公市场将从零散工具竞争升级为生态级对抗，对IT决策者的选型策略产生直接影响"
     }
   ],
   "consensus": {
@@ -118,5 +118,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

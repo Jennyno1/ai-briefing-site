@@ -94,19 +94,19 @@
       "title": "OpenAI launches ChatGPT desktop app for Linux",
       "url": "https://techcrunch.com/2026/08/11/openai-launches-chatgpt-desktop-app-for-linux/",
       "source": "",
-      "reason": "ChatGPT正式推出Linux桌面应用，补齐三大桌面平台。Hermes所在的Linux服务器可以直接使用桌面客户端。"
+      "reason": "ChatGPT正式推出Linux桌面应用，补齐三大桌面平台。Hermes所在的Linux服务器可以直接使用桌面客户端"
     },
     {
       "title": "国产模型涨价，美国模型降价，token价值规律",
       "url": "https://www.huxiu.com/article/4882396.html",
       "source": "",
-      "reason": "深度分析中美AI模型的定价背离趋势。国产模型在涨价而美国模型在降价，背后是算力成本和商业模式的根本差异。"
+      "reason": "深度分析中美AI模型的定价背离趋势。国产模型在涨价而美国模型在降价，背后是算力成本和商业模式的根本差异"
     },
     {
       "title": "当华尔街成为英伟达的销售渠道",
       "url": "https://www.huxiu.com/article/4882407.html",
       "source": "",
-      "reason": "GPU正在从硬件变成金融产品。黄仁勋联合华尔街推动5000亿美元GPU融资，芯片从\"买来用\"变成\"买来炒\"。"
+      "reason": "GPU正在从硬件变成金融产品。黄仁勋联合华尔街推动5000亿美元GPU融资，芯片从\"买来用\"变成\"买来炒\""
     }
   ],
   "consensus": {
@@ -119,5 +119,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

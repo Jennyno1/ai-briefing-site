@@ -96,19 +96,19 @@
       "title": "Ramp launches Router.com",
       "url": "https://techcrunch.com/2026/08/20/ramp-launches-its-own-ai-model-router-called-router/",
       "source": "",
-      "reason": "Ramp 商业化自家三年 AI 模型路由器，客户推理成本降 40%，标志企业 AI 进入\"成本治理\"阶段。"
+      "reason": "Ramp 商业化自家三年 AI 模型路由器，客户推理成本降 40%，标志企业 AI 进入\"成本治理\"阶段"
     },
     {
       "title": "Stripe didn't really buy OpenRouter because of the 'singularity'",
       "url": "https://techcrunch.com/2026/08/19/stripe-didnt-really-buy-openrouter-because-of-the-singularity/",
       "source": "",
-      "reason": "Stripe 否认收购是\"押注 AGI\"，真实动机是控制 agent 经济计费基础设施，基础设施层溢价远超应用层。"
+      "reason": "Stripe 否认收购是\"押注 AGI\"，真实动机是控制 agent 经济计费基础设施，基础设施层溢价远超应用层"
     },
     {
       "title": "Death of Params: Z.ai CEO on GLM 5.3",
       "url": "https://www.latent.space/p/ainews-death-of-params-zai-ceo-jie",
       "source": "",
-      "reason": "Z.ai CEO 提出\"后训练 Scaling Law\"——精调工程和 Harness 层才是差异化关键，开源团队可借此弯道超车。"
+      "reason": "Z.ai CEO 提出\"后训练 Scaling Law\"——精调工程和 Harness 层才是差异化关键，开源团队可借此弯道超车"
     }
   ],
   "consensus": {
@@ -121,5 +121,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

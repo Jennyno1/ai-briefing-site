@@ -14,8 +14,7 @@
   var briefingEl = document.getElementById('briefing');
   var footerMeta = document.getElementById('footer-meta');
   var themeBtn = document.getElementById('theme-toggle');
-  var prevBtn = document.getElementById('rail-prev');
-  var nextBtn = document.getElementById('rail-next');
+  var selectEl = document.getElementById('date-select');
   var currentDate = '';
 
   var WEEK = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
@@ -97,6 +96,18 @@
       '<div class="vp-text">' + esc(vp.text) + '</div>' + quotesHtml + '</div>';
   }
 
+  /* 源格式：📝「介绍。为什么值得关注：理由」挤在一行 → 拆成两行
+     （后端 skill 已同步改为 📝 介绍 / 💡 理由 两行；这里对历史数据兜底） */
+  function splitReason(s) {
+    var t = String(s == null ? '' : s).trim();
+    if (!t) return { intro: '', why: '' };
+    var parts = t.split(/为什么值得关注\s*[:：]?/);
+    if (parts.length >= 2) {
+      return { intro: parts[0].replace(/[。；;，,\s]+$/, ''), why: parts.slice(1).join('').trim() };
+    }
+    return { intro: t, why: '' };
+  }
+
   function readingHtml(reading) {
     var list = (Array.isArray(reading) ? reading : []).filter(function (r) { return r && !isPlaceholder(r.title); });
     if (!list.length) return '';
@@ -104,8 +115,12 @@
       var title = r.url
         ? '<a href="' + esc(safeUrl(r.url)) + '" target="_blank" rel="noopener">' + esc(r.title) + '</a>'
         : esc(r.title);
-      var reason = (!isPlaceholder(r.reason)) ? '<p class="reason">' + esc(r.reason) + '</p>' : '';
-      return '<li>' + title + (r.source ? ' <span class="src">— ' + esc(r.source) + '</span>' : '') + reason + '</li>';
+      var sp = splitReason(r.reason);
+      var why = (!isPlaceholder(r.why)) ? r.why : sp.why;      // 💡 单独一行时优先用 why 字段
+      var intro = isPlaceholder(sp.intro) ? '' : sp.intro;
+      var reason = intro ? '<p class="reason">' + esc(intro) + '</p>' : '';
+      var whyP = why ? '<p class="reason reason-why">' + esc(why) + '</p>' : '';
+      return '<li>' + title + (r.source ? ' <span class="src">— ' + esc(r.source) + '</span>' : '') + reason + whyP + '</li>';
     }).join('');
     return '<section class="reading"><header class="sec-head"><i class="chip chip-neutral" aria-hidden="true"></i><h2>推荐阅读</h2></header><ol>' + lis + '</ol></section>';
   }
@@ -121,7 +136,7 @@
       var star = (g.stars != null && g.stars !== '') ? ' <span class="gh-stars" title="GitHub 星标数">' + STAR_SVG + esc(g.stars) + '</span>' : '';
       var track = (!isPlaceholder(g.track)) ? ' <span class="badge badge-quiet">' + esc(g.track) + '</span>' : '';
       var note = (!isPlaceholder(g.note)) ? '<p class="reason">' + esc(g.note) + '</p>' : '';
-      var why = (!isPlaceholder(g.why)) ? '<p class="reason reason-why">落地：' + esc(g.why) + '</p>' : '';
+      var why = (!isPlaceholder(g.why)) ? '<p class="reason reason-why">' + esc(g.why) + '</p>' : '';
       return '<li><a href="' + esc(safeUrl(u)) + '" target="_blank" rel="noopener">' + esc(name) + '</a>' + star + track + note + why + '</li>';
     }).join('');
     return '<section class="reading"><header class="sec-head"><i class="chip chip-neutral" aria-hidden="true"></i><h2>GitHub 项目推荐</h2></header><ol>' + lis + '</ol></section>';
@@ -239,32 +254,32 @@
         byMonth[m].map(function (d) { return dateItemHtml(d, activeDate, gaps); }).join('') +
         '</ul></li>';
     }).join('');
+    renderDateSelect(dates, activeDate);   // 窄屏下拉同步填充
   }
 
-  /* 左右切换（窄屏显示）：日期列表是倒序，所以「更早」= 索引 +1 */
-  function railDates() {
-    return Array.prototype.map.call(datesEl.querySelectorAll('li[data-date]'), function (li) {
-      return li.getAttribute('data-date');
+  /* 窄屏的日期切换控件：原生下拉（按月分组）——比一排可横滑的日期块更省事，
+     也天然带「可以选」的提示（下拉箭头就是控件语义），不再需要左右方钮 */
+  function renderDateSelect(dates, activeDate) {
+    if (!selectEl) return;
+    var months = [];
+    var byMonth = {};
+    dates.forEach(function (d) {
+      var m = String(d).slice(0, 7);
+      if (!byMonth[m]) { byMonth[m] = []; months.push(m); }
+      byMonth[m].push(d);
     });
-  }
-  function syncSteps() {
-    if (!prevBtn && !nextBtn) return;
-    var all = railDates();
-    var i = all.indexOf(currentDate);
-    if (prevBtn) prevBtn.disabled = (i === -1 || i >= all.length - 1);
-    if (nextBtn) nextBtn.disabled = (i <= 0);
-  }
-  function stepIssue(delta) {
-    var all = railDates();
-    var i = all.indexOf(currentDate);
-    var j = i + delta;
-    if (i === -1 || j < 0 || j >= all.length) return;
-    loadDate(all[j]);
+    var newest = dates[0];
+    selectEl.innerHTML = months.map(function (m) {
+      return '<optgroup label="' + esc(monthLabel(m)) + '">' + byMonth[m].map(function (d) {
+        return '<option value="' + esc(d) + '"' + (d === activeDate ? ' selected' : '') + '>' +
+          esc(d) + (d === newest ? '（最新）' : '') + '</option>';
+      }).join('') + '</optgroup>';
+    }).join('');
   }
 
   function setActive(date) {
     currentDate = date;
-    syncSteps();
+    if (selectEl) selectEl.value = date;
     var hit = datesEl.querySelector('li[data-date="' + date + '"]');
     if (hit) {                                  // 目标期在收起的月份里 → 自动展开该月
       var grp = hit.closest ? hit.closest('.m-group') : null;
@@ -359,8 +374,7 @@
     renderDates(dates, active, gaps);
     await loadDate(active, { push: false });
 
-    if (prevBtn) prevBtn.addEventListener('click', function () { stepIssue(1); });
-    if (nextBtn) nextBtn.addEventListener('click', function () { stepIssue(-1); });
+    if (selectEl) selectEl.addEventListener('change', function () { loadDate(selectEl.value); });
 
     datesEl.addEventListener('click', function (e) {
       var mb = e.target.closest && e.target.closest('.m-btn');

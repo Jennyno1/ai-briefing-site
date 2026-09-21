@@ -92,19 +92,19 @@
       "title": "Skill不够了，Agent需要拼\"生产系统\"",
       "url": "https://www.huxiu.com/article/4882713.html",
       "source": "",
-      "reason": "企业Agent从单点技能走向完整生产系统的拐点分析。与Hermes的skill体系同源，读完能对齐企业AI新叙事。"
+      "reason": "企业Agent从单点技能走向完整生产系统的拐点分析。与Hermes的skill体系同源，读完能对齐企业AI新叙事"
     },
     {
       "title": "腾讯AI开始算回报：从增强旧业务，到寻找下一门新生意",
       "url": "https://www.huxiu.com/article/4882704.html",
       "source": "",
-      "reason": "腾讯二季度财报后AI战略转向\"算回报\"。国内企业AI从烧钱到验证商业闭环的标志。"
+      "reason": "腾讯二季度财报后AI战略转向\"算回报\"。国内企业AI从烧钱到验证商业闭环的标志"
     },
     {
       "title": "AI coding startup Cognition reportedly in talks to raise at $40B",
       "url": "https://techcrunch.com/2026/08/12/ai-coding-startup-cognition-reportedly-already-in-talks-to-raise-a/",
       "source": "",
-      "reason": "Devin母公司Cognition洽谈400亿美元估值融资。AI Coding应用层估值天花板信号。"
+      "reason": "Devin母公司Cognition洽谈400亿美元估值融资。AI Coding应用层估值天花板信号"
     }
   ],
   "consensus": {
@@ -117,5 +117,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

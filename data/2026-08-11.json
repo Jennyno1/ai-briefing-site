@@ -94,19 +94,19 @@
       "title": "OpenAI全新GPT Image突袭，碾压Image 2，塑料感终于消失",
       "url": "https://www.36kr.com/p/3933115490368647",
       "source": "",
-      "reason": "GPT Image原生集成ChatGPT，生图质量大幅提升，解决了长期困扰AI生图的\"塑料感\"问题。这是AI内容创作工具的标志性升级。"
+      "reason": "GPT Image原生集成ChatGPT，生图质量大幅提升，解决了长期困扰AI生图的\"塑料感\"问题。这是AI内容创作工具的标志性升级"
     },
     {
       "title": "AI圈上演神级互撕，Codex、Claude Code两位负责人公开对喷",
       "url": "https://www.36kr.com/p/3933059944775041",
       "source": "",
-      "reason": "Agent赛道两大头部产品负责人公开冲突，折射出AI编程工具市场的竞争烈度。背后是用户心智和开发者生态的争夺战。"
+      "reason": "Agent赛道两大头部产品负责人公开冲突，折射出AI编程工具市场的竞争烈度。背后是用户心智和开发者生态的争夺战"
     },
     {
       "title": "Cloudflare launches Kitesurf, a browser built for AI agents",
       "url": "https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-f",
       "source": "",
-      "reason": "第一个专为AI Agent设计的浏览器。如果说传统浏览器是人机交互的界面，Kitesurf就是Agent与Web交互的界面——这是一个新的基础设施品类。"
+      "reason": "第一个专为AI Agent设计的浏览器。如果说传统浏览器是人机交互的界面，Kitesurf就是Agent与Web交互的界面——这是一个新的基础设施品类"
     }
   ],
   "consensus": {
@@ -119,5 +119,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

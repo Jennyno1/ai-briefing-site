@@ -93,19 +93,19 @@
       "title": "Claude Code神话破灭？大量用户正在取消订阅",
       "url": "https://www.36kr.com/p/3947212935593095",
       "source": "",
-      "reason": "Claude Code ARR增速从狂飙暴跌至5.2%，水印争议+额度限制引发退订潮，Codex趁机疯狂扩张。AI编码工具的用户忠诚度比想象中脆弱得多。"
+      "reason": "Claude Code ARR增速从狂飙暴跌至5.2%，水印争议+额度限制引发退订潮，Codex趁机疯狂扩张。AI编码工具的用户忠诚度比想象中脆弱得多"
     },
     {
       "title": "闭源RSI的严父：18个Agent自主科研，Kimi K3靠Harness逼近Opus 5",
       "url": "https://www.qbitai.com/2026/08/476199.html",
       "source": "",
-      "reason": "Prime Intellect让18个前沿模型自主做AI研究，发现idea本身不稀缺，试错吞吐量才是关键——开源模型Kimi K3搭配Harness可逼近最强闭源模型Opus 5。"
+      "reason": "Prime Intellect让18个前沿模型自主做AI研究，发现idea本身不稀缺，试错吞吐量才是关键——开源模型Kimi K3搭配Harness可逼近最强闭源模型Opus 5"
     },
     {
       "title": "Replit expands access to software creation with GPT-5.6 Luna",
       "url": "https://openai.com/index/replit",
       "source": "",
-      "reason": "Replit推出Free Mode用GPT-5.6 Luna驱动免费软件创建，模型经济学的进步正在消除\"从想法到可运行软件\"之间的成本障碍。"
+      "reason": "Replit推出Free Mode用GPT-5.6 Luna驱动免费软件创建，模型经济学的进步正在消除\"从想法到可运行软件\"之间的成本障碍"
     }
   ],
   "consensus": {
@@ -118,5 +118,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

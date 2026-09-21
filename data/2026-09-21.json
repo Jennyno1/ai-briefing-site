@@ -93,25 +93,29 @@
       "title": "World model companies are keeping a lot of secrets",
       "url": "https://techcrunch.com/2026/09/20/world-model-companies-are-keeping-a-lot-of-secrets/",
       "source": "",
-      "reason": "世界模型赛道冠了一层神秘的采访调查。为什么值得关注：识别叙事投资与真实交付的差距是本季度最实用的判断力。"
+      "reason": "世界模型赛道冠了一层神秘的采访调查",
+      "why": "识别叙事投资与真实交付的差距是本季度最实用的判断力。"
     },
     {
       "title": "OpenAI and Microsoft knew they were starting a ‘doom loop’ for the web",
       "url": "https://www.theverge.com/2026/09/20/openai-microsoft-doom-loop",
       "source": "",
-      "reason": "解封法院文件里的内部认知。为什么值得关注：企业内容资产的被爬边界与法务口径直接相关。"
+      "reason": "解封法院文件里的内部认知",
+      "why": "企业内容资产的被爬边界与法务口径直接相关。"
     },
     {
       "title": "华为首发企业AI白皮书：AI让员工更快了，怎样让整个企业受益？",
       "url": "https://www.qbitai.com/",
       "source": "",
-      "reason": "从个体提效到组织收益的国内落地框架。为什么值得关注：CIO视角的白皮书，直接对应企业AI考核口径设计。"
+      "reason": "从个体提效到组织收益的国内落地框架",
+      "why": "CIO视角的白皮书，直接对应企业AI考核口径设计。"
     },
     {
       "title": "Can Skills Learned in Games Transfer to Real-World Work?",
       "url": "https://www.latent.space/",
       "source": "",
-      "reason": "用游戏训练技能迁移的新研究。为什么值得关注：Agent训练方式的新思路，训练设计比数据量更关键。"
+      "reason": "用游戏训练技能迁移的新研究",
+      "why": "Agent训练方式的新思路，训练设计比数据量更关键。"
     }
   ],
   "consensus": {
@@ -133,5 +137,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

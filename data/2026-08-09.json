@@ -94,19 +94,19 @@
       "title": "DeepMind四巨头同日离职：Jeff Dean/Oriol/Quoc集体出走",
       "url": "https://www.latent.space/p/ainews-jeff-sanjay-oriol-and-quoc",
       "source": "",
-      "reason": "Jeff Dean、Sanjay Ghemawat、Oriol Vinyals、Quoc Le同日离开DeepMind。Google AI最核心的研发大脑正在重新洗牌。"
+      "reason": "Jeff Dean、Sanjay Ghemawat、Oriol Vinyals、Quoc Le同日离开DeepMind。Google AI最核心的研发大脑正在重新洗牌"
     },
     {
       "title": "OpenAI向免费用户开放GPT-5.6 Luna",
       "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
       "source": "",
-      "reason": "GPT-5.6 Luna免费开放意味着前沿模型能力不再是付费用户的专属。AI工具的使用门槛正在系统性地降低。"
+      "reason": "GPT-5.6 Luna免费开放意味着前沿模型能力不再是付费用户的专属。AI工具的使用门槛正在系统性地降低"
     },
     {
       "title": "腾讯WorkBuddy内部\"一路绿灯\"，成AI最高优先级产品",
       "url": "https://www.ithome.com/0/987/446.htm",
       "source": "",
-      "reason": "腾讯将WorkBuddy列为AI应用战略最高优先级，内部资源全面倾斜。企业AI助手赛道竞争正从\"试水\"进入\"决战\"阶段。"
+      "reason": "腾讯将WorkBuddy列为AI应用战略最高优先级，内部资源全面倾斜。企业AI助手赛道竞争正从\"试水\"进入\"决战\"阶段"
     }
   ],
   "consensus": {
@@ -119,5 +119,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

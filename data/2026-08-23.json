@@ -85,19 +85,19 @@
       "title": "3万亿美元隐形债务浮出水面：\"AI基建潮\"会引发下一场次贷危机吗？",
       "url": "https://www.huxiu.com/article/4885033.html",
       "source": "",
-      "reason": "WSJ 调查 9 家科技巨头表外承诺逼近 3 万亿美元，BIS 将 AI 投资潮与历史上运河/铁路/互联网泡沫相提并论。这篇把\"AI 泡沫\"从估值叙事升级为信用风险叙事，是理解 2026 下半年 AI 产业走向的关键读物。"
+      "reason": "WSJ 调查 9 家科技巨头表外承诺逼近 3 万亿美元，BIS 将 AI 投资潮与历史上运河/铁路/互联网泡沫相提并论。这篇把\"AI 泡沫\"从估值叙事升级为信用风险叙事，是理解 2026 下半年 AI 产业走向的关键读物"
     },
     {
       "title": "Stripe 为什么盯上模型路由：AI 进入\"智能采购\"时代",
       "url": "https://www.huxiu.com/article/4885069.html",
       "source": "",
-      "reason": "从 $70亿+ 收购 OpenRouter 拆解 Stripe 的全链路布局：路由→计量→支付→结算，揭示\"Token 不是钱，而是 AI 生产里的电量\"这一核心判断。对企业 IT 的启示：未来 Agent 采购将像金融交易一样需要 Smart Order Router。"
+      "reason": "从 $70亿+ 收购 OpenRouter 拆解 Stripe 的全链路布局：路由→计量→支付→结算，揭示\"Token 不是钱，而是 AI 生产里的电量\"这一核心判断。对企业 IT 的启示：未来 Agent 采购将像金融交易一样需要 Smart Order Router"
     },
     {
       "title": "10% worse, 100x cheaper, 10000x faster: Why Simulation is taking over",
       "url": "https://www.latent.space/p/ainews-10-worse-100x-cheaper-10000x",
       "source": "",
-      "reason": "梳理 2022-2026 年 AI 训练管线每个环节从人工翻转为模型生成的完整历程，提出\"模拟是新的缩放定律\"——合成数据/合成研究者/合成环境正以 10000 倍速度替代人工，内容创作者应关注这一趋势对\"AI 二创\"成本结构的影响。"
+      "reason": "梳理 2022-2026 年 AI 训练管线每个环节从人工翻转为模型生成的完整历程，提出\"模拟是新的缩放定律\"——合成数据/合成研究者/合成环境正以 10000 倍速度替代人工，内容创作者应关注这一趋势对\"AI 二创\"成本结构的影响"
     }
   ],
   "consensus": {
@@ -110,5 +110,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

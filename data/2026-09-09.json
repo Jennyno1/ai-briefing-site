@@ -90,19 +90,22 @@
       "title": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
       "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
       "source": "",
-      "reason": "Anthropic发布Fable 5.1，定价降25%且编程性能超GPT-6 Astra，同时推出Mythos 5.1支持科学研究。为什么值得关注：这是高端模型价格战开打的标志性事件。"
+      "reason": "Anthropic发布Fable 5.1，定价降25%且编程性能超GPT-6 Astra，同时推出Mythos 5.1支持科学研究",
+      "why": "这是高端模型价格战开打的标志性事件。"
     },
     {
       "title": "Introducing ChatGPT Images 2.5",
       "url": "https://openai.com/index/introducing-chatgpt-images-2-5",
       "source": "",
-      "reason": "OpenAI发布Images 2.5，速度提升50%、支持草图参考和模板化创作。为什么值得关注：AI图像生成竞争从质量转向工作流集成。"
+      "reason": "OpenAI发布Images 2.5，速度提升50%、支持草图参考和模板化创作",
+      "why": "AI图像生成竞争从质量转向工作流集成。"
     },
     {
       "title": "Meta bets on AI agent Muse to catch up in AI race",
       "url": "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
       "source": "",
-      "reason": "Meta发布Muse个人AI助手，可在后台自主完成任务，强调易用性和隐私保护。为什么值得关注：社交巨头入局Agent市场，可能改变用户习惯。"
+      "reason": "Meta发布Muse个人AI助手，可在后台自主完成任务，强调易用性和隐私保护",
+      "why": "社交巨头入局Agent市场，可能改变用户习惯。"
     }
   ],
   "consensus": {
@@ -123,5 +126,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

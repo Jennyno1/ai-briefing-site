@@ -93,19 +93,19 @@
       "title": "SpaceX officially closes its Cursor acquisition",
       "url": "https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/",
       "source": "",
-      "reason": "4月宣布600亿美元期权、6月SpaceX上市后推进、8月15日正式交割，Cursor官宣加入SpaceX。史上最大初创收购案尘埃落定，AI编程工具格局进入新阶段。"
+      "reason": "4月宣布600亿美元期权、6月SpaceX上市后推进、8月15日正式交割，Cursor官宣加入SpaceX。史上最大初创收购案尘埃落定，AI编程工具格局进入新阶段"
     },
     {
       "title": "拟60亿美元收购Decart，Anthropic在IPO开始之前要开启一场「效率战争」",
       "url": "https://www.huxiu.com/article/4883308.html",
       "source": "",
-      "reason": "Anthropic洽购以色列AI效率公司Decart、已秘密提交S-1最快10月上市。千亿算力账之下「效率」成为决定利润表的生死变量。"
+      "reason": "Anthropic洽购以色列AI效率公司Decart、已秘密提交S-1最快10月上市。千亿算力账之下「效率」成为决定利润表的生死变量"
     },
     {
       "title": "Anthropic自曝「私藏核武器」，Model 2比Mythos 5更强",
       "url": "https://www.36kr.com/p/3940126125161602",
       "source": "",
-      "reason": "Anthropic第二份Risk Report承认内部模型Model 2强于公开旗舰，误对齐风险上调。AI安全叙事与发布节奏脱钩的前沿观察。"
+      "reason": "Anthropic第二份Risk Report承认内部模型Model 2强于公开旗舰，误对齐风险上调。AI安全叙事与发布节奏脱钩的前沿观察"
     }
   ],
   "consensus": {
@@ -118,5 +118,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

@@ -90,19 +90,22 @@
       "title": "Nvidia confirms it will buy Hugging Face for $12.9 billion",
       "url": "https://techcrunch.com/2026/09/03/nvidia-confirms-it-will-buy-hugging-face-for-12-9-billion/",
       "source": "",
-      "reason": "Nvidia确认收购Hugging Face，这家平台托管300万模型、1800万开发者。为什么值得关注：开源AI生态从社区自治走向巨头整合，模型分发入口的中立性将成为行业核心议题。"
+      "reason": "Nvidia确认收购Hugging Face，这家平台托管300万模型、1800万开发者",
+      "why": "开源AI生态从社区自治走向巨头整合，模型分发入口的中立性将成为行业核心议题。"
     },
     {
       "title": "Crusoe reportedly raises $3B at a $30B valuation",
       "url": "https://techcrunch.com/2026/09/03/crusoe-reportedly-raises-3b-at-a-30b-valuation/",
       "source": "",
-      "reason": "数据中心开发商Crusoe完成30亿美元融资、估值300亿美元，此前已获Jane Street 130亿美元合同。为什么值得关注：AI基础设施赛道持续吸金，资本密集度说明市场对AI算力需求的长期预期没有动摇。"
+      "reason": "数据中心开发商Crusoe完成30亿美元融资、估值300亿美元，此前已获Jane Street 130亿美元合同",
+      "why": "AI基础设施赛道持续吸金，资本密集度说明市场对AI算力需求的长期预期没有动摇。"
     },
     {
       "title": "WorkBuddy 开放生态，腾讯不想被困桌面",
       "url": "https://www.36kr.com/p/3970051115266306",
       "source": "",
-      "reason": "腾讯WorkBuddy月活2000万，深度分析AI办公Agent从工具到平台的进化路径。为什么值得关注：AI办公Agent市场格局正在被重新定义，WorkBuddy的跨平台策略可能是破解\"桌面端锁定\"的关键。"
+      "reason": "腾讯WorkBuddy月活2000万，深度分析AI办公Agent从工具到平台的进化路径",
+      "why": "AI办公Agent市场格局正在被重新定义，WorkBuddy的跨平台策略可能是破解\"桌面端锁定\"的关键。"
     }
   ],
   "consensus": {
@@ -123,5 +126,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

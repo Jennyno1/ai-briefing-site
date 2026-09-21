@@ -94,19 +94,19 @@
       "title": "苹果国行AI突然发布，首次官宣牵手阿里，Mac用上千问了",
       "url": "https://www.36kr.com/p/3930992127458695",
       "source": "",
-      "reason": "苹果Mac使用手册新增千问集成章节，Siri和写作工具接入Qwen。这是苹果首次官方确认国行AI合作方，中国大陆市场AI助手格局因此明朗。"
+      "reason": "苹果Mac使用手册新增千问集成章节，Siri和写作工具接入Qwen。这是苹果首次官方确认国行AI合作方，中国大陆市场AI助手格局因此明朗"
     },
     {
       "title": "Unpacking ChatGPT Work: the Agent for a Billion Users",
       "url": "https://www.latent.space/p/unpacking-chatgpt-work",
       "source": "",
-      "reason": "外部视角深度拆解ChatGPT Work的六大能力系统（记忆/主动性/定时/浏览器/插件/技能）。ChatGPT Work已超1000万用户，年底将与ChatGPT合并成为十亿用户的默认Agent体验。"
+      "reason": "外部视角深度拆解ChatGPT Work的六大能力系统（记忆/主动性/定时/浏览器/插件/技能）。ChatGPT Work已超1000万用户，年底将与ChatGPT合并成为十亿用户的默认Agent体验"
     },
     {
       "title": "180万刀，连亚马逊都烧不起Claude了",
       "url": "https://www.qbitai.com/2026/08/469010.html",
       "source": "",
-      "reason": "亚马逊一个简单任务烧掉180万美元Claude费用，Meta/Uber/微软纷纷给Token用量设上限。企业AI正从\"尽可能多用\"转向\"精打细算\"，Token预算管控成为刚需。"
+      "reason": "亚马逊一个简单任务烧掉180万美元Claude费用，Meta/Uber/微软纷纷给Token用量设上限。企业AI正从\"尽可能多用\"转向\"精打细算\"，Token预算管控成为刚需"
     }
   ],
   "consensus": {
@@ -119,5 +119,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

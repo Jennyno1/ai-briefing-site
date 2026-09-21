@@ -90,19 +90,22 @@
       "title": "GPT-6 Astra: an automated AI Engineer you can hire for <$6 an hour",
       "url": "https://www.latent.space/p/astra",
       "source": "",
-      "reason": "Latent Space深度测评OpenAI GPT-6 Astra，探索其在编程、工程任务中的实际表现和局限。为什么值得关注：Astra代表AI Agent从概念验证进入\"可雇佣\"阶段，其真实能力边界将直接影响企业AI部署决策。"
+      "reason": "Latent Space深度测评OpenAI GPT-6 Astra，探索其在编程、工程任务中的实际表现和局限",
+      "why": "Astra代表AI Agent从概念验证进入\"可雇佣\"阶段，其真实能力边界将直接影响企业AI部署决策。"
     },
     {
       "title": "Nvidia confirms it will buy Hugging Face for $12.9 billion",
       "url": "https://techcrunch.com/2026/09/03/nvidia-confirms-it-will-buy-hugging-face-for-12-9-billion/",
       "source": "",
-      "reason": "NVIDIA正式确认收购Hugging Face，这笔交易将重塑开源AI生态的权力格局。为什么值得关注：开源AI的\"免费午餐\"时代可能结束，开发者需要关注平台中立性和工具链锁定风险。"
+      "reason": "NVIDIA正式确认收购Hugging Face，这笔交易将重塑开源AI生态的权力格局",
+      "why": "开源AI的\"免费午餐\"时代可能结束，开发者需要关注平台中立性和工具链锁定风险。"
     },
     {
       "title": "ChatGPT, Grok, and Claude all went down at the same time",
       "url": "https://www.theverge.com/ai-artificial-intelligence/989503/chatgpt-grok-claude-outage-down",
       "source": "",
-      "reason": "ChatGPT、Grok、Claude三大AI平台同步故障，超过12000份用户报告。为什么值得关注：AI基础设施的集中性风险正在从理论走向现实，企业AI部署需要考虑多平台冗余和离线降级方案。"
+      "reason": "ChatGPT、Grok、Claude三大AI平台同步故障，超过12000份用户报告",
+      "why": "AI基础设施的集中性风险正在从理论走向现实，企业AI部署需要考虑多平台冗余和离线降级方案。"
     }
   ],
   "consensus": {
@@ -123,5 +126,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

@@ -69,19 +69,19 @@
       "title": "飞书并入豆包、千问办公整合，大厂AI大战从\"赛马\"到\"合兵\"？",
       "url": "https://www.36kr.com/p/3926719442565256",
       "source": "",
-      "reason": "字节将飞书与豆包产品团队合并、阿里千问整合办公能力，大厂B端AI战略从多产品各自为战转向统一作战。这标志着企业AI助手不再是独立产品，而是协作工具的\"智能内核\"。"
+      "reason": "字节将飞书与豆包产品团队合并、阿里千问整合办公能力，大厂B端AI战略从多产品各自为战转向统一作战。这标志着企业AI助手不再是独立产品，而是协作工具的\"智能内核\""
     },
     {
       "title": "扎克伯格，跟DeepSeek拼了",
       "url": "https://www.36kr.com/p/3927517033576585",
       "source": "",
-      "reason": "Meta发布Muse Code并以低于DeepSeek的价格入市，DeepSeek同日宣布涨价，AI coding工具价格战正式开打。企业选型不能再只看功能，供应商定价策略的稳定性同样关键。"
+      "reason": "Meta发布Muse Code并以低于DeepSeek的价格入市，DeepSeek同日宣布涨价，AI coding工具价格战正式开打。企业选型不能再只看功能，供应商定价策略的稳定性同样关键"
     },
     {
       "title": "即日起，ChatGPT可以调用Adobe Photoshop、Lightroom来修图、设计了",
       "url": "https://www.ithome.com/0/986/769.htm",
       "source": "",
-      "reason": "Adobe与OpenAI扩大合作，ChatGPT新增调用Premiere/Acrobat/Lightroom等全套创意软件的能力。对内容创作者来说，\"AI构思→专业出图\"首次在单一对话中闭环完成。"
+      "reason": "Adobe与OpenAI扩大合作，ChatGPT新增调用Premiere/Acrobat/Lightroom等全套创意软件的能力。对内容创作者来说，\"AI构思→专业出图\"首次在单一对话中闭环完成"
     }
   ],
   "consensus": {
@@ -94,5 +94,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

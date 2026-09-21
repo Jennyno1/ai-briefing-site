@@ -94,19 +94,22 @@
       "title": "Optimizing cost and latency with Amazon Bedrock prompt caching",
       "url": "https://aws.amazon.com/blogs/machine-learning/optimizing-cost-and-latency-with-amazon-bedrock-prompt-caching/",
       "source": "",
-      "reason": "重复输入场景下输入token成本最高降90%。为什么值得关注：Agent成本优化最直接的实操文档，含配置方法与适用判断。"
+      "reason": "重复输入场景下输入token成本最高降90%",
+      "why": "Agent成本优化最直接的实操文档，含配置方法与适用判断。"
     },
     {
       "title": "Underwriting Superintelligence: Backing Agents you can Sue",
       "url": "https://www.latent.space/p/aiuc",
       "source": "",
-      "reason": "AIUC谈Agent保险与责任承保。为什么值得关注：企业采用Agent的「责任与可追责」视角，正好对应评估标准之争， Interview角度新颖。"
+      "reason": "AIUC谈Agent保险与责任承保",
+      "why": "企业采用Agent的「责任与可追责」视角，正好对应评估标准之争， Interview角度新颖。"
     },
     {
       "title": "Claude comes for Gemini with its own take on Docs and Slides",
       "url": "https://www.theverge.com/ai-artificial-intelligence/claude-docs-slides",
       "source": "",
-      "reason": "Anthropic把生产力套件补齐。为什么值得关注：AI助手从聊天窗口走向办公全家桶的标志性一步，直接影响协同办公工具格局。"
+      "reason": "Anthropic把生产力套件补齐",
+      "why": "AI助手从聊天窗口走向办公全家桶的标志性一步，直接影响协同办公工具格局。"
     }
   ],
   "consensus": {
@@ -128,5 +131,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

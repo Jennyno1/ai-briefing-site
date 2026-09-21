@@ -91,19 +91,19 @@
       "title": "How Claude's text watermark works",
       "url": "https://www.anthropic.com/news/claude-text-watermark",
       "source": "",
-      "reason": "模型商首次系统公开文本水印的技术原理，说明生成内容如何被打上可检测标记。价值判断：内容创作者应尽早把「来源可信」做成工作流标配，是合规与信任的先行资产。"
+      "reason": "模型商首次系统公开文本水印的技术原理，说明生成内容如何被打上可检测标记。价值判断：内容创作者应尽早把「来源可信」做成工作流标配，是合规与信任的先行资产"
     },
     {
       "title": "The new Gemini Enterprise",
       "url": "https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development",
       "source": "",
-      "reason": "统一的企业级 Agent 平台，将开发、编排、治理整合，并覆盖法律、金融等行业版本。价值判断：企业 Agent 正从单点工具走向平台化交付，值得做一期趋势解读。"
+      "reason": "统一的企业级 Agent 平台，将开发、编排、治理整合，并覆盖法律、金融等行业版本。价值判断：企业 Agent 正从单点工具走向平台化交付，值得做一期趋势解读"
     },
     {
       "title": "2025 State of Generative AI in the Enterprise",
       "url": "https://www.menlovc.com/perspective",
       "source": "",
-      "reason": "企业 GenAI 年度支出与采用全景，覆盖医疗、消费等行业渗透数据。价值判断：用一级市场视角校准你的内容选题与接单方向，比追热点更稳。"
+      "reason": "企业 GenAI 年度支出与采用全景，覆盖医疗、消费等行业渗透数据。价值判断：用一级市场视角校准你的内容选题与接单方向，比追热点更稳"
     }
   ],
   "consensus": {
@@ -116,5 +116,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

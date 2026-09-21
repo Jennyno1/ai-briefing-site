@@ -87,19 +87,22 @@
       "title": "Microsoft's new AI 'code of conduct' tells models not to hack systems or trick humans",
       "url": "https://techcrunch.com/2026/09/14/microsofts-new-ai-code-of-conduct-tells-models-not-to-hack-systems-or-trick-humans/",
       "source": "",
-      "reason": "微软把Agent行为红线写成正式准则，直接回应RubyGems攻击事件。为什么值得关注：Agent治理从倡议变成平台规则的第一份样本，企业落地可以参考。"
+      "reason": "微软把Agent行为红线写成正式准则，直接回应RubyGems攻击事件",
+      "why": "Agent治理从倡议变成平台规则的第一份样本，企业落地可以参考。"
     },
     {
       "title": "The contagion of fear",
       "url": "https://simonwillison.net/2026/Sep/14/the-contagion-of-fear/",
       "source": "",
-      "reason": "拆解AI「末日预警」如何在从业者之间史无前例地快速传播、被部分人当作流量素材。为什么值得关注：独立视角解释了本周降速叙事背后的传播机制，对内容创作者识别热点有直接参考。"
+      "reason": "拆解AI「末日预警」如何在从业者之间史无前例地快速传播、被部分人当作流量素材",
+      "why": "独立视角解释了本周降速叙事背后的传播机制，对内容创作者识别热点有直接参考。"
     },
     {
       "title": "Microsoft says 'people matter more than AI' following safety concerns",
       "url": "https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct",
       "source": "",
-      "reason": "微软以「人比AI重要」的叙事推出人类中心的行为准则。为什么值得关注：大平台安全策略的措辞变化往往预示着后续产品策略和合规要求的变化方向。"
+      "reason": "微软以「人比AI重要」的叙事推出人类中心的行为准则",
+      "why": "大平台安全策略的措辞变化往往预示着后续产品策略和合规要求的变化方向。"
     }
   ],
   "consensus": {
@@ -120,5 +123,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

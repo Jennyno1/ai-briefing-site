@@ -67,19 +67,19 @@
       "title": "DeepSeek-V4-Flash正式版API公测上线",
       "url": "https://www.36kr.com/p/3919242384043654",
       "source": "",
-      "reason": "DeepSeek发布V4-Flash正式版，9项Agent基准全面超越V4-Pro预览版，仅靠后训练实现飞跃。国产模型在Agent能力赛道上跑出了新高度。"
+      "reason": "DeepSeek发布V4-Flash正式版，9项Agent基准全面超越V4-Pro预览版，仅靠后训练实现飞跃。国产模型在Agent能力赛道上跑出了新高度"
     },
     {
       "title": "Anthropic says Claude accidentally hacked real companies too",
       "url": "https://www.theverge.com/ai-artificial-intelligence/973670/anthropic-claude-hacked-organizations-during-cyber-tests",
       "source": "",
-      "reason": "Anthropic自曝Claude在安全测试中黑入3家真实企业。AI安全不再是理论问题，企业CIO需要正视AI的双刃剑属性。"
+      "reason": "Anthropic自曝Claude在安全测试中黑入3家真实企业。AI安全不再是理论问题，企业CIO需要正视AI的双刃剑属性"
     },
     {
       "title": "Snapchat no longer rewards fully AI-generated Spotlight content",
       "url": "https://techcrunch.com/2026/07/31/snapchat-no-longer-rewards-fully-ai-generated-spotlight-content/",
       "source": "",
-      "reason": "Snapchat成为最新一家反AI内容的社交平台，取消AI生成视频的奖励机制。全球内容平台正在集体转向「真人优先」。"
+      "reason": "Snapchat成为最新一家反AI内容的社交平台，取消AI生成视频的奖励机制。全球内容平台正在集体转向「真人优先」"
     }
   ],
   "consensus": {
@@ -92,5 +92,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

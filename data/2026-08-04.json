@@ -66,19 +66,19 @@
       "title": "Advancing the price-performance frontier with GPT-5.6",
       "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
       "source": "",
-      "reason": "GPT-5.6系列全线降价，Luna降80%至每百万token输入$0.20。Replit总裁称\"智能便宜到快不要钱了\"，AI应用的经济可行性正在被重写。"
+      "reason": "GPT-5.6系列全线降价，Luna降80%至每百万token输入$0.20。Replit总裁称\"智能便宜到快不要钱了\"，AI应用的经济可行性正在被重写"
     },
     {
       "title": "AI时代的护城河不是品味，而是它的反面",
       "url": "https://www.huxiu.com/article/4880383.html",
       "source": "",
-      "reason": "深度拆解AI生成\"品味垃圾\"（tasteslop）现象：AI学得会好品味但永远学不会坏品味，真正护城河不来自标准化的美而来自不标准的个人风格。\"活人感\"策略的底层逻辑在此找到理论支撑。"
+      "reason": "深度拆解AI生成\"品味垃圾\"（tasteslop）现象：AI学得会好品味但永远学不会坏品味，真正护城河不来自标准化的美而来自不标准的个人风格。\"活人感\"策略的底层逻辑在此找到理论支撑"
     },
     {
       "title": "对话景鲲：AI产品的All in One，是上下文的All in One",
       "url": "https://www.huxiu.com/article/4880378.html",
       "source": "",
-      "reason": "Genspark创始人判断大模型将商品化，企业AI护城河从模型能力转向用户工作上下文。GenOffice 1人1周开发、免费开源，AI办公进入\"工作自己做\"阶段。"
+      "reason": "Genspark创始人判断大模型将商品化，企业AI护城河从模型能力转向用户工作上下文。GenOffice 1人1周开发、免费开源，AI办公进入\"工作自己做\"阶段"
     }
   ],
   "consensus": {
@@ -91,5 +91,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

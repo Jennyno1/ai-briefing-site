@@ -68,19 +68,19 @@
       "title": "OpenAI公布下一代模型Astra：解决10个悬而未决超10年数学难题",
       "url": "https://www.ithome.com/0/984/557.htm",
       "source": "",
-      "reason": "OpenAI下一代核心模型Astra内部版本一次性攻克10个超十年未解数学难题，全部论证由AI独立生成。仅$2000的token成本实现了人类数学家数十年未取得的突破。"
+      "reason": "OpenAI下一代核心模型Astra内部版本一次性攻克10个超十年未解数学难题，全部论证由AI独立生成。仅$2000的token成本实现了人类数学家数十年未取得的突破"
     },
     {
       "title": "The major labels propose rules to keep AI slop off the charts",
       "url": "https://www.theverge.com/ai-artificial-intelligence/973741/ai-music-major-record-labels-charts",
       "source": "",
-      "reason": "三大唱片巨头联合IFPI提议AI音乐禁入排行榜，\"substantially human made\"成新的行业准入标准。从RIAA的标识到全面封杀，音乐产业对AI内容的态度正快速收紧。"
+      "reason": "三大唱片巨头联合IFPI提议AI音乐禁入排行榜，\"substantially human made\"成新的行业准入标准。从RIAA的标识到全面封杀，音乐产业对AI内容的态度正快速收紧"
     },
     {
       "title": "Hank Green says his AI usage is 'not healthy'",
       "url": "https://techcrunch.com/2026/08/01/youtuber-hank-green-says-his-ai-usage-is-not-healthy/",
       "source": "",
-      "reason": "320万订阅的YouTube头部创作者公开承认AI依赖\"不健康\"，宣布暂停更新。被粉丝发现AI痕迹后翻车的真实案例，揭示了AI辅助创作不可忽视的信任危机。"
+      "reason": "320万订阅的YouTube头部创作者公开承认AI依赖\"不健康\"，宣布暂停更新。被粉丝发现AI痕迹后翻车的真实案例，揭示了AI辅助创作不可忽视的信任危机"
     }
   ],
   "consensus": {
@@ -93,5 +93,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

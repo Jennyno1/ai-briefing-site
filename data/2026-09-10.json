@@ -90,19 +90,22 @@
       "title": "Cognition hits $48B valuation, signaling investors believe AI coding is far from a winner-take-all market",
       "url": "https://techcrunch.com/2026/09/08/cognition-hits-48b-valuation-signaling-investors-believe-ai-coding-is-far-from-a-winner-take-all-market/",
       "source": "",
-      "reason": "Cognition以480亿美元估值融资20亿美元，年化收入逼近9亿美元。为什么值得关注：AI编程赛道的高估值说明VC认为市场远未到赢家通吃的阶段。"
+      "reason": "Cognition以480亿美元估值融资20亿美元，年化收入逼近9亿美元",
+      "why": "AI编程赛道的高估值说明VC认为市场远未到赢家通吃的阶段。"
     },
     {
       "title": "Nvidia confirms it will buy Hugging Face for $12.9 billion",
       "url": "https://techcrunch.com/2026/09/03/nvidia-confirms-it-will-buy-hugging-face-for-12-9-billion/",
       "source": "",
-      "reason": "NVIDIA以129亿美元确认收购Hugging Face，CEO承诺保持开源平台开放。为什么值得关注：硬件巨头入局开源AI平台，可能重塑AI生态格局。"
+      "reason": "NVIDIA以129亿美元确认收购Hugging Face，CEO承诺保持开源平台开放",
+      "why": "硬件巨头入局开源AI平台，可能重塑AI生态格局。"
     },
     {
       "title": "Google Cloud races to catch up in the AI deployment wars with Accenture deal",
       "url": "https://techcrunch.com/2026/09/08/google-cloud-races-to-catch-up-in-the-ai-deployment-wars-with-accenture-deal/",
       "source": "",
-      "reason": "Google Cloud与埃森哲成立千人前置部署工程师团队，试图追赶企业AI部署差距。为什么值得关注：超算厂商正在从\"卖模型\"转向\"卖部署服务\"，这是万亿级市场的关键转型。"
+      "reason": "Google Cloud与埃森哲成立千人前置部署工程师团队，试图追赶企业AI部署差距",
+      "why": "超算厂商正在从\"卖模型\"转向\"卖部署服务\"，这是万亿级市场的关键转型。"
     }
   ],
   "consensus": {
@@ -123,5 +126,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

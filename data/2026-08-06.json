@@ -95,19 +95,19 @@
       "title": "Jeff Dean and other top AI researchers are leaving Google to launch their own startup",
       "url": "https://techcrunch.com/2026/08/05/jeff-dean-and-other-top-ai-researchers-are-leaving-google-to-launch-their-own-startup",
       "source": "",
-      "reason": "Google核心AI团队Jeff Dean等多人集体离职创业，是近年来AI人才市场最大震动之一。这标志着新一轮AI创业浪潮的开启，可能催生与OpenAI/Anthropic竞争的下一代AI公司。"
+      "reason": "Google核心AI团队Jeff Dean等多人集体离职创业，是近年来AI人才市场最大震动之一。这标志着新一轮AI创业浪潮的开启，可能催生与OpenAI/Anthropic竞争的下一代AI公司"
     },
     {
       "title": "Meta launches Muse Code, an AI agent for large code bases",
       "url": "https://techcrunch.com/2026/08/05/meta-launches-muse-code-an-ai-agent-for-large-code-bases",
       "source": "",
-      "reason": "Meta正式发布企业级AI编程Agent Muse Code，与GitHub Copilot、Claude Code展开直接竞争。AI coding工具赛道从创业公司主导进入巨头全面参战阶段。"
+      "reason": "Meta正式发布企业级AI编程Agent Muse Code，与GitHub Copilot、Claude Code展开直接竞争。AI coding工具赛道从创业公司主导进入巨头全面参战阶段"
     },
     {
       "title": "Kimi K3与DeepSeek V4之间，隔着原生多模态的时间差",
       "url": "https://www.36kr.com/p/3924826666301831",
       "source": "",
-      "reason": "深度分析Kimi K3与DeepSeek V4在多模态能力上的差异根源——原生多模态架构vs后拼接方案。对理解国内大模型的技术路线选择和内容创作工具选型有直接参考价值。"
+      "reason": "深度分析Kimi K3与DeepSeek V4在多模态能力上的差异根源——原生多模态架构vs后拼接方案。对理解国内大模型的技术路线选择和内容创作工具选型有直接参考价值"
     }
   ],
   "consensus": {
@@ -120,5 +120,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

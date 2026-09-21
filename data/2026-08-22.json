@@ -92,19 +92,19 @@
       "title": "Poolside gets $12B reverse-execuhire to NVIDIA",
       "url": "https://www.latent.space/p/ainews-poolside-gets-12b-reverse",
       "source": "",
-      "reason": "AI 公司\"被并购\"新范式：创始人留任拿钱、员工带资跳槽、infrastructure 卖给大厂——人才/算力/股权三方各取所需，把\"人才流失\"反向变成\"人才定价\"。"
+      "reason": "AI 公司\"被并购\"新范式：创始人留任拿钱、员工带资跳槽、infrastructure 卖给大厂——人才/算力/股权三方各取所需，把\"人才流失\"反向变成\"人才定价\""
     },
     {
       "title": "Nvidia just showed that the harness, not the AI model, is now the real hero",
       "url": "https://techcrunch.com/2026/08/21/nvidia-just-showed-that-the-harness-not-the-ai-model-is-now-the-real-hero/",
       "source": "",
-      "reason": "Nvidia 用一次公开工程演示重新定义 AI 价值锚点：把\"模型=价值\"翻篇到\"工程化能力=价值\"，呼应 OpenAI/DeepSeek 的 Harness 战略转向。"
+      "reason": "Nvidia 用一次公开工程演示重新定义 AI 价值锚点：把\"模型=价值\"翻篇到\"工程化能力=价值\"，呼应 OpenAI/DeepSeek 的 Harness 战略转向"
     },
     {
       "title": "WPS Comate百城AI智能体赋能计划正式启动",
       "url": "https://www.36kr.com/newsflashes/3949280883719558",
       "source": "",
-      "reason": "WPS 联合国资委/金融监管层级开智能体培训，把企业 AI 落地从\"工具普及\"推向\"组织变革\"——监管层背书意味着这不再只是 IT 部门的事。"
+      "reason": "WPS 联合国资委/金融监管层级开智能体培训，把企业 AI 落地从\"工具普及\"推向\"组织变革\"——监管层背书意味着这不再只是 IT 部门的事"
     }
   ],
   "consensus": {
@@ -117,5 +117,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

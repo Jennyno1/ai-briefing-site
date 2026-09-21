@@ -90,19 +90,22 @@
       "title": "PRs NOT Welcome: How Top AI Open Source Projects Are Managing Thousands of Contributors",
       "url": "https://www.latent.space/p/pr-not-welcome",
       "source": "",
-      "reason": "深度分析顶级AI开源项目如何管理成千上万的贡献者，从代码审查到社区治理的实战经验。为什么值得关注：AI开源项目规模爆发式增长后，贡献者管理成为决定项目生命力的关键能力。"
+      "reason": "深度分析顶级AI开源项目如何管理成千上万的贡献者，从代码审查到社区治理的实战经验",
+      "why": "AI开源项目规模爆发式增长后，贡献者管理成为决定项目生命力的关键能力。"
     },
     {
       "title": "Google's answer to Canva is an AI tool where you prompt instead of design",
       "url": "https://techcrunch.com/2026/09/01/googles-answer-to-canva-is-an-ai-tool-where-you-prompt-instead-of-design/",
       "source": "",
-      "reason": "Google推出Pics，一款用提示词替代传统设计的AI图片编辑器，直接对标Canva。为什么值得关注：AI图片工具从\"辅助编辑\"升级到\"提示词驱动\"，内容创作者的设计门槛再次降低。"
+      "reason": "Google推出Pics，一款用提示词替代传统设计的AI图片编辑器，直接对标Canva",
+      "why": "AI图片工具从\"辅助编辑\"升级到\"提示词驱动\"，内容创作者的设计门槛再次降低。"
     },
     {
       "title": "AIR raises $50M to help companies vet the skills and add-ons AI agents use",
       "url": "https://techcrunch.com/2026/09/01/air-raises-50m-to-help-companies-vet-the-skills-and-add-ons-ai-agents-use/",
       "source": "",
-      "reason": "AIR完成5000万美元融资，专注为企业提供AI Agent技能和插件的安全验证。为什么值得关注：企业AI Agent规模化部署后，技能安全治理成为新的刚需市场。"
+      "reason": "AIR完成5000万美元融资，专注为企业提供AI Agent技能和插件的安全验证",
+      "why": "企业AI Agent规模化部署后，技能安全治理成为新的刚需市场。"
     }
   ],
   "consensus": {
@@ -123,5 +126,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

@@ -93,19 +93,19 @@
       "title": "Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+",
       "url": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/",
       "source": "",
-      "reason": "Stripe 以超70亿美元收购 AI 网关 OpenRouter，后者5月才以13亿美元估值融资。支付巨头重金卡位 AI 分发通道，模型层商品化信号增强。"
+      "reason": "Stripe 以超70亿美元收购 AI 网关 OpenRouter，后者5月才以13亿美元估值融资。支付巨头重金卡位 AI 分发通道，模型层商品化信号增强"
     },
     {
       "title": "牛来！A社营收暴涨1400%，最新季度入账115亿美元",
       "url": "https://www.qbitai.com/2026/08/473947.html",
       "source": "",
-      "reason": "Anthropic Q2 营收115亿美元、同比14倍，调整后营业利润首次转正，IPO 估值押注超2万亿。含与 OpenAI 对比与算力成本结构分析，判断 AI 板块景气度的关键一读。"
+      "reason": "Anthropic Q2 营收115亿美元、同比14倍，调整后营业利润首次转正，IPO 估值押注超2万亿。含与 OpenAI 对比与算力成本结构分析，判断 AI 板块景气度的关键一读"
     },
     {
       "title": "Anthropic自曝「私藏核武器」，Model 2比Mythos 5更强",
       "url": "https://www.36kr.com/p/3940126125161602",
       "source": "",
-      "reason": "Anthropic 承认内部 Model 2 强于公开旗舰，误对齐风险上调。AI 安全叙事与发布节奏脱钩的持续观察。"
+      "reason": "Anthropic 承认内部 Model 2 强于公开旗舰，误对齐风险上调。AI 安全叙事与发布节奏脱钩的持续观察"
     }
   ],
   "consensus": {
@@ -118,5 +118,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

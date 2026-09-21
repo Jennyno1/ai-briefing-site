@@ -90,19 +90,22 @@
       "title": "GPT-6 Astra: A new generation of intelligence",
       "url": "https://openai.com/index/gpt-6-astra",
       "source": "",
-      "reason": "OpenAI发布GPT-6 Astra，定位为新一代智能模型，展示了游戏原型、文档审阅等多场景能力。为什么值得关注：这是OpenAI迄今最大的模型发布，能力边界大幅扩展。"
+      "reason": "OpenAI发布GPT-6 Astra，定位为新一代智能模型，展示了游戏原型、文档审阅等多场景能力",
+      "why": "这是OpenAI迄今最大的模型发布，能力边界大幅扩展。"
     },
     {
       "title": "Mistral raises €3B as sovereign AI becomes big business",
       "url": "https://techcrunch.com/2026/09/08/mistral-raises-e3b-as-sovereign-ai-becomes-big-business/",
       "source": "",
-      "reason": "Mistral融资€3B，欧洲主权AI赛道加速。为什么值得关注：欧洲AI独角兽正试图在美中AI垄断中找到第三极位置。"
+      "reason": "Mistral融资€3B，欧洲主权AI赛道加速",
+      "why": "欧洲AI独角兽正试图在美中AI垄断中找到第三极位置。"
     },
     {
       "title": "AI power users claim Anthropic duped them with subscriptions",
       "url": "https://www.theverge.com/ai-artificial-intelligence/990313/anthropic-class-action-lawsuit-pricing-subscription-plans",
       "source": "",
-      "reason": "AI高级用户集体诉讼Anthropic诱导订阅，指控定价不透明。为什么值得关注：AI产品定价透明度正成为新的信任和合规战场。"
+      "reason": "AI高级用户集体诉讼Anthropic诱导订阅，指控定价不透明",
+      "why": "AI产品定价透明度正成为新的信任和合规战场。"
     }
   ],
   "consensus": {
@@ -123,5 +126,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

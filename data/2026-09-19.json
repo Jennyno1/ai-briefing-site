@@ -94,19 +94,22 @@
       "title": "How Fyxer built an AI executive assistant people trust",
       "url": "https://openai.com/index/fyxer",
       "source": "",
-      "reason": "邮件办公AI助理赢得用户信任的完整复盘。为什么值得关注：Agent产品从演示到信任的证据链方法，可直接迁移到任何AI工具落地。"
+      "reason": "邮件办公AI助理赢得用户信任的完整复盘",
+      "why": "Agent产品从演示到信任的证据链方法，可直接迁移到任何AI工具落地。"
     },
     {
       "title": "The Rise of the Forward Deployed Engineer — and How To Do the Job Right",
       "url": "https://www.latent.space/p/forward-deployed-engineer",
       "source": "",
-      "reason": "Palantir出身的创业者谈FDE岗位方法论。为什么值得关注：企业AI落地最值钱的岗位画像，与面试准备直接对口。"
+      "reason": "Palantir出身的创业者谈FDE岗位方法论",
+      "why": "企业AI落地最值钱的岗位画像，与面试准备直接对口。"
     },
     {
       "title": "Chain-of-Thought Entropy as a Reliability Signal: A Preregistered Reproduction",
       "url": "https://arxiv.org",
       "source": "",
-      "reason": "用思维链熵作为模型可靠性信号的预注册复现。为什么值得关注：「模型知道自己不可靠」的工程化路径，Agent监控的学术底层。"
+      "reason": "用思维链熵作为模型可靠性信号的预注册复现",
+      "why": "「模型知道自己不可靠」的工程化路径，Agent监控的学术底层。"
     }
   ],
   "consensus": {
@@ -128,5 +131,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

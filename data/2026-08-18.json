@@ -93,19 +93,19 @@
       "title": "AI automation startup Relay shuts down, staff joins Google's Chrome team",
       "url": "https://techcrunch.com/2026/08/17/ai-automation-startup-relay-shuts-down-staff-joins-googles-chrome-team/",
       "source": "",
-      "reason": "AI自动化初创Relay刚融完A轮即关停，团队被Chrome收编。AI工作流赛道正加速向巨头集中，垂直工具生存空间收窄。"
+      "reason": "AI自动化初创Relay刚融完A轮即关停，团队被Chrome收编。AI工作流赛道正加速向巨头集中，垂直工具生存空间收窄"
     },
     {
       "title": "Groq raises $350M to fuel its pivot from AI chips to neocloud",
       "url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/",
       "source": "",
-      "reason": "Groq从自研AI芯片转型Neocloud云服务，获3.5亿美元融资。算力竞争从芯片层延伸到云服务层，纯芯片创业窗口收窄。"
+      "reason": "Groq从自研AI芯片转型Neocloud云服务，获3.5亿美元融资。算力竞争从芯片层延伸到云服务层，纯芯片创业窗口收窄"
     },
     {
       "title": "SpaceX officially closes its Cursor acquisition",
       "url": "https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/",
       "source": "",
-      "reason": "SpaceX正式完成对Cursor母公司Anysphere的600亿美元收购交割。AI编程工具赛道的战略价值被重新定价。"
+      "reason": "SpaceX正式完成对Cursor母公司Anysphere的600亿美元收购交割。AI编程工具赛道的战略价值被重新定价"
     }
   ],
   "consensus": {
@@ -118,5 +118,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }

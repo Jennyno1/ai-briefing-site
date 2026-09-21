@@ -95,19 +95,19 @@
       "title": "震撼，OpenAI全面开源Codex Harness",
       "url": "https://www.36kr.com/p/3948952877661575",
       "source": "",
-      "reason": "详解Codex Harness的架构设计和开源动机：OpenAI认为\"通用聊天框\"限制了AI的落地场景，Harness开源后开发者可直接把Agent嵌入自有业务系统。对企业IT的启示：未来AI工具选型将从\"选哪个聊天产品\"变成\"选哪个执行框架\"。"
+      "reason": "详解Codex Harness的架构设计和开源动机：OpenAI认为\"通用聊天框\"限制了AI的落地场景，Harness开源后开发者可直接把Agent嵌入自有业务系统。对企业IT的启示：未来AI工具选型将从\"选哪个聊天产品\"变成\"选哪个执行框架\""
     },
     {
       "title": "Anthropic's best AI model struggles to attract users as cheaper tools thrive",
       "url": "https://simonwillison.net/",
       "source": "",
-      "reason": "分析Anthropic旗舰模型在实际使用中被更便宜工具分流的现象，揭示\"模型能力天花板\"与\"用户成本敏感度\"之间的张力。对企业AI选型的参考：最强模型不一定是最优选择，性价比和生态集成度同样关键。"
+      "reason": "分析Anthropic旗舰模型在实际使用中被更便宜工具分流的现象，揭示\"模型能力天花板\"与\"用户成本敏感度\"之间的张力。对企业AI选型的参考：最强模型不一定是最优选择，性价比和生态集成度同样关键"
     },
     {
       "title": "Who's behind the new 'stealth model' Ox Alpha?",
       "url": "https://techcrunch.com/2026/08/23/whos-behind-the-new-stealth-model-ox-alpha/",
       "source": "",
-      "reason": "一个匿名模型突然出现在多项基准测试中且表现优异，TechCrunch调查其身份未果。这标志着AI竞争进入\"隐身战\"阶段，未来可能有更多未知力量突然入场。"
+      "reason": "一个匿名模型突然出现在多项基准测试中且表现优异，TechCrunch调查其身份未果。这标志着AI竞争进入\"隐身战\"阶段，未来可能有更多未知力量突然入场"
     }
   ],
   "consensus": {
@@ -120,5 +120,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T17:09"
+  "generated_at": "2026-09-21T21:14"
 }
