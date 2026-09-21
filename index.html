@@ -39,9 +39,15 @@
 
 <div class="shell">
   <aside class="rail" aria-label="日期导航">
-    <nav>
+    <button class="rail-step" id="rail-prev" type="button" aria-label="看更早一期" title="更早一期">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+    </button>
+    <nav class="rail-scroll">
       <ul id="dates" class="date-list"></ul>
     </nav>
+    <button class="rail-step" id="rail-next" type="button" aria-label="看更新一期" title="更新一期">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+    </button>
   </aside>
 
   <main id="briefing" class="content" tabindex="-1" aria-live="polite" aria-atomic="false">

@@ -14,6 +14,9 @@
   var briefingEl = document.getElementById('briefing');
   var footerMeta = document.getElementById('footer-meta');
   var themeBtn = document.getElementById('theme-toggle');
+  var prevBtn = document.getElementById('rail-prev');
+  var nextBtn = document.getElementById('rail-next');
+  var currentDate = '';
 
   var WEEK = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
 
@@ -238,7 +241,30 @@
     }).join('');
   }
 
+  /* 左右切换（窄屏显示）：日期列表是倒序，所以「更早」= 索引 +1 */
+  function railDates() {
+    return Array.prototype.map.call(datesEl.querySelectorAll('li[data-date]'), function (li) {
+      return li.getAttribute('data-date');
+    });
+  }
+  function syncSteps() {
+    if (!prevBtn && !nextBtn) return;
+    var all = railDates();
+    var i = all.indexOf(currentDate);
+    if (prevBtn) prevBtn.disabled = (i === -1 || i >= all.length - 1);
+    if (nextBtn) nextBtn.disabled = (i <= 0);
+  }
+  function stepIssue(delta) {
+    var all = railDates();
+    var i = all.indexOf(currentDate);
+    var j = i + delta;
+    if (i === -1 || j < 0 || j >= all.length) return;
+    loadDate(all[j]);
+  }
+
   function setActive(date) {
+    currentDate = date;
+    syncSteps();
     var hit = datesEl.querySelector('li[data-date="' + date + '"]');
     if (hit) {                                  // 目标期在收起的月份里 → 自动展开该月
       var grp = hit.closest ? hit.closest('.m-group') : null;
@@ -332,6 +358,9 @@
     } catch (e) { /* 缺板块清单缺失不影响主流程 */ }
     renderDates(dates, active, gaps);
     await loadDate(active, { push: false });
+
+    if (prevBtn) prevBtn.addEventListener('click', function () { stepIssue(1); });
+    if (nextBtn) nextBtn.addEventListener('click', function () { stepIssue(-1); });
 
     datesEl.addEventListener('click', function (e) {
       var mb = e.target.closest && e.target.closest('.m-btn');

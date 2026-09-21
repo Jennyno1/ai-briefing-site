@@ -56,9 +56,18 @@
                "Microsoft YaHei", "Noto Sans SC", "Helvetica Neue", Arial, sans-serif;
 
   /* 字号阶梯 */
+  /* 字阶（6 级，用途唯一，禁止越级复用）
+     L1 masthead 36 → 页面日期
+     L2 track    25 → 板块标题（带 chip 的方块，含「今日要点」）
+     L3 lead     19 → 导语层（今日要点的条目）
+     L4 sub    17.5 → 板块内小标题（最新动态 / 洞察发现 / 落地行动）
+     L5 body   16.5 → 正文
+     L6 small  14.5 → 次要正文（落地行动笔记、说明）
+     L7 micro  12.5 → 元信息（来源/星标/页脚） */
   --fs-masthead: 36px;
   --fs-track: 25px;
   --fs-lead: 19px;
+  --fs-sub: 17.5px;
   --fs-body: 16.5px;
   --fs-small: 14.5px;
   --fs-micro: 12.5px;
@@ -291,6 +300,7 @@ a:hover { text-decoration-color: currentColor; }
   scrollbar-width: none;      /* 隐藏常驻滚动条：保持「线减法」，内容溢出仍可滚 */
 }
 .rail::-webkit-scrollbar { display: none; }
+.rail-step { display: none; }   /* 窄屏才出现：滚动条本身不是可点的提示 */
 
 .rail-head {
   display: flex;
@@ -489,12 +499,13 @@ li.partial .d-date { color: var(--ink-3); }
 .lead-label {
   display: flex;
   align-items: center;
+  gap: 10px;                     /* 圆点与标题不再贴在一起（上轮漏了 gap） */
   margin-top: 26px;
   font-family: var(--font-serif);
-  font-size: var(--fs-small);
+  font-size: var(--fs-track);    /* L2：它是板块头，与其余六个板块同级 */
   font-weight: 600;
-  color: var(--ink-2);
-  letter-spacing: 0.1em;
+  color: var(--ink);
+  letter-spacing: 0.02em;
 }
 
 .points {
@@ -587,11 +598,12 @@ li.partial .d-date { color: var(--ink-3); }
 .group:first-of-type { margin-top: 0; }
 
 .group-title {
-  font-size: var(--fs-micro);
-  color: var(--ink-2);
+  font-family: var(--font-serif);
+  font-size: var(--fs-sub);      /* L4：必须大于正文，否则「小标题」形同虚设 */
+  color: var(--ink);
   font-weight: 600;
-  letter-spacing: 0.04em;
-  margin-bottom: 6px;
+  letter-spacing: 0.01em;
+  margin-bottom: 8px;
 }
 
 .item { margin-bottom: 14px; }
@@ -735,7 +747,7 @@ li.partial .d-date { color: var(--ink-3); }
 
 /* ---- 窄屏：日期架转为横向时间轴 -------------------------------------------- */
 @media (max-width: 860px) {
-  :root { --fs-masthead: 30px; --fs-track: 21px; --fs-lead: 17.5px; }
+  :root { --fs-masthead: 30px; --fs-track: 21px; --fs-lead: 17.5px; --fs-sub: 16px; }
 
   .topbar-inner { padding: 10px 16px; gap: 10px; }
   .brand-sub { display: none; }
@@ -745,21 +757,57 @@ li.partial .d-date { color: var(--ink-3); }
     padding: 0 16px 56px;
   }
 
+  /* 窄屏日期栏：整条不透明（原来 94% 半透明 + 两端透明遮罩，下滑时正文从底下透出来像"缝隙"） */
   .rail {
     position: sticky;
     top: 57px;
     z-index: 4;
+    display: flex;
+    align-items: center;
+    gap: 4px;
     margin: 0 -16px;
-    padding: 8px 20px 10px;
+    padding: 6px 10px;
     max-height: none;
+    background: var(--canvas);
+  }
+
+  /* 滚动容器从 .rail 挪到这里：两侧按钮不再跟着内容滚走 */
+  .rail-scroll {
+    flex: 1 1 auto;
+    min-width: 0;
     overflow-x: auto;
     overflow-y: hidden;
-    background: color-mix(in srgb, var(--canvas) 94%, transparent);
-    backdrop-filter: blur(8px);
-    /* 两端淡出：提示「右侧还有更早的期」 */
-    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 12px, #000 calc(100% - 26px), transparent 100%);
-    mask-image: linear-gradient(to right, transparent 0, #000 12px, #000 calc(100% - 26px), transparent 100%);
+    scrollbar-width: none;
   }
+  .rail-scroll::-webkit-scrollbar { display: none; }
+
+  /* 可点的「上一期/下一期」——让用户一眼看出这排日期能切换 */
+  .rail-step {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border: 1px solid var(--hairline);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--ink-2);
+    cursor: pointer;
+    transition: color 0.15s var(--ease), border-color 0.15s var(--ease);
+  }
+  .rail-step svg {
+    width: 16px;
+    height: 16px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .rail-step:active:not(:disabled) { color: var(--ink); border-color: var(--ink-3); }
+  .rail-step:disabled { opacity: 0.35; cursor: default; }
 
   .rail-head { display: none; }
 
