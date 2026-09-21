@@ -66,7 +66,7 @@
     {
       "repo": "anthropics/claude-code",
       "url": "https://github.com/anthropics/claude-code",
-      "stars": "147",
+      "stars": "147K",
       "track": "AI产业技术",
       "note": "Anthropic 官方命令行AI编程助手，聚合终端内完成编码任务",
       "why": "要终端里跑Agent做真实交付，这个是最直接的参照实现"
@@ -74,7 +74,7 @@
     {
       "repo": "langgenius/dify",
       "url": "https://github.com/langgenius/dify",
-      "stars": "156",
+      "stars": "157K",
       "track": "企业AI应用",
       "note": "可视化 LLM 应用开发平台，工作流编排与知识库开箱即用",
       "why": "企业内部从0搭第一个AI应用时最省决策成本的平台"
@@ -82,7 +82,7 @@
     {
       "repo": "bytedance/deer-flow",
       "url": "https://github.com/bytedance/deer-flow",
-      "stars": "82",
+      "stars": "83K",
       "track": "内容创作",
       "note": "字节开源的深度研究与内容生成框架，多步骤产出长图文",
       "why": "把选题调研到成稿串成一条流水线的现成底座"
@@ -133,5 +133,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T14:15"
+  "generated_at": "2026-09-21T17:09"
 }

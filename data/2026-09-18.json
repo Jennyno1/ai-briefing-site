@@ -67,7 +67,7 @@
     {
       "repo": "paperclipai/paperclip",
       "url": "https://github.com/paperclipai/paperclip",
-      "stars": "80937",
+      "stars": "81K",
       "track": "企业AI应用",
       "note": "开源的「Agent工作台」，用来统一管理公司里的所有AI Agent",
       "why": "团队里Agent多到管不过来时，正好对应今天「谁来盯Agent」的主题"
@@ -75,7 +75,7 @@
     {
       "repo": "stablyai/orca",
       "url": "https://github.com/stablyai/orca",
-      "stars": "71067",
+      "stars": "71K",
       "track": "AI产业技术",
       "note": "面向并行Agent舰队的ADE（Agent开发环境），可同时驱动多个编码Agent",
       "why": "并行Agent托管已开源落地，适合自己动手感受AgentOps的产品形态"
@@ -83,7 +83,7 @@
     {
       "repo": "MemPalace/mempalace",
       "url": "https://github.com/MemPalace/mempalace",
-      "stars": "59130",
+      "stars": "59K",
       "track": "AI产业技术",
       "note": "开源AI记忆系统，基准测试领先且免费",
       "why": "给个人Agent补长期记忆的第一候补方案，可对照自建记忆层"
@@ -128,5 +128,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T14:15"
+  "generated_at": "2026-09-21T17:09"
 }

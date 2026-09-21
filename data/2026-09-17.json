@@ -67,7 +67,7 @@
     {
       "repo": "SciPhi-AI/R2R",
       "url": "https://github.com/SciPhi-AI/R2R",
-      "stars": "7997",
+      "stars": "8K",
       "track": "企业AI应用",
       "note": "生产级Agentic RAG系统，RESTful API开箱即用",
       "why": "想给私有知识库加检索问答，这是最接近「拿来就用」的开源方案"
@@ -75,7 +75,7 @@
     {
       "repo": "unum-cloud/UForm",
       "url": "https://github.com/unum-cloud/UForm",
-      "stars": "1250",
+      "stars": "1K",
       "track": "AI产业技术",
       "note": "口袋级多模态模型，理解与生成跨多语言/图像，超小体量",
       "why": "边缘端多模态的性价比之选，端侧AI应用可直接集成"
@@ -83,7 +83,7 @@
     {
       "repo": "ALwrity/ALwrity",
       "url": "https://github.com/ALwrity/ALwrity",
-      "stars": "1160",
+      "stars": "1K",
       "track": "内容创作",
       "note": "AI优先的数字营销平台，内容策划/生成/发布一体化",
       "why": "把选题-写作-分发做成开源流水线，可对照自建内容工作流"
@@ -128,5 +128,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T14:15"
+  "generated_at": "2026-09-21T17:09"
 }

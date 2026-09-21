@@ -26,7 +26,13 @@
         <img class="creator-avatar" src="assets/xiaohe-avatar.jpg" alt="小禾AI实践 头像" width="36" height="36">
         <span class="creator-name">小禾AI实践</span>
       </span>
-      <button class="icon-btn" id="theme-toggle" type="button" aria-label="切换明暗主题">浅色</button>
+      <button class="theme-switch" id="theme-toggle" type="button" role="switch" aria-checked="true"
+              aria-label="切换明暗主题" title="切换明暗主题">
+        <span class="ts-thumb">
+          <svg viewBox="0 0 24 24" class="ts-icon ts-i-moon" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg viewBox="0 0 24 24" class="ts-icon ts-i-sun" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        </span>
+      </button>
     </div>
   </div>
 </header>
@@ -35,8 +41,9 @@
   <aside class="rail" aria-label="日期导航">
     <div class="rail-head">
       <span class="rail-label">过往各期</span>
-      <span class="rail-count" id="rail-count"></span>
     </div>
+    <input class="rail-search" id="rail-search" type="search" inputmode="numeric" autocomplete="off"
+           placeholder="按月份筛选，如 9 或 2026-09" aria-label="按月份筛选往期">
     <nav>
       <ul id="dates" class="date-list"></ul>
     </nav>

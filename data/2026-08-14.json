@@ -82,7 +82,7 @@
     {
       "repo": "citrolabs/ego-lite",
       "url": "https://github.com/citrolabs/ego-lite",
-      "stars": "10.0K",
+      "stars": "10K",
       "track": "企业AI应用",
       "note": "最快的AI Agent浏览器，共享登录态做浏览器自动化。",
       "why": "企业Agent自动化底座，可借鉴\"共享登录态\"思路让Agent接管重复网页操作。"
@@ -99,5 +99,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T14:15"
+  "generated_at": "2026-09-21T17:09"
 }

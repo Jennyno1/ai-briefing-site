@@ -12,7 +12,6 @@
 
   var datesEl = document.getElementById('dates');
   var briefingEl = document.getElementById('briefing');
-  var railCount = document.getElementById('rail-count');
   var footerMeta = document.getElementById('footer-meta');
   var themeBtn = document.getElementById('theme-toggle');
 
@@ -108,13 +107,15 @@
     return '<section class="reading"><h2>推荐阅读</h2><ol>' + lis + '</ol></section>';
   }
 
+  var STAR_SVG = '<svg class="gh-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.4l2.6 5.4 5.9.8-4.3 4.1 1 5.9-5.2-2.8-5.2 2.8 1-5.9L3.5 9.6l5.9-.8z"/></svg>';
+
   function githubHtml(github) {
     var list = (Array.isArray(github) ? github : []).filter(function (g) { return g && (g.repo || g.url); });
     if (!list.length) return '';
     var lis = list.map(function (g) {
       var u = g.url || ('https://github.com/' + g.repo);
       var name = g.repo || g.url;
-      var star = (g.stars != null && g.stars !== '') ? ' <span class="src">GitHub ' + esc(g.stars) + '</span>' : '';
+      var star = (g.stars != null && g.stars !== '') ? ' <span class="gh-stars" title="GitHub 星标数">' + STAR_SVG + esc(g.stars) + '</span>' : '';
       var track = (!isPlaceholder(g.track)) ? ' <span class="badge badge-quiet">' + esc(g.track) + '</span>' : '';
       var note = (!isPlaceholder(g.note)) ? '<p class="reason">' + esc(g.note) + '</p>' : '';
       var why = (!isPlaceholder(g.why)) ? '<p class="reason reason-why">落地：' + esc(g.why) + '</p>' : '';
@@ -190,30 +191,75 @@
     briefingEl.classList.add('enter');
   }
 
+  var CHEV_SVG = '<svg class="m-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>';
+
+  function monthLabel(m) {
+    return m.slice(0, 4) + ' 年 ' + Number(m.slice(5, 7)) + ' 月';
+  }
+
+  function dateItemHtml(d, activeDate, gaps) {
+    var partial = gaps && gaps[d] ? ' partial' : '';
+    var mark = partial ? '<span class="d-dot" title="该日板块不全：' + esc((gaps[d] || []).join('、')) + '">◦</span>' : '';
+    var cur = d === activeDate;
+    return '<li data-date="' + esc(d) + '" class="' + (cur ? 'active' : '') + partial + '">' +
+      '<button type="button" class="d-btn" data-date="' + esc(d) + '"' +
+      (cur ? ' aria-current="true"' : '') + '>' +
+      '<span class="d-date">' + esc(d) + '</span>' + mark + '</button></li>';
+  }
+
+  function toggleMonth(group, force) {
+    if (!group) return;
+    var open = typeof force === 'boolean' ? force : !group.classList.contains('open');
+    group.classList.toggle('open', open);
+    var b = group.querySelector('.m-btn');
+    if (b) b.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+
+  function filterRail(q) {
+    // 搜索框只按月份筛：输入 9 / 09 / 9月 / 2026-09 都命中 2026-09
+    var raw = String(q || '').trim().replace(/[年月\s]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
+    var groups = datesEl.querySelectorAll('.m-group');
+    Array.prototype.forEach.call(groups, function (g) {
+      var m = g.getAttribute('data-month') || '';
+      var hit = !raw;
+      if (raw) {
+        hit = m.indexOf(raw) !== -1;
+        if (!hit && /^\d{1,2}$/.test(raw)) hit = m.slice(5, 7) === ('0' + raw).slice(-2);
+      }
+      g.hidden = !hit;
+      if (hit && raw) toggleMonth(g, true);
+    });
+  }
+
   function renderDates(dates, activeDate, gaps) {
     // 用 <button> 承载可点项：键盘可操作、有可访问名（ux 规范：别拿 div 当按钮）
-    // 月份分组：跨月时插一行月标，52 期不再是一根无锚点的长条
-    var out = [];
-    var seenMonth = '';
+    // 月份分组且可折叠：默认只展开当前期所在月，其余收起；顶部搜索框按月份筛选
+    var months = [];
+    var byMonth = {};
     dates.forEach(function (d) {
       var m = String(d).slice(0, 7);
-      if (m !== seenMonth) {
-        seenMonth = m;
-        out.push('<li class="d-month" aria-hidden="true">' + esc(m.slice(0, 4)) + ' 年 ' +
-          esc(String(Number(m.slice(5, 7)))) + ' 月</li>');
-      }
-      var partial = gaps && gaps[d] ? ' partial' : '';
-      var mark = partial ? '<span class="d-dot" title="该日板块不全：' + esc((gaps[d] || []).join('、')) + '">◦</span>' : '';
-      var cur = d === activeDate;
-      out.push('<li data-date="' + esc(d) + '" class="' + (cur ? 'active' : '') + partial + '">' +
-        '<button type="button" class="d-btn" data-date="' + esc(d) + '"' +
-        (cur ? ' aria-current="true"' : '') + '>' +
-        '<span class="d-date">' + esc(d) + '</span>' + mark + '</button></li>');
+      if (!byMonth[m]) { byMonth[m] = []; months.push(m); }
+      byMonth[m].push(d);
     });
-    datesEl.innerHTML = out.join('');
+    var activeMonth = String(activeDate || dates[0] || '').slice(0, 7);
+    datesEl.innerHTML = months.map(function (m) {
+      var open = m === activeMonth;
+      return '<li class="m-group' + (open ? ' open' : '') + '" data-month="' + esc(m) + '">' +
+        '<button type="button" class="m-btn" aria-expanded="' + (open ? 'true' : 'false') + '">' +
+        CHEV_SVG + '<span class="m-name">' + esc(monthLabel(m)) + '</span>' +
+        '<span class="m-count">' + byMonth[m].length + '</span></button>' +
+        '<ul class="m-dates">' +
+        byMonth[m].map(function (d) { return dateItemHtml(d, activeDate, gaps); }).join('') +
+        '</ul></li>';
+    }).join('');
   }
 
   function setActive(date) {
+    var hit = datesEl.querySelector('li[data-date="' + date + '"]');
+    if (hit) {                                  // 目标期在收起的月份里 → 自动展开该月
+      var grp = hit.closest ? hit.closest('.m-group') : null;
+      if (grp && !grp.classList.contains('open')) toggleMonth(grp, true);
+    }
     Array.prototype.forEach.call(datesEl.querySelectorAll('li[data-date]'), function (c) {
       var isCur = c.getAttribute('data-date') === date;
       c.classList.toggle('active', isCur);
@@ -244,15 +290,13 @@
   }
 
   /* ---- 主题：默认跟随系统，手动切换后记住 -------------------------------- */
-  var THEME_LABEL = { dark: '浅色', light: '深色' };
-
   function applyTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
     if (themeBtn) {
-      // 按钮文案写「切到哪个模式」，比一个含糊的符号好懂
-      themeBtn.textContent = THEME_LABEL[theme] || '';
-      themeBtn.setAttribute('title', '切换到' + (THEME_LABEL[theme] || '') + '模式');
-      themeBtn.setAttribute('aria-label', '切换到' + (THEME_LABEL[theme] || '') + '模式');
+      var next = theme === 'dark' ? '浅色' : '深色';
+      themeBtn.setAttribute('aria-checked', theme === 'dark' ? 'true' : 'false');
+      themeBtn.setAttribute('title', '当前' + (theme === 'dark' ? '深色' : '浅色') + '，点击切换到' + next);
+      themeBtn.setAttribute('aria-label', '当前' + (theme === 'dark' ? '深色' : '浅色') + '，点击切换到' + next);
     }
     try { localStorage.setItem('ai-briefing-theme', theme); } catch (e) {}
   }
@@ -289,7 +333,6 @@
       return;
     }
 
-    if (railCount) railCount.textContent = dates.length + ' 期';
     if (footerMeta) footerMeta.textContent = ' 数据区间：' + dates[dates.length - 1] + ' → ' + dates[0] + '。';
 
     var hash = decodeURIComponent(location.hash.slice(1));
@@ -303,10 +346,18 @@
     await loadDate(active);
 
     datesEl.addEventListener('click', function (e) {
+      var mb = e.target.closest && e.target.closest('.m-btn');
+      if (mb) {                                  // 点月份头 = 展开/收起该月
+        toggleMonth(mb.closest('.m-group'));
+        return;
+      }
       var li = e.target.closest('[data-date]');
       if (!li) return;
       loadDate(li.getAttribute('data-date'));
     });
+
+    var searchEl = document.getElementById('rail-search');
+    if (searchEl) searchEl.addEventListener('input', function () { filterRail(searchEl.value); });
 
     window.addEventListener('hashchange', function () {
       var d = decodeURIComponent(location.hash.slice(1));

@@ -60,7 +60,7 @@
     {
       "repo": "ruvnet/ruflo",
       "url": "https://github.com/ruvnet/ruflo",
-      "stars": "72142",
+      "stars": "72K",
       "track": "企业AI应用",
       "note": "开源Agent编排/Ai编排调度与多Agentagger swarm协同 произошло值额",
       "why": "多agent swarm编排能直接跑在本地，企业自动化争取前先学会编排"
@@ -68,7 +68,7 @@
     {
       "repo": "headroomlabs-ai/headroom",
       "url": "https://github.com/headroomlabs-ai/headroom",
-      "stars": "71600",
+      "stars": "72K",
       "track": "AI产业技术",
       "note": "Agent输出与工具from指令流压縮层，进入LLM前压缩可省20% token",
       "why": "长对话/长文档 RAG 成本直降，做企业Agent首推的省钱层"
@@ -76,7 +76,7 @@
     {
       "repo": "YILS-LIN/short-video-factory",
       "url": "https://github.com/YILS-LIN/short-video-factory",
-      "stars": "5342",
+      "stars": "5K",
       "track": "内容创作",
       "note": "一键生成产品营销短视频，AI批量自动剪辑的桌面端工具",
       "why": "跨平台桌面端+AI自动剪辑，适合产品带货短视频批量产出"
@@ -120,5 +120,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T14:15"
+  "generated_at": "2026-09-21T17:09"
 }

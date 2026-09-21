@@ -67,7 +67,7 @@
     {
       "repo": "ultraworkers/claw-code",
       "url": "https://github.com/ultraworkers/claw-code",
-      "stars": "195260",
+      "stars": "195K",
       "track": "AI产业技术",
       "note": "用Agent全程无人工干预开发维护的Rust博物馆展品项目，展示无人值守编码的上限",
       "why": "可对照自己的Agent自动化流程，看完全无人值守长什么样"
@@ -75,7 +75,7 @@
     {
       "repo": "VoltAgent/awesome-design-md",
       "url": "https://github.com/VoltAgent/awesome-design-md",
-      "stars": "116553",
+      "stars": "117K",
       "track": "内容创作",
       "note": "收录主流品牌设计系统的DESIGN.md文件，丢给编码Agent即可生成风格匹配的UI",
       "why": "做小红书封面与信息卡时，可以直接借用成套设计规范喂给Agent"
@@ -83,7 +83,7 @@
     {
       "repo": "nashsu/llm_wiki",
       "url": "https://github.com/nashsu/llm_wiki",
-      "stars": "19725",
+      "stars": "20K",
       "track": "企业AI应用",
       "note": "桌面端工具，把文档自动建成持续维护、互相链接的知识库Wiki，而非一次性RAG问答",
       "why": "适合把日报、素材与选题池沉淀成个人长期知识库"
@@ -128,5 +128,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T14:15"
+  "generated_at": "2026-09-21T17:09"
 }

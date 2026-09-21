@@ -74,7 +74,7 @@
     {
       "repo": "stemdeckapp/stemdeck",
       "url": "https://github.com/stemdeckapp/stemdeck",
-      "stars": "2.0K",
+      "stars": "2K",
       "track": "内容创作",
       "note": "现代音轨分离平台，帮音乐人/制作人分离人声和伴奏",
       "why": "做视频BGM、翻唱、remix可直接分离音轨，内容创作音频流程提效"
@@ -118,5 +118,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T14:15"
+  "generated_at": "2026-09-21T17:09"
 }

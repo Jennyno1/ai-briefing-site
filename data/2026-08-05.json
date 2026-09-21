@@ -66,7 +66,7 @@
     {
       "repo": "basketikun/infinite-canvas",
       "url": "https://github.com/basketikun/infinite-canvas",
-      "stars": "4479",
+      "stars": "4K",
       "track": "内容创作",
       "note": "面向AI创作的开源无限画布工作台，集成AI生图、视频生成、Agent智能助手、多模态创作",
       "why": "国内团队开发的AI创作一体化工具，小红书面封+配图可以在一个画布里完成全流程"
@@ -74,7 +74,7 @@
     {
       "repo": "EverMind-AI/Raven",
       "url": "https://github.com/EverMind-AI/Raven",
-      "stars": "3509",
+      "stars": "4K",
       "track": "企业AI应用",
       "note": "记忆优先的自我改进Agent框架，基于EverOS+MiroThinker深度推理，可长期运行",
       "why": "企业Agent落地的关键瓶颈是记忆管理，Raven的设计思路对小禾设计企业AI Agent工作流有参考价值"
@@ -82,7 +82,7 @@
     {
       "repo": "StarTrail-org/PixelRAG",
       "url": "https://github.com/StarTrail-org/PixelRAG",
-      "stars": "9088",
+      "stars": "9K",
       "track": "AI产业技术",
       "note": "像素级原生搜索，直接对网页截图而非HTML解析进行RAG，号称\"网页解析的终结\"",
       "why": "如果像素级RAG成为趋势，将改变AI信息检索的底层范式，值得关注其对搜索和内容理解的影响"
@@ -118,5 +118,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T14:15"
+  "generated_at": "2026-09-21T17:09"
 }

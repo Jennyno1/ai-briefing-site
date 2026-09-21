@@ -60,7 +60,7 @@
     {
       "repo": "HKUDS/LightRAG",
       "url": "https://github.com/HKUDS/LightRAG",
-      "stars": "39592",
+      "stars": "40K",
       "track": "AI产业技术",
       "note": "轻量快速的图式RAG开源框架，检索增强生成社区代表作",
       "why": "企业知识库低成本起点，几万份文档规模即可本地跑"
@@ -68,7 +68,7 @@
     {
       "repo": "Mintplex-Labs/anything-llm",
       "url": "https://github.com/Mintplex-Labs/anything-llm",
-      "stars": "65963",
+      "stars": "66K",
       "track": "企业AI应用",
       "note": "本地优先的全功能AI知识库与Agent工作台，支持私有化部署",
       "why": "数据不出内网就能搭企业级问答与自动化，合规敏感场景首选"
@@ -76,7 +76,7 @@
     {
       "repo": "dair-ai/Prompt-Engineering-Guide",
       "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
-      "stars": "78245",
+      "stars": "78K",
       "track": "内容创作",
       "note": "提示、上下文工程与Agent方法论权威合集，论文课程教程都有",
       "why": "写文案和应用前先查它的模式库，避免反复踩同样的坑"
@@ -120,5 +120,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T14:15"
+  "generated_at": "2026-09-21T17:09"
 }

@@ -217,24 +217,48 @@ a:hover { text-decoration-color: currentColor; }
   white-space: nowrap;
 }
 
-/* 主题切换：无边框文字按钮（带框的 ghost 按钮与头像并列会显生硬） */
-.icon-btn {
-  height: 34px;
-  padding: 0 8px;
-  display: inline-flex;
+/* 主题开关（v4）：胶囊轨道 + 滑动圆钮 —— 形态本身说明「可以切」
+   用户反馈：原来是纯文字按钮，看不出是可切换控件。图标用内联 SVG（ux 规范：不用 emoji 当图标） */
+.theme-switch {
+  position: relative;
+  flex: 0 0 auto;
+  width: 54px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid var(--hairline);
+  border-radius: 999px;
+  background: var(--surface-2);
+  cursor: pointer;
+  transition: border-color 0.18s var(--ease), background 0.18s var(--ease);
+}
+.theme-switch:hover { border-color: var(--ink-3); }
+.theme-switch:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.ts-thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 24px;
+  height: 24px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  background: transparent;
-  color: var(--ink-3);
-  border: 0;
-  border-radius: var(--radius-ctl);
-  cursor: pointer;
-  font-family: var(--font-sans);
-  font-size: var(--fs-micro);
-  letter-spacing: 0.06em;
-  transition: color 0.15s var(--ease), background 0.15s var(--ease);
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--canvas);
+  transition: transform 0.18s var(--ease);
 }
-.icon-btn:hover { color: var(--ink); background: var(--hover-bg); }
+[data-theme="light"] .ts-thumb { transform: translateX(24px); }
+.ts-icon {
+  width: 15px;
+  height: 15px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+[data-theme="dark"] .ts-i-sun,
+[data-theme="light"] .ts-i-moon { display: none; }
 
 /* ---- 骨架：日期架 + 正文 --------------------------------------------------- */
 .shell {
@@ -273,10 +297,22 @@ a:hover { text-decoration-color: currentColor; }
   letter-spacing: 0.06em;
 }
 
-.rail-count {
+/* 月份筛选框（v4）：按月份查往期，不再靠滚动找人 */
+.rail-search {
+  width: 100%;
+  height: 34px;
+  margin: 2px 0 10px;
+  padding: 0 10px;
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-ctl);
+  background: var(--surface-2);
+  color: var(--ink);
+  font-family: var(--font-sans);
   font-size: var(--fs-micro);
-  color: var(--ink-3);
+  transition: border-color 0.15s var(--ease);
 }
+.rail-search::placeholder { color: var(--ink-3); }
+.rail-search:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; border-color: var(--accent); }
 
 .date-list {
   list-style: none;
@@ -327,14 +363,44 @@ li.active > .d-btn::before { opacity: 1; }
 li.partial .d-date { color: var(--ink-3); }
 .d-dot { font-size: 10px; color: var(--ink-3); opacity: 0.8; }
 
-/* 月份分组标：52 期不再是找不到锚点的长条 */
-.d-month {
-  padding: 14px 0 4px;
-  font-size: var(--fs-micro);
-  letter-spacing: 0.04em;
-  color: var(--ink-3);
+/* 月份分组（v4 可折叠）：点月头展开/收起；右侧月份数是信息，不作装饰用 */
+.m-group { margin: 0; padding: 0; }
+.m-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  min-height: 40px;
+  padding: 8px 0;
+  background: none;
+  border: 0;
+  color: var(--ink-2);
+  font-family: var(--font-sans);
+  font-size: var(--fs-small);
+  letter-spacing: 0.02em;
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.15s var(--ease);
 }
-.d-month:first-child { padding-top: 2px; }
+.m-btn:hover { color: var(--ink); }
+.m-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 6px; }
+.m-chev {
+  flex: 0 0 auto;
+  width: 14px;
+  height: 14px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.6;
+  transition: transform 0.18s var(--ease);
+}
+.m-group.open .m-chev { transform: rotate(90deg); }
+.m-name { flex: 1 1 auto; }
+.m-count { font-size: var(--fs-micro); color: var(--ink-3); }
+.m-dates { list-style: none; margin: 0; padding: 0 0 4px 14px; }
+.m-group:not(.open) .m-dates { display: none; }
 
 /* 重试按钮：加载失败时给出下一步动作，而不是只报 HTTP 码 */
 .retry-btn {
@@ -454,11 +520,30 @@ li.partial .d-date { color: var(--ink-3); }
 .points li::before {
   content: "";
   position: absolute;
-  left: 1px;
-  top: 0.75em;
-  width: 10px;
-  height: 2px;
+  left: 2px;
+  top: 0.72em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
   background: var(--accent);
+}
+
+/* GitHub 星标（v4）：实心简化星 + 数量，不再重复「GitHub」字样（栏目名已说明来源） */
+.gh-stars {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  margin-left: 6px;
+  font-size: var(--fs-small);
+  color: var(--ink-3);
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.gh-star {
+  width: 13px;
+  height: 13px;
+  fill: currentColor;
+  opacity: 0.9;
 }
 
 /* 缺板块提示：淡底块，不加线 */
@@ -471,14 +556,19 @@ li.partial .d-date { color: var(--ink-3); }
   color: var(--ink-2);
 }
 
-/* 赛道段落：左侧色脊编码赛道身份（lane-0/1/2 与页眉图例同色）——页面上仅存的竖线，且带语义 */
+/* 赛道段落（v4）：改用「卡片」承载赛道身份 —— 用户反馈不要竖线/横线装饰。
+   赛道色改由标题旁 chip + 卡片浅底表达（lane 映射仍与页眉图例一致，是信息不是装饰） */
 .track {
-  margin-top: 40px;
-  padding-left: 20px;
-  border-left: 3px solid var(--accent);
+  margin-top: 36px;
+  padding: 22px 24px 24px;
+  border: 1px solid var(--hairline-soft);
+  border-radius: 16px;
+  background: var(--surface-2);
+  box-shadow: var(--shadow-top);
 }
-.track.lane-1 { border-left-color: var(--gold); }
-.track.lane-2 { border-left-color: var(--teal); }
+.track.lane-0 { background: color-mix(in srgb, var(--accent) 5%, var(--surface-2)); }
+.track.lane-1 { background: color-mix(in srgb, var(--gold) 7%, var(--surface-2)); }
+.track.lane-2 { background: color-mix(in srgb, var(--teal) 7%, var(--surface-2)); }
 
 .track h2 {
   margin: 0 0 18px;
@@ -676,6 +766,19 @@ li.partial .d-date { color: var(--ink-3); }
 
   .rail-head { display: none; }
 
+  /* 移动端：日期架仍是横向滑动条 —— v4 的月份分组在这里「展开成扁平」
+     （display:contents 让月份头与嵌套列表不再产生层级，日期项直接成为横条的子项） */
+  .rail-search {
+    width: 100%;
+    height: 32px;
+    margin: 0 0 8px;
+  }
+  .m-group { display: contents; }
+  .m-group[hidden] { display: none; }
+  .m-btn { display: none; }
+  .m-dates,
+  .m-group:not(.open) .m-dates { display: contents; }
+
   .date-list {
     display: flex;
     gap: 4px;
@@ -693,7 +796,7 @@ li.partial .d-date { color: var(--ink-3); }
   .d-btn::before { display: none; }
 
   .content { padding-top: 22px; }
-  .track { padding-left: 14px; }
+  .track { padding: 18px 16px 20px; border-radius: 14px; }
   .track,
   .viewpoint,
   .reading { margin-top: 34px; }
