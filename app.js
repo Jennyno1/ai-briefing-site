@@ -160,6 +160,7 @@
     if (data.version) metaBits.push('<span class="badge">' + esc(data.version) + '</span>');
     html += '<div class="meta">' + metaBits.join('') + '</div>';
     if (points.length) {
+      html += '<div class="lead-label">今日要点</div>';
       html += '<ul class="points">' + points.map(function (p) { return '<li>' + esc(p) + '</li>'; }).join('') + '</ul>';
     }
     html += '</div>';
@@ -222,7 +223,7 @@
   }
 
   /* ---- 主题：默认跟随系统，手动切换后记住 -------------------------------- */
-  var THEME_LABEL = { dark: '浅色', light: '深色' };
+  var THEME_LABEL = { dark: '☀ 浅色', light: '☾ 深色' };
 
   function applyTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);

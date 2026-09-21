@@ -26,8 +26,8 @@
   --l-line: #1c3049;
   --l-line-soft: #17283d;
   --l-text: #e9eff7;
-  --l-text-2: #a9bcd4;
-  --l-text-3: #7e92aa;
+  --l-text-2: #b3c5da;
+  --l-text-3: #8b9cb3;
 
   --l-blue: #4c86ff;
   --l-blue-deep: #1b4bb8;
@@ -95,7 +95,7 @@
   --hairline-soft: #e8ebf0;
   --ink: var(--l-paper-text);
   --ink-2: var(--l-paper-text-2);
-  --ink-3: #7a8797;
+  --ink-3: #66748a;
   --accent: var(--l-paper-blue);
   --accent-ink: var(--l-paper-blue);
   --gold: var(--l-paper-gold);
@@ -206,8 +206,8 @@ a:hover { text-decoration-color: currentColor; }
 }
 
 .creator-avatar {
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   object-fit: cover;
   border: 1px solid var(--hairline);
@@ -215,9 +215,9 @@ a:hover { text-decoration-color: currentColor; }
 }
 
 .creator-name {
-  font-size: var(--fs-small);
+  font-size: 13.5px;
   color: var(--ink-2);
-  letter-spacing: 0.01em;
+  letter-spacing: 0.02em;
   white-space: nowrap;
 }
 
@@ -230,7 +230,7 @@ a:hover { text-decoration-color: currentColor; }
   justify-content: center;
   background: transparent;
   color: var(--ink-2);
-  border: 1px solid var(--hairline);
+  border: 1px solid color-mix(in srgb, var(--ink-3) 50%, transparent);
   border-radius: var(--radius-ctl);
   cursor: pointer;
   font-family: var(--font-sans);
@@ -357,33 +357,36 @@ a:hover { text-decoration-color: currentColor; }
 
 .date-week {
   font-size: var(--fs-small);
-  color: var(--ink-3);
-  letter-spacing: 0.08em;
+  color: var(--ink-2);
+  letter-spacing: 0.1em;
+  padding-left: 12px;
+  border-left: 1px solid var(--hairline);
 }
 
-/* 三色图例 = 三条赛道的颜色索引（色条 + 赛道名，与正文段落色脊一一对应） */
+/* 三色图例 = 三条赛道的颜色索引（色块 + 赛道名，与正文段落色脊一一对应） */
 .lanes {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px 26px;
-  margin: 22px 0 0;
+  align-items: center;
+  gap: 8px 22px;
+  margin: 20px 0 0;
   padding: 0;
 }
 
 .lane {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-size: var(--fs-micro);
-  color: var(--ink-3);
+  color: var(--ink-2);
   letter-spacing: 0.04em;
 }
 
 .lane i {
   display: block;
-  width: 40px;
-  height: 3px;
+  width: 9px;
+  height: 9px;
   border-radius: 2px;
   background: var(--accent);
 }
@@ -404,9 +407,17 @@ a:hover { text-decoration-color: currentColor; }
 .badge-quiet { background: transparent; }
 
 /* 今日要点：导语体，比正文大一档 */
+.lead-label {
+  margin-top: 24px;
+  font-family: var(--font-serif);
+  font-size: var(--fs-small);
+  color: var(--ink-2);
+  letter-spacing: 0.1em;
+}
+
 .points {
   list-style: none;
-  margin: 22px 0 0;
+  margin: 12px 0 0;
   padding: 0;
   display: grid;
   gap: 10px;
@@ -472,9 +483,14 @@ a:hover { text-decoration-color: currentColor; }
 .item-body { color: var(--ink); max-width: 74ch; }
 
 .item-meta {
-  margin-top: 4px;
+  display: inline-block;
+  margin-top: 6px;
+  padding: 1px 7px;
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-ctl);
   font-size: var(--fs-micro);
   color: var(--ink-3);
+  letter-spacing: 0.02em;
 }
 
 /* 落地行动 = 主理人笔记：别册化处理 */
@@ -564,6 +580,11 @@ a:hover { text-decoration-color: currentColor; }
 .reading a { font-weight: 500; }
 
 .src {
+  display: inline-block;
+  margin-left: 4px;
+  padding: 1px 7px;
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-ctl);
   font-size: var(--fs-micro);
   color: var(--ink-3);
   white-space: nowrap;
