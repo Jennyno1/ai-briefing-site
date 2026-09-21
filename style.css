@@ -222,8 +222,9 @@ a:hover { text-decoration-color: currentColor; }
 }
 
 .icon-btn {
-  width: 34px;
+  min-width: 34px;
   height: 34px;
+  padding: 0 12px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -232,10 +233,12 @@ a:hover { text-decoration-color: currentColor; }
   border: 1px solid var(--hairline);
   border-radius: var(--radius-ctl);
   cursor: pointer;
+  font-family: var(--font-sans);
+  font-size: var(--fs-micro);
+  letter-spacing: 0.06em;
   transition: color 0.15s var(--ease), border-color 0.15s var(--ease), background 0.15s var(--ease);
 }
 .icon-btn:hover { color: var(--ink); border-color: var(--ink-3); background: var(--hover-bg); }
-.icon-btn-glyph { font-size: 15px; line-height: 1; }
 
 /* ---- 骨架：日期架 + 正文 --------------------------------------------------- */
 .shell {
@@ -358,18 +361,34 @@ a:hover { text-decoration-color: currentColor; }
   letter-spacing: 0.08em;
 }
 
-/* 三色细带 = 三条赛道的图例（信息装置，非装饰） */
+/* 三色图例 = 三条赛道的颜色索引（色条 + 赛道名，与正文段落色脊一一对应） */
 .lanes {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 6px;
-  margin-top: 18px;
-  max-width: 300px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 26px;
+  margin: 22px 0 0;
+  padding: 0;
 }
-.lanes i { height: 3px; border-radius: 2px; }
-.lanes i:nth-child(1) { background: var(--accent); }
-.lanes i:nth-child(2) { background: var(--gold); }
-.lanes i:nth-child(3) { background: var(--teal); }
+
+.lane {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: var(--fs-micro);
+  color: var(--ink-3);
+  letter-spacing: 0.04em;
+}
+
+.lane i {
+  display: block;
+  width: 40px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--accent);
+}
+.lanes li:nth-child(2) i { background: var(--gold); }
+.lanes li:nth-child(3) i { background: var(--teal); }
 
 .meta { margin-top: 14px; }
 
@@ -387,10 +406,11 @@ a:hover { text-decoration-color: currentColor; }
 /* 今日要点：导语体，比正文大一档 */
 .points {
   list-style: none;
-  margin: 20px 0 0;
+  margin: 22px 0 0;
   padding: 0;
   display: grid;
   gap: 10px;
+  max-width: 74ch;
 }
 .points li {
   position: relative;
@@ -418,14 +438,14 @@ a:hover { text-decoration-color: currentColor; }
   color: var(--ink-2);
 }
 
-/* 赛道段落：左侧色脊编码赛道身份 */
+/* 赛道段落：左侧色脊编码赛道身份（lane-0/1/2 与页眉图例同色） */
 .track {
   margin-top: 46px;
   padding-left: 20px;
   border-left: 3px solid var(--accent);
 }
-.track:nth-of-type(3n + 2) { border-left-color: var(--gold); }
-.track:nth-of-type(3n + 3) { border-left-color: var(--teal); }
+.track.lane-1 { border-left-color: var(--gold); }
+.track.lane-2 { border-left-color: var(--teal); }
 
 .track h2 {
   margin: 0 0 20px;
@@ -449,7 +469,7 @@ a:hover { text-decoration-color: currentColor; }
 .item { margin-bottom: 14px; }
 .item:last-child { margin-bottom: 0; }
 
-.item-body { color: var(--ink); }
+.item-body { color: var(--ink); max-width: 74ch; }
 
 .item-meta {
   margin-top: 4px;
@@ -493,7 +513,7 @@ a:hover { text-decoration-color: currentColor; }
   font-weight: 600;
 }
 
-.vp-text { font-size: var(--fs-small); line-height: 1.75; color: var(--ink-2); }
+.vp-text { font-size: var(--fs-small); line-height: 1.75; color: var(--ink-2); max-width: 72ch; }
 
 .vp-card ul {
   margin: 12px 0 0;

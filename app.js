@@ -142,11 +142,20 @@
     var points = cleanList(data.points);
     var tracks = Array.isArray(data.tracks) ? data.tracks : [];
 
+    // 有内容的赛道（三色带图例与实际渲染的赛道一致 —— 是信息，不是装饰）
+    var liveTracks = tracks.filter(function (t) {
+      return t && (cleanList(t.news).length || cleanList(t.insights).length || cleanList(t.actions).length);
+    });
+
     var html = '<div class="brief-head">';
     var dd = cnDate(data.date);
     html += '<div class="date"><span class="date-cn">' + esc(dd.cn) + '</span>' +
       (dd.week ? '<span class="date-week">' + esc(dd.week) + '</span>' : '') + '</div>';
-    html += '<div class="lanes" aria-hidden="true"><i></i><i></i><i></i></div>';
+    if (liveTracks.length) {
+      html += '<ul class="lanes">' + liveTracks.map(function (t) {
+        return '<li class="lane"><i aria-hidden="true"></i>' + esc(t.name || t.key || '') + '</li>';
+      }).join('') + '</ul>';
+    }
     var metaBits = [];
     if (data.version) metaBits.push('<span class="badge">' + esc(data.version) + '</span>');
     html += '<div class="meta">' + metaBits.join('') + '</div>';
@@ -157,15 +166,15 @@
 
     html += missingNotice(data);
 
-    tracks.forEach(function (t) {
-      if (!t) return;
+    liveTracks.forEach(function (t, i) {
       var name = t.name || t.key || '';
       var emoji = t.emoji ? esc(t.emoji) + ' ' : '';
       var body = trackGroupHtml('最新动态', 'news', t.news) +
                  trackGroupHtml('洞察发现', 'insights', t.insights) +
                  trackGroupHtml('落地行动', 'actions', t.actions);
       if (!body) return;   // 该赛道本日无内容 → 整段不渲染
-      html += '<section class="track"><h2>' + emoji + esc(name) + '</h2>' + body + '</section>';
+      // lane-i 与页眉三色图例一一对应（顺序即颜色）
+      html += '<section class="track lane-' + i + '"><h2>' + emoji + esc(name) + '</h2>' + body + '</section>';
     });
 
     var vp = vpCard('consensus', '共识解读', data.consensus) + vpCard('division', '分歧解读', data.division);
@@ -213,8 +222,16 @@
   }
 
   /* ---- 主题：默认跟随系统，手动切换后记住 -------------------------------- */
+  var THEME_LABEL = { dark: '浅色', light: '深色' };
+
   function applyTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
+    if (themeBtn) {
+      // 按钮文案写「切到哪个模式」，比一个含糊的符号好懂
+      themeBtn.textContent = THEME_LABEL[theme] || '';
+      themeBtn.setAttribute('title', '切换到' + (THEME_LABEL[theme] || '') + '模式');
+      themeBtn.setAttribute('aria-label', '切换到' + (THEME_LABEL[theme] || '') + '模式');
+    }
     try { localStorage.setItem('ai-briefing-theme', theme); } catch (e) {}
   }
   (function initTheme() {
