@@ -152,8 +152,7 @@ a:hover { text-decoration-color: currentColor; }
   top: 0;
   z-index: 5;
   background: color-mix(in srgb, var(--canvas) 88%, transparent);
-  backdrop-filter: saturate(140%) blur(10px);
-  border-bottom: 1px solid var(--hairline);
+  backdrop-filter: saturate(140%) blur(12px);
 }
 
 .topbar-inner {
@@ -187,8 +186,6 @@ a:hover { text-decoration-color: currentColor; }
 .brand-sub {
   font-size: var(--fs-micro);
   color: var(--ink-3);
-  padding-left: 10px;
-  border-left: 1px solid var(--hairline);
   letter-spacing: 0.02em;
 }
 
@@ -221,24 +218,24 @@ a:hover { text-decoration-color: currentColor; }
   white-space: nowrap;
 }
 
+/* 主题切换：无边框文字按钮（带框的 ghost 按钮与头像并列会显生硬） */
 .icon-btn {
-  min-width: 34px;
   height: 34px;
-  padding: 0 12px;
+  padding: 0 8px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   background: transparent;
-  color: var(--ink-2);
-  border: 1px solid color-mix(in srgb, var(--ink-3) 50%, transparent);
+  color: var(--ink-3);
+  border: 0;
   border-radius: var(--radius-ctl);
   cursor: pointer;
   font-family: var(--font-sans);
   font-size: var(--fs-micro);
   letter-spacing: 0.06em;
-  transition: color 0.15s var(--ease), border-color 0.15s var(--ease), background 0.15s var(--ease);
+  transition: color 0.15s var(--ease), background 0.15s var(--ease);
 }
-.icon-btn:hover { color: var(--ink); border-color: var(--ink-3); background: var(--hover-bg); }
+.icon-btn:hover { color: var(--ink); background: var(--hover-bg); }
 
 /* ---- 骨架：日期架 + 正文 --------------------------------------------------- */
 .shell {
@@ -266,8 +263,7 @@ a:hover { text-decoration-color: currentColor; }
   align-items: baseline;
   justify-content: space-between;
   gap: 8px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid var(--hairline);
+  padding-bottom: 10px;
 }
 
 .rail-label {
@@ -284,33 +280,51 @@ a:hover { text-decoration-color: currentColor; }
 
 .date-list {
   list-style: none;
-  margin: 10px 0 0;
+  margin: 4px 0 0;
   padding: 0;
 }
 
-.date-list li {
+/* 选中态：颜色 + 字重 + 一个小圆点（不靠竖线/色块），符合 ux 规范「Active State 用颜色或下划线」 */
+.date-list li { margin: 0; padding: 0; }
+
+.d-btn {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  padding: 7px 8px 7px 12px;
-  border-left: 2px solid transparent;
-  border-radius: 0 var(--radius-ctl) var(--radius-ctl) 0;
+  gap: 10px;
+  width: 100%;
+  padding: 6px 0 6px 16px;
+  background: none;
+  border: 0;
+  font-family: var(--font-sans);
   font-size: var(--fs-small);
-  color: var(--ink-2);
+  color: var(--ink-3);
+  text-align: left;
   cursor: pointer;
-  transition: color 0.12s var(--ease), background 0.12s var(--ease), border-color 0.12s var(--ease);
+  transition: color 0.12s var(--ease);
 }
-.date-list li:hover { color: var(--ink); background: var(--hover-bg); }
-.date-list li.active {
+.d-btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 5px;
+  height: 5px;
+  margin-top: -2.5px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: 0;
+  transition: opacity 0.12s var(--ease);
+}
+.d-btn:hover { color: var(--ink-2); }
+li.active > .d-btn {
   color: var(--ink);
   font-weight: 600;
-  border-left-color: var(--accent);
-  background: var(--hover-bg);
 }
-.date-list li.partial { color: var(--ink-3); }
-.d-dot { font-size: 10px; color: var(--ink-3); }
+li.active > .d-btn::before { opacity: 1; }
+.d-date { flex: 1 1 auto; }
+li.partial .d-date { color: var(--ink-3); }
+.d-dot { font-size: 10px; color: var(--ink-3); opacity: 0.8; }
 
 /* ---- 正文 ------------------------------------------------------------------ */
 .content { padding-top: 32px; min-width: 0; }
@@ -334,17 +348,16 @@ a:hover { text-decoration-color: currentColor; }
   padding: 8px 0;
 }
 
-/* 报头：日期 + 三赛道色带 */
+/* 报头：日期 + 三赛道图例 */
 .brief-head {
-  padding-bottom: 26px;
-  border-bottom: 1px solid var(--hairline);
+  padding-bottom: 8px;
 }
 
 .date {
   display: flex;
   align-items: baseline;
   flex-wrap: wrap;
-  gap: 6px 14px;
+  gap: 6px 16px;
 }
 
 .date-cn {
@@ -357,10 +370,8 @@ a:hover { text-decoration-color: currentColor; }
 
 .date-week {
   font-size: var(--fs-small);
-  color: var(--ink-2);
+  color: var(--ink-3);
   letter-spacing: 0.1em;
-  padding-left: 12px;
-  border-left: 1px solid var(--hairline);
 }
 
 /* 三色图例 = 三条赛道的颜色索引（色块 + 赛道名，与正文段落色脊一一对应） */
@@ -449,7 +460,7 @@ a:hover { text-decoration-color: currentColor; }
   color: var(--ink-2);
 }
 
-/* 赛道段落：左侧色脊编码赛道身份（lane-0/1/2 与页眉图例同色） */
+/* 赛道段落：左侧色脊编码赛道身份（lane-0/1/2 与页眉图例同色）——页面上仅存的竖线，且带语义 */
 .track {
   margin-top: 46px;
   padding-left: 20px;
@@ -486,20 +497,19 @@ a:hover { text-decoration-color: currentColor; }
   display: inline-block;
   margin-top: 6px;
   padding: 1px 7px;
-  border: 1px solid var(--hairline);
-  border-radius: var(--radius-ctl);
+  border-radius: 4px;
+  background: var(--hover-bg);
   font-size: var(--fs-micro);
   color: var(--ink-3);
   letter-spacing: 0.02em;
 }
 
-/* 落地行动 = 主理人笔记：别册化处理 */
+/* 落地行动 = 主理人笔记：靠底色区分，不加额外竖线（避免与赛道色脊叠成双层线） */
 .group[data-kind="actions"] {
   margin-top: 20px;
   padding: 14px 16px;
   background: var(--note-bg);
-  border-left: 2px solid var(--gold);
-  border-radius: 0 var(--radius-ctl) var(--radius-ctl) 0;
+  border-radius: var(--radius-ctl);
 }
 .group[data-kind="actions"] .group-title { color: var(--gold); }
 .group[data-kind="actions"] .item-body { font-size: var(--fs-small); line-height: 1.72; }
@@ -513,13 +523,20 @@ a:hover { text-decoration-color: currentColor; }
 }
 
 .vp-card {
-  padding: 18px 20px;
+  padding: 16px 18px;
   background: var(--surface);
-  border: 1px solid var(--hairline);
-  border-top: 3px solid var(--accent);
-  border-radius: 0 0 var(--radius-ctl) var(--radius-ctl);
+  border-radius: var(--radius-ctl);
 }
-.vp-division { border-top-color: var(--gold); }
+/* 顶部细色条：共识=电光蓝、分歧=暖金（颜色是有含义的区分，不是装饰线） */
+.vp-card::before {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 2px;
+  margin-bottom: 12px;
+  background: var(--accent);
+}
+.vp-division::before { background: var(--gold); }
 
 .vp-card h4 {
   margin: 0 0 10px;
@@ -560,22 +577,20 @@ a:hover { text-decoration-color: currentColor; }
 .reading > ol > li {
   position: relative;
   counter-increment: reading;
-  padding: 14px 0 14px 34px;
-  border-top: 1px solid var(--hairline-soft);
+  padding: 0 0 22px 30px;
 }
-.reading > ol > li:first-child { border-top: 0; padding-top: 0; }
+.reading > ol > li:last-child { padding-bottom: 0; }
 .reading > ol > li::before {
   content: counter(reading);
   position: absolute;
   left: 0;
-  top: 15px;
-  width: 22px;
+  top: 2px;
+  width: 20px;
   font-family: var(--font-serif);
   font-size: var(--fs-small);
   color: var(--ink-3);
   text-align: right;
 }
-.reading > ol > li:first-child::before { top: 1px; }
 
 .reading a { font-weight: 500; }
 
@@ -583,28 +598,26 @@ a:hover { text-decoration-color: currentColor; }
   display: inline-block;
   margin-left: 4px;
   padding: 1px 7px;
-  border: 1px solid var(--hairline);
-  border-radius: var(--radius-ctl);
+  border-radius: 4px;
+  background: var(--hover-bg);
   font-size: var(--fs-micro);
   color: var(--ink-3);
   white-space: nowrap;
 }
 
-/* 推荐理由 / 落地说明：引用块质感 */
+/* 推荐理由 / 落地说明：靠字号与颜色降级，不加竖线 */
 .reason {
-  margin: 8px 0 0;
-  padding-left: 12px;
-  border-left: 2px solid var(--hairline);
+  margin: 6px 0 0;
   font-size: var(--fs-small);
   line-height: 1.7;
   color: var(--ink-2);
+  max-width: 72ch;
 }
-.reason-why { border-left-color: color-mix(in srgb, var(--gold) 55%, transparent); }
+.reason-why { color: var(--ink-3); }
 
 /* ---- 页脚 ------------------------------------------------------------------ */
 .footer {
-  border-top: 1px solid var(--hairline);
-  padding: 26px 24px 40px;
+  padding: 8px 24px 48px;
 }
 
 .footer-main,
@@ -643,26 +656,24 @@ a:hover { text-decoration-color: currentColor; }
     overflow-y: hidden;
     background: color-mix(in srgb, var(--canvas) 94%, transparent);
     backdrop-filter: blur(8px);
-    border-bottom: 1px solid var(--hairline);
   }
 
   .rail-head { display: none; }
 
   .date-list {
     display: flex;
-    gap: 8px;
+    gap: 4px;
     margin: 0;
     width: max-content;
   }
 
-  .date-list li {
-    border-left: 0;
-    border-bottom: 2px solid transparent;
-    border-radius: var(--radius-ctl) var(--radius-ctl) 0 0;
+  .d-btn {
+    width: auto;
     padding: 6px 10px;
     white-space: nowrap;
   }
-  .date-list li.active { border-bottom-color: var(--accent); }
+  /* 横向排列时不放圆点，靠颜色 + 字重区分当前期 */
+  .d-btn::before { display: none; }
 
   .content { padding-top: 22px; }
   .track { padding-left: 14px; }

@@ -193,17 +193,27 @@
   }
 
   function renderDates(dates, activeDate, gaps) {
+    // 用 <button> 承载可点项：键盘可操作、有可访问名（ux 规范：别拿 div 当按钮）
     datesEl.innerHTML = dates.map(function (d) {
       var partial = gaps && gaps[d] ? ' partial' : '';
       var mark = partial ? '<span class="d-dot" title="该日数据板块不全">◦</span>' : '';
-      return '<li data-date="' + esc(d) + '" tabindex="0" class="' + (d === activeDate ? 'active' : '') + partial + '">' +
-        '<span>' + esc(d) + '</span>' + mark + '</li>';
+      var cur = d === activeDate;
+      return '<li data-date="' + esc(d) + '" class="' + (cur ? 'active' : '') + partial + '">' +
+        '<button type="button" class="d-btn" data-date="' + esc(d) + '"' +
+        (cur ? ' aria-current="true"' : '') + '>' +
+        '<span class="d-date">' + esc(d) + '</span>' + mark + '</button></li>';
     }).join('');
   }
 
   function setActive(date) {
-    Array.prototype.forEach.call(datesEl.children, function (c) {
-      c.classList.toggle('active', c.getAttribute('data-date') === date);
+    Array.prototype.forEach.call(datesEl.querySelectorAll('li[data-date]'), function (c) {
+      var isCur = c.getAttribute('data-date') === date;
+      c.classList.toggle('active', isCur);
+      var btn = c.querySelector('.d-btn');
+      if (btn) {
+        if (isCur) btn.setAttribute('aria-current', 'true');
+        else btn.removeAttribute('aria-current');
+      }
     });
   }
 
@@ -223,7 +233,7 @@
   }
 
   /* ---- 主题：默认跟随系统，手动切换后记住 -------------------------------- */
-  var THEME_LABEL = { dark: '☀ 浅色', light: '☾ 深色' };
+  var THEME_LABEL = { dark: '浅色', light: '深色' };
 
   function applyTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
@@ -274,7 +284,7 @@
     await loadDate(active);
 
     datesEl.addEventListener('click', function (e) {
-      var li = e.target.closest('li[data-date]');
+      var li = e.target.closest('[data-date]');
       if (!li) return;
       loadDate(li.getAttribute('data-date'));
     });
@@ -284,14 +294,8 @@
       if (dates.indexOf(d) !== -1) loadDate(d);
     });
 
+    // 键盘：按钮自带 Enter/Space，这里只补上下键在日期列表里的移动
     document.addEventListener('keydown', function (e) {
-      // 日期项可键盘操作（li 带 tabindex="0"）：Enter / 空格 = 打开该日
-      var el = e.target;
-      if ((e.key === 'Enter' || e.key === ' ') && el && el.getAttribute && el.getAttribute('data-date')) {
-        e.preventDefault();
-        loadDate(el.getAttribute('data-date'));
-        return;
-      }
       if (e.key !== 'ArrowUp' && e.key !== 'ArrowDown') return;
       var cur = datesEl.querySelector('li.active');
       if (!cur) return;
@@ -300,7 +304,8 @@
       if (next >= 0 && next < dates.length) {
         e.preventDefault();
         loadDate(dates[next]);
-        datesEl.querySelector('li.active').scrollIntoView({ block: 'nearest' });
+        var el = datesEl.querySelector('li.active');
+        if (el) el.scrollIntoView({ block: 'nearest' });
       }
     });
   }
