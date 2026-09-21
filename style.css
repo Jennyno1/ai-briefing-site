@@ -487,6 +487,8 @@ li.partial .d-date { color: var(--ink-3); }
 
 /* 今日要点：导语体，比正文大一档 */
 .lead-label {
+  display: flex;
+  align-items: center;
   margin-top: 26px;
   font-family: var(--font-serif);
   font-size: var(--fs-small);
@@ -558,11 +560,13 @@ li.partial .d-date { color: var(--ink-3); }
 .sec-head {
   display: flex;
   align-items: center;
-  gap: 9px;
+  gap: 10px;
   margin: 0 0 18px;
 }
+.sec-head .chip { margin-right: 0; }   /* gap 已负责间距，避免 10+9 叠加 */
 .sec-head h2 { margin: 0; }
 .chip-neutral { background: var(--ink-3); opacity: .7; }   /* 机器整理的板块：灰点，不抢赛道色 */
+.lead-label .chip { margin-right: 0; }
 
 /* 赛道（C 第 1 步）：退回全平 —— 全页底色只留给「落地行动」一种 */
 .track {
@@ -619,6 +623,9 @@ li.partial .d-date { color: var(--ink-3); }
 /* 共识 / 分歧 */
 .viewpoint {
   margin-top: var(--space-section);
+}
+/* 两栏网格只包卡片：板块头在网格外，否则它会占掉一个格子、把卡片挤错行 */
+.vp-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
@@ -653,7 +660,7 @@ li.partial .d-date { color: var(--ink-3); }
 .reading { margin-top: 40px; }
 
 .reading h2 {
-  margin: 0 0 18px;
+  margin: 0;
   font-family: var(--font-serif);
   font-size: var(--fs-track);
   letter-spacing: 0.02em;

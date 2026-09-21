@@ -178,7 +178,7 @@
     });
 
     var vp = vpCard('consensus', '共识解读', data.consensus) + vpCard('division', '分歧解读', data.division);
-    if (vp) html += '<section class="viewpoint"><header class="sec-head"><i class="chip chip-neutral" aria-hidden="true"></i><h2>共识与分歧</h2></header>' + vp + '</section>';
+    if (vp) html += '<section class="viewpoint"><header class="sec-head"><i class="chip chip-neutral" aria-hidden="true"></i><h2>共识与分歧</h2></header><div class="vp-grid">' + vp + '</div></section>';
 
     html += readingHtml(data.reading);
     html += githubHtml(data.github);
