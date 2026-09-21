@@ -1,127 +1,127 @@
 {
-  "date": "2026-09-02",
-  "format": "summary",
-  "points": [
-    "OpenAI推迟Astra模型发布，Hugging Face事件后强化前沿安全审查",
-    "Google推出Pics AI图片工具直接对标Canva，提示词替代设计",
-    "AI Agent验证市场获5000万美元融资，Agent Skills治理成新赛道"
-  ],
-  "tracks": [
-    {
-      "key": "ai_tech",
-      "emoji": "❶",
-      "name": "AI产业技术",
-      "news": [
-        "OpenAI宣布Astra模型研发进度更新，Hugging Face安全事件后同步加强前沿安全防护机制",
-        "Google推出Pics图片编辑器，用提示词替代传统设计流程，直接对标Canva",
-        "OpenAI发布ChatGPT广告业务说明，同时阐述AI原生公司如何将工作流转化为运营能力"
-      ],
-      "insights": [
-        "OpenAI推迟Astra发布而非选择带风险上线，标志着行业正从\"能力竞赛优先\"转向\"安全验证优先\"，这种模式可能成为前沿模型发布的新常态",
-        "🟡弱信号：AI平台开始将订阅之外的广告变现纳入商业化探索，平台经济逻辑正在渗入AI产品层"
-      ],
-      "actions": [
-        "关注Astra后续发布时间与安全机制细节，评估其对AI基础设施安全标准的影响"
-      ]
-    },
-    {
-      "key": "enterprise_ai",
-      "emoji": "❷",
-      "name": "企业AI应用",
-      "news": [
-        "AIR完成5000万美元融资，专注为企业提供AI Agent技能和插件的安全验证服务",
-        "AWS发布Agent Registry，支持企业统一管理Agent、工具和技能的注册与发现",
-        "百度CFO何海建表示AI业务有望很快带来与搜索业务相当的利润和现金回报"
-      ],
-      "insights": [
-        "AIR融资信号表明企业AI正从\"要不要用Agent\"进入\"Agent用什么技能安全\"的新阶段，Agent Skills治理是企业AI规模化的必经之路",
-        "🟡弱信号：AWS Agent Registry指向企业AI从\"个人用Agent\"走向\"Agent平台化管理\"，Agent Registry将成为企业AI基础设施的新组件"
-      ],
-      "actions": [
-        "评估AI Agent技能安全性和可信度框架，Apache Maka可作为企业级AI Agent工作台的测试起点"
-      ]
-    },
-    {
-      "key": "content_creation",
-      "emoji": "❸",
-      "name": "内容创作",
-      "news": [
-        "MiniMax实现3秒出片，比播放速度更快，打开AI视频实时商业化路径",
-        "量子位报道GitHub最热架构图Agent引发开发者热议，AI辅助架构设计获广泛关注",
-        "Instagram对未公开标注的AI账号实施新限制，打击AI冒充真人行为"
-      ],
-      "insights": [
-        "MiniMax的\"3秒出片\"将AI视频生成从\"能用\"推进到\"实时可用\"，按秒计费的商业模式正在打开，内容创作的效率天花板再次被打破",
-        "🟡弱信号：Instagram限制AI冒充真人账号的政策，预示内容平台对AI生成内容的监管正在从算法推荐层面扩展到身份真实性层面"
-      ],
-      "actions": [
-        "用printfilm测试AI短片制作流程，评估其在小红书视频内容制作中的实际效果"
-      ]
-    }
-  ],
-  "github": [
-    {
-      "repo": "THU-MAIC/OpenMAIC",
-      "url": "https://github.com/THU-MAIC/OpenMAIC",
-      "stars": "29.4K",
-      "track": "AI产业技术",
-      "note": "清华团队开源多智能体互动平台，一行命令搭建沉浸式多Agent学习环境",
-      "why": "多Agent协作架构可直接迁移到内容创作和企业AI场景的Agent工作流设计"
-    },
-    {
-      "repo": "apache/maka",
-      "url": "https://github.com/apache/maka",
-      "stars": "4.4K",
-      "track": "企业AI应用",
-      "note": "Apache孵化项目，本地优先的AI Agent工作台，管理模型消息、工具调用和技能注册",
-      "why": "企业AI Agent管理的开源标准实现，适合构建内部Agent治理平台"
-    },
-    {
-      "repo": "yuanzhongqiao/printfilm",
-      "url": "https://github.com/yuanzhongqiao/printfilm",
-      "stars": "3.9K",
-      "track": "内容创作",
-      "note": "AI短剧与动态漫画生成平台，覆盖从剧本到成片的完整工作流",
-      "why": "可直接用于测试AI短片制作的商业可行性，降低视频内容制作门槛"
-    }
-  ],
-  "reading": [
-    {
-      "title": "PRs NOT Welcome: How Top AI Open Source Projects Are Managing Thousands of Contributors",
-      "url": "https://www.latent.space/p/pr-not-welcome",
-      "source": "",
-      "reason": "深度分析顶级AI开源项目如何管理成千上万的贡献者，从代码审查到社区治理的实战经验。为什么值得关注：AI开源项目规模爆发式增长后，贡献者管理成为决定项目生命力的关键能力。"
-    },
-    {
-      "title": "Google's answer to Canva is an AI tool where you prompt instead of design",
-      "url": "https://techcrunch.com/2026/09/01/googles-answer-to-canva-is-an-ai-tool-where-you-prompt-instead-of-design/",
-      "source": "",
-      "reason": "Google推出Pics，一款用提示词替代传统设计的AI图片编辑器，直接对标Canva。为什么值得关注：AI图片工具从\"辅助编辑\"升级到\"提示词驱动\"，内容创作者的设计门槛再次降低。"
-    },
-    {
-      "title": "AIR raises $50M to help companies vet the skills and add-ons AI agents use",
-      "url": "https://techcrunch.com/2026/09/01/air-raises-50m-to-help-companies-vet-the-skills-and-add-ons-ai-agents-use/",
-      "source": "",
-      "reason": "AIR完成5000万美元融资，专注为企业提供AI Agent技能和插件的安全验证。为什么值得关注：企业AI Agent规模化部署后，技能安全治理成为新的刚需市场。"
-    }
-  ],
-  "consensus": {
-    "text": "AI平台正同步推进能力跃升与安全机制建设，\"越强越严\"的双轨加速已成为行业共识。",
-    "quotes": [
-      "OpenAI推迟Astra模型发布，Hugging Face事件后强化安全防护（OpenAI官方）",
-      "Google推出Pics图片编辑器，将AI能力嵌入日常创作工具（Google官方）",
-      "OpenAI阐述ChatGPT广告与AI原生公司工作流方法论（OpenAI官方）"
-    ]
+ "date": "2026-09-02",
+ "format": "summary",
+ "points": [
+  "OpenAI推迟Astra模型发布，Hugging Face事件后强化前沿安全审查",
+  "Google推出Pics AI图片工具直接对标Canva，提示词替代设计",
+  "AI Agent验证市场获5000万美元融资，Agent Skills治理成新赛道"
+ ],
+ "tracks": [
+  {
+   "key": "ai_tech",
+   "emoji": "❶",
+   "name": "AI产业技术",
+   "news": [
+    "OpenAI宣布Astra模型研发进度更新，Hugging Face安全事件后同步加强前沿安全防护机制",
+    "Google推出Pics图片编辑器，用提示词替代传统设计流程，直接对标Canva",
+    "OpenAI发布ChatGPT广告业务说明，同时阐述AI原生公司如何将工作流转化为运营能力"
+   ],
+   "insights": [
+    "OpenAI推迟Astra发布而非选择带风险上线，标志着行业正从\"能力竞赛优先\"转向\"安全验证优先\"，这种模式可能成为前沿模型发布的新常态",
+    "🟡弱信号：AI平台开始将订阅之外的广告变现纳入商业化探索，平台经济逻辑正在渗入AI产品层"
+   ],
+   "actions": [
+    "关注Astra后续发布时间与安全机制细节，评估其对AI基础设施安全标准的影响"
+   ]
   },
-  "division": {
-    "text": "AI内容创作工具的商业化路径出现分化——按次/按秒计费与平台内嵌广告两种模式并行探索，尚未收敛。",
-    "quotes": [
-      "MiniMax实现3秒出片，AI视频实时商业化路径打开（量子位）",
-      "OpenAI推出ChatGPT广告，AI原生公司工作流方法论发布（OpenAI官方）",
-      "Instagram对未标注AI账号实施新限制，平台内容治理收紧（TechCrunch AI）"
-    ]
+  {
+   "key": "enterprise_ai",
+   "emoji": "❷",
+   "name": "企业AI应用",
+   "news": [
+    "AIR完成5000万美元融资，专注为企业提供AI Agent技能和插件的安全验证服务",
+    "AWS发布Agent Registry，支持企业统一管理Agent、工具和技能的注册与发现",
+    "百度CFO何海建表示AI业务有望很快带来与搜索业务相当的利润和现金回报"
+   ],
+   "insights": [
+    "AIR融资信号表明企业AI正从\"要不要用Agent\"进入\"Agent用什么技能安全\"的新阶段，Agent Skills治理是企业AI规模化的必经之路",
+    "🟡弱信号：AWS Agent Registry指向企业AI从\"个人用Agent\"走向\"Agent平台化管理\"，Agent Registry将成为企业AI基础设施的新组件"
+   ],
+   "actions": [
+    "评估AI Agent技能安全性和可信度框架，Apache Maka可作为企业级AI Agent工作台的测试起点"
+   ]
   },
-  "ai_generated": true,
-  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-20T18:31"
+  {
+   "key": "content_creation",
+   "emoji": "❸",
+   "name": "内容创作",
+   "news": [
+    "MiniMax实现3秒出片，比播放速度更快，打开AI视频实时商业化路径",
+    "量子位报道GitHub最热架构图Agent引发开发者热议，AI辅助架构设计获广泛关注",
+    "Instagram对未公开标注的AI账号实施新限制，打击AI冒充真人行为"
+   ],
+   "insights": [
+    "MiniMax的\"3秒出片\"将AI视频生成从\"能用\"推进到\"实时可用\"，按秒计费的商业模式正在打开，内容创作的效率天花板再次被打破",
+    "🟡弱信号：Instagram限制AI冒充真人账号的政策，预示内容平台对AI生成内容的监管正在从算法推荐层面扩展到身份真实性层面"
+   ],
+   "actions": [
+    "用printfilm测试AI短片制作流程，评估其在小红书视频内容制作中的实际效果"
+   ]
+  }
+ ],
+ "github": [
+  {
+   "repo": "THU-MAIC/OpenMAIC",
+   "url": "https://github.com/THU-MAIC/OpenMAIC",
+   "stars": "29.4K",
+   "track": "AI产业技术",
+   "note": "清华团队开源多智能体互动平台，一行命令搭建沉浸式多Agent学习环境",
+   "why": "多Agent协作架构可直接迁移到内容创作和企业AI场景的Agent工作流设计"
+  },
+  {
+   "repo": "apache/maka",
+   "url": "https://github.com/apache/maka",
+   "stars": "4.4K",
+   "track": "企业AI应用",
+   "note": "Apache孵化项目，本地优先的AI Agent工作台，管理模型消息、工具调用和技能注册",
+   "why": "企业AI Agent管理的开源标准实现，适合构建内部Agent治理平台"
+  },
+  {
+   "repo": "yuanzhongqiao/printfilm",
+   "url": "https://github.com/yuanzhongqiao/printfilm",
+   "stars": "3.9K",
+   "track": "内容创作",
+   "note": "AI短剧与动态漫画生成平台，覆盖从剧本到成片的完整工作流",
+   "why": "可直接用于测试AI短片制作的商业可行性，降低视频内容制作门槛"
+  }
+ ],
+ "reading": [
+  {
+   "title": "PRs NOT Welcome: How Top AI Open Source Projects Are Managing Thousands of Contributors",
+   "url": "https://www.latent.space/p/pr-not-welcome",
+   "source": "",
+   "reason": "深度分析顶级AI开源项目如何管理成千上万的贡献者，从代码审查到社区治理的实战经验。为什么值得关注：AI开源项目规模爆发式增长后，贡献者管理成为决定项目生命力的关键能力。"
+  },
+  {
+   "title": "Google's answer to Canva is an AI tool where you prompt instead of design",
+   "url": "https://techcrunch.com/2026/09/01/googles-answer-to-canva-is-an-ai-tool-where-you-prompt-instead-of-design/",
+   "source": "",
+   "reason": "Google推出Pics，一款用提示词替代传统设计的AI图片编辑器，直接对标Canva。为什么值得关注：AI图片工具从\"辅助编辑\"升级到\"提示词驱动\"，内容创作者的设计门槛再次降低。"
+  },
+  {
+   "title": "AIR raises $50M to help companies vet the skills and add-ons AI agents use",
+   "url": "https://techcrunch.com/2026/09/01/air-raises-50m-to-help-companies-vet-the-skills-and-add-ons-ai-agents-use/",
+   "source": "",
+   "reason": "AIR完成5000万美元融资，专注为企业提供AI Agent技能和插件的安全验证。为什么值得关注：企业AI Agent规模化部署后，技能安全治理成为新的刚需市场。"
+  }
+ ],
+ "consensus": {
+  "text": "AI平台正同步推进能力跃升与安全机制建设，\"越强越严\"的双轨加速已成为行业共识。",
+  "quotes": [
+   "OpenAI推迟Astra模型发布，Hugging Face事件后强化安全防护（OpenAI官方）",
+   "Google推出Pics图片编辑器，将AI能力嵌入日常创作工具（Google官方）",
+   "OpenAI阐述ChatGPT广告与AI原生公司工作流方法论（OpenAI官方）"
+  ]
+ },
+ "division": {
+  "text": "AI内容创作工具的商业化路径出现分化——按次/按秒计费与平台内嵌广告两种模式并行探索，尚未收敛。",
+  "quotes": [
+   "MiniMax实现3秒出片，AI视频实时商业化路径打开（量子位）",
+   "OpenAI推出ChatGPT广告，AI原生公司工作流方法论发布（OpenAI官方）",
+   "Instagram对未标注AI账号实施新限制，平台内容治理收紧（TechCrunch AI）"
+  ]
+ },
+ "ai_generated": true,
+ "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+ "generated_at": "2026-09-20T18:31"
 }

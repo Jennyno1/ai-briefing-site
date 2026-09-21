@@ -1,132 +1,132 @@
 {
-  "date": "2026-09-17",
-  "format": "summary",
-  "points": [
-    "GPT-6 Sol曝光：奥特曼深夜发「🚢」暗示发布，API中已被发现内测（36氪）",
-    "Anthropic把Claude聊天与Cowork合并为一个界面，并推出自有Docs和Slides对标Google（TechCrunch/The Verge）",
-    "Google开放Home MCP服务器，任何AI Agent可以直接控制智能家居设备（TechCrunch）",
+ "date": "2026-09-17",
+ "format": "summary",
+ "points": [
+  "GPT-6 Sol曝光：奥特曼深夜发「🚢」暗示发布，API中已被发现内测（36氪）",
+  "Anthropic把Claude聊天与Cowork合并为一个界面，并推出自有Docs和Slides对标Google（TechCrunch/The Verge）",
+  "Google开放Home MCP服务器，任何AI Agent可以直接控制智能家居设备（TechCrunch）",
+  "--"
+ ],
+ "tracks": [
+  {
+   "key": "ai_tech",
+   "emoji": "❶",
+   "name": "AI产业技术",
+   "news": [
+    "GPT-6 Sol进入内测：API中已被发现，预计本月正式发布；此前GPT-6 Astra已被Perplexity、Cognition接入端到端生产系统（36氪/OpenAI L1）。",
+    "国产开源模型密集发布：智谱系ZDTaichu5.0-9B跻身全球多模态第一梯队（九大空间测试8项第一）；arXiv同日出现ZGCM-1全开源7B数学与Agentic搜索模型（量子位/arXiv）。",
+    "Latent Space报道Jev「System One」新范式：只做分类/路由/打分的小模型，速度比通用模型快100倍以上，专用小模型开始和全能大模型分道（Latent Space L2）。"
+   ],
+   "insights": [
+    "大模型发布叙事出现「分层信号」：旗舰拼全能（GPT-6 Sol）、推理拼性价比（DeepSeek v4.1-Flash）、路由拼速度（Jev），「一个模型打天下」的叙事正在被产品线拆解。",
+    "🟡弱信号：arXiv单日多篇Agent失败归因论文（长程任务根因搜索、自我适应物理AI），Agent可靠性研究从「能力评测」转向「失败诊断」，说明真实部署量已经大到值得专门建模。"
+   ],
+   "actions": [
+    "给自己的多Agent工作流做一次「模型分层」：简单分类路由交给便宜小模型，只在决策层用旗舰模型，对照AWS prompt caching可省90%输入token的做法实测成本差。",
     "--"
-  ],
-  "tracks": [
-    {
-      "key": "ai_tech",
-      "emoji": "❶",
-      "name": "AI产业技术",
-      "news": [
-        "GPT-6 Sol进入内测：API中已被发现，预计本月正式发布；此前GPT-6 Astra已被Perplexity、Cognition接入端到端生产系统（36氪/OpenAI L1）。",
-        "国产开源模型密集发布：智谱系ZDTaichu5.0-9B跻身全球多模态第一梯队（九大空间测试8项第一）；arXiv同日出现ZGCM-1全开源7B数学与Agentic搜索模型（量子位/arXiv）。",
-        "Latent Space报道Jev「System One」新范式：只做分类/路由/打分的小模型，速度比通用模型快100倍以上，专用小模型开始和全能大模型分道（Latent Space L2）。"
-      ],
-      "insights": [
-        "大模型发布叙事出现「分层信号」：旗舰拼全能（GPT-6 Sol）、推理拼性价比（DeepSeek v4.1-Flash）、路由拼速度（Jev），「一个模型打天下」的叙事正在被产品线拆解。",
-        "🟡弱信号：arXiv单日多篇Agent失败归因论文（长程任务根因搜索、自我适应物理AI），Agent可靠性研究从「能力评测」转向「失败诊断」，说明真实部署量已经大到值得专门建模。"
-      ],
-      "actions": [
-        "给自己的多Agent工作流做一次「模型分层」：简单分类路由交给便宜小模型，只在决策层用旗舰模型，对照AWS prompt caching可省90%输入token的做法实测成本差。",
-        "--"
-      ]
-    },
-    {
-      "key": "enterprise_ai",
-      "emoji": "❷",
-      "name": "企业AI应用",
-      "news": [
-        "Anthropic产品线大扩张：Claude聊天+Cowork合并、推出Docs/Slides、Pro/Max先享；OpenAI面向金融行业发布ChatGPT for Financial Services与ChatGPT Work的Data agent，政府端$0授权费铺量（TechCrunch/OpenAI L1）。",
-        "企业落地案例：诺和诺德与Anthropic合作用Claude推进药物研发；字节AI制药Anew Labs完成2.9亿美元融资估值15亿美元；Abnormal AI用Bedrock AgentCore做企业级邮件安全（36氪/虎嗅/AWS L1）。",
-        "收购与整合潮：Superhuman收购40万月活 noter Fathom、Bending Spoons以13.6亿（较2022年估值低90%）收购Miro，办公协同赛道在AI压力下重新定价（TechCrunch M&A L2）。"
-      ],
-      "insights": [
-        "企业级Agent竞争升维：从「能不能干活」转向「审计与独立性」——OpenAI/Anthropic宣布嵌入内部安全评估员，AEF-1第三方评估标准同日出现，研究界质疑内部审计是否真的独立。",
-        "🟡弱信号：美国联邦政府采购口（GSA）拿到OpenAI减免授权，政府、金融、医疗三类强合规行业成为API厂商的下一战场，合规能力本身开始成为卖点。"
-      ],
-      "actions": [
-        "面试与产品视角双用：把AgentCore的system prompt优化（用生产trace反推配置）、Bedrock prompt caching两个文档读一遍，这正是「Agent可运维性」岗位会考的题。",
-        "--"
-      ]
-    },
-    {
-      "key": "content_creation",
-      "emoji": "❸",
-      "name": "内容创作",
-      "news": [
-        "OpenAI展示Fyxer案例：一款AI行政助理靠fine-tuning+记忆+真实用户反馈赢得信任，企业邮箱整理是Agent助理最被验证的场景（OpenAI L1）。",
-        "平台侧变动：Threads给播客上新工具（资料卡/单集链接/转录）；Meta AI眼镜被吐槽后推无摄像头新款；Cloudflare的「拒AI爬虫」设置持续发酵，创作者对AI训练授权意识升温（TechCrunch/IT之家）。",
-        "Product Hunt今日多款AI内容工具上榜：ALwrity（AI营销内容平台）、AI-ContentCraft（故事/播客脚本一体）等，AI内容生产赛道继续做「全流程打包」（Product Hunt L3）。"
-      ],
-      "insights": [
-        "让用户「信任AI产出」的配方已经收敛到公开三点：微调+记忆+真实反馈闭环，这比「模型更强」更有说服力——内容工具宣传也开始照抄这套话术。",
-        "🟡弱信号：中文侧「AI翻车」话题上升（豆包选吉日被起诉、微信辟谣AI读聊天记录），公众对AI的信任边界快速具体化，做AI内容科普具有正当timing。"
-      ],
-      "actions": [
-        "公众号选题储备「AI工具信任三件套」：用Fyxer案例讲清微调、记忆、反馈闭环，配自己Hermes简报流水线的真实截图，做小白友好拆解。",
-        "--"
-      ]
-    }
-  ],
-  "github": [
-    {
-      "repo": "SciPhi-AI/R2R",
-      "url": "https://github.com/SciPhi-AI/R2R",
-      "stars": "7997",
-      "track": "企业AI应用",
-      "note": "生产级Agentic RAG系统，RESTful API开箱即用",
-      "why": "想给私有知识库加检索问答，这是最接近「拿来就用」的开源方案"
-    },
-    {
-      "repo": "unum-cloud/UForm",
-      "url": "https://github.com/unum-cloud/UForm",
-      "stars": "1250",
-      "track": "AI产业技术",
-      "note": "口袋级多模态模型，理解与生成跨多语言/图像，超小体量",
-      "why": "边缘端多模态的性价比之选，端侧AI应用可直接集成"
-    },
-    {
-      "repo": "ALwrity/ALwrity",
-      "url": "https://github.com/ALwrity/ALwrity",
-      "stars": "1160",
-      "track": "内容创作",
-      "note": "AI优先的数字营销平台，内容策划/生成/发布一体化",
-      "why": "把选题-写作-分发做成开源流水线，可对照自建内容工作流"
-    }
-  ],
-  "reading": [
-    {
-      "title": "Optimizing cost and latency with Amazon Bedrock prompt caching",
-      "url": "https://aws.amazon.com/blogs/machine-learning/optimizing-cost-and-latency-with-amazon-bedrock-prompt-caching/",
-      "source": "",
-      "reason": "重复输入场景下输入token成本最高降90%。为什么值得关注：Agent成本优化最直接的实操文档，含配置方法与适用判断。"
-    },
-    {
-      "title": "Underwriting Superintelligence: Backing Agents you can Sue",
-      "url": "https://www.latent.space/p/aiuc",
-      "source": "",
-      "reason": "AIUC谈Agent保险与责任承保。为什么值得关注：企业采用Agent的「责任与可追责」视角，正好对应评估标准之争， Interview角度新颖。"
-    },
-    {
-      "title": "Claude comes for Gemini with its own take on Docs and Slides",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/claude-docs-slides",
-      "source": "",
-      "reason": "Anthropic把生产力套件补齐。为什么值得关注：AI助手从聊天窗口走向办公全家桶的标志性一步，直接影响协同办公工具格局。"
-    }
-  ],
-  "consensus": {
-    "text": "Agent 正在从「能力展示」进入「日常产品」。当天三家头部厂商各自把 Agent 嵌进普通人每天都在用的界面里——数据分析工具、办公协作套件、智能家居入口，动作方向一致；配套的 token 成本优化（缓存命中带来的成本下降）与失败归因研究也在同步跟进，产业共识是「铺开来用」的阶段到了。",
-    "quotes": [
-      "Google开放Home MCP让AI Agent控制智能家居（TechCrunch）",
-      "Claude聊天与Cowork合并为一个界面（TechCrunch）",
-      "ChatGPT Work上线Data agent连接企业数据（OpenAI）",
-      "arXiv多篇长程Agent失败归因论文（arXiv）"
-    ]
+   ]
   },
-  "division": {
-    "text": "AI 安全的「谁来当裁判」正面开裂。头部模型厂商主张在实验室内部嵌入安全评估员，第三方标准组织则快速推出独立评估协议试图建立外部审计；研究界与国际组织则认为内部审计有利益冲突，呼吁外部监管与共同监督。双方都讲独立，分歧在于独立能不能由被审者自己供应。",
-    "quotes": [
-      "Anthropic与OpenAI拟嵌入内部安全评估员（TechCrunch）",
-      "AEF-1第三方评估标准出现，xAI/OpenAI/Anthropic参与（Latent Space）",
-      "联合国秘书长呼吁各国共同推进AI监管（IT之家）"
-    ]
+  {
+   "key": "enterprise_ai",
+   "emoji": "❷",
+   "name": "企业AI应用",
+   "news": [
+    "Anthropic产品线大扩张：Claude聊天+Cowork合并、推出Docs/Slides、Pro/Max先享；OpenAI面向金融行业发布ChatGPT for Financial Services与ChatGPT Work的Data agent，政府端$0授权费铺量（TechCrunch/OpenAI L1）。",
+    "企业落地案例：诺和诺德与Anthropic合作用Claude推进药物研发；字节AI制药Anew Labs完成2.9亿美元融资估值15亿美元；Abnormal AI用Bedrock AgentCore做企业级邮件安全（36氪/虎嗅/AWS L1）。",
+    "收购与整合潮：Superhuman收购40万月活 noter Fathom、Bending Spoons以13.6亿（较2022年估值低90%）收购Miro，办公协同赛道在AI压力下重新定价（TechCrunch M&A L2）。"
+   ],
+   "insights": [
+    "企业级Agent竞争升维：从「能不能干活」转向「审计与独立性」——OpenAI/Anthropic宣布嵌入内部安全评估员，AEF-1第三方评估标准同日出现，研究界质疑内部审计是否真的独立。",
+    "🟡弱信号：美国联邦政府采购口（GSA）拿到OpenAI减免授权，政府、金融、医疗三类强合规行业成为API厂商的下一战场，合规能力本身开始成为卖点。"
+   ],
+   "actions": [
+    "面试与产品视角双用：把AgentCore的system prompt优化（用生产trace反推配置）、Bedrock prompt caching两个文档读一遍，这正是「Agent可运维性」岗位会考的题。",
+    "--"
+   ]
   },
-  "ai_generated": true,
-  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-20T18:31"
+  {
+   "key": "content_creation",
+   "emoji": "❸",
+   "name": "内容创作",
+   "news": [
+    "OpenAI展示Fyxer案例：一款AI行政助理靠fine-tuning+记忆+真实用户反馈赢得信任，企业邮箱整理是Agent助理最被验证的场景（OpenAI L1）。",
+    "平台侧变动：Threads给播客上新工具（资料卡/单集链接/转录）；Meta AI眼镜被吐槽后推无摄像头新款；Cloudflare的「拒AI爬虫」设置持续发酵，创作者对AI训练授权意识升温（TechCrunch/IT之家）。",
+    "Product Hunt今日多款AI内容工具上榜：ALwrity（AI营销内容平台）、AI-ContentCraft（故事/播客脚本一体）等，AI内容生产赛道继续做「全流程打包」（Product Hunt L3）。"
+   ],
+   "insights": [
+    "让用户「信任AI产出」的配方已经收敛到公开三点：微调+记忆+真实反馈闭环，这比「模型更强」更有说服力——内容工具宣传也开始照抄这套话术。",
+    "🟡弱信号：中文侧「AI翻车」话题上升（豆包选吉日被起诉、微信辟谣AI读聊天记录），公众对AI的信任边界快速具体化，做AI内容科普具有正当timing。"
+   ],
+   "actions": [
+    "公众号选题储备「AI工具信任三件套」：用Fyxer案例讲清微调、记忆、反馈闭环，配自己Hermes简报流水线的真实截图，做小白友好拆解。",
+    "--"
+   ]
+  }
+ ],
+ "github": [
+  {
+   "repo": "SciPhi-AI/R2R",
+   "url": "https://github.com/SciPhi-AI/R2R",
+   "stars": "7997",
+   "track": "企业AI应用",
+   "note": "生产级Agentic RAG系统，RESTful API开箱即用",
+   "why": "想给私有知识库加检索问答，这是最接近「拿来就用」的开源方案"
+  },
+  {
+   "repo": "unum-cloud/UForm",
+   "url": "https://github.com/unum-cloud/UForm",
+   "stars": "1250",
+   "track": "AI产业技术",
+   "note": "口袋级多模态模型，理解与生成跨多语言/图像，超小体量",
+   "why": "边缘端多模态的性价比之选，端侧AI应用可直接集成"
+  },
+  {
+   "repo": "ALwrity/ALwrity",
+   "url": "https://github.com/ALwrity/ALwrity",
+   "stars": "1160",
+   "track": "内容创作",
+   "note": "AI优先的数字营销平台，内容策划/生成/发布一体化",
+   "why": "把选题-写作-分发做成开源流水线，可对照自建内容工作流"
+  }
+ ],
+ "reading": [
+  {
+   "title": "Optimizing cost and latency with Amazon Bedrock prompt caching",
+   "url": "https://aws.amazon.com/blogs/machine-learning/optimizing-cost-and-latency-with-amazon-bedrock-prompt-caching/",
+   "source": "",
+   "reason": "重复输入场景下输入token成本最高降90%。为什么值得关注：Agent成本优化最直接的实操文档，含配置方法与适用判断。"
+  },
+  {
+   "title": "Underwriting Superintelligence: Backing Agents you can Sue",
+   "url": "https://www.latent.space/p/aiuc",
+   "source": "",
+   "reason": "AIUC谈Agent保险与责任承保。为什么值得关注：企业采用Agent的「责任与可追责」视角，正好对应评估标准之争， Interview角度新颖。"
+  },
+  {
+   "title": "Claude comes for Gemini with its own take on Docs and Slides",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/claude-docs-slides",
+   "source": "",
+   "reason": "Anthropic把生产力套件补齐。为什么值得关注：AI助手从聊天窗口走向办公全家桶的标志性一步，直接影响协同办公工具格局。"
+  }
+ ],
+ "consensus": {
+  "text": "Agent 正在从「能力展示」进入「日常产品」。当天三家头部厂商各自把 Agent 嵌进普通人每天都在用的界面里——数据分析工具、办公协作套件、智能家居入口，动作方向一致；配套的 token 成本优化（缓存命中带来的成本下降）与失败归因研究也在同步跟进，产业共识是「铺开来用」的阶段到了。",
+  "quotes": [
+   "Google开放Home MCP让AI Agent控制智能家居（TechCrunch）",
+   "Claude聊天与Cowork合并为一个界面（TechCrunch）",
+   "ChatGPT Work上线Data agent连接企业数据（OpenAI）",
+   "arXiv多篇长程Agent失败归因论文（arXiv）"
+  ]
+ },
+ "division": {
+  "text": "AI 安全的「谁来当裁判」正面开裂。头部模型厂商主张在实验室内部嵌入安全评估员，第三方标准组织则快速推出独立评估协议试图建立外部审计；研究界与国际组织则认为内部审计有利益冲突，呼吁外部监管与共同监督。双方都讲独立，分歧在于独立能不能由被审者自己供应。",
+  "quotes": [
+   "Anthropic与OpenAI拟嵌入内部安全评估员（TechCrunch）",
+   "AEF-1第三方评估标准出现，xAI/OpenAI/Anthropic参与（Latent Space）",
+   "联合国秘书长呼吁各国共同推进AI监管（IT之家）"
+  ]
+ },
+ "ai_generated": true,
+ "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+ "generated_at": "2026-09-20T18:31"
 }

@@ -1,132 +1,132 @@
 {
-  "date": "2026-09-19",
-  "format": "summary",
-  "points": [
-    "Gemini 4 Pro被曝「偷跑」上线大模型竞技场，编码、智能体、推理多项基准全面领先，旗舰模型竞争白热化（36氪热榜）",
-    "Claude Code大重构，把内部3万Agent的管理技术免费开放，多人并行Agent托管走向开源化、标准化（量子位/The Verge）",
-    "广电总局披露：今年前8个月上线微短剧43万部、AI剧占比超九成，平台将开设真人剧专区扶持精品创作（知乎/36氪）",
+ "date": "2026-09-19",
+ "format": "summary",
+ "points": [
+  "Gemini 4 Pro被曝「偷跑」上线大模型竞技场，编码、智能体、推理多项基准全面领先，旗舰模型竞争白热化（36氪热榜）",
+  "Claude Code大重构，把内部3万Agent的管理技术免费开放，多人并行Agent托管走向开源化、标准化（量子位/The Verge）",
+  "广电总局披露：今年前8个月上线微短剧43万部、AI剧占比超九成，平台将开设真人剧专区扶持精品创作（知乎/36氪）",
+  "--"
+ ],
+ "tracks": [
+  {
+   "key": "ai_tech",
+   "emoji": "❶",
+   "name": "AI产业技术",
+   "news": [
+    "疑似谷歌下一代旗舰Gemini 4 Pro以「gemini-3.8-flash」之名悄悄现身大模型竞技场，开发者实测称其在编码、智能体、推理领域均超过GPT-6 Astra与Claude Fable 5.1，谷歌半年压舱的底牌提前曝光（36氪热榜 L2）。",
+    "开源与托管双线：月之暗面Kimi K3登陆Amazon Bedrock，提供原生视觉、100万token上下文与prompt缓存；MiniMax Code CLI以MIT协议正式开源；Claude Code把支撑3万Agent运行的重构技术公开（AWS L1/36氪/量子位 L2）。",
+    "算力继续加杠杆：Anthropic计划年底前建成5吉瓦算力；Crusoe融资39亿美元建数据中心与模块化「AI工厂」；无问芯穹与华环电子合作探索国产异构算力基础设施（36氪/TechCrunch/量子位 L2）。"
+   ],
+   "insights": [
+    "编码Agent进入「开源内卷」：Claude Code开内部技术、MiniMax发MIT版CLI、Kimi K3主打编码场景，头部厂商把最赚钱的工具层主动开放，竞争焦点已从模型能力转向生态绑定。",
+    "🟡弱信号：arXiv同日出现链式主题——思维链熵作为可靠性信号、全双工语音「该接话才接话」、Agent工具幻觉的封闭世界消解，模型「知道自己什么时候不可靠」正成为新论文共识（arXiv L1）。"
+   ],
+   "actions": [
+    "把100万token上下文 + prompt缓存作为多文档工作流的低成本方案实测一遍：Kimi K3已上线Bedrock，适合拿来验证长文档Agent的费用曲线。",
     "--"
-  ],
-  "tracks": [
-    {
-      "key": "ai_tech",
-      "emoji": "❶",
-      "name": "AI产业技术",
-      "news": [
-        "疑似谷歌下一代旗舰Gemini 4 Pro以「gemini-3.8-flash」之名悄悄现身大模型竞技场，开发者实测称其在编码、智能体、推理领域均超过GPT-6 Astra与Claude Fable 5.1，谷歌半年压舱的底牌提前曝光（36氪热榜 L2）。",
-        "开源与托管双线：月之暗面Kimi K3登陆Amazon Bedrock，提供原生视觉、100万token上下文与prompt缓存；MiniMax Code CLI以MIT协议正式开源；Claude Code把支撑3万Agent运行的重构技术公开（AWS L1/36氪/量子位 L2）。",
-        "算力继续加杠杆：Anthropic计划年底前建成5吉瓦算力；Crusoe融资39亿美元建数据中心与模块化「AI工厂」；无问芯穹与华环电子合作探索国产异构算力基础设施（36氪/TechCrunch/量子位 L2）。"
-      ],
-      "insights": [
-        "编码Agent进入「开源内卷」：Claude Code开内部技术、MiniMax发MIT版CLI、Kimi K3主打编码场景，头部厂商把最赚钱的工具层主动开放，竞争焦点已从模型能力转向生态绑定。",
-        "🟡弱信号：arXiv同日出现链式主题——思维链熵作为可靠性信号、全双工语音「该接话才接话」、Agent工具幻觉的封闭世界消解，模型「知道自己什么时候不可靠」正成为新论文共识（arXiv L1）。"
-      ],
-      "actions": [
-        "把100万token上下文 + prompt缓存作为多文档工作流的低成本方案实测一遍：Kimi K3已上线Bedrock，适合拿来验证长文档Agent的费用曲线。",
-        "--"
-      ]
-    },
-    {
-      "key": "enterprise_ai",
-      "emoji": "❷",
-      "name": "企业AI应用",
-      "news": [
-        "OpenAI晒出两个标杆案例：邮件办公助手Fyxer做出「让人信任的AI执行助理」，Perplexity把端到端系统放心交给GPT-6 Astra，准确率成为核心指标（OpenAI L1）。",
-        "C端新物种：谷歌推出「CC」，一个帮全家安排日程、家务与沟通的家庭管理Agent；国内也出现AI当餐厅「隐形店长」的运营案例，Agent从办公场景延伸进家庭与线下门店（TechCrunch L2/虎嗅 L2）。",
-        "资本与信任信号：Manus独立运营17天后启动5亿美元融资、估值40亿美元，较此前翻倍；Robinhood高管亮相Disrupt谈AI抢金融消费者（TechCrunch L2）。"
-      ],
-      "insights": [
-        "企业级Agent的关键词从「能干活」收敛到「可信任」：Fyxer讲信任、Perplexity讲端到端准确率、餐厅案例讲不打扰人的隐形运营——落地说服成本正在从演示转向验证。",
-        "🟡弱信号：安全机构用Claude在72小时内攻入OpenAI，红队与真实攻击正在同一批工具上赛跑，企业采购Agent时「谁测过它的越狱面」会成为新合规问题（The Verge L3）。"
-      ],
-      "actions": [
-        "把「信任证据链」加进Agent产品的交付物：除了功能演示，主动给出准确率基线、失败案例与人工接管机制，这是对标Fyxer案例最直接的迁移点。",
-        "--"
-      ]
-    },
-    {
-      "key": "content_creation",
-      "emoji": "❸",
-      "name": "内容创作",
-      "news": [
-        "监管划线：广电总局在发布会上披露，微短剧用户超8亿、市场规模破千亿，今年前8个月上线43万部且AI剧占比超九成；官方将扶持真人剧专区，并要求AI剧明确标识（知乎/36氪 L2）。",
-        "创作方法流通：Claude Code团队访谈强调工程师核心是Problem Solving而非记命令；Simon Willison发文讨论「如何与LLM一起写作」，写作协作方法正在被系统化总结（量子位/Simon Willison L2）。",
-        "平台侧上新：Pinterest测试AI重排家居布置的Restyle；Gemini Live音频持续扩展；元宝类产品继续打通文档与录音场景（The Verge L3）。"
-      ],
-      "insights": [
-        "AI剧占比九成不只是产量信号，更是审核压力信号：官方点名「鼓励创新与守住底线并重」，AI内容生产量大但精品率低，真人质感反而被政策与平台共同抬价。",
-        "🟡弱信号：文化产业发展「十五五」规划点名支持具身智能、脑机接口等未来技术在文化产业应用，内容创作的技术叙事正在从「降本增效」升级为「新形态」（36氪 L2）。"
-      ],
-      "actions": [
-        "小红书选题储备「AI短剧九成占比背后：谁在看、谁在赚、谁被劝退」，用监管发布会数据切入，正好呼应真人质感内容的价值主张。",
-        "--"
-      ]
-    }
-  ],
-  "github": [
-    {
-      "repo": "ultraworkers/claw-code",
-      "url": "https://github.com/ultraworkers/claw-code",
-      "stars": "195260",
-      "track": "AI产业技术",
-      "note": "用Agent全程无人工干预开发维护的Rust博物馆展品项目，展示无人值守编码的上限",
-      "why": "可对照自己的Agent自动化流程，看完全无人值守长什么样"
-    },
-    {
-      "repo": "VoltAgent/awesome-design-md",
-      "url": "https://github.com/VoltAgent/awesome-design-md",
-      "stars": "116553",
-      "track": "内容创作",
-      "note": "收录主流品牌设计系统的DESIGN.md文件，丢给编码Agent即可生成风格匹配的UI",
-      "why": "做小红书封面与信息卡时，可以直接借用成套设计规范喂给Agent"
-    },
-    {
-      "repo": "nashsu/llm_wiki",
-      "url": "https://github.com/nashsu/llm_wiki",
-      "stars": "19725",
-      "track": "企业AI应用",
-      "note": "桌面端工具，把文档自动建成持续维护、互相链接的知识库Wiki，而非一次性RAG问答",
-      "why": "适合把日报、素材与选题池沉淀成个人长期知识库"
-    }
-  ],
-  "reading": [
-    {
-      "title": "How Fyxer built an AI executive assistant people trust",
-      "url": "https://openai.com/index/fyxer",
-      "source": "",
-      "reason": "邮件办公AI助理赢得用户信任的完整复盘。为什么值得关注：Agent产品从演示到信任的证据链方法，可直接迁移到任何AI工具落地。"
-    },
-    {
-      "title": "The Rise of the Forward Deployed Engineer — and How To Do the Job Right",
-      "url": "https://www.latent.space/p/forward-deployed-engineer",
-      "source": "",
-      "reason": "Palantir出身的创业者谈FDE岗位方法论。为什么值得关注：企业AI落地最值钱的岗位画像，与面试准备直接对口。"
-    },
-    {
-      "title": "Chain-of-Thought Entropy as a Reliability Signal: A Preregistered Reproduction",
-      "url": "https://arxiv.org",
-      "source": "",
-      "reason": "用思维链熵作为模型可靠性信号的预注册复现。为什么值得关注：「模型知道自己不可靠」的工程化路径，Agent监控的学术底层。"
-    }
-  ],
-  "consensus": {
-    "text": "编码 Agent 的工具层正在全面开放化。旗舰模型提前泄出、大厂把多 Agent 托管能力开放出来、开源派用最宽松协议交出命令行工具、云平台把第三方编码模型请进自家货架——四件事方向一致：竞争已从「谁的模型强」移到「谁能让开发者把工作流搬进自己的生态」。",
-    "quotes": [
-      "Gemini 4 Pro现身竞技场，编码与智能体全面领先（36氪）",
-      "Claude Code大重构开放内部Agent管理技术（量子位）",
-      "MiniMax Code CLI v0.4.12以MIT协议开源（36氪）",
-      "Kimi K3上架Bedrock，主打编码与知识工作（AWS）"
-    ]
+   ]
   },
-  "division": {
-    "text": "AI 内容的量与质出现了政策级对撞。产业一方看到的是短剧上线量的爆发式增长、AI 生成内容占据大头，把 AI 创作当成降本增效的新空间；监管与平台一方则强调权益保护与内容质量，用专区与真金白银扶持真人质感创作。双方面对的是同一个市场，分歧在规模扩张与精品底线谁优先。",
-    "quotes": [
-      "前8个月上线微短剧43万部，AI剧占比超九成（知乎/36氪）",
-      "广电总局称要大力扶持真人剧、设专区（知乎）",
-      "AI剧被打标，权益保护与内容质量风险被点名（知乎）"
-    ]
+  {
+   "key": "enterprise_ai",
+   "emoji": "❷",
+   "name": "企业AI应用",
+   "news": [
+    "OpenAI晒出两个标杆案例：邮件办公助手Fyxer做出「让人信任的AI执行助理」，Perplexity把端到端系统放心交给GPT-6 Astra，准确率成为核心指标（OpenAI L1）。",
+    "C端新物种：谷歌推出「CC」，一个帮全家安排日程、家务与沟通的家庭管理Agent；国内也出现AI当餐厅「隐形店长」的运营案例，Agent从办公场景延伸进家庭与线下门店（TechCrunch L2/虎嗅 L2）。",
+    "资本与信任信号：Manus独立运营17天后启动5亿美元融资、估值40亿美元，较此前翻倍；Robinhood高管亮相Disrupt谈AI抢金融消费者（TechCrunch L2）。"
+   ],
+   "insights": [
+    "企业级Agent的关键词从「能干活」收敛到「可信任」：Fyxer讲信任、Perplexity讲端到端准确率、餐厅案例讲不打扰人的隐形运营——落地说服成本正在从演示转向验证。",
+    "🟡弱信号：安全机构用Claude在72小时内攻入OpenAI，红队与真实攻击正在同一批工具上赛跑，企业采购Agent时「谁测过它的越狱面」会成为新合规问题（The Verge L3）。"
+   ],
+   "actions": [
+    "把「信任证据链」加进Agent产品的交付物：除了功能演示，主动给出准确率基线、失败案例与人工接管机制，这是对标Fyxer案例最直接的迁移点。",
+    "--"
+   ]
   },
-  "ai_generated": true,
-  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-20T18:31"
+  {
+   "key": "content_creation",
+   "emoji": "❸",
+   "name": "内容创作",
+   "news": [
+    "监管划线：广电总局在发布会上披露，微短剧用户超8亿、市场规模破千亿，今年前8个月上线43万部且AI剧占比超九成；官方将扶持真人剧专区，并要求AI剧明确标识（知乎/36氪 L2）。",
+    "创作方法流通：Claude Code团队访谈强调工程师核心是Problem Solving而非记命令；Simon Willison发文讨论「如何与LLM一起写作」，写作协作方法正在被系统化总结（量子位/Simon Willison L2）。",
+    "平台侧上新：Pinterest测试AI重排家居布置的Restyle；Gemini Live音频持续扩展；元宝类产品继续打通文档与录音场景（The Verge L3）。"
+   ],
+   "insights": [
+    "AI剧占比九成不只是产量信号，更是审核压力信号：官方点名「鼓励创新与守住底线并重」，AI内容生产量大但精品率低，真人质感反而被政策与平台共同抬价。",
+    "🟡弱信号：文化产业发展「十五五」规划点名支持具身智能、脑机接口等未来技术在文化产业应用，内容创作的技术叙事正在从「降本增效」升级为「新形态」（36氪 L2）。"
+   ],
+   "actions": [
+    "小红书选题储备「AI短剧九成占比背后：谁在看、谁在赚、谁被劝退」，用监管发布会数据切入，正好呼应真人质感内容的价值主张。",
+    "--"
+   ]
+  }
+ ],
+ "github": [
+  {
+   "repo": "ultraworkers/claw-code",
+   "url": "https://github.com/ultraworkers/claw-code",
+   "stars": "195260",
+   "track": "AI产业技术",
+   "note": "用Agent全程无人工干预开发维护的Rust博物馆展品项目，展示无人值守编码的上限",
+   "why": "可对照自己的Agent自动化流程，看完全无人值守长什么样"
+  },
+  {
+   "repo": "VoltAgent/awesome-design-md",
+   "url": "https://github.com/VoltAgent/awesome-design-md",
+   "stars": "116553",
+   "track": "内容创作",
+   "note": "收录主流品牌设计系统的DESIGN.md文件，丢给编码Agent即可生成风格匹配的UI",
+   "why": "做小红书封面与信息卡时，可以直接借用成套设计规范喂给Agent"
+  },
+  {
+   "repo": "nashsu/llm_wiki",
+   "url": "https://github.com/nashsu/llm_wiki",
+   "stars": "19725",
+   "track": "企业AI应用",
+   "note": "桌面端工具，把文档自动建成持续维护、互相链接的知识库Wiki，而非一次性RAG问答",
+   "why": "适合把日报、素材与选题池沉淀成个人长期知识库"
+  }
+ ],
+ "reading": [
+  {
+   "title": "How Fyxer built an AI executive assistant people trust",
+   "url": "https://openai.com/index/fyxer",
+   "source": "",
+   "reason": "邮件办公AI助理赢得用户信任的完整复盘。为什么值得关注：Agent产品从演示到信任的证据链方法，可直接迁移到任何AI工具落地。"
+  },
+  {
+   "title": "The Rise of the Forward Deployed Engineer — and How To Do the Job Right",
+   "url": "https://www.latent.space/p/forward-deployed-engineer",
+   "source": "",
+   "reason": "Palantir出身的创业者谈FDE岗位方法论。为什么值得关注：企业AI落地最值钱的岗位画像，与面试准备直接对口。"
+  },
+  {
+   "title": "Chain-of-Thought Entropy as a Reliability Signal: A Preregistered Reproduction",
+   "url": "https://arxiv.org",
+   "source": "",
+   "reason": "用思维链熵作为模型可靠性信号的预注册复现。为什么值得关注：「模型知道自己不可靠」的工程化路径，Agent监控的学术底层。"
+  }
+ ],
+ "consensus": {
+  "text": "编码 Agent 的工具层正在全面开放化。旗舰模型提前泄出、大厂把多 Agent 托管能力开放出来、开源派用最宽松协议交出命令行工具、云平台把第三方编码模型请进自家货架——四件事方向一致：竞争已从「谁的模型强」移到「谁能让开发者把工作流搬进自己的生态」。",
+  "quotes": [
+   "Gemini 4 Pro现身竞技场，编码与智能体全面领先（36氪）",
+   "Claude Code大重构开放内部Agent管理技术（量子位）",
+   "MiniMax Code CLI v0.4.12以MIT协议开源（36氪）",
+   "Kimi K3上架Bedrock，主打编码与知识工作（AWS）"
+  ]
+ },
+ "division": {
+  "text": "AI 内容的量与质出现了政策级对撞。产业一方看到的是短剧上线量的爆发式增长、AI 生成内容占据大头，把 AI 创作当成降本增效的新空间；监管与平台一方则强调权益保护与内容质量，用专区与真金白银扶持真人质感创作。双方面对的是同一个市场，分歧在规模扩张与精品底线谁优先。",
+  "quotes": [
+   "前8个月上线微短剧43万部，AI剧占比超九成（知乎/36氪）",
+   "广电总局称要大力扶持真人剧、设专区（知乎）",
+   "AI剧被打标，权益保护与内容质量风险被点名（知乎）"
+  ]
+ },
+ "ai_generated": true,
+ "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+ "generated_at": "2026-09-20T18:31"
 }

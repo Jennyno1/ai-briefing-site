@@ -1,137 +1,137 @@
 {
-  "date": "2026-09-21",
-  "format": "summary",
-  "points": [
-    "OpenAI 与微软被解封法院文件披露：内部早已预警抓取数据会引发网络「厄运循环」，累计现金消耗预计到2030年底达2800亿美元。",
-    "剪映打破AI生视频与AI剪辑的墙：Hub加大 Assist（剪映Hub与剪映助手）上线，创作与剪辑进入同一工作流。",
-    "华为首发企业AI白皮书，直指「AI让员工更快了，但企业整体收益没跟上」，国内企业AI落地开始从工具转向组织考核。",
+ "date": "2026-09-21",
+ "format": "summary",
+ "points": [
+  "OpenAI 与微软被解封法院文件披露：内部早已预警抓取数据会引发网络「厄运循环」，累计现金消耗预计到2030年底达2800亿美元。",
+  "剪映打破AI生视频与AI剪辑的墙：Hub加大 Assist（剪映Hub与剪映助手）上线，创作与剪辑进入同一工作流。",
+  "华为首发企业AI白皮书，直指「AI让员工更快了，但企业整体收益没跟上」，国内企业AI落地开始从工具转向组织考核。",
+  "--"
+ ],
+ "tracks": [
+  {
+   "key": "ai_tech",
+   "emoji": "❶",
+   "name": "AI产业技术",
+   "news": [
+    "Kimi K3 登陆 Amazon Bedrock：开放权重、原生视觉、百万 token 上下文并支持显式 prompt 缓存，成为生产力与编码场景新的可租用选项（AWS L1）。",
+    "APUS 开源国内首批 Jev「系统一」复现：独立实现秒级决策/分类/路由的跨平台开源项目，开源复现节奏从周级进入天级（量子位 L2）。",
+    "一张 3090 跑企业本地AI办公：全栈国产模型方案把智能问答与会务总结搬进内网，中国电信切入企业级推理托管（量子位 L2）。"
+   ],
+   "insights": [
+    "世界模型公司集体「留一手」：融资储备充足、话题热度高，但从创始人到数据供应商都说不清实际在交付什么，叙事与交付的落差在扩大（TechCrunch L2）。",
+    "ICLR 2027 摘要投稿量已超历年总和、预计突破 6 万，同行评议压力激增；同期特朗普宣布组建「AI Force」并重提AI更名，监管周期被政治周期重塑（知乎 L2/The Verge L3/TechCrunch L2）。"
+   ],
+   "actions": [
+    "用「3090能跑」做本季度 AI 采购的默认预算线：先在本地完成小模型试点，再把要升级到云端大模型的场景单独写清理由，避免默认上云的隐性成本。",
     "--"
-  ],
-  "tracks": [
-    {
-      "key": "ai_tech",
-      "emoji": "❶",
-      "name": "AI产业技术",
-      "news": [
-        "Kimi K3 登陆 Amazon Bedrock：开放权重、原生视觉、百万 token 上下文并支持显式 prompt 缓存，成为生产力与编码场景新的可租用选项（AWS L1）。",
-        "APUS 开源国内首批 Jev「系统一」复现：独立实现秒级决策/分类/路由的跨平台开源项目，开源复现节奏从周级进入天级（量子位 L2）。",
-        "一张 3090 跑企业本地AI办公：全栈国产模型方案把智能问答与会务总结搬进内网，中国电信切入企业级推理托管（量子位 L2）。"
-      ],
-      "insights": [
-        "世界模型公司集体「留一手」：融资储备充足、话题热度高，但从创始人到数据供应商都说不清实际在交付什么，叙事与交付的落差在扩大（TechCrunch L2）。",
-        "ICLR 2027 摘要投稿量已超历年总和、预计突破 6 万，同行评议压力激增；同期特朗普宣布组建「AI Force」并重提AI更名，监管周期被政治周期重塑（知乎 L2/The Verge L3/TechCrunch L2）。"
-      ],
-      "actions": [
-        "用「3090能跑」做本季度 AI 采购的默认预算线：先在本地完成小模型试点，再把要升级到云端大模型的场景单独写清理由，避免默认上云的隐性成本。",
-        "--"
-      ]
-    },
-    {
-      "key": "enterprise_ai",
-      "emoji": "❷",
-      "name": "企业AI应用",
-      "news": [
-        "美团到店餐饮产业大会披露打法：以「智能掌柜」与妙手 AI 工作台搭行业共创场景，榜单/预订/点餐全链路升级，平台把 AI 能力当商家经营基建售卖（36氪 L2）。",
-        "中国网络空间安全大会发布《网络安全人才实战能力报告-AI赋能篇》：AI进入业务深水区后，攻防两侧的人才结构同步补课（量子位 L2）。",
-        "智谱 MaaS 上线数据不留存机制：企业可申请开通调用即清零，Batch/File 类持久化 API 除外，国内云厂商隐私口径开始向欧标靠拢（IT之家 L3）。"
-      ],
-      "insights": [
-        "解封文件显示 OpenAI 与微软内部文档早就用「厄运循环」「最大盗窃」形容自家爬取行为，面向专利局的话术与内部认知完全相反（The Verge L3）。",
-        "Flock 以买断式离职缩编，暖化措辞的背后是AI公司同样进入人效优先周期（TechCrunch L2）。"
-      ],
-      "actions": [
-        "把「数据不留存」纳入选型清单：企业接入国内大模型平台时，优先签可配置留存策略的服务商，敏感场景先锁定调用即清零。",
-        "--"
-      ]
-    },
-    {
-      "key": "content_creation",
-      "emoji": "❸",
-      "name": "内容创作",
-      "news": [
-        "剪映 Hub 与剪映助手上壁：生视频直接进剪辑时间线，字节在正面卡位快手与 OpenAI 的创作管线（量子位 L2）。",
-        "ScrollEd 把教科书做成刷视频流：图文+音频+随刷问答，将 TikTok 交互范式移植到学习场景（TechCrunch L2）。",
-        "Vocci 发布会记戒指，249 美元把速记硬件从手机挪到手上；AI虚拟艺人 Tilly 巡演持续翻车，采访中一度切到中文（TechCrunch L2）。"
-      ],
-      "insights": [
-        "内容工具的竞争焦点从「生成质量」转向「管线一体化」：生成、剪辑、发布被压进同一个入口，单点工具的空间被挤压（量子位 L2）。"
-      ],
-      "actions": [
-        "选题「AI剪辑工具三强对比」：剪映助手、CapCut 国际版、通用剪辑Agent 各自的工作流实测，切入工具交界处的决策焦虑。",
-        "--"
-      ]
-    }
-  ],
-  "github": [
-    {
-      "repo": "anthropics/claude-code",
-      "url": "https://github.com/anthropics/claude-code",
-      "stars": "147",
-      "track": "AI产业技术",
-      "note": "Anthropic 官方命令行AI编程助手，聚合终端内完成编码任务",
-      "why": "要终端里跑Agent做真实交付，这个是最直接的参照实现"
-    },
-    {
-      "repo": "langgenius/dify",
-      "url": "https://github.com/langgenius/dify",
-      "stars": "156",
-      "track": "企业AI应用",
-      "note": "可视化 LLM 应用开发平台，工作流编排与知识库开箱即用",
-      "why": "企业内部从0搭第一个AI应用时最省决策成本的平台"
-    },
-    {
-      "repo": "bytedance/deer-flow",
-      "url": "https://github.com/bytedance/deer-flow",
-      "stars": "82",
-      "track": "内容创作",
-      "note": "字节开源的深度研究与内容生成框架，多步骤产出长图文",
-      "why": "把选题调研到成稿串成一条流水线的现成底座"
-    }
-  ],
-  "reading": [
-    {
-      "title": "World model companies are keeping a lot of secrets",
-      "url": "https://techcrunch.com/2026/09/20/world-model-companies-are-keeping-a-lot-of-secrets/",
-      "source": "",
-      "reason": "世界模型赛道冠了一层神秘的采访调查。为什么值得关注：识别叙事投资与真实交付的差距是本季度最实用的判断力。"
-    },
-    {
-      "title": "OpenAI and Microsoft knew they were starting a ‘doom loop’ for the web",
-      "url": "https://www.theverge.com/2026/09/20/openai-microsoft-doom-loop",
-      "source": "",
-      "reason": "解封法院文件里的内部认知。为什么值得关注：企业内容资产的被爬边界与法务口径直接相关。"
-    },
-    {
-      "title": "华为首发企业AI白皮书：AI让员工更快了，怎样让整个企业受益？",
-      "url": "https://www.qbitai.com/",
-      "source": "",
-      "reason": "从个体提效到组织收益的国内落地框架。为什么值得关注：CIO视角的白皮书，直接对应企业AI考核口径设计。"
-    },
-    {
-      "title": "Can Skills Learned in Games Transfer to Real-World Work?",
-      "url": "https://www.latent.space/",
-      "source": "",
-      "reason": "用游戏训练技能迁移的新研究。为什么值得关注：Agent训练方式的新思路，训练设计比数据量更关键。"
-    }
-  ],
-  "consensus": {
-    "text": "企业侧共识是「AI必须可托管、可审计」：云上开放权重模型与应用平台齐齐登场，数据不留存机制与第三方评估标准同步出现，交付合规成为采购的前置条件。",
-    "quotes": [
-      "智谱 MaaS 上线数据内容不留存机制（IT之家）",
-      "Kimi K3 开放权重模型登陆 Amazon Bedrock（AWS）",
-      "《网络安全人才实战能力报告-AI赋能篇》人工与AI安全补课并进（量子位）"
-    ]
+   ]
   },
-  "division": {
-    "text": "分歧在于AI加速的代价算在谁头上：法院文件显示内部早已预警爬取对行业的破坏，而监管端在推进限速，产业端仍在承诺更快的洒钱式扩张——同一时间线上两种世界观完全对撞。",
-    "quotes": [
-      "OpenAI 与微软内部文件预警网络「厄运循环」（The Verge）",
-      "OpenAI 预计到2030年底消耗近2800亿美元现金（36氪）",
-      "特朗普宣布组建「AI Force」反对监管限速（TechCrunch）",
-      "弗吉尼亚州设AI工作组并约束数据中心审批（The Verge）"
-    ]
+  {
+   "key": "enterprise_ai",
+   "emoji": "❷",
+   "name": "企业AI应用",
+   "news": [
+    "美团到店餐饮产业大会披露打法：以「智能掌柜」与妙手 AI 工作台搭行业共创场景，榜单/预订/点餐全链路升级，平台把 AI 能力当商家经营基建售卖（36氪 L2）。",
+    "中国网络空间安全大会发布《网络安全人才实战能力报告-AI赋能篇》：AI进入业务深水区后，攻防两侧的人才结构同步补课（量子位 L2）。",
+    "智谱 MaaS 上线数据不留存机制：企业可申请开通调用即清零，Batch/File 类持久化 API 除外，国内云厂商隐私口径开始向欧标靠拢（IT之家 L3）。"
+   ],
+   "insights": [
+    "解封文件显示 OpenAI 与微软内部文档早就用「厄运循环」「最大盗窃」形容自家爬取行为，面向专利局的话术与内部认知完全相反（The Verge L3）。",
+    "Flock 以买断式离职缩编，暖化措辞的背后是AI公司同样进入人效优先周期（TechCrunch L2）。"
+   ],
+   "actions": [
+    "把「数据不留存」纳入选型清单：企业接入国内大模型平台时，优先签可配置留存策略的服务商，敏感场景先锁定调用即清零。",
+    "--"
+   ]
   },
-  "ai_generated": true,
-  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T07:10"
+  {
+   "key": "content_creation",
+   "emoji": "❸",
+   "name": "内容创作",
+   "news": [
+    "剪映 Hub 与剪映助手上壁：生视频直接进剪辑时间线，字节在正面卡位快手与 OpenAI 的创作管线（量子位 L2）。",
+    "ScrollEd 把教科书做成刷视频流：图文+音频+随刷问答，将 TikTok 交互范式移植到学习场景（TechCrunch L2）。",
+    "Vocci 发布会记戒指，249 美元把速记硬件从手机挪到手上；AI虚拟艺人 Tilly 巡演持续翻车，采访中一度切到中文（TechCrunch L2）。"
+   ],
+   "insights": [
+    "内容工具的竞争焦点从「生成质量」转向「管线一体化」：生成、剪辑、发布被压进同一个入口，单点工具的空间被挤压（量子位 L2）。"
+   ],
+   "actions": [
+    "选题「AI剪辑工具三强对比」：剪映助手、CapCut 国际版、通用剪辑Agent 各自的工作流实测，切入工具交界处的决策焦虑。",
+    "--"
+   ]
+  }
+ ],
+ "github": [
+  {
+   "repo": "anthropics/claude-code",
+   "url": "https://github.com/anthropics/claude-code",
+   "stars": "147",
+   "track": "AI产业技术",
+   "note": "Anthropic 官方命令行AI编程助手，聚合终端内完成编码任务",
+   "why": "要终端里跑Agent做真实交付，这个是最直接的参照实现"
+  },
+  {
+   "repo": "langgenius/dify",
+   "url": "https://github.com/langgenius/dify",
+   "stars": "156",
+   "track": "企业AI应用",
+   "note": "可视化 LLM 应用开发平台，工作流编排与知识库开箱即用",
+   "why": "企业内部从0搭第一个AI应用时最省决策成本的平台"
+  },
+  {
+   "repo": "bytedance/deer-flow",
+   "url": "https://github.com/bytedance/deer-flow",
+   "stars": "82",
+   "track": "内容创作",
+   "note": "字节开源的深度研究与内容生成框架，多步骤产出长图文",
+   "why": "把选题调研到成稿串成一条流水线的现成底座"
+  }
+ ],
+ "reading": [
+  {
+   "title": "World model companies are keeping a lot of secrets",
+   "url": "https://techcrunch.com/2026/09/20/world-model-companies-are-keeping-a-lot-of-secrets/",
+   "source": "",
+   "reason": "世界模型赛道冠了一层神秘的采访调查。为什么值得关注：识别叙事投资与真实交付的差距是本季度最实用的判断力。"
+  },
+  {
+   "title": "OpenAI and Microsoft knew they were starting a ‘doom loop’ for the web",
+   "url": "https://www.theverge.com/2026/09/20/openai-microsoft-doom-loop",
+   "source": "",
+   "reason": "解封法院文件里的内部认知。为什么值得关注：企业内容资产的被爬边界与法务口径直接相关。"
+  },
+  {
+   "title": "华为首发企业AI白皮书：AI让员工更快了，怎样让整个企业受益？",
+   "url": "https://www.qbitai.com/",
+   "source": "",
+   "reason": "从个体提效到组织收益的国内落地框架。为什么值得关注：CIO视角的白皮书，直接对应企业AI考核口径设计。"
+  },
+  {
+   "title": "Can Skills Learned in Games Transfer to Real-World Work?",
+   "url": "https://www.latent.space/",
+   "source": "",
+   "reason": "用游戏训练技能迁移的新研究。为什么值得关注：Agent训练方式的新思路，训练设计比数据量更关键。"
+  }
+ ],
+ "consensus": {
+  "text": "企业侧共识是「AI必须可托管、可审计」：云上开放权重模型与应用平台齐齐登场，数据不留存机制与第三方评估标准同步出现，交付合规成为采购的前置条件。",
+  "quotes": [
+   "智谱 MaaS 上线数据内容不留存机制（IT之家）",
+   "Kimi K3 开放权重模型登陆 Amazon Bedrock（AWS）",
+   "《网络安全人才实战能力报告-AI赋能篇》人工与AI安全补课并进（量子位）"
+  ]
+ },
+ "division": {
+  "text": "分歧在于AI加速的代价算在谁头上：法院文件显示内部早已预警爬取对行业的破坏，而监管端在推进限速，产业端仍在承诺更快的洒钱式扩张——同一时间线上两种世界观完全对撞。",
+  "quotes": [
+   "OpenAI 与微软内部文件预警网络「厄运循环」（The Verge）",
+   "OpenAI 预计到2030年底消耗近2800亿美元现金（36氪）",
+   "特朗普宣布组建「AI Force」反对监管限速（TechCrunch）",
+   "弗吉尼亚州设AI工作组并约束数据中心审批（The Verge）"
+  ]
+ },
+ "ai_generated": true,
+ "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+ "generated_at": "2026-09-21T07:10"
 }

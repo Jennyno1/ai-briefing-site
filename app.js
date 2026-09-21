@@ -12,10 +12,22 @@
 
   var datesEl = document.getElementById('dates');
   var briefingEl = document.getElementById('briefing');
-  var statDays = document.getElementById('stat-days');
   var railCount = document.getElementById('rail-count');
   var footerMeta = document.getElementById('footer-meta');
   var themeBtn = document.getElementById('theme-toggle');
+
+  var WEEK = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+
+  // 报头日期：ISO → 「2026年8月14日」+ 星期（衬线报头的核心信息）
+  function cnDate(iso) {
+    var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(iso || ''));
+    if (!m) return { cn: String(iso || ''), week: '' };
+    var dt = new Date(Date.UTC(+m[1], +m[2] - 1, +m[3]));
+    return {
+      cn: +m[1] + '年' + +m[2] + '月' + +m[3] + '日',
+      week: WEEK[dt.getUTCDay()] || ''
+    };
+  }
 
   var MODULE_LABELS = {
     points: '今日要点',
@@ -131,7 +143,10 @@
     var tracks = Array.isArray(data.tracks) ? data.tracks : [];
 
     var html = '<div class="brief-head">';
-    html += '<div class="date">' + esc(data.date || '') + '</div>';
+    var dd = cnDate(data.date);
+    html += '<div class="date"><span class="date-cn">' + esc(dd.cn) + '</span>' +
+      (dd.week ? '<span class="date-week">' + esc(dd.week) + '</span>' : '') + '</div>';
+    html += '<div class="lanes" aria-hidden="true"><i></i><i></i><i></i></div>';
     var metaBits = [];
     if (data.version) metaBits.push('<span class="badge">' + esc(data.version) + '</span>');
     html += '<div class="meta">' + metaBits.join('') + '</div>';
@@ -160,7 +175,11 @@
     html += githubHtml(data.github);
 
     briefingEl.innerHTML = html;
-    document.title = (data.date ? data.date + ' · ' : '') + 'AI 简报';
+    document.title = (dd.cn ? dd.cn + ' · ' : '') + 'AI 简报';
+    // 换期入场：整块一次（不做逐段上浮），尊重 reduced-motion（由 CSS 关闭）
+    briefingEl.classList.remove('enter');
+    void briefingEl.offsetWidth;
+    briefingEl.classList.add('enter');
   }
 
   function renderDates(dates, activeDate, gaps) {
@@ -228,7 +247,6 @@
       return;
     }
 
-    if (statDays) statDays.textContent = dates.length + ' 天';
     if (railCount) railCount.textContent = dates.length + ' 期';
     if (footerMeta) footerMeta.textContent = ' 数据区间：' + dates[dates.length - 1] + ' → ' + dates[0] + '。';
 

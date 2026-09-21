@@ -1,123 +1,123 @@
 {
-  "date": "2026-08-11",
-  "format": "summary",
-  "points": [
-    "OpenAI连发两弹：GPT Image生图碾压DALL-E 2、GPT-6被曝10万亿参数8月发布，AI能力边界在生图和推理两个方向同时突破",
-    "DeepMind四巨头同日离职，高层大换血；Codex与Claude Code负责人公开互撕——Agent赛道竞争烈度达到新高度",
-    "Cloudflare推出专为AI Agent设计的浏览器Kitesurf，Rippling在烧了数百万AI费后自建ROI工具——企业AI从\"能不能用\"进入\"怎么算账\""
-  ],
-  "tracks": [
-    {
-      "key": "ai_tech",
-      "emoji": "❶",
-      "name": "AI产业技术",
-      "news": [
-        "OpenAI被曝GPT-6即将发布（36氪报道），传10万亿参数、8月强行推出。同时OpenAI官方博客确认GPT-5.6 Sol迎来升级并向免费用户开放GPT-5.6 Luna——模型迭代节奏明显加速。",
-        "DeepMind高层大换血：Jeff Dean、Sanjay Ghemawat、Oriol Vinyals、Quoc Le四位核心人物同日离职，Demis Hassabis转任Chair、Koray Kavukcuoglu升任SVP。Latent Space直问\"GDM到底发生了什么？\"",
-        "AI圈上演神级互撕：Codex和Claude Code两位负责人在社交媒体公开对喷。同时36氪报道\"马斯克要让Cursor消失\"——Agent赛道竞争烈度前所未有。",
-        "宇树科技今日申购，中一签或赚20万元。具身智能赛道进入二级市场定价阶段，200亿热钱涌入灵巧手等细分方向。"
-      ],
-      "insights": [
-        "GPT-6的\"10万亿参数+强行发布\"叙事与OpenAI官方主动透露Astra因安全原因暂缓形成对比——一边是商业竞争压力下的加速，一边是安全考量的刹车，两条线在OpenAI内部正在激烈博弈。",
-        "DeepMind四人同日离职不是偶然。结合此前OpenAI Astra暂缓、Anthropic安全政策强化，头部AI实验室正在经历从\"研究驱动\"到\"产品+安全双驱动\"的组织转型阵痛。"
-      ],
-      "actions": [
-        "GPT-6如果8月发布，提前规划模型迁移方案：评估现有GPT-5.6 Sol工作流中哪些环节值得升级到GPT-6（推理密集型任务优先），哪些环节维持现有模型（成本敏感型任务）。",
-        "宇树科技上市意味着具身智能从\"概念炒作\"进入\"有市值锚定\"的阶段。关注其上市后首周股价走势，这是判断市场对具身智能赛道真实信心的关键指标——如果破发，整个赛道的融资节奏都会受影响。"
-      ]
-    },
-    {
-      "key": "enterprise_ai",
-      "emoji": "❷",
-      "name": "企业AI应用",
-      "news": [
-        "Cloudflare推出Kitesurf浏览器，专为AI Agent设计。这不是给人用的浏览器，而是给Agent用的——Agent可以像人一样浏览网页、填表、点击，但完全程序化控制。",
-        "Rippling在几个月内烧掉数百万美元AI费用后，自建了员工AI ROI计算工具，追踪每个员工的AI用量和产出比。此前Uber设1500美元/人/月上限，企业AI成本管控从\"建议\"变成\"刚需\"。",
-        "ChatGPT Business推出Premium seats付费席位，企业版从\"团队订阅\"走向\"分层定价\"，AI办公工具的企业付费模型进一步成熟。"
-      ],
-      "insights": [
-        "Kitesurf的出现标志着Agent基础设施从\"帮Agent调用API\"升级到\"帮Agent像人一样操作网页\"。对于企业场景中大量只有Web界面没有API的遗留系统，Agent浏览器是打通最后一公里的关键。",
-        "Rippling自建ROI工具是亚马逊180万美元事故的镜像案例——同样是烧钱后被倒逼做成本管控，但Rippling选择把工具产品化而不是内部消化。企业AI成本管控正在成为一个独立的产品品类。"
-      ],
-      "actions": [
-        "企业AI部署中，将\"Agent浏览器\"纳入技术选型视野。如果企业内部有大量Web界面的遗留系统无法通过API集成，Kitesurf类工具可能是比逐个开发API更快的路径。",
-        "参考Rippling的ROI追踪思路，在自己的Hermes Agent使用统计中增加\"成本/任务\"维度，不只看token消耗量，更要算每个任务的实际花费——这是给领导汇报AI投入产出比的基础数据。"
-      ]
-    },
-    {
-      "key": "content_creation",
-      "emoji": "❸",
-      "name": "内容创作",
-      "news": [
-        "OpenAI发布全新GPT Image，碾压DALL-E Image 2，塑料感终于消失。原生集成ChatGPT，无需切换工具即可生成高质量图片，对AI内容创作者而言生图门槛进一步降低。",
-        "OpenAI收购演示文稿初创公司NextSlide，AI内容创作工具链从文字/图片/代码向PPT场景延伸，补齐办公创作全品类覆盖。",
-        "Meoo秒悟团队版全量上线，接入Qwen-3.8-Max，即日起可直接订阅。国内AI协作工具在模型能力和团队协作两个维度同时升级。"
-      ],
-      "insights": [
-        "GPT Image的\"塑料感消失\"不仅是画质提升，更意味着AI生图从\"能用\"进入\"可商用\"阶段。小红书封面/笔记配图的质量天花板被系统性抬高，纯手工作图的内容创作者面临代际差距。",
-        "OpenAI收购NextSlide + 量子位报道\"PDF当死，ARA该立\"，指向同一个趋势：文档/演示类内容的AI原生生产正在系统化。未来一周的内容创作工作流可能需要重新设计。"
-      ],
-      "actions": [
-        "立即用ChatGPT测试GPT Image生图能力，对比当前Seedream出图效果，评估是否可作为小红书封面主力工具。重点关注：文字渲染准确度（对中文标题封面至关重要）、风格一致性、生成速度。",
-        "关注NextSlide被收购后的产品整合节奏。如果OpenAI在ChatGPT Work中嵌入PPT生成能力，提前储备\"AI生成演示文稿\"的工作流模板——这可以直接复用到企业IT培训场景。"
-      ]
-    }
-  ],
-  "github": [
-    {
-      "repo": "Nutlope/hallmark",
-      "url": "https://github.com/Nutlope/hallmark",
-      "stars": "23.5K",
-      "track": "内容创作",
-      "note": "反AI塑料感设计Skill，让Claude Code/Cursor/Codex生成的内容摆脱\"一看就是AI做的\"审美",
-      "why": "结合今天GPT Image发布，hallmark提供的设计规范可以直接约束AI生图的风格输出"
-    },
-    {
-      "repo": "iOfficeAI/OfficeCLI",
-      "url": "https://github.com/iOfficeAI/OfficeCLI",
-      "stars": "27.4K",
-      "track": "企业AI应用",
-      "note": "专为AI Agent设计的Office套件，让Agent直接读写Word/Excel/PPT",
-      "why": "结合Kitesurf浏览器，Agent办公的基础设施正在闭环——浏览器+Office+API三件套已就位"
-    },
-    {
-      "repo": "emilkowalski/skills",
-      "url": "https://github.com/emilkowalski/skills",
-      "stars": "28K",
-      "track": "AI产业技术",
-      "note": "设计师和工程师的Skill集合，可复用、可组合的Agent能力模块",
-      "why": "Skill生态的模块化趋势正在加速，这与Hermes的Skill体系设计理念一致"
-    }
-  ],
-  "reading": [
-    {
-      "title": "OpenAI全新GPT Image突袭，碾压Image 2，塑料感终于消失",
-      "url": "https://www.36kr.com/p/3933115490368647",
-      "source": "",
-      "reason": "GPT Image原生集成ChatGPT，生图质量大幅提升，解决了长期困扰AI生图的\"塑料感\"问题。这是AI内容创作工具的标志性升级。"
-    },
-    {
-      "title": "AI圈上演神级互撕，Codex、Claude Code两位负责人公开对喷",
-      "url": "https://www.36kr.com/p/3933059944775041",
-      "source": "",
-      "reason": "Agent赛道两大头部产品负责人公开冲突，折射出AI编程工具市场的竞争烈度。背后是用户心智和开发者生态的争夺战。"
-    },
-    {
-      "title": "Cloudflare launches Kitesurf, a browser built for AI agents",
-      "url": "https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-f",
-      "source": "",
-      "reason": "第一个专为AI Agent设计的浏览器。如果说传统浏览器是人机交互的界面，Kitesurf就是Agent与Web交互的界面——这是一个新的基础设施品类。"
-    }
-  ],
-  "consensus": {
-    "text": "",
-    "quotes": []
+ "date": "2026-08-11",
+ "format": "summary",
+ "points": [
+  "OpenAI连发两弹：GPT Image生图碾压DALL-E 2、GPT-6被曝10万亿参数8月发布，AI能力边界在生图和推理两个方向同时突破",
+  "DeepMind四巨头同日离职，高层大换血；Codex与Claude Code负责人公开互撕——Agent赛道竞争烈度达到新高度",
+  "Cloudflare推出专为AI Agent设计的浏览器Kitesurf，Rippling在烧了数百万AI费后自建ROI工具——企业AI从\"能不能用\"进入\"怎么算账\""
+ ],
+ "tracks": [
+  {
+   "key": "ai_tech",
+   "emoji": "❶",
+   "name": "AI产业技术",
+   "news": [
+    "OpenAI被曝GPT-6即将发布（36氪报道），传10万亿参数、8月强行推出。同时OpenAI官方博客确认GPT-5.6 Sol迎来升级并向免费用户开放GPT-5.6 Luna——模型迭代节奏明显加速。",
+    "DeepMind高层大换血：Jeff Dean、Sanjay Ghemawat、Oriol Vinyals、Quoc Le四位核心人物同日离职，Demis Hassabis转任Chair、Koray Kavukcuoglu升任SVP。Latent Space直问\"GDM到底发生了什么？\"",
+    "AI圈上演神级互撕：Codex和Claude Code两位负责人在社交媒体公开对喷。同时36氪报道\"马斯克要让Cursor消失\"——Agent赛道竞争烈度前所未有。",
+    "宇树科技今日申购，中一签或赚20万元。具身智能赛道进入二级市场定价阶段，200亿热钱涌入灵巧手等细分方向。"
+   ],
+   "insights": [
+    "GPT-6的\"10万亿参数+强行发布\"叙事与OpenAI官方主动透露Astra因安全原因暂缓形成对比——一边是商业竞争压力下的加速，一边是安全考量的刹车，两条线在OpenAI内部正在激烈博弈。",
+    "DeepMind四人同日离职不是偶然。结合此前OpenAI Astra暂缓、Anthropic安全政策强化，头部AI实验室正在经历从\"研究驱动\"到\"产品+安全双驱动\"的组织转型阵痛。"
+   ],
+   "actions": [
+    "GPT-6如果8月发布，提前规划模型迁移方案：评估现有GPT-5.6 Sol工作流中哪些环节值得升级到GPT-6（推理密集型任务优先），哪些环节维持现有模型（成本敏感型任务）。",
+    "宇树科技上市意味着具身智能从\"概念炒作\"进入\"有市值锚定\"的阶段。关注其上市后首周股价走势，这是判断市场对具身智能赛道真实信心的关键指标——如果破发，整个赛道的融资节奏都会受影响。"
+   ]
   },
-  "division": {
-    "text": "",
-    "quotes": []
+  {
+   "key": "enterprise_ai",
+   "emoji": "❷",
+   "name": "企业AI应用",
+   "news": [
+    "Cloudflare推出Kitesurf浏览器，专为AI Agent设计。这不是给人用的浏览器，而是给Agent用的——Agent可以像人一样浏览网页、填表、点击，但完全程序化控制。",
+    "Rippling在几个月内烧掉数百万美元AI费用后，自建了员工AI ROI计算工具，追踪每个员工的AI用量和产出比。此前Uber设1500美元/人/月上限，企业AI成本管控从\"建议\"变成\"刚需\"。",
+    "ChatGPT Business推出Premium seats付费席位，企业版从\"团队订阅\"走向\"分层定价\"，AI办公工具的企业付费模型进一步成熟。"
+   ],
+   "insights": [
+    "Kitesurf的出现标志着Agent基础设施从\"帮Agent调用API\"升级到\"帮Agent像人一样操作网页\"。对于企业场景中大量只有Web界面没有API的遗留系统，Agent浏览器是打通最后一公里的关键。",
+    "Rippling自建ROI工具是亚马逊180万美元事故的镜像案例——同样是烧钱后被倒逼做成本管控，但Rippling选择把工具产品化而不是内部消化。企业AI成本管控正在成为一个独立的产品品类。"
+   ],
+   "actions": [
+    "企业AI部署中，将\"Agent浏览器\"纳入技术选型视野。如果企业内部有大量Web界面的遗留系统无法通过API集成，Kitesurf类工具可能是比逐个开发API更快的路径。",
+    "参考Rippling的ROI追踪思路，在自己的Hermes Agent使用统计中增加\"成本/任务\"维度，不只看token消耗量，更要算每个任务的实际花费——这是给领导汇报AI投入产出比的基础数据。"
+   ]
   },
-  "ai_generated": true,
-  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-20T18:31"
+  {
+   "key": "content_creation",
+   "emoji": "❸",
+   "name": "内容创作",
+   "news": [
+    "OpenAI发布全新GPT Image，碾压DALL-E Image 2，塑料感终于消失。原生集成ChatGPT，无需切换工具即可生成高质量图片，对AI内容创作者而言生图门槛进一步降低。",
+    "OpenAI收购演示文稿初创公司NextSlide，AI内容创作工具链从文字/图片/代码向PPT场景延伸，补齐办公创作全品类覆盖。",
+    "Meoo秒悟团队版全量上线，接入Qwen-3.8-Max，即日起可直接订阅。国内AI协作工具在模型能力和团队协作两个维度同时升级。"
+   ],
+   "insights": [
+    "GPT Image的\"塑料感消失\"不仅是画质提升，更意味着AI生图从\"能用\"进入\"可商用\"阶段。小红书封面/笔记配图的质量天花板被系统性抬高，纯手工作图的内容创作者面临代际差距。",
+    "OpenAI收购NextSlide + 量子位报道\"PDF当死，ARA该立\"，指向同一个趋势：文档/演示类内容的AI原生生产正在系统化。未来一周的内容创作工作流可能需要重新设计。"
+   ],
+   "actions": [
+    "立即用ChatGPT测试GPT Image生图能力，对比当前Seedream出图效果，评估是否可作为小红书封面主力工具。重点关注：文字渲染准确度（对中文标题封面至关重要）、风格一致性、生成速度。",
+    "关注NextSlide被收购后的产品整合节奏。如果OpenAI在ChatGPT Work中嵌入PPT生成能力，提前储备\"AI生成演示文稿\"的工作流模板——这可以直接复用到企业IT培训场景。"
+   ]
+  }
+ ],
+ "github": [
+  {
+   "repo": "Nutlope/hallmark",
+   "url": "https://github.com/Nutlope/hallmark",
+   "stars": "23.5K",
+   "track": "内容创作",
+   "note": "反AI塑料感设计Skill，让Claude Code/Cursor/Codex生成的内容摆脱\"一看就是AI做的\"审美",
+   "why": "结合今天GPT Image发布，hallmark提供的设计规范可以直接约束AI生图的风格输出"
+  },
+  {
+   "repo": "iOfficeAI/OfficeCLI",
+   "url": "https://github.com/iOfficeAI/OfficeCLI",
+   "stars": "27.4K",
+   "track": "企业AI应用",
+   "note": "专为AI Agent设计的Office套件，让Agent直接读写Word/Excel/PPT",
+   "why": "结合Kitesurf浏览器，Agent办公的基础设施正在闭环——浏览器+Office+API三件套已就位"
+  },
+  {
+   "repo": "emilkowalski/skills",
+   "url": "https://github.com/emilkowalski/skills",
+   "stars": "28K",
+   "track": "AI产业技术",
+   "note": "设计师和工程师的Skill集合，可复用、可组合的Agent能力模块",
+   "why": "Skill生态的模块化趋势正在加速，这与Hermes的Skill体系设计理念一致"
+  }
+ ],
+ "reading": [
+  {
+   "title": "OpenAI全新GPT Image突袭，碾压Image 2，塑料感终于消失",
+   "url": "https://www.36kr.com/p/3933115490368647",
+   "source": "",
+   "reason": "GPT Image原生集成ChatGPT，生图质量大幅提升，解决了长期困扰AI生图的\"塑料感\"问题。这是AI内容创作工具的标志性升级。"
+  },
+  {
+   "title": "AI圈上演神级互撕，Codex、Claude Code两位负责人公开对喷",
+   "url": "https://www.36kr.com/p/3933059944775041",
+   "source": "",
+   "reason": "Agent赛道两大头部产品负责人公开冲突，折射出AI编程工具市场的竞争烈度。背后是用户心智和开发者生态的争夺战。"
+  },
+  {
+   "title": "Cloudflare launches Kitesurf, a browser built for AI agents",
+   "url": "https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-f",
+   "source": "",
+   "reason": "第一个专为AI Agent设计的浏览器。如果说传统浏览器是人机交互的界面，Kitesurf就是Agent与Web交互的界面——这是一个新的基础设施品类。"
+  }
+ ],
+ "consensus": {
+  "text": "",
+  "quotes": []
+ },
+ "division": {
+  "text": "",
+  "quotes": []
+ },
+ "ai_generated": true,
+ "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+ "generated_at": "2026-09-20T18:31"
 }

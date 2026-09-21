@@ -1,115 +1,115 @@
 {
-  "date": "2026-08-26",
-  "format": "summary",
-  "points": [
-    "AI芯片军备白热化：OpenAI Jalapeño超英伟达GB300 小米发AI芯片全家桶",
-    "AI办公Agent组织化：豆包工作打通飞书 OpenAI推Admin管理插件",
-    "AI创作资本涌入：Stability AI获$76M参投 Gamma收购AI设计公司Lica"
-  ],
-  "tracks": [
-    {
-      "key": "ai_tech",
-      "emoji": "❶",
-      "name": "AI产业技术",
-      "news": [
-        "OpenAI Jalapeño首秀：DeepSeek R1每瓦吞吐量是GB300的1.7倍 计划年底部署",
-        "小米发AI芯片全家桶 英伟达首测Vera Rubin DeepSeek吞吐暴涨30倍",
-        "阿里千问预告明晚开源Qwen3.8-Flash-Next 基于Qwen4架构多模态MoE",
-        "跟踪Jalapeño年底部署后API定价 自研芯片可能降低推理成本"
-      ],
-      "insights": [],
-      "actions": []
-    },
-    {
-      "key": "enterprise_ai",
-      "emoji": "❷",
-      "name": "企业AI应用",
-      "news": [
-        "OpenAI发布ChatGPT Work和Codex Admin插件 管理员可通过对话管理权限",
-        "豆包工作打通飞书后Agent像同事 可读取团队文档/消息/任务/组织关系",
-        "马斯克首次回应收购Cursor事件 承认Grok落后",
-        "如果用飞书可体验豆包工作 重点测试飞书文档生成和群聊总结"
-      ],
-      "insights": [],
-      "actions": []
-    },
-    {
-      "key": "content_creation",
-      "emoji": "❸",
-      "name": "内容创作",
-      "news": [
-        "Stability AI完成$76M Series B 环球音乐/索尼/华纳/EA参投 累计$232M",
-        "Gamma收购AI设计公司Lica建研究实验室 估值$21亿 用户超1亿",
-        "开源8B模型图像质量接近闭源Image 2 小模型能力边界突破",
-        "关注Stability AI工具更新 AI视频工具开放后可用于小红书批量生产"
-      ],
-      "insights": [],
-      "actions": []
-    }
-  ],
-  "github": [
-    {
-      "repo": "harry0703/MoneyPrinterTurbo",
-      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
-      "stars": "116K",
-      "track": "内容创作",
-      "note": "AI大模型+自动化工作流一键生成高清短视频 本周新增9K+星",
-      "why": ""
-    },
-    {
-      "repo": "volcengine/OpenViking",
-      "url": "https://github.com/volcengine/OpenViking",
-      "stars": "33K",
-      "track": "",
-      "note": "字节火山引擎开源Agent上下文数据库 统一记忆/知识RAG/长期存储",
-      "why": ""
-    },
-    {
-      "repo": "TauricResearch/TradingAgents",
-      "url": "https://github.com/TauricResearch/TradingAgents",
-      "stars": "100K",
-      "track": "AI产业技术",
-      "note": "多Agent LLM金融交易框架 模拟研究/分析/决策全流程",
-      "why": ""
-    }
-  ],
-  "reading": [
-    {
-      "title": "实测豆包工作",
-      "url": "https://www.36kr.com/p/3954390879222917",
-      "source": "",
-      "reason": "豆包工作连上飞书后可读取团队文档/消息/任务 交付结果自动写回飞书"
-    },
-    {
-      "title": "Stability AI raises $76M",
-      "url": "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding/",
-      "source": "",
-      "reason": "三大唱片同时投资AI生成公司 内容产业从抵制AI转向拥抱AI"
-    },
-    {
-      "title": "Jalapeño's first results",
-      "url": "https://openai.com/index/jalapeno-first-results",
-      "source": "",
-      "reason": "OpenAI自研推理芯片首秀 DeepSeek R1每瓦吞吐量是GB300的1.7倍"
-    }
-  ],
-  "consensus": {
-    "text": "AI办公从个人效率工具升级为组织级基础设施——嵌入工作流比堆叠新功能更具战略价值",
-    "quotes": [
-      "OpenAI发布ChatGPT Work和Codex的Admin插件（OpenAI官方）",
-      "豆包工作打通飞书后Agent可直接读取团队文档和组织关系（36氪实测）",
-      "Gamma收购AI设计公司Lica建立研究实验室（TechCrunch AI）"
-    ]
+ "date": "2026-08-26",
+ "format": "summary",
+ "points": [
+  "AI芯片军备白热化：OpenAI Jalapeño超英伟达GB300 小米发AI芯片全家桶",
+  "AI办公Agent组织化：豆包工作打通飞书 OpenAI推Admin管理插件",
+  "AI创作资本涌入：Stability AI获$76M参投 Gamma收购AI设计公司Lica"
+ ],
+ "tracks": [
+  {
+   "key": "ai_tech",
+   "emoji": "❶",
+   "name": "AI产业技术",
+   "news": [
+    "OpenAI Jalapeño首秀：DeepSeek R1每瓦吞吐量是GB300的1.7倍 计划年底部署",
+    "小米发AI芯片全家桶 英伟达首测Vera Rubin DeepSeek吞吐暴涨30倍",
+    "阿里千问预告明晚开源Qwen3.8-Flash-Next 基于Qwen4架构多模态MoE",
+    "跟踪Jalapeño年底部署后API定价 自研芯片可能降低推理成本"
+   ],
+   "insights": [],
+   "actions": []
   },
-  "division": {
-    "text": "AI芯片自研vs采购路线之争从成本升级为战略控制权——自研意味着全栈掌控但也意味着巨大前期投入",
-    "quotes": [
-      "OpenAI Jalapeño芯片每瓦吞吐量是GB300的1.7倍（OpenAI官方）",
-      "小米发布AI芯片全家桶覆盖手机/IoT/汽车（36氪热榜）",
-      "英伟达首测Vera Rubin DeepSeek吞吐暴涨30倍（36氪热榜）"
-    ]
+  {
+   "key": "enterprise_ai",
+   "emoji": "❷",
+   "name": "企业AI应用",
+   "news": [
+    "OpenAI发布ChatGPT Work和Codex Admin插件 管理员可通过对话管理权限",
+    "豆包工作打通飞书后Agent像同事 可读取团队文档/消息/任务/组织关系",
+    "马斯克首次回应收购Cursor事件 承认Grok落后",
+    "如果用飞书可体验豆包工作 重点测试飞书文档生成和群聊总结"
+   ],
+   "insights": [],
+   "actions": []
   },
-  "ai_generated": true,
-  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-20T18:31"
+  {
+   "key": "content_creation",
+   "emoji": "❸",
+   "name": "内容创作",
+   "news": [
+    "Stability AI完成$76M Series B 环球音乐/索尼/华纳/EA参投 累计$232M",
+    "Gamma收购AI设计公司Lica建研究实验室 估值$21亿 用户超1亿",
+    "开源8B模型图像质量接近闭源Image 2 小模型能力边界突破",
+    "关注Stability AI工具更新 AI视频工具开放后可用于小红书批量生产"
+   ],
+   "insights": [],
+   "actions": []
+  }
+ ],
+ "github": [
+  {
+   "repo": "harry0703/MoneyPrinterTurbo",
+   "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+   "stars": "116K",
+   "track": "内容创作",
+   "note": "AI大模型+自动化工作流一键生成高清短视频 本周新增9K+星",
+   "why": ""
+  },
+  {
+   "repo": "volcengine/OpenViking",
+   "url": "https://github.com/volcengine/OpenViking",
+   "stars": "33K",
+   "track": "",
+   "note": "字节火山引擎开源Agent上下文数据库 统一记忆/知识RAG/长期存储",
+   "why": ""
+  },
+  {
+   "repo": "TauricResearch/TradingAgents",
+   "url": "https://github.com/TauricResearch/TradingAgents",
+   "stars": "100K",
+   "track": "AI产业技术",
+   "note": "多Agent LLM金融交易框架 模拟研究/分析/决策全流程",
+   "why": ""
+  }
+ ],
+ "reading": [
+  {
+   "title": "实测豆包工作",
+   "url": "https://www.36kr.com/p/3954390879222917",
+   "source": "",
+   "reason": "豆包工作连上飞书后可读取团队文档/消息/任务 交付结果自动写回飞书"
+  },
+  {
+   "title": "Stability AI raises $76M",
+   "url": "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding/",
+   "source": "",
+   "reason": "三大唱片同时投资AI生成公司 内容产业从抵制AI转向拥抱AI"
+  },
+  {
+   "title": "Jalapeño's first results",
+   "url": "https://openai.com/index/jalapeno-first-results",
+   "source": "",
+   "reason": "OpenAI自研推理芯片首秀 DeepSeek R1每瓦吞吐量是GB300的1.7倍"
+  }
+ ],
+ "consensus": {
+  "text": "AI办公从个人效率工具升级为组织级基础设施——嵌入工作流比堆叠新功能更具战略价值",
+  "quotes": [
+   "OpenAI发布ChatGPT Work和Codex的Admin插件（OpenAI官方）",
+   "豆包工作打通飞书后Agent可直接读取团队文档和组织关系（36氪实测）",
+   "Gamma收购AI设计公司Lica建立研究实验室（TechCrunch AI）"
+  ]
+ },
+ "division": {
+  "text": "AI芯片自研vs采购路线之争从成本升级为战略控制权——自研意味着全栈掌控但也意味着巨大前期投入",
+  "quotes": [
+   "OpenAI Jalapeño芯片每瓦吞吐量是GB300的1.7倍（OpenAI官方）",
+   "小米发布AI芯片全家桶覆盖手机/IoT/汽车（36氪热榜）",
+   "英伟达首测Vera Rubin DeepSeek吞吐暴涨30倍（36氪热榜）"
+  ]
+ },
+ "ai_generated": true,
+ "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+ "generated_at": "2026-09-20T18:31"
 }
