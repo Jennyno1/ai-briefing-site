@@ -104,7 +104,7 @@
       var reason = (!isPlaceholder(r.reason)) ? '<p class="reason">' + esc(r.reason) + '</p>' : '';
       return '<li>' + title + (r.source ? ' <span class="src">— ' + esc(r.source) + '</span>' : '') + reason + '</li>';
     }).join('');
-    return '<section class="reading"><h2>推荐阅读</h2><ol>' + lis + '</ol></section>';
+    return '<section class="reading"><header class="sec-head"><i class="chip chip-neutral" aria-hidden="true"></i><h2>推荐阅读</h2></header><ol>' + lis + '</ol></section>';
   }
 
   var STAR_SVG = '<svg class="gh-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.4l2.6 5.4 5.9.8-4.3 4.1 1 5.9-5.2-2.8-5.2 2.8 1-5.9L3.5 9.6l5.9-.8z"/></svg>';
@@ -121,7 +121,7 @@
       var why = (!isPlaceholder(g.why)) ? '<p class="reason reason-why">落地：' + esc(g.why) + '</p>' : '';
       return '<li><a href="' + esc(safeUrl(u)) + '" target="_blank" rel="noopener">' + esc(name) + '</a>' + star + track + note + why + '</li>';
     }).join('');
-    return '<section class="reading"><h2>GitHub 项目推荐</h2><ol>' + lis + '</ol></section>';
+    return '<section class="reading"><header class="sec-head"><i class="chip chip-neutral" aria-hidden="true"></i><h2>GitHub 项目推荐</h2></header><ol>' + lis + '</ol></section>';
   }
 
   function missingNotice(data) {
@@ -156,7 +156,7 @@
     if (data.version) metaBits.push('<span class="badge">' + esc(data.version) + '</span>');
     html += '<div class="meta">' + metaBits.join('') + '</div>';
     if (points.length) {
-      html += '<div class="lead-label">今日要点</div>';
+      html += '<div class="lead-label"><i class="chip chip-neutral" aria-hidden="true"></i>今日要点</div>';
       html += '<ul class="points">' + points.map(function (p) { return '<li>' + esc(p) + '</li>'; }).join('') + '</ul>';
     }
     html += '</div>';
@@ -173,12 +173,12 @@
       // lane 色块直接标在赛道名旁：按 key 固定映射，某赛道整段为空时颜色语义不会静默前移
       var laneIdx = LANE_ORDER.indexOf(t.key);
       if (laneIdx < 0) laneIdx = LANE_ORDER.length + i;
-      html += '<section class="track lane-' + laneIdx + '"><h2><i class="chip" aria-hidden="true"></i>' +
-        esc(name) + '</h2>' + body + '</section>';
+      html += '<section class="track lane-' + laneIdx + '"><header class="sec-head"><i class="chip" aria-hidden="true"></i><h2>' +
+        esc(name) + '</h2></header>' + body + '</section>';
     });
 
     var vp = vpCard('consensus', '共识解读', data.consensus) + vpCard('division', '分歧解读', data.division);
-    if (vp) html += '<div class="viewpoint">' + vp + '</div>';
+    if (vp) html += '<section class="viewpoint"><header class="sec-head"><i class="chip chip-neutral" aria-hidden="true"></i><h2>共识与分歧</h2></header>' + vp + '</section>';
 
     html += readingHtml(data.reading);
     html += githubHtml(data.github);
@@ -203,7 +203,7 @@
     var cur = d === activeDate;
     return '<li data-date="' + esc(d) + '" class="' + (cur ? 'active' : '') + partial + '">' +
       '<button type="button" class="d-btn" data-date="' + esc(d) + '"' +
-      (cur ? ' aria-current="true"' : '') + '>' +
+      (cur ? ' aria-current="date"' : '') + '>' +
       '<span class="d-date">' + esc(d) + '</span>' + mark + '</button></li>';
   }
 
@@ -213,22 +213,6 @@
     group.classList.toggle('open', open);
     var b = group.querySelector('.m-btn');
     if (b) b.setAttribute('aria-expanded', open ? 'true' : 'false');
-  }
-
-  function filterRail(q) {
-    // 搜索框只按月份筛：输入 9 / 09 / 9月 / 2026-09 都命中 2026-09
-    var raw = String(q || '').trim().replace(/[年月\s]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
-    var groups = datesEl.querySelectorAll('.m-group');
-    Array.prototype.forEach.call(groups, function (g) {
-      var m = g.getAttribute('data-month') || '';
-      var hit = !raw;
-      if (raw) {
-        hit = m.indexOf(raw) !== -1;
-        if (!hit && /^\d{1,2}$/.test(raw)) hit = m.slice(5, 7) === ('0' + raw).slice(-2);
-      }
-      g.hidden = !hit;
-      if (hit && raw) toggleMonth(g, true);
-    });
   }
 
   function renderDates(dates, activeDate, gaps) {
@@ -265,13 +249,13 @@
       c.classList.toggle('active', isCur);
       var btn = c.querySelector('.d-btn');
       if (btn) {
-        if (isCur) btn.setAttribute('aria-current', 'true');
+        if (isCur) btn.setAttribute('aria-current', 'date');
         else btn.removeAttribute('aria-current');
       }
     });
   }
 
-  async function loadDate(date) {
+  async function loadDate(date, opts) {
     briefingEl.innerHTML = '<p class="state">正在加载 ' + esc(date) + ' 简报…</p>';
     try {
       var res = await fetch('data/' + date + '.json', { cache: 'no-cache' });
@@ -280,7 +264,11 @@
       data.date = data.date || date;
       renderBriefing(data);
       setActive(date);
-      if (location.hash.slice(1) !== date) history.pushState(null, '', '#' + date);   // 进历史栈：浏览器返回＝回上一期，不再直接离站
+      if (location.hash.slice(1) !== date) {
+        // 首载用 replaceState（不制造「假历史」），用户点击/按键才 pushState（返回＝回上一期）
+        if (opts && opts.push === false) history.replaceState(null, '', '#' + date);
+        else history.pushState(null, '', '#' + date);
+      }
     } catch (err) {
       briefingEl.innerHTML = '<p class="state">这一期没能加载出来（' + esc(err.message) + '）。可以点重试，或先看旁边其他期。' +
         '<button type="button" class="retry-btn" id="retry-date">重试</button></p>';
@@ -333,7 +321,7 @@
       return;
     }
 
-    if (footerMeta) footerMeta.textContent = ' 数据区间：' + dates[dates.length - 1] + ' → ' + dates[0] + '。';
+    if (footerMeta) footerMeta.textContent = ' 数据区间：自 ' + dates[dates.length - 1] + ' 起。';
 
     var hash = decodeURIComponent(location.hash.slice(1));
     var active = dates.indexOf(hash) !== -1 ? hash : dates[0];
@@ -343,7 +331,7 @@
       if (gres.ok) gaps = await gres.json();
     } catch (e) { /* 缺板块清单缺失不影响主流程 */ }
     renderDates(dates, active, gaps);
-    await loadDate(active);
+    await loadDate(active, { push: false });
 
     datesEl.addEventListener('click', function (e) {
       var mb = e.target.closest && e.target.closest('.m-btn');
@@ -356,8 +344,6 @@
       loadDate(li.getAttribute('data-date'));
     });
 
-    var searchEl = document.getElementById('rail-search');
-    if (searchEl) searchEl.addEventListener('input', function () { filterRail(searchEl.value); });
 
     window.addEventListener('hashchange', function () {
       var d = decodeURIComponent(location.hash.slice(1));
