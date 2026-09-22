@@ -886,6 +886,12 @@ li.partial .d-date { color: var(--ink-3); }
     padding: 0 16px 56px;   /* 底部缓冲：移动 56 / 桌面 72，有意档——不是模块间距，勿并入 spacing token */
   }
 
+  /* 移动端 rail 变成顶部横向日期条 → 页脚不能再按「正文列左沿」对齐。
+     不重置的话 390px 屏上正文只剩 ~54px 宽，整段被压成一字一行（2026-09-22 用户报）。 */
+  .footer { padding-left: 16px; padding-right: 16px; }
+  .footer-main,
+  .footer-note { padding-left: 0; }
+
   /* 窄屏日期栏：整条不透明（原来 94% 半透明 + 两端透明遮罩，下滑时正文从底下透出来像"缝隙"） */
   .rail {
     position: sticky;
