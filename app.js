@@ -362,7 +362,7 @@
       return;
     }
 
-    if (footerMeta) footerMeta.textContent = ' 数据区间：自 ' + dates[dates.length - 1] + ' 起。';
+    if (footerMeta) footerMeta.textContent = ' 收录区间自 ' + dates[dates.length - 1] + ' 起，按日更新；当日无产出则不收录该日。';
 
     var hash = decodeURIComponent(location.hash.slice(1));
     var active = dates.indexOf(hash) !== -1 ? hash : dates[0];

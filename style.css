@@ -552,11 +552,11 @@ li.partial .d-date { color: var(--ink-3); }
   opacity: 0.9;
 }
 
-/* 缺板块提示：淡底块，不加线 */
+/* 缺板块提示：中性淡底（金底全页只留给「落地行动」——C 方案统一底色语义） */
 .notice {
   margin: 22px 0;
   padding: 12px 14px;
-  background: var(--note-bg);
+  background: var(--hover-bg);
   border-radius: var(--radius-ctl);
   font-size: var(--fs-small);
   color: var(--ink-2);
@@ -612,11 +612,7 @@ li.partial .d-date { color: var(--ink-3); }
 .item-body { color: var(--ink); max-width: 74ch; }
 
 .item-meta {
-  display: inline-block;
   margin-top: 6px;
-  padding: 1px 7px;
-  border-radius: 4px;
-  background: var(--hover-bg);
   font-size: var(--fs-micro);
   color: var(--ink-3);
   letter-spacing: 0.02em;
@@ -707,14 +703,10 @@ li.partial .d-date { color: var(--ink-3); }
 .reading a { font-weight: 500; }
 
 .src {
-  display: inline-block;
-  margin-left: 4px;
-  padding: 1px 7px;
-  border-radius: 4px;
-  background: var(--hover-bg);
+  margin-left: 2px;
   font-size: var(--fs-micro);
   color: var(--ink-3);
-  white-space: nowrap;
+  white-space: normal;          /* 长来源名允许换行，不再撑破行宽 */
 }
 
 /* 推荐理由 / 落地说明：靠字号与颜色降级，不加竖线 */
@@ -766,7 +758,9 @@ li.partial .d-date { color: var(--ink-3); }
     padding: 8px 16px;
     max-height: none;
     background: var(--canvas);
+    scroll-snap-type: x proximity;   /* 横滑时按「期」吸附，手指停下不会卡在半条日期上 */
   }
+  .date-list li { scroll-snap-align: start; }
 
   /* 手机上不再横滑找日期：换成原生的日期下拉（点开就是系统列表，按月分组） */
   .rail-scroll { display: none; }
