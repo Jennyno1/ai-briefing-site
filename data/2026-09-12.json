@@ -1,127 +1,127 @@
 {
- "date": "2026-09-12",
- "format": "summary",
- "points": [
-  "Meta消费级AI Agent Muse升至美国应用榜第二，生成式AI工具首次走进千万普通用户",
-  "网信办正式实施《人工智能生成合成内容标识办法》，AI内容发布必须合规标注",
-  "Bending Spoons以1.36亿美元收购Miro，仅为2022年估值的十分之一"
- ],
- "tracks": [
-  {
-   "key": "ai_tech",
-   "emoji": "❶",
-   "name": "AI产业技术",
-   "news": [
-    "OpenAI公报GPT-6 Astra需求过旺公布暂停Pro订阅\"调查President订阅\"，代理岗位职责首次让位给计算资源竞价",
-    "ChatGPT Astra 未标生图图片被大批管理员忽略，Meta社交数据测试环境已开放API接口注册"
-   ],
-   "insights": [
-    "Anthropic 此前把\"考ended弱、监控\"这种历史安全性建设作为技术中心，同英美研制机构Agercil 招聘招聘额度约320万美元，AI安全技术首次争夺市场份额",
-    "🟡弱信号：Kimi,K2.8 上线 kimi code、Moonshot定下20亿美元年营收目标，国产模型正从\"降价追赶\"切换到\"现金流验证\"叙事"
-   ],
-   "actions": [
-    "研究Muse減少汇作案例为凭据社文减排验证能力边界，判断Meta Agent能覆盖哪些纯情感感知题材，为后续代理策略提供基础"
-   ]
+  "date": "2026-09-12",
+  "format": "summary",
+  "points": [
+    "Meta消费级AI Agent Muse升至美国应用榜第二，生成式AI工具首次走进千万普通用户",
+    "网信办正式实施《人工智能生成合成内容标识办法》，AI内容发布必须合规标注",
+    "Bending Spoons以1.36亿美元收购Miro，仅为2022年估值的十分之一"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "OpenAI公报GPT-6 Astra需求过旺公布暂停Pro订阅\"调查President订阅\"，代理岗位职责首次让位给计算资源竞价",
+        "ChatGPT Astra 未标生图图片被大批管理员忽略，Meta社交数据测试环境已开放API接口注册"
+      ],
+      "insights": [
+        "Anthropic 此前把\"考ended弱、监控\"这种历史安全性建设作为技术中心，同英美研制机构Agercil 招聘招聘额度约320万美元，AI安全技术首次争夺市场份额",
+        "🟡弱信号：Kimi,K2.8 上线 kimi code、Moonshot定下20亿美元年营收目标，国产模型正从\"降价追赶\"切换到\"现金流验证\"叙事"
+      ],
+      "actions": [
+        "研究Muse減少汇作案例为凭据社文减排验证能力边界，判断Meta Agent能覆盖哪些纯情感感知题材，为后续代理策略提供基础"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "网信办正式实施《人工智能生成合成内容标识办法》，曲线信息企业首次面临标识义务清单，品牌宣传和渠道分发必须同步合规",
+        "微准时上线网上移动聆听\"准上班Court AI\"辅助全职岗位筛选系统，并取入企业招聘预算规划功能"
+      ],
+      "insights": [
+        "虎嗅指出AI正在制造\"交付物贬值时代\"——AI把交付成本推向零，市场只愿意为「能力可观察性」付费，打工人的入门岗位正在被出清",
+        "🟡弱信号：photos得到资本首销转向「内容生产逻辑重写」，说明由AI重构的组织工作流正从概念变成预算科目"
+      ],
+      "actions": [
+        "检查自己所有AI生成内容是否符合新标识办法要求，把\"AI生成\"标注流程固定进模板，避免上线后临时补标"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "芒果长剧《芯镜》用AI长视频制作90万一集成本，播出后撬动芒果股价与130亿市值波动，成为A股首个AI内容商业化实例",
+        "芝麻短视频的DeepSeek写作流开通，用Notion Web Clipper+剪映岚模板合揽多账号，内容量产上限被重新定义"
+      ],
+      "insights": [
+        "AI 危剧出现\"曝光商业Profits零亏损\"，做内容不看点击apps、品牌观看结构化数据才可靠，团队把战斗重心从刷量重新移回制作手段",
+        "🟡弱信号：东南亚推拿制作获得大规模AI批量降薪档，1个人+AI工作流可以签约过接短视频的量产交付散"
+      ],
+      "actions": [
+        "拆解《芯镜》AI长剧集点流程，把\"AI生成 + 真人实拍 + 成本表\"整理成一张小红书选题，蹭久热事件窗口"
+      ]
+    }
+  ],
+  "github": [
+    {
+      "repo": "ruvnet/ruflo",
+      "url": "https://github.com/ruvnet/ruflo",
+      "stars": "72K",
+      "track": "企业AI应用",
+      "note": "开源Agent编排/Ai编排调度与多Agentagger swarm协同 произошло值额",
+      "why": "多agent swarm编排能直接跑在本地，企业自动化争取前先学会编排"
+    },
+    {
+      "repo": "headroomlabs-ai/headroom",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "stars": "72K",
+      "track": "AI产业技术",
+      "note": "Agent输出与工具from指令流压縮层，进入LLM前压缩可省20% token",
+      "why": "长对话/长文档 RAG 成本直降，做企业Agent首推的省钱层"
+    },
+    {
+      "repo": "YILS-LIN/short-video-factory",
+      "url": "https://github.com/YILS-LIN/short-video-factory",
+      "stars": "5K",
+      "track": "内容创作",
+      "note": "一键生成产品营销短视频，AI批量自动剪辑的桌面端工具",
+      "why": "跨平台桌面端+AI自动剪辑，适合产品带货短视频批量产出"
+    }
+  ],
+  "reading": [
+    {
+      "title": "Y Combinator’s Garry Tan wants US open-weight AI labs to ‘distill’ frontier models, too",
+      "url": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-us-open-weight-ai-labs-to-distill-frontier-models-too/",
+      "source": "TechCrunch",
+      "reason": "Garry Tan呼吁美国开放权重实验室也做蒸馏，呼应Anthropic披露阿里/月之暗面/DeepSeek蒸馏报告",
+      "why": "蒸馏与合规的边界正在被政策重新划线。"
+    },
+    {
+      "title": "Anthropic details distillation campaigns from Alibaba, Moonshot AI, and DeepSeek",
+      "url": "https://techcrunch.com/2026/09/11/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek/",
+      "source": "TechCrunch",
+      "reason": "Anthropic点名三大中国厂进行蒸馏，把模型能力来源上升到合规议题",
+      "why": "国产模型出海可能面临新的合规审查门槛。"
+    },
+    {
+      "title": "Bending Spoons to buy collaboration tools maker Miro for $1.36B, 90% less than its 2022 valuation",
+      "url": "https://techcrunch.com/2026/09/11/bending-spoons-to-buy-collaboration-tools-maker-miro-for-1-36b-90-less-than-its-2022-valuation/",
+      "source": "TechCrunch",
+      "reason": "工具独角兽Miro以2022年估值一折的价格被收购",
+      "why": "AI冲击下传统SaaS工具估值体系正在重定价。"
+    }
+  ],
+  "consensus": {
+    "text": "各AI公司的公开动作指向同一个底：现金流验证正在取代能力叙事，成为模型厂商必须回答的第一问。",
+    "quotes": [
+      "Moonshot定下20亿美元年营收目标（TechCrunch）",
+      "OpenAI因Astra需求过旺暂停Pro订阅（TechCrunch）",
+      "Pocket FM靠AI驱动营收翻倍至5亿美元年化（TechCrunch）"
+    ]
   },
-  {
-   "key": "enterprise_ai",
-   "emoji": "❷",
-   "name": "企业AI应用",
-   "news": [
-    "网信办正式实施《人工智能生成合成内容标识办法》，曲线信息企业首次面临标识义务清单，品牌宣传和渠道分发必须同步合规",
-    "微准时上线网上移动聆听\"准上班Court AI\"辅助全职岗位筛选系统，并取入企业招聘预算规划功能"
-   ],
-   "insights": [
-    "虎嗅指出AI正在制造\"交付物贬值时代\"——AI把交付成本推向零，市场只愿意为「能力可观察性」付费，打工人的入门岗位正在被出清",
-    "🟡弱信号：photos得到资本首销转向「内容生产逻辑重写」，说明由AI重构的组织工作流正从概念变成预算科目"
-   ],
-   "actions": [
-    "检查自己所有AI生成内容是否符合新标识办法要求，把\"AI生成\"标注流程固定进模板，避免上线后临时补标"
-   ]
+  "division": {
+    "text": "生成内容的发布门槛正被两套标准撕扯：一边用工商业化证明AI内容的价值，一边监管要求它先亮明身份才可信。",
+    "quotes": [
+      "网信办正式实施AI生成内容标识办法（36氪快讯）",
+      "芒果AI长剧90万一集实现商业化盈利（虎嗅）",
+      "银行Agent上岗已覆盖4200万小微经营者（量子位）"
+    ]
   },
-  {
-   "key": "content_creation",
-   "emoji": "❸",
-   "name": "内容创作",
-   "news": [
-    "芒果长剧《芯镜》用AI长视频制作90万一集成本，播出后撬动芒果股价与130亿市值波动，成为A股首个AI内容商业化实例",
-    "芝麻短视频的DeepSeek写作流开通，用Notion Web Clipper+剪映岚模板合揽多账号，内容量产上限被重新定义"
-   ],
-   "insights": [
-    "AI 危剧出现\"曝光商业Profits零亏损\"，做内容不看点击apps、品牌观看结构化数据才可靠，团队把战斗重心从刷量重新移回制作手段",
-    "🟡弱信号：东南亚推拿制作获得大规模AI批量降薪档，1个人+AI工作流可以签约过接短视频的量产交付散"
-   ],
-   "actions": [
-    "拆解《芯镜》AI长剧集点流程，把\"AI生成 + 真人实拍 + 成本表\"整理成一张小红书选题，蹭久热事件窗口"
-   ]
-  }
- ],
- "github": [
-  {
-   "repo": "ruvnet/ruflo",
-   "url": "https://github.com/ruvnet/ruflo",
-   "stars": "72K",
-   "track": "企业AI应用",
-   "note": "开源Agent编排/Ai编排调度与多Agentagger swarm协同 произошло值额",
-   "why": "多agent swarm编排能直接跑在本地，企业自动化争取前先学会编排"
-  },
-  {
-   "repo": "headroomlabs-ai/headroom",
-   "url": "https://github.com/headroomlabs-ai/headroom",
-   "stars": "72K",
-   "track": "AI产业技术",
-   "note": "Agent输出与工具from指令流压縮层，进入LLM前压缩可省20% token",
-   "why": "长对话/长文档 RAG 成本直降，做企业Agent首推的省钱层"
-  },
-  {
-   "repo": "YILS-LIN/short-video-factory",
-   "url": "https://github.com/YILS-LIN/short-video-factory",
-   "stars": "5K",
-   "track": "内容创作",
-   "note": "一键生成产品营销短视频，AI批量自动剪辑的桌面端工具",
-   "why": "跨平台桌面端+AI自动剪辑，适合产品带货短视频批量产出"
-  }
- ],
- "reading": [
-  {
-   "title": "Y Combinator’s Garry Tan wants US open-weight AI labs to ‘distill’ frontier models, too",
-   "url": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-us-open-weight-ai-labs-to-distill-frontier-models-too/",
-   "source": "TechCrunch",
-   "reason": "Garry Tan呼吁美国开放权重实验室也做蒸馏，呼应Anthropic披露阿里/月之暗面/DeepSeek蒸馏报告",
-   "why": "蒸馏与合规的边界正在被政策重新划线。"
-  },
-  {
-   "title": "Anthropic details distillation campaigns from Alibaba, Moonshot AI, and DeepSeek",
-   "url": "https://techcrunch.com/2026/09/11/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek/",
-   "source": "TechCrunch",
-   "reason": "Anthropic点名三大中国厂进行蒸馏，把模型能力来源上升到合规议题",
-   "why": "国产模型出海可能面临新的合规审查门槛。"
-  },
-  {
-   "title": "Bending Spoons to buy collaboration tools maker Miro for $1.36B, 90% less than its 2022 valuation",
-   "url": "https://techcrunch.com/2026/09/11/bending-spoons-to-buy-collaboration-tools-maker-miro-for-1-36b-90-less-than-its-2022-valuation/",
-   "source": "TechCrunch",
-   "reason": "工具独角兽Miro以2022年估值一折的价格被收购",
-   "why": "AI冲击下传统SaaS工具估值体系正在重定价。"
-  }
- ],
- "consensus": {
-  "text": "各AI公司的公开动作指向同一个底：现金流验证正在取代能力叙事，成为模型厂商必须回答的第一问。",
-  "quotes": [
-   "Moonshot定下20亿美元年营收目标（TechCrunch）",
-   "OpenAI因Astra需求过旺暂停Pro订阅（TechCrunch）",
-   "Pocket FM靠AI驱动营收翻倍至5亿美元年化（TechCrunch）"
-  ]
- },
- "division": {
-  "text": "生成内容的发布门槛正被两套标准撕扯：一边用工商业化证明AI内容的价值，一边监管要求它先亮明身份才可信。",
-  "quotes": [
-   "网信办正式实施AI生成内容标识办法（36氪快讯）",
-   "芒果AI长剧90万一集实现商业化盈利（虎嗅）",
-   "银行Agent上岗已覆盖4200万小微经营者（量子位）"
-  ]
- },
- "ai_generated": true,
- "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
- "generated_at": "2026-09-21T21:14"
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-22T10:44"
 }

@@ -1,125 +1,125 @@
 {
- "date": "2026-08-21",
- "format": "summary",
- "points": [
-  "AI 视频剪辑 agent 开源，长素材→短视频自动化进入意图驱动阶段",
-  "企业 AI 进入\"成本治理\"阶段，模型路由层被大厂溢价收购",
-  "具身智能押\"现在交付\"vs\"未来通用\"，两条路线各有资本市场买单"
- ],
- "tracks": [
-  {
-   "key": "ai_tech",
-   "emoji": "❶",
-   "name": "AI产业技术",
-   "news": [
-    "英伟达本周与韩国 AI 芯片公司 Rebellions 在加州总部洽谈潜在并购，Rebellions 由三星支持——英伟达罕见地转向非 GPU 路线补强算力版图。",
-    "阿里最新财报披露 capex 同比猛增，但 AI 相关产品收入连续第 12 个季度三位数增长，AI 云与算力服务收入同比增长 45% 达 484 亿元，回本周期同步缩短。",
-    "Anthropic 计划年内为 Claude 推出私有云数据驻留方案，企业可把 30 天留存数据存于自有云服务器；同日优必选行者具身大模型完成生成式 AI 服务备案。"
-   ],
-   "insights": [
-    "英伟达罕见接触非 GPU 阵营 + 阿里财报口径反转，标志 AI 基础设施进入\"既要又要\"阶段：算力主权和资本效率并行，传统 GPU 路线不再是唯一答案。",
-    "阿里 AI 12 季度三位数增长 vs 千问亏损扩大，说明模型层仍在烧钱、商用层已回血——这条\"云赚模型亏\"的分化会复制到所有走全栈路线的中国厂商身上。"
-   ],
-   "actions": [
-    "用 arxiv-sanity + 量子位订阅抓取\"具身智能备案/算力交付\"两条线，搭建一个简单 RSS 看板（feedly + ifttt 转飞书），作为下周的具身智能选题源。",
-    "把企业内训用的演示沙箱接入 OpenRouter 路由，把 Claude + Qwen3.8 + GLM-5.3 同时挂上去跑 A/B 测试，对比私有云 Claude 与国产模型的合规成本差。",
-    "用阿里云 ModelStudio 的百炼平台实测千问、智谱、GLM-5.3 三家 API 价格 + QPS，发一篇《国产大模型 API 比价表》蹭 AI 商用化选题热度。"
-   ]
+  "date": "2026-08-21",
+  "format": "summary",
+  "points": [
+    "AI 视频剪辑 agent 开源，长素材→短视频自动化进入意图驱动阶段",
+    "企业 AI 进入\"成本治理\"阶段，模型路由层被大厂溢价收购",
+    "具身智能押\"现在交付\"vs\"未来通用\"，两条路线各有资本市场买单"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "英伟达本周与韩国 AI 芯片公司 Rebellions 在加州总部洽谈潜在并购，Rebellions 由三星支持——英伟达罕见地转向非 GPU 路线补强算力版图。",
+        "阿里最新财报披露 capex 同比猛增，但 AI 相关产品收入连续第 12 个季度三位数增长，AI 云与算力服务收入同比增长 45% 达 484 亿元，回本周期同步缩短。",
+        "Anthropic 计划年内为 Claude 推出私有云数据驻留方案，企业可把 30 天留存数据存于自有云服务器；同日优必选行者具身大模型完成生成式 AI 服务备案。"
+      ],
+      "insights": [
+        "英伟达罕见接触非 GPU 阵营 + 阿里财报口径反转，标志 AI 基础设施进入\"既要又要\"阶段：算力主权和资本效率并行，传统 GPU 路线不再是唯一答案。",
+        "阿里 AI 12 季度三位数增长 vs 千问亏损扩大，说明模型层仍在烧钱、商用层已回血——这条\"云赚模型亏\"的分化会复制到所有走全栈路线的中国厂商身上。"
+      ],
+      "actions": [
+        "用 arxiv-sanity + 量子位订阅抓取\"具身智能备案/算力交付\"两条线，搭建一个简单 RSS 看板（feedly + ifttt 转飞书），作为下周的具身智能选题源。",
+        "把企业内训用的演示沙箱接入 OpenRouter 路由，把 Claude + Qwen3.8 + GLM-5.3 同时挂上去跑 A/B 测试，对比私有云 Claude 与国产模型的合规成本差。",
+        "用阿里云 ModelStudio 的百炼平台实测千问、智谱、GLM-5.3 三家 API 价格 + QPS，发一篇《国产大模型 API 比价表》蹭 AI 商用化选题热度。"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "Stripe 据传以 70 亿美元收购 AI 模型路由平台 OpenRouter，把分散的模型调用统一收口为「Stripe for AI」基础设施层。",
+        "Ramp 上线自研 AI 模型路由服务 Router，通过单一 API 让企业在多模型之间按成本/质量自由切换。",
+        "NVIDIA 与 AP 自动化厂商 Stampli 先后接入 ChatGPT Work，分别把内部知识工作流和新产品上线周期压缩 60% 以上。"
+      ],
+      "insights": [
+        "模型路由正在取代\"选一个模型\"成为企业 AI 采购新范式，PM 和 IT 该问的不再是\"用哪家\"，而是\"路由策略 + 成本上限怎么定\"。",
+        "NVIDIA 这种万人级组织都在用 ChatGPT Work 复制内部最佳实践，说明 Agent 工作流已从单点提效进入\"知识标准化复用\"阶段——这是企业 IT 该立项的方向。"
+      ],
+      "actions": [
+        "本周在 Dify 或阿里云百炼搭建模型路由网关，按任务分级路由 GPT-5.6 / 通义千问 / DeepSeek，实测把月度 token 账单压降 30%–40%。",
+        "用 Coze/Dify 抓取团队周会纪要与 SOP 文档喂给 ChatGPT Work 类工具，搭一个内部\"经验沉淀 + 自动问答\"Agent，让新员工上手周期减半。",
+        "在百炼控制台开通 RAG 知识库，把产品 PRD 与会议记录切块入库，配上企业微信/钉钉机器人入口，零代码 30 分钟可上线，先跑 1 个部门验证再推广。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "虎嗅爆料 OpenAI 偷偷测试 luna-lisa-alpha 模型（疑为 GPT Image 2.5 前兆），重点升级人物一致性、图像真实感和原生文字生成。",
+        "Meta 把 Pocket——AI 一句话生成+分享小游戏的 C 端产品，从巴西扩到美国全量，给\"AI 创作零门槛\"再添一个样本。",
+        "Google Discover 上线 AI 聊天调优版信息流，给创作者开了一条被 AI 主动抓取的流量入口。"
+      ],
+      "insights": [
+        "这批生图模型迭代都在补同一块短板——\"人物一致+中文直出\"，正是小红书人物出镜笔记的命门，再也不用 PS 拼图了。",
+        "平台把分发逻辑交给 AI 调优，标题党权重会下降，结构化、问答式选题会更吃香——\"问答体+清单体\"模板要加码。"
+      ],
+      "actions": [
+        "今晚去 LMArena 跑一轮 luna-lisa-alpha，用\"职场妈妈+暖色厨房\"三组人物 prompt 测试一致性，结果截图发选题群备选。",
+        "用 Seedream 4.5 + ComfyUI 搭一条\"人物一致性封面\"工作流：锁定参考脸→批量换装/换场景→3:4 出图，一次性产出 7 天小红书封面。",
+        "把现有\"AI 实战方法论\"笔记标题改成\"问题+数字\"模板（例：3 步用 ComfyUI 搭人物封面），配合 Google Discover 新规则冲 AI 抓取流量。"
+      ]
+    }
+  ],
+  "github": [
+    {
+      "repo": "FireRedTeam/FireRed-OpenStoryline",
+      "url": "https://github.com/FireRedTeam/FireRed-OpenStoryline",
+      "stars": "3.2K",
+      "track": "内容创作",
+      "note": "AI 视频剪辑 agent，长素材→短视频意图驱动；验证小红书竖屏场景可用性",
+      "why": ""
+    },
+    {
+      "repo": "thedotmack/claude-mem",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "stars": "91K",
+      "track": "企业AI应用",
+      "note": "Agent 持久化记忆层；解决上下文丢失，可挂到 Claude Code/Codex 工作流做对比",
+      "why": ""
+    },
+    {
+      "repo": "pexoai/pexo-skills",
+      "url": "https://github.com/pexoai/pexo-skills",
+      "stars": "771",
+      "track": "AI产业技术",
+      "note": "开源 Agent Skills 库；当前最具代表性的方法论 skill 集，可作\"拆 Skills\"选题对照参考",
+      "why": ""
+    }
+  ],
+  "reading": [
+    {
+      "title": "Ramp launches Router.com",
+      "url": "https://techcrunch.com/2026/08/20/ramp-launches-its-own-ai-model-router-called-router/",
+      "source": "TechCrunch",
+      "reason": "Ramp 商业化自家三年 AI 模型路由器，客户推理成本降 40%，标志企业 AI 进入\"成本治理\"阶段"
+    },
+    {
+      "title": "Stripe didn't really buy OpenRouter because of the 'singularity'",
+      "url": "https://techcrunch.com/2026/08/19/stripe-didnt-really-buy-openrouter-because-of-the-singularity/",
+      "source": "TechCrunch",
+      "reason": "Stripe 否认收购是\"押注 AGI\"，真实动机是控制 agent 经济计费基础设施，基础设施层溢价远超应用层"
+    },
+    {
+      "title": "Death of Params: Z.ai CEO on GLM 5.3",
+      "url": "https://www.latent.space/p/ainews-death-of-params-zai-ceo-jie",
+      "source": "Latent Space",
+      "reason": "Z.ai CEO 提出\"后训练 Scaling Law\"——精调工程和 Harness 层才是差异化关键，开源团队可借此弯道超车"
+    }
+  ],
+  "consensus": {
+    "text": "AI 用得越深的企业，反而最先为「成本管理」付钱——卖水人比淘金者更早规模化。",
+    "quotes": []
   },
-  {
-   "key": "enterprise_ai",
-   "emoji": "❷",
-   "name": "企业AI应用",
-   "news": [
-    "Stripe 据传以 70 亿美元收购 AI 模型路由平台 OpenRouter，把分散的模型调用统一收口为「Stripe for AI」基础设施层。",
-    "Ramp 上线自研 AI 模型路由服务 Router，通过单一 API 让企业在多模型之间按成本/质量自由切换。",
-    "NVIDIA 与 AP 自动化厂商 Stampli 先后接入 ChatGPT Work，分别把内部知识工作流和新产品上线周期压缩 60% 以上。"
-   ],
-   "insights": [
-    "模型路由正在取代\"选一个模型\"成为企业 AI 采购新范式，PM 和 IT 该问的不再是\"用哪家\"，而是\"路由策略 + 成本上限怎么定\"。",
-    "NVIDIA 这种万人级组织都在用 ChatGPT Work 复制内部最佳实践，说明 Agent 工作流已从单点提效进入\"知识标准化复用\"阶段——这是企业 IT 该立项的方向。"
-   ],
-   "actions": [
-    "本周在 Dify 或阿里云百炼搭建模型路由网关，按任务分级路由 GPT-5.6 / 通义千问 / DeepSeek，实测把月度 token 账单压降 30%–40%。",
-    "用 Coze/Dify 抓取团队周会纪要与 SOP 文档喂给 ChatGPT Work 类工具，搭一个内部\"经验沉淀 + 自动问答\"Agent，让新员工上手周期减半。",
-    "在百炼控制台开通 RAG 知识库，把产品 PRD 与会议记录切块入库，配上企业微信/钉钉机器人入口，零代码 30 分钟可上线，先跑 1 个部门验证再推广。"
-   ]
+  "division": {
+    "text": "具身智能押「现在能交付的客户」还是押「未来通用智能的赢家」——这是同一技术在两个商业周期下的赌博，不存在谁对谁错。",
+    "quotes": []
   },
-  {
-   "key": "content_creation",
-   "emoji": "❸",
-   "name": "内容创作",
-   "news": [
-    "虎嗅爆料 OpenAI 偷偷测试 luna-lisa-alpha 模型（疑为 GPT Image 2.5 前兆），重点升级人物一致性、图像真实感和原生文字生成。",
-    "Meta 把 Pocket——AI 一句话生成+分享小游戏的 C 端产品，从巴西扩到美国全量，给\"AI 创作零门槛\"再添一个样本。",
-    "Google Discover 上线 AI 聊天调优版信息流，给创作者开了一条被 AI 主动抓取的流量入口。"
-   ],
-   "insights": [
-    "这批生图模型迭代都在补同一块短板——\"人物一致+中文直出\"，正是小红书人物出镜笔记的命门，再也不用 PS 拼图了。",
-    "平台把分发逻辑交给 AI 调优，标题党权重会下降，结构化、问答式选题会更吃香——\"问答体+清单体\"模板要加码。"
-   ],
-   "actions": [
-    "今晚去 LMArena 跑一轮 luna-lisa-alpha，用\"职场妈妈+暖色厨房\"三组人物 prompt 测试一致性，结果截图发选题群备选。",
-    "用 Seedream 4.5 + ComfyUI 搭一条\"人物一致性封面\"工作流：锁定参考脸→批量换装/换场景→3:4 出图，一次性产出 7 天小红书封面。",
-    "把现有\"AI 实战方法论\"笔记标题改成\"问题+数字\"模板（例：3 步用 ComfyUI 搭人物封面），配合 Google Discover 新规则冲 AI 抓取流量。"
-   ]
-  }
- ],
- "github": [
-  {
-   "repo": "FireRedTeam/FireRed-OpenStoryline",
-   "url": "https://github.com/FireRedTeam/FireRed-OpenStoryline",
-   "stars": "3.2K",
-   "track": "内容创作",
-   "note": "AI 视频剪辑 agent，长素材→短视频意图驱动；验证小红书竖屏场景可用性",
-   "why": ""
-  },
-  {
-   "repo": "thedotmack/claude-mem",
-   "url": "https://github.com/thedotmack/claude-mem",
-   "stars": "91K",
-   "track": "企业AI应用",
-   "note": "Agent 持久化记忆层；解决上下文丢失，可挂到 Claude Code/Codex 工作流做对比",
-   "why": ""
-  },
-  {
-   "repo": "pexoai/pexo-skills",
-   "url": "https://github.com/pexoai/pexo-skills",
-   "stars": "771",
-   "track": "AI产业技术",
-   "note": "开源 Agent Skills 库；当前最具代表性的方法论 skill 集，可作\"拆 Skills\"选题对照参考",
-   "why": ""
-  }
- ],
- "reading": [
-  {
-   "title": "Ramp launches Router.com",
-   "url": "https://techcrunch.com/2026/08/20/ramp-launches-its-own-ai-model-router-called-router/",
-   "source": "TechCrunch",
-   "reason": "Ramp 商业化自家三年 AI 模型路由器，客户推理成本降 40%，标志企业 AI 进入\"成本治理\"阶段"
-  },
-  {
-   "title": "Stripe didn't really buy OpenRouter because of the 'singularity'",
-   "url": "https://techcrunch.com/2026/08/19/stripe-didnt-really-buy-openrouter-because-of-the-singularity/",
-   "source": "TechCrunch",
-   "reason": "Stripe 否认收购是\"押注 AGI\"，真实动机是控制 agent 经济计费基础设施，基础设施层溢价远超应用层"
-  },
-  {
-   "title": "Death of Params: Z.ai CEO on GLM 5.3",
-   "url": "https://www.latent.space/p/ainews-death-of-params-zai-ceo-jie",
-   "source": "Latent Space",
-   "reason": "Z.ai CEO 提出\"后训练 Scaling Law\"——精调工程和 Harness 层才是差异化关键，开源团队可借此弯道超车"
-  }
- ],
- "consensus": {
-  "text": "AI 用得越深的企业，反而最先为「成本管理」付钱——卖水人比淘金者更早规模化。",
-  "quotes": []
- },
- "division": {
-  "text": "具身智能押「现在能交付的客户」还是押「未来通用智能的赢家」——这是同一技术在两个商业周期下的赌博，不存在谁对谁错。",
-  "quotes": []
- },
- "ai_generated": true,
- "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
- "generated_at": "2026-09-21T21:14"
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-22T10:44"
 }

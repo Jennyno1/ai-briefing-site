@@ -1,97 +1,97 @@
 {
- "date": "2026-08-03",
- "format": "summary",
- "points": [
-  "AI短剧开始规模化取代真人剧组：导演谭飞直言\"从不跟演员打招呼\"，制作成本降至传统十分之一",
-  "本体论借AI Agent复兴：Latent Space分析语义网标准正被Agent复活，企业AI互操作性迎来拐点",
-  "Anthropic自家模型安全测试攻破三家真实企业：AI从\"可能作恶\"进入\"实际能攻破企业防线\"阶段"
- ],
- "tracks": [
-  {
-   "key": "ai_tech",
-   "emoji": "❶",
-   "name": "AI产业技术",
-   "news": [
-    "Anthropic红队测试中Claude模型自主攻破三家真实企业网络：发现漏洞、编写exploit、横向移动全程无需人类指导。这是首次公开的AI在受控测试中攻破真实企业。",
-    "四家AI实验室联合发布公开信呼吁\"审慎推进\"，但亚马逊和SpaceX仍在加速AI基建。行业出现\"嘴上减速、身体加速\"的分裂。",
-    "贝索斯用AI勘探矿产：AI分析地质数据寻找下一块硅矿，从数字世界渗透到物理资源发现。"
-   ],
-   "insights": [
-    "Anthropic安全测试改变了AI安全讨论基准：从\"AI会不会作恶\"升级为\"AI已能在受控条件下攻破真实防线\"。企业部署Agent必须有沙箱隔离和权限边界。",
-    "行业\"嘴上减速身体加速\"的分裂将是2026下半年主线——模型公司为竞争不能停，云厂商为基建不能停。"
-   ],
-   "actions": [
-    "整理\"企业部署AI Agent前必须知道的3个安全事实\"作为PM圈分享内容，引用Anthropic测试结果。",
-    "持续关注四家AI实验室公开信后续——如演变为行业自律或政府监管框架，直接影响Agent产品合规。"
-   ]
+  "date": "2026-08-03",
+  "format": "summary",
+  "points": [
+    "AI短剧开始规模化取代真人剧组：导演谭飞直言\"从不跟演员打招呼\"，制作成本降至传统十分之一",
+    "本体论借AI Agent复兴：Latent Space分析语义网标准正被Agent复活，企业AI互操作性迎来拐点",
+    "Anthropic自家模型安全测试攻破三家真实企业：AI从\"可能作恶\"进入\"实际能攻破企业防线\"阶段"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "Anthropic红队测试中Claude模型自主攻破三家真实企业网络：发现漏洞、编写exploit、横向移动全程无需人类指导。这是首次公开的AI在受控测试中攻破真实企业。",
+        "四家AI实验室联合发布公开信呼吁\"审慎推进\"，但亚马逊和SpaceX仍在加速AI基建。行业出现\"嘴上减速、身体加速\"的分裂。",
+        "贝索斯用AI勘探矿产：AI分析地质数据寻找下一块硅矿，从数字世界渗透到物理资源发现。"
+      ],
+      "insights": [
+        "Anthropic安全测试改变了AI安全讨论基准：从\"AI会不会作恶\"升级为\"AI已能在受控条件下攻破真实防线\"。企业部署Agent必须有沙箱隔离和权限边界。",
+        "行业\"嘴上减速身体加速\"的分裂将是2026下半年主线——模型公司为竞争不能停，云厂商为基建不能停。"
+      ],
+      "actions": [
+        "整理\"企业部署AI Agent前必须知道的3个安全事实\"作为PM圈分享内容，引用Anthropic测试结果。",
+        "持续关注四家AI实验室公开信后续——如演变为行业自律或政府监管框架，直接影响Agent产品合规。"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "国家超算互联网正式上线DeepSeek-V4-Flash API，一键接入即可调用顶级国产模型，企业无需自建GPU集群。",
+        "Latent Space深度长文分析AI Agent正复活语义网标准（RDF/OWL/SPARQL），Agent间互操作需要共享本体论，企业Agent将从孤岛走向联邦。",
+        "虎嗅报道影禾医脉AI诊断系统：一分钟出报告、90%无需修改，AI把医疗诊断效率拉满。"
+      ],
+      "insights": [
+        "DeepSeek V4-Flash接入国家超算=推理成本再降+接入门槛归零。Hermes+OpenCode Go用户可混合使用商业API和国家超算免费推理。",
+        "本体论复兴对多Agent协同（飞书/IMA/Hermes）有实操意义：共享数据格式和语义标准是Agent联邦化的前提。"
+      ],
+      "actions": [
+        "注册国家超算互联网账号获取DeepSeek V4-Flash API，在OpenCode Go中配置为backup provider，对比延迟和成本。",
+        "关注Agent本体论互操作的开源实现，如有成熟框架可在Hermes+飞书workflow中试点。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "36氪专访导演谭飞揭示AI短剧正在取代真人剧组——从编剧到演员全链条AI化，制作周期从月级降到天级，成本降至传统十分之一。",
+        "OpenAI公布Codex从0到1000万用户发展路径（Latent Space访谈），ChatGPT Work已成AI辅助创作主力入口。",
+        "虎嗅发文警告AI正导致\"知识转基因危机\"：AI生成内容系统性污染互联网语料库，多数人将在不知情中沦为\"认知肉鸡\"。"
+      ],
+      "insights": [
+        "AI短剧化对小红书创作者是双重信号：既是用AI低成本做视频内容的工具红利，也是内容供给暴增后竞争加剧的预警。内容创作者\"活人感\"策略恰好卡在AI内容泛滥与真人价值稀缺的交叉点上。",
+        "Codex 10M用户证明AI辅助创作已非尝鲜阶段——不用AI的人正在被用AI的人拉开效率差距，但如何用得自然、不像AI，才是新核心竞争力。"
+      ],
+      "actions": [
+        "以\"AI正在吃掉影视行业，下一个是内容创作者吗？\"为题写小红书——从谭飞专访切入，延伸到小红书创作者面临同样趋势，\"活人感=护城河\"收尾。",
+        "测试用可灵/Runway生成一段15秒产品展示视频作为小红书配视频实验，关注生成质量和时间成本。"
+      ]
+    }
+  ],
+  "github": [],
+  "reading": [
+    {
+      "title": "AI短剧取代真人剧 | 专访谭飞",
+      "url": "https://www.36kr.com/p/3921687819185539",
+      "source": "36氪",
+      "reason": "导演谭飞直指AI短剧正从编剧到演员全链条取代真人，成本降至传统十分之一。对内容创作者是工具红利也是竞争升级信号"
+    },
+    {
+      "title": "Ontologies Are So Back: AI Agents Reviving the Semantic Web",
+      "url": "https://www.latent.space/p/ontologies-agentic-systems",
+      "source": "Latent Space",
+      "reason": "AI Agent如何让语义网标准重获新生，Agent间互操作需要共享本体论。企业多Agent协同的标准化基础正在成形"
+    },
+    {
+      "title": "Anthropic says its own AI models breached three companies",
+      "url": "https://techcrunch.com/2026/07/30/anthropic-says-its-own-ai-models-breached-three/",
+      "source": "TechCrunch",
+      "reason": "Anthropic红队测试中Claude自主攻破三家真实企业网络，全程无需人类。AI安全从理论进入实战验证"
+    }
+  ],
+  "consensus": {
+    "text": "",
+    "quotes": []
   },
-  {
-   "key": "enterprise_ai",
-   "emoji": "❷",
-   "name": "企业AI应用",
-   "news": [
-    "国家超算互联网正式上线DeepSeek-V4-Flash API，一键接入即可调用顶级国产模型，企业无需自建GPU集群。",
-    "Latent Space深度长文分析AI Agent正复活语义网标准（RDF/OWL/SPARQL），Agent间互操作需要共享本体论，企业Agent将从孤岛走向联邦。",
-    "虎嗅报道影禾医脉AI诊断系统：一分钟出报告、90%无需修改，AI把医疗诊断效率拉满。"
-   ],
-   "insights": [
-    "DeepSeek V4-Flash接入国家超算=推理成本再降+接入门槛归零。Hermes+OpenCode Go用户可混合使用商业API和国家超算免费推理。",
-    "本体论复兴对多Agent协同（飞书/IMA/Hermes）有实操意义：共享数据格式和语义标准是Agent联邦化的前提。"
-   ],
-   "actions": [
-    "注册国家超算互联网账号获取DeepSeek V4-Flash API，在OpenCode Go中配置为backup provider，对比延迟和成本。",
-    "关注Agent本体论互操作的开源实现，如有成熟框架可在Hermes+飞书workflow中试点。"
-   ]
+  "division": {
+    "text": "",
+    "quotes": []
   },
-  {
-   "key": "content_creation",
-   "emoji": "❸",
-   "name": "内容创作",
-   "news": [
-    "36氪专访导演谭飞揭示AI短剧正在取代真人剧组——从编剧到演员全链条AI化，制作周期从月级降到天级，成本降至传统十分之一。",
-    "OpenAI公布Codex从0到1000万用户发展路径（Latent Space访谈），ChatGPT Work已成AI辅助创作主力入口。",
-    "虎嗅发文警告AI正导致\"知识转基因危机\"：AI生成内容系统性污染互联网语料库，多数人将在不知情中沦为\"认知肉鸡\"。"
-   ],
-   "insights": [
-    "AI短剧化对小红书创作者是双重信号：既是用AI低成本做视频内容的工具红利，也是内容供给暴增后竞争加剧的预警。内容创作者\"活人感\"策略恰好卡在AI内容泛滥与真人价值稀缺的交叉点上。",
-    "Codex 10M用户证明AI辅助创作已非尝鲜阶段——不用AI的人正在被用AI的人拉开效率差距，但如何用得自然、不像AI，才是新核心竞争力。"
-   ],
-   "actions": [
-    "以\"AI正在吃掉影视行业，下一个是内容创作者吗？\"为题写小红书——从谭飞专访切入，延伸到小红书创作者面临同样趋势，\"活人感=护城河\"收尾。",
-    "测试用可灵/Runway生成一段15秒产品展示视频作为小红书配视频实验，关注生成质量和时间成本。"
-   ]
-  }
- ],
- "github": [],
- "reading": [
-  {
-   "title": "AI短剧取代真人剧 | 专访谭飞",
-   "url": "https://www.36kr.com/p/3921687819185539",
-   "source": "36氪",
-   "reason": "导演谭飞直指AI短剧正从编剧到演员全链条取代真人，成本降至传统十分之一。对内容创作者是工具红利也是竞争升级信号"
-  },
-  {
-   "title": "Ontologies Are So Back: AI Agents Reviving the Semantic Web",
-   "url": "https://www.latent.space/p/ontologies-agentic-systems",
-   "source": "Latent Space",
-   "reason": "AI Agent如何让语义网标准重获新生，Agent间互操作需要共享本体论。企业多Agent协同的标准化基础正在成形"
-  },
-  {
-   "title": "Anthropic says its own AI models breached three companies",
-   "url": "https://techcrunch.com/2026/07/30/anthropic-says-its-own-ai-models-breached-three/",
-   "source": "TechCrunch",
-   "reason": "Anthropic红队测试中Claude自主攻破三家真实企业网络，全程无需人类。AI安全从理论进入实战验证"
-  }
- ],
- "consensus": {
-  "text": "",
-  "quotes": []
- },
- "division": {
-  "text": "",
-  "quotes": []
- },
- "ai_generated": true,
- "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
- "generated_at": "2026-09-21T21:14"
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-22T10:44"
 }

@@ -1,124 +1,124 @@
 {
- "date": "2026-08-24",
- "format": "summary",
- "points": [
-  "AI Agent从\"聊天框\"走向\"执行层\"：OpenAI全面开源Codex Harness，让开发者直接把Agent嵌入自有产品",
-  "企业AI落地加速分化：WPS Comate百城AI智能体计划启动，OpenAI ChatGPT Ads扩展欧洲商业化",
-  "AI开源与闭源博弈加剧：DeepSeek发布多模态V4-Flash-Vision-Exp，\"隐身模型\"Ox Alpha身份成谜"
- ],
- "tracks": [
-  {
-   "key": "ai_tech",
-   "emoji": "❶",
-   "name": "AI产业技术",
-   "news": [
-    "TechCrunch报道一个名为Ox Alpha的\"隐身模型\"突然出现在多项基准测试中，身份和背景成谜，引发行业猜测。",
-    "DeepMind校友创立的Inherent宣称其AI teammate在复现研究任务上超越了Anthropic和OpenAI（TechCrunch AI），AI Agent竞赛从\"模型跑分\"扩展到\"任务完成度\"维度。",
-    "NVIDIA AI服务器将涨价15%，1GW数据中心成本激增50亿美元（量子位），同时NVIDIA与Cloverleaf合作、Starcloud融资$250M建太空数据中心，算力基建持续扩张。",
-    "人形机器人运动会新纪录不断：天工Ultra以2分21秒63夺得1500米冠军，荣耀\"闪电\"打破半马和峰值速度5项人类世界纪录，众擎CEO称通用人形机器人单台成本已降至十万元以下。"
-   ],
-   "insights": [
-    "Ox Alpha的出现揭示了一个趋势：AI模型竞争已进入\"隐身战\"阶段——新玩家不再高调发布，而是先让模型在匿名基准测试中证明实力，再揭晓身份。这意味着未来可能有更多未知力量突然进入竞争格局。",
-    "NVIDIA涨价+Starcloud太空数据中心+Cloverleaf合作的组合拳说明算力正从\"地面集中式\"走向\"天地一体化\"——当GPU供不应求到要部署到太空时，企业应考虑\"算力可及性\"作为基础设施选型的核心指标。",
-    "人形机器人成本降至十万元以下是一个分水岭：当单台成本进入\"一辆车\"的价格区间，规模化部署的前提条件已经具备，接下来的瓶颈将转向场景适配和可靠性验证。"
-   ],
-   "actions": [
-    "跟踪Ox Alpha后续揭晓：如果这是某家大厂的匿名测试模型，其技术路线可能影响下一轮模型选型决策——在它身份明确前，保持关注但不急于调整现有技术栈。",
-    "评估\"算力成本上升\"对企业AI部署的影响：如果NVIDIA涨价15%传导到国内云厂商，API调用成本可能在未来2-3个月上调——趁涨价前锁价或批量采购Token可能省成本。"
-   ]
+  "date": "2026-08-24",
+  "format": "summary",
+  "points": [
+    "AI Agent从\"聊天框\"走向\"执行层\"：OpenAI全面开源Codex Harness，让开发者直接把Agent嵌入自有产品",
+    "企业AI落地加速分化：WPS Comate百城AI智能体计划启动，OpenAI ChatGPT Ads扩展欧洲商业化",
+    "AI开源与闭源博弈加剧：DeepSeek发布多模态V4-Flash-Vision-Exp，\"隐身模型\"Ox Alpha身份成谜"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "TechCrunch报道一个名为Ox Alpha的\"隐身模型\"突然出现在多项基准测试中，身份和背景成谜，引发行业猜测。",
+        "DeepMind校友创立的Inherent宣称其AI teammate在复现研究任务上超越了Anthropic和OpenAI（TechCrunch AI），AI Agent竞赛从\"模型跑分\"扩展到\"任务完成度\"维度。",
+        "NVIDIA AI服务器将涨价15%，1GW数据中心成本激增50亿美元（量子位），同时NVIDIA与Cloverleaf合作、Starcloud融资$250M建太空数据中心，算力基建持续扩张。",
+        "人形机器人运动会新纪录不断：天工Ultra以2分21秒63夺得1500米冠军，荣耀\"闪电\"打破半马和峰值速度5项人类世界纪录，众擎CEO称通用人形机器人单台成本已降至十万元以下。"
+      ],
+      "insights": [
+        "Ox Alpha的出现揭示了一个趋势：AI模型竞争已进入\"隐身战\"阶段——新玩家不再高调发布，而是先让模型在匿名基准测试中证明实力，再揭晓身份。这意味着未来可能有更多未知力量突然进入竞争格局。",
+        "NVIDIA涨价+Starcloud太空数据中心+Cloverleaf合作的组合拳说明算力正从\"地面集中式\"走向\"天地一体化\"——当GPU供不应求到要部署到太空时，企业应考虑\"算力可及性\"作为基础设施选型的核心指标。",
+        "人形机器人成本降至十万元以下是一个分水岭：当单台成本进入\"一辆车\"的价格区间，规模化部署的前提条件已经具备，接下来的瓶颈将转向场景适配和可靠性验证。"
+      ],
+      "actions": [
+        "跟踪Ox Alpha后续揭晓：如果这是某家大厂的匿名测试模型，其技术路线可能影响下一轮模型选型决策——在它身份明确前，保持关注但不急于调整现有技术栈。",
+        "评估\"算力成本上升\"对企业AI部署的影响：如果NVIDIA涨价15%传导到国内云厂商，API调用成本可能在未来2-3个月上调——趁涨价前锁价或批量采购Token可能省成本。"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "WPS Comate百城AI智能体赋能计划正式启动（36氪快讯），金山办公在全国100个城市推进AI Agent在办公场景的规模化落地。",
+        "OpenAI ChatGPT Ads正式扩展至欧洲市场，标志着AI聊天产品的广告变现模式开始跨区域复制。",
+        "OpenAI发布AI Futures博客，成立战略未来团队聚焦\"自由社会如何适应AI变革\"，同时推出ChatGPT for Teens青少年版本。"
+      ],
+      "insights": [
+        "WPS百城计划的信号是\"AI Agent从线上Demo走向线下地推\"——当金山办公开始用人力铺渠道推AI Agent，说明企业AI落地的瓶颈已从技术可行性转向用户采纳率，地推能力可能成为下一阶段的竞争要素。",
+        "ChatGPT Ads扩展欧洲意味着OpenAI在模型能力之外开始构建广告收入飞轮——当AI聊天界面成为用户日常入口，广告变现将倒逼产品设计在\"有用\"和\"有收入\"之间寻找平衡。"
+      ],
+      "actions": [
+        "关注WPS Comate百城计划的具体方案：如果金山提供免费AI Agent部署或补贴，可以评估其是否适合企业内部OA提效场景，优先看\"文档智能摘要\"\"会议纪要生成\"\"审批流自动化\"三个模块。",
+        "用OpenAI AI Futures博客的分析框架重新审视企业AI战略：不是\"用不用AI\"的问题，而是\"AI渗透后组织结构和权力分配如何调整\"——这个视角比工具选型更影响长期竞争力。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "OpenAI正式将Codex底层核心框架Harness全面开源，开发者可将AI Agent循环无缝嵌入自有产品、工程工具和运营看板，Greg Brockman称\"Codex能驱动的远不止编程工具\"。",
+        "DeepSeek-V4-Flash-Vision-Exp多模态模型发布，知乎热议其多模态能力表现，标志着开源模型在视觉理解赛道继续追赶闭源前沿。",
+        "GPT Image 2工业级提示词引擎freestylefly/awesome-gpt-image-2在GitHub Trending爆发增长至⭐12.6K，收录470+案例逆向工程和20+套模板。"
+      ],
+      "insights": [
+        "Codex Harness开源的本质是\"把AI Agent的执行层从封闭产品中解放出来\"——以前开发者只能在ChatGPT/Codex的界面里用AI，现在可以把Agent嵌入自己的UI、数据和审批流中，这彻底改变了AI工具的集成模式。",
+        "GPT Image 2提示词资源库的爆发说明\"AI生图\"已从\"会用就行\"进入\"工程化调参\"阶段——谁能系统化积累和复用高质量提示词，谁就能在内容创作中建立效率壁垒。"
+      ],
+      "actions": [
+        "用Codex Harness开源框架做小红书内容流水线：把Agent嵌入飞书多维表审稿看板，实现\"选题生成→文案初稿→封面生成→人工审核\"全链路自动化，无需再在ChatGPT和飞书之间反复切换。",
+        "收藏freestylefly/awesome-gpt-image-2的GPT Image 2模板库，按\"商品图/封面/笔记配图\"三类建立自己的提示词资产库，每次生图直接复用而非从零写prompt。"
+      ]
+    }
+  ],
+  "github": [
+    {
+      "repo": "freestylefly/awesome-gpt-image-2",
+      "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+      "stars": "12.6K",
+      "track": "内容创作",
+      "note": "GPT Image 2工业级提示词引擎，收录470+案例逆向工程和20+套模板，覆盖商品图/海报/笔记配图等场景",
+      "why": "直接复用其模板库可大幅降低AI生图的试错成本，特别适合小红书内容创作者建立标准化的图片生产流程"
+    },
+    {
+      "repo": "block/buzz",
+      "url": "https://github.com/block/buzz",
+      "stars": "30K",
+      "track": "",
+      "note": "蜂巢思维通信平台，支持多AI Agent在共享频道中协作讨论，类似企业版Slack但原生支持AI团队",
+      "why": "如果团队需要\"多Agent协作+人工审批\"的工作流（如选题讨论、方案评审），Buzz提供了开源的企业级基础设施"
+    },
+    {
+      "repo": "modular/modular",
+      "url": "https://github.com/modular/modular",
+      "stars": "29K",
+      "track": "AI产业技术",
+      "note": "Modular平台包含MAX推理引擎和Mojo编程语言，目标是让AI推理性能提升数倍，今日Mojo正式开源",
+      "why": "Mojo开源后企业可以用Python语法写高性能AI推理代码，对需要自部署模型或优化推理成本的技术团队有直接价值"
+    }
+  ],
+  "reading": [
+    {
+      "title": "震撼，OpenAI全面开源Codex Harness",
+      "url": "https://www.36kr.com/p/3948952877661575",
+      "source": "36氪",
+      "reason": "详解Codex Harness的架构设计和开源动机：OpenAI认为\"通用聊天框\"限制了AI的落地场景，Harness开源后开发者可直接把Agent嵌入自有业务系统。对企业IT的启示：未来AI工具选型将从\"选哪个聊天产品\"变成\"选哪个执行框架\""
+    },
+    {
+      "title": "Anthropic's best AI model struggles to attract users as cheaper tools thrive",
+      "url": "https://simonwillison.net/",
+      "source": "Simon Willison",
+      "reason": "分析Anthropic旗舰模型在实际使用中被更便宜工具分流的现象，揭示\"模型能力天花板\"与\"用户成本敏感度\"之间的张力。对企业AI选型的参考：最强模型不一定是最优选择，性价比和生态集成度同样关键"
+    },
+    {
+      "title": "Who's behind the new 'stealth model' Ox Alpha?",
+      "url": "https://techcrunch.com/2026/08/23/whos-behind-the-new-stealth-model-ox-alpha/",
+      "source": "TechCrunch AI",
+      "reason": "一个匿名模型突然出现在多项基准测试中且表现优异，TechCrunch调查其身份未果。这标志着AI竞争进入\"隐身战\"阶段，未来可能有更多未知力量突然入场"
+    }
+  ],
+  "consensus": {
+    "text": "AI正从\"对话界面\"向\"执行基础设施\"不可逆迁移——价值重心从\"谁的模型更强\"转向\"谁的Agent更能嵌入业务流程\"。",
+    "quotes": []
   },
-  {
-   "key": "enterprise_ai",
-   "emoji": "❷",
-   "name": "企业AI应用",
-   "news": [
-    "WPS Comate百城AI智能体赋能计划正式启动（36氪快讯），金山办公在全国100个城市推进AI Agent在办公场景的规模化落地。",
-    "OpenAI ChatGPT Ads正式扩展至欧洲市场，标志着AI聊天产品的广告变现模式开始跨区域复制。",
-    "OpenAI发布AI Futures博客，成立战略未来团队聚焦\"自由社会如何适应AI变革\"，同时推出ChatGPT for Teens青少年版本。"
-   ],
-   "insights": [
-    "WPS百城计划的信号是\"AI Agent从线上Demo走向线下地推\"——当金山办公开始用人力铺渠道推AI Agent，说明企业AI落地的瓶颈已从技术可行性转向用户采纳率，地推能力可能成为下一阶段的竞争要素。",
-    "ChatGPT Ads扩展欧洲意味着OpenAI在模型能力之外开始构建广告收入飞轮——当AI聊天界面成为用户日常入口，广告变现将倒逼产品设计在\"有用\"和\"有收入\"之间寻找平衡。"
-   ],
-   "actions": [
-    "关注WPS Comate百城计划的具体方案：如果金山提供免费AI Agent部署或补贴，可以评估其是否适合企业内部OA提效场景，优先看\"文档智能摘要\"\"会议纪要生成\"\"审批流自动化\"三个模块。",
-    "用OpenAI AI Futures博客的分析框架重新审视企业AI战略：不是\"用不用AI\"的问题，而是\"AI渗透后组织结构和权力分配如何调整\"——这个视角比工具选型更影响长期竞争力。"
-   ]
+  "division": {
+    "text": "AI产业的\"开放生态\"与\"闭源壁垒\"正在形成两套平行的价值捕获逻辑——前者靠社区和集成赢，后者靠独家能力和数据锁。",
+    "quotes": []
   },
-  {
-   "key": "content_creation",
-   "emoji": "❸",
-   "name": "内容创作",
-   "news": [
-    "OpenAI正式将Codex底层核心框架Harness全面开源，开发者可将AI Agent循环无缝嵌入自有产品、工程工具和运营看板，Greg Brockman称\"Codex能驱动的远不止编程工具\"。",
-    "DeepSeek-V4-Flash-Vision-Exp多模态模型发布，知乎热议其多模态能力表现，标志着开源模型在视觉理解赛道继续追赶闭源前沿。",
-    "GPT Image 2工业级提示词引擎freestylefly/awesome-gpt-image-2在GitHub Trending爆发增长至⭐12.6K，收录470+案例逆向工程和20+套模板。"
-   ],
-   "insights": [
-    "Codex Harness开源的本质是\"把AI Agent的执行层从封闭产品中解放出来\"——以前开发者只能在ChatGPT/Codex的界面里用AI，现在可以把Agent嵌入自己的UI、数据和审批流中，这彻底改变了AI工具的集成模式。",
-    "GPT Image 2提示词资源库的爆发说明\"AI生图\"已从\"会用就行\"进入\"工程化调参\"阶段——谁能系统化积累和复用高质量提示词，谁就能在内容创作中建立效率壁垒。"
-   ],
-   "actions": [
-    "用Codex Harness开源框架做小红书内容流水线：把Agent嵌入飞书多维表审稿看板，实现\"选题生成→文案初稿→封面生成→人工审核\"全链路自动化，无需再在ChatGPT和飞书之间反复切换。",
-    "收藏freestylefly/awesome-gpt-image-2的GPT Image 2模板库，按\"商品图/封面/笔记配图\"三类建立自己的提示词资产库，每次生图直接复用而非从零写prompt。"
-   ]
-  }
- ],
- "github": [
-  {
-   "repo": "freestylefly/awesome-gpt-image-2",
-   "url": "https://github.com/freestylefly/awesome-gpt-image-2",
-   "stars": "12.6K",
-   "track": "内容创作",
-   "note": "GPT Image 2工业级提示词引擎，收录470+案例逆向工程和20+套模板，覆盖商品图/海报/笔记配图等场景",
-   "why": "直接复用其模板库可大幅降低AI生图的试错成本，特别适合小红书内容创作者建立标准化的图片生产流程"
-  },
-  {
-   "repo": "block/buzz",
-   "url": "https://github.com/block/buzz",
-   "stars": "30K",
-   "track": "",
-   "note": "蜂巢思维通信平台，支持多AI Agent在共享频道中协作讨论，类似企业版Slack但原生支持AI团队",
-   "why": "如果团队需要\"多Agent协作+人工审批\"的工作流（如选题讨论、方案评审），Buzz提供了开源的企业级基础设施"
-  },
-  {
-   "repo": "modular/modular",
-   "url": "https://github.com/modular/modular",
-   "stars": "29K",
-   "track": "AI产业技术",
-   "note": "Modular平台包含MAX推理引擎和Mojo编程语言，目标是让AI推理性能提升数倍，今日Mojo正式开源",
-   "why": "Mojo开源后企业可以用Python语法写高性能AI推理代码，对需要自部署模型或优化推理成本的技术团队有直接价值"
-  }
- ],
- "reading": [
-  {
-   "title": "震撼，OpenAI全面开源Codex Harness",
-   "url": "https://www.36kr.com/p/3948952877661575",
-   "source": "36氪",
-   "reason": "详解Codex Harness的架构设计和开源动机：OpenAI认为\"通用聊天框\"限制了AI的落地场景，Harness开源后开发者可直接把Agent嵌入自有业务系统。对企业IT的启示：未来AI工具选型将从\"选哪个聊天产品\"变成\"选哪个执行框架\""
-  },
-  {
-   "title": "Anthropic's best AI model struggles to attract users as cheaper tools thrive",
-   "url": "https://simonwillison.net/",
-   "source": "Simon Willison",
-   "reason": "分析Anthropic旗舰模型在实际使用中被更便宜工具分流的现象，揭示\"模型能力天花板\"与\"用户成本敏感度\"之间的张力。对企业AI选型的参考：最强模型不一定是最优选择，性价比和生态集成度同样关键"
-  },
-  {
-   "title": "Who's behind the new 'stealth model' Ox Alpha?",
-   "url": "https://techcrunch.com/2026/08/23/whos-behind-the-new-stealth-model-ox-alpha/",
-   "source": "TechCrunch AI",
-   "reason": "一个匿名模型突然出现在多项基准测试中且表现优异，TechCrunch调查其身份未果。这标志着AI竞争进入\"隐身战\"阶段，未来可能有更多未知力量突然入场"
-  }
- ],
- "consensus": {
-  "text": "AI正从\"对话界面\"向\"执行基础设施\"不可逆迁移——价值重心从\"谁的模型更强\"转向\"谁的Agent更能嵌入业务流程\"。",
-  "quotes": []
- },
- "division": {
-  "text": "AI产业的\"开放生态\"与\"闭源壁垒\"正在形成两套平行的价值捕获逻辑——前者靠社区和集成赢，后者靠独家能力和数据锁。",
-  "quotes": []
- },
- "ai_generated": true,
- "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
- "generated_at": "2026-09-21T21:14"
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-22T10:44"
 }

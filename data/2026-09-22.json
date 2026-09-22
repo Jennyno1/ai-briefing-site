@@ -1,132 +1,132 @@
 {
- "date": "2026-09-22",
- "format": "summary",
- "points": [
-  "Grok 4.6 登陆 Amazon Bedrock：50 万 token 上下文加四档推理档位，定位长时程智能体与编码场景。",
-  "Meta 智能体 Muse 移动端早期增速超 ChatGPT 同期，但亚马逊同日封禁其代购物理入口，平台冲突公开化。",
-  "OpenAI 成立数学顾问组，其 AI 已解决百余个开放数学难题，基础研究进入 impressed 观察窗口。",
-  "--"
- ],
- "tracks": [
-  {
-   "key": "ai_tech",
-   "emoji": "❶",
-   "name": "AI产业技术",
-   "news": [
-    "Grok 4.6 上架 Amazon Bedrock：面向长时程智能体、编码与知识工作，50 万 token 上下文、四档推理强度可选（AWS L1）。",
-    "OpenAI 成立数学顾问组：旗下模型累计解决超过 100 个开放数学问题，顾问组被要求不得拖慢研究方向（TechCrunch L2）。",
-    "TypeSafe 推出「系统一」小模型 Jev，只做决策分类路由打分，速度价格都优于大模型；两天内涌现 6 个复刻项目（Latent Space L2）。"
-   ],
-   "insights": [
-    "一位工程师的现身说法：入职大厂半个月发现「没人知道公司在干什么」，她坚持让新工程师从零写代码，拒绝把人变成 AI 的审批员（Simon Willison L2）。",
-    "加州签署七项新规，收紧 AI 数据中心的能耗与用水披露——基建扩张第一次被地方立法直接定价（The Verge L3）。"
-   ],
-   "actions": [
-    "用任务性质切模型：明确知道下一步只有「决定/分类/路由」的场景，先试专用小模型再上大模型，成本差一个数量级。",
+  "date": "2026-09-22",
+  "format": "summary",
+  "points": [
+    "Grok 4.6 登陆 Amazon Bedrock：50 万 token 上下文加四档推理档位，定位长时程智能体与编码场景。",
+    "Meta 智能体 Muse 移动端早期增速超 ChatGPT 同期，但亚马逊同日封禁其代购物理入口，平台冲突公开化。",
+    "OpenAI 成立数学顾问组，其 AI 已解决百余个开放数学难题，基础研究进入 impressed 观察窗口。",
     "--"
-   ]
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "Grok 4.6 上架 Amazon Bedrock：面向长时程智能体、编码与知识工作，50 万 token 上下文、四档推理强度可选（AWS L1）。",
+        "OpenAI 成立数学顾问组：旗下模型累计解决超过 100 个开放数学问题，顾问组被要求不得拖慢研究方向（TechCrunch L2）。",
+        "TypeSafe 推出「系统一」小模型 Jev，只做决策分类路由打分，速度价格都优于大模型；两天内涌现 6 个复刻项目（Latent Space L2）。"
+      ],
+      "insights": [
+        "一位工程师的现身说法：入职大厂半个月发现「没人知道公司在干什么」，她坚持让新工程师从零写代码，拒绝把人变成 AI 的审批员（Simon Willison L2）。",
+        "加州签署七项新规，收紧 AI 数据中心的能耗与用水披露——基建扩张第一次被地方立法直接定价（The Verge L3）。"
+      ],
+      "actions": [
+        "用任务性质切模型：明确知道下一步只有「决定/分类/路由」的场景，先试专用小模型再上大模型，成本差一个数量级。",
+        "--"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "OpenAI 数学模型解决百余个开放难题，同时成立顾问组；学术圈从「验证成果」进入「跟研招股」阶段（TechCrunch L2）。",
+        "三家 L1 企业案例同日披露：BMW 用 AI 做 1.4 万个云账户的成本异常检测；Benchling 用 Bedrock AgentCore 做多租户智能体纵深防御；EXL 把医疗理赔审核压缩到分钟级（AWS L1）。",
+        "Anthropic 经济学推演：极端情景下 2030 年美国 GDP 高于基准 32.4%、年增速 15.4%，但认知型岗位就业同步承压，「钱流向有钱人」被明确写出（知乎 L2）。"
+      ],
+      "insights": [
+        "企业侧共识从「要不要用 AI」转向「负责驾驶舱在哪」：成本异常检测、多租户安全、理赔审核三个 L1 案例的共同点是都把运维/风控节点前置到智能体入口（AWS L1）。"
+      ],
+      "actions": [
+        "照抄 BMW 的 FinOps 思路：给内部智能体全量账户打成本异常基线，先看钱再谈提效，ando 复用到甲方汇报最省力。",
+        "--"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "Meta 智能体 Muse 移动端早期下载和日活超 ChatGPT 同期；同日亚马逊封禁其代购入口，geekWire 先披露（TechCrunch L2）。",
+        "清华联合无问芯穹等开源具身智能体 RPent，把 GPT-6 Astra 级模型塞进四足平台做真实任务（量子位 L2）。",
+        "联邦学习公益项目 OpenMUSE 在 Product Hunt 上榜，创作者用本地数据参与训练不出网；同日上线的代码审查工具也主打「先跑确定性工具再让 AI 拍板」（Product Hunt L2）。"
+      ],
+      "insights": [
+        "智能体的「入口权」变成新战场：Muse 移动端数据亮眼，但代购物理入口被平台封禁——用户注意力在 Meta 手里，交易入口在亚马逊手里（TechCrunch L2）。"
+      ],
+      "actions": [
+        "把「代下单/代发布」类功能做进自己的私人助理时要默认平台会封，保留人工兜底路径，别把整条流程押在单一平台授权上。",
+        "--"
+      ]
+    }
+  ],
+  "github": [
+    {
+      "repo": "HKUDS/nanobot",
+      "url": "https://github.com/HKUDS/nanobot",
+      "stars": "48K",
+      "track": "AI产业技术",
+      "note": "超轻量、开源、可自托管的个人 AI Agent 框架（Python）",
+      "why": "想跑一个不吃资源的私人智能体，这个是当前最新星数的高分答案"
+    },
+    {
+      "repo": "alibaba/open-code-review",
+      "url": "https://github.com/alibaba/open-code-review",
+      "stars": "39K",
+      "track": "企业AI应用",
+      "note": "阿里级实战代码评审框架，混合架构保证安全高效",
+      "why": "企业要上智能体做代码评审，这个是从大流量环境跑出来的参照"
+    },
+    {
+      "repo": "yetone/cumora",
+      "url": "https://github.com/yetone/cumora",
+      "stars": "4K",
+      "track": "内容创作",
+      "note": "跨平台团队聊天，AI 智能体是群里的正式成员",
+      "why": "内容团队需要 AI 编外助理时，比群机器人更轻的底座"
+    }
+  ],
+  "reading": [
+    {
+      "title": "Underwriting Superintelligence: Backing Agents you can Sue",
+      "url": "https://www.latent.space/p/underwriting-superintelligence",
+      "source": "Latent Space",
+      "reason": "Latent Space 关于给智能体上保险与追责的讨论：谁为 Agent 的失误兜底、保单如何定价",
+      "why": "给智能体上保险与追责的金融化视角，读完知道风投怎么给 Agent 定价。"
+    },
+    {
+      "title": "Anthropic 2030 美国经济推演",
+      "url": "https://www.zhihu.com/question/2085308622058120019",
+      "source": "知乎讨论",
+      "reason": "Anthropic 对 2030 年美国经济的情景推演讨论：增长与就业冲击如何同时发生",
+      "why": "极端情景下增长与就业冲击同时发生，两份判断给你两套应对思路。"
+    },
+    {
+      "title": "MCP was always a bad idea?",
+      "url": "https://simonwillison.net/2026/Sep/20/hn-49779718/",
+      "source": "Simon Willison",
+      "reason": "逐条反驳「MCP 没必要」的流行说法，梳理协议在什么场景下真正有价值",
+      "why": "读完知道什么场景该用 MCP、什么场景纯属多余。"
+    }
+  ],
+  "consensus": {
+    "text": "两天的共识很清晰：智能体要从「演示」走向「跑在生产里」，云上托管的模型、企业级安全架构和成本核算工具同时出现，交付标准整体抬高一档。",
+    "quotes": [
+      "Grok 4.6 上架 Amazon Bedrock（AWS 官方博客）",
+      "BMW 跨 1.4 万云账户做成本异常检测（AWS 官方博客）",
+      "Benchling 多租户智能体安全纵深防御（AWS 官方博客）"
+    ]
   },
-  {
-   "key": "enterprise_ai",
-   "emoji": "❷",
-   "name": "企业AI应用",
-   "news": [
-    "OpenAI 数学模型解决百余个开放难题，同时成立顾问组；学术圈从「验证成果」进入「跟研招股」阶段（TechCrunch L2）。",
-    "三家 L1 企业案例同日披露：BMW 用 AI 做 1.4 万个云账户的成本异常检测；Benchling 用 Bedrock AgentCore 做多租户智能体纵深防御；EXL 把医疗理赔审核压缩到分钟级（AWS L1）。",
-    "Anthropic 经济学推演：极端情景下 2030 年美国 GDP 高于基准 32.4%、年增速 15.4%，但认知型岗位就业同步承压，「钱流向有钱人」被明确写出（知乎 L2）。"
-   ],
-   "insights": [
-    "企业侧共识从「要不要用 AI」转向「负责驾驶舱在哪」：成本异常检测、多租户安全、理赔审核三个 L1 案例的共同点是都把运维/风控节点前置到智能体入口（AWS L1）。"
-   ],
-   "actions": [
-    "照抄 BMW 的 FinOps 思路：给内部智能体全量账户打成本异常基线，先看钱再谈提效，ando 复用到甲方汇报最省力。",
-    "--"
-   ]
+  "division": {
+    "text": "分歧在于谁能控制智能体的行动边界：工具端想给智能体全量权限直接办事，平台端却用封禁和合规条款限制它走交易通道，能力与授权在被拉扯。",
+    "quotes": [
+      "亚马逊封禁 Muse 代购（The Verge）",
+      "Anthropic 报告称智能体就业冲击可能集中于认知型岗位（知乎）",
+      "加州七项新规收紧 AI 数据中心能耗用水披露（The Verge）"
+    ]
   },
-  {
-   "key": "content_creation",
-   "emoji": "❸",
-   "name": "内容创作",
-   "news": [
-    "Meta 智能体 Muse 移动端早期下载和日活超 ChatGPT 同期；同日亚马逊封禁其代购入口，geekWire 先披露（TechCrunch L2）。",
-    "清华联合无问芯穹等开源具身智能体 RPent，把 GPT-6 Astra 级模型塞进四足平台做真实任务（量子位 L2）。",
-    "联邦学习公益项目 OpenMUSE 在 Product Hunt 上榜，创作者用本地数据参与训练不出网；同日上线的代码审查工具也主打「先跑确定性工具再让 AI 拍板」（Product Hunt L2）。"
-   ],
-   "insights": [
-    "智能体的「入口权」变成新战场：Muse 移动端数据亮眼，但代购物理入口被平台封禁——用户注意力在 Meta 手里，交易入口在亚马逊手里（TechCrunch L2）。"
-   ],
-   "actions": [
-    "把「代下单/代发布」类功能做进自己的私人助理时要默认平台会封，保留人工兜底路径，别把整条流程押在单一平台授权上。",
-    "--"
-   ]
-  }
- ],
- "github": [
-  {
-   "repo": "HKUDS/nanobot",
-   "url": "https://github.com/HKUDS/nanobot",
-   "stars": "48K",
-   "track": "AI产业技术",
-   "note": "超轻量、开源、可自托管的个人 AI Agent 框架（Python）",
-   "why": "想跑一个不吃资源的私人智能体，这个是当前最新星数的高分答案"
-  },
-  {
-   "repo": "alibaba/open-code-review",
-   "url": "https://github.com/alibaba/open-code-review",
-   "stars": "39K",
-   "track": "企业AI应用",
-   "note": "阿里级实战代码评审框架，混合架构保证安全高效",
-   "why": "企业要上智能体做代码评审，这个是从大流量环境跑出来的参照"
-  },
-  {
-   "repo": "yetone/cumora",
-   "url": "https://github.com/yetone/cumora",
-   "stars": "4K",
-   "track": "内容创作",
-   "note": "跨平台团队聊天，AI 智能体是群里的正式成员",
-   "why": "内容团队需要 AI 编外助理时，比群机器人更轻的底座"
-  }
- ],
- "reading": [
-  {
-   "title": "Underwriting Superintelligence: Backing Agents you can Sue",
-   "url": "https://www.latent.space/p/underwriting-superintelligence",
-   "source": "Latent Space",
-   "reason": "Latent Space 关于给智能体上保险与追责的讨论：谁为 Agent 的失误兜底、保单如何定价",
-   "why": "给智能体上保险与追责的金融化视角，读完知道风投怎么给 Agent 定价。"
-  },
-  {
-   "title": "Anthropic 2030 美国经济推演",
-   "url": "https://www.zhihu.com/question/2085308622058120019",
-   "source": "知乎讨论",
-   "reason": "Anthropic 对 2030 年美国经济的情景推演讨论：增长与就业冲击如何同时发生",
-   "why": "极端情景下增长与就业冲击同时发生，两份判断给你两套应对思路。"
-  },
-  {
-   "title": "MCP was always a bad idea?",
-   "url": "https://simonwillison.net/2026/Sep/20/hn-49779718/",
-   "source": "Simon Willison",
-   "reason": "逐条反驳「MCP 没必要」的流行说法，梳理协议在什么场景下真正有价值",
-   "why": "读完知道什么场景该用 MCP、什么场景纯属多余。"
-  }
- ],
- "consensus": {
-  "text": "两天的共识很清晰：智能体要从「演示」走向「跑在生产里」，云上托管的模型、企业级安全架构和成本核算工具同时出现，交付标准整体抬高一档。",
-  "quotes": [
-   "Grok 4.6 上架 Amazon Bedrock（AWS 官方博客）",
-   "BMW 跨 1.4 万云账户做成本异常检测（AWS 官方博客）",
-   "Benchling 多租户智能体安全纵深防御（AWS 官方博客）"
-  ]
- },
- "division": {
-  "text": "分歧在于谁能控制智能体的行动边界：工具端想给智能体全量权限直接办事，平台端却用封禁和合规条款限制它走交易通道，能力与授权在被拉扯。",
-  "quotes": [
-   "亚马逊封禁 Muse 代购（The Verge）",
-   "Anthropic 报告称智能体就业冲击可能集中于认知型岗位（知乎）",
-   "加州七项新规收紧 AI 数据中心能耗用水披露（The Verge）"
-  ]
- },
- "ai_generated": true,
- "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
- "generated_at": "2026-09-22T10:09"
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-22T10:44"
 }
