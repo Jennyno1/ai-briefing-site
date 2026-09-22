@@ -66,7 +66,9 @@
 
   // 从文案末尾抽取「（来源）」尾注，拆成正文 + 来源
   function splitSource(text) {
-    var m = /（([^（）]{1,60})）\s*$/.exec(text);
+    // 兼容两种来源写法：尾部「（来源）」与尾部「— 来源」（md 生成侧迁移时解析器不用动）
+    // 破折号形态要求「—  + 空格」，避免把结尾的连字符数字（如 2026-09）误当来源
+    var m = /（([^（）]{1,60})）\s*$/.exec(text) || /[—–]{1,2}\s+([^—–]{1,60})\s*$/.exec(text);
     if (m) return { body: text.slice(0, m.index).trim(), source: m[1].trim() };
     return { body: text, source: '' };
   }
@@ -94,7 +96,7 @@
       ? '<ul>' + quotes.map(function (q) {
           var p = splitSource(String(q));
           return '<li>' + esc(p.body) +
-            (p.source ? ' <span class="q-src">' + esc(p.source) + '</span>' : '') + '</li>';
+            (p.source ? '<span class="q-src">— ' + esc(p.source) + '</span>' : '') + '</li>';
         }).join('') + '</ul>'
       : '';
     return '<div class="vp-card vp-' + kind + '"><h3>' + esc(title) + '</h3>' +

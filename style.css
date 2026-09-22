@@ -15,6 +15,31 @@
      · 圆角只给可交互元素（按钮 / 焦点态）——唯一圆角档 --radius-ctl 8px；
      · 动效只做一次「换期入场」，不做逐段上浮。
 
+   📋 字阶/字距/过渡遗留清单（2026-09-21 全页巡检，独立一轮、不阻塞待推包）：
+     A1 .vp-card h3 17px → var(--fs-sub)      ｜A2 .creator-name 13.5px → var(--fs-small)
+     A3 .footer-note 11px + opacity .65 → var(--fs-micro) + 去 opacity（实测对比度仅 2.59:1，AA 线 4.5）
+     A4 .brand-text 23px → 新 token --fs-brand:23px + 注释「顶栏字标专用，不并阶」
+     A5 .d-dot 10px 注释声明「装饰 exempt，不进字阶」
+     B  letter-spacing 收敛两档：正文级 0.01–0.02 ｜微标签级 0.04（.date-week 0.1、.rail-label 0.06 收进来；.brand-text 0.08 特例注释）
+     C1 transition → --t-fast:0.12s / --t-ui:0.18s（0.15 归并）｜C2 line-height 归并 1.7（1.65/1.72 并入；1.8 若属 reading 理由行则保留+注释）
+     D1 .d-dot 的「◦」信息并入 .d-btn 的 aria-label（title 触屏不可达）
+     D2 页脚加「数据生成于 …」（generated_at 已在 JSON，未上页面）
+     D3 GitHub note/why 渲染层合并成一段（**JSON 两字段保留**，便于审计）
+     E1 OG/分享卡 meta（og:title/description/type/url）｜E2 @media print（隐藏 rail/顶栏、去动画）
+
+   📋 第 2 轮全页评审新增（2026-09-21，独立一轮、不阻塞待推包）：
+     必须修：①.lead-label 现在是 div 却用 --fs-track 25px（与六个 H2 同档）→ 升 <h2>（样式不变，读屏标题树补全），
+             注释原本就写「它是板块头，与其余六个板块同级」，升 h2 即落地该注释
+             ②.m-btn min-height 40px < 44（移动端月份折叠按钮仍可点）→ 44px
+             ③transition 0.12s×2（color/opacity）低于自定规范下限 150ms → 并 C1 token 处理
+             ④.content padding-top 40px（报头→首块）→ var(--space-section)
+             ⑤.theme-switch 无显式 font-size（computed 13.3333px = button UA 默认）→ 钉死（它无文字，字号只影响 em 尺寸的 thumb/svg，收益是确定性）
+             ⑥来源前缀统一「— 来源」：.item-meta 的「来源：X」是唯一异类（赛道 vs 推荐阅读/GitHub/共识分歧）
+     建议优化：reading 链接热区【注：li 的 padding 不扩大内部 <a> 的点击域（实测 li 113px / a 18px），
+             要改得动链接本身 display:inline-block + padding 或整行成链接】；.chip margin-right 10px 与容器 gap 双轨归一；
+             rgba 淡底 6 处注释声明「品牌色 5-8% 带域」；.meta 14px 用途不同 → 注释声明即可
+     规范补充：入场动画（rise 0.34s）豁免「过渡 150-250ms」，写入规范边界
+
    ⏸ 挂起项（评审方第 4 方案，2026-09-21 裁定「本轮不做」）：
    推荐阅读/GitHub 并排——**条件启用**，不满足前提永远堆叠：
      · 内容列 ≥1000px（即视口 ≥1280px）才允许启用；
@@ -23,6 +48,7 @@
    理由：内容列 788px 并排后每栏 ≈26 中文字/行，而 reading 标题实测均值 54.5 字、
    最长 78 字 → reflow 把省下的 378px 全吃掉，且 5 天缺 GitHub 会造成单/双栏交替闪烁。
    达标前更便宜的减长：reading 精简 3 条 + reason/why 各压一行（省 ~150px，零风险）。
+   若将来要收整页高度，优先试赛道 margin-top 48→44，不动 vp 模块（2026-09-21 评审方裁）。
 
    gold 两档（例外条款，2026-09-21 与评审方裁定）：**实心 chip = 企业AI应用赛道；≥5% 淡底 /
    标题用色 = 主理人人工内容**。除这两档外 gold 不得挪用——下轮若要再加一处金色用法，先回来改这条。
@@ -294,7 +320,7 @@ a:hover { text-decoration-color: currentColor; }
 .shell {
   max-width: var(--shell-max);
   margin: 0 auto;
-  padding: 0 24px 72px;
+  padding: 0 24px 72px;   /* 底部缓冲：桌面 72 / 移动 56（见 @media 块），有意档——不是模块间距，别并入 spacing token */
   display: grid;
   grid-template-columns: var(--rail-w) minmax(0, 1fr);
   gap: 48px;
@@ -307,7 +333,7 @@ a:hover { text-decoration-color: currentColor; }
   top: 83px;
   padding: 18px 14px 12px;
   background: var(--surface-2);
-  border-radius: 12px;
+  border-radius: var(--radius-ctl);   /* 圆角唯一档，rail 原 12px 属第二档 */
   max-height: calc(100vh - 110px);
   overflow-y: auto;
   scrollbar-width: none;      /* 隐藏常驻滚动条：保持「线减法」，内容溢出仍可滚 */
@@ -519,10 +545,10 @@ li.partial .d-date { color: var(--ink-3); }
 
 .points {
   list-style: none;
-  margin: 12px 0 0;
+  margin: var(--space-head-label) 0 0;
   padding: 0;
   display: grid;
-  gap: 10px;
+  gap: var(--space-item-tight);
 }
 .points li {
   position: relative;
@@ -573,14 +599,25 @@ li.partial .d-date { color: var(--ink-3); }
 /* 赛道段落（v4）：改用「卡片」承载赛道身份 —— 用户反馈不要竖线/横线装饰。
    赛道色改由标题旁 chip + 卡片浅底表达（lane 映射仍与页眉图例一致，是信息不是装饰） */
 /* 板块间距刻度：48（板块）> 22（段间）> 8（段内）——边界节奏本身就是层级 */
-:root { --space-section: 48px; }
+:root {
+  /* 间距刻度（本次收敕，≤7 档）——新增间距值一律走 token，别再写裸数字，
+     否则下轮又将出现 20/22、40/48 这种「只差 2px 的漂移」 */
+  --space-section: 48px;      /* 板块之间（viewpoint / track / reading 同档）*/
+  --space-section-m: 34px;    /* 移动端板块档：屏短密度高，小一档是自适应不是缩比例 */
+  --space-list: 22px;         /* 列表/组之间（赛道内 news→insights→actions）*/
+  --space-head-h2: 18px;      /* H2 → 内容（有意分级①：板块标题最疏）*/
+  --space-item: 14px;         /* 普通条目（赛道 news / insights / actions）*/
+  --space-head-label: 12px;   /* 小标签 → 内容（有意分级②：如「今日要点」→ 列表）*/
+  --space-item-tight: 12px;   /* 紧凑条目（今日要点、共识/分歧引用）*/
+  --space-head-group: 8px;    /* 组标题 → 条目（有意分级③：组标题最紧，贴住自己的列表）*/
+}
 
 /* 板块头：chip + 25px 衬线标题 —— 全页统一的分区锚点，chip 竖排下来就是页面目录 */
 .sec-head {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin: 0 0 18px;
+  margin: 0 0 var(--space-head-h2);
 }
 .sec-head .chip { margin-right: 0; }   /* gap 已负责间距，避免 10+9 叠加 */
 .sec-head h2 { margin: 0; }
@@ -602,7 +639,7 @@ li.partial .d-date { color: var(--ink-3); }
 }
 
 /* 间距刻度：段内 8 < 段间 22 < 板块 40（避免全页均质松） */
-.group { margin-top: 22px; }
+.group { margin-top: var(--space-list); }
 .group:first-of-type { margin-top: 0; }
 
 .group-title {
@@ -611,12 +648,12 @@ li.partial .d-date { color: var(--ink-3); }
   color: var(--ink);
   font-weight: 600;
   letter-spacing: 0.01em;
-  margin-bottom: 8px;
+  margin-bottom: var(--space-head-group);
 }
 
 .item {
   position: relative;
-  margin-bottom: 14px;
+  margin-bottom: var(--space-item);
   padding-left: 16px;
 }
 .item:last-child { margin-bottom: 0; }
@@ -643,7 +680,7 @@ li.partial .d-date { color: var(--ink-3); }
 
 /* 落地行动 = 主理人笔记：靠底色区分，不加额外竖线（避免与赛道色脊叠成双层线） */
 .group[data-kind="actions"] {
-  margin-top: 20px;
+  margin-top: var(--space-list);
   padding: 14px 16px;
   background: var(--note-bg);
   border-radius: var(--radius-ctl);
@@ -680,22 +717,21 @@ li.partial .d-date { color: var(--ink-3); }
 .vp-text { font-size: var(--fs-lead); line-height: 1.7; color: var(--ink); max-width: var(--measure-tight); }
 
 .vp-card ul {
-  margin: 18px 0 0;
+  margin: var(--space-head-h2) 0 0;
   padding-left: 18px;
   font-size: var(--fs-small);
   color: var(--ink-2);
 }
 /* 引用条目节奏与全站一致（原来只有 4px，读起来是紧贴的一坨） */
-.vp-card li { margin-bottom: 9px; }
+.vp-card li { margin-bottom: var(--space-item-tight); }   /* 紧凑条目：条目内折行间隙 ~9.5px，再小会粘成一块 */
 .vp-card li:last-child { margin-bottom: 0; }
 
 /* 引用来源标签（本模块专用）：低对比中性底，不与赛道色抢注意力 */
+/* 引用出处：与推荐阅读/GitHub 同款的「— 来源」纯文本（不做底色胶囊：
+   全页来源重复密度最高处恢复胶囊＝把上轮拆掉的模板味装回来）*/
 .q-src {
-  display: inline-block;
-  margin-left: 6px;
-  padding: 0 6px;
-  border-radius: 3px;
-  background: var(--hover-bg);
+  display: inline;
+  margin-left: 4px;
   font-size: var(--fs-micro);
   color: var(--ink-3);
   letter-spacing: 0.02em;
@@ -704,7 +740,7 @@ li.partial .d-date { color: var(--ink-3); }
 }
 
 /* 推荐阅读 / GitHub 项目推荐 */
-.reading { margin-top: 40px; }
+.reading { margin-top: var(--space-section); }
 
 .reading h2 {
   margin: 0;
@@ -777,6 +813,7 @@ li.partial .d-date { color: var(--ink-3); }
 
 /* ---- 窄屏：日期架转为横向时间轴 -------------------------------------------- */
 @media (max-width: 860px) {
+  :root { --space-section: var(--space-section-m); }   /* 移动端全板块同一档 */
   :root { --fs-masthead: 30px; --fs-track: 21px; --fs-lead: 17.5px; --fs-sub: 16px; }
 
   .topbar-inner { padding: 10px 16px; gap: 10px; }
@@ -784,7 +821,7 @@ li.partial .d-date { color: var(--ink-3); }
 
   .shell {
     display: block;
-    padding: 0 16px 56px;
+    padding: 0 16px 56px;   /* 底部缓冲：移动 56 / 桌面 72，有意档——不是模块间距，勿并入 spacing token */
   }
 
   /* 窄屏日期栏：整条不透明（原来 94% 半透明 + 两端透明遮罩，下滑时正文从底下透出来像"缝隙"） */
@@ -866,7 +903,7 @@ li.partial .d-date { color: var(--ink-3); }
   .track { padding: 18px 16px 20px; border-radius: var(--radius-ctl); }
   .track,
   .viewpoint,
-  .reading { margin-top: 34px; }
+  .reading { margin-top: var(--space-section); }
 
   .reading > ol > li { padding-left: 28px; }
 }

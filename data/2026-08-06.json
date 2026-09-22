@@ -79,7 +79,7 @@
       "stars": "1K",
       "track": "企业AI应用",
       "note": "为AI编程Agent提供跨会话、跨工具的长期记忆方案，支持不同Agent供应商之间的上下文交接",
-      "why": "企业Agent落地最大痛点是记忆断裂，该方案的设计思路对内容创作者的企业AI Agent架构有参考价值"
+      "why": "企业Agent落地最大痛点是记忆断裂，该方案的设计思路对小禾的企业AI Agent架构有参考价值"
     },
     {
       "repo": "code-yeongyu/lazycodex",
@@ -118,5 +118,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-22T12:32"
+  "generated_at": "2026-09-22T14:20"
 }
