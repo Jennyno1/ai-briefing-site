@@ -1,122 +1,122 @@
 {
-  "date": "2026-08-05",
-  "format": "summary",
-  "points": [
-    "Anthropic签下100亿美元AI云合同，企业AI基础设施军备竞赛进入新阶段"
-  ],
-  "tracks": [
-    {
-      "key": "ai_tech",
-      "emoji": "❶",
-      "name": "AI产业技术",
-      "news": [
-        "DeepSeek升至全球调用量第一，OpenCode发文称单日处理8万亿Token——开源模型在调用量上首次超越所有闭源模型，成为全球AI基础设施的事实标准。",
-        "Latent Space深度分析\"ChatGPT Work\"：OpenAI正在将ChatGPT打造成面向十亿用户的Agent平台，从聊天助手进化为工作操作系统。",
-        "OpenAI、Anthropic、Google DeepMind、Meta、Thinky联合签署公开信，呼吁\"有节奏地\"推进AI发展——五大AI巨头首次在AI安全节奏上达成共识。",
-        "欧盟AI透明度标签规则正式生效：所有AI生成内容必须标注来源，深度伪造内容需额外标识。全球首个AI内容标识强制法规落地。"
-      ],
-      "insights": [
-        "DeepSeek单日8万亿Token不是技术参数而是经济信号——开源模型的成本结构已经足以支撑全球级的推理负载。对于企业AI部署，这意味着闭源模型的定价权正在被开源生态瓦解。",
-        "五大AI巨头联名信的本质是行业自律：不是\"要不要发展\"而是\"怎么发展\"。这封信释放的信号是AI行业正在从野蛮生长期进入制度化治理期，对企业AI合规部署有直接影响。"
-      ],
-      "actions": [
-        "跟踪欧盟AI透明度规则的执行细节——如果内容标注成为全球趋势，小红书等平台可能跟进，内容创作者的AI辅助内容创作流程需要提前适配\"AI内容标注\"机制。",
-        "DeepSeek调用量全球第一是小红书内容好选题：从数据切入讲开源AI的崛起，收尾到\"小团队也可以用顶级AI\"的实操意义。"
-      ]
-    },
-    {
-      "key": "enterprise_ai",
-      "emoji": "❷",
-      "name": "企业AI应用",
-      "news": [
-        "DeepSeek升至全球调用量第一、单日处理8万亿Token，开源模型正在成为全球AI基础设施",
-        "Anthropic与AI云初创公司Volta签署100亿美元合作协议，Volta将独家运营Anthropic的全球推理基础设施。这是企业AI基础设施领域迄今最大单笔交易。",
-        "阿里、字节、腾讯三大巨头全面押注AI办公：钉钉推出AI原生协作空间、飞书升级智能助手、企业微信接入混元大模型。中国互联网巨头的\"AI办公\"大战正式开打。",
-        "AWS与vibe-coding创业公司Superblocks深度合作，低代码/AI辅助开发进入企业级基础设施层。"
-      ],
-      "insights": [
-        "Anthropic $10B云合同标志着AI产业从\"模型竞争\"进入\"基础设施竞争\"。百亿美元级别的基础设施投入意味着企业级AI的可靠性和规模将成为下一阶段壁垒，单纯比拼模型能力已不够。",
-        "三大巨头同时押注AI办公，企业IT决策者面临的核心问题从\"用什么AI工具\"变成\"选哪个AI生态\"。钉钉、飞书、企微各自的AI能力将直接影响企业IM选型和协作工具布局。"
-      ],
-      "actions": [
-        "内容创作者作为企业IT从业者，可以写一篇\"阿里字节腾讯AI办公三国杀：企业选型该看什么\"，从实际使用视角拆解三家AI办公方案的核心差异和选型逻辑。",
-        "Anthropic $10B Volta合作值得持续跟踪——如果Anthropic的基础设施模式跑通，将影响所有AI企业的部署策略。关注Volta的技术架构和定价模式。"
-      ]
-    },
-    {
-      "key": "content_creation",
-      "emoji": "❸",
-      "name": "内容创作",
-      "news": [
-        "小红书封禁大量AI毒动画账号，累计处置违规笔记8.4万余篇、违规账号3571个。平台升级风险识别模型，对AI生成的低质/有害内容实施前置拦截。",
-        "Spotify与独立厂牌联盟Merlin达成合作，扩展AI混音和翻唱功能，AI音乐创作从技术验证走向商业落地。",
-        "Product Hunt上新AI创作类工具持续活跃：VIDEO AI ME（AI视频生成）、Crodo AI（AI设计）等面向创作者的轻量工具密集发布。"
-      ],
-      "insights": [
-        "小红书严打AI生成内容与AI创作工具爆发形成矛盾信号：一方面AI让内容生产成本趋零，一方面平台正在收紧AI内容的审核尺度。AI辅助创作的合规边界正在被重新定义。",
-        "Spotify的AI音乐合作意味着主流平台正在系统性地接受AI创作内容——视频之后，音乐是下一个被AI渗透的内容形态。这对内容创作者意味着AI背景音乐、AI配音等环节将更快标准化。"
-      ],
-      "actions": [
-        "以\"小红书封禁AI毒动画，但AI创作工具在爆发——内容创作者如何在合规前提下用好AI\"为题写一篇小红书，结合AI视频/音乐新工具，输出AI辅助创作的边界感和方法论。",
-        "关注Spotify AI音乐功能的后续进展——如果AI音乐进入主流分发渠道，小红书内容配乐环节可以提前探索AI音乐生成工具的接入。"
-      ]
-    }
-  ],
-  "github": [
-    {
-      "repo": "basketikun/infinite-canvas",
-      "url": "https://github.com/basketikun/infinite-canvas",
-      "stars": "4K",
-      "track": "内容创作",
-      "note": "面向AI创作的开源无限画布工作台，集成AI生图、视频生成、Agent智能助手、多模态创作",
-      "why": "国内团队开发的AI创作一体化工具，小红书面封+配图可以在一个画布里完成全流程"
-    },
-    {
-      "repo": "EverMind-AI/Raven",
-      "url": "https://github.com/EverMind-AI/Raven",
-      "stars": "4K",
-      "track": "企业AI应用",
-      "note": "记忆优先的自我改进Agent框架，基于EverOS+MiroThinker深度推理，可长期运行",
-      "why": "企业Agent落地的关键瓶颈是记忆管理，Raven的设计思路对内容创作者设计企业AI Agent工作流有参考价值"
-    },
-    {
-      "repo": "StarTrail-org/PixelRAG",
-      "url": "https://github.com/StarTrail-org/PixelRAG",
-      "stars": "9K",
-      "track": "AI产业技术",
-      "note": "像素级原生搜索，直接对网页截图而非HTML解析进行RAG，号称\"网页解析的终结\"",
-      "why": "如果像素级RAG成为趋势，将改变AI信息检索的底层范式，值得关注其对搜索和内容理解的影响"
-    }
-  ],
-  "reading": [
-    {
-      "title": "Unpacking ChatGPT Work: the Agent for a Billion Users",
-      "url": "https://www.latent.space/p/unpacking-chatgpt-work",
-      "source": "",
-      "reason": "OpenAI正在将ChatGPT打造成面向十亿用户的Agent工作平台，从聊天助手进化为工作操作系统。ChatGPT Work会改变普通用户使用AI的方式，也会影响企业级Agent产品的竞争格局"
-    },
-    {
-      "title": "Anthropic signs $10B deal with AI cloud startup Volta",
-      "url": "https://techcrunch.com/2026/08/04/anthropic-signs-10-billion-deal-with-ai-cloud-startup-volta",
-      "source": "",
-      "reason": "Anthropic百亿美元锁定专属AI云基础设施，是企业AI基建领域迄今最大单笔交易。这笔交易的规模和结构预示着AI产业正在从\"模型API经济\"转向\"专用基础设施经济\""
-    },
-    {
-      "title": "阿里字节腾讯，为AI办公拼了",
-      "url": "https://www.36kr.com/p/3923895877794183",
-      "source": "",
-      "reason": "中国三大互联网巨头同时发力AI办公，钉钉/飞书/企业微信各自接入大模型能力。企业AI办公市场将从零散工具竞争升级为生态级对抗，对IT决策者的选型策略产生直接影响"
-    }
-  ],
-  "consensus": {
-    "text": "",
-    "quotes": []
+ "date": "2026-08-05",
+ "format": "summary",
+ "points": [
+  "Anthropic签下100亿美元AI云合同，企业AI基础设施军备竞赛进入新阶段"
+ ],
+ "tracks": [
+  {
+   "key": "ai_tech",
+   "emoji": "❶",
+   "name": "AI产业技术",
+   "news": [
+    "DeepSeek升至全球调用量第一，OpenCode发文称单日处理8万亿Token——开源模型在调用量上首次超越所有闭源模型，成为全球AI基础设施的事实标准。",
+    "Latent Space深度分析\"ChatGPT Work\"：OpenAI正在将ChatGPT打造成面向十亿用户的Agent平台，从聊天助手进化为工作操作系统。",
+    "OpenAI、Anthropic、Google DeepMind、Meta、Thinky联合签署公开信，呼吁\"有节奏地\"推进AI发展——五大AI巨头首次在AI安全节奏上达成共识。",
+    "欧盟AI透明度标签规则正式生效：所有AI生成内容必须标注来源，深度伪造内容需额外标识。全球首个AI内容标识强制法规落地。"
+   ],
+   "insights": [
+    "DeepSeek单日8万亿Token不是技术参数而是经济信号——开源模型的成本结构已经足以支撑全球级的推理负载。对于企业AI部署，这意味着闭源模型的定价权正在被开源生态瓦解。",
+    "五大AI巨头联名信的本质是行业自律：不是\"要不要发展\"而是\"怎么发展\"。这封信释放的信号是AI行业正在从野蛮生长期进入制度化治理期，对企业AI合规部署有直接影响。"
+   ],
+   "actions": [
+    "跟踪欧盟AI透明度规则的执行细节——如果内容标注成为全球趋势，小红书等平台可能跟进，内容创作者的AI辅助内容创作流程需要提前适配\"AI内容标注\"机制。",
+    "DeepSeek调用量全球第一是小红书内容好选题：从数据切入讲开源AI的崛起，收尾到\"小团队也可以用顶级AI\"的实操意义。"
+   ]
   },
-  "division": {
-    "text": "",
-    "quotes": []
+  {
+   "key": "enterprise_ai",
+   "emoji": "❷",
+   "name": "企业AI应用",
+   "news": [
+    "DeepSeek升至全球调用量第一、单日处理8万亿Token，开源模型正在成为全球AI基础设施",
+    "Anthropic与AI云初创公司Volta签署100亿美元合作协议，Volta将独家运营Anthropic的全球推理基础设施。这是企业AI基础设施领域迄今最大单笔交易。",
+    "阿里、字节、腾讯三大巨头全面押注AI办公：钉钉推出AI原生协作空间、飞书升级智能助手、企业微信接入混元大模型。中国互联网巨头的\"AI办公\"大战正式开打。",
+    "AWS与vibe-coding创业公司Superblocks深度合作，低代码/AI辅助开发进入企业级基础设施层。"
+   ],
+   "insights": [
+    "Anthropic $10B云合同标志着AI产业从\"模型竞争\"进入\"基础设施竞争\"。百亿美元级别的基础设施投入意味着企业级AI的可靠性和规模将成为下一阶段壁垒，单纯比拼模型能力已不够。",
+    "三大巨头同时押注AI办公，企业IT决策者面临的核心问题从\"用什么AI工具\"变成\"选哪个AI生态\"。钉钉、飞书、企微各自的AI能力将直接影响企业IM选型和协作工具布局。"
+   ],
+   "actions": [
+    "内容创作者作为企业IT从业者，可以写一篇\"阿里字节腾讯AI办公三国杀：企业选型该看什么\"，从实际使用视角拆解三家AI办公方案的核心差异和选型逻辑。",
+    "Anthropic $10B Volta合作值得持续跟踪——如果Anthropic的基础设施模式跑通，将影响所有AI企业的部署策略。关注Volta的技术架构和定价模式。"
+   ]
   },
-  "ai_generated": true,
-  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T21:14"
+  {
+   "key": "content_creation",
+   "emoji": "❸",
+   "name": "内容创作",
+   "news": [
+    "小红书封禁大量AI毒动画账号，累计处置违规笔记8.4万余篇、违规账号3571个。平台升级风险识别模型，对AI生成的低质/有害内容实施前置拦截。",
+    "Spotify与独立厂牌联盟Merlin达成合作，扩展AI混音和翻唱功能，AI音乐创作从技术验证走向商业落地。",
+    "Product Hunt上新AI创作类工具持续活跃：VIDEO AI ME（AI视频生成）、Crodo AI（AI设计）等面向创作者的轻量工具密集发布。"
+   ],
+   "insights": [
+    "小红书严打AI生成内容与AI创作工具爆发形成矛盾信号：一方面AI让内容生产成本趋零，一方面平台正在收紧AI内容的审核尺度。AI辅助创作的合规边界正在被重新定义。",
+    "Spotify的AI音乐合作意味着主流平台正在系统性地接受AI创作内容——视频之后，音乐是下一个被AI渗透的内容形态。这对内容创作者意味着AI背景音乐、AI配音等环节将更快标准化。"
+   ],
+   "actions": [
+    "以\"小红书封禁AI毒动画，但AI创作工具在爆发——内容创作者如何在合规前提下用好AI\"为题写一篇小红书，结合AI视频/音乐新工具，输出AI辅助创作的边界感和方法论。",
+    "关注Spotify AI音乐功能的后续进展——如果AI音乐进入主流分发渠道，小红书内容配乐环节可以提前探索AI音乐生成工具的接入。"
+   ]
+  }
+ ],
+ "github": [
+  {
+   "repo": "basketikun/infinite-canvas",
+   "url": "https://github.com/basketikun/infinite-canvas",
+   "stars": "4K",
+   "track": "内容创作",
+   "note": "面向AI创作的开源无限画布工作台，集成AI生图、视频生成、Agent智能助手、多模态创作",
+   "why": "国内团队开发的AI创作一体化工具，小红书面封+配图可以在一个画布里完成全流程"
+  },
+  {
+   "repo": "EverMind-AI/Raven",
+   "url": "https://github.com/EverMind-AI/Raven",
+   "stars": "4K",
+   "track": "企业AI应用",
+   "note": "记忆优先的自我改进Agent框架，基于EverOS+MiroThinker深度推理，可长期运行",
+   "why": "企业Agent落地的关键瓶颈是记忆管理，Raven的设计思路对内容创作者设计企业AI Agent工作流有参考价值"
+  },
+  {
+   "repo": "StarTrail-org/PixelRAG",
+   "url": "https://github.com/StarTrail-org/PixelRAG",
+   "stars": "9K",
+   "track": "AI产业技术",
+   "note": "像素级原生搜索，直接对网页截图而非HTML解析进行RAG，号称\"网页解析的终结\"",
+   "why": "如果像素级RAG成为趋势，将改变AI信息检索的底层范式，值得关注其对搜索和内容理解的影响"
+  }
+ ],
+ "reading": [
+  {
+   "title": "Unpacking ChatGPT Work: the Agent for a Billion Users",
+   "url": "https://www.latent.space/p/unpacking-chatgpt-work",
+   "source": "Latent Space",
+   "reason": "OpenAI正在将ChatGPT打造成面向十亿用户的Agent工作平台，从聊天助手进化为工作操作系统。ChatGPT Work会改变普通用户使用AI的方式，也会影响企业级Agent产品的竞争格局"
+  },
+  {
+   "title": "Anthropic signs $10B deal with AI cloud startup Volta",
+   "url": "https://techcrunch.com/2026/08/04/anthropic-signs-10-billion-deal-with-ai-cloud-startup-volta",
+   "source": "TechCrunch",
+   "reason": "Anthropic百亿美元锁定专属AI云基础设施，是企业AI基建领域迄今最大单笔交易。这笔交易的规模和结构预示着AI产业正在从\"模型API经济\"转向\"专用基础设施经济\""
+  },
+  {
+   "title": "阿里字节腾讯，为AI办公拼了",
+   "url": "https://www.36kr.com/p/3923895877794183",
+   "source": "36氪",
+   "reason": "中国三大互联网巨头同时发力AI办公，钉钉/飞书/企业微信各自接入大模型能力。企业AI办公市场将从零散工具竞争升级为生态级对抗，对IT决策者的选型策略产生直接影响"
+  }
+ ],
+ "consensus": {
+  "text": "",
+  "quotes": []
+ },
+ "division": {
+  "text": "",
+  "quotes": []
+ },
+ "ai_generated": true,
+ "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+ "generated_at": "2026-09-21T21:14"
 }

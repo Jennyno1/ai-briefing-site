@@ -1,122 +1,122 @@
 {
-  "date": "2026-08-18",
-  "format": "summary",
-  "points": [
-    "虎嗅两篇文章同时戳中AI内容创作痛点——\"牛来\"活人感出圈 vs AI套话泛滥，\"手工痕迹\"正从短板变成流量溢价",
-    "千问办公首发上线GLM-5.3与DeepSeek V4 Pro，苹果联合阿里训练\"中国特供\"AI模型，国内企业AI走向多模型+本地化路线",
-    "黄仁勋携华尔街将AI算力打造为独立资产类别，承诺25%残值支持；英伟达15亿美元入股软银数据中心锁定OpenAI项目"
-  ],
-  "tracks": [
-    {
-      "key": "ai_tech",
-      "emoji": "❶",
-      "name": "AI产业技术",
-      "news": [
-        "黄仁勋携华尔街资管巨头将AI算力打造为独立资产类别，承诺为单个投资项目提供最高25%残值支持，OpenAI亦承诺2030年前部署约12GW英伟达算力。",
-        "英伟达向软银数据中心开发商投资15亿美元锁定OpenAI项目，Groq融资3.5亿美元转战Neocloud，Wispr以20亿美元估值融资2.8亿美元，AI资本运作持续升温。",
-        "宇树科技将于8月19日登陆科创板，场外暗盘最高炒至520元/股，联发科完成阿里Qwen 3.8 Day-0适配，Anthropic自曝内部Model 2强于Mythos 5。"
-      ],
-      "insights": [
-        "英伟达正从芯片供应商转型为算力基础设施\"兜底方\"，以残值担保加股权投资绑定下游需求，AI竞争已由技术竞赛延伸至资本与债务风险博弈。",
-        "模型与硬件加速融合，端侧Day-0适配与具身智能IPO同频共振，行业重心正从云端大模型向边缘硬件与物理实体渗透。"
-      ],
-      "actions": [
-        "宇树科技上市首日或现情绪化炒作，A股投资者宜借道机器人/具身智能类ETF参与，避免追高场外套利式定价。",
-        "英伟达算力长协落地利好国产算力基础设施与液冷产业链，可逢低关注通信、算力相关A股ETF配置机会。"
-      ]
-    },
-    {
-      "key": "enterprise_ai",
-      "emoji": "❷",
-      "name": "企业AI应用",
-      "news": [
-        "阿里旗下\"千问办公\"首发上线GLM-5.3与DeepSeek V4 Pro两款旗舰模型，加上此前已上线的Qwen3.8-Max，现已支持三款国产旗舰，企业办公AI选择进一步丰富。",
-        "联想集团透露AI PC国内市场销量已占笔记本总销量50%以上，全球同比增长86%，正通过端侧算力升级将Token生产更多留在本地以兼顾隐私与成本。",
-        "AI自动化初创Relay宣布关停，团队并入谷歌Chrome团队，AI工作流赛道正加速向科技巨头集中，垂直自动化工具生存空间收窄。"
-      ],
-      "insights": [
-        "知乎热帖\"开会就是互丢AI文档\"引发大厂员工共鸣，说明大量企业AI应用仍停留在\"AI生成+AI再解读\"的浅层循环，尚未真正重塑协作流程、带动产出质量的实质提升。",
-        "千问办公接入多款模型、苹果联合阿里训练\"中国特供\"模型等信号，印证国内企业AI正走向\"多模型接入+端侧部署\"路线，模型可替代性增强而数据安全成为核心壁垒。"
-      ],
-      "actions": [
-        "针对\"AI文档泛滥\"痛点，推行AI工作流准入SOP：AI生成内容在进入审批节点前强制人工复核并标注生成来源，阻断无效信息在会议与汇报间空转。",
-        "结合端侧算力趋势，试点将敏感业务数据交给本地/端侧大模型处理实现数据不出内网，同时配置多模型路由按任务难度择优调用，兼顾成本与质量。"
-      ]
-    },
-    {
-      "key": "content_creation",
-      "emoji": "❸",
-      "name": "内容创作",
-      "news": [
-        "AIGC动画《牛来》因\"粗糙但真实\"的活人感意外出圈，虎嗅指出AI越会生成，\"活人感\"越成稀缺溢价。",
-        "虎嗅撰文吐槽AI写作满篇\"不是……而是……\"已成为一眼可辨的机械套话，引发\"不敢用AI写\"的焦虑。",
-        "知乎热帖爆出大厂开会变成互丢AI文档的形式主义，员工吐槽\"量上来了、质没跟上\"。"
-      ],
-      "insights": [
-        "当AI生成在画面与文本两端都趋于同质，\"手工痕迹、真人表达、具体细节\"正从短板逆转为信任与流量的溢价点。",
-        "生成工具和开源模型大幅拉低内容生产门槛，但生产端的泛滥让\"分发与选题差异化\"比\"会生成\"更值钱。"
-      ],
-      "actions": [
-        "定一个\"去AI味\"检查清单：成稿后扫描\"不是……而是……\"\"赋能\"\"重构\"等高频套话并逐句改写为口语短句，混入具体数字、场景与个人经历，形成\"活人感\"护城河。",
-        "拆解《牛来》从吐槽到二创的传播链路，复盘\"不完美内容如何靠真实感发酵\"，用它做一期\"粗糙手工vs精致AI\"选题；同时翻一遍Product Hunt今日上新的AI创作工具，挑一款实测产出差异化内容。"
-      ]
-    }
-  ],
-  "github": [
-    {
-      "repo": "multica-ai/andrej-karpathy-skills",
-      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
-      "stars": "203K",
-      "track": "内容创作",
-      "note": "Andrej Karpathy关于LLM编程陷阱的观察，提炼成Claude Code行为规范CLAUDE.md文件",
-      "why": "把LLM编程踩坑经验固化为可复用的行为规范，团队用同一套CLAUDE.md即可统一AI编程质量标准"
-    },
-    {
-      "repo": "langflow-ai/langflow",
-      "url": "https://github.com/langflow-ai/langflow",
-      "stars": "153K",
-      "track": "企业AI应用",
-      "note": "强大的AI智能体工作流构建与部署平台，拖拽+代码方式搭建RAG和多智能体协作",
-      "why": "企业可跳过自建Agent框架，用拖拽方式快速搭建内部AI工作流，复用社区模板降低试错成本"
-    },
-    {
-      "repo": "huggingface/transformers",
-      "url": "https://github.com/huggingface/transformers",
-      "stars": "164K",
-      "track": "AI产业技术",
-      "note": "构建和部署最先进机器学习模型的框架，覆盖文本、视觉、音频多模态",
-      "why": "企业AI落地时模型选型、微调、推理部署的核心基础设施，支持从原型到生产的全链路"
-    }
-  ],
-  "reading": [
-    {
-      "title": "AI automation startup Relay shuts down, staff joins Google's Chrome team",
-      "url": "https://techcrunch.com/2026/08/17/ai-automation-startup-relay-shuts-down-staff-joins-googles-chrome-team/",
-      "source": "",
-      "reason": "AI自动化初创Relay刚融完A轮即关停，团队被Chrome收编。AI工作流赛道正加速向巨头集中，垂直工具生存空间收窄"
-    },
-    {
-      "title": "Groq raises $350M to fuel its pivot from AI chips to neocloud",
-      "url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/",
-      "source": "",
-      "reason": "Groq从自研AI芯片转型Neocloud云服务，获3.5亿美元融资。算力竞争从芯片层延伸到云服务层，纯芯片创业窗口收窄"
-    },
-    {
-      "title": "SpaceX officially closes its Cursor acquisition",
-      "url": "https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/",
-      "source": "",
-      "reason": "SpaceX正式完成对Cursor母公司Anysphere的600亿美元收购交割。AI编程工具赛道的战略价值被重新定价"
-    }
-  ],
-  "consensus": {
-    "text": "",
-    "quotes": []
+ "date": "2026-08-18",
+ "format": "summary",
+ "points": [
+  "虎嗅两篇文章同时戳中AI内容创作痛点——\"牛来\"活人感出圈 vs AI套话泛滥，\"手工痕迹\"正从短板变成流量溢价",
+  "千问办公首发上线GLM-5.3与DeepSeek V4 Pro，苹果联合阿里训练\"中国特供\"AI模型，国内企业AI走向多模型+本地化路线",
+  "黄仁勋携华尔街将AI算力打造为独立资产类别，承诺25%残值支持；英伟达15亿美元入股软银数据中心锁定OpenAI项目"
+ ],
+ "tracks": [
+  {
+   "key": "ai_tech",
+   "emoji": "❶",
+   "name": "AI产业技术",
+   "news": [
+    "黄仁勋携华尔街资管巨头将AI算力打造为独立资产类别，承诺为单个投资项目提供最高25%残值支持，OpenAI亦承诺2030年前部署约12GW英伟达算力。",
+    "英伟达向软银数据中心开发商投资15亿美元锁定OpenAI项目，Groq融资3.5亿美元转战Neocloud，Wispr以20亿美元估值融资2.8亿美元，AI资本运作持续升温。",
+    "宇树科技将于8月19日登陆科创板，场外暗盘最高炒至520元/股，联发科完成阿里Qwen 3.8 Day-0适配，Anthropic自曝内部Model 2强于Mythos 5。"
+   ],
+   "insights": [
+    "英伟达正从芯片供应商转型为算力基础设施\"兜底方\"，以残值担保加股权投资绑定下游需求，AI竞争已由技术竞赛延伸至资本与债务风险博弈。",
+    "模型与硬件加速融合，端侧Day-0适配与具身智能IPO同频共振，行业重心正从云端大模型向边缘硬件与物理实体渗透。"
+   ],
+   "actions": [
+    "宇树科技上市首日或现情绪化炒作，A股投资者宜借道机器人/具身智能类ETF参与，避免追高场外套利式定价。",
+    "英伟达算力长协落地利好国产算力基础设施与液冷产业链，可逢低关注通信、算力相关A股ETF配置机会。"
+   ]
   },
-  "division": {
-    "text": "",
-    "quotes": []
+  {
+   "key": "enterprise_ai",
+   "emoji": "❷",
+   "name": "企业AI应用",
+   "news": [
+    "阿里旗下\"千问办公\"首发上线GLM-5.3与DeepSeek V4 Pro两款旗舰模型，加上此前已上线的Qwen3.8-Max，现已支持三款国产旗舰，企业办公AI选择进一步丰富。",
+    "联想集团透露AI PC国内市场销量已占笔记本总销量50%以上，全球同比增长86%，正通过端侧算力升级将Token生产更多留在本地以兼顾隐私与成本。",
+    "AI自动化初创Relay宣布关停，团队并入谷歌Chrome团队，AI工作流赛道正加速向科技巨头集中，垂直自动化工具生存空间收窄。"
+   ],
+   "insights": [
+    "知乎热帖\"开会就是互丢AI文档\"引发大厂员工共鸣，说明大量企业AI应用仍停留在\"AI生成+AI再解读\"的浅层循环，尚未真正重塑协作流程、带动产出质量的实质提升。",
+    "千问办公接入多款模型、苹果联合阿里训练\"中国特供\"模型等信号，印证国内企业AI正走向\"多模型接入+端侧部署\"路线，模型可替代性增强而数据安全成为核心壁垒。"
+   ],
+   "actions": [
+    "针对\"AI文档泛滥\"痛点，推行AI工作流准入SOP：AI生成内容在进入审批节点前强制人工复核并标注生成来源，阻断无效信息在会议与汇报间空转。",
+    "结合端侧算力趋势，试点将敏感业务数据交给本地/端侧大模型处理实现数据不出内网，同时配置多模型路由按任务难度择优调用，兼顾成本与质量。"
+   ]
   },
-  "ai_generated": true,
-  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T21:14"
+  {
+   "key": "content_creation",
+   "emoji": "❸",
+   "name": "内容创作",
+   "news": [
+    "AIGC动画《牛来》因\"粗糙但真实\"的活人感意外出圈，虎嗅指出AI越会生成，\"活人感\"越成稀缺溢价。",
+    "虎嗅撰文吐槽AI写作满篇\"不是……而是……\"已成为一眼可辨的机械套话，引发\"不敢用AI写\"的焦虑。",
+    "知乎热帖爆出大厂开会变成互丢AI文档的形式主义，员工吐槽\"量上来了、质没跟上\"。"
+   ],
+   "insights": [
+    "当AI生成在画面与文本两端都趋于同质，\"手工痕迹、真人表达、具体细节\"正从短板逆转为信任与流量的溢价点。",
+    "生成工具和开源模型大幅拉低内容生产门槛，但生产端的泛滥让\"分发与选题差异化\"比\"会生成\"更值钱。"
+   ],
+   "actions": [
+    "定一个\"去AI味\"检查清单：成稿后扫描\"不是……而是……\"\"赋能\"\"重构\"等高频套话并逐句改写为口语短句，混入具体数字、场景与个人经历，形成\"活人感\"护城河。",
+    "拆解《牛来》从吐槽到二创的传播链路，复盘\"不完美内容如何靠真实感发酵\"，用它做一期\"粗糙手工vs精致AI\"选题；同时翻一遍Product Hunt今日上新的AI创作工具，挑一款实测产出差异化内容。"
+   ]
+  }
+ ],
+ "github": [
+  {
+   "repo": "multica-ai/andrej-karpathy-skills",
+   "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+   "stars": "203K",
+   "track": "内容创作",
+   "note": "Andrej Karpathy关于LLM编程陷阱的观察，提炼成Claude Code行为规范CLAUDE.md文件",
+   "why": "把LLM编程踩坑经验固化为可复用的行为规范，团队用同一套CLAUDE.md即可统一AI编程质量标准"
+  },
+  {
+   "repo": "langflow-ai/langflow",
+   "url": "https://github.com/langflow-ai/langflow",
+   "stars": "153K",
+   "track": "企业AI应用",
+   "note": "强大的AI智能体工作流构建与部署平台，拖拽+代码方式搭建RAG和多智能体协作",
+   "why": "企业可跳过自建Agent框架，用拖拽方式快速搭建内部AI工作流，复用社区模板降低试错成本"
+  },
+  {
+   "repo": "huggingface/transformers",
+   "url": "https://github.com/huggingface/transformers",
+   "stars": "164K",
+   "track": "AI产业技术",
+   "note": "构建和部署最先进机器学习模型的框架，覆盖文本、视觉、音频多模态",
+   "why": "企业AI落地时模型选型、微调、推理部署的核心基础设施，支持从原型到生产的全链路"
+  }
+ ],
+ "reading": [
+  {
+   "title": "AI automation startup Relay shuts down, staff joins Google's Chrome team",
+   "url": "https://techcrunch.com/2026/08/17/ai-automation-startup-relay-shuts-down-staff-joins-googles-chrome-team/",
+   "source": "TechCrunch",
+   "reason": "AI自动化初创Relay刚融完A轮即关停，团队被Chrome收编。AI工作流赛道正加速向巨头集中，垂直工具生存空间收窄"
+  },
+  {
+   "title": "Groq raises $350M to fuel its pivot from AI chips to neocloud",
+   "url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/",
+   "source": "TechCrunch",
+   "reason": "Groq从自研AI芯片转型Neocloud云服务，获3.5亿美元融资。算力竞争从芯片层延伸到云服务层，纯芯片创业窗口收窄"
+  },
+  {
+   "title": "SpaceX officially closes its Cursor acquisition",
+   "url": "https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/",
+   "source": "TechCrunch",
+   "reason": "SpaceX正式完成对Cursor母公司Anysphere的600亿美元收购交割。AI编程工具赛道的战略价值被重新定价"
+  }
+ ],
+ "consensus": {
+  "text": "",
+  "quotes": []
+ },
+ "division": {
+  "text": "",
+  "quotes": []
+ },
+ "ai_generated": true,
+ "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+ "generated_at": "2026-09-21T21:14"
 }

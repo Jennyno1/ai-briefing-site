@@ -1,121 +1,121 @@
 {
-  "date": "2026-08-13",
-  "format": "summary",
-  "points": [
-    "AI资本运作井喷：Cognition洽谈400亿美元估值、Lovable确认133亿估值再融4亿、Manus宣布独立运营",
-    "DeepSeek V4 Pro正式版上线，多项测试对标Fable 5，国产大模型进入贴身肉搏",
-    "谷歌AI核心高管流失：Jeff Dean等四人离开DeepMind，Gemini团队再临动荡"
-  ],
-  "tracks": [
-    {
-      "key": "ai_tech",
-      "emoji": "❶",
-      "name": "AI产业技术",
-      "news": [
-        "DeepSeek V4 Pro正式版（DeepSeek-V4-Pro-0813）上线，多项测试接近Fable 5；SpaceXAI发布Grok 4.6剑指GPT-5.6 Sol；阿里开放Qwen3.8-2.4T-A95B权重。",
-        "AI融资井喷：Cognition洽谈400亿美元估值、Lovable确认133亿估值再融4亿、OpenAI支持的Thrive Holdings融20亿美元服务企业。",
-        "Manus突然宣布独立运营；谷歌Jeff Dean、Sanjay、Oriol、Quoc四人离开DeepMind。"
-      ],
-      "insights": [
-        "单日四起融资/估值事件（Cognition 400亿、Lovable 133亿、Thrive 20亿、Blacksmith 5.5亿）说明AI资本仍高烧，且正从模型层转向应用层。",
-        "DeepSeek V4 Pro、Qwen3.8、Grok 4.6同一天放出，国产与海外模型进入\"性能对标\"贴身肉搏。"
-      ],
-      "actions": [
-        "DeepSeek V4 Pro正式版已上线，作为日常主力模型关注其API定价与缓存机制，评估切换以降本。",
-        "跟踪Cognition（Devin）400亿估值融资落地，它代表AI Coding应用层的估值天花板。"
-      ]
-    },
-    {
-      "key": "enterprise_ai",
-      "emoji": "❷",
-      "name": "企业AI应用",
-      "news": [
-        "虎嗅发文\"Skill不够了，Agent需要拼生产系统\"，直指企业Agent从单点技能走向完整生产系统。",
-        "腾讯二季度财报：上半年资本开支增长82%、Q2达527.84亿元，刘炽平称\"多款AI应用已看到上行空间\"。",
-        "OpenAI发布企业AI落地指南，并上线ChatGPT Business高级席位。"
-      ],
-      "insights": [
-        "\"Skill→生产系统\"是企业Agent的核心拐点，与Hermes的skill体系同源——单点技能已过时，需要可编排可复用的生产级工作流。",
-        "腾讯AI开始\"算回报\"，标志大厂从烧钱抢模型转向验证AI商业闭环，企业采购会更看重ROI。"
-      ],
-      "actions": [
-        "把已有skill沉淀成可复用的\"生产系统\"范式（技能+记忆+定时任务+飞书协同），对齐企业Agent新叙事。"
-      ]
-    },
-    {
-      "key": "content_creation",
-      "emoji": "❸",
-      "name": "内容创作",
-      "news": [
-        "谷歌Pixel 11相机新增创作者套件，内置提词器和人声增强，专为单人自媒体创作者设计。",
-        "亚马逊宣布默认用Twitch主播内容训练AI（主播可opt-out），平台对创作者内容的AI训练权争夺升温。",
-        "豆包被质疑\"两头收费\"，AI内容工具定价模式引争议。"
-      ],
-      "insights": [
-        "大厂硬件直接下场服务单人自媒体（提词器+人声增强），说明\"一个人一支队伍\"的生产模式已被视为增量市场。",
-        "Twitch默认训练机制是AI训练权风向标：创作者内容正成为大模型默认原料，国内平台跟进只是时间问题。"
-      ],
-      "actions": [
-        "评估Pixel 11创作者套件的提词器+人声增强能否替代部分剪辑流程，作为单人自媒体硬件升级选项。",
-        "检查自己发布的内容是否可能被平台默认用于AI训练，在平台未明确前保留原创署名与水印。"
-      ]
-    }
-  ],
-  "github": [
-    {
-      "repo": "hugohe3/ppt-master",
-      "url": "https://github.com/hugohe3/ppt-master",
-      "stars": "45.5K",
-      "track": "内容创作",
-      "note": "把文档或主题一键生成原生PowerPoint，带原生形状和排版",
-      "why": "做干货分享、课件、小红书配图可直接生成高质量PPT"
-    },
-    {
-      "repo": "google/skills",
-      "url": "https://github.com/google/skills",
-      "stars": "17.9K",
-      "track": "企业AI应用",
-      "note": "Google官方Agent Skills库，覆盖Google产品与技术的技能包",
-      "why": "企业Agent工作流的技能生态范本，可借鉴其组织方式沉淀自有skill"
-    },
-    {
-      "repo": "cloudflare/computer",
-      "url": "https://github.com/cloudflare/computer",
-      "stars": "7.8K",
-      "track": "AI产业技术",
-      "note": "Cloudflare官方\"给你的Agent一台电脑\"，Agent computer-use基础设施",
-      "why": "延续Agent浏览器赛道，企业级computer-use底座正在成型"
-    }
-  ],
-  "reading": [
-    {
-      "title": "Skill不够了，Agent需要拼\"生产系统\"",
-      "url": "https://www.huxiu.com/article/4882713.html",
-      "source": "",
-      "reason": "企业Agent从单点技能走向完整生产系统的拐点分析。与Hermes的skill体系同源，读完能对齐企业AI新叙事"
-    },
-    {
-      "title": "腾讯AI开始算回报：从增强旧业务，到寻找下一门新生意",
-      "url": "https://www.huxiu.com/article/4882704.html",
-      "source": "",
-      "reason": "腾讯二季度财报后AI战略转向\"算回报\"。国内企业AI从烧钱到验证商业闭环的标志"
-    },
-    {
-      "title": "AI coding startup Cognition reportedly in talks to raise at $40B",
-      "url": "https://techcrunch.com/2026/08/12/ai-coding-startup-cognition-reportedly-already-in-talks-to-raise-a/",
-      "source": "",
-      "reason": "Devin母公司Cognition洽谈400亿美元估值融资。AI Coding应用层估值天花板信号"
-    }
-  ],
-  "consensus": {
-    "text": "",
-    "quotes": []
+ "date": "2026-08-13",
+ "format": "summary",
+ "points": [
+  "AI资本运作井喷：Cognition洽谈400亿美元估值、Lovable确认133亿估值再融4亿、Manus宣布独立运营",
+  "DeepSeek V4 Pro正式版上线，多项测试对标Fable 5，国产大模型进入贴身肉搏",
+  "谷歌AI核心高管流失：Jeff Dean等四人离开DeepMind，Gemini团队再临动荡"
+ ],
+ "tracks": [
+  {
+   "key": "ai_tech",
+   "emoji": "❶",
+   "name": "AI产业技术",
+   "news": [
+    "DeepSeek V4 Pro正式版（DeepSeek-V4-Pro-0813）上线，多项测试接近Fable 5；SpaceXAI发布Grok 4.6剑指GPT-5.6 Sol；阿里开放Qwen3.8-2.4T-A95B权重。",
+    "AI融资井喷：Cognition洽谈400亿美元估值、Lovable确认133亿估值再融4亿、OpenAI支持的Thrive Holdings融20亿美元服务企业。",
+    "Manus突然宣布独立运营；谷歌Jeff Dean、Sanjay、Oriol、Quoc四人离开DeepMind。"
+   ],
+   "insights": [
+    "单日四起融资/估值事件（Cognition 400亿、Lovable 133亿、Thrive 20亿、Blacksmith 5.5亿）说明AI资本仍高烧，且正从模型层转向应用层。",
+    "DeepSeek V4 Pro、Qwen3.8、Grok 4.6同一天放出，国产与海外模型进入\"性能对标\"贴身肉搏。"
+   ],
+   "actions": [
+    "DeepSeek V4 Pro正式版已上线，作为日常主力模型关注其API定价与缓存机制，评估切换以降本。",
+    "跟踪Cognition（Devin）400亿估值融资落地，它代表AI Coding应用层的估值天花板。"
+   ]
   },
-  "division": {
-    "text": "",
-    "quotes": []
+  {
+   "key": "enterprise_ai",
+   "emoji": "❷",
+   "name": "企业AI应用",
+   "news": [
+    "虎嗅发文\"Skill不够了，Agent需要拼生产系统\"，直指企业Agent从单点技能走向完整生产系统。",
+    "腾讯二季度财报：上半年资本开支增长82%、Q2达527.84亿元，刘炽平称\"多款AI应用已看到上行空间\"。",
+    "OpenAI发布企业AI落地指南，并上线ChatGPT Business高级席位。"
+   ],
+   "insights": [
+    "\"Skill→生产系统\"是企业Agent的核心拐点，与Hermes的skill体系同源——单点技能已过时，需要可编排可复用的生产级工作流。",
+    "腾讯AI开始\"算回报\"，标志大厂从烧钱抢模型转向验证AI商业闭环，企业采购会更看重ROI。"
+   ],
+   "actions": [
+    "把已有skill沉淀成可复用的\"生产系统\"范式（技能+记忆+定时任务+飞书协同），对齐企业Agent新叙事。"
+   ]
   },
-  "ai_generated": true,
-  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T21:14"
+  {
+   "key": "content_creation",
+   "emoji": "❸",
+   "name": "内容创作",
+   "news": [
+    "谷歌Pixel 11相机新增创作者套件，内置提词器和人声增强，专为单人自媒体创作者设计。",
+    "亚马逊宣布默认用Twitch主播内容训练AI（主播可opt-out），平台对创作者内容的AI训练权争夺升温。",
+    "豆包被质疑\"两头收费\"，AI内容工具定价模式引争议。"
+   ],
+   "insights": [
+    "大厂硬件直接下场服务单人自媒体（提词器+人声增强），说明\"一个人一支队伍\"的生产模式已被视为增量市场。",
+    "Twitch默认训练机制是AI训练权风向标：创作者内容正成为大模型默认原料，国内平台跟进只是时间问题。"
+   ],
+   "actions": [
+    "评估Pixel 11创作者套件的提词器+人声增强能否替代部分剪辑流程，作为单人自媒体硬件升级选项。",
+    "检查自己发布的内容是否可能被平台默认用于AI训练，在平台未明确前保留原创署名与水印。"
+   ]
+  }
+ ],
+ "github": [
+  {
+   "repo": "hugohe3/ppt-master",
+   "url": "https://github.com/hugohe3/ppt-master",
+   "stars": "45.5K",
+   "track": "内容创作",
+   "note": "把文档或主题一键生成原生PowerPoint，带原生形状和排版",
+   "why": "做干货分享、课件、小红书配图可直接生成高质量PPT"
+  },
+  {
+   "repo": "google/skills",
+   "url": "https://github.com/google/skills",
+   "stars": "17.9K",
+   "track": "企业AI应用",
+   "note": "Google官方Agent Skills库，覆盖Google产品与技术的技能包",
+   "why": "企业Agent工作流的技能生态范本，可借鉴其组织方式沉淀自有skill"
+  },
+  {
+   "repo": "cloudflare/computer",
+   "url": "https://github.com/cloudflare/computer",
+   "stars": "7.8K",
+   "track": "AI产业技术",
+   "note": "Cloudflare官方\"给你的Agent一台电脑\"，Agent computer-use基础设施",
+   "why": "延续Agent浏览器赛道，企业级computer-use底座正在成型"
+  }
+ ],
+ "reading": [
+  {
+   "title": "Skill不够了，Agent需要拼\"生产系统\"",
+   "url": "https://www.huxiu.com/article/4882713.html",
+   "source": "虎嗅",
+   "reason": "企业Agent从单点技能走向完整生产系统的拐点分析。与Hermes的skill体系同源，读完能对齐企业AI新叙事"
+  },
+  {
+   "title": "腾讯AI开始算回报：从增强旧业务，到寻找下一门新生意",
+   "url": "https://www.huxiu.com/article/4882704.html",
+   "source": "虎嗅",
+   "reason": "腾讯二季度财报后AI战略转向\"算回报\"。国内企业AI从烧钱到验证商业闭环的标志"
+  },
+  {
+   "title": "AI coding startup Cognition reportedly in talks to raise at $40B",
+   "url": "https://techcrunch.com/2026/08/12/ai-coding-startup-cognition-reportedly-already-in-talks-to-raise-a/",
+   "source": "TechCrunch",
+   "reason": "Devin母公司Cognition洽谈400亿美元估值融资。AI Coding应用层估值天花板信号"
+  }
+ ],
+ "consensus": {
+  "text": "",
+  "quotes": []
+ },
+ "division": {
+  "text": "",
+  "quotes": []
+ },
+ "ai_generated": true,
+ "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+ "generated_at": "2026-09-21T21:14"
 }

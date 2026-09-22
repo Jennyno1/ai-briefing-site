@@ -1,121 +1,121 @@
 {
-  "date": "2026-08-22",
-  "format": "summary",
-  "points": [
-    "AI 创作工具撞\"信任红线\"——头部 YouTuber 接 AI 工具赞助被粉丝反噬，反\"AI 量产\"将成为小红书差异化关键",
-    "政企\"智能体平台化\"双线落地：WPS Comate 百城计划进国资委/金融监管，超算互联网聚拢 500+智能体",
-    "Harness 取代模型成新主战场——Nvidia/OpenAI/DeepSeek 三方同周发招，OpenAI 全面开源 Codex Harness"
-  ],
-  "tracks": [
-    {
-      "key": "ai_tech",
-      "emoji": "❶",
-      "name": "AI产业技术",
-      "news": [
-        "Latent Space 披露 Poolside 以 $12B \"reverse-execuhire\" 模式并入 NVIDIA：创始人留任估值 $1B、员工带走 $6B、Infraco 部分估值 $5B 用于扩张至 7GW neocloud 算力。"
-      ],
-      "insights": [
-        "AI 产业的竞争维度已从\"模型参数\"切换到\"基础设施分发权\"——Harness/调度层/Infrastructure 这层比模型层更稀缺，正成为新收购标的与开源战场；与昨日\"模型路由被溢价收购\"形成同一商业周期。",
-        "arXiv 同日发布三篇重磅论文：Agent 多代理串通风险（2608.18078）、开源权重模型卡治理不足（2608.18086）、跨语种安全对齐幻象（2608.18131）——指向监管/治理正成为下一代模型的核心竞争维度。"
-      ],
-      "actions": [
-        "36 氪报道 OpenAI 全面开源 Codex Harness，定位 Agent 时代的\"调度中间件\"，意味着模型厂商从\"卖参数\"转向\"卖编排入口\"。",
-        "用 Latent Space 的 Poolside 报道做深度解读素材，拆解\"reverse-execuhire\"如何让 AI 公司既留人才又拿算力，写入\"AI 入口之争\"专题；订阅 Latent Space 的 AINews 简报做产业周更。",
-        "用 arXiv 摘要工具汇总 Agent 治理三篇论文（2608.18078 + 2608.18086 + 2608.18131），提炼\"AI Agent 监管即护城河\"短笔记骨架；通过 RSS 订阅 arXiv cs.AI 持续追踪\"Position: \"开头的立场论文。"
-      ]
-    },
-    {
-      "key": "enterprise_ai",
-      "emoji": "❷",
-      "name": "企业AI应用",
-      "news": [
-        "WPS 联合各地国资委、大数据局、经信局、金融监管机构 8/21 启动\"WPS Comate 百城 AI 智能体赋能计划\"，面向企业数字化及 AI 业务负责人开设专项培训，主打\"产品培训+AI 演练\"。",
-        "国家超算互联网自 7 月发布\"科学计算智能体生态共创计划\"以来，已汇聚 MCP 工具 13000 余项、知识库 1000 余个、智能体 500 余个，覆盖生物信息、材料计算等 100 余个核心科研场景。",
-        "DeepSeek Harness v0.1.0-rc.8 于 8/19 深夜发布，新增原生看图能力并将 Claude Code 与 Codex 收编为可调度的\"子代理\"，定位于 Agent 时代的\"调度层\"，8/13 开源首日即登顶 Hacker News。"
-      ],
-      "insights": [
-        "Harness 成为新护城河：继 OpenAI 开源 Codex Harness、Nvidia 强调\"harness 比模型更关键\"之后，国内 DeepSeek 也在抢调度层——企业 IT 选型时应优先评估\"模型+编排\"是否解耦，避免被单一厂商绑定。",
-        "政企培训与超算生态同时落地\"智能体平台化\"：百城计划把智能体培训推到国资委/金融监管层级，超算互联网则以低代码聚拢 MCP+知识库资产——这意味着 2026 下半年企业 AI 落地的瓶颈正从\"模型能力\"转向\"智能体编排与培训普及\"。"
-      ],
-      "actions": [
-        "搭建企业级 Agent 调度网关：用 DeepSeek Harness（开源，`pip install deepseek-harness`）作为统一入口，配置 `harness.yaml` 把 Claude Code 与 Codex 注册为子代理；通过 MCP 协议接入 Jira/Confluence，让 PM 写 PRD 时自动拉取需求上下文、企业 IT 排障时自动读取知识库。",
-        "申请 WPS Comate 百城计划培训并跑通智能体模板：以\"HR AI 入转离\"或\"IT 工单智能分诊\"两个高频场景为试点，用 WPS 365 + 智能体画布搭两支 Agent（一支对接企业微信审批、一支调用百炼 Embedding 检索制度文档），2 周内产出可演示 SOP，反向推动部门立项。"
-      ]
-    },
-    {
-      "key": "content_creation",
-      "emoji": "❸",
-      "name": "内容创作",
-      "news": [
-        "头部 YouTube 创作者因接 Higgsfield、Seedance 等 AI 工具赞助遭粉丝强烈反弹，业内争议\"AI 钱\"是否破坏内容真实性。",
-        "研究发现自 ChatGPT 发布以来全网约三分之一的新网页带 AI 创作/编辑痕迹，AI 写作已渗透主流内容生态。",
-        "ChatGPT 新增 Apple Messages 插件可代发短信，\"AI 代笔\"从内容文本延伸至社交通讯分发场景。"
-      ],
-      "insights": [
-        "YouTube 头部翻车提示小红书\"AI 创作者\"赛道同样存在信任红线——AI 工具可以提效，但必须保留\"真人 IP 感\"（手写封面、出镜讲解），否则评论区会反噬；内容创作者\"内容创作者\"人设本身是护城河。",
-        "三分之一网页 AI 化意味着搜索引擎和小红书搜索流量都将重新洗牌，\"AI 味\"标题/封面将被算法降权，倒逼创作者做\"反 AI 模板化\"的差异化结构（本地实拍+AI 二创）。"
-      ],
-      "actions": [
-        "即刻在 Seedance 实测同款短片（5-8 秒竖版 3:4）发对比笔记：左半屏用 Higgsfield 一键生成、右半屏保留真人+AI 字幕，标题点出\"AI 全自动 vs AI 辅助\"，实测哪种评论区互动高，1 周内收数据。",
-        "用 ChatGPT 写完文案后过一遍\"反 AI 三件套\"：让 Claude 加 2 个本地口语词、手动删掉\"此外/因此/综上\"等模板连接词、封面加本人出镜或本地实拍图，再发小红书，避免被站内算法判为\"AI 量产\"。"
-      ]
-    }
-  ],
-  "github": [
-    {
-      "repo": "RVC-Boss/GPT-SoVITS",
-      "url": "https://github.com/RVC-Boss/GPT-SoVITS",
-      "stars": "61K",
-      "track": "内容创作",
-      "note": "1 分钟语音数据即可训练个性化 TTS/语音克隆模型",
-      "why": "小红书口播/有声书/儿童故事类创作者直接受益，1 小时搭出\"自己的声音\"，避免被平台 TTS 限流"
-    },
-    {
-      "repo": "openai/codex",
-      "url": "https://github.com/openai/codex",
-      "stars": "111K",
-      "track": "企业AI应用",
-      "note": "OpenAI 开源的轻量级编码 agent，终端运行",
-      "why": "配套 Harness 当子代理，企业 IT 可让 PM/BA 直接用自然语言拉数据/改脚本，Codex 处理执行"
-    },
-    {
-      "repo": "modelcontextprotocol/servers",
-      "url": "https://github.com/modelcontextprotocol/servers",
-      "stars": "89K",
-      "track": "AI产业技术",
-      "note": "MCP 协议官方参考实现服务器集",
-      "why": "跟进\"Agent 调度层\"必读，理解 OpenAI/Anthropic 标准化 Agent 工具调用的入口设计"
-    }
-  ],
-  "reading": [
-    {
-      "title": "Poolside gets $12B reverse-execuhire to NVIDIA",
-      "url": "https://www.latent.space/p/ainews-poolside-gets-12b-reverse",
-      "source": "",
-      "reason": "AI 公司\"被并购\"新范式：创始人留任拿钱、员工带资跳槽、infrastructure 卖给大厂——人才/算力/股权三方各取所需，把\"人才流失\"反向变成\"人才定价\""
-    },
-    {
-      "title": "Nvidia just showed that the harness, not the AI model, is now the real hero",
-      "url": "https://techcrunch.com/2026/08/21/nvidia-just-showed-that-the-harness-not-the-ai-model-is-now-the-real-hero/",
-      "source": "",
-      "reason": "Nvidia 用一次公开工程演示重新定义 AI 价值锚点：把\"模型=价值\"翻篇到\"工程化能力=价值\"，呼应 OpenAI/DeepSeek 的 Harness 战略转向"
-    },
-    {
-      "title": "WPS Comate百城AI智能体赋能计划正式启动",
-      "url": "https://www.36kr.com/newsflashes/3949280883719558",
-      "source": "",
-      "reason": "WPS 联合国资委/金融监管层级开智能体培训，把企业 AI 落地从\"工具普及\"推向\"组织变革\"——监管层背书意味着这不再只是 IT 部门的事"
-    }
-  ],
-  "consensus": {
-    "text": "「基础设施与编排层」正在取代「模型层」成为 AI 价值链的新分水岭——卖水人比淘金者先拿到定价权。",
-    "quotes": []
+ "date": "2026-08-22",
+ "format": "summary",
+ "points": [
+  "AI 创作工具撞\"信任红线\"——头部 YouTuber 接 AI 工具赞助被粉丝反噬，反\"AI 量产\"将成为小红书差异化关键",
+  "政企\"智能体平台化\"双线落地：WPS Comate 百城计划进国资委/金融监管，超算互联网聚拢 500+智能体",
+  "Harness 取代模型成新主战场——Nvidia/OpenAI/DeepSeek 三方同周发招，OpenAI 全面开源 Codex Harness"
+ ],
+ "tracks": [
+  {
+   "key": "ai_tech",
+   "emoji": "❶",
+   "name": "AI产业技术",
+   "news": [
+    "Latent Space 披露 Poolside 以 $12B \"reverse-execuhire\" 模式并入 NVIDIA：创始人留任估值 $1B、员工带走 $6B、Infraco 部分估值 $5B 用于扩张至 7GW neocloud 算力。"
+   ],
+   "insights": [
+    "AI 产业的竞争维度已从\"模型参数\"切换到\"基础设施分发权\"——Harness/调度层/Infrastructure 这层比模型层更稀缺，正成为新收购标的与开源战场；与昨日\"模型路由被溢价收购\"形成同一商业周期。",
+    "arXiv 同日发布三篇重磅论文：Agent 多代理串通风险（2608.18078）、开源权重模型卡治理不足（2608.18086）、跨语种安全对齐幻象（2608.18131）——指向监管/治理正成为下一代模型的核心竞争维度。"
+   ],
+   "actions": [
+    "36 氪报道 OpenAI 全面开源 Codex Harness，定位 Agent 时代的\"调度中间件\"，意味着模型厂商从\"卖参数\"转向\"卖编排入口\"。",
+    "用 Latent Space 的 Poolside 报道做深度解读素材，拆解\"reverse-execuhire\"如何让 AI 公司既留人才又拿算力，写入\"AI 入口之争\"专题；订阅 Latent Space 的 AINews 简报做产业周更。",
+    "用 arXiv 摘要工具汇总 Agent 治理三篇论文（2608.18078 + 2608.18086 + 2608.18131），提炼\"AI Agent 监管即护城河\"短笔记骨架；通过 RSS 订阅 arXiv cs.AI 持续追踪\"Position: \"开头的立场论文。"
+   ]
   },
-  "division": {
-    "text": "具身智能押「交付能力」还是「范式突破」——这是赌同一技术在两个商业周期下的不同赔率窗口，不存在谁对谁错。",
-    "quotes": []
+  {
+   "key": "enterprise_ai",
+   "emoji": "❷",
+   "name": "企业AI应用",
+   "news": [
+    "WPS 联合各地国资委、大数据局、经信局、金融监管机构 8/21 启动\"WPS Comate 百城 AI 智能体赋能计划\"，面向企业数字化及 AI 业务负责人开设专项培训，主打\"产品培训+AI 演练\"。",
+    "国家超算互联网自 7 月发布\"科学计算智能体生态共创计划\"以来，已汇聚 MCP 工具 13000 余项、知识库 1000 余个、智能体 500 余个，覆盖生物信息、材料计算等 100 余个核心科研场景。",
+    "DeepSeek Harness v0.1.0-rc.8 于 8/19 深夜发布，新增原生看图能力并将 Claude Code 与 Codex 收编为可调度的\"子代理\"，定位于 Agent 时代的\"调度层\"，8/13 开源首日即登顶 Hacker News。"
+   ],
+   "insights": [
+    "Harness 成为新护城河：继 OpenAI 开源 Codex Harness、Nvidia 强调\"harness 比模型更关键\"之后，国内 DeepSeek 也在抢调度层——企业 IT 选型时应优先评估\"模型+编排\"是否解耦，避免被单一厂商绑定。",
+    "政企培训与超算生态同时落地\"智能体平台化\"：百城计划把智能体培训推到国资委/金融监管层级，超算互联网则以低代码聚拢 MCP+知识库资产——这意味着 2026 下半年企业 AI 落地的瓶颈正从\"模型能力\"转向\"智能体编排与培训普及\"。"
+   ],
+   "actions": [
+    "搭建企业级 Agent 调度网关：用 DeepSeek Harness（开源，`pip install deepseek-harness`）作为统一入口，配置 `harness.yaml` 把 Claude Code 与 Codex 注册为子代理；通过 MCP 协议接入 Jira/Confluence，让 PM 写 PRD 时自动拉取需求上下文、企业 IT 排障时自动读取知识库。",
+    "申请 WPS Comate 百城计划培训并跑通智能体模板：以\"HR AI 入转离\"或\"IT 工单智能分诊\"两个高频场景为试点，用 WPS 365 + 智能体画布搭两支 Agent（一支对接企业微信审批、一支调用百炼 Embedding 检索制度文档），2 周内产出可演示 SOP，反向推动部门立项。"
+   ]
   },
-  "ai_generated": true,
-  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T21:14"
+  {
+   "key": "content_creation",
+   "emoji": "❸",
+   "name": "内容创作",
+   "news": [
+    "头部 YouTube 创作者因接 Higgsfield、Seedance 等 AI 工具赞助遭粉丝强烈反弹，业内争议\"AI 钱\"是否破坏内容真实性。",
+    "研究发现自 ChatGPT 发布以来全网约三分之一的新网页带 AI 创作/编辑痕迹，AI 写作已渗透主流内容生态。",
+    "ChatGPT 新增 Apple Messages 插件可代发短信，\"AI 代笔\"从内容文本延伸至社交通讯分发场景。"
+   ],
+   "insights": [
+    "YouTube 头部翻车提示小红书\"AI 创作者\"赛道同样存在信任红线——AI 工具可以提效，但必须保留\"真人 IP 感\"（手写封面、出镜讲解），否则评论区会反噬；内容创作者\"内容创作者\"人设本身是护城河。",
+    "三分之一网页 AI 化意味着搜索引擎和小红书搜索流量都将重新洗牌，\"AI 味\"标题/封面将被算法降权，倒逼创作者做\"反 AI 模板化\"的差异化结构（本地实拍+AI 二创）。"
+   ],
+   "actions": [
+    "即刻在 Seedance 实测同款短片（5-8 秒竖版 3:4）发对比笔记：左半屏用 Higgsfield 一键生成、右半屏保留真人+AI 字幕，标题点出\"AI 全自动 vs AI 辅助\"，实测哪种评论区互动高，1 周内收数据。",
+    "用 ChatGPT 写完文案后过一遍\"反 AI 三件套\"：让 Claude 加 2 个本地口语词、手动删掉\"此外/因此/综上\"等模板连接词、封面加本人出镜或本地实拍图，再发小红书，避免被站内算法判为\"AI 量产\"。"
+   ]
+  }
+ ],
+ "github": [
+  {
+   "repo": "RVC-Boss/GPT-SoVITS",
+   "url": "https://github.com/RVC-Boss/GPT-SoVITS",
+   "stars": "61K",
+   "track": "内容创作",
+   "note": "1 分钟语音数据即可训练个性化 TTS/语音克隆模型",
+   "why": "小红书口播/有声书/儿童故事类创作者直接受益，1 小时搭出\"自己的声音\"，避免被平台 TTS 限流"
+  },
+  {
+   "repo": "openai/codex",
+   "url": "https://github.com/openai/codex",
+   "stars": "111K",
+   "track": "企业AI应用",
+   "note": "OpenAI 开源的轻量级编码 agent，终端运行",
+   "why": "配套 Harness 当子代理，企业 IT 可让 PM/BA 直接用自然语言拉数据/改脚本，Codex 处理执行"
+  },
+  {
+   "repo": "modelcontextprotocol/servers",
+   "url": "https://github.com/modelcontextprotocol/servers",
+   "stars": "89K",
+   "track": "AI产业技术",
+   "note": "MCP 协议官方参考实现服务器集",
+   "why": "跟进\"Agent 调度层\"必读，理解 OpenAI/Anthropic 标准化 Agent 工具调用的入口设计"
+  }
+ ],
+ "reading": [
+  {
+   "title": "Poolside gets $12B reverse-execuhire to NVIDIA",
+   "url": "https://www.latent.space/p/ainews-poolside-gets-12b-reverse",
+   "source": "Latent Space",
+   "reason": "AI 公司\"被并购\"新范式：创始人留任拿钱、员工带资跳槽、infrastructure 卖给大厂——人才/算力/股权三方各取所需，把\"人才流失\"反向变成\"人才定价\""
+  },
+  {
+   "title": "Nvidia just showed that the harness, not the AI model, is now the real hero",
+   "url": "https://techcrunch.com/2026/08/21/nvidia-just-showed-that-the-harness-not-the-ai-model-is-now-the-real-hero/",
+   "source": "TechCrunch",
+   "reason": "Nvidia 用一次公开工程演示重新定义 AI 价值锚点：把\"模型=价值\"翻篇到\"工程化能力=价值\"，呼应 OpenAI/DeepSeek 的 Harness 战略转向"
+  },
+  {
+   "title": "WPS Comate百城AI智能体赋能计划正式启动",
+   "url": "https://www.36kr.com/newsflashes/3949280883719558",
+   "source": "36氪快讯",
+   "reason": "WPS 联合国资委/金融监管层级开智能体培训，把企业 AI 落地从\"工具普及\"推向\"组织变革\"——监管层背书意味着这不再只是 IT 部门的事"
+  }
+ ],
+ "consensus": {
+  "text": "「基础设施与编排层」正在取代「模型层」成为 AI 价值链的新分水岭——卖水人比淘金者先拿到定价权。",
+  "quotes": []
+ },
+ "division": {
+  "text": "具身智能押「交付能力」还是「范式突破」——这是赌同一技术在两个商业周期下的不同赔率窗口，不存在谁对谁错。",
+  "quotes": []
+ },
+ "ai_generated": true,
+ "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+ "generated_at": "2026-09-21T21:14"
 }

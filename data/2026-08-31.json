@@ -1,129 +1,129 @@
 {
-  "date": "2026-08-31",
-  "format": "summary",
-  "points": [
-    "Anthropic研究员展示自进化AI系统，10个失调基准上全部自动提升性能，AI自我改进迈出关键一步",
-    "Lambda获10亿美元债务融资采购NVIDIA芯片租赁给微软，AI推理基础设施军备竞赛白热化"
-  ],
-  "tracks": [
-    {
-      "key": "ai_tech",
-      "emoji": "❶",
-      "name": "AI产业技术",
-      "news": [
-        "Anthropic研究员展示自进化AI系统，在10个特定失调行为基准上实现自动提升且不降低整体性能。",
-        "液冷赛道订单排到年底，国内首个浸没式液冷算力方舱投入运行，AI算力散热瓶颈显现。",
-        "Neocloud Lambda获10亿美元私人债务融资采购NVIDIA芯片租赁给微软，AI基础设施成本飙升。"
-      ],
-      "insights": [
-        "AI推理基础设施正从芯片竞赛转向系统级工程——散热、网络、能效成为新瓶颈，液冷从可选变为必选。",
-        "🟡弱信号：自进化AI意味着模型可以持续自我优化，但安全对齐的边界如何随自我改进同步演进仍待观察。"
-      ],
-      "actions": [
-        "关注液冷和AI算力散热相关产业链标的，作为AI基础设施投资的补充配置方向。"
-      ]
-    },
-    {
-      "key": "enterprise_ai",
-      "emoji": "❷",
-      "name": "企业AI应用",
-      "news": [
-        "Google Cloud推出Gemini Enterprise for Legal，AI首次针对法律行业推出专用企业版产品。",
-        "Google Cloud发布Agent FinOps灵活计费方案，解决企业部署AI Agent的成本核算难题。",
-        "AWS Bedrock AgentCore支持跨框架评估，Agent质量保障从厂商锁定走向行业标准化。"
-      ],
-      "insights": [
-        "企业AI部署核心瓶颈正从模型能力转向多Agent协同治理——VentureBeat指出企业部署的Agent群组间复杂交互才是真实风险。",
-        "企业案例：loveholidays用Codex让全员成为开发者（OpenAI案例），Natera用Bedrock AgentCore实现100%工具调用准确率的智能预约（AWS案例）。"
-      ],
-      "actions": [
-        "评估Bedrock AgentCore跨框架评估能力，对比当前Agent工作流的可观测性和成本控制方案。"
-      ]
-    },
-    {
-      "key": "content_creation",
-      "emoji": "❸",
-      "name": "内容创作",
-      "news": [
-        "Hugging Face开源Claude文本水印系统工作原理，AI生成内容可追溯迈出技术落地一步。",
-        "Hugging Face推出399美元开源机器人Microduck，以教育和强化学习为核心定位。",
-        "阿里Qoder让非程序员也能参与AI编程，Coding正变成AI世界的数字执行力。"
-      ],
-      "insights": [
-        "内容创作门槛持续降低但合规压力同步上升——AI文本水印让内容可追溯，创作者需关注AI工具的版权合规方案。",
-        "🟡弱信号：Gamma收购设计创业公司Lica，AI设计工具赛道并购加速。"
-      ],
-      "actions": [
-        "用Open-Generative-AI替代商业工具做小红书封面和短视频，零成本实现AI生图生视频流水线。"
-      ]
-    }
-  ],
-  "github": [
-    {
-      "repo": "Anil-matcha/Open-Generative-AI",
-      "url": "https://github.com/Anil-matcha/Open-Generative-AI",
-      "stars": "27K",
-      "track": "内容创作",
-      "note": "开源AI视频和图像生成平台，对标Runway和Midjourney。",
-      "why": "适合内容创作者免费搭建AI生图生视频流水线。"
-    },
-    {
-      "repo": "khoj-ai/khoj",
-      "url": "https://github.com/khoj-ai/khoj",
-      "stars": "36K",
-      "track": "企业AI应用",
-      "note": "自托管AI第二大脑，支持文档问答、知识管理和自定义Agent。",
-      "why": "企业可私有化部署AI知识库，数据不出域，适合对数据安全要求高的团队。"
-    },
-    {
-      "repo": "sgl-project/sglang",
-      "url": "https://github.com/sgl-project/sglang",
-      "stars": "32K",
-      "track": "AI产业技术",
-      "note": "高性能LLM推理服务框架，针对多模态模型和推测解码优化。",
-      "why": "大规模部署时可将推理吞吐量提升3-5倍，显著降低GPU推理成本。"
-    }
-  ],
-  "reading": [
-    {
-      "title": "The full stack behind abundant intelligence",
-      "url": "https://openai.com/index/the-full-stack-behind-abundant-intelligence",
-      "source": "",
-      "reason": "OpenAI CFO Sarah Friar详解\"丰富智能\"背后的完整技术栈——芯片、算力、模型、产品的全链路布局",
-      "why": "这是OpenAI首次系统性地向外界解释其商业模型的底层逻辑，对理解AI基础设施投资方向有直接参考价值。"
-    },
-    {
-      "title": "How Decathlon runs demand forecasting at scale with Chronos-2",
-      "url": "https://aws.amazon.com/blogs/machine-learning/how-decathlon-runs-demand-forecasting-at-scale-with-chronos-2/",
-      "source": "",
-      "reason": "迪卡侬用Amazon Chronos-2时序预测模型做大规模需求预测，覆盖全球门店的库存优化",
-      "why": "传统零售巨头用AI做需求预测是企业AI落地的标杆案例，Chronos-2的开源时序模型路线值得追踪。"
-    },
-    {
-      "title": "Jalapeño's first results show industry-leading speed and efficiency",
-      "url": "https://openai.com/index/jalapeno-first-results",
-      "source": "",
-      "reason": "OpenAI自研推理芯片Jalapeño首批基准测试出炉，速度和能效领先行业",
-      "why": "AI推理芯片从NVIDIA一家独大走向自研分化，OpenAI此举将重塑推理算力供应链格局。"
-    }
-  ],
-  "consensus": {
-    "text": "自进化AI研究的突破意味着模型可以持续自我优化，推理基础设施的规模化需求正加速增长。",
-    "quotes": [
-      "Anthropic研究员展示自进化AI在10个基准上自动提升性能（TechCrunch AI）",
-      "Lambda获10亿美元债务融资采购NVIDIA芯片租赁给微软（TechCrunch AI）",
-      "液冷赛道订单排到年底，浸没式液冷算力方舱投入运行（36氪快讯）"
-    ]
+ "date": "2026-08-31",
+ "format": "summary",
+ "points": [
+  "Anthropic研究员展示自进化AI系统，10个失调基准上全部自动提升性能，AI自我改进迈出关键一步",
+  "Lambda获10亿美元债务融资采购NVIDIA芯片租赁给微软，AI推理基础设施军备竞赛白热化"
+ ],
+ "tracks": [
+  {
+   "key": "ai_tech",
+   "emoji": "❶",
+   "name": "AI产业技术",
+   "news": [
+    "Anthropic研究员展示自进化AI系统，在10个特定失调行为基准上实现自动提升且不降低整体性能。",
+    "液冷赛道订单排到年底，国内首个浸没式液冷算力方舱投入运行，AI算力散热瓶颈显现。",
+    "Neocloud Lambda获10亿美元私人债务融资采购NVIDIA芯片租赁给微软，AI基础设施成本飙升。"
+   ],
+   "insights": [
+    "AI推理基础设施正从芯片竞赛转向系统级工程——散热、网络、能效成为新瓶颈，液冷从可选变为必选。",
+    "🟡弱信号：自进化AI意味着模型可以持续自我优化，但安全对齐的边界如何随自我改进同步演进仍待观察。"
+   ],
+   "actions": [
+    "关注液冷和AI算力散热相关产业链标的，作为AI基础设施投资的补充配置方向。"
+   ]
   },
-  "division": {
-    "text": "开源权重AI公司成为收购热点，但免费分发模型的商业模式存在根本矛盾。",
-    "quotes": [
-      "NVIDIA以130亿美元收购Hugging Face，开源模型生态纳入版图（TechCrunch M&A）",
-      "Lambda获10亿美元融资采购NVIDIA芯片出租（TechCrunch AI）",
-      "OpenAI自研推理芯片Jalapeño首批基准测试领先行业（OpenAI官方）"
-    ]
+  {
+   "key": "enterprise_ai",
+   "emoji": "❷",
+   "name": "企业AI应用",
+   "news": [
+    "Google Cloud推出Gemini Enterprise for Legal，AI首次针对法律行业推出专用企业版产品。",
+    "Google Cloud发布Agent FinOps灵活计费方案，解决企业部署AI Agent的成本核算难题。",
+    "AWS Bedrock AgentCore支持跨框架评估，Agent质量保障从厂商锁定走向行业标准化。"
+   ],
+   "insights": [
+    "企业AI部署核心瓶颈正从模型能力转向多Agent协同治理——VentureBeat指出企业部署的Agent群组间复杂交互才是真实风险。",
+    "企业案例：loveholidays用Codex让全员成为开发者（OpenAI案例），Natera用Bedrock AgentCore实现100%工具调用准确率的智能预约（AWS案例）。"
+   ],
+   "actions": [
+    "评估Bedrock AgentCore跨框架评估能力，对比当前Agent工作流的可观测性和成本控制方案。"
+   ]
   },
-  "ai_generated": true,
-  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T21:14"
+  {
+   "key": "content_creation",
+   "emoji": "❸",
+   "name": "内容创作",
+   "news": [
+    "Hugging Face开源Claude文本水印系统工作原理，AI生成内容可追溯迈出技术落地一步。",
+    "Hugging Face推出399美元开源机器人Microduck，以教育和强化学习为核心定位。",
+    "阿里Qoder让非程序员也能参与AI编程，Coding正变成AI世界的数字执行力。"
+   ],
+   "insights": [
+    "内容创作门槛持续降低但合规压力同步上升——AI文本水印让内容可追溯，创作者需关注AI工具的版权合规方案。",
+    "🟡弱信号：Gamma收购设计创业公司Lica，AI设计工具赛道并购加速。"
+   ],
+   "actions": [
+    "用Open-Generative-AI替代商业工具做小红书封面和短视频，零成本实现AI生图生视频流水线。"
+   ]
+  }
+ ],
+ "github": [
+  {
+   "repo": "Anil-matcha/Open-Generative-AI",
+   "url": "https://github.com/Anil-matcha/Open-Generative-AI",
+   "stars": "27K",
+   "track": "内容创作",
+   "note": "开源AI视频和图像生成平台，对标Runway和Midjourney。",
+   "why": "适合内容创作者免费搭建AI生图生视频流水线。"
+  },
+  {
+   "repo": "khoj-ai/khoj",
+   "url": "https://github.com/khoj-ai/khoj",
+   "stars": "36K",
+   "track": "企业AI应用",
+   "note": "自托管AI第二大脑，支持文档问答、知识管理和自定义Agent。",
+   "why": "企业可私有化部署AI知识库，数据不出域，适合对数据安全要求高的团队。"
+  },
+  {
+   "repo": "sgl-project/sglang",
+   "url": "https://github.com/sgl-project/sglang",
+   "stars": "32K",
+   "track": "AI产业技术",
+   "note": "高性能LLM推理服务框架，针对多模态模型和推测解码优化。",
+   "why": "大规模部署时可将推理吞吐量提升3-5倍，显著降低GPU推理成本。"
+  }
+ ],
+ "reading": [
+  {
+   "title": "The full stack behind abundant intelligence",
+   "url": "https://openai.com/index/the-full-stack-behind-abundant-intelligence",
+   "source": "OpenAI官方",
+   "reason": "OpenAI CFO Sarah Friar详解\"丰富智能\"背后的完整技术栈——芯片、算力、模型、产品的全链路布局",
+   "why": "这是OpenAI首次系统性地向外界解释其商业模型的底层逻辑，对理解AI基础设施投资方向有直接参考价值。"
+  },
+  {
+   "title": "How Decathlon runs demand forecasting at scale with Chronos-2",
+   "url": "https://aws.amazon.com/blogs/machine-learning/how-decathlon-runs-demand-forecasting-at-scale-with-chronos-2/",
+   "source": "AWS AI Blog",
+   "reason": "迪卡侬用Amazon Chronos-2时序预测模型做大规模需求预测，覆盖全球门店的库存优化",
+   "why": "传统零售巨头用AI做需求预测是企业AI落地的标杆案例，Chronos-2的开源时序模型路线值得追踪。"
+  },
+  {
+   "title": "Jalapeño's first results show industry-leading speed and efficiency",
+   "url": "https://openai.com/index/jalapeno-first-results",
+   "source": "OpenAI官方",
+   "reason": "OpenAI自研推理芯片Jalapeño首批基准测试出炉，速度和能效领先行业",
+   "why": "AI推理芯片从NVIDIA一家独大走向自研分化，OpenAI此举将重塑推理算力供应链格局。"
+  }
+ ],
+ "consensus": {
+  "text": "自进化AI研究的突破意味着模型可以持续自我优化，推理基础设施的规模化需求正加速增长。",
+  "quotes": [
+   "Anthropic研究员展示自进化AI在10个基准上自动提升性能（TechCrunch AI）",
+   "Lambda获10亿美元债务融资采购NVIDIA芯片租赁给微软（TechCrunch AI）",
+   "液冷赛道订单排到年底，浸没式液冷算力方舱投入运行（36氪快讯）"
+  ]
+ },
+ "division": {
+  "text": "开源权重AI公司成为收购热点，但免费分发模型的商业模式存在根本矛盾。",
+  "quotes": [
+   "NVIDIA以130亿美元收购Hugging Face，开源模型生态纳入版图（TechCrunch M&A）",
+   "Lambda获10亿美元融资采购NVIDIA芯片出租（TechCrunch AI）",
+   "OpenAI自研推理芯片Jalapeño首批基准测试领先行业（OpenAI官方）"
+  ]
+ },
+ "ai_generated": true,
+ "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+ "generated_at": "2026-09-21T21:14"
 }

@@ -1,113 +1,113 @@
 {
-  "date": "2026-08-27",
-  "format": "summary",
-  "points": [
-    "Hugging Face拟$130亿被收购 AI基础设施并购潮升级",
-    "GLM-5.3 Flash开源 智谱\"牛来\"多模态模型确认",
-    "Agent能力平台化 Lovable $133亿估值Claude推Skills API"
-  ],
-  "tracks": [
-    {
-      "key": "ai_tech",
-      "emoji": "❶",
-      "name": "AI产业技术",
-      "news": [
-        "NVIDIA以$120亿反向收购Poolside AI 创始人保留 $10亿投资+员工获$60亿退出",
-        "具身智能公司Generalist估值达$30亿 模型可从3-12秒视频演示学习新任务",
-        "阿里千问Qwen3.8-Flash正式开源 基于Qwen4架构多模态MoE",
-        "OpenAI Jalapeño芯片首秀 DeepSeek R1每瓦吞吐量超GB300的1.7倍"
-      ],
-      "insights": [],
-      "actions": []
-    },
-    {
-      "key": "enterprise_ai",
-      "emoji": "❷",
-      "name": "企业AI应用",
-      "news": [
-        "Claude Platform Skills API和Files API正式GA 文件API速率提升至500RPM",
-        "AT&T披露40%员工AI使用已路由至开源模型 编码成本降56%",
-        "OpenAI发布ChatGPT Work Apple Messages插件 支持Mac桌面端消息操作"
-      ],
-      "insights": [],
-      "actions": []
-    },
-    {
-      "key": "content_creation",
-      "emoji": "❸",
-      "name": "内容创作",
-      "news": [
-        "Hugging Face正洽谈被收购 估值约$130亿 较2023年涨3倍",
-        "Lovable完成$4亿Series C 估值$133亿 推出Capabilities概念让Agent直接调用应用功能",
-        "量子位实测GLM-5.3 Flash视频生成 智谱确认\"牛来\"为GLM系列首个原生多模态"
-      ],
-      "insights": [],
-      "actions": []
-    }
-  ],
-  "github": [
-    {
-      "repo": "openai/codex",
-      "url": "https://github.com/openai/codex",
-      "stars": "118K",
-      "track": "内容创作",
-      "note": "OpenAI官方代码Agent CLI 本周新增1.1万星",
-      "why": "可直接用于小红书文案自动化生成"
-    },
-    {
-      "repo": "browser-use/browser-use",
-      "url": "https://github.com/browser-use/browser-use",
-      "stars": "110K",
-      "track": "",
-      "note": "浏览器自动化Agent框架 已完成11万周新增星",
-      "why": "可用于企业流程自动化"
-    },
-    {
-      "repo": "modular/modular",
-      "url": "https://github.com/modular/modular",
-      "stars": "29K",
-      "track": "AI产业技术",
-      "note": "模块化AI基础设施 支持LLM推理优化",
-      "why": "适合自建AI推理服务 降低API成本"
-    }
-  ],
-  "reading": [
-    {
-      "title": "Hugging Face reportedly in talks to be acquired for $13B",
-      "url": "https://techcrunch.com/2026/08/24/hugging-face-reportedly-in-talks-to-be-acquired-for-13b/",
-      "source": "",
-      "reason": "估值约$130亿 较2023年涨近3倍"
-    },
-    {
-      "title": "Lovable CTO: The Future of SaaS Is Apps That Agents Can Use",
-      "url": "https://www.latent.space/p/lovable-future-of-saas",
-      "source": "",
-      "reason": "估值$133亿 推出Capabilities概念"
-    },
-    {
-      "title": "Poolside gets $12B reverse-execuhire to NVIDIA",
-      "url": "https://www.latent.space/p/ainews-poolside-gets-12b-reverse",
-      "source": "",
-      "reason": "NVIDIA以$120亿反向收购Poolside AI 创始人保留$10亿投资"
-    }
-  ],
-  "consensus": {
-    "text": "AI产品形态正从\"对话界面\"转向\"能力平台\"",
-    "quotes": [
-      "Lovable推出MCP-powered Capabilities（Latent Space）",
-      "Anthropic Claude Platform Skills API正式发布GA（TechCrunch AI）",
-      "OpenAI发布ChatGPT Work Apple Messages插件（OpenAI官方）"
-    ]
+ "date": "2026-08-27",
+ "format": "summary",
+ "points": [
+  "Hugging Face拟$130亿被收购 AI基础设施并购潮升级",
+  "GLM-5.3 Flash开源 智谱\"牛来\"多模态模型确认",
+  "Agent能力平台化 Lovable $133亿估值Claude推Skills API"
+ ],
+ "tracks": [
+  {
+   "key": "ai_tech",
+   "emoji": "❶",
+   "name": "AI产业技术",
+   "news": [
+    "NVIDIA以$120亿反向收购Poolside AI 创始人保留 $10亿投资+员工获$60亿退出",
+    "具身智能公司Generalist估值达$30亿 模型可从3-12秒视频演示学习新任务",
+    "阿里千问Qwen3.8-Flash正式开源 基于Qwen4架构多模态MoE",
+    "OpenAI Jalapeño芯片首秀 DeepSeek R1每瓦吞吐量超GB300的1.7倍"
+   ],
+   "insights": [],
+   "actions": []
   },
-  "division": {
-    "text": "开源vs闭源的商业模式之争升级——开源模型在企业场景已证明性价比 但前沿能力仍依赖闭源投入",
-    "quotes": [
-      "AT&T披露40%员工AI使用已路由至开源模型（Latent Space AINews）",
-      "NVIDIA以$120亿反向收购Poolside AI（Latent Space）",
-      "Hugging Face拒绝NVIDIA $5亿投资 现以$130亿估值洽谈收购（TechCrunch M&A）"
-    ]
+  {
+   "key": "enterprise_ai",
+   "emoji": "❷",
+   "name": "企业AI应用",
+   "news": [
+    "Claude Platform Skills API和Files API正式GA 文件API速率提升至500RPM",
+    "AT&T披露40%员工AI使用已路由至开源模型 编码成本降56%",
+    "OpenAI发布ChatGPT Work Apple Messages插件 支持Mac桌面端消息操作"
+   ],
+   "insights": [],
+   "actions": []
   },
-  "ai_generated": true,
-  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-21T21:14"
+  {
+   "key": "content_creation",
+   "emoji": "❸",
+   "name": "内容创作",
+   "news": [
+    "Hugging Face正洽谈被收购 估值约$130亿 较2023年涨3倍",
+    "Lovable完成$4亿Series C 估值$133亿 推出Capabilities概念让Agent直接调用应用功能",
+    "量子位实测GLM-5.3 Flash视频生成 智谱确认\"牛来\"为GLM系列首个原生多模态"
+   ],
+   "insights": [],
+   "actions": []
+  }
+ ],
+ "github": [
+  {
+   "repo": "openai/codex",
+   "url": "https://github.com/openai/codex",
+   "stars": "118K",
+   "track": "内容创作",
+   "note": "OpenAI官方代码Agent CLI 本周新增1.1万星",
+   "why": "可直接用于小红书文案自动化生成"
+  },
+  {
+   "repo": "browser-use/browser-use",
+   "url": "https://github.com/browser-use/browser-use",
+   "stars": "110K",
+   "track": "",
+   "note": "浏览器自动化Agent框架 已完成11万周新增星",
+   "why": "可用于企业流程自动化"
+  },
+  {
+   "repo": "modular/modular",
+   "url": "https://github.com/modular/modular",
+   "stars": "29K",
+   "track": "AI产业技术",
+   "note": "模块化AI基础设施 支持LLM推理优化",
+   "why": "适合自建AI推理服务 降低API成本"
+  }
+ ],
+ "reading": [
+  {
+   "title": "Hugging Face reportedly in talks to be acquired for $13B",
+   "url": "https://techcrunch.com/2026/08/24/hugging-face-reportedly-in-talks-to-be-acquired-for-13b/",
+   "source": "TechCrunch",
+   "reason": "估值约$130亿 较2023年涨近3倍"
+  },
+  {
+   "title": "Lovable CTO: The Future of SaaS Is Apps That Agents Can Use",
+   "url": "https://www.latent.space/p/lovable-future-of-saas",
+   "source": "Latent Space",
+   "reason": "估值$133亿 推出Capabilities概念"
+  },
+  {
+   "title": "Poolside gets $12B reverse-execuhire to NVIDIA",
+   "url": "https://www.latent.space/p/ainews-poolside-gets-12b-reverse",
+   "source": "Latent Space",
+   "reason": "NVIDIA以$120亿反向收购Poolside AI 创始人保留$10亿投资"
+  }
+ ],
+ "consensus": {
+  "text": "AI产品形态正从\"对话界面\"转向\"能力平台\"",
+  "quotes": [
+   "Lovable推出MCP-powered Capabilities（Latent Space）",
+   "Anthropic Claude Platform Skills API正式发布GA（TechCrunch AI）",
+   "OpenAI发布ChatGPT Work Apple Messages插件（OpenAI官方）"
+  ]
+ },
+ "division": {
+  "text": "开源vs闭源的商业模式之争升级——开源模型在企业场景已证明性价比 但前沿能力仍依赖闭源投入",
+  "quotes": [
+   "AT&T披露40%员工AI使用已路由至开源模型（Latent Space AINews）",
+   "NVIDIA以$120亿反向收购Poolside AI（Latent Space）",
+   "Hugging Face拒绝NVIDIA $5亿投资 现以$130亿估值洽谈收购（TechCrunch M&A）"
+  ]
+ },
+ "ai_generated": true,
+ "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+ "generated_at": "2026-09-21T21:14"
 }
