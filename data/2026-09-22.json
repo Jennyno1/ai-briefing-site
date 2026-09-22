@@ -4,7 +4,7 @@
   "points": [
     "Grok 4.6 登陆 Amazon Bedrock：50 万 token 上下文加四档推理档位，定位长时程智能体与编码场景。",
     "Meta 智能体 Muse 移动端早期增速超 ChatGPT 同期，但亚马逊同日封禁其代购物理入口，平台冲突公开化。",
-    "OpenAI 成立数学顾问组，其 AI 已解决百余个开放数学难题，基础研究进入 impressed 观察窗口。",
+    "OpenAI 成立数学顾问组，其 AI 已解决百余个开放数学难题，基础研究进入值得关注的观察窗口。",
     "--"
   ],
   "tracks": [
@@ -128,5 +128,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-22T10:44"
+  "generated_at": "2026-09-22T10:52"
 }
