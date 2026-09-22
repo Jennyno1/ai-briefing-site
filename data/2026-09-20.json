@@ -123,7 +123,7 @@
     },
     {
       "title": "How To Write With An LLM",
-      "url": "https://simonwillison.net/2026/Sep/18/how-to-write-with-an-llm/",
+      "url": "https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/",
       "source": "Simon Willison",
       "reason": "把LLM当校对员而非写手的硬规则",
       "why": "内容创作的去AI味实操，与用户活人感写作原则完全同向。"
@@ -149,5 +149,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-22T12:08"
+  "generated_at": "2026-09-22T12:16"
 }

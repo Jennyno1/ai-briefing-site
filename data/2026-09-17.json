@@ -102,7 +102,7 @@
     },
     {
       "title": "Claude comes for Gemini with its own take on Docs and Slides",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/claude-docs-slides",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/996234/anthropic-one-claude-cowork-docs-slides",
       "source": "The Verge",
       "reason": "Anthropic把生产力套件补齐",
       "why": "AI助手从聊天窗口走向办公全家桶的标志性一步，直接影响协同办公工具格局。"
@@ -127,5 +127,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-22T12:08"
+  "generated_at": "2026-09-22T12:16"
 }

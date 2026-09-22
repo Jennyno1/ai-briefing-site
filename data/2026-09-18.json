@@ -95,7 +95,7 @@
     },
     {
       "title": "The Rise of the Forward Deployed Engineer — and How To Do the Job Right",
-      "url": "https://www.latent.space/p/forward-deployed-engineer",
+      "url": "https://www.latent.space/p/forward-deployed-engineer-best-practices",
       "source": "Latent Space",
       "reason": "Palantir出身的创业者谈FDE岗位方法论",
       "why": "企业AI落地最(\\`\\`值钱\\)的岗位画像，与面试准备直接对口。"
@@ -127,5 +127,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-22T12:08"
+  "generated_at": "2026-09-22T12:16"
 }

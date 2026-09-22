@@ -86,7 +86,7 @@
   "reading": [
     {
       "title": "Underwriting Superintelligence: Backing Agents you can Sue",
-      "url": "https://www.latent.space/p/underwriting-superintelligence",
+      "url": "https://www.latent.space/p/aiuc",
       "source": "Latent Space",
       "reason": "Latent Space 关于给智能体上保险与追责的讨论：谁为 Agent 的失误兜底、保单如何定价",
       "why": "给智能体上保险与追责的金融化视角，读完知道风投怎么给 Agent 定价。"
@@ -124,5 +124,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-22T12:08"
+  "generated_at": "2026-09-22T12:16"
 }

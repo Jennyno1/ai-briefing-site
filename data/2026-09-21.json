@@ -94,7 +94,7 @@
     },
     {
       "title": "OpenAI and Microsoft knew they were starting a ‘doom loop’ for the web",
-      "url": "https://www.theverge.com/2026/09/20/openai-microsoft-doom-loop",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/997633/openai-microsoft-chatgpt-ai-new-york-times-doom-loop-theft-google-zero",
       "source": "The Verge",
       "reason": "解封法院文件里的内部认知",
       "why": "企业内容资产的被爬边界与法务口径直接相关。"
@@ -133,5 +133,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-22T12:08"
+  "generated_at": "2026-09-22T12:16"
 }
