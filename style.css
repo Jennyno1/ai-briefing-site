@@ -680,12 +680,28 @@ li.partial .d-date { color: var(--ink-3); }
 .vp-text { font-size: var(--fs-lead); line-height: 1.7; color: var(--ink); max-width: var(--measure-tight); }
 
 .vp-card ul {
-  margin: 12px 0 0;
+  margin: 18px 0 0;
   padding-left: 18px;
   font-size: var(--fs-small);
-  color: var(--ink-3);
+  color: var(--ink-2);
 }
-.vp-card li { margin-bottom: 4px; }
+/* 引用条目节奏与全站一致（原来只有 4px，读起来是紧贴的一坨） */
+.vp-card li { margin-bottom: 9px; }
+.vp-card li:last-child { margin-bottom: 0; }
+
+/* 引用来源标签（本模块专用）：低对比中性底，不与赛道色抢注意力 */
+.q-src {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 0 6px;
+  border-radius: 3px;
+  background: var(--hover-bg);
+  font-size: var(--fs-micro);
+  color: var(--ink-3);
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  vertical-align: 0.06em;
+}
 
 /* 推荐阅读 / GitHub 项目推荐 */
 .reading { margin-top: 40px; }

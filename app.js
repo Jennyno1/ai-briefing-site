@@ -89,8 +89,13 @@
   function vpCard(kind, title, vp) {
     if (!vp || isPlaceholder(vp.text)) return '';
     var quotes = cleanList(vp.quotes);
+    // 引用条目：把「（来源）」从正文里拆出来做成标签（只在本模块用），正文与来源一眼可分
     var quotesHtml = quotes.length
-      ? '<ul>' + quotes.map(function (q) { return '<li>' + esc(q) + '</li>'; }).join('') + '</ul>'
+      ? '<ul>' + quotes.map(function (q) {
+          var p = splitSource(String(q));
+          return '<li>' + esc(p.body) +
+            (p.source ? ' <span class="q-src">' + esc(p.source) + '</span>' : '') + '</li>';
+        }).join('') + '</ul>'
       : '';
     return '<div class="vp-card vp-' + kind + '"><h3>' + esc(title) + '</h3>' +
       '<div class="vp-text">' + esc(vp.text) + '</div>' + quotesHtml + '</div>';
