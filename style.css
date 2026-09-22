@@ -139,6 +139,7 @@
   --gold: var(--l-gold);
   --teal: var(--l-teal);
   --note-bg: rgba(227, 177, 94, 0.06);
+  --conclusion-bg: rgba(120, 165, 255, 0.10);   /* 蓝底 = AI 结论（共识与分歧），与金底=人工行动并列的第二语义底色 */
   --hover-bg: rgba(76, 134, 255, 0.08);
   --shadow-top: 0 1px 0 rgba(255, 255, 255, 0.03);
 }
@@ -158,6 +159,7 @@
   --gold: var(--l-paper-gold);
   --teal: var(--l-paper-teal);
   --note-bg: rgba(156, 107, 31, 0.055);
+  --conclusion-bg: rgba(29, 91, 216, 0.055);    /* 蓝底 = AI 结论，透明度与金底同档 0.055，两底色等权重 */
   --hover-bg: rgba(29, 91, 216, 0.06);
   --shadow-top: 0 1px 0 rgba(0, 0, 0, 0.02);
 }
@@ -627,7 +629,7 @@ li.partial .d-date { color: var(--ink-3); }
 .chip-neutral { background: var(--chip-neutral-bg); }   /* 机器整理的板块：灰点，不抢赛道色 */
 .lead-label .chip { margin-right: 0; }
 
-/* 赛道（C 第 1 步）：退回全平 —— 全页底色只留给「落地行动」一种 */
+/* 赛道（C 第 1 步）：退回全平 —— 语义底色只有两种（金=人工行动 / 蓝=AI 结论），赛道两者都不是 */
 .track {
   margin-top: var(--space-section);
 }
@@ -696,23 +698,42 @@ li.partial .d-date { color: var(--ink-3); }
   margin-top: var(--space-section);
 }
 /* 两栏网格只包卡片：板块头在网格外，否则它会占掉一个格子、把卡片挤错行 */
+/* 蓝底 = AI 结论（2026-09-22 裁定 C）：底色给网格而不是整个模块，
+   板块头留在盒外才能与其余板块左对齐；内边距与「落地行动」金底同档 14/16。 */
 .vp-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
+  padding: 14px 16px;
+  background: var(--conclusion-bg);
+  border-radius: var(--radius-ctl);
 }
+/* 底色自带 14px 上内边距，此处回补，保持「板块头→内容」全页统一 18px */
+.viewpoint .sec-head { margin-bottom: calc(var(--space-head-h2) - 14px); }
 
-/* 卡面退平（C 第 3 步）：共识/分歧的区分交给文字标题本身，不再动用颜色 */
+/* 卡面仍退平：两部分靠语义色点区分（共识=品牌蓝 / 分歧=金），不加卡面底色，
+   避免在蓝底盒里再套一层盒子（C 方案：不做卡片墙） */
 .vp-card {
   padding: 0;
   background: transparent;
   border-radius: 0;
 }
+.vp-card h3::before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: 2px;
+}
+.vp-consensus h3::before { background: var(--accent); }
+.vp-division h3::before { background: var(--gold); }
 
 .vp-card h3, .vp-card h4 {
   margin: 0 0 10px;
   font-family: var(--font-serif);
-  font-size: 17px;
+  font-size: var(--fs-sub);   /* 清单 A1：原 17px 是字阶影子档，归位 17.5 */
   letter-spacing: 0.04em;
   font-weight: 600;
 }
