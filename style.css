@@ -117,6 +117,7 @@
   --radius-ctl: 8px;
   --rail-w: 216px;
   --shell-max: 1100px;
+  --shell-gap: 48px;      /* 左栏与正文列的间距（.shell gap，也是顶栏/页脚对齐正文列的偏移量）*/
   --measure: 74ch;        /* 内容列=正文行宽单一来源（需求3：面板收到正文行宽）*/
   --measure-tight: 60ch;  /* 例外一档：共识/分歧结论句（需求1）*/
 
@@ -139,7 +140,8 @@
   --gold: var(--l-gold);
   --teal: var(--l-teal);
   --note-bg: rgba(227, 177, 94, 0.06);
-  --conclusion-bg: rgba(120, 165, 255, 0.10);   /* 蓝底 = AI 结论（共识与分歧），与金底=人工行动并列的第二语义底色 */
+  --conclusion-bg: rgba(120, 165, 255, 0.13);   /* 共识：蓝底 = AI 的收敛判断 */
+  --tension-bg: rgba(227, 177, 94, 0.11);      /* 分歧：金底 = 待解的张力 */
   --hover-bg: rgba(76, 134, 255, 0.08);
   --shadow-top: 0 1px 0 rgba(255, 255, 255, 0.03);
 }
@@ -159,7 +161,8 @@
   --gold: var(--l-paper-gold);
   --teal: var(--l-paper-teal);
   --note-bg: rgba(156, 107, 31, 0.055);
-  --conclusion-bg: rgba(29, 91, 216, 0.055);    /* 蓝底 = AI 结论，透明度与金底同档 0.055，两底色等权重 */
+  --conclusion-bg: rgba(29, 91, 216, 0.07);     /* 共识：蓝底 = AI 的收敛判断 */
+  --tension-bg: rgba(156, 107, 31, 0.07);      /* 分歧：金底 = 待解的张力 */
   --hover-bg: rgba(29, 91, 216, 0.06);
   --shadow-top: 0 1px 0 rgba(0, 0, 0, 0.02);
 }
@@ -222,6 +225,14 @@ a:hover { text-decoration-color: currentColor; }
   align-items: center;
   justify-content: space-between;
   gap: 16px;
+}
+/* 右侧动作区（昵称 + 深浅切换）右沿 = 正文列右沿：原来的 24px 内边距会把按钮推到框架外 */
+/* 正文列比 shell 内容盒窄，右侧空档 = 内容盒宽 - rail - gap - 正文列宽；
+   用 --measure 表达，避免写死像素（ch 在两侧同字体上下文下等价） */
+.topbar-actions {
+  margin-right: calc(
+    var(--shell-max) - 48px - var(--rail-w) - var(--shell-gap) - var(--measure)
+  );
 }
 
 .brand {
@@ -328,7 +339,7 @@ a:hover { text-decoration-color: currentColor; }
   padding: 0 24px 72px;   /* 底部缓冲：桌面 72 / 移动 56（见 @media 块），有意档——不是模块间距，别并入 spacing token */
   display: grid;
   grid-template-columns: var(--rail-w) minmax(0, 1fr);
-  gap: 48px;
+  gap: var(--shell-gap);
   align-items: start;
 }
 
@@ -698,26 +709,25 @@ li.partial .d-date { color: var(--ink-3); }
   margin-top: var(--space-section);
 }
 /* 两栏网格只包卡片：板块头在网格外，否则它会占掉一个格子、把卡片挤错行 */
-/* 蓝底 = AI 结论（2026-09-22 裁定 C）：底色给网格而不是整个模块，
-   板块头留在盒外才能与其余板块左对齐；内边距与「落地行动」金底同档 14/16。 */
+/* 共识 / 分歧：两块各自独立底色、颜色对比明显（2026-09-22 用户裁定：
+   要「分得开 + 看得出不同」，不是共用一个蓝底）。
+   共识 = 品牌蓝（AI 的收敛判断）／分歧 = 金（待解的张力）——与全页语义色一致。 */
 .vp-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
+  gap: var(--space-list);
+}
+.vp-card {
   padding: 14px 16px;
-  background: var(--conclusion-bg);
   border-radius: var(--radius-ctl);
 }
-/* 底色自带 14px 上内边距，此处回补，保持「板块头→内容」全页统一 18px */
+.vp-consensus { background: var(--conclusion-bg); }
+.vp-division  { background: var(--tension-bg); }
+/* 卡片自带 14px 上内边距，回补后「板块头→内容」仍是全页统一的 18px */
 .viewpoint .sec-head { margin-bottom: calc(var(--space-head-h2) - 14px); }
 
-/* 卡面仍退平：两部分靠语义色点区分（共识=品牌蓝 / 分歧=金），不加卡面底色，
-   避免在蓝底盒里再套一层盒子（C 方案：不做卡片墙） */
-.vp-card {
-  padding: 0;
-  background: transparent;
-  border-radius: 0;
-}
+/* 标题色点：与各自底色同源，加强「两块」的分离感 */
+.vp-card { position: relative; }
 .vp-card h3::before {
   content: "";
   display: inline-block;
@@ -829,6 +839,7 @@ li.partial .d-date { color: var(--ink-3); }
 .reason-why { color: var(--ink-3); }
 
 /* ---- 页脚 ------------------------------------------------------------------ */
+/* 对齐口径：页脚左沿 = 正文列左沿（rail 宽 + shell 间距），与顶栏同一条竖线 */
 .footer {
   padding: 8px 24px 48px;
 }
@@ -837,13 +848,21 @@ li.partial .d-date { color: var(--ink-3); }
 .footer-note {
   max-width: var(--shell-max);
   margin: 0 auto;
+  /* 24(自身内边距) + rail 216 + gap 48 = 288 → 与正文列左沿同一条竖线 */
+  padding-left: calc(24px + var(--rail-w) + var(--shell-gap));
   font-size: var(--fs-micro);
   line-height: 1.8;
   color: var(--ink-3);
 }
 
 .footer-main strong { color: var(--ink-2); font-weight: 600; }
-.footer-note { margin-top: 10px; opacity: .65; font-size: 11px; }
+.footer-note {
+  margin-top: 10px;
+  /* 弱化靠字号与色阶，不用 opacity：0.65×ink-3 实色对比度仅 2.59:1（AA 线 4.5），再降会不达标 */
+  font-size: 11px;
+  color: var(--ink-3);
+  opacity: 1;
+}
 .footer-note:empty { display: none; }
 
 /* ---- 窄屏：日期架转为横向时间轴 -------------------------------------------- */
