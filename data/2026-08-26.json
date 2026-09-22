@@ -53,24 +53,20 @@
       "url": "https://github.com/harry0703/MoneyPrinterTurbo",
       "stars": "116K",
       "track": "内容创作",
-      "note": "AI大模型+自动化工作流一键生成高清短视频 本周新增9K+星",
-      "why": ""
+      "note": "AI大模型+自动化工作流一键生成高清短视频 本周新增9K+星"
     },
     {
       "repo": "volcengine/OpenViking",
       "url": "https://github.com/volcengine/OpenViking",
       "stars": "33K",
-      "track": "",
-      "note": "字节火山引擎开源Agent上下文数据库 统一记忆/知识RAG/长期存储",
-      "why": ""
+      "note": "字节火山引擎开源Agent上下文数据库 统一记忆/知识RAG/长期存储"
     },
     {
       "repo": "TauricResearch/TradingAgents",
       "url": "https://github.com/TauricResearch/TradingAgents",
       "stars": "100K",
       "track": "AI产业技术",
-      "note": "多Agent LLM金融交易框架 模拟研究/分析/决策全流程",
-      "why": ""
+      "note": "多Agent LLM金融交易框架 模拟研究/分析/决策全流程"
     }
   ],
   "reading": [
@@ -111,5 +107,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-22T10:44"
+  "generated_at": "2026-09-22T12:08"
 }

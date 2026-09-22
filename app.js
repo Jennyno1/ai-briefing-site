@@ -181,6 +181,11 @@
 
     html += missingNotice(data);
 
+    // 共识/分歧升格：提到要点之后、赛道之前（要点=事实 → 共识分歧=判断 → 赛道=证据）
+    // 缺板块的日子整段跳过（26 个早期日报无共识段）
+    var vp = vpCard('consensus', '共识解读', data.consensus) + vpCard('division', '分歧解读', data.division);
+    if (vp) html += '<section class="viewpoint"><header class="sec-head"><i class="chip chip-neutral" aria-hidden="true"></i><h2>共识与分歧</h2></header><div class="vp-grid">' + vp + '</div></section>';
+
     var LANE_ORDER = ['ai_tech', 'enterprise_ai', 'content_creation'];   // 颜色语义固定，不随当日赛道是否为空前移
     liveTracks.forEach(function (t, i) {
       var name = t.name || t.key || '';
@@ -194,9 +199,6 @@
       html += '<section class="track lane-' + laneIdx + '"><header class="sec-head"><i class="chip" aria-hidden="true"></i><h2>' +
         esc(name) + '</h2></header>' + body + '</section>';
     });
-
-    var vp = vpCard('consensus', '共识解读', data.consensus) + vpCard('division', '分歧解读', data.division);
-    if (vp) html += '<section class="viewpoint"><header class="sec-head"><i class="chip chip-neutral" aria-hidden="true"></i><h2>共识与分歧</h2></header><div class="vp-grid">' + vp + '</div></section>';
 
     html += readingHtml(data.reading);
     html += githubHtml(data.github);

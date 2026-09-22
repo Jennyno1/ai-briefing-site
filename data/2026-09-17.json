@@ -4,8 +4,7 @@
   "points": [
     "GPT-6 Sol曝光：奥特曼深夜发「🚢」暗示发布，API中已被发现内测（36氪）",
     "Anthropic把Claude聊天与Cowork合并为一个界面，并推出自有Docs和Slides对标Google（TechCrunch/The Verge）",
-    "Google开放Home MCP服务器，任何AI Agent可以直接控制智能家居设备（TechCrunch）",
-    "--"
+    "Google开放Home MCP服务器，任何AI Agent可以直接控制智能家居设备（TechCrunch）"
   ],
   "tracks": [
     {
@@ -22,8 +21,7 @@
         "🟡弱信号：arXiv单日多篇Agent失败归因论文（长程任务根因搜索、自我适应物理AI），Agent可靠性研究从「能力评测」转向「失败诊断」，说明真实部署量已经大到值得专门建模。"
       ],
       "actions": [
-        "给自己的多Agent工作流做一次「模型分层」：简单分类路由交给便宜小模型，只在决策层用旗舰模型，对照AWS prompt caching可省90%输入token的做法实测成本差。",
-        "--"
+        "给自己的多Agent工作流做一次「模型分层」：简单分类路由交给便宜小模型，只在决策层用旗舰模型，对照AWS prompt caching可省90%输入token的做法实测成本差。"
       ]
     },
     {
@@ -40,8 +38,7 @@
         "🟡弱信号：美国联邦政府采购口（GSA）拿到OpenAI减免授权，政府、金融、医疗三类强合规行业成为API厂商的下一战场，合规能力本身开始成为卖点。"
       ],
       "actions": [
-        "面试与产品视角双用：把AgentCore的system prompt优化（用生产trace反推配置）、Bedrock prompt caching两个文档读一遍，这正是「Agent可运维性」岗位会考的题。",
-        "--"
+        "面试与产品视角双用：把AgentCore的system prompt优化（用生产trace反推配置）、Bedrock prompt caching两个文档读一遍，这正是「Agent可运维性」岗位会考的题。"
       ]
     },
     {
@@ -58,8 +55,7 @@
         "🟡弱信号：中文侧「AI翻车」话题上升（豆包选吉日被起诉、微信辟谣AI读聊天记录），公众对AI的信任边界快速具体化，做AI内容科普具有正当timing。"
       ],
       "actions": [
-        "公众号选题储备「AI工具信任三件套」：用Fyxer案例讲清微调、记忆、反馈闭环，配自己Hermes简报流水线的真实截图，做小白友好拆解。",
-        "--"
+        "公众号选题储备「AI工具信任三件套」：用Fyxer案例讲清微调、记忆、反馈闭环，配自己Hermes简报流水线的真实截图，做小白友好拆解。"
       ]
     }
   ],
@@ -131,5 +127,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-22T10:44"
+  "generated_at": "2026-09-22T12:08"
 }

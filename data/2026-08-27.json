@@ -58,7 +58,6 @@
       "repo": "browser-use/browser-use",
       "url": "https://github.com/browser-use/browser-use",
       "stars": "110K",
-      "track": "",
       "note": "浏览器自动化Agent框架 已完成11万周新增星",
       "why": "可用于企业流程自动化"
     },
@@ -109,5 +108,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-22T10:44"
+  "generated_at": "2026-09-22T12:08"
 }

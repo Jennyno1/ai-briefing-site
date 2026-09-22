@@ -77,7 +77,6 @@
       "repo": "block/buzz",
       "url": "https://github.com/block/buzz",
       "stars": "30K",
-      "track": "",
       "note": "蜂巢思维通信平台，支持多AI Agent在共享频道中协作讨论，类似企业版Slack但原生支持AI团队",
       "why": "如果团队需要\"多Agent协作+人工审批\"的工作流（如选题讨论、方案评审），Buzz提供了开源的企业级基础设施"
     },
@@ -99,7 +98,7 @@
     },
     {
       "title": "Anthropic's best AI model struggles to attract users as cheaper tools thrive",
-      "url": "https://simonwillison.net/",
+      "url": "https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t",
       "source": "Simon Willison",
       "reason": "分析Anthropic旗舰模型在实际使用中被更便宜工具分流的现象，揭示\"模型能力天花板\"与\"用户成本敏感度\"之间的张力。对企业AI选型的参考：最强模型不一定是最优选择，性价比和生态集成度同样关键"
     },
@@ -120,5 +119,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-22T10:44"
+  "generated_at": "2026-09-22T12:08"
 }

@@ -71,24 +71,21 @@
       "url": "https://github.com/FireRedTeam/FireRed-OpenStoryline",
       "stars": "3.2K",
       "track": "内容创作",
-      "note": "AI 视频剪辑 agent，长素材→短视频意图驱动；验证小红书竖屏场景可用性",
-      "why": ""
+      "note": "AI 视频剪辑 agent，长素材→短视频意图驱动；验证小红书竖屏场景可用性"
     },
     {
       "repo": "thedotmack/claude-mem",
       "url": "https://github.com/thedotmack/claude-mem",
       "stars": "91K",
       "track": "企业AI应用",
-      "note": "Agent 持久化记忆层；解决上下文丢失，可挂到 Claude Code/Codex 工作流做对比",
-      "why": ""
+      "note": "Agent 持久化记忆层；解决上下文丢失，可挂到 Claude Code/Codex 工作流做对比"
     },
     {
       "repo": "pexoai/pexo-skills",
       "url": "https://github.com/pexoai/pexo-skills",
       "stars": "771",
       "track": "AI产业技术",
-      "note": "开源 Agent Skills 库；当前最具代表性的方法论 skill 集，可作\"拆 Skills\"选题对照参考",
-      "why": ""
+      "note": "开源 Agent Skills 库；当前最具代表性的方法论 skill 集，可作\"拆 Skills\"选题对照参考"
     }
   ],
   "reading": [
@@ -121,5 +118,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-22T10:44"
+  "generated_at": "2026-09-22T12:08"
 }

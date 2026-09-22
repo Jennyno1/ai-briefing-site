@@ -63,7 +63,7 @@
       "stars": "48.1K",
       "track": "内容创作",
       "note": "Agent skill，专治AI写作的机器味，把生成文本改得像真人写的",
-      "why": "直接对接内容创作者的「humanizer去AI味」工作流，开源可自部署"
+      "why": "直接对接小禾的「humanizer去AI味」工作流，开源可自部署"
     },
     {
       "repo": "chatfire-AI/huobao-drama",
@@ -79,7 +79,7 @@
       "stars": "33.5K",
       "track": "AI产业技术",
       "note": "浏览器里的间谍卫星模拟器，用真实开源遥感数据做交互内容",
-      "why": "真实数据+可交互的内容形态，是内容创作者账号差异化选题的新素材库"
+      "why": "真实数据+可交互的内容形态，是小禾账号差异化选题的新素材库"
     }
   ],
   "reading": [
@@ -123,5 +123,5 @@
   },
   "ai_generated": true,
   "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
-  "generated_at": "2026-09-22T10:44"
+  "generated_at": "2026-09-22T12:08"
 }

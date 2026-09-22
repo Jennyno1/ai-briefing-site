@@ -15,6 +15,15 @@
      · 圆角只给可交互元素（按钮 / 焦点态）——唯一圆角档 --radius-ctl 8px；
      · 动效只做一次「换期入场」，不做逐段上浮。
 
+   ⏸ 挂起项（评审方第 4 方案，2026-09-21 裁定「本轮不做」）：
+   推荐阅读/GitHub 并排——**条件启用**，不满足前提永远堆叠：
+     · 内容列 ≥1000px（即视口 ≥1280px）才允许启用；
+     · 启用时必须 align-items:start（不等高，禁止等高绑架编辑删长注）；
+     · 移动端永远堆叠。
+   理由：内容列 788px 并排后每栏 ≈26 中文字/行，而 reading 标题实测均值 54.5 字、
+   最长 78 字 → reflow 把省下的 378px 全吃掉，且 5 天缺 GitHub 会造成单/双栏交替闪烁。
+   达标前更便宜的减长：reading 精简 3 条 + reason/why 各压一行（省 ~150px，零风险）。
+
    gold 两档（例外条款，2026-09-21 与评审方裁定）：**实心 chip = 企业AI应用赛道；≥5% 淡底 /
    标题用色 = 主理人人工内容**。除这两档外 gold 不得挪用——下轮若要再加一处金色用法，先回来改这条。
    ⚠️ 现存待裁定冲突：`.vp-division::before`（分歧解读色条）目前也用 gold，属第三处用法。
@@ -79,6 +88,8 @@
   --radius-ctl: 8px;
   --rail-w: 216px;
   --shell-max: 1100px;
+  --measure: 74ch;        /* 内容列=正文行宽单一来源（需求3：面板收到正文行宽）*/
+  --measure-tight: 60ch;  /* 例外一档：共识/分歧结论句（需求1）*/
 
   --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
 }
@@ -422,7 +433,7 @@ li.partial .d-date { color: var(--ink-3); }
 .retry-btn:hover { color: var(--ink); border-color: var(--ink-3); }
 
 /* ---- 正文 ------------------------------------------------------------------ */
-.content { padding-top: 40px; min-width: 0; }
+.content { padding-top: 40px; min-width: 0; max-width: var(--measure); }
 
 .content.enter > * { animation: rise 0.34s var(--ease) both; }
 .content.enter > *:nth-child(2) { animation-delay: 0.04s; }
@@ -512,7 +523,6 @@ li.partial .d-date { color: var(--ink-3); }
   padding: 0;
   display: grid;
   gap: 10px;
-  max-width: 74ch;
 }
 .points li {
   position: relative;
@@ -622,7 +632,7 @@ li.partial .d-date { color: var(--ink-3); }
   opacity: .75;
 }
 
-.item-body { color: var(--ink); max-width: 74ch; }
+.item-body { color: var(--ink); }
 
 .item-meta {
   margin-top: 6px;
@@ -667,7 +677,7 @@ li.partial .d-date { color: var(--ink-3); }
   font-weight: 600;
 }
 
-.vp-text { font-size: var(--fs-small); line-height: 1.75; color: var(--ink-2); max-width: 72ch; }
+.vp-text { font-size: var(--fs-lead); line-height: 1.7; color: var(--ink); max-width: var(--measure-tight); }
 
 .vp-card ul {
   margin: 12px 0 0;
@@ -728,7 +738,6 @@ li.partial .d-date { color: var(--ink-3); }
   font-size: var(--fs-small);
   line-height: 1.7;
   color: var(--ink-2);
-  max-width: 72ch;
 }
 .reason-why { color: var(--ink-3); }
 
