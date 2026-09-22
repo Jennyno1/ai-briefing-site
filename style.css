@@ -556,6 +556,7 @@ li.partial .d-date { color: var(--ink-3); }
   margin-top: 26px;
   font-family: var(--font-serif);
   font-size: var(--fs-track);    /* L2：它是板块头，与其余六个板块同级 */
+  line-height: var(--lh-tight);  /* 补：原缺此行，退回正文 1.78 → 行高 44.5 比其它板块头高 13px */
   font-weight: 600;
   color: var(--ink);
   letter-spacing: 0.02em;
@@ -638,7 +639,16 @@ li.partial .d-date { color: var(--ink-3); }
   margin: 0 0 var(--space-head-h2);
 }
 .sec-head .chip { margin-right: 0; }   /* gap 已负责间距，避免 10+9 叠加 */
-.sec-head h2 { margin: 0; }
+/* 板块头统一规格：写全在这里，避免某个板块（如「共识与分歧」）没规则时
+   退回浏览器默认（700 加粗 + 1.5em=24.75px），显得比其它板块头重 */
+.sec-head h2 {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: var(--fs-track);
+  line-height: var(--lh-tight);
+  letter-spacing: 0.02em;
+  font-weight: 600;
+}
 .chip-neutral { background: var(--chip-neutral-bg); }   /* 机器整理的板块：灰点，不抢赛道色 */
 .lead-label .chip { margin-right: 0; }
 
