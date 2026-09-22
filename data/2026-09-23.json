@@ -1,0 +1,128 @@
+{
+  "date": "2026-09-23",
+  "format": "summary",
+  "points": [
+    "高通发布第六代骁龙8超级至尊版芯片，宣称「智能体时代」旗舰：CPU行业首超5GHz，可端侧跑300亿参数模型。",
+    "OpenAI发布GPT-6 Sol和Luna，API价格直降50%；Anthropic同日推出Opus 5.5并称降价，头部模型卷向性价比。",
+    "小米开源模型MiMo-V2.6-Pro以约300万美元训练成本登顶开源榜，6天炼丹直播收官拿下开源第一。"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "高通骁龙峰会发布第六代骁龙8超级至尊版：2纳米工艺、CPU首超5GHz、GPU提升44%，宣称面向「智能体AI」时代，端侧预填充吞吐超330 Token/s并适配300亿参数MoE模型（IT之家 L3）。",
+        "OpenAI发布GPT-6 Sol与Luna，以Astra同类方法训练，API价格大降50%；Anthropic同日发布Opus 5.5，自称其测试过表现最强的模型，价格下探（TechCrunch L2）。",
+        "高通宣布向骁龙芯片下放HBC高带宽计算技术，手机本地运行AI更快更省电；阿里千问平板Qwen Book现身峰会定位「智能体原生电脑」（IT之家 L3）。"
+      ],
+      "insights": [
+        "骁龙峰会全场叙事都是「端侧智能体」：芯片把算力往本地压，与云侧的 GPT-6 降价形成两端夹击——智能体的计算与调用成本同步走低（IT之家 L3）。",
+        "Latent Space 点评小米 MiMo-V2.6-Pro 用约300万美元训练出开源第一，头部开源模型门槛持续下降，「中国前沿实验室」再添一家（Latent Space L2）。"
+      ],
+      "actions": [
+        "端云混合再校准一次：优先把分类、摘要这类高频轻任务压到端侧小模型，云端大模型留给长程推理，两头的降价窗口别错过。"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "埃森哲与AWS新设Accenture Edge，为年营收3亿至30亿美元的中型企业打包六项可部署AI与云方案，覆盖数据发现、云成本优化与AI安全测试（36氪 L2）。",
+        "虎鲸文娱云栖大会发布「鲸锐AI」影视制作与管理平台，覆盖文娱制作全流程；SkyProduction推出短剧成片字幕音画三维自动质检（量子位 L2）。",
+        "甲骨文生命科学与Wipro合作，用云端预配置Argus环境缩短药物警戒全球企业客户的实施周期（36氪 L2）。"
+      ],
+      "insights": [
+        "中型企业被单独定价：埃森哲把3亿至30亿美元营收客户做成独立业务线，说明大厂方案商判断中腰部企业是下一波AI落地的主力盘（36氪 L2）。",
+        "基元律动在云栖大会提「从Harness到反馈闭环」，企业智能体的竞争点从单次调用转向持续进化的飞轮（量子位 L2）。"
+      ],
+      "actions": [
+        "给内部智能体补一环本地质检：先让确定性规则跑字幕、格式、合规维度，AI只做兜底判断，成本与可解释性都更稳。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "阿里全模态开始兜底生产：陆川用手搓历史现场、王珞丹熬夜抽卡；阿里预判三年内出现原生全模态统一生成模型（量子位 L2）。",
+        "小米6天「炼丹直播」烧光2000多万登顶开源第一，把训练过程做成了内容事件；商汤U1 Pro发布，成图难辨AI痕迹（量子位 L2）。",
+        "Product Hunt 上 beacon（创作者跨平台作战室：热榜聚合+竞对监控+一稿多平台改写）与 AI 视频切片工具扎堆上榜，创作用品工具化继续升温（Product Hunt L2）。"
+      ],
+      "insights": [
+        "弱信号：内容竞争的主战场从「生成质量」转向「分发情报」——热榜聚合、竞对监控、敏感词合规检测这类「选什么发」的工具开始成串出现，和生成本身同等重要。"
+      ],
+      "actions": [
+        "把「一稿多平台改写+敏感词检测」先自建轻流程小步跑起来，等 beacon 类工具成熟再对比采购，别先押单一平台。"
+      ]
+    }
+  ],
+  "github": [
+    {
+      "repo": "img2threejs/img2threejs",
+      "url": "https://github.com/img2threejs/img2threejs",
+      "stars": "17K",
+      "track": "AI产业技术",
+      "note": "把参考图重建为纯代码程序化生成的Three.js模型，带质量门禁、可直接动画化",
+      "why": "想让参考图秒变可编辑3D模型，这条纯代码重建路线省掉雕刻环节"
+    },
+    {
+      "repo": "deepseek-ai/deepseek-harness",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "stars": "233K",
+      "track": "企业AI应用",
+      "note": "DeepSeek Harness：一切皆插件的智能体底座",
+      "why": "企业要从零搭智能体执行框架，这个超大底座是现成参照系"
+    },
+    {
+      "repo": "hypit-ai/hypit",
+      "url": "https://github.com/hypit-ai/hypit",
+      "stars": "14K",
+      "track": "内容创作",
+      "note": "用AI智能体克隆爆款视频，不只复刻脚本，而是完整工作流",
+      "why": "做爆款拆解复刻时，它把「看懂结构」到「产出成片」整条链路自动化"
+    }
+  ],
+  "reading": [
+    {
+      "title": "Jev: System One models for Prod, not God",
+      "url": "https://www.latent.space/p/jev",
+      "source": "Latent Space",
+      "reason": "TypeSafe CEO 亲述「系统一模型」的产品定位：只做决策分类路由打分，不碰生成",
+      "why": "昨日已提 Jev，这篇是一手播客，听完能判断自己的哪段流程适合换小模型。"
+    },
+    {
+      "title": "Here are 6 Clones of Jev in 2 days",
+      "url": "https://www.latent.space/p/ainews-here-are-6-clones-of-jev-in",
+      "source": "Latent Space",
+      "reason": "两天内涌现6个Jev复刻项目的清单与点评，观察小模型赛道如何被快速验证",
+      "why": "想跟进「系统一模型」方向，这6个项目就是现成实现样本库。"
+    },
+    {
+      "title": "Qualcomm launches two new smartphone chips with emphasis on AI",
+      "url": "https://techcrunch.com/2026/09/22/qualcomm-launches-two-new-smartphone-chips-with-emphasis-on-ai/",
+      "source": "TechCrunch",
+      "reason": "引用1： 高通新旗舰芯片可在本地跑30亿参数MoE模型（TechCrunch）"
+    }
+  ],
+  "consensus": {
+    "text": "各家都认定智能体的使用成本在快速变低：端侧芯片算力上探、云端大模型降价、开源模型以极低成本逼近闭源，三条线共同把智能体铺向日常。",
+    "quotes": [
+      "高通第六代骁龙8超级至尊版主打端侧智能体算力",
+      "GPT-6 Sol与Luna发布并同时降API价格",
+      "小米以约300万美元训练成本登顶开源模型榜"
+    ]
+  },
+  "division": {
+    "text": "分歧在于智能体时代的重心归属：硬件端强调能力放在用户手里的本地设备，模型端强调云端持续升级的智能服务，两侧对「智能体跑在哪里」给出相反答案。",
+    "quotes": [
+      "高通宣称智能体时代的关键在本地算力",
+      "OpenAI以云端模型更新与降价巩固云端路线",
+      "阿里预判原生全模态统一生成模型进一步云端化"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-23T07:10"
+}
