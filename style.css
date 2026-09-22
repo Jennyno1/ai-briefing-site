@@ -140,6 +140,7 @@
   --gold: var(--l-gold);
   --teal: var(--l-teal);
   --note-bg: rgba(227, 177, 94, 0.06);
+  --ink-faint: #8b95a5;                        /* 页脚弱化专档（深色底 ≈5.7:1）*/
   --conclusion-bg: rgba(120, 165, 255, 0.13);   /* 共识：蓝底 = AI 的收敛判断 */
   --tension-bg: rgba(227, 177, 94, 0.11);      /* 分歧：金底 = 待解的张力 */
   --hover-bg: rgba(76, 134, 255, 0.08);
@@ -161,6 +162,7 @@
   --gold: var(--l-paper-gold);
   --teal: var(--l-paper-teal);
   --note-bg: rgba(156, 107, 31, 0.055);
+  --ink-faint: #6c7787;                        /* 页脚弱化专档（白底 4.54:1，最浅且仍过 AA）*/
   --conclusion-bg: rgba(29, 91, 216, 0.07);     /* 共识：蓝底 = AI 的收敛判断 */
   --tension-bg: rgba(156, 107, 31, 0.07);      /* 分歧：金底 = 待解的张力 */
   --hover-bg: rgba(29, 91, 216, 0.06);
@@ -852,17 +854,13 @@ li.partial .d-date { color: var(--ink-3); }
   padding-left: calc(24px + var(--rail-w) + var(--shell-gap));
   font-size: var(--fs-micro);
   line-height: 1.8;
-  color: var(--ink-3);
+  /* 弱化：用比 ink-3 更浅的专档灰 --ink-faint，而不是 opacity——
+     0.65×ink-3 的实色只有 2.59:1（视觉更淡但已不达标）；本档两主题都过 AA */
+  color: var(--ink-faint);
 }
 
 .footer-main strong { color: var(--ink-2); font-weight: 600; }
-.footer-note {
-  margin-top: 10px;
-  /* 弱化靠字号与色阶，不用 opacity：0.65×ink-3 实色对比度仅 2.59:1（AA 线 4.5），再降会不达标 */
-  font-size: 11px;
-  color: var(--ink-3);
-  opacity: 1;
-}
+.footer-note { margin-top: 10px; font-size: 11px; }
 .footer-note:empty { display: none; }
 
 /* ---- 窄屏：日期架转为横向时间轴 -------------------------------------------- */
