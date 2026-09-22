@@ -7,7 +7,10 @@
      · 报头用中文衬线排日期（宋体骨相 = 报纸的权威感，与满屏无衬线区分）；
      · 日期下一条三色细带（蓝 / 金 / 青）＝ 三条赛道的图例，是信息，不是装饰；
      · 赛道段落用「淡底分区 + 标题旁 chip」，不用边框盒子、不用左侧色脊（v4：边界只由底色承担，双层分隔已去掉）；
-     · 「落地行动」是主理人工作笔记 → 窄边栏 + 极淡金底，与机器整理的部分区分开。
+     · 底色语义（2026-09-22 用户裁定 C：承认第二底色）——
+       **金底 = 人工行动**：「落地行动」窄边栏 + 极淡金底，是主理人工作笔记；
+       **蓝底 = AI 结论**：「共识与分歧」淡蓝底，是机器给出的判断结论。
+       两类底色各承载一种语义，除此之外全页无底色（缺板块提示走中性 --hover-bg，不算语义底色）。
 
    刻意的取舍（避开模板化默认）：
      · 不做等半径卡片墙、不用软灰投影、不用渐变洗底；
@@ -586,7 +589,7 @@ li.partial .d-date { color: var(--ink-3); }
   opacity: 0.9;
 }
 
-/* 缺板块提示：中性淡底（金底全页只留给「落地行动」——C 方案统一底色语义） */
+/* 缺板块提示：中性淡底（语义底色只有两类：金底=人工行动 / 蓝底=AI 结论——2026-09-22 裁定 C） */
 .notice {
   margin: 22px 0;
   padding: 12px 14px;
@@ -741,6 +744,17 @@ li.partial .d-date { color: var(--ink-3); }
 
 /* 推荐阅读 / GitHub 项目推荐 */
 .reading { margin-top: var(--space-section); }
+
+/* 推荐阅读 + GitHub 项目推荐并排：两栏等宽（与共识/分歧卡同宽 ~328px），
+   窄屏或某日只有一块时 auto-fit 自动回落单列；行内节奏不变 */
+.reading-pair {
+  margin-top: var(--space-section);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-list);
+  align-items: start;
+}
+.reading-pair .reading { margin-top: 0; }
 
 .reading h2 {
   margin: 0;
@@ -903,7 +917,8 @@ li.partial .d-date { color: var(--ink-3); }
   .track { padding: 18px 16px 20px; border-radius: var(--radius-ctl); }
   .track,
   .viewpoint,
-  .reading { margin-top: var(--space-section); }
+  .reading,
+  .reading-pair { margin-top: var(--space-section); }
 
   .reading > ol > li { padding-left: 28px; }
 }

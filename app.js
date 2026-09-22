@@ -207,8 +207,9 @@
         esc(name) + '</h2></header>' + body + '</section>';
     });
 
-    html += readingHtml(data.reading);
-    html += githubHtml(data.github);
+    // 推荐阅读 + GitHub 项目推荐：桌面并排（缩短整页长度）；窄屏或某日缺一块时自动单列
+    var pairHtml = readingHtml(data.reading) + githubHtml(data.github);
+    if (pairHtml) html += '<div class="reading-pair">' + pairHtml + '</div>';
 
     briefingEl.innerHTML = html;
     document.title = (dd.cn ? dd.cn + ' · ' : '') + 'AI 简报';
