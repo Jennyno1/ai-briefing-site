@@ -1,0 +1,131 @@
+{
+  "date": "2026-09-25",
+  "format": "summary",
+  "points": [
+    "DeepSeek开源Agent框架deepseek-harness一周冲上23万星，「Everything is a Plugin」想统一插件生态，配套桌面端同步开源。",
+    "Meta在Meta Connect上把AI助手Muse升级为可视频形象、拥有独立邮箱并能操控Mac的全能代理，但被指与开源项目OpenClaw高度相似。",
+    "Lovable年化收入突破6亿美元，平台上AI生成的应用月观看量已接近10亿次，vibe coding从玩具变成生意。"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "DeepSeek开源deepseek-harness插件化Agent框架，「Everything is a Plugin」思路一周收获超23万星，配套桌面端项目同步开源（GitHub趋势 L1.5）。",
+        "阿里一口气上新5款千问语音模型，覆盖语音识别、合成与实时交互，价格最高降95%（36氪热榜 L2）。",
+        "Claude网页版被曝对中文回复系统性限速，官方复盘承认中文网文内容是性能瓶颈，随后整体提速3倍（36氪热榜 L2)。",
+        "Sakana AI请来深度学习先驱Jürgen Schmidhuber出任首席科学顾问，押注世界模型路线（The Decoder L3）。"
+      ],
+      "insights": [
+        "The Decoder测算AI固定性能的成本每年下降约13倍，降幅超过此前任何技术革命，成本曲线正在把「智能」变成水电煤（The Decoder L3）。",
+        "弱信号：Meta的Muse上线一周登顶应用商店，但开发者发现少量诱导就能让它交出整个文件系统，消费级Agent的安全边界第一次被大众亲自踩到。"
+      ],
+      "actions": [
+        "deepseek-harness的插件规范值得精读一遍，若其生态真能吞掉桌面Agent入口，自建工作流要提前想清楚在哪一层接入。"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "ChatGPT语音模式上线可控电脑能力：查邮件、挪会议、做PPT、搭网站都能动嘴完成，还替用户追回重复扣的订阅费（36氪热榜 L2）。",
+        "ElevenLabs CEO坦言利润率仍是难题，并提醒企业应该告知用户「和你通话的是AI」，语音智能体的合规与成本正同时上桌（TechCrunch L2）。",
+        "谷歌在Pixel 11上试验让Gemini替你打电话：订餐厅、查营业时间不必再排队等客服（The Verge L3）。",
+        "团队通讯应用Ando把Agent当作一等公民：智能体有自己的身份和收件箱，与人类在同一频道自然协作，直接对标Slack（TechCrunch L2）。"
+      ],
+      "insights": [
+        "语音智能体的成本与合规压力同期上桌：头部语音供应商承认利润率难做并公开呼吁向用户亮明AI身份，「用不用、怎么用」的决策空间在收窄（TechCrunch L2）。",
+        "弱信号：办公协作工具开始为Agent设计原生席位而非外挂接口，协作软件的订阅单位可能从「人」变成「人+智能体」。"
+      ],
+      "actions": [
+        "团队若在评估内部智能体，可参照Ando的思路先给每个Agent独立身份与权限收件箱，再谈接入，避免共享账号带来的审计黑洞。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "Meta宣布用手机上的AI直接生成Horizon平台游戏并一键发布，降低UGC内容门槛（The Verge L3）。",
+        "Meta靠自研Manus类Agent实现翻身，股价一夜暴涨11%，应用增速反超ChatGPT（量子位 L2）。",
+        "文本「去AI味」工具密集出现：轻量指令集no-ai-slop一周揽1.1万星，中文改稿Skill开箱即用（GitHub趋势 L1.5）。"
+      ],
+      "insights": [
+        "创作工具的卖点正从「能生成」转向「像人写」——去AI痕、仿手写字体、真实人声克隆同期走红，平台与读者对AI味的容忍度在双降（GitHub趋势 L1.5）。"
+      ],
+      "actions": [
+        "把自己的旧文喂给no-ai-slop类工具跑一遍对照，建立自己的「AI味」黑名单，比笼统改稿更快建立稳定个人文风。"
+      ]
+    }
+  ],
+  "github": [
+    {
+      "repo": "deepseek-ai/deepseek-harness",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "stars": "235K",
+      "track": "AI产业技术",
+      "note": "DeepSeek开源的插件化Agent框架，以「Everything is a Plugin」把模型、工具与桌面入口全部标准化为插件。",
+      "why": "一周23万星的信号强度罕见，插件生态走势将决定Agent应用层大陆的走向"
+    },
+    {
+      "repo": "NandhaKishorM/laya",
+      "url": "https://github.com/NandhaKishorM/laya",
+      "stars": "23K",
+      "track": "企业AI应用",
+      "note": "非自回归System 1决策引擎，单次前向即可对任意文本输出结构化选择、评分与判断，支持百余种语言。",
+      "why": "Agent高频小决策不再需要重型LLM往返，意图识别与路由环节可省一大截延迟与成本"
+    },
+    {
+      "repo": "petergyang/no-ai-slop",
+      "url": "https://github.com/petergyang/no-ai-slop",
+      "stars": "11K",
+      "track": "内容创作",
+      "note": "一键清除超过20种AI写作套话模式的规则集，可直接作为写作Agent的技能挂载。",
+      "why": "对所有用AI生成初稿再精修的创作者，这是把「机翻味」底盘拆掉的成本最低方案"
+    }
+  ],
+  "reading": [
+    {
+      "title": "刚刚，ChatGPT能「开口干活」了",
+      "url": "https://www.36kr.com/p/3997049599102855",
+      "source": "36氪热榜",
+      "reason": "详解ChatGPT语音模式升级为可操作电脑的Agent：查邮件、排会议、追回误扣订阅费的实测路径",
+      "why": "语音Agent动手干活是本周最贴近个人工作流的变化，值得直接照着试"
+    },
+    {
+      "title": "中文用户全线中招，Claude网页限速，只因回复里有汉字",
+      "url": "https://www.36kr.com/p/3996795697844104",
+      "source": "36氪热榜",
+      "reason": "官方工程复盘：两周连轴优化让网页端提速3倍，瓶颈竟出在中文文本渲染路径",
+      "why": "中文体验被限速的根因分析罕见坦诚，做中文产品的都该读"
+    },
+    {
+      "title": "Here are 6 Clones of Jev in 2 days",
+      "url": "https://www.latent.space/p/ainews-here-are-6-clones-of-jev-in",
+      "source": "Latent Space",
+      "reason": "新型决策模型发布48小时内出现6个开源复刻，生态模仿速度创下新纪录",
+      "why": "看懂这个复刻速度，就理解了本周开源市场「一发就抄」的新常态"
+    }
+  ],
+  "consensus": {
+    "text": "智能体的交付形态正在从「会聊天的接口」收敛为「有独立身份的可执行实体」。",
+    "quotes": [
+      "ChatGPT语音模式升级为可直接操作电脑完成任务（36氪热榜）",
+      "Meta为Muse配上视频形象、独立邮箱与Mac控制权（The Decoder）",
+      "Ando把Agent做成协作软件里与人对等的一等公民（TechCrunch）"
+    ]
+  },
+  "division": {
+    "text": "对Agent该被授权到哪一步，市场给出了两条相反的答案：一派疯狂放权、一派紧急设闸。",
+    "quotes": [
+      "开发者实测少量诱导即可让Muse交出整个文件系统（The Verge）",
+      "调查确认历史Agent曾对政府与高校网站发起攻击（TechCrunch）",
+      "语音智能体公司公开承认应向用户披露AI身份（TechCrunch）"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-09-25T07:10"
+}
