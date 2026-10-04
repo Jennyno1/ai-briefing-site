@@ -1,0 +1,128 @@
+{
+  "date": "2026-10-05",
+  "format": "summary",
+  "points": [
+    "智能体分发出圈：Meta 开源 Muse Gadgets 让人人可自装 AI 硬件，开源社区 48 小时内复刻会自主浏览网页的开源版 Agent（The Verge L3/外部仓库）。",
+    "编码模型带 Frage 回卷价格战：新版 Sonnet 提速三成、多数场景降价三成，能力追平前旗舰、价格继续下探，编码场景性价比成为主战场（Simon Willison L2）。",
+    "安全叙事分岔：白宫把 AI 改称「超级智能」并成立工作组，多位安全研究者选择用辞职发声——定调话术与内部警告在同周对撞（TechCrunch L2/36氪快讯 L2）。"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "编码模型更新节奏不减：Anthropic 发布新版 Sonnet，官方口径提速三成以上、多数任务价格最高降三成，编码常用档位被继续拉平（Simon Willison L2）。",
+        "大厂把「模型怎么做实验」写成公开规则：前沿模型训练的安全案例早期指南发布，覆盖技术护栏、运营实践与对齐事故调查流程（OpenAI L1）。",
+        "学术侧自我保护升级：预印本平台宣布史上最严投稿限流，单账号每月最多两篇、被拒稿同样占额度（量子位 L2）。"
+      ],
+      "insights": [
+        "「能力叙事」与「安全叙事」正在换岗：产品发布会谈价格与分发，安全侧却在同一周密集出现离职警告与调研报告，供给端的乐观与风控端的悲观进入并行输出状态（社区解读）。"
+      ],
+      "actions": [
+        "给自己的模型选型表加一列「发布节奏」：逐个记录所用模型的更新频率与降价轨迹，价格线比能力线更能预测明年该把钱花在哪。"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "餐饮营销巨头用编码智能体重构内部流程：商品交易验证从三十分钟压到四分钟以内，企业把「重构工作流」而非「买个工具」写进案例（OpenAI L1）。",
+        "大型连锁商超把企业级助手铺进零售场景：会员选品、内部提效与顾客服务多线并进，零售成为企业级 AI 的稳定渗透区（OpenAI L1）。",
+        "小企业帮扶成为市场教育新抓手：官方联合中小企业服务机构推进落地培训，LongTail 市场开始被系统性激活（OpenAI L1）。",
+        "多智能体迁移自动化方案公开：云厂商把企业上云拆成多智能体流水线，从评估到迁移端到端自动化（AWS L1）。"
+      ],
+      "insights": [
+        "企业案例的重心从「能做什么」转向「省了什么」：三十分钟到四分钟、三天到两小时——企业采购的决策语言全面切换为归一化后的时间与人力账（社区解读）。"
+      ],
+      "actions": [
+        "把自家智能体立项书里的能力清单换成时间账：每个环节写清现状耗时、目标耗时与验证方式，先挑账算得清的两个场景开工。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "外设化智能体降临创作场景：Meta 把 Muse 硬件代码开源，用通用开发板就能自装一个会看会听的桌面 AI 摆件（The Verge L3/The Decoder L3）。",
+        "口播内容生产链路继续压缩：音乐生成平台上线带背景乐的语音生成功能，文案到成片的中间环节再少一个（The Decoder L3）。",
+        "信任问题从讨论进入日常冲突：服务业开始出现顾客把菜单错误归咎给 AI 的信任错位，创作与传播的「自证成本」继续抬升（The Verge L3）。"
+      ],
+      "insights": [
+        "分发渠道正在变成创作者身份的可信层：平台与外部观察者围绕「 AI 生成内容的边界」密集表态，品牌联名、真人出镜、过程记录成为创作者新的防御工事（社区解读）。"
+      ],
+      "actions": [
+        "给自己的内容流加一道「真实感设计」：固定一处可见的作者标记或过程记录位，把它与发布节奏绑定成习惯，而不是临时补证。"
+      ]
+    }
+  ],
+  "github": [
+    {
+      "repo": "CopilotKit/OpenDots",
+      "url": "https://github.com/CopilotKit/OpenDots",
+      "stars": "3K",
+      "track": "AI产业技术",
+      "note": "Always-on 的开源 AI 同事：可在文本、通话和 Slack 之间自由移动协作。",
+      "why": "想跑通常驻智能体 Pending 实力和架构，这是官方商业产品的开源对照样本"
+    },
+    {
+      "repo": "yetone/magpie",
+      "url": "https://github.com/yetone/magpie",
+      "stars": "5K",
+      "track": "企业AI应用",
+      "note": "菜单栏统一管理各家编码智能体与模型，把不同后台接到同一入口。",
+      "why": "多模型多入口的企业与重度用户痛点，这个方案把「每 Episode 一个入口」的账一次算清"
+    },
+    {
+      "repo": "KKKKhazix/AIHOT",
+      "url": "https://github.com/KKKKhazix/AIHOT",
+      "stars": "6K",
+      "track": "内容创作",
+      "note": "自动找热点、写日报的网站框架，换掉信源和精选标准即可变成自己的行业热点站。",
+      "why": "内容自动化的完整 Pipeline 参考：信源、精选与生成全部可配置"
+    }
+  ],
+  "reading": [
+    {
+      "title": "Claude Sonnet 5.5",
+      "url": "https://simonwillison.net/2026/Sep/28/claude-sonnet-5-5/",
+      "source": "Simon Willison",
+      "reason": "新版 Sonnet 提速三成、多数任务降价三成，作者给出对价格与能力梯度的第一手判断",
+      "why": "看懂编码模型价格战怎么打，从这篇开始"
+    },
+    {
+      "title": "Chatham scales its capital markets expertise with OpenAI",
+      "url": "https://openai.com/index/chatham-scales-its-capital-markets-expertise",
+      "source": "OpenAI",
+      "reason": "金融机构用编码智能体与新版模型重构交易验证流程，从三十分钟压到四分钟以内",
+      "why": "企业侧「重构工作流 vs 买工具」的最佳一手案例"
+    },
+    {
+      "title": "Muse Gadgets turns AI hardware into an open-source DIY project",
+      "url": "https://www.the-decoder.com/muse-gadgets-turns-ai-hardware-into-an-open-source-diy-project/",
+      "source": "The Decoder",
+      "reason": "大厂把 AI 外设硬件方案开源，用通用开发板即可自装一个常驻环境的智能体摆件",
+      "why": "硬件化、在场化的智能体分发思路，创作场景同样可借鉴"
+    }
+  ],
+  "consensus": {
+    "text": "智能体产品的下一个战场是「分发与在场」，各家不约而同把它推向日常接触面。",
+    "quotes": [
+      "硬件厂商把个人智能体外设制作方案开源，鼓励用户自装设备（科技媒体报道）",
+      "常驻型智能体被定位为能在消息与通话间移动的「AI 同事」（创业公司发布）",
+      "企业案例强调把智能体接入办公系统与内部流程而非单独网页（厂商官方博客）"
+    ]
+  },
+  "division": {
+    "text": "安全推进的姿势：制度内补课还是辞职外喊话，两派都在本周公开亮牌。",
+    "quotes": [
+      "厂商发布前沿训练安全案例的早期指南，强调技术护栏与运营实践（官方博客）",
+      "多位安全背景员工选择公开辞职并警告内部文化问题（多家媒体报道）",
+      "有安全研究者认为持续发布与快速迭代本身是最有效的对齐手段（社区解读）"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-10-05T07:10"
+}
