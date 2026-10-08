@@ -1,0 +1,125 @@
+{
+  "date": "2026-10-09",
+  "format": "summary",
+  "points": [
+    "万亿参数新旗舰开启预览，自建训练集群硬扛出来，与小模型压价同周出现，路线之争重回台面（Simon Willison L2）。",
+    "头部厂商营收预期被下修两百亿美元，商业化叙事第一次遇到公开的冷水；同期模型榜单平台新融资估值十个月内近翻倍（TechCrunch L2）。",
+    "软件巨头把招聘、运营的专家经验固化成智能体工作流，白领流程入岗时间从数天压到数分钟（OpenAI L1）。"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "Mistral Large 4 预览发布：一万亿总参数、激活约五百亿，自家三千八百块 Grace Blackwell 集群训练，主打推理任务成本账（Simon Willison L2）。",
+        "Anthropic 更新使用条款：明文禁止持续辱骂模型、选举干扰、武器化与监控用途，极端滥用可封号（Anthropic L1/The Verge L3）。"
+      ],
+      "insights": [
+        "评测本身正在变成一门生意：榜单平台新一轮融资估值近翻倍，还把评测范围从跑分扩到诚实度这类行为维度（TechCrunch L2）。"
+      ],
+      "actions": [
+        "企业接入模型前把「使用条款与封号规则」写进合规检查表，面向公众的产品先对一遍红线再上线（Anthropic L1）。"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "软件巨头 Oracle 用 ChatGPT Work 与 Codex 把招聘、工程、运营的专家知识固化成可复用工作流，跨部门复用从天级到分钟级（OpenAI L1）。",
+        "高频交易公司 Jump Trading 把量化研究扩展成多数据源加人工审阅的长程智能体流程；资本市场服务商 Chatham 也把行业知识搬进同套体系（OpenAI L1）。",
+        "协同办公厂商 Atlassian 与 OpenAI 扩大合作，把企业文档知识直接接进执行链（OpenAI L1）。"
+      ],
+      "insights": [
+        "客户案例的共同叙事变了：不再讲「聊天省了谁的时间」，而是讲「专家怎么变成可复用资产」，企业智能体从效率工具转向知识工程（OpenAI L1）。"
+      ],
+      "actions": [
+        "盘点部门里的专家流程，挑「有明确 SOP 且重复率高」的先做智能体固化，不要从通用问答切入（OpenAI L1）。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "Claude 新增两个测试能力：数据源直转实时仪表盘、文本加图像生成动效解说视频，文档/幻灯/设计能力开放到免费档（The Decoder L3）。",
+        "谷歌发布离线会议转写应用：端侧嵌入模型跑全程，断网可用、免费上线（The Verge L3）。"
+      ],
+      "insights": [
+        "生成物正从「看的内容」变成「用的工具」：仪表盘、小游戏、可交互界面都能直接接活，创作与产品开发边界在溶解（Google/DeepMind Blog L1/The Decoder L3）。"
+      ],
+      "actions": [
+        "把「数据转仪表盘」「文本转动效解说」写成可计费服务项，交付清单从文档升级为可运行物（The Decoder L3）。"
+      ]
+    }
+  ],
+  "github": [
+    {
+      "repo": "dramaclaw/dramaclaw",
+      "url": "https://github.com/dramaclaw/dramaclaw",
+      "stars": "7K",
+      "track": "AI产业技术",
+      "note": "通用 AIGC 视频引擎：剧本到成片一条流水线，覆盖短剧、广告、电商成片。",
+      "why": "中文创作团队的视频产线开源参考，多供应商费用追踪对混用控成本实用"
+    },
+    {
+      "repo": "lidge-jun/opencodex",
+      "url": "https://github.com/lidge-jun/opencodex",
+      "stars": "17K",
+      "track": "企业AI应用",
+      "note": "通用供应商代理：把多家大模型接进 Codex CLI 与 Claude Code，一套配置随用随切。",
+      "why": "多模型混用的统一入口，选型期低成本横向对比模型能力"
+    },
+    {
+      "repo": "storytold/photocraft",
+      "url": "https://github.com/storytold/photocraft",
+      "stars": "26K",
+      "track": "内容创作",
+      "note": "纯 Rust 干净室重写的开源图像编辑器，对标主流桌面图像软件核心功能。",
+      "why": "本地可运行的图像工作流自托管方案，创作工具自主可控热点样本"
+    }
+  ],
+  "reading": [
+    {
+      "title": "OpenAI Sharing AI progress in mathematics",
+      "url": "https://openai.com/index/sharing-ai-progress-in-mathematics",
+      "source": "OpenAI",
+      "reason": "官方说明数学成果的发布方式：内部前沿模型的解题结果与形式化证明同步公开",
+      "why": "理解「机器可验证证明」范式的第一手说明，后续争论都会围绕它展开"
+    },
+    {
+      "title": "Budgeting AI Video by the Second: A Campaign Planning Template",
+      "url": "https://www.alibabacloud.com/blog/budgeting-ai-video-by-the-second-a-campaign-planning-template_603619",
+      "source": "Alibaba Cloud",
+      "reason": "把 AI 视频生成按秒预算化的策划模板：从时长、模型档位到预算分配的核算方法",
+      "why": "AI 视频进入「做多久花多少钱」阶段，做内容项目的可以直接套用"
+    },
+    {
+      "title": "Google brings agentic AI to Gemini, starting with businesses",
+      "url": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/",
+      "source": "TechCrunch",
+      "reason": "谷歌把 Gemini 升级成跨应用工作智能体，可后台执行任务并分配子代理，还有什么值得对照部署方式",
+      "why": "办公智能体的入口之战从聊天框转向工作流整合，对照自家系统再想一遍"
+    }
+  ],
+  "consensus": {
+    "text": "AI 行业的资本与消费两端开始用同一把尺子验收：真实收入与真实交付。",
+    "quotes": [
+      "头部厂商年化营收预期被下修约两百亿美元，缺口接近此前估计的四分之一（科技媒体）",
+      "模型榜单平台新融资估值十个月内近翻倍，评测范围扩到诚实度维度（科技媒体）",
+      "招聘、运营、量化研究、合同审查被批量写进客户案例，专家经验固化成可复用流程（企业案例）"
+    ]
+  },
+  "division": {
+    "text": "模型路线掰手腕：把参数与训练规模往上顶，还是把单位成本往下杀？",
+    "quotes": [
+      "万亿参数混合专家模型开启预览，训练动用三千八百块自家集群芯片（独立分析）",
+      "轻量档模型多平台同步上架，定价较上一代最多下调九成（云厂商与媒体）",
+      "厂商在自家说明里同步给出按 token 计费的预算模板，把成本核算写进官方文档（官方博客）"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-10-09T07:10"
+}
