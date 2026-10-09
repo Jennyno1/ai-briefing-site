@@ -1,0 +1,124 @@
+{
+  "date": "2026-10-10",
+  "format": "summary",
+  "points": [
+    "网络安全龙头接上新旗舰模型后，威胁调查时间压掉九成六，过半案例全自动，安全智能体第一次跑出规模化账本（OpenAI L1）。",
+    "模型团队一次抛出七百多篇AI数学论文，数学界直呼「需要数年才能消化」，签错三篇次日撤回（科技媒体 L2/L3）。",
+    "一家实验室的模型向警方误报凶案线索，两个月后才被发现，智能体误报治理被推上台面（科技媒体 L2）。"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "头部网络安全厂商接入新旗舰模型后，威胁调查时间缩短 96%，52% 的托管检测响应案例实现自动化，人工只做终审（OpenAI L1）。",
+        "数学前沿模型一次性公开 90 道前五百大未解难题的求解与形式化证明，数学界反应两极（Latent Space L2）。"
+      ],
+      "insights": [
+        "弱信号：长记忆层把 KV 状态存盘复用，五千万 token 窗口比重算更快更省，长会话智能体的成本公式要重写（arXiv L1）。"
+      ],
+      "actions": [
+        "做长对话智能体的团队，把「KV 复用记忆层」列入技术选型对比表，先在小流量灰度测成本收益（arXiv L1）。"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "云巨头推出按请求付费的智能体支付能力，智能体之间可以按次买推理服务，企业从「包月」走向「按用量」采购（AWS L1）。",
+        "保险公司把一年三百多万份保单流程交给智能体编排，效率翻倍；网络安全工单过半自动流转（OpenAI L1）。"
+      ],
+      "insights": [
+        "弱信号：客户案例的共同叙事从「省了多少小时」转向「预算怎么管控」——按模型分档、按任务路由成为标配（OpenAI L1）。"
+      ],
+      "actions": [
+        "企业评估智能体方案时，直接问厂商要「分模型路由」能力：轻量任务走便宜档，这是本季客户案例里压成本的第一杠杆（OpenAI L1）。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "搜索巨头实验室上线游戏实验平台：一句话生成可玩、可分享的自定义小游戏，自研模型实时生成（Google L1）。",
+        "摄影微距大赛冠军被取消资格——成片用了生成式 AI，赛事规则首次在成片环节动刀（The Verge L3）。"
+      ],
+      "insights": [
+        "弱信号：生成内容的「参赛资格」开始被机构重新划线：专业赛事、出版社、媒体平台都在成片与署名环节出新规（The Verge L3）。"
+      ],
+      "actions": [
+        "接商单前先问清平台与赛事的 AI 素材合规线：哪些素材可用 AI 生成、要不要署名标注，白纸黑字写进合同（The Verge L3）。"
+      ]
+    }
+  ],
+  "github": [
+    {
+      "repo": "deepseek-ai/deepseek-harness",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "stars": "246K",
+      "track": "AI产业技术",
+      "note": "把一切能力插件化的智能体运行框架：插件生态托管工具与界面，的基础设施走向「商店化」。",
+      "why": "官方把插件生态当一级架构发布，说明智能体框架之争已从模型卷到生态位。"
+    },
+    {
+      "repo": "pacifio/atlas",
+      "url": "https://github.com/pacifio/atlas",
+      "stars": "10K",
+      "track": "企业AI应用",
+      "note": "给多个编码智能体做「源码管理」：追踪各代理改动、合并入一处、统一查询。",
+      "why": "多智能体并行改代码的真实痛点开始有专门工具，企业落地多代理协作的基建参考。"
+    },
+    {
+      "repo": "KKKKhazix/AIHOT",
+      "url": "https://github.com/KKKKhazix/AIHOT",
+      "stars": "7K",
+      "track": "内容创作",
+      "note": "自动抓热点、写日报、上站的一人内容站框架：信源与精选标准可替换，跑起来就是行业热点站。",
+      "why": "内容管线自动化（抓取-筛选-成文-上线）已有完整开源模板，自媒体团队可直接改造复用。"
+    }
+  ],
+  "reading": [
+    {
+      "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+      "url": "https://openai.com/index/sophos",
+      "source": "OpenAI",
+      "reason": "网络安全龙头接新旗舰模型的落地复盘：哪些环节全自动、哪些保留人工终审",
+      "why": "96% 提速、52% 自动化两个数字，是目前安全智能体最像「可对账样板」的一篇。"
+    },
+    {
+      "title": "How Postman runs Agent Mode for 40 million developers on Amazon Bedrock",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-postman-runs-agent-mode-for-40-million-developers-on-amazon-bedrock/",
+      "source": "AWS",
+      "reason": "千万级用户智能体的架构复盘：工具数量控制、按 schema 读、把上下文当真正瓶颈",
+      "why": "「demo 到规模化」之间隔着的那几层，这篇写得最诚实，可对照自建方案。"
+    },
+    {
+      "title": "Beyond hours saved: Building the business case for agentic automation",
+      "url": "https://aws.amazon.com/blogs/machine-learning/beyond-hours-saved-building-the-business-case-for-agentic-automation/",
+      "source": "AWS",
+      "reason": "企业智能体的算账框架：时间节省之外加上例外处理、决策质量与维护成本",
+      "why": "RPA 时代的 ROI 模型确实罩不住智能体，立项材料可直接套用。"
+    }
+  ],
+  "consensus": {
+    "text": "智能体叙事正在从「能干活」走向「算得清账」，账本能力成了正式收编的门票。",
+    "quotes": [
+      "安全厂商威胁调查时间缩短九成六，过半案例自动化（OpenAI L1）",
+      "智能体获得按请求付费能力，可按次采购推理服务（AWS L1）",
+      "客户案例把「按模型分档、按任务路由」列为压成本标配（OpenAI L1）"
+    ]
+  },
+  "division": {
+    "text": "插件化生态能不能承载企业级复杂度？",
+    "quotes": [
+      "官方框架把插件生态定为一级架构并开源（GitHub L1.5）",
+      "云厂商企业级智能体走强权限、强治理的托管路线（AWS L1）",
+      "多智能体并行协作另立「源码管理」专门工具，不依赖插件生态承载合并与审计（GitHub L1.5）"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-10-10T07:10"
+}
