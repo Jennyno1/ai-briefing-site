@@ -60,23 +60,23 @@
     {
       "repo": "dataelement/dsh-desktop",
       "url": "https://github.com/dataelement/dsh-desktop",
-      "stars": "15K",
+      "stars": "16K",
       "track": "AI产业技术",
       "note": "DeepSeek Harness 桌面版，把 Harness 研发工具链做成可分发的桌面应用。",
       "why": "与 DeepSeek 整合成立产品部的动向共振，Harness 正从内部工具变成对外产品门面。"
     },
     {
-      "repo": "shihabal3amri/DiPlay",
-      "url": "https://github.com/shihabal3amri/DiPlay",
-      "stars": "11K",
+      "repo": "NirDiamant/RAG_Techniques",
+      "url": "https://github.com/NirDiamant/RAG_Techniques",
+      "stars": "30K",
       "track": "企业AI应用",
-      "note": "面向兼容安卓车机的独立 CarPlay 接收端，支持有线与无线连接公开预览。",
-      "why": "终端侧生态「谁有权接入」的争夺现成样本，做企业系统接入策略可直接参照。"
+      "note": "收录各种先进检索增强生成（RAG）技术与实现，每项技术附带可运行代码与详细说明。",
+      "why": "企业知识库落地时可按图谱直接对照实现，避免在基础架构上重复造轮子。"
     },
     {
       "repo": "storytold/vectorcraft",
       "url": "https://github.com/storytold/vectorcraft",
-      "stars": "9K",
+      "stars": "10K",
       "track": "内容创作",
       "note": "纯 Rust 从零实现的开源矢量绘图工具。",
       "why": "插画与配图工具链开源化，创作者多一个不依赖订阅、可本地部署的选项。"

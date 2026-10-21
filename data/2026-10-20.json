@@ -55,7 +55,32 @@
       ]
     }
   ],
-  "github": [],
+  "github": [
+    {
+      "repo": "deepseek-ai/DeepSeek-V3",
+      "url": "https://github.com/deepseek-ai/DeepSeek-V3",
+      "stars": "105K",
+      "track": "AI产业技术",
+      "note": "DeepSeek 开源大语言模型，支持推理与代码生成，性能与商业模型对标。",
+      "why": "开源模型已进入商业级对标阶段，企业可以在私有环境部署高性能模型而无需依赖第三方API。"
+    },
+    {
+      "repo": "labring/FastGPT",
+      "url": "https://github.com/labring/FastGPT",
+      "stars": "30K",
+      "track": "企业AI应用",
+      "note": "基于LLM的知识库平台，提供全套可即用的RAG与Agent能力。",
+      "why": "企业可以在数小时内搭建知识库问答系统，快速验证AI在内部场景的价值。"
+    },
+    {
+      "repo": "Acly/krita-ai-diffusion",
+      "url": "https://github.com/Acly/krita-ai-diffusion",
+      "stars": "11K",
+      "track": "内容创作",
+      "note": "将生成式图像能力接入Krita绘画流程，支持画布局部生成与修补。",
+      "why": "做插画与配图时可在现有画布内迭代，使用前需核对模型许可与本地运行要求。"
+    }
+  ],
   "reading": [
     {
       "title": "Stop Building AI Demos. Start Shipping Enterprise AI. (The SA & FDE Playbook for Qwen)",

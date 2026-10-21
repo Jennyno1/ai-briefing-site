@@ -55,7 +55,32 @@
       ]
     }
   ],
-  "github": [],
+  "github": [
+    {
+      "repo": "oobabooga/text-generation-webui",
+      "url": "https://github.com/oobabooga/text-generation-webui",
+      "stars": "48K",
+      "track": "AI产业技术",
+      "note": "开源桌面应用程序，支持本地LLM的文本、视觉、工具调用与OpenAI兼容API。",
+      "why": "100%私有化的本地推理方案，适合对数据安全有严格要求的企业与个人用户。"
+    },
+    {
+      "repo": "chatchat-space/Langchain-Chatchat",
+      "url": "https://github.com/chatchat-space/Langchain-Chatchat",
+      "stars": "39K",
+      "track": "企业AI应用",
+      "note": "基于Langchain与ChatGLM、Qwen、Llama等大语言模型的RAG与Agent应用框架。",
+      "why": "中文企业知识库落地的成熟框架，已支持多模型切换与多知识库管理。"
+    },
+    {
+      "repo": "onlook-dev/onlook",
+      "url": "https://github.com/onlook-dev/onlook",
+      "stars": "27K",
+      "track": "内容创作",
+      "note": "面向视觉工程师的开源AI首设计工具，支持可视化构建、样式编辑与代码生成。",
+      "why": "设计与代码边界被AI重新划定，非技术人员也能通过可视化界面产出可用产物。"
+    }
+  ],
   "reading": [
     {
       "title": "How Three Moment Research Runs 10,000 Agents for 36+ Hours",

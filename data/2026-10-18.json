@@ -58,28 +58,28 @@
   ],
   "github": [
     {
-      "repo": "storytold/wordcraft",
-      "url": "https://github.com/storytold/wordcraft",
-      "stars": "14K",
+      "repo": "aaif-goose/goose",
+      "url": "https://github.com/aaif-goose/goose",
+      "stars": "55K",
       "track": "AI产业技术",
-      "note": "用纯 Rust 从零实现的开源字处理引擎，对标 Microsoft Word 的核心功能。",
-      "why": "本地优先、免订阅的内容生产工具趋势延续，创作者多一个不依赖云端的写作选项。"
+      "note": "开源可扩展的AI智能体，支持安装、执行、编辑与测试，兼容多种大语言模型。",
+      "why": "从代码补全进化到全栈自动化，让智能体真正能在开发者工作流里执行复杂任务。"
     },
     {
-      "repo": "MiniMax-AI/MiniMax-H3",
-      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
-      "stars": "10K",
+      "repo": "ToolJet/ToolJet",
+      "url": "https://github.com/ToolJet/ToolJet",
+      "stars": "41K",
       "track": "企业AI应用",
-      "note": "MiniMax 开源智能体框架，支持多Agent协作与工具调用。",
-      "why": "企业部署智能体时，开源框架可降低供应商锁定风险，适配不同业务系统。"
+      "note": "企业级应用生成平台，支持内部工具、仪表盘与业务应用的低代码构建。",
+      "why": "将AI能力嵌入企业内部工具链，快速搭建可以被多部门使用的生产级应用。"
     },
     {
-      "repo": "MoonshotAI/Kimi-K3",
-      "url": "https://github.com/MoonshotAI/Kimi-K3",
-      "stars": "9K",
+      "repo": "lllyasviel/stable-diffusion-webui-forge",
+      "url": "https://github.com/lllyasviel/stable-diffusion-webui-forge",
+      "stars": "13K",
       "track": "内容创作",
-      "note": "月之暗面开源 frontier 级推理模型，标注为「Open Frontier Intelligence」。",
-      "why": "内容创作者可本地部署用于长文生成、结构化摘要、创意辅助，减少对 API 调用的依赖。"
+      "note": "基于Stable Diffusion WebUI的高性能分支，优化大模型推理与生成速度。",
+      "why": "对需要本地运行大型生成模型的创作者，性能优化版本可显著缩短等待时间。"
     }
   ],
   "reading": [

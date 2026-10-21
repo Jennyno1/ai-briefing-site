@@ -59,18 +59,26 @@
     {
       "repo": "awesome-dsh-plugin/awesome-dsh-plugin",
       "url": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
-      "stars": "19K",
+      "stars": "20K",
       "track": "AI产业技术",
       "note": "DeepSeek Harness（dsh）插件精选清单，把社区里可用的插件按用途收拢成一张目录。",
       "why": "平台刚起步时插件生态最容易散落，这类清单是观察社区把东西往哪几个方向卷的最快入口。"
     },
     {
-      "repo": "Ebony-Vinyl/dsh-our-free-model",
-      "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
-      "stars": "16K",
-      "track": "AI产业技术",
-      "note": "dsh 插件，装上即可调两款前沿模型，宣称无需登录注册或密钥、不限量。",
-      "why": "项目一天冲上高星说明需求真实存在，但「免费不限量」模式可持续性存疑，适合研究插件分发的灰区玩法。"
+      "repo": "microsoft/graphrag",
+      "url": "https://github.com/microsoft/graphrag",
+      "stars": "36K",
+      "track": "企业AI应用",
+      "note": "模块化图谱增强检索生成系统，将知识库结构化为图谱后做RAG与推理。",
+      "why": "企业知识库从“文档堆”进化到“知识图谱”，查询精度与可解释性同步提升。"
+    },
+    {
+      "repo": "coqui-ai/TTS",
+      "url": "https://github.com/coqui-ai/TTS",
+      "stars": "46K",
+      "track": "内容创作",
+      "note": "开源语音合成工具包，支持多语言语音生成与语音转换。",
+      "why": "可研究播客、有声书和配音流程；使用前需核对模型许可、声音授权和本地算力成本。"
     }
   ],
   "reading": [

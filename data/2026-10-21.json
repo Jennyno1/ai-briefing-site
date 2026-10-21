@@ -58,28 +58,28 @@
   ],
   "github": [
     {
-      "repo": "nexu-io/open-design",
-      "url": "https://github.com/nexu-io/open-design",
-      "stars": "103K",
+      "repo": "unclecode/crawl4ai",
+      "url": "https://github.com/unclecode/crawl4ai",
+      "stars": "86K",
       "track": "AI产业技术",
-      "note": "开源的协作式 AI 设计工作区，本地优先，团队成员与智能体在同一空间里做动效、原型、网站、应用、看板、演示、图像与视频，支持共享与反馈迭代。",
-      "why": "适合想在一处打通设计稿到可交互产物的小团队，省掉多工具来回导入导出。"
+      "note": "把网页内容转成适合大模型处理的Markdown，用于检索与资料采集。",
+      "why": "适合搭建资料采集与知识整理流程；具体站点仍须遵守访问权限。"
     },
     {
-      "repo": "TaimoorKhan10/Enterprise-RAG-Framework",
-      "url": "https://github.com/TaimoorKhan10/Enterprise-RAG-Framework",
-      "stars": "18",
+      "repo": "QuantumNous/new-api",
+      "url": "https://github.com/QuantumNous/new-api",
+      "stars": "50K",
       "track": "企业AI应用",
-      "note": "面向生产的检索增强生成框架，含混合检索、评估指标与可观测性，目标是减少幻觉并改善上下文管理。",
-      "why": "星数不高但结构完整，适合作为自建企业知识库的参考骨架，尤其是评估与监控这两块往往被跳过。"
+      "note": "统一管理多种模型的接入与分发，提供兼容接口。",
+      "why": "企业试用多个模型时，可参考其网关与统一管理方式。"
     },
     {
-      "repo": "gongxings/ai-creator",
-      "url": "https://github.com/gongxings/ai-creator",
-      "stars": "93",
+      "repo": "YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+      "url": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+      "stars": "14K",
       "track": "内容创作",
-      "note": "AI 创作者平台，集成写作、图像生成、视频生成、PPT 生成，并支持一键发布到多个平台，中英双语文档。",
-      "why": "想快速验证一个选题跑通图文加视频加 PPT 的内容流水线时，可直接拿它当起点改。"
+      "note": "带预览图的图像生成提示词资料库。",
+      "why": "做封面与插画前，可按画面效果查参考，再改写成自己的需求。"
     }
   ],
   "reading": [
