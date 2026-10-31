@@ -6,6 +6,9 @@
  *   1. 占位符过滤：值为 "--" / "—" / "-" / "N/A" 的条目一律不渲染（历史数据里的占位符不再显示成一行内容）
  *   2. 缺模块降级：某模块为空时**不报错、不显示空壳**，改在顶部提示「本日缺少哪些板块」
  *   3. 状态可达：日期写进 URL hash，可直接分享/刷新某一天
+ *   4. 例外——「最新一期」不写日期（2026-10-31 定版）：无日期根链接永远渲染最新已发布日报，
+ *      浏览最新时地址栏保持干净，避免用户按当时的地址收藏后**冻结**在某一天。
+ *      只有显式历史日期才写 #YYYY-MM-DD；恰好等于当前最新一期的旧链接在首载时归一为根链接。
  */
 (function () {
   'use strict';
@@ -16,6 +19,7 @@
   var themeBtn = document.getElementById('theme-toggle');
   var selectEl = document.getElementById('date-select');
   var currentDate = '';
+  var latestDate = '';          // 目录里最新一期（= manifest 末位）；用于判断「是否最新」
 
   var WEEK = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
 
@@ -306,6 +310,22 @@
     });
   }
 
+  // 地址栏同步口径：最新一期 → 无日期根链接；历史期 → #YYYY-MM-DD
+  // mode: 'none' 不动地址（首载必须这样，否则一进站就被改成固定日期） / 'replace' 不新增历史 / 'push' 新增历史
+  function rootUrl() {
+    return location.pathname + location.search;   // 去掉 hash 的干净根链接
+  }
+
+  function syncUrl(date, mode) {
+    if (!mode || mode === 'none') return;
+    var isLatest = date === latestDate;
+    var want = isLatest ? '' : '#' + date;
+    if (location.hash === want) return;
+    var url = isLatest ? rootUrl() : '#' + date;
+    if (mode === 'replace') history.replaceState(null, '', url);
+    else history.pushState(null, '', url);
+  }
+
   async function loadDate(date, opts) {
     briefingEl.innerHTML = '<p class="state">正在加载 ' + esc(date) + ' 简报…</p>';
     try {
@@ -315,16 +335,13 @@
       data.date = data.date || date;
       renderBriefing(data);
       setActive(date);
-      if (location.hash.slice(1) !== date) {
-        // 首载用 replaceState（不制造「假历史」），用户点击/按键才 pushState（返回＝回上一期）
-        if (opts && opts.push === false) history.replaceState(null, '', '#' + date);
-        else history.pushState(null, '', '#' + date);
-      }
+      // 首载不碰地址（opts.mode='none'）；点击/按键才写地址（默认 push，返回＝回上一期）
+      syncUrl(date, (opts && opts.mode) || 'push');
     } catch (err) {
       briefingEl.innerHTML = '<p class="state">这一期没能加载出来（' + esc(err.message) + '）。可以点重试，或先看旁边其他期。' +
         '<button type="button" class="retry-btn" id="retry-date">重试</button></p>';
       var rb = document.getElementById('retry-date');
-      if (rb) rb.addEventListener('click', function () { loadDate(date); });
+      if (rb) rb.addEventListener('click', function () { loadDate(date, { mode: 'replace' }); });
     }
   }
 
@@ -374,15 +391,19 @@
 
     if (footerMeta) footerMeta.textContent = ' 收录区间自 ' + dates[dates.length - 1] + ' 起，按日更新；当日无产出则不收录该日。';
 
+    latestDate = dates[0];
     var hash = decodeURIComponent(location.hash.slice(1));
-    var active = dates.indexOf(hash) !== -1 ? hash : dates[0];
+    var known = dates.indexOf(hash) !== -1;
+    var active = known ? hash : latestDate;
     var gaps = {};
     try {
       var gres = await fetch('data/gaps.json', { cache: 'no-cache' });
       if (gres.ok) gaps = await gres.json();
     } catch (e) { /* 缺板块清单缺失不影响主流程 */ }
     renderDates(dates, active, gaps);
-    await loadDate(active, { push: false });
+    // 历史日期链接：原样保留地址（不清洗用户显式指定的期）
+    // 无日期根链接 / 无效 hash / 恰好等于最新一期的旧链接：渲染最新一期，地址归一为干净根链接
+    await loadDate(active, { mode: (known && active !== latestDate) ? 'none' : 'replace' });
 
     if (selectEl) selectEl.addEventListener('change', function () { loadDate(selectEl.value); });
 
@@ -400,7 +421,9 @@
 
     window.addEventListener('hashchange', function () {
       var d = decodeURIComponent(location.hash.slice(1));
-      if (dates.indexOf(d) !== -1) loadDate(d);
+      // 回到根链接（hash 被清空）或 hash 无效 → 最新一期；hash 已经变了，不再新增历史
+      if (!d || dates.indexOf(d) === -1) { loadDate(latestDate, { mode: 'replace' }); return; }
+      loadDate(d, { mode: 'replace' });
     });
 
     // 键盘：按钮自带 Enter/Space，这里补上下键在日期列表里的移动。
