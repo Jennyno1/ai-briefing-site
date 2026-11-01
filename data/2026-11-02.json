@@ -1,0 +1,134 @@
+{
+  "date": "2026-11-02",
+  "format": "summary",
+  "points": [
+    "OpenAI、谷歌、微软、Anthropic 联合采纳 robots.txt 统一 AI 训练偏好标准。",
+    "OpenAI 12 月起合并 Chat 与 Work，Plus/Pro/Business 共用一份 token 配额。",
+    "Anthropic 上市前被黑石预警将获「较高档」垃圾级评级，630 亿美元芯片融资承压。"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "底座开源：DeepSeek 放出 Agent 底座架构，官方演示里 AI 自己定位到 Bug 并提交 PR（量子位 L2）",
+        "资本侧摊牌：Anthropic 两周内递交 S-1，拟以 2 万亿美元估值上市，文件披露 1400% 增速、85% 毛利率、二季度 10 亿美元经营利润、账上 1340 亿美元现金（Latent Space L2）",
+        "能力分级发放：Gemini 4 Carbon 在独立评测榜登顶，首批只向受信任的网络安全防御方开放（Latent Space L2）；Google 的卫星 TPU 完成首次在轨推理，机载 Gemma 4 按要求写了一首关于太空的俳句（The Verge L3 / TechCrunch L2）",
+        "研究侧：清华姚期智团队提出代数世界模型，试图让模型按方程推演而非拟合（量子位 L2）；智元双模型同期在多个榜单登顶（量子位 L2）"
+      ],
+      "insights": [
+        "弱信号：模型公司把「能改自己」的工程能力直接做成产品卖点，交付物从模型权重转向整条自愈流水线（推断）",
+        "弱信号：前沿能力先给防御方、再给公众，能力分发开始按信任等级排期，而非按付费能力（推断）"
+      ],
+      "actions": [
+        "在内部 CI 里挑一个只读或测试分支，试点「AI 自动修 Bug 并提 PR」，跑两周后统计合并率与回滚率；合并率低于三成就退回人工审。"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "融资成本反噬：黑石告知 Anthropic 最新一笔 630 亿美元芯片融资的投资者，预计主要评级机构给出「较高档」垃圾级评级，逾 8000 亿美元算力计划的融资前景因此复杂化（知乎 L2 引 FT / TechCrunch L2）",
+        "计价方式改写：12 月起 ChatGPT 把 Chat 与 Work 合成一个界面，Plus、Pro、Business 共用 token 配额，复杂模型消耗更多，简单即时对话不计量（The Decoder L3）；同时 OpenAI 对单设备、单支付卡可绑定的付费账号数设了上限（The Decoder L3）",
+        "零售端试水：星巴克 CEO Brian Niccol 在财报电话会称将探索车道点单时识别会员、推送个性化数字菜单（The Verge L3）；Zest 的代理能综合口味、投票选餐厅并直接订位（TechCrunch L2）",
+        "采购端降价：百度把搜索 API 增强版活动价打到 4.9 元/千次（刊例 40 元）、旗舰版 9.9 元/千次（刊例 72 元），增强版累计调用上限 100 万次（知乎 L2 引华尔街见闻）",
+        "算力外溢到硬件：科创板 49 家光通信企业中，24 家三季度归母净利润同比增速超 50%，增长原因共同指向 AI 算力与数据中心的光互联需求（虎嗅 L2）"
+      ],
+      "insights": [
+        "弱信号：企业采购的计价单位从「席位/月」转向「token 配额」，预算颗粒度变细，用量治理被推到合同层（推断）",
+        "弱信号：增长与毛利再漂亮，也挡不住信用评级对扩张节奏的约束，融资结构开始决定技术路线（推断）"
+      ],
+      "actions": [
+        "续约前把两份合同的「用量单位」原文抄出来并列（席位制还是 token 制），按去年的峰值月算出两种口径下的年费差额；差额超过两成，再谈条款。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "授权规则下沉到协议层：OpenAI、谷歌、微软、Anthropic 宣布采纳同一套 AI 训练偏好标准，发布方在 robots.txt 里声明一次即可对多家生效；标准由 Anthropic 技术负责人 Kevin Kelley 提交给 IETF（The Verge L3 / IT之家 L3）",
+        "工具开始替创作者挡版权：Claude Code 在服务端推送了一条不可关闭的规则，可以做原创游戏，但不帮复刻某一款现有游戏，改名或声称原创同样不生效，Anthropic 已确认（36氪 L2）",
+        "生成流程变精细：Adobe Research 与加州大学圣地亚哥分校的 EditAgent 不再反复重试同一个通用编辑器，而是按任务挑专用工具，再由语言模型在多个结果里选最优（The Decoder L3）",
+        "消费侧对照：Character.AI 在数千万用户、单次访问超三十分钟的情况下申请破产保护并寻求出售资产，四年从 10 亿美元估值走到这一步（36氪 L2）；隐私型助手 Ollie 也宣布一周内关停（TechCrunch L2）"
+      ],
+      "insights": [
+        "弱信号：内容的分发与授权规则正从「平台逐家谈判」下沉到协议默认值，声明的成本降到一行文本（推断）",
+        "弱信号：使用时长和用户量撑不起订阅收入，陪伴类产品的付费意愿与留存被高估（推断）"
+      ],
+      "actions": [
+        "今天就给自有站点的 robots.txt 加一行 AI 训练偏好声明，并在内容归档里记下声明日期；做二创选题前先过一遍「是否指向某一款现有作品」这一问，是就换方向。"
+      ]
+    }
+  ],
+  "github": [
+    {
+      "repo": "elizaOS/eliza",
+      "url": "https://github.com/elizaOS/eliza",
+      "stars": "20K",
+      "track": "AI产业技术",
+      "note": "开源的智能体操作系统，用 TypeScript 写成，把角色设定、记忆、多平台接入和插件收在同一个运行时里，社区插件数量多。",
+      "why": "想验证「一个角色型智能体能不能长期挂着跑」，用它起一个本地实例最快，接一个内部知识库就能看真实表现。"
+    },
+    {
+      "repo": "enescingoz/awesome-n8n-templates",
+      "url": "https://github.com/enescingoz/awesome-n8n-templates",
+      "stars": "26K",
+      "track": "企业AI应用",
+      "note": "280 多个现成的 n8n 自动化模板，覆盖 Gmail、Slack、Telegram、Discord 等常见系统，可直接导入改参数。",
+      "why": "流程自动化的成本主要花在第一次搭通上，先从这里挑一条最接近的模板改，比从空白画布开始省一半时间。"
+    },
+    {
+      "repo": "mudler/LocalAI",
+      "url": "https://github.com/mudler/LocalAI",
+      "stars": "50K",
+      "track": "内容创作",
+      "note": "开源自托管推理引擎，一个接口跑语言、视觉、语音、图像与视频模型，可完全离线部署。",
+      "why": "手上素材涉及未公开内容时，先在本机跑通一条处理链路，确认质量再决定要不要上云。"
+    }
+  ],
+  "reading": [
+    {
+      "title": "OpenAI、谷歌、微软和 Anthropic 联手推行 AI 数据抓取退出标准",
+      "url": "https://www.ithome.com/1/020/837.htm",
+      "source": "IT之家",
+      "reason": "标准怎么写进 robots.txt、四家各自承诺的适用范围，以及发布方如何一次声明对多家生效",
+      "why": "运营站点的人现在就能加这一行，成本几乎为零，早声明比事后补容易。"
+    },
+    {
+      "title": "Claude Code悄悄更新：不让Opus 5.5复刻游戏",
+      "url": "https://www.36kr.com/p/4050382051005574",
+      "source": "36氪",
+      "reason": "规则原文、Anthropic 的确认口径，以及为什么改名或声称原创都不能绕过",
+      "why": "做二创和游戏选题的人先看这条边界，别把复刻排进本周排期才发现做不了。"
+    },
+    {
+      "title": "观察｜AI 把双11的算术题撕了，然后给你出了道证明题",
+      "url": "https://www.huxiu.com/article/4902125.html",
+      "source": "虎嗅",
+      "reason": "同一句需求交给淘宝内嵌 AI、京东 AI 购、豆包和什么值得买「张大妈」，四份方案从 800 元到 1900 元",
+      "why": "大促前先自己跑一遍这类对比，才知道该信哪一家的推荐，而不是照单下单。"
+    }
+  ],
+  "consensus": {
+    "text": "AI 能力能否卖出去，取决于用量能否被拆成可计量、可预算的单位。",
+    "quotes": [
+      "12 月起 ChatGPT 把 Chat 与 Work 合成一个界面，Plus、Pro、Business 共用 token 配额，复杂模型消耗更多（The Decoder）",
+      "百度把搜索 API 增强版活动价打到 4.9 元/千次、旗舰版 9.9 元/千次，超出活动量按刊例价计费（知乎引华尔街见闻）",
+      "Adobe Research 与加州大学圣地亚哥分校的 EditAgent 按任务挑专用编辑工具，再由语言模型在多个结果里选最优（The Decoder）"
+    ]
+  },
+  "division": {
+    "text": "扩张该由增长与毛利支撑，还是由信用评级与现金流约束。",
+    "quotes": [
+      "Anthropic 递交 S-1，拟以 2 万亿美元估值上市，披露 1400% 增速、85% 毛利率、二季度 10 亿美元经营利润（Latent Space）",
+      "黑石告知 Anthropic 630 亿美元芯片融资的投资者，预计主要评级机构给出「较高档」垃圾级评级（知乎引 FT / TechCrunch）",
+      "TechCrunch 称大型科技公司的 AI 基建投入伴随债务上升与自由现金流为负，投资人怀疑加深（TechCrunch）"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-11-02T07:11"
+}
