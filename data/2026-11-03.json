@@ -1,0 +1,134 @@
+{
+  "date": "2026-11-03",
+  "format": "summary",
+  "points": [
+    "高盛收回交易员与银行家手上的 Claude Code、GitHub Copilot 权限，只保留给工程师。",
+    "纽约时报等多家媒体起诉 Brave 浏览器，指其抓取内容并分发给 Anthropic、Perplexity。",
+    "腾讯混元发布 AI 科研系统 Hyra 2.0，让通用 Agent 去造科研工具而非直接解题。"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "研发范式转向：腾讯混元发布 AI 科研系统 Hyra 2.0，把重点从「直接用 AI 攻克科学难题」改成让通用 Agent 参与科学模型、研究工作流与软件工具的研发升级，官方称工具升级的收益能被下游任务反复复用（IT之家 L3）",
+        "模型侧传闻：量子位称 GPT-6.2 Astra 已出现在部分用户的 Codex 使用统计与 API 响应记录中，同日有人在 Anthropic 官网源码里发现 Claude Mythos 5.5 的名称，截至发稿两家均未官宣（量子位 L2 / 36氪 L2）",
+        "多智能体实验：Y Combinator Labs 与 Olam Labs 让 50 个 GPT-6.1 Sol 智能体在 Minecraft 里和平建国，结果陷入荒诞的官僚流程；与 Claude Opus 5.5 正面竞争时，又各自发明了养鸡交接协议、肥料专员和钓鱼轮班（The Decoder L3）",
+        "规则侧：OpenAI 更新 Model Spec，列出五条核心价值观，强调判断力、人的自主性与对人类意图的忠实（OpenAI L1）",
+        "硬件并购：Marvell 拟以 1150 亿美元收购 Lumentum，两家共同的战略投资方都是英伟达（TechCrunch L2）"
+      ],
+      "insights": [
+        "弱信号：AI 科研的交付物从「一个答案」变成「一套可复用的工具」，评价标准随之从解题率转向工具被复用的次数（推断）",
+        "弱信号：智能体规模化之后，协调开销先于能力成为瓶颈——50 个智能体自发造出岗位与流程，说明制度成本是规模的真实代价（推断）"
+      ],
+      "actions": [
+        "挑一个每季度都要重做一遍的分析任务，写成带固定评判标准的脚本，让 Agent 迭代三轮再对比人工版本耗时；只有第三轮明显优于第一轮，才值得在这个方向上继续投入。"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "权限反向收缩：高盛收回交易员与银行家手上的 Claude Code、GitHub Copilot 权限，只保留给工程师；其 CIO Marco Argenti 今年 7 月还公开称赞非技术员工的「氛围编程」，银行现在给出的理由是生产效率与风险管理（The Decoder L3）",
+        "工时账：Circle K 的 DevOps 团队用 Amazon Bedrock 搭事故分诊系统，把分诊时间从 45–60 分钟压到 15 分钟以内，架构先走 Bedrock Flows，后迁到 Bedrock AgentCore（AWS L1）",
+        "接口治理：MoEngage 把 7 个 AWS 区域里约 400 个私有 REST API，通过 Amazon Bedrock AgentCore Gateway 变成带权限边界的 Agent 工具，没有为每个服务单独搭 MCP server（AWS L1）",
+        "入口之争：虎嗅称 OpenAI 推出可在组织内共享、连接企业工具的 Workspace Agents，Anthropic 把 Claude 接入 QuickBooks、PayPal、HubSpot，阿里千问办公接入钉钉，竞争焦点从聊天框转向企业工作流（虎嗅 L2）"
+      ],
+      "insights": [
+        "弱信号：能力不再是瓶颈，权限边界与接口治理才是——同一个工具交给工程师是生产力，交给交易员就变成合规风险（推断）",
+        "弱信号：企业落地的前置成本，从「模型选型」转到了「把自家几百个接口变成可授权工具」（推断）"
+      ],
+      "actions": [
+        "清点一次内部对外开放的接口，按只读、可写、涉及资金或客户数据三档标出来；Agent 先只接只读那一档，跑通再加档，别一上来就挂写权限。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "版权诉讼换靶点：纽约时报等多家媒体起诉 Brave 浏览器，指其抓取受版权保护的内容并分发给 Anthropic、Perplexity 等客户，同时让用户绕过付费墙（TechCrunch L2 / The Verge L3）",
+        "生产端去剧组化：阿里云博客介绍 Drama916，用生成式流程做电影感竖屏短剧，主打不需要摄影、灯光、场务等现场班底（阿里云 L1）",
+        "多语言内容管线：arXiv 论文 Nedimo 提出一条有出处可查的多语言流程，用来批量生成睡前故事（arXiv cs.AI L1）",
+        "平台侧收缩：建站服务商 Squarespace 宣布裁员 19%，称属于组织架构重组的一部分（TechCrunch L2）"
+      ],
+      "insights": [
+        "弱信号：版权纠纷的对象从「训练模型的公司」前移到「替模型抓内容的中转方」，分发链条上每一环都开始被追责（推断）",
+        "弱信号：短剧、睡前故事这类标准化内容，正被压到「没有现场班底也能出片」的成本线，创作者的优势转向选题与人物设定（推断）"
+      ],
+      "actions": [
+        "把自己发布过的内容按「被谁转载、有无授权记录」列一张表，重点看有没有浏览器插件或 AI 搜索产品在转售；发现无授权分发的，先截图存证，再决定要不要发函。"
+      ]
+    }
+  ],
+  "github": [
+    {
+      "repo": "0x4m4/hexstrike-ai",
+      "url": "https://github.com/0x4m4/hexstrike-ai",
+      "stars": "13K",
+      "track": "AI产业技术",
+      "note": "一个 MCP 服务器，把 150 多个网络安全工具接进 Claude、GPT、Copilot 等模型，让智能体能自己跑渗透测试、漏洞扫描和漏洞赏金流程，2025 年 7 月建仓。",
+      "why": "想验证「智能体能不能长时间自主跑一条多步骤任务线」，安全测试是少见的、有明确成败判据的场景，可以先在隔离靶场里试。"
+    },
+    {
+      "repo": "QwenLM/Qwen-Agent",
+      "url": "https://github.com/QwenLM/Qwen-Agent",
+      "stars": "17K",
+      "track": "企业AI应用",
+      "note": "通义千问团队维护的 Agent 框架，含函数调用、MCP、代码解释器、文档检索和浏览器扩展，可直接接企业内部工具。",
+      "why": "手上已有 Qwen 系列模型或计划本地部署的团队，用它省掉自己拼工具调用和检索链路的时间。"
+    },
+    {
+      "repo": "Open-LLM-VTuber/Open-LLM-VTuber",
+      "url": "https://github.com/Open-LLM-VTuber/Open-LLM-VTuber",
+      "stars": "15K",
+      "track": "内容创作",
+      "note": "本地运行的开源虚拟形象对话项目，支持免提语音、说话打断与 Live2D 形象，可接任意大模型，跨平台使用。",
+      "why": "需要出镜但不想真人露脸的口播或直播场景，可以先拿它做一个固定人设试播，再决定要不要投设备。"
+    }
+  ],
+  "reading": [
+    {
+      "title": "Goldman Sachs pulls AI coding tools from traders and bankers",
+      "url": "https://the-decoder.com/goldman-sachs-pulls-ai-coding-tools-from-traders-and-bankers/",
+      "source": "The Decoder",
+      "reason": "报道交代了高盛的时间线与原话：7 月还在夸氛围编程，11 月只给工程师开权限，风险管理的边界画在哪",
+      "why": "正在给非技术岗位批量开 AI 编程权限的团队，值得先读完这条再决定授权范围。"
+    },
+    {
+      "title": "New York Times and other outlets sue web browser Brave over alleged content scraping",
+      "url": "https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/",
+      "source": "TechCrunch",
+      "reason": "诉讼把 Brave 定位成内容抓取与分发的中间商，原告主张它同时损害版权与付费墙",
+      "why": "自己的内容被 AI 产品转售时，追责对象可能不止模型公司，这条给出了可参考的诉讼路径。"
+    },
+    {
+      "title": "腾讯混元发布 Hyra 2.0：为模型研发打造可复用工具",
+      "url": "https://www.ithome.com/1/021/266.htm",
+      "source": "IT之家",
+      "reason": "讲清了 Hyra 2.0 的架构拆分与「智能复利」提法的由来，以及 1.0 曾解决加法组合学悬置五十余年的开放问题",
+      "why": "想看「让 AI 造工具」这套思路怎么落地，这篇是最接近官方口径的一份说明。"
+    }
+  ],
+  "consensus": {
+    "text": "AI 能不能进入真实工作，取决于权限与责任能不能被切分到可授权的粒度。",
+    "quotes": [
+      "高盛收回交易员与银行家手上的 Claude Code、GitHub Copilot 权限，只保留给工程师，理由是生产效率与风险管理（The Decoder）",
+      "MoEngage 把 7 个 AWS 区域约 400 个私有 REST API 通过 Amazon Bedrock AgentCore Gateway 变成带权限边界的 Agent 工具（AWS）",
+      "OpenAI 更新 Model Spec，列出五条核心价值观，强调判断力、人的自主性与对人类意图的忠实（OpenAI）"
+    ]
+  },
+  "division": {
+    "text": "能力该先铺给更多岗位，还是先按风险收回给少数受控角色。",
+    "quotes": [
+      "高盛 CIO Marco Argenti 今年 7 月公开称赞非技术员工的「氛围编程」，11 月该行把 AI 编程工具权限收回给工程师（The Decoder）",
+      "虎嗅称 OpenAI 推出可在组织内共享的 Workspace Agents，Anthropic 把 Claude 接入 QuickBooks、PayPal、HubSpot，阿里千问办公接入钉钉（虎嗅）",
+      "Circle K 用 Amazon Bedrock 把 DevOps 事故分诊从 45–60 分钟压到 15 分钟以内（AWS）"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-11-03T07:10"
+}
