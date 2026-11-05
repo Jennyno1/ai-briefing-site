@@ -1,0 +1,130 @@
+{
+  "date": "2026-11-06",
+  "format": "summary",
+  "points": [
+    "OpenAI 发布 GPT‑6 Cyber 网络安全模型，已发现 Firefox 81 个未知漏洞、Linux 内核 948 个漏洞。",
+    "Google Gemini Omni 1.2 Flash 支持 15 秒视频生成，价格降 30% 至每帧 0.07 美元。",
+    "Anthropic 首次付费购买新闻内容授权，与美联社达成选举数据实时展示协议。"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "OpenAI 发布 GPT‑6 Cyber 网络安全模型，专注于发现软件漏洞、开发利用程序和生成修复方案，测试中越界率低于 1%（OpenAI L1 / The Decoder L3）",
+        "OpenAI 同时披露，自主管道已在 Linux 内核中找到、验证并生成 948 个本地提权漏洞的修复补丁（OpenAI L1）",
+        "百度开源文心 5.5 Flash Base，2800 亿参数 MoE 模型，预训练 33.5 万亿 Token，未做微调直接发布（量子位 L2 / The Decoder L3）"
+      ],
+      "insights": [
+        "网络安全从「人工审计」转向「AI 自动化找洞+修洞」，OpenAI 用同一套模型既进攻又防御，说明模型对齐能力已能约束有害行为（推断）",
+        "国产开源基座模型持续迭代，百度选择「不微调直接发布」降低开发者门槛，但评测表现需市场验证（推断）"
+      ],
+      "actions": [
+        "负责安全测试的团队，先用 GPT‑6 Cyber 跑一次内网基础扫描，对比人工审计的漏报率。"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "DeepSeek Harness 公布最新数据，日活跃用户 154 万，日消耗 Token 约 92 万亿，第三方插件增至 3.5 万个（IT之家 L3）",
+        "华为小艺 Work 上线 openPangu‑2.1‑Pro，主打鸿蒙任务增强；字节扣子企业版暂停新售，转向产品整合（IT之家 L3 / 36氪热榜 L2）",
+        "Apple 削减内部 AI 预算，是科技大厂从「Token 狂欢」转向「成本理性」的最新一例（TechCrunch L2 / The Decoder L3）"
+      ],
+      "insights": [
+        "国产 Agent 平台进入规模化验证期，DeepSeek Harness 的 DAU 和 Token 消耗显示真实使用场景已超出早期演示（推断）",
+        "企业级 AI 工具从「能跑 demo」到「能验算 ROI」，成本压力倒逼厂商收敛功能、整合产品线（推断）"
+      ],
+      "actions": [
+        "评估 DeepSeek Harness 插件市场，挑 2-3 个与当前工作流相关的插件试用一周，记录节省时间。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "ChatGPT 接入 Images 2.6，支持文字或照片直接生成动态 GIF，速度提升 50%，角色跨帧一致性较强（OpenAI L1 / The Decoder L3）",
+        "Google Gemini Omni 1.2 Flash 支持 15 秒视频生成与对话式分步编辑，720p 定价 $0.07/秒，较上一代降 30%（Google Blog L1 / The Decoder L3）",
+        "虎鲸文娱「鲸锐AI」平台上线，官方称 AI 视频单分钟成本节省 30% 以上（量子位 L2）"
+      ],
+      "insights": [
+        "视频生成从「长时长低质量」转向「短时长高质量+低成本」，15 秒成为新标准，适合短视频与社交传播（推断）",
+        "GIF 动图生成进入主流创作工具，封面动图或短循环视频可能成为新的流量载体（推断）"
+      ],
+      "actions": [
+        "给下一篇内容做一版 3 秒循环的 GIF 封面，和现有静态封面各跑一周，比同一账号的点击率。"
+      ]
+    }
+  ],
+  "github": [
+    {
+      "repo": "humanlayer/12-factor-agents",
+      "url": "https://github.com/humanlayer/12-factor-agents",
+      "stars": "27K",
+      "track": "AI产业技术",
+      "note": "提炼了构建生产级 LLM 应用的 12 条原则，覆盖可靠性、可观测性、成本控制与错误处理。",
+      "why": "正在搭 AI Agent 系统的团队，按这份清单逐条核对自身架构，能找到最常见的生产级盲区。"
+    },
+    {
+      "repo": "creativetimofficial/ui",
+      "url": "https://github.com/creativetimofficial/ui",
+      "stars": "12K",
+      "track": "企业AI应用",
+      "note": "一套开源 UI 组件库，提供可导入 MCP Registry 的模块与 AI Agent，加速内部工具搭建。",
+      "why": "做企业级 AI 应用时，用现成组件代替从零写前端，能省掉大量重复劳动。"
+    },
+    {
+      "repo": "zyddnys/manga-image-translator",
+      "url": "https://github.com/zyddnys/manga-image-translator",
+      "stars": "11K",
+      "track": "内容创作",
+      "note": "基于 SOTA 模型的漫画/图片翻译工具，支持文字检测、去除、翻译与回贴全流程自动化。",
+      "why": "有多语言漫画或图文内容需要本地化处理时，用它跑一轮批量翻译，比人工更高效。"
+    }
+  ],
+  "reading": [
+    {
+      "title": "OpenAI releases GPT-6 Cyber, a model that finds and fixes vulnerabilities",
+      "url": "https://the-decoder.com/openais-gpt-6-cyber-can-both-break-into-systems-and-propose-how-to-fix-them/",
+      "source": "The Decoder",
+      "reason": "报道交代了 GPT‑6 Cyber 的能力边界：在授权范围内找漏洞、生成修复方案，测试中越界率低于 1%",
+      "why": "负责安全审计的团队可以据此评估是否引入 AI 辅助扫描，对比人工审计的覆盖率与漏报率。"
+    },
+    {
+      "title": "Anthropic signs first-ever news licensing deal with Associated Press",
+      "url": "https://the-decoder.com/anthropic-reverses-course-and-pays-for-news-content-for-the-first-time/",
+      "source": "The Decoder",
+      "reason": "文章说明 Anthropic 此前坚持「爬虫抓取符合合理使用」，此次转而付费授权，标志其内容策略发生转折",
+      "why": "关注 AI 公司与媒体关系的人，可借此观察「合理使用」边界是否会随监管与商业压力重新定义。"
+    },
+    {
+      "title": "Google's Gemini Omni 1.2 Flash stretches AI video clips to 15 seconds and cuts pricing by 30 percent",
+      "url": "https://the-decoder.com/googles-gemini-omni-1-2-flash-stretches-ai-video-clips-to-15-seconds-and-cuts-pricing-by-30-percent/",
+      "source": "The Decoder",
+      "reason": "报道给出定价与能力细节：720p 每帧 $0.07，支持对话式分步编辑，较上一代降价 30%",
+      "why": "做短视频或社交内容的团队，可以拿 Gemini 1.2 Flash 跑一轮对比实验，看生成质量与成本是否达标。"
+    }
+  ],
+  "consensus": {
+    "text": "模型能力的边界已从「能不能做」转向「能不能可控地做」，安全性与成本治理能力成为产品化的关键门槛。",
+    "quotes": [
+      "OpenAI GPT‑6 Cyber 测试中越界率低于 1%，可在授权范围内找漏洞并生成修复方案（OpenAI）",
+      "Anthropic 首次付费与美联社合作，Claude 可在选举之夜实时展示结果并注明来源（IT之家 / The Decoder）",
+      "Apple 削减内部 AI 预算，科技大厂从 Token 狂热转向成本理性（TechCrunch / The Decoder）"
+    ]
+  },
+  "division": {
+    "text": "一边押注开源基座模型降低开发者门槛，一边押注闭源旗舰模型换取性能与可控性，两者在商业路径上存在根本分歧。",
+    "quotes": [
+      "百度开源文心 5.5 Flash Base，2800 亿参数未微调直接发布，降低接入门槛（量子位 / The Decoder）",
+      "OpenAI 发布 GPT‑6 Cyber 闭源模型，配合 AWS GovCloud 仅限授权客户使用（OpenAI / TechCrunch）",
+      "Anthropic 从拒绝付费授权转向与美联社签约，OpenAI 已与十多家出版商达成合作（IT之家 / The Decoder）"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-11-06T07:10"
+}
