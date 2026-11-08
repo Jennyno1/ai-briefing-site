@@ -1,0 +1,140 @@
+{
+  "date": "2026-11-09",
+  "format": "summary",
+  "points": [
+    "阿里发布 Co-Design Bench，GPT-6 Astra 在真实用户需求上完整解决率仅 26.4%，旧基准同批模型超 99%。",
+    "Claude Code 约九成自身代码由 Claude 编写，靠六层检查把关，需回滚的 PR 占比相对下降超 40%。",
+    "AI 短剧《持械入宋》全网播放报 120 亿、登顶红果 AI 榜，六个非科班主创、全程无投流。"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "阿里发布编码 agent 基准 Co-Design Bench，题目取自真实用户曾让 agent 失败的需求；排名第一的 GPT-6 Astra 只完整解决 26.4%，同一批模型在旧基准上得分超 99%（The Decoder）",
+        "METR 新报告称，Anthropic 用 AI 改进自家模型，迭代速度约为一年前的两倍，且没有明显放缓迹象，研究界担忧这种自我加速缺少外部核查（The Verge）",
+        "OpenAI 宣布收购 Pierre Computer Company，把其代码构建、理解与审查工具并入 Codex（OpenAI）",
+        "CrowdStrike 以近 5 亿美元收购 Fiddler AI 与 Dreadnode，前者做 agent 可观测、后者做 AI 安全测试；Palo Alto Networks 正洽谈以 5 亿美元收购 agent 安全初创 Clutch（TechCrunch）"
+      ],
+      "insights": [
+        "真实需求基准的分数断崖说明测试口径换了：旧基准考「写对一段代码」，新基准考「上下文不全时做对需求」，后者才是采购方付钱的部分（推断）",
+        "自我加速的争议点不在速度，而在谁当裁判：模型改进模型的收益由模型自己评估时，外部只看得到加速曲线，看不到退化项（推断）",
+        "安全预算的流向透露企业优先级：agent 可观测与安全测试公司被接连收购，说明上生产前先要有「看得见 agent 干了什么」的能力（推断）"
+      ],
+      "actions": [
+        "评估编码 agent 的团队，把「能跑通 demo」换成可复现验收：拿 5 到 10 条真实历史需求做回归，记录完整解决率。",
+        "让 agent 改代码的团队，给每次提交配独立身份与变更说明，出问题时能定位到具体哪一次改动。"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "Claude Code 团队 10 月 15 日公开内部审查流程：约 90% 的 Claude Code 自身代码由 Claude 编写，Anthropic 主代码库日合并改动从 5 月约 2500 次涨到 9 月超 3 万次，PR 翻倍的同时需回滚的 PR 占比相对下降超 40%，靠六层检查加快速回滚兜底（36氪）",
+        "虎嗅梳理国内 AI 办公格局：腾讯 WorkBuddy 上线三个月单月 PC 端访问 2097 万次，阿里把 QoderWork、悟空、MuleRun 整合为「千问办公」，字节「豆包工作」一周内超 10 万家企业申请内测（虎嗅）",
+        "蚂蚁集团灵光 2.0 上线一周管理超 116 万项事务、执行超 360 万次任务，用户数破 2000 万（IT之家）",
+        "Greenlight Financial 在 Amazon Bedrock AgentCore 上运行分层多 agent 系统 Luna，每月最多 4000 件安全与风险案件中 90% 以上无需人工介入（AWS AI Blog）",
+        "马来西亚 U Mobile 的 AiDaH 平台上线九个月，覆盖六个部门 150 多个运营场景，从辅助回答转为自主执行（AWS AI Blog）"
+      ],
+      "insights": [
+        "六层检查的价值不在「更严」，而在把审查成本压到机器侧：PR 翻倍而回滚占比下降，说明检查前置比事后返工便宜（推断）",
+        "国内 AI 办公的竞争已从功能转向入口：三家同时把产品压进 PC 端与办公套件，谁占住装机入口，谁就不用为获客持续付费（推断）",
+        "安全运营是最早被整段接手的场景：案件量大、判断标准能写成规则、结论可复核，三个条件同时满足时才敢放全自动（推断）"
+      ],
+      "actions": [
+        "准备让 agent 改主干代码的，照 Claude Code 的清单列自己的检查层：编译、单测、静态检查、安全扫描、回归、人工抽检，缺哪层补哪层，别只加「AI 复审」。",
+        "选 AI 办公工具的，先看它接进了哪些已有入口（邮箱、日历、文档），入口越深，日后切换成本越高。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "AI 短剧《持械入宋》11 月 6 日全网播放量报 120 亿、登顶红果 AI 榜，约十季共 1000 集，千万收藏、近 400 万预约，主创是 6 个非科班出身的外行，全程无投流（36氪）",
+        "张艺谋在 2026 金鸡电影节表示，AI 影像三五年内质量会迭代到「乱真」，电影可能不再是精英的艺术，普通人也能当导演和编剧（知乎）",
+        "猫王与 Eminem 部分作品版权方起诉 Suno，指控其未经授权生成模仿这两位艺人的音乐与歌词（The Verge）",
+        "Karpathy 用一个周末把 4300 万条 Hacker News 评论交给 Claude Opus 5.5 筛选，得到 6454 条精选视频，自建了一个策展视频站（The Decoder）"
+      ],
+      "insights": [
+        "《持械入宋》跑通的是连载而非单集爆款：1000 集、十季、400 万预约，说明 AI 制作的成本结构允许把更新频率当留存手段（推断）",
+        "版权诉讼正从训练数据转向输出模仿：起诉点落在生成结果像不像某位艺人，这比训练阶段更难用技术中立辩护（推断）",
+        "Karpathy 的实验说明策展工作也能自动化，但筛选标准仍由人定：公开数据加一条判断标准，就能做出比平台推荐更合口味的信息流（推断）"
+      ],
+      "actions": [
+        "做 AI 内容的，把「能不能连载」当选题标准：选一个能持续产出几十期的题材，比赌一条爆款更可控。",
+        "用 AI 生成音乐或配音的，避开对在世及已故艺人的音色模仿，商用素材留存生成记录。"
+      ]
+    }
+  ],
+  "github": [
+    {
+      "repo": "kvcache-ai/ktransformers",
+      "url": "https://github.com/kvcache-ai/ktransformers",
+      "stars": "20K",
+      "track": "AI产业技术",
+      "note": "异构推理与微调优化框架，让 MoE 大模型把部分计算放到 CPU 与内存，用有限显存跑起更大参数量的模型。",
+      "why": "显存不够、又想本地跑大模型的团队，可以先用它做一次成本对比，看 CPU 卸载后的速度能不能接受。"
+    },
+    {
+      "repo": "VectifyAI/PageIndex",
+      "url": "https://github.com/VectifyAI/PageIndex",
+      "stars": "40K",
+      "track": "企业AI应用",
+      "note": "面向长文档的树状索引方案，用推理检索替代向量库，按文档结构逐层定位相关段落。",
+      "why": "内部文档库检索答不准的团队，可用它替换或补充向量检索，重点测财务报告、合同这类结构清晰的长文档。"
+    },
+    {
+      "repo": "OpenMontageInc/OpenMontage",
+      "url": "https://github.com/OpenMontageInc/OpenMontage",
+      "stars": "79K",
+      "track": "内容创作",
+      "note": "开源的 agent 化视频生产系统，内置 12 条生产流水线与 100 多个工具，让编码助手按流程产出视频。",
+      "why": "已经有剪辑流程的内容团队，可以挑其中一条流水线试做一期，量出单条耗时再决定是否整体替换。"
+    }
+  ],
+  "reading": [
+    {
+      "title": "AI coding agents still need human cleanup on nearly three out of four tasks in a real-world test",
+      "url": "https://the-decoder.com/ai-coding-agents-still-need-human-cleanup-on-nearly-three-out-of-four-tasks-in-a-real-world-test/",
+      "source": "The Decoder",
+      "reason": "报道介绍阿里 Co-Design Bench 的构造：题目取自真实用户提过、agent 实际做砸的需求，第一名的 GPT-6 Astra 完整解决率 26.4%，同批模型旧基准超 99%",
+      "why": "正在选编码 agent 的技术负责人，可以直接拿这份基准的题型当内部验收模板，比看榜单名次更接近真实体验。"
+    },
+    {
+      "title": "九成代码AI写，谁来审？Claude Code亮出6道关卡！",
+      "url": "https://www.36kr.com/p/4060672855757954",
+      "source": "36氪",
+      "reason": "报道给出 Anthropic 内部数据：Claude 编写约 90% 的 Claude Code 代码，主库日合并改动从约 2500 次涨到超 3 万次，六层检查让回滚 PR 占比相对降超 40%",
+      "why": "想让 AI 大规模写代码的团队，可照这篇的六层结构设计自己的审查链，重点看回滚机制怎么建。"
+    },
+    {
+      "title": "专访《持械入宋》主创：非科班，无投流，草根团队如何做出120亿品质爆款？",
+      "url": "https://www.36kr.com/p/4060386455443330",
+      "source": "36氪",
+      "reason": "报道拆解这部剧的制作与发行：6 个非科班主创、十季约 1000 集、千万收藏、近 400 万预约，第一季不温不火，第十季热度 8206 万",
+      "why": "做 AI 短剧的团队，可重点看它怎么安排分季节奏与成本，连载结构比单集爆款更值得复制。"
+    }
+  ],
+  "consensus": {
+    "text": "AI 产出的量已经超过人工逐条审阅的速度，能不能真正用起来，取决于有没有可抽查、可回滚的验收机制。",
+    "quotes": [
+      "Claude Code 约 90% 的自身代码由 Claude 编写，Anthropic 主代码库日合并改动从 5 月约 2500 次涨到 9 月超 3 万次，需回滚的 PR 占比相对下降超 40%（36氪）",
+      "阿里 Co-Design Bench 中，GPT-6 Astra 完整解决 26.4% 的真实用户需求，旧基准同批模型超 99%（The Decoder）",
+      "《持械入宋》全 AI 生成，约十季 1000 集，11 月 6 日全网播放报 120 亿，登顶红果 AI 榜（36氪）"
+    ]
+  },
+  "division": {
+    "text": "分歧在于先把产能铺开、用自动检查兜底，还是先把可核查的边界做在生成之前。",
+    "quotes": [
+      "Claude Code 10 月 15 日公开六层检查流程，PR 数量翻倍而需回滚的 PR 占比相对下降超 40%（36氪）",
+      "METR 报告称 Anthropic 用 AI 改进自家模型，迭代速度约为一年前两倍，且无明显放缓（The Verge）",
+      "CrowdStrike 以近 5 亿美元收购 Fiddler AI 与 Dreadnode，Palo Alto Networks 洽谈以 5 亿美元收购 Clutch（TechCrunch）"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-11-09T07:10"
+}
