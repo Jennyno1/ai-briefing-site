@@ -1,0 +1,142 @@
+{
+  "date": "2026-11-10",
+  "format": "summary",
+  "points": [
+    "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2，称编码、推理、视觉均有提升，输出快于 5.1，并分公开版与仅限验证机构的版本。",
+    "Meta 发布小模型 Muse Ember，专做 agent 的工具调用、路由与数据抽取，输入定价每百万 token 10 美分。",
+    "字节 Seed 发布 Seedream 5.5，支持最多 100 轮编辑不漂色、直接输出透明背景 RGBA，称超过 GPT-Image-2.5 Sunburst。"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2，称在编码、推理、视觉与表达清晰度上均有提升，输出速度高于 5.1 版本；两个模型分公开发布版与仅向验证机构开放的版本（The Verge）",
+        "The Decoder 称两模型能求解公开物理问题、展示更强网络安全能力，并可设计可运行的操作系统，发布时点紧邻 IPO（The Decoder）",
+        "Meta 发布最小最省的小模型 Muse Ember，针对工具调用、路由、数据抽取这类重复性 agent 任务优化，输入定价每百万 token 10 美分，低于 Claude Haiku 5.5 与 GPT-6 Luna，但在复杂任务上不如它们（TechCrunch）",
+        "谷歌一年内推出四款 TPU 8 变体：TPU 8tx 在处理过程中保持数据加密，TPU 8i Max 在单个封装里放两颗芯片、把算力与内存翻倍，外部客户已近 100 家（The Decoder）",
+        "美团龙猫以 MIT 协议开源 LongCat-2.5，总参数 1.6 万亿、每个 token 激活约 480 亿、支持一百万上下文，面向长程智能体任务，并对显存与带宽受限的国产算力芯片做了适配（IT之家）"
+      ],
+      "insights": [
+        "前沿能力和廉价执行层被拆开定价：一边是求解物理问题的旗舰模型，一边是每百万 token 10 美分的调用模型，多步 agent 成本结构因此可算（推断）",
+        "算力竞争从云上采购转向直订上游：Anthropic 以 34 亿美元采购发电设备为自有数据中心供电，谷歌一年铺四款 TPU，电力和芯片的交付周期已进模型公司的路线图（推断）",
+        "开源模型比拼重点从参数量转到单位算力交付：1.6 万亿参数只激活 480 亿并适配显存受限的国产芯片，是在用架构换硬件门槛（推断）"
+      ],
+      "actions": [
+        "跑多步 agent 的团队，先统计日志里工具调用、路由、信息抽取各占多少请求，再把这几类重复环节换到小模型，用同一批任务对比总成本与失败率。",
+        "评估算力方案时，把电力与芯片的交付周期写进评估表；完全依赖云也要问清供应商的供电与扩容节奏。"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "千问办公 11 月 9 日发布 2.0 版本，推出支持多人与 Agent 协作的 Team Agent（量子位）",
+        "量子位实测腾讯混元 Hy4，称其跻身最强开源模型，搭配 WorkBuddy 做多模态 Agent 交付（量子位）",
+        "ChatGPT Enterprise 上架 AWS Marketplace，企业可用已有的 AWS 采购与账单关系完成下单（OpenAI）",
+        "AWS 发布七层可插拔的企业 agentic AI 参考架构，跑在 Bedrock AgentCore 上，每层有稳定契约，换掉任一层技术不需要重做整栈（AWS AI Blog）",
+        "OpenAI 推出 Control Room，追踪研究基础设施的模型负载，遇安全问题可快速停机（OpenAI）"
+      ],
+      "insights": [
+        "模型采购正在并入云账单：ChatGPT Enterprise 进 AWS Marketplace 后，企业不必再单独签模型合同，采购阻力下降、用量也更易被财务看到（推断）",
+        "Team Agent 把竞争点从「一个人提效」推到「多人和 agent 同处一个工作单元」，真正的难点是任务归属与权限，而不是生成质量（推断）",
+        "七层架构的价值在可替换：每层契约稳定，意味着换模型或换工具只动一层，这比再做一个更强的 agent 更能降低长期维护成本（推断）"
+      ],
+      "actions": [
+        "准备上 Team Agent 的，先把「谁的任务谁负责」写进权限模型，再开放多人协作，否则出问题无法归因。",
+        "已在 AWS 上采购的，把模型订阅并入 Marketplace 前先核对合同条款、数据存储区域与用量计量方式。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "字节 Seed 发布 Seedream 5.5，面向专业生产流程：支持最多 100 轮编辑而不产生色彩漂移，可直接生成透明背景的原生 RGBA 图，字节称其超过 GPT-Image-2.5 Sunburst（The Decoder）",
+        "迪士尼与 Adobe 达成多年合作，共建「艺术家主导」的自有生成模型接进制作流水线，Adobe 向迪士尼开放最新技术的早期访问（The Verge）",
+        "Instagram 上线 Effect Builder，用一句提示词即可生成 Stories 的自定义滤镜，先向美国 18 岁以上用户开放（The Verge）",
+        "Medium 推出写作应用 TK，把 AI 辅助直接放进写作过程，尽管出版业对 AI 的争议仍在扩大（TechCrunch）",
+        "一篇 arXiv 论文研究真实场景里的 AI 生成文本识别：人们在日常交流中既依赖正式检测工具，也靠非正式判断，两者经常给出矛盾结论（arXiv cs.CL）"
+      ],
+      "insights": [
+        "图像编辑的衡量标准从「一次生成好看」变成「第 100 轮还能不能对得上原图」，专业生产要的是可回退的连续编辑，而不是单张出图（推断）",
+        "平台把生成能力塞进创作入口（滤镜、写作助手），审核与标识责任就落到平台侧，创作者的可见度规则会跟着这些入口一起变（推断）",
+        "品牌方自建艺术家主导的模型，说明商用内容选工具时看的是版权能否追溯，而不是模型在榜单上的名次（推断）"
+      ],
+      "actions": [
+        "用 AI 做商品图或连载图文的，把跨轮一致性写进验收：同一素材改十轮后与原图比对色差。",
+        "用平台自带 AI 生成内容的，保留生成记录与人工修改痕迹，应对 AI 标识要求和平台审核。"
+      ]
+    }
+  ],
+  "github": [
+    {
+      "repo": "confident-ai/deepeval",
+      "url": "https://github.com/confident-ai/deepeval",
+      "stars": "19K",
+      "track": "AI产业技术",
+      "note": "开源的 LLM 评测框架，把回答质量、检索增强效果和安全指标写成可重复运行的测试用例。",
+      "why": "正在给 agent 建回归测试的团队，可以用它把「这次改完有没有变差」变成每次提交都自动跑的一套用例。"
+    },
+    {
+      "repo": "mlflow/mlflow",
+      "url": "https://github.com/mlflow/mlflow",
+      "stars": "29K",
+      "track": "企业AI应用",
+      "note": "面向 agent、LLM 与机器学习模型的开源工程平台，覆盖调试、评测、监控与成本控制，并管理模型和数据的访问权限。",
+      "why": "已经有多套模型在跑的企业，可以先接它的追踪与评测两层，把每次调用的成本与效果落到同一张表里。"
+    },
+    {
+      "repo": "Evil0ctal/Douyin_TikTok_Download_API",
+      "url": "https://github.com/Evil0ctal/Douyin_TikTok_Download_API",
+      "stars": "21K",
+      "track": "内容创作",
+      "note": "自托管的抖音、TikTok、B 站数据采集与无水印视频下载 API，支持通过 MCP 被 AI agent 调用，附带离线语音转文字，可 Docker 一键部署。",
+      "why": "做竞品素材库的内容团队，可以先在自己服务器上跑一份，把采集范围限定在公开作品，再接入选题流程。"
+    }
+  ],
+  "reading": [
+    {
+      "title": "Claude Fable 5.2 and Mythos 5.2 cement Anthropic's AI lead just before its IPO",
+      "url": "https://the-decoder.com/claude-fable-5-2-and-mythos-5-2-cement-anthropics-ai-lead-just-before-its-ipo/",
+      "source": "The Decoder",
+      "reason": "报道介绍两个新模型的分版策略：一个公开发布、一个仅向验证机构开放，并列举求解公开物理问题、网络安全等展示案例，点出发布时点紧邻 IPO",
+      "why": "关注模型能力边界的团队，可以重点看它如何用分版来控制高风险能力的开放范围，这套做法比单纯看跑分更有参考价值。"
+    },
+    {
+      "title": "千问办公2.0发布，首个支持多人与Agent协作的Team Agent来了",
+      "url": "https://www.qbitai.com/2026/11/508694.html",
+      "source": "量子位",
+      "reason": "报道介绍千问办公 11 月 9 日发布的 2.0 版本，核心变化是支持多人与 Agent 在同一个工作单元里协作",
+      "why": "正在选办公 agent 的企业，可拿 Team Agent 的协作模型对照自己的人员权限设计，先想清任务归属再试用。"
+    },
+    {
+      "title": "Bytedance's Seedream 5.5 promises pixel-stable image editing across 100 rounds without color drift",
+      "url": "https://the-decoder.com/bytedances-seedream-5-5-promises-pixel-stable-image-editing-across-100-rounds-without-color-drift/",
+      "source": "The Decoder",
+      "reason": "报道拆解 Seedream 5.5 的三点：最多 100 轮编辑不产生色彩漂移、原生 RGBA 透明背景输出，以及字节给出的与 GPT-Image-2.5 Sunburst 的对比结论",
+      "why": "做电商图或系列视觉的，可以按它给出的轮数上限设计迭代流程，把「改到第几轮开始失真」当作换工具的判断点。"
+    }
+  ],
+  "consensus": {
+    "text": "前沿能力与廉价执行层正被同时商品化，能把两者单位成本算清的一方，才拿得到生产订单。",
+    "quotes": [
+      "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2，称编码、推理、视觉提升，输出快于 5.1（The Verge）",
+      "Meta 发布 Muse Ember，输入定价每百万 token 10 美分，低于 Claude Haiku 5.5 与 GPT-6 Luna（TechCrunch）",
+      "美团龙猫开源 LongCat-2.5，总参数 1.6 万亿、每 token 激活约 480 亿、支持百万上下文（IT之家）"
+    ]
+  },
+  "division": {
+    "text": "分歧在于把算力押在上游自建，还是继续买云：前者锁定成本，后者保留弹性。",
+    "quotes": [
+      "Anthropic 以 34 亿美元采购发电设备，为自有数据中心供电（36氪）",
+      "谷歌一年推出四款 TPU 8 变体，TPU 8i Max 单封装两芯片，外部客户近 100 家（The Decoder）",
+      "ChatGPT Enterprise 上架 AWS Marketplace，企业可用现有 AWS 采购与账单流程下单（OpenAI）"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-11-10T07:10"
+}
