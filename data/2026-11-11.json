@@ -1,0 +1,142 @@
+{
+  "date": "2026-11-11",
+  "format": "summary",
+  "points": [
+    "Anthropic 启动 IPO 路演，定价 70 至 78 美元一股，全稀释估值最高 1.404 万亿美元。",
+    "Claude 扩成工作台，新增表格、白板与插件，Adobe、Atlassian 的应用可直接嵌进对话。",
+    "ChatGPT 上线商家目录，美国合格电商可用 Business Agents 在对话里直接答疑。"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "Anthropic 启动 IPO 路演，定价区间 70 至 78 美元一股，按上限计算全稀释估值 1.404 万亿美元；公司另通过私募向谷歌、英伟达、微软等募资 260 亿美元，七位联合创始人将各卖出相同数量股份，按区间中点套现约 2.5 亿美元（TechCrunch / The Decoder）",
+        "Claude Fable 5.2 在 Remote Labor Index 上以专业水准完成 41.3% 的真实自由职业任务，比第二名 Opus 5.5 与 GPT 6 Astra 高一倍以上；一年前榜首只有 2.5%，产品设计与动画仍是弱项（The Decoder）",
+        "谷歌 Gemini 4 Carbon 全面开放，多个基准排第一，部分项超过 Fable 5.2 且单任务成本不到一半，同时预览 /swarm 多智能体协同（The Verge / The Decoder）",
+        "阿里巴巴 11 月 10 日晚公告，已向港交所交表申请子公司平头哥独立上市，截至 2026 年 4 月真武系列 AI 芯片累计出货 56 万片；同日台积电董事会核准以不超 5 亿美元认购 OpenAI 特别股（36氪）"
+      ],
+      "insights": [
+        "上市前的定价靠可核查的完成率支撑，而不是榜单名次：41.3% 这个数字有任务集、有验收标准，投资者能自己复算（推断）",
+        "芯片子公司分拆上市、代工厂入股模型公司，说明算力供应链正在用股权绑定，而不只是签采购合同（推断）",
+        "模型迭代周期已短于企业采购周期，采购方很难为「最新」付溢价，只能为「够用且可换」付钱（推断）"
+      ],
+      "actions": [
+        "做 agent 选型的，抽 20 条自家真实任务跑一遍，记录完整交付比例，再和价格表放一起比。",
+        "依赖单一模型供应商的，把调用封装成可切换的一层，模型换代时只改配置不改业务代码。"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "Anthropic 把 Claude 扩成完整工作台：新增 Sheets、Whiteboards 与 Interactive Connectors，Adobe、Atlassian 等合作方应用可嵌入 Claude 内部；Claude Meetings 可进会议起草计划、在白板画时间线、调用已接入的工作应用取数（The Decoder / TechCrunch）",
+        "OpenAI 把 ChatGPT 做成商家目录：企业通过 Business Hub 认领资料、上传商品数据、查看用户互动，美国符合条件的电商与服务商可用 Business Agents 在对话内直接回答客户问题（The Verge / The Decoder）",
+        "eBay 疑似封堵第三方 AI 智能体，包括 Meta 的 Muse：有用户连续数周的每日选表清单突然中断（The Verge）",
+        "纽约州 AI 安全法生效，要求 OpenAI、Anthropic 这类大型模型开发商注册、披露安全实践、上报重大事故，违规将被罚款（TechCrunch）",
+        "CodeRabbit 用 Codex 与 OpenAI 模型治理 AI 生成代码，同一工程团队的软件交付量提升 20 倍（OpenAI）",
+        "八国与 OpenAI、Anthropic、微软、Mistral 签署巴黎 AI 安全声明，承诺关闭机制、独立审计与风险披露，但不具法律约束力（The Decoder）"
+      ],
+      "insights": [
+        "办公套件的竞争点从「谁能生成」移到「谁的工作流被嵌进去」：表格、白板、会议记录都在同一个会话里完成，切换成本随使用深度上升（推断）",
+        "eBay 与 Adobe 走了相反方向：一个把外部智能体挡在门外，一个把本地操作接口开放给对手的助手，差别在于平台靠商品流量还是靠软件订阅赚钱（推断）",
+        "合规要求开始落到「能停机、能审计、能上报」三件具体动作上，安全预算的拨付依据从承诺变成可检查的记录（推断）"
+      ],
+      "actions": [
+        "评估办公类 AI 工具的，把「能否接入现有会议、表格、文档」列成第一道筛选，生成质量放第二位。",
+        "有对外服务的业务，先查平台对第三方智能体的政策再投入：电商类要测自己的 agent 是否还能正常抓取与下单。",
+        "让 AI 写代码的团队，照 CodeRabbit 的做法把「AI 生成、机器审查、人工抽检」三段分开留痕，交付量提升才有依据。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "Adobe MAX 大会宣布 Creative Cloud 支持本地 MCP 接入：OpenAI、谷歌、Anthropic 的智能体可直接操作本机的 Photoshop、Illustrator、Premiere，Firefly 助手升级并支持在后台持续处理定期任务（IT之家 / The Verge）",
+        "MiniMax 开源 H3-Image，10 秒生成一张 4096×4096、约 16MP 的图像，支持文生图、参考图与图像编辑，权重已开放（IT之家）",
+        "Spotify 给 AI DJ 增加新声音与不同人格，Premium 用户可关掉歌曲之间的解说（TechCrunch）",
+        "谷歌与 Adobe 打通：可在 Drive 里编辑 PDF，在 Gemini 里直接调用 Adobe 的创作能力（Google Blog）"
+      ],
+      "insights": [
+        "创作软件把入口开放给外部助手，等于承认「操作软件」这件事本身会被智能体接管，护城河退到文件格式与协作关系（推断）",
+        "开源生图模型把 4K 输出的时间压到 10 秒，批量出图的瓶颈从生成速度转到筛选与验收环节（推断）",
+        "音频、图像、视频的生成能力同时下沉到消费级产品，创作者之间的差距更多来自选题与判断，而不是会不会用工具（推断）"
+      ],
+      "actions": [
+        "有固定出图需求的，先用 H3-Image 跑一批同类素材，量出从出图到可用的通过率，再决定是否替换现有工具。",
+        "用第三方智能体改设计稿的，先在副本上试：本地 MCP 能直接操作工程文件，误改的代价比云端高。"
+      ]
+    }
+  ],
+  "github": [
+    {
+      "repo": "raga-ai-hub/RagaAI-Catalyst",
+      "url": "https://github.com/raga-ai-hub/RagaAI-Catalyst",
+      "stars": "16K",
+      "track": "AI产业技术",
+      "note": "面向智能体应用的可观测与评测 SDK，能记录每次调用、工具使用与执行链路，自带面板查看失败与延迟，可私有部署。",
+      "why": "做多步 agent 的团队，先接它把每次工具调用的耗时与失败率记下来，出了问题能定位到具体哪一步。"
+    },
+    {
+      "repo": "meilisearch/meilisearch",
+      "url": "https://github.com/meilisearch/meilisearch",
+      "stars": "60K",
+      "track": "企业AI应用",
+      "note": "开源搜索引擎，提供关键词与向量混合检索的 API，支持中文分词与即时搜索，单机即可部署。",
+      "why": "内部文档库检索答不准的，可以用它先搭一个混合检索基线，再对比现有向量库的命中率。"
+    },
+    {
+      "repo": "modelscope/FunASR",
+      "url": "https://github.com/modelscope/FunASR",
+      "stars": "21K",
+      "track": "内容创作",
+      "note": "开源语音识别工具包，覆盖流式识别、语音端点检测、标点恢复与说话人分离，可训练自己的模型。",
+      "why": "要给视频批量上字幕的，用它的端点检测加标点链路接进现有流水线，先测方言与专有名词的识别率。"
+    }
+  ],
+  "reading": [
+    {
+      "title": "Anthropic sets IPO price range of $70 to $78 per share to reach an implied valuation of $1.404 trillion",
+      "url": "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/",
+      "source": "TechCrunch",
+      "reason": "报道给出定价区间与估值口径：按上限、全稀释计算为 1.404 万亿美元，七位创始人各卖出相同数量股份，套现约 2.5 亿美元，上市后仍保持控制权",
+      "why": "关注模型公司估值的人，可对照它披露的收入与任务完成率数据，判断这一估值靠增长预期还是靠可核查的交付能力。"
+    },
+    {
+      "title": "Anthropic turns Claude into a full workspace with Plugins, spreadsheets, whiteboards, and soon Meeting notes",
+      "url": "https://the-decoder.com/anthropic-turns-claude-into-a-full-workspace-with-plugins-spreadsheets-whiteboards-and-soon-meeting-notes/",
+      "source": "The Decoder",
+      "reason": "报道拆解 Claude 的扩展方式：表格、白板、交互式连接器与插件，让 Adobe、Atlassian 等合作方把应用搬进 Claude，会议记录功能即将上线",
+      "why": "在选办公 AI 的负责人，可看它怎么处理多应用共存与权限，这决定了接入后能不能长期用下去。"
+    },
+    {
+      "title": "Adobe Creative Cloud 向第三方智能体大开城门，未来让 AI 帮你本地修图剪片",
+      "url": "https://www.ithome.com/1/025/177.htm",
+      "source": "IT之家",
+      "reason": "报道介绍 Adobe MAX 上的本地 MCP 接入：第三方智能体可直接访问并修改 Creative Cloud 项目，Firefly 助手升级，支持后台处理定期任务",
+      "why": "有设计或剪辑流程的团队，可先在一个非关键项目上测本地智能体改稿的准确率，再决定是否放开权限。"
+    }
+  ],
+  "consensus": {
+    "text": "模型能力的领先幅度正在收窄，能把模型嵌进用户已有工作流的一方，才拿得到持续的收入。",
+    "quotes": [
+      "Anthropic 启动 IPO 路演，定价 70 至 78 美元一股，全稀释估值最高 1.404 万亿美元（TechCrunch）",
+      "Anthropic 为 Claude 增加 Sheets、Whiteboards 与插件，Adobe、Atlassian 的应用可嵌入其中（The Decoder）",
+      "OpenAI 上线商家目录与 Business Agents，美国合格电商可在 ChatGPT 内直接答疑（The Verge）"
+    ]
+  },
+  "division": {
+    "text": "分歧在于把外部智能体当流量入口还是当风险源：前者主张开放接口，后者主张先划清边界再放行。",
+    "quotes": [
+      "Adobe 在 Creative Cloud 开放本地 MCP，允许第三方智能体直接操作 Photoshop、Premiere（IT之家）",
+      "eBay 疑似封堵第三方 AI 智能体，包括 Meta 的 Muse，用户每日选表清单中断（The Verge）",
+      "八国与 OpenAI、Anthropic、微软、Mistral 签署巴黎声明，承诺关闭机制与独立审计，但不具法律约束力（The Decoder）"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-11-11T07:10"
+}
