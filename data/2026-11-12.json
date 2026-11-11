@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-12",
+  "format": "summary",
+  "points": [
+    "OpenAI 季度营收首次突破 100 亿美元，同比增长约 50%，同期调整后经营亏损扩大到 109 亿美元。",
+    "Anthropic 在提交文件中新增约 100 亿美元微软、谷歌云采购承诺，覆盖至 2033 年；与 Lambda 的 349 亿美元服务器租赁协议存在取消权。",
+    "谷歌发布 Gemini Decisions API，一次可评估最多 1000 个封闭式问题，覆盖文本、图像、音频与视频，官方称响应 150 至 250 毫秒。"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "Google DeepMind 的 AlphaProof Code 用四周完成 Signal 加密核心的形式化验证，同类工作通常以年计；Gemini Carbon 驱动的智能体写了超 600 万行证明代码，仅约 1% 交人工复核（The Decoder）",
+        "Anthropic 称用内部模型 Mythos 把 Claude 移植到 AMD GPU 只花三天，人工介入极少；Claude 目前跑在四类芯片上（The Decoder）",
+        "Moonshot AI 的 Kimi K3.1 Pro 上线 Amazon Bedrock，支持 OpenAI 兼容的 Chat Completions、Responses 与 Converse 接口，并支持显式提示缓存（AWS）",
+        "IBM 发布 Nighthawk r3 量子处理器，520 个可编程量子比特可执行 1 万次量子操作，配 2034 个物理量子比特；公司计划 2027 年连接两颗组成 1040 比特系统（36氪）"
+      ],
+      "insights": [
+        "形式化验证与芯片移植这两个原本靠资深工程师堆时间的环节，开始被智能体批量推进；能否接住产出，取决于验收流程而不取决于专家数量（推断）",
+        "同一套模型能跑在越多芯片家族上，推理议价能力越强；供应商锁定从合同条款变成工程能力（推断）"
+      ],
+      "actions": [
+        "用 AI 做代码迁移或验证的，先划一个模块跑通「机器产出、人工抽检」的验收口径，再扩大范围。",
+        "有推理成本压力的，先在非核心服务上做一次跨云或跨芯片迁移测试，量出真实工时再谈价格。"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "Trovata 在 Amazon Bedrock 与 AgentCore 上做自主资金管理智能体，用基于角色的权限控制，支持银行品牌化部署（AWS）",
+        "TCS 用 Bedrock AgentCore 搭智能体测试编排，把需求转成可执行、受治理的测试，服务银行保险客户，按租户隔离（AWS）",
+        "DXC 在 Bedrock 上建多模型底座，支撑 70 国受监管客户的托管服务，把模型层与编排层分开（AWS）",
+        "阿里云复盘 LiteLLM 半年内两次被投毒，讨论大模型的密钥该托管在哪里（阿里云）",
+        "Ramp AI 指数显示 10 月美国企业 AI 支出仅增 1.65%，1% 的公司贡献了 OpenAI 与 Anthropic 八成收入（The Decoder）"
+      ],
+      "insights": [
+        "采购重心从试点数量转到上线后可控：权限、租户隔离、密钥托管成了必答题（推断）",
+        "支出增速放缓而收入高度集中，说明新增预算主要来自已上线场景扩容，新客户获取变难（推断）"
+      ],
+      "actions": [
+        "接第三方模型的，先把 API 密钥从应用代码挪到独立网关并限权，再谈多模型路由。",
+        "准备上线智能体的，把「谁能触发、能改什么、出错怎么回滚」写成三行检查表，它比选模型更早决定成败。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "DeepL 发布语音翻译模型 Aure，实时复现说话者的语气起伏、情绪与语速，暂不支持中文（IT之家）",
+        "Adobe 在 MAX 公布四项实验项目：照片转可探索的 3D 场景、与 AI 角色对话完成角色设计、照片编辑简化成复制粘贴（IT之家）",
+        "双 11 罗永浩在直播间用 TRAE 演示 AI Coding；同日智谱、MiniMax、千问办公、阿里云、Qoder 在天猫打 5 折（量子位）",
+        "据 Tom's Hardware 报道，一名律师为不把案件材料上传云端，用 8 张二手 V100 搭本地 AI 服务器，约 256GB 显存，代码生成约 215 tokens/s，用于案件摘要与常规文书草稿（知乎）"
+      ],
+      "insights": [
+        "创作工具的竞争落到交付形态与价格：能直接产出可用素材的降价最快，只卖生成能力的最先打价格战（推断）",
+        "数据不能出屋的场景重新回到本地部署，代价是功耗与运维，换来的是可控的隐私边界（推断）"
+      ],
+      "actions": [
+        "有敏感素材的，先算本地部署的电费与维护工时，再和云端合规方案比总成本。",
+        "想试新工具的，趁折扣窗口跑一批真实素材，用通过率决定是否续费，别按折扣幅度决定。"
+      ]
+    }
+  ],
+  "github": [
+    {
+      "repo": "cloudwego/eino",
+      "url": "https://github.com/cloudwego/eino",
+      "stars": "14K",
+      "track": "AI产业技术",
+      "note": "Go 语言的 LLM 应用框架，用图编排把模型、工具与流式输出串起来，组件连错在编译期就报错。",
+      "why": "服务端用 Go 的团队，可以用它把现有微服务直接接上模型调用，不必为此再养一套 Python 服务。"
+    },
+    {
+      "repo": "HKUDS/RAG-Anything",
+      "url": "https://github.com/HKUDS/RAG-Anything",
+      "stars": "24K",
+      "track": "企业AI应用",
+      "note": "一体化多模态 RAG 框架，覆盖文档解析、检索与生成，能处理图片、表格这类非纯文本内容。",
+      "why": "内部资料以 PDF 和扫描件为主的，先用它跑一个部门级知识库，量出问答命中率再扩范围。"
+    },
+    {
+      "repo": "linshenkx/prompt-optimizer",
+      "url": "https://github.com/linshenkx/prompt-optimizer",
+      "stars": "41K",
+      "track": "内容创作",
+      "note": "提示词优化工具，可对比多个模型的输出、管理模板并迭代提示词，支持本地部署。",
+      "why": "团队多人写提示词的，把常用模板收进它统一版本，避免各存一份、效果没法比较。"
+    }
+  ],
+  "reading": [
+    {
+      "title": "Enterprise sales push OpenAI's quarterly revenue to $10 billion, though it still trails Anthropic",
+      "url": "https://the-decoder.com/enterprise-sales-push-openais-quarterly-revenue-to-10-billion-though-it-still-trails-anthropic/",
+      "source": "The Decoder",
+      "reason": "报道拆解 OpenAI 的季度数字：营收 100 亿美元、同比增长约 50%，调整后经营亏损 109 亿美元；企业销售是主要增量，对手 Anthropic 以 170 亿美元营收保持更高效率",
+      "why": "要看懂模型公司的商业化阶段，可对照营收、亏损与客户结构三项，单看营收增速会高估其健康度。"
+    },
+    {
+      "title": "How TCS built an agentic test orchestrator with Amazon Bedrock AgentCore",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-tcs-built-an-agentic-test-orchestrator-with-amazon-bedrock-agentcore/",
+      "source": "AWS",
+      "reason": "报道给出 TCS 的落地结构：专职智能体把需求转成可执行测试，按租户隔离，按负载调度，服务银行保险客户",
+      "why": "正在做测试自动化的团队，可参照它的隔离与治理设计，先解决多客户共用一套智能体的权限问题。"
+    },
+    {
+      "title": "Anthropic says AI is eroding Nvidia's CUDA lead, cutting an AMD chip switch from months to three days",
+      "url": "https://the-decoder.com/anthropic-says-ai-is-eroding-nvidias-cuda-lead-cutting-an-amd-chip-switch-from-months-to-three-days/",
+      "source": "The Decoder",
+      "reason": "报道称 Anthropic 用内部模型完成 Claude 向 AMD GPU 的移植，耗时三天、人工介入极少，Claude 现已跑在四类芯片上",
+      "why": "关注推理成本的人，可以把它当成信号：芯片可替换性已能工程化验证，不再只是谈判筹码。"
+    }
+  ],
+  "consensus": {
+    "text": "企业愿意付钱的是能进生产环境稳定跑起来的方案，模型分数不再是采购理由。",
+    "quotes": [
+      "OpenAI 季度营收首破 100 亿美元，同比增长约 50%，企业销售是主要推力（The Decoder）",
+      "Trovata、TCS、DXC 分别在 Amazon Bedrock 上落地资金管理、测试编排与多模型底座，服务受监管行业客户（AWS）",
+      "Ramp 指数显示 10 月美国企业 AI 支出仅增 1.65%，1% 的公司贡献八成收入（The Decoder）"
+    ]
+  },
+  "division": {
+    "text": "扩张路线分成两派：一派用亏损换规模，一派用单位经济换可持续。",
+    "quotes": [
+      "OpenAI 季度营收 100 亿美元，调整后经营亏损 109 亿美元（The Decoder）",
+      "Anthropic 以 170 亿美元营收实现更高效的运营（The Decoder）",
+      "Anthropic 新增约 100 亿美元微软、谷歌云采购承诺至 2033 年（36氪）"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-11-12T07:10"
+}
