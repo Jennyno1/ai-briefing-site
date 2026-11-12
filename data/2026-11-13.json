@@ -1,0 +1,138 @@
+{
+  "date": "2026-11-13",
+  "format": "summary",
+  "points": [
+    "黄仁勋辞去英伟达总裁、CEO 及董事职务，即刻生效，公司市值当日蒸发 1.4 万亿美元，CFO 克雷斯任临时 CEO。",
+    "谷歌发布 Gemini 4 Hydrogen，主打日常编程与智能体工作流，百万 token 输入定价 1.5 美元。",
+    "美联航以网络安全风险为由，禁止客户用 AI 智能体订票和管理预订。"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "英伟达公告黄仁勋辞任 CEO，董事会任命 CFO 科莱特·克雷斯为临时 CEO，任命前新思科技 CEO 哈维·琼斯为史上首任董事会主席，并启动内外部继任者遴选；当日股价一度跌 10%，市值自 2025 年 7 月以来首次跌破 4 万亿美元（IT之家/36氪）",
+        "谷歌发布 Gemini 4 Hydrogen，官方称面向日常编码与智能体工作流，百万 token 输入 1.5 美元、输出 7.5 美元，覆盖 100 万 token 上下文且不分段计价；Artificial Analysis 智能指数默认档得分 51，高于 Gemini 4 Argon 的 50（IT之家/The Decoder）",
+        "Nebius 三季度营收 9.81 亿美元、同比增长 571%，同时公布 400 亿美元 AI 基础设施扩张计划，资金来自客户预付与贷款（36氪/TechCrunch）",
+        "Google DeepMind 把基因组模型 AlphaGenome 从整块组织预测推进到单细胞类型分辨率（The Decoder）"
+      ],
+      "insights": [
+        "一家公司的人事变动能让整条产业链单日蒸发万亿美元市值，说明算力定价权仍集中在单点，供应链韧性被低估（推断）",
+        "新模型把价格与上下文长度一起下探，中小团队在同一预算内能跑更长的任务，选型会从单 token 价格转向任务总成本（推断）"
+      ],
+      "actions": [
+        "关键算力或模型依赖单一供应商的，趁这次波动盘一遍替代方案清单，写清切换要多久、卡在哪一步。",
+        "用 Gemini 系列跑智能体的，拿一个真实任务对比 Hydrogen 与现有模型的总成本，别只看单价。"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "美联航宣布不允许客户使用 AI 智能体订票与管理预订，理由是网络安全风险（TechCrunch）",
+        "AWS 给出按 IAM principal 追踪并限额 Bedrock 支出的做法，用 CUR 2.0 与 AWS Budgets 原生功能，常见场景不用改应用代码（AWS）",
+        "Natera 在 Amazon Bedrock AgentCore 上搭 SWARM 智能体系统，沉淀实验室运营知识，官方称首次响应速度提升约 130 倍（AWS）",
+        "阿里云发布全栈 AgenticOps，让智能体成为运维与研发的第一用户；同期开源 AgentScope Service 作为智能体控制面（阿里云）",
+        "Anthropic 把 Claude 接进 Google Meet，会中实时生成文档、白板与纪要，Team 与 Enterprise 版先行测试（The Decoder）",
+        "高盛预计 2027 年 AI 投资推动美国企业资本开支增长 8%，AI 相关投资到年底将达年化 9000 亿美元以上（36氪）"
+      ],
+      "insights": [
+        "采购的判断标准从「能不能做」变成「花多少、谁能用、出事谁负责」，预算可核算与租户隔离开始排在模型能力前面（推断）",
+        "智能体一旦能替用户动钱、改数据，接入边界就变成业务决策；航司选择关门，办公套件选择开门，分野在责任归属（推断）"
+      ],
+      "actions": [
+        "给智能体接入付费或写操作之前，先按调用方设死消费上限，再逐级放开权限。",
+        "上线前把智能体的权限范围写成三条：能读什么、能改什么、出事怎么回滚。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "MiniMax 开源一款生图模型，支持原生 4K 输出，官方口径单张成本约两毛钱（量子位）",
+        "ElevenLabs 发布 Scribe v3 与 Scribe v3 Live，称在背景噪声与多人交叉说话下转写更准，实时版借助对话上下文避免语音智能体打断用户（The Decoder）",
+        "Podqi 研究显示，用 ChatGPT、Gemini、Perplexity 查购物信息时会被引向仿冒或高风险网站（The Verge）",
+        "GDC 年度调查显示，40% 的游戏开发者已在工作中使用生成式 AI，高于 2025 年的 36%（The Verge）"
+      ],
+      "insights": [
+        "生图与转写的价格继续下探，瓶颈转到筛选与校验：产出变多不代表可用变多，验一遍的成本反而在上升（推断）",
+        "AI 摘要成为新的推荐入口后，仿冒站点先受益，品牌方要防的不再只是搜索排名（推断）"
+      ],
+      "actions": [
+        "用 AI 转写做长内容的，先拿一段有噪声的真人录音试准确率，再决定要不要替换现有工具。",
+        "做品牌内容的，定期用主流聊天机器人搜自家产品名，看它们把你引到哪个站点。"
+      ]
+    }
+  ],
+  "github": [
+    {
+      "repo": "TransformerOptimus/SuperAGI",
+      "url": "https://github.com/TransformerOptimus/SuperAGI",
+      "stars": "18K",
+      "track": "AI产业技术",
+      "note": "开发者优先的开源自主智能体框架，提供任务编排、工具接入与运行管理，可自行部署。",
+      "why": "想验证智能体在内部流程里是否顶用的，先用它搭一个只读任务跑通，再谈接入生产系统。"
+    },
+    {
+      "repo": "Portkey-AI/gateway",
+      "url": "https://github.com/Portkey-AI/gateway",
+      "stars": "13K",
+      "track": "企业AI应用",
+      "note": "带护栏的 LLM 网关，一个接口路由到 1600 多个模型，内置 50 多项 AI 护栏。",
+      "why": "同时用多家模型的团队，可以用它把密钥、限流与成本统计收在一处，换模型时不用动应用代码。"
+    },
+    {
+      "repo": "chubbyguan/chubbyskills",
+      "url": "https://github.com/chubbyguan/chubbyskills",
+      "stars": "1K",
+      "track": "内容创作",
+      "note": "把抖音、B站、小红书、公众号、X 与播客内容采集进个人知识库的 14 个 AI Skill，含图文存图、视频转文字稿与订阅简报。",
+      "why": "做内容选题的，可以借它的采集链路把多平台素材汇到一处，先解决素材散落，再谈分析。"
+    }
+  ],
+  "reading": [
+    {
+      "title": "谷歌发布 Gemini 4 Hydrogen 模型：主打日常编程与智能体工作流，百万 Token 输入 1.5 美元",
+      "url": "https://www.ithome.com/1/026/446.htm",
+      "source": "IT之家",
+      "reason": "报道给出定价与跑分：输入每百万 token 1.5 美元、输出 7.5 美元，覆盖 100 万 token 上下文且不分段计价；默认高思考档在 Artificial Analysis 智能指数得 51 分，高于 Gemini 4 Argon 的 50",
+      "why": "做模型选型的，把单价、上下文长度与任务总成本三项分开比，前两项便宜不等于第三项便宜。"
+    },
+    {
+      "title": "Tokenomics at scale: Track and cap Amazon Bedrock spend per IAM principal with CUR 2.0 and AWS Budgets",
+      "url": "https://aws.amazon.com/blogs/machine-learning/tokenomics-at-scale-track-and-cap-amazon-bedrock-spend-per-iam-principal-with-cur-2-0-and-aws-budgets/",
+      "source": "AWS",
+      "reason": "讲清一套只用 AWS 原生功能的做法：用 IAM principal 标签归集花费，用 CUR 2.0 或 Cost Explorer 出报表，再用 Budgets 触发 Deny 策略停掉超支调用",
+      "why": "多团队共用一套模型额度的，可以照这个顺序先打通归集、再加限额，避免月底才发现谁花超了。"
+    },
+    {
+      "title": "英伟达首席执行官黄仁勋辞职",
+      "url": "https://www.36kr.com/newsflashes/4066827553543043",
+      "source": "36氪",
+      "reason": "公告内容：黄仁勋辞去总裁、CEO 与董事职务即刻生效，CFO 克雷斯任临时 CEO 并继续兼任原职，前新思科技 CEO 哈维·琼斯出任首任董事会主席，继任者面向内外遴选",
+      "why": "关注算力供应链的，接下来要看继任者确定前，数据中心客户与循环融资安排会不会重谈。"
+    }
+  ],
+  "consensus": {
+    "text": "智能体能否进生产，取决于花销能否按调用方核算、权限能否按租户隔离，模型能力已不再是卡点。",
+    "quotes": [
+      "AWS 发布按 IAM principal 用 CUR 2.0 与 AWS Budgets 追踪并限额 Bedrock 支出的方案，常见场景无需改应用代码（AWS）",
+      "Natera 在 Amazon Bedrock AgentCore 上搭 SWARM，沉淀实验室运营知识，官方称首次响应速度提升约 130 倍（AWS）",
+      "阿里云发布全栈 AgenticOps，让智能体成为运维与研发的第一用户，并开源 AgentScope Service 作为智能体控制面（阿里云）"
+    ]
+  },
+  "division": {
+    "text": "接入边界分成两派：一派把智能体挡在动钱与改数据的环节之外，一派把它放进日常工作流的核心入口。",
+    "quotes": [
+      "美国联合航空（United Airlines）以网络安全风险为由，禁止客户用 AI 智能体订票与管理预订（TechCrunch）",
+      "Claude Meetings 进入 Google Meet，会中实时生成文档与纪要，Team 与 Enterprise 版先行测试（The Decoder）",
+      "彭博社报道字节筹备类 Meta Muse 的个人智能体，让豆包从聊天框走向主动规划与执行任务（36氪）"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-11-13T07:11"
+}
