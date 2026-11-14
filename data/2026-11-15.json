@@ -1,0 +1,131 @@
+{
+  "date": "2026-11-15",
+  "format": "summary",
+  "points": [
+    "DeepSeek 开放全家桶 API，官方 App 功能可自由组合调用。",
+    "MathArena 数学基准易主：Gemini 4 Carbon 与 Anthropic Fable 5.2 超过 GPT-6.1 Sol，成本更高。",
+    "OpenAI 撤销独立机器人团队，称通用模型可直接控制机器人，研究人员分流。"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "DeepSeek 开放「全家桶」API，官方 App 的功能可自由组合调用（量子位）",
+        "MathArena 数学基准榜首更换：Gemini 4 Carbon 与 Anthropic 的 Fable 5.2 超过长期居首的 GPT-6.1 Sol；测试中 Gemini 4 Carbon 的成本约为后者的 15 倍，且多次忽略时限（The Decoder）",
+        "OpenAI 第二次撤销独立机器人团队，官方说法是 GPT-6 Astra 这类通用模型能直接控制机器人，原研究人员分流到其他团队（The Decoder）"
+      ],
+      "insights": [
+        "榜单第一与能用的第一已经分开：同分下 15 倍的单价差，决定谁能留在生产流程里（推断）",
+        "厂商撤掉专用机器人团队，等于赌「一个模型通吃多类硬件」，专用机器人技术栈的生存空间被压缩（推断）"
+      ],
+      "actions": [
+        "选模型别只看排名：先在自己三到五个真实任务上跑头部两三个模型，按「每解决一个任务的总花费」比价。"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "Anthropic 发布 Claude for Manufacturing 插件，接入 Autodesk Fusion、Oracle NetSuite 与 Infor，17 项技能可起草报价、比对供应商、延迟时补下备用订单，执行前需人工确认（The Decoder）",
+        "AWS 给出在 Bedrock 上按「每解决一个任务的成本」做模型路由的做法：用 AWS CDK 部署 LiteLLM 加 NVIDIA NeMo Switchyard 插件，对比路由组与单模型组的成本（AWS AI Blog）",
+        "微软委托 IDC 调研 28 个行业 5200 余名 IT 与业务负责人：AI 出成果很普遍，但规模化价值并不普遍（Microsoft AI）",
+        "阿里云指出推理已占 AI 云账单的主要部分，并给出选型口径：能等的任务走批处理，价格约为实时推理的一半（阿里云）"
+      ],
+      "insights": [
+        "厂商的计价口径一起从「每 token 单价」转向「每个任务成本」，采购合同里的计量单位也要跟着换（推断）",
+        "插件直接连 ERP、报价单与供应商比价，AI 开始被要求承担可追责的业务动作，而不只是生成文本（推断）"
+      ],
+      "actions": [
+        "下一轮 AI 预算谈判把单位从 token 改成「每个任务」，把缓存命中、失败重试、人工复核都算进去再签。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "量子位报道一位中专学历的创作者用 AI 做的《哈利·波特》相关视频播放量达 3000 万，欧美明星与好莱坞制片人点赞（量子位）",
+        "AI 短剧《持械入宋》制片人李朝华称团队算力投入超百万元、从不投流，每部作品都盈利，但强调只是个案（知乎）",
+        "AI 女频短剧《NOVA新星》走红，剧中 AI 角色自带原创歌曲与完整唱跳舞台（虎嗅）"
+      ],
+      "insights": [
+        "三个案例都把投入压在生产环节而不是投放上；AI 把边际成本压低后，分发与选题反而成了分水岭（推断）",
+        "明星为 AI 视频点赞、AI 剧集成体系盈利，说明观众对「谁做的」越来越不敏感，对「好不好看」更敏感（推断）"
+      ],
+      "actions": [
+        "想试 AI 视频的，先做一条三分钟样片投到自有账号，看前五秒完播率，再决定要不要把预算押到产能上。"
+      ]
+    }
+  ],
+  "github": [
+    {
+      "repo": "neuml/txtai",
+      "url": "https://github.com/neuml/txtai",
+      "stars": "13K",
+      "track": "AI产业技术",
+      "note": "把语义检索、LLM 编排与语言模型工作流打包在一起的 Python 框架。",
+      "why": "想给内部文档做问答又不想先搭一套向量库的团队，可以用它跑通几百篇文档的检索小样，看命中质量再决定是否引入更重的组件。"
+    },
+    {
+      "repo": "pathwaycom/pathway",
+      "url": "https://github.com/pathwaycom/pathway",
+      "stars": "62K",
+      "track": "企业AI应用",
+      "note": "用一套 Python 代码同时写流式 ETL、实时分析与 RAG 管线的框架，面向数据持续流入的场景。",
+      "why": "每天有新数据要进检索库的团队，先用它接一个数据源验证增量更新链路，再谈要不要替换现有 ETL。"
+    },
+    {
+      "repo": "NVIDIA-NeMo/Speech",
+      "url": "https://github.com/NVIDIA-NeMo/Speech",
+      "stars": "19K",
+      "track": "内容创作",
+      "note": "英伟达开源的语音 AI 框架，覆盖语音识别与语音合成两类任务。",
+      "why": "要把长音频转成可检索文字稿的，先用一段带口音或噪声的真实录音量准确率与速度，再决定是否换掉现有转写工具。"
+    }
+  ],
+  "reading": [
+    {
+      "title": "Gemini 4 Carbon takes the MathArena crown but costs 15 times more than GPT-6.1 Sol",
+      "url": "https://the-decoder.com/gemini-4-carbon-takes-the-matharena-crown-but-costs-15-times-more-than-gpt-6-1-sol/",
+      "source": "The Decoder",
+      "reason": "报道指出 MathArena 数学基准的头名首次不再是 OpenAI 模型，Google 的 Gemini 4 Carbon 与 Anthropic 的 Fable 5.2 取而代之，但两者成本显著更高；测试中 Gemini 4 Carbon 忽略时限、几乎不放弃任务",
+      "why": "用数学或推理模型做产品的，可以把这份榜单当成本对照表：先记住「贵 15 倍」，再判断多出来的正确率值不值这个价。"
+    },
+    {
+      "title": "Route coding agent requests to the right model on Amazon Bedrock with NVIDIA NeMo Switchyard",
+      "url": "https://aws.amazon.com/blogs/machine-learning/route-coding-agent-requests-to-the-right-model-on-amazon-bedrock-with-nvidia-nemo-switchyard/",
+      "source": "AWS",
+      "reason": "给出可复现的步骤：用 AWS CDK 部署 LiteLLM 与 NVIDIA NeMo Switchyard 路由插件，在 Bedrock 上按任务分发编码智能体请求，并测量路由组与单模型组的「每解决一个任务成本」",
+      "why": "手上不止一个模型的团队，可以先量出自己任务集在单模型与路由组下的成本差，再决定值不值得加这一层。"
+    },
+    {
+      "title": "《持械入宋》制片人称算力投入超百万且没投流，团队每部短剧都盈利",
+      "url": "https://www.zhihu.com/question/2104167693242691717",
+      "source": "知乎",
+      "reason": "采访中李朝华说，团队的 AI 短剧算力投入超百万元、从没投过流，分账先上线后结算，每部作品都盈利；同时强调是个例，不能当参考",
+      "why": "想做 AI 短剧的，先把「算力预算—分账回收」这条账算一遍，再看产能该押多大，别按爆款倒推投入。"
+    }
+  ],
+  "consensus": {
+    "text": "AI 能否规模化，取决于能否按每个任务算清成本与收益；模型在榜单上排第几并不回答这个问题。",
+    "quotes": [
+      "AWS 发布在 Bedrock 上按「每解决一个任务的成本」做模型路由的做法，用 LiteLLM 加 NVIDIA NeMo Switchyard 插件对比路由组与单模型组（AWS AI Blog）",
+      "阿里云称推理已成 AI 云账单的主要部分，能等的任务走批处理，价格约为实时推理的一半（阿里云）",
+      "微软委托 IDC 调研 28 个行业 5200 余名负责人，结论是 AI 出成果普遍、规模化价值不普遍（Microsoft AI）"
+    ]
+  },
+  "division": {
+    "text": "专用与通用之争的实质是责任边界：把动作锁进可审计流程的做法更慢但可追责，让通用模型直接控硬件的做法更快，风险却后移给使用者。",
+    "quotes": [
+      "Anthropic 的 Claude for Manufacturing 插件接入 Autodesk Fusion、Oracle NetSuite 与 Infor，17 项技能需人工确认后执行（The Decoder）",
+      "OpenAI 撤销独立机器人团队，称通用模型可直接控制机器人，原研究人员分流到其他团队（The Decoder）",
+      "Runway 以 Apache 2.0 开源 Praxis-1，把视频训练学到的知识用于机器人控制，在英伟达 RoboLab-120 基准的 World Action Model 类别居首（The Decoder）"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-11-15T07:10"
+}
