@@ -1,0 +1,130 @@
+{
+  "date": "2026-11-16",
+  "format": "summary",
+  "points": [
+    "黄仁勋 11 月 12 日辞去英伟达 CEO，Colette Kress 出任临时 CEO，市值蒸发超 3 万亿元，美国国会已就芯片出口启动调查。",
+    "OpenAI 推出 ChatGPT Wallet，ChatGPT Work、Codex 与 dots 里的 agent 可在用户批准后下单付款，先向美国 Pro 用户限量开放。",
+    "美团开源 1.6 万亿参数 agent 模型 LongCat-2.5，训练全程未用英伟达 GPU，Terminal Bench 得 88.4 分。"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "黄仁勋 11 月 12 日辞去英伟达 CEO，33 年来首次换帅，Colette Kress 出任临时 CEO；量子位称市值蒸发超 3 万亿元，员工与马斯克联署请愿要求其回归，美国国会已就芯片出口启动调查（量子位 / The Verge）",
+        "美团开源 LongCat-2.5，1.6 万亿参数、面向 agent 任务，训练全程未用英伟达 GPU，Terminal Bench 得分 88.4，仅落后 Claude Opus 5；官方样例部署跑在 194 张昇腾芯片上（The Decoder）",
+        "华为云上线开源盘古 openPangu-2.1-Pro，围绕 Agent 开发、鸿蒙 App 开发与昇腾算子生成三项做能力升级（IT之家）"
+      ],
+      "insights": [
+        "算力的稀缺性正从「谁买得到 GPU」转向「谁能在非英伟达硬件上把万亿参数模型训到可用」，这一层的门槛转移比芯片禁运本身更值得盯（推断）",
+        "顶级 agent 模型首次有了非英伟达的完整训练与部署样本，采购侧长期被单一供应商锁定的风险，第一次出现了可验证的替代路径（推断）"
+      ],
+      "actions": [
+        "手上有多年算力合同的团队，把下一轮续约改成分批短约，并先在国产芯片上跑一遍自己的评测集，拿到同任务的通过率与单位成本，再谈长约的折扣与锁定期。"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "OpenAI 推出 ChatGPT Wallet，ChatGPT Work、Codex 与 dots 中的 agent 可在用户批准下完成购买，沿用既有卡片保护，先向美国 Pro 用户限量开放（OpenAI 官方博客）",
+        "LangChain 估值达 30 亿美元，其 agent 管理工具 LangSmith 称已有 7000 家客户（TechCrunch）",
+        "Google Cloud 发布面向医疗行业的 Gemini，官方称用于统一临床数据、自动化行政流程以减少文书负担（Google 官方博客）"
+      ],
+      "insights": [
+        "付款权限交给 agent 之后，企业的权限体系要回答的不再是「谁能登录」，而是「哪个 agent 能花多少钱、在什么条件下花、出问题谁来撤」（推断）",
+        "能长时间自行运行的 agent 会读内部文件、发外部信息、改生产环境，授权与回滚机制会比模型能力更早成为上线的卡点（推断）"
+      ],
+      "actions": [
+        "上线代付款类 agent 前先定三件事：单笔与每日额度、必须人工确认的动作清单、出错后的撤销路径；三项写进流程并演练一次，再开权限。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "Anthropic 的 Claude Fable 5.2 不按像素生成图像，而是写 Python 代码在虚拟画布上落下数十万笔触，带笔刷纹理与颜料层次（The Decoder）",
+        "ElevenLabs 推出面向团队的会议记录与听写应用 ElevenAI，把两件事合进一个产品（TechCrunch）",
+        "AI Engineer 大会讲者联合发布「No AI Slop Manifesto」，讨论如何对抗批量生成的低质内容（Latent Space）"
+      ],
+      "insights": [
+        "生成过程被写成可读代码后，创作结果就能逐步调试、复现与批量改写，创作者能积累的是模板而不是一次性成品（推断）",
+        "读者对批量 AI 内容的容忍度在下降，平台侧对低质生成的识别与限流，会比创作者自己的内容策略更早改变分发结果（推断）"
+      ],
+      "actions": [
+        "做视觉内容的，挑一个自己常做的题材，用「可复现代码」的方式产出一版，把参数与提示词存成模板，后续改版只调代码不重做。"
+      ]
+    }
+  ],
+  "github": [
+    {
+      "repo": "NVIDIA/auto-ontology",
+      "url": "https://github.com/NVIDIA/auto-ontology",
+      "stars": "13K",
+      "track": "AI产业技术",
+      "note": "官方开源的 Python 框架，在数据之上构建语义图谱推理层，用于确定性查询生成、上下文检索与更可解释的 agent 工作流。",
+      "why": "内部数据关系复杂、又说不清 agent 为什么这么答的团队，可以拿一个业务域建图谱小样，看检索命中率与解释性是否比纯向量检索更稳。"
+    },
+    {
+      "repo": "nocobase/nocobase",
+      "url": "https://github.com/nocobase/nocobase",
+      "stars": "25K",
+      "track": "企业AI应用",
+      "note": "开源业务系统平台：agent 负责写代码与执行，平台提供数据模型、权限与治理底座，人做决策。",
+      "why": "想试点「agent 改业务系统」又不愿把权限全放开的团队，先用它搭一个审批或台账类小应用，验证权限边界再扩展。"
+    },
+    {
+      "repo": "jub0t/Concat",
+      "url": "https://github.com/jub0t/Concat",
+      "stars": "18K",
+      "track": "内容创作",
+      "note": "本地优先的跨平台开源视频编辑器（Beta），可通过 JSON-RPC API 与 MCP 协议脚本化调用。",
+      "why": "需要批量出片的创作者，先用 API 把「切片—加字幕—导出」三步脚本化跑十条，量出单条耗时再决定是否替换现用剪辑工具。"
+    }
+  ],
+  "reading": [
+    {
+      "title": "ChatGPT’s new Wallet lets AI agents shop and check out for you",
+      "url": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
+      "source": "TechCrunch",
+      "reason": "报道说明 ChatGPT Wallet 让 agent 代替用户下单与结账，首批面向美国 Pro 订阅用户限量开放，付款沿用既有银行卡保护机制，每笔需要用户确认",
+      "why": "想给客服或采购 agent 开支付能力的，先把这篇里的确认环节抄进流程：哪些动作必须人点一次、额度上限怎么设。"
+    },
+    {
+      "title": "Meituan releases a 1.6-trillion-parameter agent model that never touched an Nvidia GPU",
+      "url": "https://the-decoder.com/meituan-releases-a-1-6-trillion-parameter-agent-model-that-never-touched-an-nvidia-gpu/",
+      "source": "The Decoder",
+      "reason": "报道称美团公开 LongCat-2.5 权重，1.6 万亿参数、面向 agent 场景，全程用国产芯片训练，Terminal Bench 得 88.4 分，略低于 Claude Opus 5；官方样例部署使用 194 张昇腾芯片",
+      "why": "做模型选型的，把这条当作第二个基准：除了跑分，问清训练与推理分别用什么芯片、迁移要多少工程量，再决定是否押单一供应链。"
+    },
+    {
+      "title": "Anthropic’s Claude Fable 5.2 doesn’t generate images, it paints them",
+      "url": "https://the-decoder.com/anthropics-claude-fable-5-2-doesnt-generate-images-it-paints-them/",
+      "source": "The Decoder",
+      "reason": "报道介绍 Fable 5.2 的图像能力：模型不直接算像素，而是写 Python 代码在虚拟画布上模拟数十万次笔触，带笔刷纹理与上色层次，过程可读可复现",
+      "why": "需要统一视觉风格的团队，可以试「用代码描述画法」这条路：把笔触与配色写成可调参数，风格复用比重新提示更可控。"
+    }
+  ],
+  "consensus": {
+    "text": "Agent 的验收标准已经从答案好不好，挪到动作可不可控；能给钱、能改系统，就必须同时给出授权边界与撤销路径，否则能力再强也进不了生产流程。",
+    "quotes": [
+      "OpenAI 推出 ChatGPT Wallet，ChatGPT Work、Codex 与 dots 中的 agent 可在用户批准下完成购买，沿用既有卡片保护，先向美国 Pro 用户限量开放（OpenAI 官方博客）",
+      "LangChain 估值达 30 亿美元，其 agent 管理工具 LangSmith 称已有 7000 家客户（TechCrunch）",
+      "虎嗅文章指出，当 agent 能写代码、发邮件、操作浏览器、调用支付接口、再委派子 agent 时，安全问题变成「它一旦被带偏能做什么」（虎嗅）"
+    ]
+  },
+  "division": {
+    "text": "算力自主出现两种判断：一种认为自研芯片加开源权重已足以撑起顶级模型、封锁的效果被高估，另一种认为真正的差距在工具链与生态成熟度、短期还会拉大。",
+    "quotes": [
+      "美团开源 LongCat-2.5，1.6 万亿参数，训练全程未使用英伟达 GPU，官方样例部署跑在 194 张昇腾芯片上，Terminal Bench 得 88.4 分（The Decoder）",
+      "华为云上线开源盘古 openPangu-2.1-Pro，围绕 Agent 开发、鸿蒙 App 开发与昇腾算子生成做优化（IT之家）",
+      "黄仁勋辞去英伟达 CEO，Colette Kress 出任临时 CEO；亚洲多国政府随即确认芯片供应承诺或跟进相关调查（TechCrunch）"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-11-16T07:10"
+}
