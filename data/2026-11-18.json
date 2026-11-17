@@ -1,0 +1,131 @@
+{
+  "date": "2026-11-18",
+  "format": "summary",
+  "points": [
+    "OpenAI 发布 GPT-6.2 Astra 与 Sol，官方称专业输出、编码与电脑操作更强且成本更低，API 价格下调。",
+    "英伟达 2027 财年前三季度归母净利润 1832.97 亿美元、同比增 137.72%，董事会新设国家安全与出口管制监督委员会。",
+    "快手可灵 Kling Image 4.0 上线，首次支持原生 8K，单图内可生成 2000 字。"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "OpenAI 发布 GPT-6.2 Astra 与 Sol，官方说明称两者在专业输出、编码、电脑操作上更强且成本更低，覆盖 ChatGPT Work、Codex 与 API；The Decoder 引述 Artificial Analysis 智能指数，Astra 排名第二，仅次于 Claude Fable 5.2（OpenAI 官方博客 / The Decoder）",
+        "英伟达 2027 财年前三季度营收 2936.81 亿美元、同比增 98.69%，归母净利润 1832.97 亿美元、同比增 137.72%，毛利率 74.9%；董事会新设国家安全与出口管制监督委员会，至少每季度开一次会（IT之家）",
+        "李飞飞率队加入 AMD 的并购完成，交易以 82 亿美元股票支付、46 天完成交割，苏姿丰公开欢迎（量子位）"
+      ],
+      "insights": [
+        "GPT-6.2 把「更强」和「更便宜」同时写进发布说明，卖点重心已经从跑分名次挪到单位任务花多少钱（推断）",
+        "英伟达把出口管制送进董事会常设委员会，合规从法务事后审变成发货前的硬约束，产品路线要先过这一关（推断）"
+      ],
+      "actions": [
+        "做模型选型的，把手上最贵的批量任务（长文档抽取、代码审查）在 Astra 与 Sol 上各跑一遍，用单任务成本与返工率定主备，别只看榜单第二名这个位置。"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "TCL 董事长李东生称，据测算近三年 TCL 相关 AI 应用累计创造约 25 亿元综合效益；2026 年前三季度 TCL 海外营收约 1400 亿元，占整体营收超过 50%（36氪快讯）",
+        "OpenAI 把 computer-use agent 推进美国医疗行政：GPT-6 Astra 与 GPT-6 Luna 像人一样操作诊所现有软件和保险门户，Luna 处理一份事前授权约 8.5 美分（The Decoder / OpenAI 官方博客）",
+        "LoanPro 与 AWS 合作伙伴 AllCloud 在 Amazon Bedrock AgentCore 上搭多 agent 贷款服务助手，为客服提供即时借款人上下文与下一步动作建议，缩短客户通话时长（AWS 官方博客）",
+        "微软委托 IDC 调研 28 个行业 5200 多名 IT 与业务高管，结论是 AI 成果普及率高、规模化价值少，差距出在流程与控制上（Microsoft AI 博客）"
+      ],
+      "insights": [
+        "25 亿元是「综合效益」口径，降本与增收混在一处，拿它立项要先按业务线拆开重算（推断）",
+        "医疗与金融的 agent 已经从「回答问题」走到「代填、代提交」，落地门槛变成对旧系统的写权限和审计留痕（推断）"
+      ],
+      "actions": [
+        "挑一条高频低风险的表单流程（报销、资质续期），先给测试环境写权限跑两周，用错误率和人工复核工时决定是否接生产。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "快手可灵 Kling Image 4.0 上线，采用理解生成统一架构，首次支持原生 8K，单图内可生成 2000 字，同时向企业客户与开发者开放 API（IT之家）",
+        "Google 把 Spark agent 改名 Tasks 并免费开放，可代用户打电话、登录网站、下单购买（The Verge / TechCrunch）",
+        "大疆 Osmo Pocket 4/4P/Nano 等多款产品涨价，最高涨 560 元（IT之家）"
+      ],
+      "insights": [
+        "8K 加 2000 字是冲「一张图当完整海报」去的，把排版与长文案一次做完，省掉设计与文案两次返工（推断）",
+        "拍摄硬件涨价与生成画质提升同时发生，实拍与生成的分工会更按「必须真实」这条线划（推断）"
+      ],
+      "actions": [
+        "拿一张真实活动海报，用 Kling 4.0 出一版 8K 长文案图，放大看小字和电话号码是否可读，再决定能不能替掉现有排版流程。"
+      ]
+    }
+  ],
+  "github": [
+    {
+      "repo": "VoltAgent/voltagent",
+      "url": "https://github.com/VoltAgent/voltagent",
+      "stars": "11K",
+      "track": "AI产业技术",
+      "note": "用 TypeScript 写的开源 agent 工程平台，把 agent 定义、工具调用、可观测和工作流放在一套框架里。",
+      "why": "团队要自建 agent 服务又不想从零搭骨架的，先用它跑通一个内部工具调用场景，看抽象够不够用再决定是否长期用。"
+    },
+    {
+      "repo": "jaredrhod/ai-memory-vault",
+      "url": "https://github.com/jaredrhod/ai-memory-vault",
+      "stars": "740",
+      "track": "企业AI应用",
+      "note": "把 Obsidian 知识库改造成 AI 可长期读取的记忆系统，附模板，让模型跨会话记住项目背景与决策。",
+      "why": "内部知识散在文档里的，挑一个业务域先灌进去，测试同一问题的回答口径是否稳定，再考虑推广。"
+    },
+    {
+      "repo": "JimLiu/baocut",
+      "url": "https://github.com/JimLiu/baocut",
+      "stars": "2K",
+      "track": "内容创作",
+      "note": "带可编辑时间线的 AI 视频 agent，能转写、加字幕、翻译、配音、剪辑并做动画。",
+      "why": "做口播或教程视频的，用一段十分钟素材试全流程，重点看时间线可否手动微调，这决定它能不能进正式产线。"
+    }
+  ],
+  "reading": [
+    {
+      "title": "AI agents are starting to fill out medical forms and file insurance requests in place of human staff",
+      "url": "https://the-decoder.com/ai-agents-are-starting-to-fill-out-medical-forms-and-file-insurance-requests-in-place-of-human-staff/",
+      "source": "The Decoder",
+      "reason": "报道称 OpenAI 用 computer-use agent 接管美国医疗的行政事务，模型像人一样操作诊所软件与保险门户，其中 Luna 处理一份事前授权约 8.5 美分",
+      "why": "想评估 agent 能不能接管后台流程的，照这篇拆三件事：要登录哪些系统、每步谁审批、出错怎么回滚。"
+    },
+    {
+      "title": "快手可灵 Kling Image 4.0 上线：首次支持原生 8K，单图内可生成 2000 字",
+      "url": "https://www.ithome.com/1/028/563.htm",
+      "source": "IT之家",
+      "reason": "报道介绍 Kling Image 4.0 的三大升级：理解生成统一架构、原生 8K 真实感、单图长文案能力，同时开放企业与开发者 API",
+      "why": "做海报与电商图的，先用自家一张真实需求图跑对比，量小字可读性与排版返工次数，再谈替换。"
+    },
+    {
+      "title": "Scaling AI value without losing control: Lessons from Frontier Firms",
+      "url": "https://blogs.microsoft.com/blog/2026/11/12/scaling-ai-value-without-losing-control-lessons-from-frontier-firms/",
+      "source": "Microsoft AI 博客",
+      "reason": "微软委托 IDC 调研 28 个行业 5200 多名高管，指出 AI 试点成果普遍，规模化价值稀少，差距在流程改造与治理机制",
+      "why": "正在推内部 AI 的，拿这份当自检清单：哪些流程已改、谁负责、指标怎么算，三项缺一项就还停在试点。"
+    }
+  ],
+  "consensus": {
+    "text": "供给节奏正在决定谁能被长期使用：模型再强，拿不到稳定算力与可控单价的服务也会在使用中被换掉。",
+    "quotes": [
+      "OpenAI 发布 GPT-6.2 Astra 与 Sol，API 价格下调，Astra 在 Artificial Analysis 智能指数排名第二，仅次于 Claude Fable 5.2（OpenAI 官方博客 / The Decoder）",
+      "DeepSeek 11 月 15 日起在 App 与网页端陆续出现限额提示，部分用户收到「算力不足」（36氪热榜）",
+      "英伟达 2027 财年前三季度营收 2936.81 亿美元、同比增 98.69%，归母净利润 1832.97 亿美元、同比增 137.72%（IT之家）"
+    ]
+  },
+  "division": {
+    "text": "钱该先投在免费入口换使用规模，还是直接进具体产业换成本下降——两条路的回收周期和验证方式不在一个量级。",
+    "quotes": [
+      "Google 把 Spark agent 改名 Tasks 并在六个国家免费开放，可代用户打电话、登录网站、下单购买（The Verge / Google 官方博客）",
+      "Isomorphic Labs 六个月内完成第二轮融资 50 亿美元，尚无获批药物，资金用于把管线推向临床试验（TechCrunch / The Decoder）",
+      "通用汽车计划到 2028 年把北美工厂机器人及其他自动化应用规模提高 20%，并在印第安纳州自研厂内运输机器人（IT之家）"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-11-18T07:10"
+}
