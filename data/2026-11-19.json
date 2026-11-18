@@ -1,0 +1,139 @@
+{
+  "date": "2026-11-19",
+  "format": "summary",
+  "points": [
+    "Anthropic IPO 认购收官，承销银行称接近七倍超额认购，发行价区间 70 至 78 美元，按上限并计入 260 亿美元私募配售将筹资 904 亿美元、估值约 1.4 万亿美元。",
+    "谷歌发布 Gemini 4 Neon，一个月内第四款新模型，100 万 token 上下文，输入 3 美元、输出 15 美元每百万 token。",
+    "微软 MAI 在 Ignite 发布七款自研模型，称 MAI Code 2 达到 GPT-6.1 Sol 的 98% 性能、成本只用 40%。"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "黄仁勋离任后 NVIDIA 停止向中国销售 AI 芯片，The Verge 称其「不再向中国卖任何 AI 芯片」；黄仁勋公开表示愿重掌公司，董事会回应不予考虑（The Verge / TechCrunch / 量子位）",
+        "谷歌发布 Gemini 4 Neon，面向软件开发、知识工作与科学，支持文本、图像、视频、音频与 PDF，上下文 100 万 token，输入 3 美元、输出 15 美元每百万 token（The Decoder）",
+        "OpenAI 首次向四家独立审计机构开放未发布模型、源代码与训练数据，包括 Apollo Research 与 METR，且保留删改或延迟报告的权利（The Decoder）",
+        "阿里云发布 Qwen4-Max，定位为企业侧「能规划、能构建、能交付成品」的 AI 同事，同步上架阿里云企业版（阿里云官方博客 / Product Hunt）"
+      ],
+      "insights": [
+        "审计机构能进到未发布模型，但报告可被删改或延迟，外部监督的独立性最终取决于事后能否公开差异（推断）",
+        "一个月连发四款 Gemini，命名照元素周期表往下推，模型迭代已压到以周计，企业选型文档很难跟上这个节奏（推断）",
+        "Qwen4-Max 的卖点从「能回答」挪到「能交付」，模型厂商开始把交付环节算进产品定义，而不只是接口能力（推断）"
+      ],
+      "actions": [
+        "有安全或合规评审要求的团队，把「外部审计是否可查、报告能否公开」写进供应商评估表，比只看基准分更能预判监管风险。",
+        "模型选型表按月复核已经不够，改成每次新版本发布就跑一轮固定评测集，保留历史横向对比，避免被单次榜单带着走。"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "微软 MAI 在 Ignite 发布七款自研模型，覆盖代码、安全、图像、语言与路由，称 MAI Code 2 达到 GPT-6.1 Sol 的 98% 性能、成本仅 40%，定位企业内部常驻 agent（The Decoder）",
+        "Airbnb 在 Amazon Bedrock 上用可观测数据按「单任务成本」为 coding agent 选模型，并指出生产花费与评测结论会不一致（AWS 官方博客）",
+        "豆包工作宣布工作日活突破 800 万、企业客户 ARR 突破 20 亿元；已接入 Kimi、GLM、DeepSeek 等第三方模型，并标注各模型的额度消耗倍率（36氪快讯）",
+        "Visa 与连连数字在新加坡金融科技节落地亚太首笔 B2B 智能体真实交易，采用为授权 agent 设计的支付标记，同日推出 LianLian XCard 覆盖企业支出管理（36氪快讯）",
+        "Salesforce 用 SageMaker AI 的跨区推理路由，把分散的区域容量拼成稳定服务，同时保留数据驻留承诺（AWS 官方博客）"
+      ],
+      "insights": [
+        "用四成成本换九成八性能，说明通用能力接近之后，采购决策会先看差价再看榜单名次（推断）",
+        "评测分数与生产花费背离，意味着选型必须拿自己的真实任务集重算，厂商给的对比表只能当候选池（推断）",
+        "智能体拿到专属支付标记，才有资格进采购与报销流程；这是 agent 从「辅助」变「经办」的准入条件（推断）"
+      ],
+      "actions": [
+        "三个以上候选模型并行时，先跑两周影子流量，用单任务成本乘以返工率算总账，再定主备与降级顺序。",
+        "给 agent 开支付能力前，先把额度上限、商户白名单与对账口径定死，再谈接生产，别让财务当第一道测试。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "Suno 上线 Visuals 功能，可把生成的歌曲转成自动对口型的 AI 视频，也能按提示词直接出图（The Verge）",
+        "Snapchat 允许开发者在 Claude Code、Cursor 等 AI 助手里用自然语言描述需求，由助手完成 AR Lens 的搭建（TechCrunch）",
+        "谷歌 DeepMind 更新 Project Genie，推出 Genie 4 世界模型，首次带原生声音，支持链式世界与社区画廊二次创作，面向 Google AI Ultra 订阅者（The Decoder）",
+        "迪士尼幻想工程的星战机器人偶接入 AI 与游客实时互动，不再依赖预设动作或幕后操偶（The Verge）"
+      ],
+      "insights": [
+        "音乐平台补视频、社交平台补生成、世界模型补画廊，三条路都在把「生成」推向「可发布、可复用」的成品（推断）",
+        "自然语言直接产出 AR 特效后，制作门槛下降，稀缺的变成选题判断与投放策略（推断）"
+      ],
+      "actions": [
+        "手上有成曲或口播稿的，用 Suno Visuals 出一版 15 秒竖版视频，重点看口型与字幕是否错位，再决定能否直接投。",
+        "做互动内容的，把 Genie 4 的链式世界当分镜工具试用，先测同一场景连续切换时画风是否稳定。"
+      ]
+    }
+  ],
+  "github": [
+    {
+      "repo": "aaif-goose/goose",
+      "url": "https://github.com/aaif-goose/goose",
+      "stars": "57K",
+      "track": "AI产业技术",
+      "note": "开源可扩展 AI agent，在本地安装、执行、编辑并测试代码，可接任意 LLM，覆盖 macOS、Linux 与 Windows。",
+      "why": "想把 agent 能力装进自己机器的，先用它跑一个跨文件的真实改造任务，看权限边界与执行日志够不够审计。"
+    },
+    {
+      "repo": "ToolJet/ToolJet",
+      "url": "https://github.com/ToolJet/ToolJet",
+      "stars": "41K",
+      "track": "企业AI应用",
+      "note": "开源内部工具平台，可视化或从提示词生成管理后台、仪表盘与业务流程，也能通过 MCP 接 Claude Code、Codex 与 Cursor。",
+      "why": "内部系统排队等开发的，挑一个报表需求先用它搭出来，量一下从提需求到能用的天数，再谈是否替代排期。"
+    },
+    {
+      "repo": "multimodal-art-projection/YuE",
+      "url": "https://github.com/multimodal-art-projection/YuE",
+      "stars": "14K",
+      "track": "内容创作",
+      "note": "YuE2 音乐生成模型，支持符号规划、零样本翻唱与 agent 式音乐编辑，可生成长段带人声的完整歌曲。",
+      "why": "需要背景音乐或定制曲的，先用同一段歌词跑三版，重点听副歌咬字与段落衔接，再判断能否替掉版权曲库。"
+    }
+  ],
+  "reading": [
+    {
+      "title": "Google ships Gemini 4 Neon, its fourth new Gemini model in a month",
+      "url": "https://the-decoder.com/google-ships-gemini-4-neon-its-fourth-new-gemini-model-in-a-month/",
+      "source": "The Decoder",
+      "reason": "报道称 Neon 面向软件开发、知识工作与科学，支持百万 token 上下文与多模态输入，定价高于前代，主打长程专业任务",
+      "why": "评估换模型的，拿自家最长的一份文档或代码库跑一遍，重点看百万上下文下的引用准确率，别只看单价。"
+    },
+    {
+      "title": "How Airbnb uses cost per task to operate coding agents on Amazon Bedrock",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-airbnb-uses-cost-per-task-to-operate-coding-agents-on-amazon-bedrock/",
+      "source": "AWS 官方博客",
+      "reason": "报道介绍 Airbnb 用真实工程任务做评测，再借助 Bedrock 可观测性按单任务成本选模型，并解释了生产花费为何偏离评测结果",
+      "why": "正在扩 agent 用量的，照这篇把「每任务成本」做成看板指标，比按 token 预算管更能反映真实消耗。"
+    },
+    {
+      "title": "Microsoft is replacing outside AI models in its own products with cheaper in-house alternatives",
+      "url": "https://the-decoder.com/microsoft-is-replacing-outside-ai-models-in-its-own-products-with-cheaper-in-house-alternatives/",
+      "source": "The Decoder",
+      "reason": "报道称微软 MAI 在 Ignite 发布七款自研模型，主打为常驻企业 agent 降本，其中代码模型以四成成本达到外部模型九成八的性能",
+      "why": "自建团队可以照这个思路算账：先圈出高频低难度环节，用自研或小模型替掉，把贵模型留给判断类任务。"
+    }
+  ],
+  "consensus": {
+    "text": "能力差距收窄之后，单位任务成本能否被算清，成为产品能否被持续使用的硬指标。",
+    "quotes": [
+      "谷歌发布 Gemini 4 Neon，上下文 100 万 token，输入 3 美元、输出 15 美元每百万 token，定价高于自家前代（The Decoder）",
+      "Airbnb 在 Amazon Bedrock 上按单任务成本为 coding agent 选模型，并指出生产花费与评测结论不一致（AWS 官方博客）",
+      "OpenAI 称与 AMD 合作把旗舰 GPU IP 的每瓦性能最多提升 14%，相当于一年的工程进度（The Decoder）"
+    ]
+  },
+  "division": {
+    "text": "该用自研垂直整合换成本与可控，还是外购多模型路由换能力上限，两种选择的验证周期不在一个量级。",
+    "quotes": [
+      "微软 MAI 在 Ignite 发布七款自研模型，称 MAI Code 2 达到 GPT-6.1 Sol 的 98% 性能、成本 40%（The Decoder）",
+      "Hugging Face 把模型请求改走 OpenRouter，自动选最便宜或最快的供应商，称容量错误下降 46%（The Decoder）",
+      "豆包工作接入 Kimi、GLM、DeepSeek 等第三方模型，并标注不同模型的额度消耗倍率供用户自选（36氪快讯）"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-11-19T07:10"
+}
