@@ -1,0 +1,142 @@
+{
+  "date": "2026-11-20",
+  "format": "summary",
+  "points": [
+    "Anthropic 在纳斯达克上市，发行价 83 美元，开盘 111.50 美元、首日涨约 34%，市值约 1.5 万亿美元，为史上最大 IPO。",
+    "OpenAI 发布 GPT-6.2 Astra 与 GPT-6.2 Sol，官方称专业输出、编码与电脑操作更强且成本更低，早期测试者对 Astra 的使用手感评价分化。",
+    "微软官方 PyPI 包 Agent Framework 遭劫持，被植入窃取登录凭据与云平台令牌的恶意软件，恶意版本存在 31 分钟后被删除。"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "Anthropic 挂牌纳斯达克，发行价 83 美元，开盘 111.50 美元、较发行价高约 34%，市值约 1.5 万亿美元；超过 10 万名英国散户参与认购，七位联合创始人掌握多数投票权（36氪快讯 / IT之家 / TechCrunch）",
+        "虎嗅报道 Anthropic 上市当天盘中最高 115.1 美元，随后跌破开盘价、最低到 95 美元，同期 Claude 出现性能降级（虎嗅）",
+        "OpenAI 发布 GPT-6.2 Astra 与 GPT-6.2 Sol，官方称在 ChatGPT Work、Codex 与 API 上专业输出、编码与电脑操作更强、成本更低；Latent Space 称 Astra 为当前第二的前沿模型，价格比上代低 20% 到 600%，早期测试者对其使用手感评价分化（OpenAI 官方博客 / Latent Space）",
+        "OpenAI 公开 Performance Factory，一套由 Codex 驱动的自动化工作流，用于定位并修复 ChatGPT 的性能问题（OpenAI 官方博客）",
+        "Gemini API 上线工具检索 Tool Retrieval 预览版，让 agent 在数百个工具中按需检索，以减少 token 消耗（Google 官方博客）"
+      ],
+      "insights": [
+        "首日冲高后跌破开盘价，说明对 AI 估值的分歧在交易当天就已兑现，不必等财报来验证（推断）",
+        "工具检索这类「帮 agent 少烧上下文」的能力进 API，说明竞赛指标从模型分数转向同样任务的花费（推断）",
+        "模型厂商公开内部工程系统，等于把「跑得稳、修得快」当成新的对外卖点（推断）"
+      ],
+      "actions": [
+        "要评 GPT-6.2 的，拿自家一份长文档加一个跨文件改造任务，同时跑 Astra 与现用模型，比金额与返工次数，别只看第三方榜单。",
+        "手上 agent 工具超过 20 个的，先测 Tool Retrieval，量同一任务下的 token 用量与工具选错率各变化多少。"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "微软在自家产品中用 MAI 自研模型替换外部模型，主打更低的成本（The Decoder）",
+        "微软官方 PyPI 包 Agent Framework 遭劫持，被植入窃取登录凭据与云平台令牌的恶意软件，恶意版本仅存在 31 分钟即被删除（IT之家 / TechRadar）",
+        "Amazon Connect Talent 用结构化 AI 面试做大规模招聘初筛，AWS 公布了它的评分与提问设计方法（AWS 官方博客）",
+        "Cisco 借 AWS AI League 让 1200 名工程师完成 agentic AI 训练，把学习做成内部竞赛（AWS 官方博客）",
+        "吴泳铭称阿里 2031 财年云外部收入 1000 亿美元、利润率超 20% 的目标不变，本季云外部经常性收入同比增 67%、EBITA 利润率 14.5%，但 2032 年全球数据中心 20GW 目标或下调（36氪快讯 / IT之家）"
+      ],
+      "insights": [
+        "agent 框架现在持有生产凭据，官方包被投毒一次等于交出账号，供应链风险已经高过模型选型的风险（推断）",
+        "一边用自研模型降本、一边下调数据中心目标，说明扩张叙事让位给了单位经济账（推断）",
+        "招聘、培训这类流程型环节出现成体系的 AI 方法，落地重心从买工具转到改流程（推断）"
+      ],
+      "actions": [
+        "今天核一遍依赖：把 lock 文件里带 agent、llm、mcp 字样的包对一遍来源，只从官方仓库安装并锁 hash，别用不带版本的 pip install。",
+        "给 agent 上生产前，把「凭据在谁手里、能否轮换、出事怎么回滚」单列一栏，排在准确率之前评估。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "ChatGPT 上线实时听写，对着麦克风说话即时转成文字，不必等一段说完（IT之家 / The Verge）",
+        "Canva 增加 AI 关闭按钮，用户可以整体停用生成式功能（The Verge）",
+        "量子位报道一位初中毕业的烘焙师借助国产 AI 工具独立完成单集千万播放的科幻剧（量子位）",
+        "36氪深氪报道红果短剧日活已到 1.5 亿、月活 2 亿，增速从此前每季度翻倍放缓（36氪热榜）",
+        "Amazon Polly 上线声音克隆，几分钟合规录音即可生成品牌专属音色（AWS 官方博客）"
+      ],
+      "insights": [
+        "平台一边加 AI 功能一边给关闭开关，合规压力从「要不要标注 AI」转到「用户能不能不用 AI」（推断）",
+        "一个人做出千万播放，说明制作能力不再是瓶颈，选题判断与叙事节奏才是（推断）",
+        "短剧的用户规模说明竖屏叙事已经是主流容器，长内容要进场得先改结构（推断）"
+      ],
+      "actions": [
+        "用实时听写口述一版初稿，重点看专有名词与断句错在哪，再判断能否替掉键盘初稿。",
+        "做品牌配音的，拿 3 分钟真人口播试 Polly 声音克隆，听情绪起伏与呼吸感，别只凭标准朗读样音定案。"
+      ]
+    }
+  ],
+  "github": [
+    {
+      "repo": "Ryder-Sun/Meldwork",
+      "url": "https://github.com/Ryder-Sun/Meldwork",
+      "stars": "2K",
+      "track": "AI产业技术",
+      "note": "本地优先的多智能体工作台，支持多 agent 协作、权限分级与执行证据留痕。",
+      "why": "要给 agent 团队划权限边界的，先用它跑一个跨文件改造任务，看证据链能否直接交给审计看。"
+    },
+    {
+      "repo": "microsoft/graphrag",
+      "url": "https://github.com/microsoft/graphrag",
+      "stars": "37K",
+      "track": "企业AI应用",
+      "note": "微软开源的图结构 RAG 系统，先把文档抽成知识图谱再检索，适合需要跨文档关联的问答。",
+      "why": "知识库问答老答非所问的，用它重建一批制度文档，先量多跳问题的准确率再决定是否替换现有 RAG。"
+    },
+    {
+      "repo": "openfilm/openfilm",
+      "url": "https://github.com/openfilm/openfilm",
+      "stars": "9K",
+      "track": "内容创作",
+      "note": "开源 AI 视频 agent，把编码 agent 变成视频 agent，生成后可对画面逐处修改。",
+      "why": "要出产品演示或口播视频的，用它跑一条 30 秒成片，重点看单独改一处时前后画面是否连贯。"
+    }
+  ],
+  "reading": [
+    {
+      "title": "GPT-6.2 Astra, the #2 Frontier Model is better and 20%-600% cheaper, but has mixed reviews",
+      "url": "https://latent.space/p/ainews-gpt-6-2-astra-the-2-frontier-model-is-better-and-20-600-cheaper-but-has-mixed-reviews-6-2-sol/",
+      "source": "Latent Space",
+      "reason": "报道梳理 Astra 与 Sol 的定位差异：Astra 分数更高、价格比上代低 20% 到 600%，Sol 更可能成为日常主力，早期测试者对 Astra 的使用手感意见不一",
+      "why": "正在选模型的，照它把「贵而强」与「便宜够用」两档拆开测，分别对应判断类任务与批量类任务。"
+    },
+    {
+      "title": "Inside Amazon Connect Talent: The science of structured AI interviews",
+      "url": "https://aws.amazon.com/blogs/machine-learning/inside-amazon-connect-talent-the-science-of-structured-ai-interviews/",
+      "source": "AWS 官方博客",
+      "reason": "报道讲结构化 AI 面试怎么保证每位候选人拿到一致的提问与评分口径，以及大规模招聘下如何复用同一套标准",
+      "why": "要做面试或客服质检的，先把评分维度写死再交给模型，别让模型自己决定问什么。"
+    },
+    {
+      "title": "2亿人的红果：最后的流量神话｜深氪",
+      "url": "https://www.36kr.com/p/4076026869633922",
+      "source": "36氪",
+      "reason": "报道复盘红果从每季度翻倍到日活爬坡 5 个月才增 3000 万的转折，拆解免费短剧的分发与内容供给逻辑",
+      "why": "做内容供给的，照它把「增长放缓时靠什么留住用户」想清楚，比追单条爆款更值得抄。"
+    }
+  ],
+  "consensus": {
+    "text": "能力差距收窄之后，定价与单位成本是否算得清，决定产品能不能被持续采购。",
+    "quotes": [
+      "Anthropic 发行价 83 美元、开盘 111.50 美元，首日涨约 34%，市值约 1.5 万亿美元（36氪快讯 / IT之家）",
+      "Latent Space 称 GPT-6.2 Astra 是当前第二的前沿模型，价格比上代低 20% 到 600%，但早期测试者评价分化（Latent Space）",
+      "阿里云称推理已经占 AI 云账单的大部分（阿里云官方博客）"
+    ]
+  },
+  "division": {
+    "text": "自研内化换成本可控，还是外接多模型换能力上限，选择分出的是凭据与供应链风险由谁承担。",
+    "quotes": [
+      "微软在自家产品中用 MAI 自研模型替换外部模型以降本（The Decoder）",
+      "微软官方 PyPI 包 Agent Framework 遭劫持，被植入窃取登录凭据与云令牌的恶意软件（IT之家）",
+      "Hugging Face 把模型请求改走 OpenRouter，按价格或速度自动选供应商（The Decoder）"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-11-20T07:10"
+}
