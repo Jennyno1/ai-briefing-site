@@ -1,0 +1,141 @@
+{
+  "date": "2026-11-21",
+  "format": "summary",
+  "points": [
+    "Anthropic 数学家 Levent Alpöge 在个人网站称与 Claude 合作完成黎曼猜想证明，公开文档称已在无额外假设下完成形式化；同日另有数学家团队宣称给出独立证明（IT之家 / 知乎 / TechCrunch）。",
+    "OpenAI 公布对抗蒸馏的分层防护做法，从模型训练、防护措施、检测到执法四层，阻止外部抽取模型能力（OpenAI 官方博客）。",
+    "彭博分析 1000 万条招聘信息：中国 AI 暴露岗位降幅比其它岗位快 10 个百分点，入门岗与创意行业最明显，超 90% 微短剧已由 AI 生产（The Decoder）。"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "Anthropic 数学家 Levent Alpöge 称与 Claude 合作找到黎曼猜想证明，公开文档称已解决广义黎曼猜想并完成形式化；虎嗅称随附代码达 1737 万行，知乎讨论提到证明稿超 25 万页，同期 TechCrunch 报道另有人类数学家宣称独立完成证明（IT之家 / 虎嗅 / 知乎 / TechCrunch）",
+        "OpenAI 公开对抗蒸馏防护：模型训练阶段加入抗抽取设计，叠加安全措施、检测与执法环节，目标是防止外部通过大量查询复刻模型能力（OpenAI 官方博客）",
+        "Apple 招聘工程师组建自研 agent 团队，职责涵盖浏览网页、跨应用操作、写代码与调用服务；该招聘启事随后被撤下（The Verge / TechCrunch）",
+        "Google 改版桌面搜索首页，加入可折叠侧边栏，在 AI 模式下可回看最近的 AI 搜索、继续对话并创建笔记本（The Verge / The Decoder）",
+        "Signal 在 iOS 27 与 Android 上屏蔽截图，阻止 Apple Siri AI、Google Gemini、Meta Muse 等系统级 agent 读取私聊，官方称这构成对隐私的生存威胁，并承认 macOS 等平台防护仍不完整（The Decoder / The Verge）"
+      ],
+      "insights": [
+        "黎曼这条能站住的部分是形式化，说明 AI 做数学目前拿得出的证据是机器可检的证明文件，而不是自然语言论证（推断）",
+        "厂商把防蒸馏做成公开议题，等于承认模型能力的价值可以被查询量换走（推断）",
+        "系统级 agent 与隐私应用的冲突已从讨论走到应用侧硬拦，权限边界不再靠厂商自律（推断）"
+      ],
+      "actions": [
+        "看到「AI 证明了大定理」这类消息，先找形式化文件与独立复核记录，再决定要不要写进自己的技术判断。",
+        "核心业务跑第三方模型的，把「输出是否会被用于复刻能力、合同怎么约束」加进供应商评估表。"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "Standard Bank Group 在自有 AWS 账户内搭生成式 AI 风险评估：用 Bedrock 上的 LLM-as-a-judge 按国际 AI 标准与银行内部政策给每个用例打分，把审批所需证据自动化（AWS 官方博客）",
+        "BMW 集团公开其 R&D 团队治理数百个 agent、服务数千名开发者的做法与模式（AWS 官方博客）",
+        "Amazon Textract Insights 正式可用：用自然语言描述需要的字段，提交单份或混合文档包，返回带置信度与页级定位的结构化结果（AWS 官方博客）",
+        "葛兰素史克、百时美施贵宝、诺华、礼来、诺和诺德、阿斯利康、赛诺菲称 AI 已把新分子研发推进到临床试验的时间最多缩短一半，用途从监管申报文件扩展到分子设计（虎嗅 / 财联社）",
+        "阿里云发布面向企业的 Qwen4-Max，定位为能规划、能构建并交付成品工作的 AI 同事（阿里云官方博客）"
+      ],
+      "insights": [
+        "银行把合规判断做成模型打分加证据留档，治理成本从人力通读转成可审计的自动流程（推断）",
+        "药企给出的口径是「最多缩短一半」，属最好案例而非平均值，排研发预算不能按这个数算（推断）",
+        "治理问题先在制造业以数百 agent 的规模出现，说明规模化瓶颈在权限与责任划分，不在模型能力（推断）"
+      ],
+      "actions": [
+        "要上生成式 AI 审批流程的，照 Standard Bank 的做法先把评分维度、依据标准、留档字段写死，让模型出分、人签字。",
+        "发票、合同、保单这类文档密集型业务，拿一批混合文档试 Textract Insights，重点看低置信度字段落在哪里，据此定人工复核比例。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "彭博分析 1000 万条招聘信息发现，中国受 AI 影响岗位的降幅比其它岗位快 10 个百分点，入门级岗位与创意行业感受最明显；同一报道称目前超 90% 的中国微短剧已用 AI 生产（The Decoder）",
+        "「让豆包画 13 个鸡蛋」11 月 18 日登上微博热搜，当天话题热度破百万，AI 连画十几轮仍数不对数量（36氪）",
+        "快手可灵发布 Kling Image 4.0，主打 8K 出图，放大后细节仍清晰（量子位）",
+        "量子位报道 GTA6 完全未使用 AI 生成内容，被视为在 AI 泛滥环境下的卖点（量子位）"
+      ],
+      "insights": [
+        "九成微短剧已由 AI 生产，供给端的效率红利基本吃完，接下来拼的是分发与选题（推断）",
+        "精确计数仍是图像模型的稳定盲区，需要指定数量或文字的画面只能分层制作（推断）",
+        "「没用 AI」开始具备宣传价值，说明工具普及之后，人做的那部分本身成了差异点（推断）"
+      ],
+      "actions": [
+        "封面与插画里需要精确数量或指定文字的，AI 出底图后自己补元素并逐个点一遍，别依赖模型自查。",
+        "选题上抓「AI 做不好的小事」做科普向内容，比如数不对鸡蛋，比讲参数更容易被转发。"
+      ]
+    }
+  ],
+  "github": [
+    {
+      "repo": "ai-openshell/openshell",
+      "url": "https://github.com/ai-openshell/openshell",
+      "stars": "22K",
+      "track": "AI产业技术",
+      "note": "面向自主 agent 的安全私有运行时，把 agent 的执行环境与宿主机隔离。",
+      "why": "要把 agent 接进真实业务的，先用它圈一个受限环境，验证越权访问与文件读取能否被挡住。"
+    },
+    {
+      "repo": "pathwaycom/serviette",
+      "url": "https://github.com/pathwaycom/serviette",
+      "stars": "59K",
+      "track": "企业AI应用",
+      "note": "无代码 RAG 服务，文档更新后答案跟着同步，支持 8 种向量数据库，基于 Pathway 构建。",
+      "why": "内部知识库老答旧制度的，用它接现有文档源，先量「文档改完后答案多久变正确」。"
+    },
+    {
+      "repo": "0xsline/OpenChatCut",
+      "url": "https://github.com/0xsline/OpenChatCut",
+      "stars": "3K",
+      "track": "内容创作",
+      "note": "本地优先的对话式 AI 视频剪辑器，带专业多轨时间线与 MCP 接口，可交由 agent 驱动。",
+      "why": "要做批量口播或剪辑的，用它跑一条三分钟成片，重点看多轨对齐与单处修改的返工量。"
+    }
+  ],
+  "reading": [
+    {
+      "title": "AI claimed a solution to the 167-year-old Riemann Hypothesis — and a human did, too",
+      "url": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/",
+      "source": "TechCrunch",
+      "reason": "报道把两条线摆在一起：Anthropic 数学家称与 Claude 合作完成证明，同时另有人类数学家给出自己的版本，数学界正在核对双方的论证",
+      "why": "关注 AI 能力边界的，读它看专业社群怎么验证一个 AI 参与的结果，比看厂商发布更有参照价值。"
+    },
+    {
+      "title": "How Standard Bank Group automates AI risk assessment for generative AI",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-standard-bank-group-automates-ai-risk-assessment-for-generative-ai/",
+      "source": "AWS 官方博客",
+      "reason": "报道讲银行如何把国际 AI 标准与内部政策转成可执行的评分维度，让模型先为每个用例出分并留下依据，人再做审批",
+      "why": "要给 AI 项目设审批关口的，直接照它的维度拆法抄结构，先跑三个真实用例看评分是否分得开。"
+    },
+    {
+      "title": "Bloomberg analysis of 10 million job postings shows AI-exposed roles in China fell 10 percentage points faster than others",
+      "url": "https://the-decoder.com/bloomberg-analysis-of-10-million-job-postings-shows-ai-exposed-roles-in-china-fell-10-percentage-points-faster-than-others/",
+      "source": "The Decoder",
+      "reason": "报道基于 1000 万条招聘数据比较岗位变化，指出入门级与创意类岗位受冲击最明显，并提到微短剧行业已有九成以上由 AI 生产",
+      "why": "做内容或带团队的，照它把「哪些岗位动作已被工具吃掉」列一遍，比讨论 AI 会不会取代人更好用。"
+    }
+  ],
+  "consensus": {
+    "text": "一项能力要算数，得先能被机器复核，而不是只由提出者自己声明。",
+    "quotes": [
+      "Anthropic 数学家 Levent Alpöge 称与 Claude 合作完成黎曼猜想证明，并称已在无额外假设下完成形式化（IT之家 / 知乎）",
+      "Amazon Textract Insights 返回结构化结果，每个值带置信度评分与页级定位（AWS 官方博客）",
+      "Standard Bank Group 用 LLM-as-a-judge 按国际 AI 标准与内部政策给生成式 AI 用例打分，自动生成审批证据（AWS 官方博客）"
+    ]
+  },
+  "division": {
+    "text": "同一份 AI 投入，记在缩短周期上算增长，记在少雇人上算替代，两种记账法决定团队怎么被衡量。",
+    "quotes": [
+      "GSK、百时美施贵宝、诺华、礼来、诺和诺德、阿斯利康、赛诺菲称 AI 把新分子研发到临床的时间最多缩短一半（虎嗅 / 财联社）",
+      "Bloomberg 分析 1000 万条招聘信息，中国受 AI 影响岗位降幅比其它岗位快 10 个百分点，入门岗与创意行业最明显（The Decoder）",
+      "量子位报道 GTA6 未使用 AI 生成内容，仍被当作卖点（量子位）"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-11-21T07:10"
+}
