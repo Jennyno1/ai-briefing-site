@@ -1,0 +1,140 @@
+{
+  "date": "2026-11-22",
+  "format": "summary",
+  "points": [
+    "Anthropic 于 11 月 20 日凌晨登陆纳斯达克，IPO 募资 813 亿美元，加上 260 亿美元私募配售合计 1073 亿美元，首日收盘市值 1.27 万亿美元、较发行价涨 17.07%；次日股价跌约 9%，同期美股 AI 板块走弱（36氪 / TechCrunch / The Decoder）。",
+    "OpenAI 发布 GPT-6.2 Astra 与 GPT-6.2 Sol，API 名为 gpt-6.2-astra 与 gpt-6.2-sol，Latent Space 汇总称基准成本下降 20%–600%、早期试用者对 Astra 手感评价不一；同日 OpenAI 放出提示词模板，修回答过短、多余追问与写代码时过度测试（Simon Willison / Latent Space / The Decoder）。",
+    "英伟达研究员称超大上下文窗口是死路：测试中定期摘要加关键词定点检索通常能达到接近全上下文的效果，成本低得多（The Decoder）。"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "字节跳动与多所美国高校发布开源 agent 模型 Axion 1.0，只用三个阶段训练就在基准上对标 OpenAI、Anthropic 的商用模型，作者把效果归因于训练数据筛选而非更多训练步数（The Decoder）",
+        "36氪报道谷歌与宾夕法尼亚州立大学发布论文，提出「自我改进记忆」机制，让 Gemini 继承其他模型的经验、换代不必从零训练，并称这类经验可跨模型家族传递（36氪）",
+        "腾讯混元 11 月 20 日开源 Hy4，沐曦曦云 C 系列 GPU 当天完成 Day 0 适配；姚顺雨与混元团队在 Reddit 答网友，称 Hy 系列小模型已进路线图（36氪快讯 / 量子位）",
+        "Thinking Machines 发布开源模型 Inkling 2 Mini，24 层中有 12 层对每个 token 跑三次，靠内部循环延长推理而不多写字，在 Artificial Analysis 智能指数上与 Qwen3.8 27B 相当，仍可在笔记本上运行（The Decoder）"
+      ],
+      "insights": [
+        "训练阶段被砍到三段仍能对标商用模型，说明当前瓶颈更多在数据筛选与配比，而不在训练步数（推断）",
+        "模型经验可跨家族继承，一旦大规模成立，换代时的成本结构会变，迭代节奏不再只由算力决定（推断）",
+        "国产 GPU 抢 Day 0 适配，把开源模型的发布日变成算力可用日，国产栈的竞争点正从算力规模转到适配速度（推断）"
+      ],
+      "actions": [
+        "评估新开源模型时，先读训练数据筛选与可复现细节，再比榜单分数。",
+        "做国产化选型的，把「Day 0 适配」和适配后的实测吞吐写进评估表，别只看纸面算力。"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "AWS Quick 更新：可在对话里搭建并运行业务流程流，多个 agent 同时回答同一问题，并接入 Meta 广告等新数据源（AWS 官方博客）",
+        "Amazon SageMaker HyperPod 推出 Global Inference Gateway：一个托管 endpoint 在 Region 内与跨 Region 的集群间路由推理请求，自动选集群、故障转移，全链路 SigV4 与 IAM 鉴权（AWS 官方博客）",
+        "Amazon Bedrock AgentCore payments 支持 AWS Marketplace：agent 可发现并购买按 x402 计费的产品、API 与数据，费用进开发者的 AWS 账单，不需要稳定币钱包或 API 密钥（AWS 官方博客）",
+        "Hebbia 用 GPT-6 Astra 做金融研究，预发布评测显示来源覆盖、引用相关性与呈现质量提升；住友生命用 ChatGPT Enterprise 做保险公司调研、提案准备与投资分析代码草稿（OpenAI 官方）",
+        "虎嗅梳理 Anthropic 上市、加州 AI 审计法与国内 33 号文，把 AI 干完活之后的「谁签字」拆成技术验收、合同验收、制度验收三层（虎嗅）"
+      ],
+      "insights": [
+        "agent 采购走现成云账单与 marketplace，等于把「花已审批的钱」这条路径复用到机器上，省下的主要是采购流程而不是单价（推断）",
+        "推理入口收敛成一个 endpoint，运维关注点从容量规划转到路由策略与故障切换（推断）",
+        "验收被拆成三层签字后，验收成本会成为 AI 采购价的一部分，低报价但验收不清的方案反而更贵（推断）"
+      ],
+      "actions": [
+        "要给 agent 开放采购权限的，先定额度上限与审批链，再开 marketplace 支付。",
+        "多区域部署推理的，先量一次真实故障切换的时延，再决定 SLA 里怎么写。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "Suno 推出视觉创作工具 Visuals，正式进军视频生成，底层模型来自中国 MiniMax（量子位）",
+        "TechCrunch 报道有演员把「AI 版人脸」授权给微短剧公司，同类做法在中国已较常见，专家担心若在好莱坞成风会带来长期后果（TechCrunch）",
+        "汪苏泷「明日世界」巡演将拍成纪录电影，国家电影局已公布备案信息，片方在梗概里提到巡演的「随机歌单」设计（虎嗅）",
+        "Latent Space 报道形式化验证正被用来对付批量生成的劣质作品：以往要专家手写的正确性证明，现在由 AI 与 Lean 协助自动化（Latent Space）"
+      ],
+      "insights": [
+        "音乐平台把视频生成的底层模型换成中国厂商，说明这一层能力已出现价格更低的替代供给（推断）",
+        "人脸授权把演员一次表演变成可反复调用的素材，收益分配问题会比技术问题更早爆发（推断）",
+        "演唱会按电影卖，是把一次性现场转成可复映的内容资产；AI 补的是产能，选题与现场感仍由人决定（推断）"
+      ],
+      "actions": [
+        "涉及真人出镜的，把肖像授权范围、期限与二次使用条件写进合同，别只签一次买断。",
+        "选题上优先做「一次性现场转成可复看内容」的题材，把省下的产能投在细节与叙事上。"
+      ]
+    }
+  ],
+  "github": [
+    {
+      "repo": "sandbox-quantum/switch",
+      "url": "https://github.com/sandbox-quantum/switch",
+      "stars": "5K",
+      "track": "AI产业技术",
+      "note": "开源 AI 队友，接进 Slack、Teams、Discord、Telegram 与 Mattermost，可带 Claude Code、Codex、Gemini、Cursor 或自建 agent，自托管多 agent 编排并支持 MCP。",
+      "why": "团队已在群里办公的，用它把一个重复流程（比如值班问答）接进来，重点看权限隔离与上下文会不会串。"
+    },
+    {
+      "repo": "labring/FastGPT",
+      "url": "https://github.com/labring/FastGPT",
+      "stars": "30K",
+      "track": "企业AI应用",
+      "note": "基于大模型的知识库平台，提供 RAG 检索、可视化工作流编排与对外 API，可自托管。",
+      "why": "要上内部知识库的，先用它灌一批真实制度文档，只量一件事：文档改完后答案多久变对。"
+    },
+    {
+      "repo": "pireel/pireel",
+      "url": "https://github.com/pireel/pireel",
+      "stars": "1K",
+      "track": "内容创作",
+      "note": "开源 AI 视频编辑器，做字幕、剪辑与 B-roll，可导出到 Premiere 与 DaVinci Resolve。",
+      "why": "做批量短视频的，用它跑一条三分钟成片，重点看导出到剪辑软件后的返工量。"
+    }
+  ],
+  "reading": [
+    {
+      "title": "Anthropic’s 7 founders cashed out nearly $2B in record-breaking IPO",
+      "url": "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/",
+      "source": "TechCrunch",
+      "reason": "报道拆开这笔 IPO 的钱怎么分：按 83 美元的发行价，七位创始人各套现约 2.8 亿美元，公司募得近 1050 亿美元",
+      "why": "关心 AI 公司治理的，读它看创始团队在上市时如何安排退出，比只看估值数字有信息量。"
+    },
+    {
+      "title": "Nvidia researchers argue huge AI context windows are a dead end",
+      "url": "https://the-decoder.com/nvidia-researchers-argue-huge-ai-context-windows-are-a-dead-end/",
+      "source": "The Decoder",
+      "reason": "报道介绍英伟达研究团队的替代方案：不必把全部上下文塞进窗口，用周期性摘要加关键词定点检索，测试里效果接近、成本低很多",
+      "why": "正在为长文档付高额 token 费的，照它的两种做法各跑一遍，先看贵的部分是不是真的必要。"
+    },
+    {
+      "title": "Enable AI agents to pay for AWS Marketplace x402 products with Amazon Bedrock AgentCore payments",
+      "url": "https://aws.amazon.com/blogs/machine-learning/enable-ai-agents-to-pay-for-aws-marketplace-x402-products-with-amazon-bedrock-agentcore-payments/",
+      "source": "AWS 官方博客",
+      "reason": "报道给出完整链路：agent 发现工具、按请求付费、费用进 AWS 账单，不用稳定币钱包，也不用另配 API 密钥",
+      "why": "想让 agent 自己调外部数据的，先照它把额度与账单归属跑通，再谈放开权限。"
+    }
+  ],
+  "consensus": {
+    "text": "技术投入值不值，判断标准正落在单位投入能换回多少可核对的结果，而不是规模本身。",
+    "quotes": [
+      "Anthropic 11 月 20 日登陆纳斯达克，IPO 募资 813 亿美元、含私募配售合计 1073 亿美元，首日收盘市值 1.27 万亿美元，次日股价跌约 9%（36氪 / TechCrunch）",
+      "英伟达研究员称超大上下文窗口是死路，测试中定期摘要加关键词检索接近全上下文效果、成本低得多（The Decoder）",
+      "亚马逊 SageMaker AI 默认监控推理 endpoint，检测时延漂移、闲置 GPU 与被错过的优化项，并通过 AWS Health 推送发现（AWS 官方博客）"
+    ]
+  },
+  "division": {
+    "text": "分歧在于产能扩张该由未来需求预期来定，还是该由已验证的回报与成本来约束。",
+    "quotes": [
+      "美股 AI 板块单周跌幅为疫情以来最大，纳斯达克 100 进入技术性熊市，英伟达一周跌 14%，SEC 正核查其会计问题（The Decoder）",
+      "韩媒 Economy Tribune 爆料，三星电子 2027 至 2029 年大部分存储芯片产能已被合同预订，有客户要求把供货保障延到 2031 年（IT之家）",
+      "字节跳动与多所美国高校称 Axion 1.0 只用三个阶段训练即可对标商用模型，效果来自数据筛选而非更多训练步数（The Decoder）"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-11-22T07:10"
+}
