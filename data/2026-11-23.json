@@ -1,0 +1,141 @@
+{
+  "date": "2026-11-23",
+  "format": "summary",
+  "points": [
+    "Lean 形式化验证社区与 Mathlib Initiative 联合声明确认，Levent Alpöge 借助 Claude 完成的黎曼猜想证明正确，数十位独立验证者核验了 1700 万行形式化代码；几乎同时斯坦福研究者发布纯人类撰写的竞争手稿（The Decoder / TechCrunch / 36氪）。",
+    "金融时报报道，戴尔、慧与、联想与超微在 AI 服务器交付前上调已签约价格，涨幅最高达 45%，涨价部分来自 GPU、内存与网络设备成本（IT之家）。",
+    "B站官方账号「哔哩哔哩社区小管家」就「大肥鱼」「小飞鲸」等 AI 智能体账号在评论区泛滥发布治理问卷，称将据反馈推进治理（IT之家）。"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "Lean 形式化验证社区与 Mathlib Initiative 发布联合声明，确认 Levent Alpöge 用 Claude 完成的黎曼猜想证明正确，数十位独立验证者核验了 1700 万行形式化代码（The Decoder / 量子位）",
+        "斯坦福研究者几乎同时发布纯人类撰写的竞争手稿，2010 年菲尔兹奖得主吴宝珠公开表示，过早宣称数学研究终结的人可能错了（TechCrunch / 36氪热榜）",
+        "MiniMax 宣布其内部模型系统化分析现代密码方案，首次实际攻破多个此前「尚无已知实际攻击」的 NIST 候选算法，把停留在论文层面的攻击推进到秒级至分钟级（IT之家）",
+        "Architect Labs 称其 AI 系统自主设计并验证了通用 CPU 架构 Frostbite，25 项负载下每瓦性能达到同类已硅验证核心的 4.59 倍，但这些数据来自 7 纳米工艺的模拟设计（IT之家）"
+      ],
+      "insights": [
+        "形式化验证把「模型说证明出来了」变成可机器复核的结论，AI 产出的可信度开始由验证工具而非作者背书来判定（推断）",
+        "密码分析被模型压到秒级，安全评估的周期会跟着从论文级缩短到小时级（推断）",
+        "AI 设计芯片的指标还停在模拟阶段，模拟与流片之间的差距仍是判定成败的关键（推断）"
+      ],
+      "actions": [
+        "关键结论要对外使用，先确认它有没有可复核路径：形式化证明、单元测试或第三方复现。",
+        "看 AI 芯片设计类成果，先分清模拟数据与流片实测。"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "BMW 集团分享治理实践：数百个 agent 服务数千名开发者，靠统一的构建、治理与运营模式维持速度与质量（AWS 官方博客）",
+        "Standard Bank Group 在自有 AWS 账户里搭了一套评估系统，按国际 AI 标准与内部政策给每个生成式 AI 用例打分，并自动产出审批所需证据（AWS 官方博客）",
+        "蚂蚁阿福医生版接入临床决策知识库 UpToDate，称国内首家，同时上线电脑端帮医生整理病历、分析数据，12 月 31 日前全国医生免费试用（36氪快讯）",
+        "Amazon Textract Insights 正式可用：用自然语言描述需要的字段，提交文档或混合文档包后返回带置信度与出处的结构化结果（AWS 官方博客）",
+        "Linear COO Cristina Cordova 称超过一半工单由 agent 撰写，公司数月做到 1 亿美元年经常性收入，且不设销售开发代表与前置工程师（Latent Space）"
+      ],
+      "insights": [
+        "agent 数量上去以后，治理成本的主体从「建一个」转到「管住每一个」，评估与审批证据能自动产出是规模化的先决条件（推断）",
+        "医疗这类高门槛场景，接入权威知识库比自己训模型更快换来医生的实际使用（推断）",
+        "工单过半由 agent 写，销售组织的人员结构会先于产品形态发生变化（推断）"
+      ],
+      "actions": [
+        "agent 数量过百的团队，先建统一注册与权限清单，再谈扩编。",
+        "要给 AI 用例过审批的，把评分规则写成脚本，让每条用例自动产出证据，减少人工补材料。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "B站官方账号「哔哩哔哩社区小管家」发布《关于 AI「大肥鱼」你怎么看？》治理意见征询，针对 AI 智能体账号在评论区泛滥向用户征集意见，称将据反馈推进治理（IT之家）",
+        "《以撒的结合：忏悔+》因一段 GTA 主题小游戏使用 AI 音乐遭 Steam 差评轰炸，开发者已移除相关曲目（The Verge）",
+        "量子位报道乐队现场演出用 AI 实时生成 MV，形式介于黑客松与音乐节之间（量子位）",
+        "湘雅二医院一篇 AI 合成论文引发舆论批评，存在多处低级文字错误，示例图疑似 AI 生成（虎嗅）",
+        "据 AI 赛事社区「AI赛事通」统计，今年上半年全国举办近 500 场黑客松，平均每天两三场（36氪热榜）"
+      ],
+      "insights": [
+        "平台开始给 AI 账号单独立规矩，账号背后是人还是模型，会成为内容分发的显性门槛（推断）",
+        "受众对 AI 内容的容忍度按场景分级：当工具用可以，顶替创作者署名作品不行（推断）",
+        "AI 合成论文批量出现，检测成本正从期刊评审转到作者所在机构（推断）"
+      ],
+      "actions": [
+        "作品里有 AI 生成素材的，逐项标清哪部分由 AI 产出，尤其是会被署名或售卖的内容。",
+        "运营账号矩阵的，先确认各平台对 AI 账号的登记与标识要求，再决定铺多少号。"
+      ]
+    }
+  ],
+  "github": [
+    {
+      "repo": "soumatheusgomes/vibe-coding-toolkit",
+      "url": "https://github.com/soumatheusgomes/vibe-coding-toolkit",
+      "stars": "3K",
+      "track": "AI产业技术",
+      "note": "一套从生产环境提取的 AI 编程工具集，含 Claude Code 插件、子 agent 编排、质量门禁与可直接复制的提示词。",
+      "why": "已在用 Claude Code 的团队，把它的一套质量门禁接进现有流程，只量一件事：同一批任务返工次数有没有下降。"
+    },
+    {
+      "repo": "promptfoo/promptfoo",
+      "url": "https://github.com/promptfoo/promptfoo",
+      "stars": "28K",
+      "track": "企业AI应用",
+      "note": "提示词、agent 与 RAG 的测试与红队工具，用声明式配置对比 GPT、Claude、Gemini、DeepSeek 等模型表现，可接命令行与 CI。",
+      "why": "要把 AI 功能上线前过一道关的，先用它跑一组自家真实问题的回归用例，重点看配置改动能拦住多少退化。"
+    },
+    {
+      "repo": "ChatCut-Inc/agent-plugin",
+      "url": "https://github.com/ChatCut-Inc/agent-plugin",
+      "stars": "1K",
+      "track": "内容创作",
+      "note": "面向 agent 的 AI 视频剪辑插件与 MCP 服务，支持对话式剪辑、加字幕、去口癖与静音、做动态图形并导出可编辑时间线。",
+      "why": "做口播或访谈类内容的，用它先跑一条五分钟成片，重点看导出到剪辑软件后的返工量。"
+    }
+  ],
+  "reading": [
+    {
+      "title": "Lean and Mathlib community officially confirms Levent Alpöge's proof of the Riemann hypothesis is correct",
+      "url": "https://the-decoder.com/lean-and-mathlib-community-officially-confirms-levent-alpoges-proof-of-the-riemann-hypothesis-is-correct/",
+      "source": "The Decoder",
+      "reason": "报道说明核验过程：数十位独立验证者逐段检查了 1700 万行形式化代码，确认证明成立，比数学界普遍预期早了数年",
+      "why": "关心 AI 参与科研可信度的，读它看「机器可复核」具体长什么样，比只看结论更有用。"
+    },
+    {
+      "title": "How the BMW Group governs hundreds of agents across thousands of developers",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-the-bmw-group-governs-hundreds-of-agents-across-thousands-of-developers/",
+      "source": "AWS 官方博客",
+      "reason": "报道拆解宝马研发团队的做法：agent 数量到几百个、使用人数到几千人时，如何用统一模式做构建、治理与运营而不拖慢交付",
+      "why": "正在推内部 agent 平台的，照它的治理清单对一遍自己的缺口，先补权限与注册。"
+    },
+    {
+      "title": "AI coding agents ace isolated tests but complete fewer than one in ten tasks in a simulated workplace",
+      "url": "https://the-decoder.com/ai-coding-agents-ace-isolated-tests-but-complete-fewer-than-one-in-ten-tasks-in-a-simulated-workplace/",
+      "source": "The Decoder",
+      "reason": "报道给出一个模拟真实职场的测试：agent 要面对同事、项目看板与不完整交接，在杂乱流程里独立推进并关闭工单，完成率不到十分之一",
+      "why": "打算按「能过单测」就给 agent 放权的，先拿自己的真实工单跑一轮端到端，再定权限边界。"
+    }
+  ],
+  "consensus": {
+    "text": "决定 AI 产出能不能被采用的，是它有没有留下可复核的证据链，而不是产出速度。",
+    "quotes": [
+      "Lean 形式化验证社区与 Mathlib Initiative 联合声明确认 Levent Alpöge 用 Claude 完成的黎曼猜想证明正确，数十位独立验证者核验了 1700 万行形式化代码（The Decoder）",
+      "Standard Bank Group 在自有 AWS 账户搭建评估系统，按国际 AI 标准与内部政策为每个生成式 AI 用例打分并自动产出审批证据（AWS 官方博客）",
+      "Amazon Textract Insights 正式可用，用自然语言描述所需字段，返回带置信度与出处的结构化结果（AWS 官方博客）"
+    ]
+  },
+  "division": {
+    "text": "分歧在于 AI 生成内容该按使用场景分级容许，还是只要是署名作品就一律拒绝。",
+    "quotes": [
+      "B站发布《关于 AI「大肥鱼」你怎么看？》治理意见征询，面向用户征集对 AI 账号及相关行为的意见，称将据反馈推进治理（IT之家）",
+      "《以撒的结合：忏悔+》因一段 GTA 主题小游戏使用 AI 音乐遭 Steam 差评轰炸，开发者已移除相关曲目（The Verge）",
+      "湘雅二医院一篇 AI 合成论文存在多处低级文字错误、示例图疑似 AI 生成，引发舆论批评（虎嗅）"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-11-23T07:10"
+}
