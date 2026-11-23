@@ -1,0 +1,139 @@
+{
+  "date": "2026-11-24",
+  "format": "summary",
+  "points": [
+    "英伟达董事会全票恢复黄仁勋总裁兼首席执行官及董事职务，当日美股开盘涨 32%，市值增加超 1 万亿美元，总市值重回 4 万亿美元（IT之家 / TechCrunch）。",
+    "亚马逊以 75 亿美元收购 Decart 的 AI 优化技术与研究团队，同时准备对外销售自研 Trainium 芯片（TechCrunch）。",
+    "Anthropic 推出 Claude Ship，Claude 可自主审阅、修复并批准 pull request（The Verge）。"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "英伟达董事会全票通过恢复黄仁勋总裁兼首席执行官及董事职务，当日美股开盘涨 32%，市值增加超 1 万亿美元，总市值重新站上 4 万亿美元（IT之家 / TechCrunch）",
+        "Anthropic 推出 Claude Ship，Claude 可自主审阅、修复并批准 pull request，工程师从「写」退到「审」（The Verge）",
+        "Z.ai 把旗舰模型 GLM-5.4 改为循环架构，28 层各跑两遍，称 7500 亿参数可对标 2 至 3 万亿参数模型；目前基准成绩只在 300 亿参数的测试模型上公布（The Decoder）",
+        "亚马逊以 75 亿美元收购 Decart 的 AI 优化技术与研究团队，同时准备把自研 Trainium 芯片对外销售（TechCrunch）"
+      ],
+      "insights": [
+        "一个人事任免能让市值单日多出上万亿美元，说明算力龙头当下被定价的是关键人与政策背书，而不是订单能见度（推断）",
+        "编码 agent 从「提建议」走到「直接改并批准」，代码评审的控制权必须从人转移到可回滚、可审计的流程上（推断）",
+        "用循环架构压参数换效果，如果基准只在缩小版上成立，宣称的等效规模还缺同尺寸证据（推断）"
+      ],
+      "actions": [
+        "持仓里有算力链的，把关键人风险与政策风险单列成检查项，别和业绩预期混在一起算。",
+        "允许 agent 直接合代码前，先确认分支保护、回滚与操作审计三件事都能自动执行。"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "蚂蚁医疗健康 AI 五连发：阿福同款大模型宣布开源，支持本地部署，称医生一台电脑即可跑专业医疗 AI 能力（量子位）",
+        "豆包工作上新 21 个专业工作台，把 AI 拆成按岗位直接上手的任务入口（量子位）",
+        "阿里云把 Qwen4-Max 推向企业，定位为能规划、构建并交付成品的「AI 同事」（阿里云官方博客）",
+        "Sierra 六个月估值翻倍至 300 亿美元，完成 17.5 亿美元 F 轮融资，主因是企业客服场景的 AI 需求放量（TechCrunch）"
+      ],
+      "insights": [
+        "企业 AI 的卖点正从模型分数转向「装进某个岗位的完整流程」，交付形态比参数更决定采用率（推断）",
+        "客服类公司估值半年翻倍，说明预算正从试点采购转向按坐席替换的规模化合同（推断）",
+        "医疗这类高门槛场景，开源加本地部署是绕开数据出域顾虑的最短路径（推断）"
+      ],
+      "actions": [
+        "选型时要求厂商在你一条真实岗位流程上端到端跑通，按跑通率打分，而不是看 benchmark。",
+        "受监管行业先确认能否本地部署、数据是否出域，再谈模型能力。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "「Agent 版 arXiv」出现：936 个智能体在 12 周内产出近千篇论文，并自建同行评议流程（量子位）",
+        "Signal 在 Android 与 iOS 端限制截屏，称正面对 AI 监控带来的「生存威胁」（TechCrunch）",
+        "俄勒冈与弗吉尼亚两州分别起诉 SpaceX，指 Grok 生成色情深伪内容、平台未做行业标准防护并虚假宣传安全性（The Verge）",
+        "Google 在 AI Mode 里接入 Drive、Wallet 与 Gemini，个性化搜索可读取用户个人数据（Google 官方博客 / TechCrunch）"
+      ],
+      "insights": [
+        "内容供给已经能自动量产，稀缺环节变成判定真伪与确认署名（推断）",
+        "平台用限制截屏对抗 AI 抓取，普通用户的日常便利会被一并收走（推断）",
+        "深伪的责任开始落到模型与平台方，合规成本前置到产品设计阶段（推断）"
+      ],
+      "actions": [
+        "做内容分发的，把来源与生成方式做成显性标识，比再堆产量更能留住读者。",
+        "做面向公众的生成功能，先确认水印与年龄门槛符合当地法规，再谈增长。"
+      ]
+    }
+  ],
+  "github": [
+    {
+      "repo": "SakanaAI/AI-Scientist-v3",
+      "url": "https://github.com/SakanaAI/AI-Scientist-v3",
+      "stars": "751",
+      "track": "AI产业技术",
+      "note": "把编码 agent 编排成科研流程：自动出想法、跑实验、写论文并做自评，目标是让 agent 参与科学发现而不是只写代码。",
+      "why": "有内部研究或实验流程的团队，先用它跑一个已验证结论的小课题，看它复现得出来还是只会写漂亮报告。"
+    },
+    {
+      "repo": "chatchat-space/Langchain-Chatchat",
+      "url": "https://github.com/chatchat-space/Langchain-Chatchat",
+      "stars": "39K",
+      "track": "企业AI应用",
+      "note": "本地知识库问答与 agent 应用框架，支持 ChatGLM、Qwen、Llama 等开源模型，可离线部署，中文文档与部署脚本齐全。",
+      "why": "要把内部文档做成问答又有数据不出域要求的，先用它在一台内网机器上搭最小可用版，量三件事：检索命中率、答错率、维护成本。"
+    },
+    {
+      "repo": "MartinDelophy/ai-video-editor",
+      "url": "https://github.com/MartinDelophy/ai-video-editor",
+      "stars": "1K",
+      "track": "内容创作",
+      "note": "本地优先的开源视频编辑器，创作者和 AI agent 操作同一条真实时间线，改动对双方都可见、可回退。",
+      "why": "内容团队想让人和 agent 交替改片子的，先拿一条三分钟素材跑「人改一段、agent 改一段」，重点看时间线冲突会不会互相覆盖。"
+    }
+  ],
+  "reading": [
+    {
+      "title": "Claude AI can review pull requests and ship fixes on its own now",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
+      "source": "The Verge",
+      "reason": "报道说明 Claude Ship 把评审、修复、批准三步串成一条自动流程，工程师的角色从写代码变成设定边界与验收",
+      "why": "准备给 agent 放权的团队，读它对照自己的分支保护与审计配置，先确认出事能不能一键回滚。"
+    },
+    {
+      "title": "Amazon snaps up Decart's AI optimization tech for $7.5B as it prepares to sell Trainium chips",
+      "url": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/",
+      "source": "TechCrunch",
+      "reason": "报道拆解这笔交易的逻辑：买的不只是模型，而是让推理更省更快的优化能力，用来证明自研芯片比通用 GPU 更划算",
+      "why": "在算推理成本的，读它判断下一轮报价里「芯片 + 优化」打包会不会比单纯买算力便宜。"
+    },
+    {
+      "title": "「Agent版arXiv」来了！936个智能体12个星期狂发近千篇论文",
+      "url": "https://www.qbitai.com/2026/11/512004.html",
+      "source": "量子位",
+      "reason": "报道描述一个全由 AI 组成的「科学家社会」：分工产出论文、互相评议，也暴露了选题重复与自我引用的问题",
+      "why": "关注 AI 生成内容可信度的，读它看量产论文会把评审压力推到什么程度。"
+    }
+  ],
+  "consensus": {
+    "text": "决定 AI 能力能否落地的，是交付环节有没有可验收的标准与可追溯的责任人，而不是模型能力上限。",
+    "quotes": [
+      "Anthropic 推出 Claude Ship，Claude 可自主审阅、修复并批准 pull request（The Verge）",
+      "Sierra 六个月估值翻倍至 300 亿美元，完成 17.5 亿美元 F 轮融资，主因是企业客服场景 AI 需求放量（TechCrunch）",
+      "蚂蚁集团宣布开源阿福同款医疗大模型，支持本地部署，称医生一台电脑即可运行专业医疗 AI（量子位）"
+    ]
+  },
+  "division": {
+    "text": "分歧在于 AI 生成内容的风险该由平台和模型方前置拦截，还是交给使用方自行判断并承担后果。",
+    "quotes": [
+      "Signal 在 Android 与 iOS 端限制截屏，称正面对 AI 监控带来的「生存威胁」（TechCrunch）",
+      "俄勒冈与弗吉尼亚两州分别起诉 SpaceX，指 Grok 生成色情深伪内容、平台未做行业标准防护（The Verge）",
+      "「Agent 版 arXiv」936 个智能体 12 周产出近千篇论文，并自建同行评议流程（量子位）"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-11-24T07:10"
+}
