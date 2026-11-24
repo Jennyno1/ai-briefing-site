@@ -1,0 +1,138 @@
+{
+  "date": "2026-11-25",
+  "format": "summary",
+  "points": [
+    "Anthropic 以 1.5 万亿美元估值完成史上最大 IPO，发行价 83 美元，首日开盘 111.50 美元、收盘 97.17 美元，本周股价跌破发行价（Latent Space / TechCrunch）。",
+    "CrowdStrike 宣布以 440 亿美元收购 Zscaler，称合并后更能支撑企业客户使用 AI agent（TechCrunch）。",
+    "Tidal 将于 12 月 9 日起禁止 AI 生成音乐，届时删除约 2900 万首，并按每天 8 万至 8.5 万首拒绝新上传（The Verge / TechCrunch）。"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "Anthropic 完成史上最大 IPO，估值 1.5 万亿美元，发行价 83 美元，首日开盘 111.50 美元、收盘 97.17 美元；TechCrunch 报道其股价本周已跌破发行价（Latent Space / TechCrunch）",
+        "Anthropic 称 MCP 接口标准月下载量超 7 亿次，新增后台任务、向用户追问与文件上传，让 Claude 能更独立地连续工作（The Decoder）"
+      ],
+      "insights": [
+        "首日冲高后跌破发行价，说明资金愿为增长付溢价，但要求看到收入兑现的路径（推断）",
+        "接口标准的月下载量级别与协议新增的后台任务能力，说明 agent 生态的竞争点在从模型分数转向接入标准（推断）",
+        "两家厂商同期发世界模型，评价口径应从演示画面转向具体本体上的任务成功率（推断）"
+      ],
+      "actions": [
+        "文心 5.5 Flash Preview 以 Apache 2.0 协议正式开源（量子位）",
+        "选模型供应商时把「能否接进现有工具链」排在榜单分数前面，接口生态直接决定迁移成本。",
+        "看世界模型先问它在哪个本体、哪类任务上跑通，再谈能力上限。"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "iFood 把编码 agent 铺进 1.5 万个代码仓库，用于日常改动、测试与评审（OpenAI）",
+        "BMW 数千名开发者创建了数百个 agent，靠统一治理层管理权限、复用与合规，而不牺牲交付速度（AWS AI Blog）",
+        "南非 Standard Bank 在 Amazon Bedrock 上用 LLM-as-a-judge 给每个生成式 AI 用例按国际标准与内部政策自动打分，作为审批留证（AWS AI Blog）",
+        "蚂蚁 OceanBase 发布湖库一体 AI 数据平台 OceanLake，CTO 杨传辉称主打湖与库统一、AI 原生检索与多模态处理三项能力（量子位）"
+      ],
+      "insights": [
+        "规模化的瓶颈从模型调用转到治理：agent 上百、开发者上千后，权限、审计与复用成为主要成本（推断）",
+        "强监管行业把合规判断做成可机读的打分证据，比逐案开会评审更可扩展（推断）",
+        "数据平台开始按「湖 + 库 + AI」一体交付，说明企业侧卡点在数据治理而非模型能力（推断）"
+      ],
+      "actions": [
+        "内部铺 coding agent 前，先按「谁审、怎么回滚、怎么复用」建治理清单，再放量到全仓。",
+        "生成式 AI 上线审批改成固定打分表加留证，避免每个新用例重新讨论一遍。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "Tidal 12 月 9 日起禁止 AI 生成音乐，将删除约 2900 万首、每天拒绝 8 万至 8.5 万首新上传；AI 辅助创作仍可上架，判断标准是「非全生成」（The Verge / TechCrunch）",
+        "Pinterest 上线家长控制，可限制青少年信息流里出现的 AI 生成内容（TechCrunch）",
+        "AI 短剧《丑狐》改编自《聊斋志异》，8 集不到 50 分钟，由创作者「夜梦人」一人完成全流程，首集上线 3 天全网播放破亿（知乎）",
+        "《纽约时报》要求自由摄影师不要升级 2027 版 Photoshop，称新功能的 AI 处理「用户未必察觉得到」（The Verge）"
+      ],
+      "insights": [
+        "平台用「全生成」与「辅助创作」划线，判定依据最终会落到可追溯的创作记录（推断）",
+        "《丑狐》靠一张刻意做丑的脸出圈，说明观众要的是可辨认的角色与情绪，精致画面已不是差异点（推断）",
+        "工具默认开启 AI 处理，等于把合规确认的责任推给使用者（推断）"
+      ],
+      "actions": [
+        "用 AI 做内容，保留提示词、素材与人工修改记录，平台要求证明「人在环」时能拿得出。",
+        "做短剧或短视频，把角色设定与情绪反差放在画面精度之前。"
+      ]
+    }
+  ],
+  "github": [
+    {
+      "repo": "zhnt/loushang",
+      "url": "https://github.com/zhnt/loushang",
+      "stars": "2K",
+      "track": "AI产业技术",
+      "note": "用 Python 写的 agent 编排框架：多模型路由（GPT、Claude、DeepSeek、Qwen、Kimi、GLM、MiniMax）、有状态会话、工具权限管控与可追溯交付。",
+      "why": "要给内部 coding agent 加权限与审计的，先用它把一条真实流程跑通，重点看工具调用记录能不能落盘复查。"
+    },
+    {
+      "repo": "NirDiamant/RAG_Techniques",
+      "url": "https://github.com/NirDiamant/RAG_Techniques",
+      "stars": "31K",
+      "track": "企业AI应用",
+      "note": "三十多种 RAG 技巧，每种配一份可运行 notebook，从切分、重排到多跳检索都有对照实现。",
+      "why": "内部知识库答不准的，先按 notebook 逐条试切分与重排策略，用同一批问题集比命中率，再决定改哪一层。"
+    },
+    {
+      "repo": "kurbaitaev/ghost-editor",
+      "url": "https://github.com/kurbaitaev/ghost-editor",
+      "stars": "725",
+      "track": "内容创作",
+      "note": "给 Claude Code 用的开源 AI 视频编辑器：输入原始口播素材，输出成片，内置 19 种风格模板。",
+      "why": "做口播类内容的，先拿一条三分钟素材跑一遍，看它剪出的节奏与字幕能否直接发，还是仍要人工返工。"
+    }
+  ],
+  "reading": [
+    {
+      "title": "The War Against Slop and an Emerging Weapon to Fight it: Formal Verification",
+      "url": "https://latent.space/p/formal-verification/",
+      "source": "Latent Space",
+      "reason": "讲 AI 生成内容泛滥之后，Lean 这类形式化证明如何给「对不对」提供机器可验证的判据，以及门槛从专家个人转移到工具链的过程",
+      "why": "做技术内容或代码交付的，读它想清楚哪些结论可以做成自动验证，而不是靠人读一遍就信。"
+    },
+    {
+      "title": "When Tools Fail, Agents Fabricate: Silent Failure and Verification-First Oversight in Tool-Using LLM Agents",
+      "url": "https://arxiv.org/abs/2611.28341",
+      "source": "arXiv",
+      "reason": "论文用可控故障注入的沙盒测 agent 在工具调用失败时的反应，发现不少模型会编造结果而不是报错",
+      "why": "上线工具型 agent 前，把「工具失败」当必测场景，加一道结果核验再放行。"
+    },
+    {
+      "title": "个人Agent的大厂战事：野心与克制",
+      "url": "https://www.huxiu.com/article/4908177.html",
+      "source": "虎嗅",
+      "reason": "梳理豆包「小豆」公测后，腾讯小微、阿里千问 Go、蚂蚁灵光等个人 agent 在产品路线上的差异与克制",
+      "why": "想做个人助理类产品的，读它对照各家在记忆与主动服务上的边界，判断哪些能力是真实需求。"
+    }
+  ],
+  "consensus": {
+    "text": "决定 AI 能否持续拿到资源的，是投入能否转成可核对的产出，而不是能力展示的领先幅度。",
+    "quotes": [
+      "Anthropic 以 1.5 万亿美元估值完成 IPO，发行价 83 美元，本周股价跌破发行价（Latent Space / TechCrunch）",
+      "iFood 把编码 agent 铺进 1.5 万个代码仓库，用于日常改动与评审（OpenAI）",
+      "BMW 用统一治理层管理数千名开发者创建的数百个 agent（AWS AI Blog）"
+    ]
+  },
+  "division": {
+    "text": "对当前阶段的判断分成两派：一派认为能力跃升已临近、应当加速投入；另一派认为落地能力仍被高估、应先等可验证的收益。",
+    "quotes": [
+      "OpenAI o1 共同创造者 Noam Brown 称 AI 正进入「非常陡峭的进步曲线」，劝有潜力的学生退学入场（The Decoder）",
+      "TechCrunch 称新基准显示，即便最好的 AI agent 处理日常事务仍不可靠，还会引入新问题（TechCrunch）",
+      "诺华 CEO 称 AI 可让新药研发缩短四年，但不会在十年内攻克癌症（The Decoder）"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-11-25T07:10"
+}
