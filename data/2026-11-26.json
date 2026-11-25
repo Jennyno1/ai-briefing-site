@@ -1,0 +1,141 @@
+{
+  "date": "2026-11-26",
+  "format": "summary",
+  "points": [
+    "OpenAI 宣布合并 ChatGPT 的 Chat 与 Work 两个体验，改为统一用量计量，重度用户会更早触到限额（TechCrunch）。",
+    "Amazon 与 Meta 正谈判解除 Muse 购物 agent 在亚马逊的封锁，卡点在广告收入与搜索结果控制权；Walmart 已把黑五促销接入 Muse（TechCrunch / The Verge）。",
+    "Anthropic 调研 58 家美国公司的近 300 个 AI 部署，近五分之一没有产生业务价值，卡点是评审负担、内部流程与员工抵触（The Decoder）。"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "谷歌 Gemini 4 的 Neon 在 LiveBench 上超过 Astra 与 Fable，并把 Theo 的 TS Rust 基准运行时间缩短 48.6%（Latent Space）",
+        "Arena 文本榜前三被 Gemini 4 的 Carbon、Argon、Neon 包揽，Carbon 以 1527 分登顶，Claude 最高只排到第五（36氪）",
+        "智谱 GLM-5.4 采用其首个 Loop Transformer 架构，主打通用编码能力；量子位报道另一支中国团队的 General Looped Model 用 9400 万参数对标 50 亿参数模型，权重显存降 98%（Simon Willison / 量子位）",
+        "PrismML 把 270 亿参数的编码模型压到 5.9GB，每个权重只保留三种取值（The Decoder）"
+      ],
+      "insights": [
+        "一个实验室包揽榜单前三，说明前沿差距目前仍由公开基准衡量，而基准名次与真实任务成功率之间没有稳定换算（推断）",
+        "循环架构与极端量化同期出现，说明算力受限一侧的竞争点已转向单位成本下的可用性，而不是参数规模（推断）",
+        "谷歌 DeepMind 让 agent 自主跑部分 Gemini 实验，但明确不训练它们的内部推理链，自动化研究被限制在可复核的执行层（推断）"
+      ],
+      "actions": [
+        "选模型时用自己的真实任务跑一张分数表，榜单名次只作初筛。",
+        "推理成本吃紧的场景，先用循环架构或三值量化模型试点，显存需求能降一个量级。"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "Amazon Bedrock 上线 Trusted Access API，首批接入 Anthropic 的 Enterprise Frontier Safeguards 与 Enterprise Data Controls，企业可集中申请并登记模型方的数据使用承诺（AWS AI Blog）",
+        "OpenAI 测试 Private Inference，企业在不向 OpenAI 开放数据的前提下调用其最强模型（The Decoder）",
+        "智元机器人发布具身智能生态体系 AIMA，称灵心平台一年孵化超 3 万个机器人智能体（量子位）",
+        "九章云极在深圳发布物理 AI 工厂与生态开放计划（量子位）",
+        "Amazon 以约 75 亿美元收购 Decart 的 AI 优化技术与团队，用于提升 Trainium 芯片效率（TechCrunch）"
+      ],
+      "insights": [
+        "多家厂商同期把「数据不入训练、不可见」做成可签约条款，说明企业采购的门槛已从能力演示移到数据边界（推断）",
+        "Anthropic 的调研把失败原因指向评审与流程，与工具是否易学关系不大（推断）",
+        "机器人平台的孵化数量是供给侧数字，需求侧要看这些智能体后续的调用频率与付费留存（推断）"
+      ],
+      "actions": [
+        "立项书里先写清谁评审、评审要多久、卡在哪个部门，工具培训排到最后。",
+        "谈数据条款时要求对方给出可核对范围：哪些数据不进训练、保留多久、由谁审计。"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "红果短剧上线「时间锁」，支持用户自定义每日观剧时长（36氪）",
+        "量子位实测一套 AI 短片流程：给一个故事就能直出 15 分钟成片，非专业用户也能上手（量子位）",
+        "David Fincher 新片试映后被观众质疑使用生成式 AI，讨论集中在画面细节（The Verge）",
+        "谷歌「My Channel」专利曝光，设想按用户信息生成个性化 AI 视频流与广告，专利已被驳回但仍可重申（The Verge）",
+        "微信在「听一听」内上线独立音乐入口，曲库来自 QQ 音乐，带自己的推荐、评论与分享（IT之家）"
+      ],
+      "insights": [
+        "短剧平台主动加时长限制，说明这个赛道的增长同时受留存与合规两条线约束（推断）",
+        "15 分钟成片已能由非专业用户完成，创作者之间的差异会转到故事结构与角色可信度（推断）",
+        "名导被观众质疑用 AI，说明观众在意的不是有没有用工具，而是有没有被告知（推断）"
+      ],
+      "actions": [
+        "做短片先用这类流程出一版粗剪，把省下的时间投到分镜和配音上。",
+        "片子里用了生成式素材，就在片尾和简介里写明，比被观众指出来代价小。"
+      ]
+    }
+  ],
+  "github": [
+    {
+      "repo": "ai-timon/timon",
+      "url": "https://github.com/ai-timon/timon",
+      "stars": "765",
+      "track": "AI产业技术",
+      "note": "本地运行的 agent 团队工作台：调度器把任务拆开派给不同 agent，一个写代码、一个换模型评审、一个合并，直接复用你已付费的 Claude Code、Codex、Kimi 等命令行订阅。",
+      "why": "手上有多个 CLI 订阅的，先让它跑一个真实的小需求，重点看换模型评审这一步能否拦住错误，以及它在你确认前会不会擅自改动。"
+    },
+    {
+      "repo": "apify/crawlee",
+      "url": "https://github.com/apify/crawlee",
+      "stars": "27K",
+      "track": "企业AI应用",
+      "note": "Node.js 的抓取与浏览器自动化库，内置请求队列、代理轮换与反封禁处理，输出可直接喂给 RAG 与模型训练。",
+      "why": "要给自己搭数据管道，先用它把目标站点跑通一百条，记录失败率与维护成本，再决定自建还是买现成数据。"
+    },
+    {
+      "repo": "ronak-create/FableCut",
+      "url": "https://github.com/ronak-create/FableCut",
+      "stars": "821",
+      "track": "内容创作",
+      "note": "零依赖的浏览器非线性剪辑器，整个时间线就是一个 JSON 文件，通过 MCP 或 REST 让 agent 直接剪片，人工与 agent 可同时改同一条时间线。",
+      "why": "想让 agent 参与剪辑的，先拿一条三分钟素材试：看它能否按你的口播节奏切点，以及 Ctrl+Z 能不能干净撤回 agent 的每次改动。"
+    }
+  ],
+  "reading": [
+    {
+      "title": "Three LLM inflection points in twelve months",
+      "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/",
+      "source": "Simon Willison",
+      "reason": "作者把过去十二个月模型与编码 agent 的能力变化拆成三个转折点，讲清每次转折之后哪些工作方式失效、哪些变得可行",
+      "why": "团队在定明年工具路线前读一遍，对照自己卡在哪一段，别把已过期的工作流当标准。"
+    },
+    {
+      "title": "Anthropic study shows the hardest part of adopting AI at work has little to do with learning the tools",
+      "url": "https://the-decoder.com/anthropic-study-shows-the-hardest-part-of-adopting-ai-at-work-has-little-to-do-with-learning-the-tools/",
+      "source": "The Decoder",
+      "reason": "基于 58 家公司的近 300 个部署案例，列出评审负担、内部流程与员工抵触如何吃掉 AI 项目价值",
+      "why": "手里的项目没出效果时，先按这三个维度自查，而不是再加一轮培训。"
+    },
+    {
+      "title": "该谈谈AI的商业模式了",
+      "url": "https://www.huxiu.com/article/4908522.html",
+      "source": "虎嗅",
+      "reason": "从大模型与 agent 的分工讲起，讨论代码生成之外还有哪些收入来源，以及平台方与工具方的分成关系",
+      "why": "做产品或选题时，可用它判断一个 AI 功能是真实营收还是补贴换来的用量。"
+    }
+  ],
+  "consensus": {
+    "text": "决定一轮技术投入能否持续拿到资源的，是它能否被拆成可核对的成本、权限与责任边界，而不是单点的能力领先。",
+    "quotes": [
+      "Amazon Bedrock 上线 Trusted Access API，首批接入 Anthropic 的 Enterprise Frontier Safeguards 与 Enterprise Data Controls（AWS AI Blog）",
+      "PrismML 把 270 亿参数的编码模型压到 5.9GB，每个权重只保留三种取值（The Decoder）",
+      "OpenAI 合并 ChatGPT 的 Chat 与 Work 并统一用量计量，称重度用户会更早触到限额（TechCrunch）"
+    ]
+  },
+  "division": {
+    "text": "分歧在于把智能体当作新的流量入口还是当作需要长期治理的系统：前者按覆盖速度下注，后者按故障成本决定放开范围。",
+    "quotes": [
+      "Walmart 把黑五促销接入 Meta 的购物 agent Muse，Amazon 与 Meta 正谈判解除 Muse 在亚马逊的封锁（TechCrunch / The Verge）",
+      "TechCrunch 称新基准显示，最好的 AI agent 处理日常事务仍不可靠，还会引入新问题（TechCrunch）",
+      "arXiv 论文 ContextLure 指出，看似良性的对话历史可被用于间接提示注入（arXiv）"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-11-26T07:10"
+}
