@@ -1,0 +1,138 @@
+{
+  "date": "2026-11-27",
+  "format": "summary",
+  "points": [
+    "量子位称黎曼猜想证明代码被压缩 99.5% 到 7.6 万行，另一场 381 个 AI 会话的公开冲刺在 Lean4 里验证通过 2400 多条引理，目标指向 P=NP。",
+    "OpenAI 公布 GPT-6 用推理与代码设计蛋白质结构与序列，腾讯生命科学实验室的 ORIDTP 平台以第一单位登上《Nature》，方向是高活性双靶点多肽的从头设计。",
+    "英伟达通知代工伙伴暂停向马来西亚、新加坡、泰国与印尼出货服务器，标普考虑把它的信用评级下调到 AA-，理由是治理与关键人物风险。"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "量子位报道黎曼猜想的证明代码被压缩 99.5%，只剩 7.6 万行",
+        "量子位记录了一场公开冲刺：381 个 AI 会话并行推进，已跑过一万次会话，在 Lean4 里验证通过 2400 多条引理，目标是 P=NP",
+        "36氪称 OpenAI 给出矩阵乘法指数上界 9/4 的结果",
+        "OpenAI 官方公布 GPT-6 借助推理与代码设计蛋白质结构与序列，实验室在五个靶点上看到结合证据",
+        "前 OpenAI 研究者 Scott Aaronson 在 The Decoder 表示，黎曼证明本身不如「AI 系统能产出它」这件事重要"
+      ],
+      "insights": [
+        "这批结果的瓶颈已经从产出移到复核：证明要过 Lean4 这类机器检查，才能进公共记录（推断）",
+        "当产出速度超过人类阅读速度，团队比拼的是验证通道有多宽，而不是模型多强（推断）"
+      ],
+      "actions": [
+        "重要结论先落成可机检的形式化证明，否则团队内部无法复核",
+        "评估模型时用一道自有难题走完「生成、形式化、校验」三段，比看榜单名次有用"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "宝马集团在 AWS 博客公开治理实践：数百个 agent 服务数千名开发者，权限分级、留痕与合规流程和交付速度同步设计",
+        "iFood 在 1.5 万个仓库的规模上运行编码 agent（OpenAI 客户案例）",
+        "南非 Standard Bank 在自有 AWS 账户内用 LLM-as-a-judge 逐条为生成式 AI 用例打分，自动产出审批所需证据",
+        "Amazon Textract Insights 正式可用：用自然语言描述所需字段，返回带置信度与页级定位的结构化结果",
+        "AWS 给出分布式 KV 缓存方案，自建推理成本最多降 40%，首 token 延迟最多降 80%"
+      ],
+      "insights": [
+        "三个案例的落点都不在模型：宝马分权限，银行做证据链，食品平台做仓库级接入（推断）",
+        "缓存带来的降幅说明自建推理的成本竞争已从显卡转到上下文复用率（推断）"
+      ],
+      "actions": [
+        "自建推理先测上下文复用率，再决定要不要扩卡",
+        "文档抽取上线前，先算清字段级置信度能支撑多少比例的人工复核"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "Tidal 宣布 12 月 9 日起禁止 AI 生成音乐，将删除约 2900 万首，每天再拒收 8 万到 8.5 万首（The Verge）",
+        "虎嗅自费跑五版对比：Sand.ai 的 MAGI-2 把 1080P 视频价格定在 0.5 元每秒",
+        "Character.AI 在破产程序中拟拍卖用户聊天记录，42 个州总检察长联名要求叫停（The Verge）",
+        "《纽约时报》提醒摄影师不要更新 Photoshop，原因是新版的 AI 条款（Simon Willison）"
+      ],
+      "insights": [
+        "分发端开始用删除和拒收给 AI 内容定价，生成成本的优势会被平台规则反向抵消（推断）",
+        "视频单价压到 0.5 元每秒之后，比价的关键变成重试次数与成片可用率（推断）"
+      ],
+      "actions": [
+        "用 AI 音乐或配音的账号，先查清各发行平台的 AI 申报与下架规则",
+        "视频外包报价把单价、时长与重试次数一起算，不看单价看总账"
+      ]
+    }
+  ],
+  "github": [
+    {
+      "repo": "microsoft/playwright-mcp",
+      "url": "https://github.com/microsoft/playwright-mcp",
+      "stars": "40K",
+      "track": "AI产业技术",
+      "note": "Playwright 的 MCP 服务端，官方维护，把浏览器操作暴露成 agent 可以直接调用的工具，点击、填表、取页面内容都有对应能力。",
+      "why": "要让 agent 跑网页流程的，先用它把一条登录加抓取跑通，再划清它能碰哪些页面。"
+    },
+    {
+      "repo": "sinaptik-ai/pandas-ai",
+      "url": "https://github.com/sinaptik-ai/pandas-ai",
+      "stars": "24K",
+      "track": "企业AI应用",
+      "note": "用自然语言对数据库、CSV 与 parquet 提问，把 SQL 生成、执行与图表串成一条链，支持本地与托管模型。",
+      "why": "内部报表需求多的团队，先接一张只读副本试，别直接连生产库。"
+    },
+    {
+      "repo": "Forward-Future/scarlet",
+      "url": "https://github.com/Forward-Future/scarlet",
+      "stars": "728",
+      "track": "内容创作",
+      "note": "macOS 与 Windows 上的 AI 视频编辑器，11 月中旬开源，两周内到 728 星，主打对话式修改时间线。",
+      "why": "想省剪辑时间的，先拿一条口播素材测它能否按你的节奏切点。"
+    }
+  ],
+  "reading": [
+    {
+      "title": "Context Scaling: A New Frontier of AI Scaling",
+      "url": "https://arxiv.org/abs/2611.33160",
+      "source": "arXiv",
+      "reason": "把已部署 AI 的失败归因于「任务依赖的状态」与「系统行动时可用的上下文」不匹配，并给出评测上下文扩展的框架",
+      "why": "排查线上效果差时，先看关键状态有没有进上下文，而不是先换模型。"
+    },
+    {
+      "title": "How the BMW Group governs hundreds of agents across thousands of developers",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-the-bmw-group-governs-hundreds-of-agents-across-thousands-of-developers/",
+      "source": "AWS AI Blog",
+      "reason": "宝马研发团队讲清 agent 在规模上如何分级授权、如何留痕、如何与合规流程对接",
+      "why": "准备把内部 agent 推给整个研发部门之前，照它的治理结构排一遍。"
+    },
+    {
+      "title": "自费五版对比：差价近十倍，MAGI-2能不能给2.5当平替？",
+      "url": "https://www.huxiu.com/article/4908789.html",
+      "source": "虎嗅",
+      "reason": "同一段素材跑五个版本的视频模型，比较价格、成片可用率与细节保留",
+      "why": "选视频模型前自己跑一轮多版本对比，刊例价不足以判断总成本。"
+    }
+  ],
+  "consensus": {
+    "text": "一项 AI 成果能否被采纳，取决于它能否落进可复核的验证与证据链，产出速度本身不构成判断依据。",
+    "quotes": [
+      "量子位报道黎曼猜想证明代码压缩 99.5% 至 7.6 万行，并由 Lean 团队验证通过",
+      "Amazon Textract Insights 为每个抽取字段返回置信度与页级定位，便于人工复核",
+      "Standard Bank 用 LLM-as-a-judge 在自有账户内逐条给用例打分，产出审批证据"
+    ]
+  },
+  "division": {
+    "text": "分歧在于同一种能力该先扩大覆盖，还是先划定使用边界：一边按可用性收益推进，一边按滥用与故障成本收紧。",
+    "quotes": [
+      "Tidal 将于 12 月 9 日起下架约 2900 万首 AI 生成音乐",
+      "Character.AI 在破产程序中拟拍卖用户聊天记录，42 个州总检察长联名要求叫停",
+      "Microsoft 披露 ARTEX 框架用专用 agent 几乎无人干预地执行网络攻击，中朝相关组织与犯罪团伙已在使用"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-11-27T07:10"
+}
