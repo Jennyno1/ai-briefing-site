@@ -1,0 +1,136 @@
+{
+  "date": "2026-11-28",
+  "format": "summary",
+  "points": [
+    "量子位报道 20 个 AI agents 组队，4 天跑完 350 次实验，把 Quickwit 的查询总耗时降 31%、最高降 87%，超过 ClickBench 最佳公开成绩。",
+    "美团 2026 年第三季度营收 1155.6 亿元、净利 20.7 亿元扭亏；AI 管家「小团」国庆用户量与调用量较五一增长超六成，经营工作台「妙手」已服务超 200 万商家，王兴称明年 AI 资本开支将低于今年。",
+    "虎嗅记录一个 AI 对账项目的验收材料：单据识别率 90% 多、自动审核通过超 75%、人工处理不到 25%，但财务意见一栏空白，CFO 未签字，项目结不了项。"
+  ],
+  "tracks": [
+    {
+      "key": "ai_tech",
+      "emoji": "❶",
+      "name": "AI产业技术",
+      "news": [
+        "量子位：20 个 AI agents 组队，4 天跑完 350 次实验，Quickwit 查询总耗时降 31%、最高降 87%，超过 ClickBench 最佳公开成绩",
+        "量子位：首个带跨任务空间记忆的原生基模开源，机器人端侧即可运行，地图可随时修正",
+        "The Decoder：Meta 与 AMI Labs 的三项新研究支持 Yann LeCun 的 JEPA 世界模型路线，覆盖机器人规划、训练效率与纠错",
+        "TechCrunch：OpenAI 把 ChatGPT 与 Work 合并为一张用量表，重度用户会更早到达使用上限"
+      ],
+      "insights": [
+        "两条机器人方向的进展都把「记忆」放在核心位置，具身智能当前的瓶颈是状态能否跨任务复用（推断）",
+        "合并用量表后，同一份额度要同时覆盖聊天与办公两类负载，重度用户的实际可用量取决于任务结构，而不是订阅档位（推断）"
+      ],
+      "actions": [
+        "评估机器人或具身方案时，先追问记忆能否跨任务迁移，再比单任务精度",
+        "用 ChatGPT 做长文与研究任务前，先看额度在两类负载上的消耗结构，避免在关键节点触顶"
+      ]
+    },
+    {
+      "key": "enterprise_ai",
+      "emoji": "❷",
+      "name": "企业AI应用",
+      "news": [
+        "美团第三季度营收 1155.6 亿元、同比增长 21.6%，净利 20.7 亿元，去年同期亏损 186 亿元，研发开支 77 亿元；「小团」国庆用户量与调用量较五一增长超六成，「妙手」服务超 200 万商家（虎嗅、36氪、IT之家）",
+        "虎嗅：AI 对账项目的技术侧单据识别率 90% 多、自动审核通过超 75%、人工处理不到 25%，项目组估算省下近八成运单审核工作量，财务意见栏仍然空白",
+        "The Decoder 引彭博报道：SAP 计划裁减至少 1 万个岗位，作为转向 AI 的重组措施之一",
+        "TechCrunch：CrowdStrike 以 440 亿美元收购 Zscaler，称这笔交易能让客户更好地使用 AI agents"
+      ],
+      "insights": [
+        "技术指标已经达标却结不了项，卡点在财务能否算清这笔账，验收权正从项目组转向财务（推断）",
+        "裁员与新收购同时发生，说明企业愿意为「能省人力」和「能管住 agent」两类能力付钱（推断）"
+      ],
+      "actions": [
+        "项目验收材料里先写清节省的工时如何折算成财务口径，并请财务提前给出意见",
+        "引入 agent 前先定好它的权限范围与审计留痕，否则安全预算会比效率收益更早到位"
+      ]
+    },
+    {
+      "key": "content_creation",
+      "emoji": "❸",
+      "name": "内容创作",
+      "news": [
+        "腾讯混元发布 Hy3D 3.6，主打高模表面更整洁、结构更清晰、细节刻画更细腻（量子位）",
+        "The Verge：Google 曾申请名为 My Channel 的专利，按用户数据生成个性化 AI 视频与广告信息流；该专利申请被驳回，但 Google 可能上诉或重新提交",
+        "36氪：Claude Code 核心工程师 Thariq Shihipar 加入 OpenAI，并公开反思 Vibe Coding 的未来",
+        "IT之家：韩国教育部要求考生在考试前后接受金属探测器检查以防 AI 作弊，一家探测器厂商称客户咨询量较往常增加约 100 倍"
+      ],
+      "insights": [
+        "Google 的专利把生成和分发放进同一个系统，创作者面对的竞争者变成平台自动填满的信息流（推断）",
+        "3D 生成的评价标准从好看转向可用，素材要能直接进后续制作流程才有价值（推断）"
+      ],
+      "actions": [
+        "做 AI 视频或图文栏目，先把各平台的 AI 申报、限流与下架规则列成一张表，再定产出节奏",
+        "选 3D 或视频模型时，用自己的一条素材走完生成、修改、导出、发布，别看演示片"
+      ]
+    }
+  ],
+  "github": [
+    {
+      "repo": "github/github-mcp-server",
+      "url": "https://github.com/github/github-mcp-server",
+      "stars": "35K",
+      "track": "AI产业技术",
+      "note": "GitHub 官方维护的 MCP 服务端，把仓库、Issue 与 PR 的读写能力暴露成 agent 可以直接调用的工具。",
+      "why": "让 agent 参与代码评审或 issue 分诊的团队，先给只读权限并限定可访问仓库，再逐步放开写操作。"
+    },
+    {
+      "repo": "Kong/kong",
+      "url": "https://github.com/Kong/kong",
+      "stars": "44K",
+      "track": "企业AI应用",
+      "note": "成熟的 API 网关项目，新版把 AI 网关能力并进同一层，模型调用的路由、限流与密钥管理可以在既有网关里统一做。",
+      "why": "已经在用 Kong 的团队，先在测试环境接一路 LLM 请求，验证限流与密钥轮换，再扩到生产。"
+    },
+    {
+      "repo": "nexu-io/openmotion",
+      "url": "https://github.com/nexu-io/openmotion",
+      "stars": "17K",
+      "track": "内容创作",
+      "note": "开源的 CapCut 与 Claude Motion 替代品：给一段参考视频，生成可编辑的动态图形，带品牌套件，导出适配 YouTube、Shorts、Reels 与 TikTok 的 MP4。",
+      "why": "做短视频片头的，先用一条现成参考片跑一遍，看它产出的时间线能否在惯用工具里继续修改。"
+    }
+  ],
+  "reading": [
+    {
+      "title": "CFO不签字，AI 项目就不算完",
+      "url": "https://www.huxiu.com/article/4909092.html",
+      "source": "虎嗅",
+      "reason": "用一个真实 AI 对账项目的验收材料说明：识别率与自动化比例都达标，财务意见一栏空白，项目就结不了项",
+      "why": "准备验收 AI 项目时，照它的材料结构排一遍，缺的那一栏就是下一步要补的工作。"
+    },
+    {
+      "title": "OpenAI is building \"Athena\" data platform to cut down on AI agent guesswork",
+      "url": "https://the-decoder.com/openai-is-building-athena-data-platform-to-cut-down-on-ai-agent-guesswork/",
+      "source": "The Decoder",
+      "reason": "OpenAI 在内部搭一套叫 Athena 的语义层，给业务指标统一口径，减少 agent 对数据含义的猜测",
+      "why": "报表口径混乱的团队，先把指标定义集中到一处，再谈让 agent 自动取数。"
+    },
+    {
+      "title": "Even the best AI agents struggle with everyday life",
+      "url": "https://techcrunch.com/2026/11/24/even-the-best-ai-agents-struggle-with-everyday-life/",
+      "source": "TechCrunch",
+      "reason": "一个新基准显示，最先进的模型在完成日常任务时仍难以稳定、安全地收尾，还会引出新的问题",
+      "why": "给非技术同事推 AI 助理前，先用他们日常的一件小事做验证，别拿演示任务当标准。"
+    }
+  ],
+  "consensus": {
+    "text": "一项 AI 投入能否通过，取决于它能否在既有财务与验收流程里算清，技术达标本身不构成结论。",
+    "quotes": [
+      "虎嗅报道的 AI 对账项目单据识别率 90% 多、自动审核通过超 75%，财务意见栏仍然空白",
+      "美团第三季度营收 1155.6 亿元、净利 20.7 亿元，王兴称明年 AI 资本开支将低于今年",
+      "彭博报道 SAP 计划裁减至少 1 万个岗位以转向 AI"
+    ]
+  },
+  "division": {
+    "text": "分歧在于同一种能力该先扩大覆盖还是先收紧边界：一方按可省下的工作量推进，一方按财务与合规的可核算性设闸。",
+    "quotes": [
+      "TechCrunch 报道 CrowdStrike 以 440 亿美元收购 Zscaler，理由之一是让客户更好地使用 AI agents",
+      "The Verge 报道 Google 的 My Channel 专利按用户数据生成个性化 AI 视频与广告信息流",
+      "IT之家报道韩国要求考生接受金属探测器检查以防 AI 作弊，探测器厂商咨询量增约 100 倍"
+    ]
+  },
+  "ai_generated": true,
+  "generator": "AI 简报生成流水线（自动采集 + 模型整理）",
+  "generated_at": "2026-11-28T07:10"
+}
